@@ -1,0 +1,19 @@
+# gitleaks config for the CI secret scan (scans the working tree, --no-git).
+# Starts from gitleaks' default rules, then allowlists values that are
+# intentionally public or are placeholders, so CI stays green.
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Intentionally public token + config placeholders/private file"
+regexes = [
+  # APP_SUBMIT_TOKEN — a public anti-bot token, also present in app.js by design.
+  '''cc625673555839cf5e0d0643f59c0e42''',
+]
+paths = [
+  # Committed template (placeholders only).
+  '''public_html/secrets\.example\.php''',
+  # Private, gitignored config — not in the repo, but ignore it if present locally.
+  '''public_html/secrets\.php''',
+]

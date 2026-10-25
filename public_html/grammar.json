@@ -1,0 +1,1167 @@
+{
+ "_about": "The Grammar tab of the Reference page, for a browser that is not Italian. Each topic: an English intro that explains the concept on English sentences (gr-enx lines), then one point per section with its official-question examples RIGHT AFTER it and an `after` sentence that points at the form in the example just shown, then a recap table last. Every example is a statement of the bank quoted by NUMBER: the app prints its italian_text and english_translation, so an example can never drift from the bank, and validate_data.py fails on a number that is not a live VERO statement or a `hl` that does not occur in it. `hl` is the run of words to mark, matched case-insensitively.",
+ "topics": [
+  {
+   "id": "parse",
+   "title": "Taking a statement apart",
+   "intro": "<p>An English reader finds the parts of a sentence largely by where they sit. The subject comes first, the verb follows it, and a comma marks anything that comes before them or interrupts them. The Ministry's statements follow none of these habits reliably, so a statement in which every word is familiar can still be hard to follow.</p><p>Three differences cause most of the trouble. The subject often comes after the verb, or is not written at all. Long phrases pile up before the main verb, and nothing marks where they end. Descriptions attach to a noun after it, sometimes several in a row, so a noun and its verb can sit far apart.</p><p>Here is a short statement as the Ministry prints it (24843):</p><div class=\"gr-parse-it\">Nei farmaci sedativi sono presenti alcune sostanze che possono compromettere la facoltà di guida</div><p>Taken apart, it has four parts:</p><div class=\"gr-parse\"><div class=\"gr-parse-row\"><span class=\"gr-parse-lab\">Setting</span><span><span class=\"gr-exit\">Nei farmaci sedativi</span><i class=\"gr-parse-en\">In sedative medications</i></span></div><div class=\"gr-parse-row gr-parse-main\"><span class=\"gr-parse-lab\">Main verb</span><span><span class=\"gr-exit\">sono presenti</span><i class=\"gr-parse-en\">are present</i></span></div><div class=\"gr-parse-row\"><span class=\"gr-parse-lab\">Subject</span><span><span class=\"gr-exit\">alcune sostanze</span><i class=\"gr-parse-en\">some substances</i></span></div><div class=\"gr-parse-row\"><span class=\"gr-parse-lab\">Which ones</span><span><span class=\"gr-exit\">che possono compromettere la facoltà di guida</span><i class=\"gr-parse-en\">that can impair the ability to drive</i></span></div></div><p>An English reader takes <i>farmaci sedativi</i> as the subject, because it comes first. It cannot be the subject, because it sits after the preposition <i>nei</i>. The subject is <i>alcune sostanze</i>, and it comes after the verb.</p><p>A long statement combines several of these difficulties at once (24007):</p><div class=\"gr-parse-it\">La limitata visuale offerta dal parabrezza degli autocarri nella zona immediatamente antistante il veicolo rende pericolosa la fermata di tali mezzi in colonna, qualora siano presenti pedoni o mezzi a due ruote</div><p>Taken apart, it has six parts:</p><div class=\"gr-parse\"><div class=\"gr-parse-row\"><span class=\"gr-parse-lab\">Subject</span><span><span class=\"gr-exit\">La limitata visuale</span><i class=\"gr-parse-en\">The limited view</i></span></div><div class=\"gr-parse-row\"><span class=\"gr-parse-lab\">Which view</span><span><span class=\"gr-exit\">offerta dal parabrezza degli autocarri</span><i class=\"gr-parse-en\">offered by the windshield of trucks</i></span></div><div class=\"gr-parse-row\"><span class=\"gr-parse-lab\">Where</span><span><span class=\"gr-exit\">nella zona immediatamente antistante il veicolo</span><i class=\"gr-parse-en\">in the area immediately in front of the vehicle</i></span></div><div class=\"gr-parse-row gr-parse-main\"><span class=\"gr-parse-lab\">Main verb</span><span><span class=\"gr-exit\">rende pericolosa</span><i class=\"gr-parse-en\">makes dangerous</i></span></div><div class=\"gr-parse-row\"><span class=\"gr-parse-lab\">What</span><span><span class=\"gr-exit\">la fermata di tali mezzi in colonna</span><i class=\"gr-parse-en\">stopping such vehicles in a line of traffic</i></span></div><div class=\"gr-parse-row\"><span class=\"gr-parse-lab\">When</span><span><span class=\"gr-exit\">qualora siano presenti pedoni o mezzi a due ruote</span><i class=\"gr-parse-en\">if pedestrians or two-wheeled vehicles are present</i></span></div></div><p>The main verb is the fifteenth word. Everything before it is the subject and the two descriptions attached to it, <i>offerta</i> and <i>antistante</i>. After the verb, the adjective <i>pericolosa</i> comes before the noun it describes, <i>tali mezzi</i> points back to the trucks, and at the end the subject <i>pedoni</i> again follows its verb. Once the statement is taken apart, the rule is simple: a truck's windshield hides the area just in front of it, so stopping trucks in a line is dangerous when pedestrians or two-wheeled vehicles are nearby.</p><p>The missing comma is the difference an English reader usually notices first. English puts a comma after a long opening phrase and after an opening <i>-ing</i> phrase. Italian leaves that comma to the writer, and most statements leave it out. Even after an opening <i>se</i> or <i>quando</i>, where Italian normally does use one, a quarter of the statements in the Ministry test bank do not.</p><p>The way through is to find the MAIN VERB first. Everything before it is either the subject or a phrase that sets the scene, and the words after it complete the sentence. In each line below the main verb is in bold:</p><div class=\"gr-enx\"><span class=\"gr-exit\">Su strade coperte di neve <b>occorre evitare</b> brusche manovre.</span> <i>On snow-covered roads you <b>must avoid</b> abrupt maneuvers.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">Il conducente che intende sorpassare <b>deve accertarsi</b>…</span> <i>The driver who intends to pass <b>must make sure</b>…</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">Nelle aree pedonali <b>possono transitare</b> le biciclette.</span> <i>Bicycles <b>may go</b> through pedestrian areas.</i></div><p>In the first line the subject is left out, because it is you. In the third the subject comes after the verb. The main verb is most often a duty or permission word (<i>è vietato</i>, <i>bisogna</i>, <i>deve</i>, <i>può</i>) or the verb that says what a sign does (<i>indica</i>, <i>preannuncia</i>). The points below show the shapes that hide the verb or its subject most often.</p>",
+   "sections": [
+    {
+     "h": "A phrase that sets the scene: in presenza del segnale, su strade, nelle aree, per svoltare",
+     "p": "<p>Many statements open with a phrase that says where, or in what situation, the rule applies, and no comma follows it. The phrase ends just before the first verb, which is most often <i>è</i>, <i>bisogna</i>, <i>occorre</i>, <i>deve</i> or <i>si</i>. Two such phrases can follow each other, and the second often opens with <i>per</i>, meaning <i>in order to</i>.</p>",
+     "ex": [
+      {
+       "n": "24731",
+       "hl": "Su strade coperte di neve"
+      },
+      {
+       "n": "22851",
+       "hl": "per svoltare a sinistra"
+      }
+     ],
+     "after": "<p>In the first, <i>occorre</i> is the main verb, so <i>su strade coperte di neve</i> is the setting. In the second, two phrases come before <i>bisogna</i>: where (<i>su strada a senso unico</i>) and what for (<i>per svoltare a sinistra</i>).</p>"
+    },
+    {
+     "h": "The subject after the verb: è vietato il, è consentito il, possono circolare i",
+     "p": "<p>In English the subject almost always comes before the verb. The exceptions are a few fixed forms, such as <i>there is a sign</i> or a question, so an English reader takes the first noun as the subject without thinking about it. Italian often puts the subject after the verb, and the statements do it constantly. It happens after <i>è</i> with a word such as <i>vietato</i>, <i>consentito</i> or <i>obbligatorio</i>, and after verbs of movement or change such as <i>circolare</i>, <i>transitare</i> or <i>aumentare</i>.</p><p>Three checks find the subject. First, when the statement opens with a setting or a condition, the nouns inside it belong to that phrase and are not the subject of the main verb. Second, when the main verb is followed by an article and a noun, that noun is probably the subject. Third, check the agreement: a plural verb needs a plural subject, and <i>vietata</i> needs a feminine one, so the noun that fits is the subject.</p>",
+     "ex": [
+      {
+       "n": "23917",
+       "hl": "è vietato il trasporto"
+      },
+      {
+       "n": "18406",
+       "hl": "possono circolare solo i veicoli autorizzati"
+      }
+     ],
+     "after": "<p><i>È vietato il trasporto di minori</i>: the transport of minors is prohibited, and <i>il trasporto</i> is the subject. <i>Possono circolare solo i veicoli autorizzati</i>: only authorized vehicles may travel. <i>I veicoli</i> is the subject of <i>possono</i>, which is why the verb is plural.</p>"
+    },
+    {
+     "h": "No subject written: dobbiamo, abbiamo, possiamo, ci, bisogna, occorre",
+     "p": "<p>English always writes its subject, even when it is only <i>it</i> or <i>you</i>. Italian leaves it out when the verb's ending already says who, so a statement can have no subject word at all. In the statements the missing subject is nearly always you, the driver, and it shows up in three ways.</p><p>A verb ending in <i>-iamo</i>, such as <i>dobbiamo</i>, <i>abbiamo</i> or <i>possiamo</i>, means <i>we</i>, and <i>ci</i> in front of a verb means <i>us</i>. Both refer to the driver reading the statement. <i>Bisogna</i>, <i>occorre</i> and <i>è vietato</i> followed by an infinitive name nobody, and English supplies <i>you must</i> or <i>it is forbidden to</i>. A second verb joined by <i>e</i> or <i>ma</i> keeps the subject of the first.</p>",
+     "ex": [
+      {
+       "n": "20689",
+       "hl": "dobbiamo accertarci"
+      },
+      {
+       "n": "18719",
+       "hl": "bisogna pulire"
+      }
+     ],
+     "after": "<p>In the first, <i>dobbiamo</i> is <i>we must</i>, and in <i>ci diano la precedenza</i> the <i>ci</i> is <i>us</i>: the other vehicles yield to you. In the second, <i>bisogna pulire</i> has no subject at all, and the English supplies <i>you must clean</i>.</p>"
+    },
+    {
+     "h": "A pronoun on the end of the verb: mettersi, fermarsi, bloccarglieli",
+     "p": "<p>Italian attaches small pronouns to the END of an infinitive, where an English reader, looking at the verb, easily skips them. Those endings say who or what the action is about. <i>-si</i> means oneself, the person doing the action, which in the statements is the driver. <i>-lo</i>, <i>-la</i>, <i>-li</i> and <i>-le</i> mean it or them, a thing already named. <i>-gli</i> means to him or for him. Before you decide what the verb is about, read its ending.</p>",
+     "ex": [
+      {
+       "n": "25259",
+       "hl": "evitare di mettersi sotto il veicolo"
+      },
+      {
+       "n": "24921",
+       "hl": "bloccarglieli"
+      }
+     ],
+     "after": "<p>In the first, <i>mettersi</i> is <i>mettere</i> + <i>si</i>, to put oneself: it is you who must not go under the car, not the jack. In the second, <i>bloccarglieli</i> is <i>bloccare</i> + <i>gli</i> + <i>li</i>, to immobilize them (the limbs) for him (the injured person).</p>"
+    },
+    {
+     "h": "Two negative words, one negation: non ... mai, non ... né",
+     "p": "<p>Italian often puts <i>non</i> in front of the verb and a second negative word after it: <i>non ... mai</i> (never), <i>non ... né ... né</i> (neither ... nor), <i>non ... nessuno</i> (nobody), <i>non ... niente</i> (nothing). In English two negatives cancel out or sound wrong; in Italian they do not cancel. The pair is ONE negation, and the second word says what kind.</p>",
+     "ex": [
+      {
+       "n": "31024",
+       "hl": "non deve mai sopravvalutare"
+      },
+      {
+       "n": "18765",
+       "hl": "non guardare né a destra, né a sinistra"
+      }
+     ],
+     "after": "<p><i>Non deve mai sopravvalutare</i>: <i>must never overestimate</i>, not <i>must not never</i>. <i>Non guardare né a destra, né a sinistra</i>: <i>look neither right nor left</i>. So <i>non bisogna mai</i> means <i>you must never</i>, a ban with no exception.</p>"
+    },
+    {
+     "h": "A condition that sets the scene: quando, se",
+     "p": "<p>A clause that opens with <i>quando</i> or <i>se</i> has a verb of its own, so the first verb in the statement is not the main one. The condition ends where a second verb begins. An English sentence puts a comma there.</p>",
+     "ex": [
+      {
+       "n": "20846",
+       "hl": "Quando si incontrano le strisce di figura dipinte sulla pavimentazione"
+      },
+      {
+       "n": "24030",
+       "hl": "Se si traina un rimorchio"
+      }
+     ],
+     "after": "<p>In the first, <i>si incontrano</i> belongs to the condition and <i>occorre</i> is the main verb. In the second, <i>si traina</i> belongs to the condition and <i>aumenta</i> is the main verb, with its subject after it: the braking distance increases.</p>"
+    },
+    {
+     "h": "A gerund that sets the scene: giungendo, percorrendo, dovendo, incontrando",
+     "p": "<p>A verb ending in <i>-ando</i> or <i>-endo</i> at the start of a statement means <i>when</i> or <i>while</i> doing something. The words after it complete that action, and the main verb comes after them. The one doing the action is you, or the vehicle named right after the phrase.</p>",
+     "ex": [
+      {
+       "n": "22890",
+       "hl": "Giungendo in vicinanza di un incrocio"
+      },
+      {
+       "n": "23146",
+       "hl": "Giungendo all'incrocio rappresentato in figura"
+      }
+     ],
+     "after": "<p>In the first, <i>giungendo in vicinanza di un incrocio</i> means when you approach an intersection, and <i>bisogna</i> is the main verb. In the second, the phrase ends at <i>in figura</i>. <i>Il veicolo D</i> is the one arriving, and it is also the subject of the main verb <i>deve</i>.</p>"
+    },
+    {
+     "h": "A subject with a che clause inside it: il conducente che",
+     "p": "<p>When the subject is followed by <i>che</i> and a verb, that clause describes the subject and belongs to it. The subject runs on until a second verb arrives, usually <i>deve</i>, <i>può</i>, <i>è</i> or <i>non</i> with a verb. That second verb is the main one.</p>",
+     "ex": [
+      {
+       "n": "22993",
+       "hl": "Il conducente che intende fermarsi sul margine destro della carreggiata"
+      },
+      {
+       "n": "18703",
+       "hl": "Il conducente che partecipa a gare di velocità non autorizzate su aree pubbliche"
+      }
+     ],
+     "after": "<p>In the first, the subject ends at <i>carreggiata</i> and <i>deve segnalare</i> is the main verb. In the second, it ends at <i>pubbliche</i> and <i>è punito</i> is the main verb: the driver who takes part in such races is punished.</p>"
+    },
+    {
+     "h": "Two kinds of che: indica che, veicoli che",
+     "p": "<p>After a verb of saying or checking, such as <i>indica</i>, <i>preannuncia</i> or <i>accertarsi</i>, <i>che</i> means <i>that</i> and opens what is said or checked. After a noun, <i>che</i> means <i>who</i> or <i>which</i> and describes that noun. One statement often holds both.</p>",
+     "ex": [
+      {
+       "n": "21665",
+       "hl": "indica che"
+      },
+      {
+       "n": "20645",
+       "hl": "sui veicoli che si immettono da destra"
+      }
+     ],
+     "after": "<p>In the first, <i>indica che</i> opens what the sign says, and the later <i>ciclisti che attraversano</i> is a description: cyclists who cross. In the second, the marked <i>che</i> follows the noun <i>veicoli</i>, so it means <i>which</i>: vehicles which merge from the right.</p>"
+    },
+    {
+     "h": "A description after a noun, without che: provenienti da, adibiti al, posto in",
+     "p": "<p>A word ending in <i>-ante</i> or <i>-ente</i> (<i>proveniente</i>, <i>circolante</i>), or a past participle (<i>posto</i>, <i>adibito</i>, <i>destinato</i>, <i>munito</i>), placed after a noun describes that noun. The phrase after it belongs to the description. Read it as <i>which is</i> or <i>which are</i>. It is never the main verb.</p>",
+     "ex": [
+      {
+       "n": "20622",
+       "hl": "veicoli provenienti da destra"
+      },
+      {
+       "n": "19727",
+       "hl": "veicoli adibiti al trasporto di cose"
+      }
+     ],
+     "after": "<p><i>I veicoli provenienti da destra</i>: the vehicles which come from the right. <i>I veicoli adibiti al trasporto di cose</i>: the vehicles which are used to carry goods. The verbs that govern them are elsewhere, <i>ha</i> in the first and <i>vieta</i> in the second.</p>"
+    },
+    {
+     "h": "A chain of di: di, del, della, dei, degli",
+     "p": "<p>Italian builds long noun phrases by joining nouns with <i>di</i> and its forms. Each <i>di</i> attaches to the noun just before it, so the chain is read from left to right, one link at a time. The whole chain is a single noun phrase, and its first noun is the one the sentence is about.</p>",
+     "ex": [
+      {
+       "n": "25240",
+       "hl": "Lo spessore minimo del battistrada degli pneumatici di un autoveicolo"
+      }
+     ],
+     "after": "<p>The minimum thickness, of the tread, of the tires, of a motor vehicle. <i>Lo spessore</i> is the subject, and <i>deve essere</i> is its verb.</p>"
+    },
+    {
+     "h": "An infinitive as the subject: spostare, trainare, viaggiare",
+     "p": "<p>A statement that opens with an infinitive names an action and then says something about it. The infinitive and the words it governs form the subject, and the main verb comes later, often <i>è</i>, <i>può</i> or a verb such as <i>comporta</i>. In English the infinitive becomes a word ending in <i>-ing</i>.</p>",
+     "ex": [
+      {
+       "n": "18698",
+       "hl": "Spostare la segnaletica stradale"
+      },
+      {
+       "n": "24029",
+       "hl": "Trainare un rimorchio su strade con forti salite"
+      }
+     ],
+     "after": "<p><i>Spostare la segnaletica stradale</i> means moving road signs, and <i>può comportare</i> is the main verb. <i>Trainare un rimorchio su strade con forti salite</i> means towing a trailer on steep roads, and <i>fa aumentare</i> is the main verb.</p>"
+    },
+    {
+     "h": "Words that point back: ciò, esso, essa, vi, ne",
+     "p": "<p>A few short words stand for something already named. <i>Ciò</i> means <i>this</i> or <i>that</i> and refers to an action just mentioned. <i>Esso</i> and <i>essa</i> mean <i>it</i> and refer to a thing. <i>Vi</i> means <i>there</i>, as in <i>vi è</i>, <i>there is</i>. <i>Ne</i> means <i>of it</i> or <i>with it</i>. Find the noun such a word refers to before reading on.</p>",
+     "ex": [
+      {
+       "n": "24744",
+       "hl": "se il veicolo ne è provvisto"
+      },
+      {
+       "n": "23842",
+       "hl": "dal bordo esterno di essa"
+      }
+     ],
+     "after": "<p><i>Ne è provvisto</i> means is fitted with it, and <i>ne</i> stands for <i>la doppia trazione</i>, the all-wheel drive. In <i>di essa</i>, <i>essa</i> stands for <i>la carreggiata</i>, the feminine noun named earlier in the statement.</p>"
+    }
+   ],
+   "recap": {
+    "cols": [
+     "Shape",
+     "How to read it"
+    ],
+    "rows": [
+     [
+      "in presenza di…, su strade…, per svoltare…",
+      "the setting ends at the first verb"
+     ],
+     [
+      "è vietato il…, possono circolare i…",
+      "the subject follows the verb"
+     ],
+     [
+      "dobbiamo, ci, bisogna, occorre",
+      "no subject word; it is you, the driver"
+     ],
+     [
+      "mettersi, fermarsi, bloccarglieli",
+      "the ending says who or what: -si oneself, -lo/-li it or them, -gli to him"
+     ],
+     [
+      "non ... mai, non ... né",
+      "one negation: never, neither ... nor"
+     ],
+     [
+      "quando…, se…",
+      "the main verb is the second verb"
+     ],
+     [
+      "giungendo…, percorrendo…",
+      "the main verb comes after the gerund and its words"
+     ],
+     [
+      "il conducente che…",
+      "the main verb follows the che clause"
+     ],
+     [
+      "indica che / veicoli che",
+      "that after a verb, which after a noun"
+     ],
+     [
+      "provenienti da, adibiti al, posto in",
+      "which is, which are; never the main verb"
+     ],
+     [
+      "di, del, della, dei",
+      "each attaches to the noun before it"
+     ],
+     [
+      "spostare…, trainare…",
+      "the action is the subject; the main verb comes later"
+     ],
+     [
+      "ciò, esso, essa, vi, ne",
+      "points back to something already named"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "link",
+   "title": "Linking words: qualora, purché, allorché, in attesa che, in quanto",
+   "intro": "<p>Many statements have two parts: a main part that states the rule, and a second part that says <b>when</b>, <b>on what condition</b>, <b>for what purpose</b> or <b>for what reason</b> the rule applies. A linking word opens the second part. In English these are words such as <i>if</i>, <i>provided that</i>, <i>while</i>, <i>so that</i> and <i>because</i>:</p><div class=\"gr-enx\"><span class=\"gr-exit\">Rallenta <b>qualora</b> piova.</span> <i>Slow down <b>if</b> it rains.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">Puoi passare <b>purché</b> la strada sia libera.</span> <i>You may go <b>provided that</b> the road is clear.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">Resta in auto <b>in attesa che</b> arrivi l'agente.</span> <i>Stay in the car <b>until</b> the officer arrives.</i></div><p>Two things make these words hard for an English reader. Several of them are formal words that are rare outside legal and official Italian, such as <i>qualora</i>, <i>ove</i> and <i>allorché</i>, so a B1 reader may never have met them. And many of them are followed by the subjunctive (<i>sia</i>, <i>piova</i>, <i>arrivi</i>, <i>venga</i>). The subjunctive is a useful signal: it tells you that the second part describes a condition or a possibility, not a fact that is already true.</p><p>If you miss the linking word, you read the condition as part of the rule, and the statement seems to say something it does not say. Each point below takes one linking word or one small group.</p>",
+   "sections": [
+    {
+     "h": "A condition: qualora",
+     "p": "<p><i>Qualora</i> means <i>if</i> or <i>in case</i>. It is formal and is followed by the subjunctive. Read it exactly as <i>se</i>.</p>",
+     "ex": [
+      {
+       "n": "22653",
+       "hl": "qualora sia difficile"
+      }
+     ],
+     "after": "<p><i>Qualora sia difficile</i>: <i>if it is difficult</i>. <i>Sia</i> is the subjunctive of <i>essere</i>, which is why it follows <i>qualora</i>.</p>"
+    },
+    {
+     "h": "A condition: purché",
+     "p": "<p><i>Purché</i> means <i>provided that</i> or <i>as long as</i>. The main part is allowed or required only when the condition after <i>purché</i> is met. It takes the subjunctive, and sometimes it is followed by a participle with no verb at all.</p>",
+     "ex": [
+      {
+       "n": "21001",
+       "hl": "purché lo si possa fare"
+      },
+      {
+       "n": "23912",
+       "hl": "purché custoditi"
+      }
+     ],
+     "after": "<p><i>Purché lo si possa fare</i>: <i>provided that one can do so</i>; <i>possa</i> is the subjunctive of <i>potere</i>. <i>Purché custoditi</i>: <i>provided that they are kept</i>, with <i>siano</i> left out.</p>"
+    },
+    {
+     "h": "A condition: nel caso in cui",
+     "p": "<p><i>Nel caso in cui</i> means <i>in the event that</i> or simply <i>if</i>. It usually takes the subjunctive.</p>",
+     "ex": [
+      {
+       "n": "24179",
+       "hl": "nel caso in cui non funzionino"
+      },
+      {
+       "n": "25035",
+       "hl": "Nel caso in cui"
+      }
+     ],
+     "after": "<p><i>Nel caso in cui non funzionino</i>: <i>in the event that they do not work</i>; <i>funzionino</i> is the subjunctive of <i>funzionare</i>. In the second example the subjunctive is <i>venga rubato</i>, <i>is stolen</i>.</p>"
+    },
+    {
+     "h": "An exception: salvo che",
+     "p": "<p><i>Salvo che</i> means <i>unless</i> or <i>except when</i>. It removes some cases from the rule stated before it. A <i>non</i> after <i>salvo che</i> adds nothing and is not a negation.</p>",
+     "ex": [
+      {
+       "n": "23753",
+       "hl": "salvo che si tratti"
+      },
+      {
+       "n": "22978",
+       "hl": "salvo che non sia esentato"
+      }
+     ],
+     "after": "<p><i>Salvo che si tratti di veicoli a due ruote</i>: <i>unless they are two-wheeled vehicles</i>. <i>Salvo che non sia esentato</i> means <i>unless he is exempt</i>, not <i>unless he is not exempt</i>.</p>"
+    },
+    {
+     "h": "Where, or if: ove",
+     "p": "<p><i>Ove</i> is a formal word for <i>where</i>, and it can also mean <i>if</i> or <i>when</i>. It is not a misspelling of <i>dove</i>.</p>",
+     "ex": [
+      {
+       "n": "23712",
+       "hl": "ove possibile"
+      },
+      {
+       "n": "23711",
+       "hl": "ove non esista"
+      }
+     ],
+     "after": "<p><i>Ove possibile</i>: <i>where possible</i>. <i>Ove non esista marciapiede rialzato</i>: <i>where there is no raised sidewalk</i>; <i>esista</i> is the subjunctive of <i>esistere</i>.</p>"
+    },
+    {
+     "h": "A time: allorché",
+     "p": "<p><i>Allorché</i> is a formal word for <i>when</i>. It sets the moment at which the rule applies, often at the very start of the statement.</p>",
+     "ex": [
+      {
+       "n": "22758",
+       "hl": "Allorché di notte"
+      },
+      {
+       "n": "24992",
+       "hl": "allorché vengano violate"
+      }
+     ],
+     "after": "<p><i>Allorché di notte ... incrociamo</i>: <i>when at night we meet</i>. The verb comes several words later, after the setting <i>di notte, su strada extraurbana</i>. <i>Allorché vengano violate</i>: <i>when (rules) are violated</i>.</p>"
+    },
+    {
+     "h": "A time: in attesa che",
+     "p": "<p><i>In attesa che</i> means <i>while waiting for</i> something to happen, or <i>until</i> it happens. It is built on <i>attesa</i>, the wait, and it takes the subjunctive. The main part describes what you do during the wait.</p>",
+     "ex": [
+      {
+       "n": "24863",
+       "hl": "in attesa che arrivi"
+      },
+      {
+       "n": "24880",
+       "hl": "in attesa che arrivino"
+      }
+     ],
+     "after": "<p><i>In attesa che arrivi il soccorso medico</i>: <i>while waiting for medical help to arrive</i>. <i>Arrivi</i> and <i>arrivino</i> are the subjunctive of <i>arrivare</i>, singular and plural.</p>"
+    },
+    {
+     "h": "A time: prima che, finché",
+     "p": "<p><i>Prima che</i> means <i>before</i> something happens and takes the subjunctive. <i>Finché</i> means <i>as long as</i> or <i>until</i>, depending on the verb after it.</p>",
+     "ex": [
+      {
+       "n": "21203",
+       "hl": "prima che si abbassi"
+      },
+      {
+       "n": "20815",
+       "hl": "finché le strisce sono"
+      }
+     ],
+     "after": "<p><i>Prima che si abbassi la semibarriera</i>: <i>before the half-barrier comes down</i>. <i>Finché le strisce sono ancora discontinue</i>: <i>as long as the lines are still broken</i>.</p>"
+    },
+    {
+     "h": "A purpose: in modo da, in modo che, affinché",
+     "p": "<p>These say what the action is for. <i>In modo da</i> is followed by an infinitive and means <i>so as to</i>. <i>In modo che</i> and <i>affinché</i> are followed by the subjunctive and mean <i>so that</i>.</p>",
+     "ex": [
+      {
+       "n": "22694",
+       "hl": "in modo da evitarne"
+      },
+      {
+       "n": "23614",
+       "hl": "in modo che sia ben visibile"
+      }
+     ],
+     "after": "<p><i>In modo da evitarne la caduta</i>: <i>so as to prevent it from falling</i>. <i>In modo che sia ben visibile</i>: <i>so that it is clearly visible</i>; <i>sia</i> is the subjunctive.</p>"
+    },
+    {
+     "h": "A reason: in quanto, poiché",
+     "p": "<p><i>In quanto</i> and <i>poiché</i> both mean <i>because</i> or <i>since</i>. <i>In quanto</i> does not mean <i>in how much</i>. When <i>poiché</i> opens the statement, the reason comes first and the rule follows.</p>",
+     "ex": [
+      {
+       "n": "22673",
+       "hl": "in quanto costituisce"
+      },
+      {
+       "n": "18834",
+       "hl": "Poiché"
+      }
+     ],
+     "after": "<p><i>In quanto costituisce pericolo</i>: <i>because it constitutes a danger</i>. <i>Poiché la marcia dei ciclisti ...</i>: <i>since cyclists ...</i>, and the rule begins at <i>il conducente</i>.</p>"
+    },
+    {
+     "h": "Even if: anche se",
+     "p": "<p><i>Anche se</i> means <i>even if</i> or <i>even though</i>. It says that the rule still applies in the case it names. It can be followed by a full verb or by an adjective alone.</p>",
+     "ex": [
+      {
+       "n": "25241",
+       "hl": "anche se non sono consumati"
+      },
+      {
+       "n": "24339",
+       "hl": "anche se maggiorenne"
+      }
+     ],
+     "after": "<p><i>Anche se non sono consumati</i>: <i>even if they are not worn</i>. <i>Anche se maggiorenne</i>: <i>even if an adult</i>, with <i>è</i> left out.</p>"
+    }
+   ],
+   "recap": {
+    "cols": [
+     "Word",
+     "Meaning"
+    ],
+    "rows": [
+     [
+      "qualora, nel caso in cui",
+      "if, in the event that (+ subjunctive)"
+     ],
+     [
+      "purché",
+      "provided that (+ subjunctive)"
+     ],
+     [
+      "salvo che",
+      "unless; a non after it is not a negation"
+     ],
+     [
+      "ove",
+      "where, or if (formal)"
+     ],
+     [
+      "allorché",
+      "when (formal)"
+     ],
+     [
+      "in attesa che",
+      "while waiting for, until (+ subjunctive)"
+     ],
+     [
+      "prima che, finché",
+      "before (+ subjunctive); as long as, until"
+     ],
+     [
+      "in modo da, in modo che, affinché",
+      "so as to (+ infinitive); so that (+ subjunctive)"
+     ],
+     [
+      "in quanto, poiché",
+      "because, since"
+     ],
+     [
+      "anche se",
+      "even if, even though"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "aux",
+   "title": "andare and venire in front of a past participle",
+   "intro": "<p>You know the passive with <i>essere</i>. Two other verbs take its place in front of the same participle, and neither means what it means on its own: <b>andare</b> is not going and <b>venire</b> is not coming.</p><div class=\"gr-enx\"><span class=\"gr-exit\">Il negozio è chiuso.</span> <i>The store is closed.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">Il negozio va chiuso.</span> <i>The store must be closed.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">Il negozio viene chiuso.</span> <i>The store is being closed.</i></div><p>The participle is the same word in all three, and it agrees with the subject as it does after <b>essere</b>.</p>",
+   "sections": [
+    {
+     "h": "andare: what must be done",
+     "p": "<p><b>Andare</b> + participle states an obligation and has nothing to do with going. Read <i>va</i> as <i>must be</i>, <i>vanno</i> as the plural. It belongs with the duty words too, and the duty topic sets it against <i>dovere</i>.</p>",
+     "ex": [
+      {
+       "n": "22453",
+       "hl": "va diminuita"
+      },
+      {
+       "n": "23476",
+       "hl": "non va effettuata"
+      }
+     ],
+     "after": "<p><i>Va diminuita</i>: <i>must be reduced</i>. <i>Non va effettuata</i>: <i>must not be performed</i>; the negative goes in front.</p>"
+    },
+    {
+     "h": "venire: something is being done to the subject",
+     "p": "<p><i>È chiuso</i> can mean two things: the store is in a closed state, or somebody is closing it. <b>Venire</b> + participle keeps only the second: something is happening to the subject, and somebody else is doing it. Read <i>viene</i> as <i>is being</i> or <i>gets</i>.</p>",
+     "ex": [
+      {
+       "n": "23474",
+       "hl": "viene sorpassato"
+      },
+      {
+       "n": "23598",
+       "hl": "si viene sorpassati"
+      }
+     ],
+     "after": "<p><i>Il veicolo che viene sorpassato</i>: <i>the vehicle that is being overtaken</i>, by another driver. <i>Se si viene sorpassati</i>: <i>if you are being overtaken</i>; the <i>si</i> makes it <i>you</i>, and the participle goes plural after <i>si</i>.</p>"
+    },
+    {
+     "h": "venire where English says a plain is",
+     "p": "<p>The questions use <b>venire</b> where English is content with <i>is</i>, because the sentence is about the act of placing, not the state of standing there. <i>Viene posto</i> and <i>è posto</i> both translate as <i>is placed</i>.</p>",
+     "ex": [
+      {
+       "n": "21895",
+       "hl": "viene posto"
+      },
+      {
+       "n": "22251",
+       "hl": "vengono posti"
+      }
+     ],
+     "after": "<p><i>Viene</i> for a singular subject, <i>vengono</i> for a plural one: <i>posto</i>, <i>posti</i>.</p>"
+    },
+    {
+     "h": "One venire phrase to know",
+     "p": "<p>The <b>venire</b> passive the questions use most is about the license.</p>",
+     "ex": [
+      {
+       "n": "24579",
+       "hl": "viene immediatamente ritirata"
+      }
+     ],
+     "after": "<p><i>La patente viene ritirata</i>: <i>the license is withdrawn</i>, by the police. The adverb between the two words does not break the pair.</p>"
+    }
+   ],
+   "recap": {
+    "cols": [
+     "Verb",
+     "What it says",
+     "In the questions"
+    ],
+    "rows": [
+     [
+      "essere + participle",
+      "a state, or the plain passive",
+      "è vietata la sosta"
+     ],
+     [
+      "andare + participle",
+      "must be (done)",
+      "va rispettata"
+     ],
+     [
+      "venire + participle",
+      "is being (done), gets (done)",
+      "viene sorpassato"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "who",
+   "title": "Who is doing it to whom: sorpassa, sorpassato, precede, segue",
+   "intro": "<p>Many statements name two vehicles, and the answer turns on which one you are. Italian marks the one acting and the one acted on by the shape of the phrase, not by word order:</p><div class=\"gr-enx\"><span class=\"gr-exit\">Il veicolo che sorpassa.</span> <i>The vehicle that is passing.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">Il veicolo sorpassato.</span> <i>The vehicle being passed.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">Il veicolo che precede.</span> <i>The vehicle ahead.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">Il veicolo che segue.</span> <i>The vehicle behind.</i></div><p>Read the verb form before deciding which vehicle you are.</p>",
+   "sections": [
+    {
+     "h": "The one acting: che + a verb",
+     "p": "<p><i>Che</i> followed by a verb in an ordinary tense names the one doing the action. <i>Il conducente che intende sorpassare</i> is the driver about to pass; <i>il veicolo che sorpassa</i> is the one passing.</p>",
+     "ex": [
+      {
+       "n": "23457",
+       "hl": "che intende sorpassare"
+      },
+      {
+       "n": "23516",
+       "hl": "che sorpassa"
+      }
+     ],
+     "after": "<p>Both <i>intende</i> and <i>sorpassa</i> are active verbs, so both name the vehicle doing the passing.</p>"
+    },
+    {
+     "h": "The one acted on: sorpassato, da sorpassare",
+     "p": "<p>The vehicle on the receiving end is named by the past participle alone, <i>il veicolo sorpassato</i>, or by <i>da</i> + infinitive, <i>il veicolo da sorpassare</i>, <i>the vehicle to be passed</i>. <i>Che viene sorpassato</i> says the same thing with <i>venire</i>.</p>",
+     "ex": [
+      {
+       "n": "23570",
+       "hl": "veicolo sorpassato"
+      },
+      {
+       "n": "23514",
+       "hl": "veicolo da sorpassare"
+      }
+     ],
+     "after": "<p><i>Sorpassato</i> and <i>da sorpassare</i> both name the vehicle being passed; the driver who acts is the other one.</p>"
+    },
+    {
+     "h": "When it is you: si viene sorpassati, essere tamponati",
+     "p": "<p>With <i>si</i> or an impersonal verb the subject is you. <i>Si viene sorpassati</i>: you are being passed. <i>Evitare di essere tamponati dal veicolo che segue</i>: you are the one hit, and <i>dal</i> names who hits you.</p>",
+     "ex": [
+      {
+       "n": "23598",
+       "hl": "si viene sorpassati"
+      },
+      {
+       "n": "22516",
+       "hl": "essere tamponati dal veicolo che segue"
+      }
+     ],
+     "after": "<p>In both, the other vehicle acts and you receive the action; <i>da</i> or <i>dal</i> in front of a vehicle names the one acting.</p>"
+    },
+    {
+     "h": "Ahead and behind: che precede, che segue",
+     "p": "<p><i>Il veicolo che precede</i> is the vehicle ahead of you, <i>il veicolo che segue</i> the one behind. When a pronoun sits in between, <i>che lo precede</i>, <i>che lo segue</i>, the <i>lo</i> is your own vehicle.</p>",
+     "ex": [
+      {
+       "n": "22538",
+       "hl": "del veicolo che lo precede"
+      },
+      {
+       "n": "23460",
+       "hl": "che lo segue"
+      }
+     ],
+     "after": "<p><i>Il veicolo che lo precede</i>: the vehicle that precedes it, that is, ahead of the driver's vehicle. <i>Il conducente che lo segue</i>: the driver behind him.</p>"
+    },
+    {
+     "h": "Yielding: dare la precedenza a, avere la precedenza su",
+     "p": "<p><i>Dare la precedenza a</i> is <i>to yield to</i>: the vehicle after <i>a</i> goes first. <i>Avere la precedenza su</i> is <i>to have the right of way over</i>: the vehicle after <i>su</i> waits.</p>",
+     "ex": [
+      {
+       "n": "21665",
+       "hl": "dare la precedenza ai ciclisti"
+      },
+      {
+       "n": "23125",
+       "hl": "ha la precedenza sul veicolo C"
+      }
+     ],
+     "after": "<p><i>Dare la precedenza ai ciclisti</i>: the cyclists go first. <i>D ha la precedenza sul veicolo C</i>: D goes first and C waits.</p>"
+    },
+    {
+     "h": "Who did it, when the action is a noun: da parte di",
+     "p": "<p>When the action is written as a noun, <i>l'attraversamento</i>, <i>il traino</i>, the one doing it follows <i>da parte di</i>.</p>",
+     "ex": [
+      {
+       "n": "22515",
+       "hl": "da parte di un bambino"
+      },
+      {
+       "n": "23954",
+       "hl": "da parte di un altro"
+      }
+     ],
+     "after": "<p><i>L'attraversamento da parte di un bambino</i>: a child does the crossing. <i>Il traino di un veicolo da parte di un altro</i>: the other vehicle does the towing.</p>"
+    }
+   ],
+   "recap": {
+    "cols": [
+     "Phrase",
+     "Which vehicle"
+    ],
+    "rows": [
+     [
+      "che sorpassa, che intende sorpassare",
+      "the one passing"
+     ],
+     [
+      "sorpassato, da sorpassare, che viene sorpassato",
+      "the one being passed"
+     ],
+     [
+      "si viene sorpassati, essere tamponati",
+      "you, on the receiving end"
+     ],
+     [
+      "da, dal, da parte di",
+      "names the one acting"
+     ],
+     [
+      "che (lo) precede",
+      "the vehicle ahead"
+     ],
+     [
+      "che (lo) segue",
+      "the vehicle behind"
+     ],
+     [
+      "dare la precedenza a",
+      "the other goes first"
+     ],
+     [
+      "avere la precedenza su",
+      "you go first"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "si",
+   "title": "The impersonal si: si può, si deve, si trova",
+   "intro": "<p>English states a rule without naming anyone in three ways, and Italian covers all three with <b>si</b> before a verb in the third person:</p><div class=\"gr-enx\"><span class=\"gr-exit\">Ci si deve fermare alla linea.</span> <i>You must stop at the line.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">Ci si deve fermare alla linea.</span> <i>One must stop at the line.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">Il segnale si può trovare sulle autostrade.</span> <i>The sign can be found on autostrade.</i></div><p>It is the most common construction in the official questions. This <b>si</b> is not the reflexive <i>himself</i> and not <i>yes</i>.</p>",
+   "sections": [
+    {
+     "h": "si + verb: you, one, people in general",
+     "p": "<p>With no noun as subject, <b>si</b> + singular verb means <i>you</i> or <i>one</i> in general.</p>",
+     "ex": [
+      {
+       "n": "19584",
+       "hl": "si viaggia"
+      },
+      {
+       "n": "22891",
+       "hl": "si intende"
+      }
+     ],
+     "after": "<p><i>Si viaggia</i>: <i>you travel</i>. <i>Si intende prendere</i>: <i>you intend to take</i>.</p>"
+    },
+    {
+     "h": "si + verb + noun: a passive",
+     "p": "<p>When a noun follows, the noun is the subject and the verb agrees with it.</p>",
+     "ex": [
+      {
+       "n": "21239",
+       "hl": "si può trovare"
+      },
+      {
+       "n": "21576",
+       "hl": "si possono richiedere"
+      }
+     ],
+     "after": "<p><i>Il segnale si può trovare</i>: <i>the sign can be found</i>. <i>Si possono richiedere informazioni</i>: <i>information can be requested</i>; plural noun, plural verb.</p>"
+    },
+    {
+     "h": "The plural verb is the clue",
+     "p": "<p>A plural verb after <b>si</b> tells you the noun beside it is the subject.</p>",
+     "ex": [
+      {
+       "n": "20680",
+       "hl": "si incrociano"
+      }
+     ],
+     "after": "<p><i>Le strade che si incrociano</i>: <i>the roads that cross</i>.</p>"
+    },
+    {
+     "h": "ci si: si with a reflexive verb",
+     "p": "<p>A reflexive verb already carries <i>si</i> (<i>avvicinarsi</i>, <i>immettersi</i>), and Italian does not write <i>si si</i>. The impersonal one becomes <b>ci</b>.</p>",
+     "ex": [
+      {
+       "n": "19107",
+       "hl": "ci si sta avvicinando"
+      },
+      {
+       "n": "20483",
+       "hl": "ci si immette"
+      }
+     ],
+     "after": "<p><i>Ci si sta avvicinando</i>: <i>you are approaching</i>. <i>Ci si immette</i>: <i>you merge</i>. This <i>ci</i> is not <i>there</i>.</p>"
+    },
+    {
+     "h": "The plural ending after si",
+     "p": "<p>After the impersonal <b>si</b> a participle or adjective goes into the masculine plural, because the unnamed <i>you</i> counts as more than one person. The verb stays singular.</p>",
+     "ex": [
+      {
+       "n": "18501",
+       "hl": "si è usciti"
+      },
+      {
+       "n": "31031",
+       "hl": "si è affaticati"
+      }
+     ],
+     "after": "<p><i>Si è usciti</i>: <i>you have exited</i>. <i>Si è affaticati</i>: <i>you are fatigued</i>. The <i>-i</i> is the rule, not a mistake.</p>"
+    },
+    {
+     "h": "The same ending after si rimane",
+     "p": "<p><b>Rimanere</b> after <b>si</b> takes the same plural participle.</p>",
+     "ex": [
+      {
+       "n": "22495",
+       "hl": "si rimane bloccati"
+      }
+     ],
+     "after": "<p><i>Si rimane bloccati</i>: <i>you are stuck</i>.</p>"
+    },
+    {
+     "h": "non si: the negative",
+     "p": "<p>The negative goes in front of <b>si</b>.</p>",
+     "ex": [
+      {
+       "n": "21294",
+       "hl": "non si incrociano"
+      }
+     ],
+     "after": "<p><i>Non si incrociano veicoli</i>: <i>no vehicles are encountered</i>. Read the <i>non</i> before deciding what the sentence claims.</p>"
+    }
+   ],
+   "recap": {
+    "cols": [
+     "Form",
+     "What it says",
+     "In the questions"
+    ],
+    "rows": [
+     [
+      "si + singular verb",
+      "you, one",
+      "si viaggia"
+     ],
+     [
+      "si + verb + noun",
+      "the noun is the subject; a passive",
+      "si può trovare il segnale"
+     ],
+     [
+      "si + plural verb + plural noun",
+      "same, plural",
+      "si possono richiedere informazioni"
+     ],
+     [
+      "ci si + reflexive verb",
+      "you (with a reflexive verb)",
+      "ci si immette"
+     ],
+     [
+      "si è + participle in -i",
+      "you have, you are",
+      "si è usciti"
+     ],
+     [
+      "non si + verb",
+      "you cannot, you must not",
+      "non si può"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "duty",
+   "title": "A duty: va, deve essere, obbligatorio, bisogna, occorre, necessario, si deve, tenuto a",
+   "intro": "<p>The questions state a duty with a fixed set of phrases. They all mean <i>must</i>, and differ in how the sentence is built around them:</p><div class=\"gr-enx\"><span class=\"gr-exit\">Il negozio va chiuso.</span> <i>The store must be closed.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">Il negozio deve essere chiuso.</span> <i>The store must be closed.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">Bisogna chiudere il negozio.</span> <i>You have to close the store.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">Il gestore è tenuto a chiudere il negozio.</span> <i>The manager is required to close the store.</i></div><p>The first two put the duty on the thing; the third on nobody in particular; only the last names the person.</p>",
+   "sections": [
+    {
+     "h": "A duty: va + past participle",
+     "p": "<p><b>Andare</b> in front of a past participle states an obligation, and has nothing to do with going. Read <i>va</i> as <i>must be</i> and <i>vanno</i> as the plural; the participle agrees with the subject.</p>",
+     "ex": [
+      {
+       "n": "22453",
+       "hl": "va diminuita"
+      },
+      {
+       "n": "23476",
+       "hl": "non va effettuata"
+      }
+     ],
+     "after": "<p><i>Va diminuita</i>: <i>must be reduced</i>. <i>Non va effettuata</i>: <i>must not be performed</i>; the negative goes in front.</p>"
+    },
+    {
+     "h": "A duty: deve essere, and dovere with a person",
+     "p": "<p><b>Andare</b> + participle says the same thing as <i>deve essere</i> + participle, and the questions use both for the same rule. The difference is only in what the sentence is about: with <b>andare</b> or <i>deve essere</i> the subject is the thing the duty falls on, and nobody is named; with <b>dovere</b> + infinitive the subject is the person who must act.</p>",
+     "ex": [
+      {
+       "n": "19584",
+       "hl": "deve essere rispettato"
+      },
+      {
+       "n": "22384",
+       "hl": "deve essere regolata"
+      }
+     ],
+     "after": "<p><i>Deve essere rispettato</i> could be written <i>va rispettato</i> with no change of meaning. To name the driver the questions switch to the infinitive: <i>il conducente deve regolare la velocità</i>.</p>"
+    },
+    {
+     "h": "A duty: è obbligatorio",
+     "p": "<p><i>È obbligatorio</i> is <i>it is mandatory</i>, and it is used two ways. Before an infinitive it is fixed as <i>obbligatorio</i>. As an adjective it agrees with its noun: <i>obbligatoria</i>, <i>obbligatori</i>.</p>",
+     "ex": [
+      {
+       "n": "19580",
+       "hl": "è obbligatorio mantenere"
+      },
+      {
+       "n": "25059",
+       "hl": "è obbligatoria"
+      }
+     ],
+     "after": "<p><i>È obbligatorio mantenere</i>: <i>it is mandatory to maintain</i>. <i>L'assicurazione è obbligatoria</i>: feminine, because <i>assicurazione</i> is.</p>"
+    },
+    {
+     "h": "A duty: bisogna",
+     "p": "<p><i>Bisogna</i> is <i>you have to</i>. It never has a subject and never changes form: always <i>bisogna</i>, always an infinitive after it.</p>",
+     "ex": [
+      {
+       "n": "21441",
+       "hl": "bisogna proseguire"
+      }
+     ],
+     "after": "<p><i>Bisogna proseguire</i>: <i>you have to continue</i>. Nobody is named; the duty is everybody's.</p>"
+    },
+    {
+     "h": "A duty: occorre",
+     "p": "<p><i>Occorre</i> is <i>it is necessary</i>, used like <i>bisogna</i>: no subject, an infinitive after it. On its own, <i>se occorre</i> is <i>if need be</i>.</p>",
+     "ex": [
+      {
+       "n": "22117",
+       "hl": "occorre diminuire"
+      }
+     ],
+     "after": "<p><i>Occorre diminuire</i>: <i>it is necessary to reduce</i>.</p>"
+    },
+    {
+     "h": "A duty: è necessario",
+     "p": "<p><i>È necessario</i> says what <i>occorre</i> says, in two shapes. Before an infinitive it is fixed. As an adjective it agrees with its noun and says what the thing is needed <i>for</i>, with <i>per</i>.</p>",
+     "ex": [
+      {
+       "n": "19047",
+       "hl": "è necessario arrestarsi"
+      },
+      {
+       "n": "24237",
+       "hl": "è necessario per"
+      }
+     ],
+     "after": "<p><i>È necessario arrestarsi</i>: <i>it is necessary to stop</i>. <i>L'uso è necessario per segnalare</i>: <i>the use is needed to signal</i>.</p>"
+    },
+    {
+     "h": "A duty: si deve",
+     "p": "<p><i>Si deve</i> is <i>you must</i>, with the impersonal <b>si</b> and an infinitive. When the verb is reflexive, a second pronoun appears: <i>ci si deve</i>.</p>",
+     "ex": [
+      {
+       "n": "21445",
+       "hl": "si deve proseguire"
+      },
+      {
+       "n": "22891",
+       "hl": "si deve spostare"
+      }
+     ],
+     "after": "<p><i>Si deve proseguire</i>: <i>you must continue</i>. <i>Ci si deve spostare</i>: <i>you must move over</i>; the <i>ci</i> is there because <i>spostarsi</i> is reflexive.</p>"
+    },
+    {
+     "h": "A duty: è tenuto a",
+     "p": "<p><i>È tenuto a</i> is <i>is required to</i>, and unlike the words above it names the person under the duty, so it agrees with that person: <i>è tenuto a</i>, <i>sono tenuti a</i>. An infinitive follows the <i>a</i>.</p>",
+     "ex": [
+      {
+       "n": "23570",
+       "hl": "è tenuto a evitare"
+      }
+     ],
+     "after": "<p><i>Il conducente è tenuto a evitare</i>: <i>the driver is required to avoid</i>.</p>"
+    }
+   ],
+   "recap": {
+    "cols": [
+     "Word",
+     "How it is used"
+    ],
+    "rows": [
+     [
+      "va + participle",
+      "must be (done); agrees with the subject"
+     ],
+     [
+      "deve essere + participle",
+      "the same duty; dovere + infinitive names the person"
+     ],
+     [
+      "è obbligatorio",
+      "+ infinitive; as an adjective it agrees"
+     ],
+     [
+      "bisogna, occorre",
+      "+ infinitive, never a subject"
+     ],
+     [
+      "è necessario",
+      "+ infinitive; as an adjective, with per"
+     ],
+     [
+      "si deve",
+      "+ infinitive; ci si deve with a reflexive"
+     ],
+     [
+      "è tenuto a",
+      "names the person; + infinitive"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "advice",
+   "title": "Advice: opportuno, consigliabile, conviene",
+   "intro": "<p>Three phrases say that something is wise, not required. Each takes an infinitive:</p><div class=\"gr-enx\"><span class=\"gr-exit\">È opportuno fermarsi.</span> <i>It is advisable to stop.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">È consigliabile fermarsi.</span> <i>It is advisable to stop.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">Conviene fermarsi.</span> <i>It is best to stop.</i></div><p>None of them says the Code obliges anyone, which is the difference from a duty.</p>",
+   "sections": [
+    {
+     "h": "Advice: è opportuno",
+     "p": "<p><i>È opportuno</i> is <i>it is advisable</i>: wise, not required. Before an infinitive it is fixed. Before a clause it takes <i>che</i> and the subjunctive.</p>",
+     "ex": [
+      {
+       "n": "19374",
+       "hl": "è opportuno mantenere"
+      },
+      {
+       "n": "24782",
+       "hl": "è opportuno che vi sia"
+      }
+     ],
+     "after": "<p><i>È opportuno mantenere</i>: <i>it is advisable to keep</i>. <i>È opportuno che vi sia</i>: <i>it is advisable that there be</i>; <i>sia</i> is the subjunctive of <i>essere</i>.</p>"
+    },
+    {
+     "h": "Advice: è consigliabile",
+     "p": "<p><i>È consigliabile</i> is <i>it is advisable</i>, the same strength as <i>è opportuno</i>, with an infinitive after it. <i>Non</i> goes in front of the infinitive, not in front of <i>è</i>.</p>",
+     "ex": [
+      {
+       "n": "18832",
+       "hl": "è consigliabile suonare"
+      },
+      {
+       "n": "19490",
+       "hl": "è consigliabile non avvicinarsi"
+      }
+     ],
+     "after": "<p><i>È consigliabile suonare</i>: <i>it is advisable to sound</i>. <i>È consigliabile non avvicinarsi</i>: <i>it is advisable not to get close</i>.</p>"
+    },
+    {
+     "h": "Advice: conviene",
+     "p": "<p><i>Conviene</i> is <i>it is best to</i>, with an infinitive; here it has nothing to do with convenience. <i>Non conviene</i> is <i>it is best not to</i>.</p>",
+     "ex": [
+      {
+       "n": "22647",
+       "hl": "conviene aumentare"
+      },
+      {
+       "n": "25144",
+       "hl": "non conviene fare"
+      }
+     ],
+     "after": "<p><i>Conviene aumentare</i>: <i>it is best to increase</i>. <i>Non conviene fare uso</i>: <i>it is best not to use</i>.</p>"
+    }
+   ],
+   "recap": {
+    "cols": [
+     "Word",
+     "How it is used"
+    ],
+    "rows": [
+     [
+      "è opportuno, è consigliabile",
+      "+ infinitive; è opportuno che + subjunctive"
+     ],
+     [
+      "conviene",
+      "+ infinitive"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "permission",
+   "title": "Permission: consentito, si può",
+   "intro": "<p>Two phrases grant a permission, and a permission is not a duty:</p><div class=\"gr-enx\"><span class=\"gr-exit\">È consentita la sosta.</span> <i>Parking is permitted.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">È consentito sostare.</span> <i>It is permitted to park.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">Si può sostare.</span> <i>You may park.</i></div><p><i>Consentito</i> agrees with a noun and stays fixed before an infinitive; <i>si può</i> takes an infinitive.</p>",
+   "sections": [
+    {
+     "h": "Permission: è consentito",
+     "p": "<p><i>È consentito</i> is <i>it is permitted</i>, used two ways. Before a noun it agrees with the noun: <i>è consentito il campeggio</i>, <i>è consentita la sosta</i>. Before an infinitive it stays <i>consentito</i>.</p>",
+     "ex": [
+      {
+       "n": "21268",
+       "hl": "è consentito il campeggio"
+      },
+      {
+       "n": "19561",
+       "hl": "è consentito sorpassare"
+      }
+     ],
+     "after": "<p><i>È consentito il campeggio</i>: <i>camping is permitted</i>. <i>È consentito sorpassare</i>: <i>it is permitted to overtake</i>.</p>"
+    },
+    {
+     "h": "Permission: si può",
+     "p": "<p><i>Si può</i> is <i>you may</i> or <i>can be</i>, with an infinitive. When the thing that can be done is plural, the verb goes plural: <i>si possono</i>.</p>",
+     "ex": [
+      {
+       "n": "21256",
+       "hl": "si può trovare"
+      },
+      {
+       "n": "21043",
+       "hl": "si possono trovare"
+      }
+     ],
+     "after": "<p><i>Il segnale si può trovare</i>: <i>the sign can be found</i>. <i>Le luci si possono trovare</i>: <i>the lights can be found</i>; plural <i>luci</i>, plural <i>possono</i>.</p>"
+    }
+   ],
+   "recap": {
+    "cols": [
+     "Word",
+     "How it is used"
+    ],
+    "rows": [
+     [
+      "è consentito",
+      "agrees with a noun; fixed before an infinitive"
+     ],
+     [
+      "si può, si possono",
+      "+ infinitive; plural with a plural thing"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "ban",
+   "title": "A ban: vietato, non è consentito, non si può",
+   "intro": "<p>A ban is written with <i>vietato</i> or by negating a permission:</p><div class=\"gr-enx\"><span class=\"gr-exit\">È vietata la sosta.</span> <i>Parking is prohibited.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">È vietato sostare.</span> <i>It is forbidden to park.</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">Non si può sostare.</span> <i>You may not park.</i></div><p><i>Vietato</i> behaves exactly like <i>consentito</i>: it agrees with a noun and stays fixed before an infinitive.</p>",
+   "sections": [
+    {
+     "h": "A ban: è vietato",
+     "p": "<p><i>È vietato</i> is <i>it is forbidden</i>, and it works like <i>consentito</i>: it agrees with a noun and stays fixed before an infinitive.</p>",
+     "ex": [
+      {
+       "n": "18893",
+       "hl": "è vietata l'inversione"
+      },
+      {
+       "n": "19593",
+       "hl": "è vietato superare"
+      }
+     ],
+     "after": "<p><i>È vietata l'inversione</i>: feminine, because <i>inversione</i> is. <i>È vietato superare</i>: <i>it is forbidden to exceed</i>.</p>"
+    },
+    {
+     "h": "A ban: non è consentito, non si può",
+     "p": "<p>The two permission forms say a ban from the other side: <i>non è consentito</i> is <i>it is not permitted</i>, <i>non si può</i> is <i>you may not</i>.</p>",
+     "ex": [
+      {
+       "n": "19072",
+       "hl": "non è consentito sostare"
+      },
+      {
+       "n": "20993",
+       "hl": "non si può proseguire"
+      }
+     ],
+     "after": "<p><i>Non è consentito sostare</i>: <i>it is not permitted to park</i>. <i>Non si può proseguire</i>: <i>you may not continue</i>.</p>"
+    }
+   ],
+   "recap": {
+    "cols": [
+     "Word",
+     "How it is used"
+    ],
+    "rows": [
+     [
+      "è vietato",
+      "agrees with a noun; fixed before an infinitive"
+     ],
+     [
+      "non è consentito, non si può",
+      "the permission forms negated"
+     ]
+    ]
+   }
+  }
+ ]
+}

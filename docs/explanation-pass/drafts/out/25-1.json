@@ -1,0 +1,121 @@
+{
+ "read": 206,
+ "rewrites": {
+  "23050": {
+   "en": "False. O waits for two vehicles, not for all of them. The tram passes first because it runs on rails, and A, which is on O's right, moves up to the center of the intersection for its left turn. Then O crosses. M comes from O's left, so M waits for O, and A completes its turn after M has gone by.",
+   "it": "Falso. O attende due veicoli, non tutti. Il tram passa per primo perché viaggia su rotaia, e A, che si trova alla destra di O, si porta al centro dell'incrocio per svoltare a sinistra. Poi O attraversa. M proviene dalla sinistra di O, quindi è M ad attendere O, e A completa la svolta dopo il passaggio di M.",
+   "fails": "1"
+  },
+  "23074": {
+   "en": "False. R has its right free, so it yields to no one and passes first. C has A on its right, and A in turn waits for R, so C passes last. Two vehicles cross at the same time only when their paths never meet and neither still owes the way to another vehicle. C still owes the way to A, so the order is R, then A, then C.",
+   "it": "Falso. R ha la destra libera, quindi non deve la precedenza a nessuno e passa per primo. C ha A alla propria destra, e A a sua volta attende R, quindi C passa per ultimo. Due veicoli attraversano contemporaneamente solo se le loro traiettorie non si incontrano mai e nessuno dei due deve ancora la precedenza a un altro veicolo. C deve ancora la precedenza ad A, quindi l'ordine è R, poi A, poi C.",
+   "fails": "1"
+  },
+  "23089": {
+   "en": "False. E comes from B's right, so the right-hand rule obliges B to let E through. E in turn waits for A, so B moves only after both and passes last. The vehicle that yields to no one is A, which has nobody on its right. The order is A, E, B.",
+   "it": "Falso. E proviene dalla destra di B, quindi la regola della precedenza a destra obbliga B a lasciarlo passare. E a sua volta attende A, quindi B si muove solo dopo entrambi e passa per ultimo. Il veicolo che non deve la precedenza a nessuno è A, che non ha nessuno alla propria destra. L'ordine è A, E, B.",
+   "fails": "1"
+  },
+  "23092": {
+   "en": "False. A has nobody on its right, so it passes first, before E and not after it. E has A on its right and goes second. B has E on its right and goes last. Two vehicles cross at the same time only when their paths never meet and neither still owes the way to another vehicle, and here each vehicle waits for the one before it.",
+   "it": "Falso. A non ha nessuno alla propria destra, quindi passa per primo, prima di E e non dopo. E ha A alla propria destra e passa per secondo. B ha E alla propria destra e passa per ultimo. Due veicoli attraversano contemporaneamente solo se le loro traiettorie non si incontrano mai e nessuno dei due deve ancora la precedenza a un altro veicolo, e qui ogni veicolo attende quello che lo precede.",
+   "fails": "1"
+  },
+  "23093": {
+   "en": "False. A has nobody on its right, so it does pass before E. B cannot go with it, because B has E on its right and must wait for E. Two vehicles cross at the same time only when their paths never meet and neither still owes the way to another vehicle. The vehicles cross one at a time in the order A, E, B.",
+   "it": "Falso. A non ha nessuno alla propria destra, quindi passa davvero prima di E. B non può muoversi insieme ad A, perché ha E alla propria destra e deve attenderlo. Due veicoli attraversano contemporaneamente solo se le loro traiettorie non si incontrano mai e nessuno dei due deve ancora la precedenza a un altro veicolo. I veicoli attraversano uno alla volta nell'ordine A, E, B.",
+   "fails": "1"
+  },
+  "23117": {
+   "en": "False. D opens correctly, because its right turn crosses nobody's path. The second place is wrong: P comes from B's right, so B must let P through before it moves. N waits for all the others and passes last. The order is D, P, B, N.",
+   "it": "Falso. D apre correttamente, perché la sua svolta a destra non incrocia la traiettoria di nessuno. Il secondo posto è sbagliato: P proviene dalla destra di B, quindi B deve lasciar passare P prima di muoversi. N attende tutti gli altri e passa per ultimo. L'ordine è D, P, B, N.",
+   "fails": "1"
+  },
+  "23128": {
+   "en": "False. It is the other way round. D arrives from C's right, so the right-hand rule obliges C to wait for D. D has its own right free, so it yields to no one and enters first. The order is D, C, A, H.",
+   "it": "Falso. È il contrario. D arriva dalla destra di C, quindi la regola della precedenza a destra obbliga C ad attendere D. D ha la propria destra libera, quindi non deve la precedenza a nessuno ed entra per primo. L'ordine è D, C, A, H.",
+   "fails": "1"
+  },
+  "23133": {
+   "en": "False. The first vehicle is D, which has its right free and yields to no one. C passes second, because it must let D clear first. H finds its right occupied at every stage, so it waits for D, C and A and passes last. The order is D, C, A, H.",
+   "it": "Falso. Il primo veicolo è D, che ha la destra libera e non deve la precedenza a nessuno. C passa per secondo, perché deve prima lasciar passare D. H si trova la destra impegnata in ogni fase, quindi attende D, C e A e passa per ultimo. L'ordine è D, C, A, H.",
+   "fails": "1"
+  },
+  "23142": {
+   "en": "False. Two vehicles cross at the same time only when their paths never meet. D and L come from facing arms and their paths cross, so they cannot go together. L yields to no one and passes first. D must wait for L, and also for A and C, so it passes last and not before A.",
+   "it": "Falso. Due veicoli attraversano contemporaneamente solo se le loro traiettorie non si incontrano mai. D e L provengono da bracci opposti e le loro traiettorie si incrociano, quindi non possono passare insieme. L non deve la precedenza a nessuno e passa per primo. D deve attendere L, e anche A e C, quindi passa per ultimo e non prima di A.",
+   "fails": "1"
+  },
+  "23337": {
+   "en": "False. A yields to one vehicle only. L arrives from A's right, so A waits for L. C is beside A on the same approach and their paths do not conflict, so A and C cross together. D must wait for A, so A has precedence over D.",
+   "it": "Falso. A dà la precedenza a un solo veicolo. L arriva dalla destra di A, quindi A attende L. C è affiancato ad A sullo stesso accesso e le loro traiettorie non confliggono, quindi A e C attraversano insieme. D deve attendere A, quindi A ha la precedenza su D.",
+   "fails": "1"
+  },
+  "23167": {
+   "en": "False. R is the first vehicle to clear the intersection. B, which turns left, enters and stops at the center, and that move carries it out of R's way. D and N have R arriving from their right, so they wait for R and then pass together. B completes its turn last, after N has gone by.",
+   "it": "Falso. R è il primo veicolo a liberare l'incrocio. B, che svolta a sinistra, entra e si ferma al centro, e con questo spostamento lascia libero il passaggio a R. D e N hanno R in arrivo dalla propria destra, quindi attendono R e poi passano insieme. B completa la svolta per ultimo, dopo il passaggio di N.",
+   "fails": "1"
+  },
+  "23345": {
+   "en": "False. R arrives from B's left, so B is on R's right and R is the one that yields. Going straight gives R no precedence over a vehicle on its right. B therefore enters before R and moves to the center of the intersection. The vehicle B must wait for is N, which comes from the opposite arm and goes straight across the path of B's left turn.",
+   "it": "Falso. R arriva dalla sinistra di B, quindi B si trova alla destra di R ed è R a dover dare la precedenza. Proseguire diritto non dà a R alcuna precedenza su un veicolo che ha alla propria destra. B entra quindi prima di R e si porta al centro dell'incrocio. Il veicolo che B deve attendere è N, che arriva dal braccio opposto e prosegue diritto tagliando la traiettoria della svolta a sinistra di B.",
+   "fails": "1"
+  },
+  "23192": {
+   "en": "False. Only a vehicle turning left waits at the center of an intersection. Every other vehicle enters when it can clear the intersection in one movement. Here the vehicles cross one at a time in the order C, A, L, R, E.",
+   "it": "Falso. Solo un veicolo che svolta a sinistra attende al centro dell'incrocio. Ogni altro veicolo entra quando può liberare l'incrocio in un unico movimento. Qui i veicoli attraversano uno alla volta nell'ordine C, A, L, R, E.",
+   "fails": "1,6"
+  },
+  "23200": {
+   "en": "False. Each vehicle here waits for the one coming from its right. E waits only for A, and V waits for E. H must let A, E and V pass, and C waits for H. H and C therefore pass last, not second and third, and the order is A, E, V, H, C.",
+   "it": "Falso. Qui ogni veicolo attende quello che proviene dalla propria destra. E attende solo A, e V attende E. H deve lasciar passare A, E e V, e C attende H. H e C passano quindi per ultimi, non per secondo e per terzo, e l'ordine è A, E, V, H, C.",
+   "fails": "1"
+  },
+  "23203": {
+   "en": "False. Each vehicle here waits for the one coming from its right, so no two of them cross together. Two vehicles cross at the same time only when their paths never meet and neither still owes the way to another vehicle. A passes first, V waits for A and E, and C waits for all the others. The order is A, E, V, H, C.",
+   "it": "Falso. Qui ogni veicolo attende quello che proviene dalla propria destra, quindi nessun veicolo attraversa insieme a un altro. Due veicoli attraversano contemporaneamente solo se le loro traiettorie non si incontrano mai e nessuno dei due deve ancora la precedenza a un altro veicolo. A passa per primo, V attende A ed E, e C attende tutti gli altri. L'ordine è A, E, V, H, C.",
+   "fails": "1"
+  },
+  "23217": {
+   "en": "True. S travels on the priority road, and R faces a give-way sign, so R must wait for S. The only other vehicle on the priority road is A, which turns left across S's path and therefore yields to S. S passes first. R also turns left across E, so it passes last, and the order is S, A, E, R.",
+   "it": "Vero. S percorre la strada con diritto di precedenza, mentre R ha davanti il segnale di dare precedenza, quindi R deve attendere S. L'unico altro veicolo sulla strada con diritto di precedenza è A, che svolta a sinistra tagliando la traiettoria di S e quindi gli dà la precedenza. S passa per primo. R inoltre svolta a sinistra tagliando la traiettoria di E, quindi passa per ultimo, e l'ordine è S, A, E, R.",
+   "fails": "1"
+  },
+  "23221": {
+   "en": "True. R faces a give-way sign, so it waits for S and A, which travel on the priority road. E faces the same sign, but E goes straight while R turns left across E's path, and a left turn gives way to the oncoming vehicle it crosses. R therefore waits for E as well. The order is S, A, E, R.",
+   "it": "Vero. R ha davanti il segnale di dare precedenza, quindi attende S e A, che percorrono la strada con diritto di precedenza. E ha lo stesso segnale, ma prosegue diritto mentre R svolta a sinistra tagliandone la traiettoria, e chi svolta a sinistra dà la precedenza al veicolo che gli viene incontro e di cui taglia la traiettoria. R attende quindi anche E. L'ordine è S, A, E, R.",
+   "fails": "1"
+  },
+  "23222": {
+   "en": "False. E and R both face a give-way sign, so both wait for S and A, which travel on the priority road. Between the two, E goes straight and R turns left across E's path. A left turn gives way to the oncoming vehicle it crosses, so R waits for E. E passes third and R last.",
+   "it": "Falso. E ed R hanno entrambi davanti il segnale di dare precedenza, quindi entrambi attendono S e A, che percorrono la strada con diritto di precedenza. Tra i due, E prosegue diritto ed R svolta a sinistra tagliandone la traiettoria. Chi svolta a sinistra dà la precedenza al veicolo che gli viene incontro e di cui taglia la traiettoria, quindi è R ad attendere E. E passa per terzo ed R per ultimo.",
+   "fails": "1"
+  },
+  "23223": {
+   "en": "False. R faces a give-way sign. A vehicle held by a give-way sign waits at the sign, before the intersection, and enters only when it can complete the crossing. Waiting at the center is for a left-turning vehicle that no sign holds back. R passes last in the order S, A, E, R.",
+   "it": "Falso. R ha davanti il segnale di dare precedenza. Un veicolo trattenuto dal segnale di dare precedenza attende al segnale, prima dell'incrocio, ed entra solo quando può completare l'attraversamento. L'attesa al centro riguarda il veicolo che svolta a sinistra e che nessun segnale trattiene. R passa per ultimo nell'ordine S, A, E, R.",
+   "fails": "1"
+  },
+  "23228": {
+   "en": "True. C and R travel on the priority road, while A faces a give-way sign with triangles painted across its lane. A therefore lets both of them clear before it enters. A does not wait for H, which faces a give-way sign too and finds A on its right. The order is C, R, A, H.",
+   "it": "Vero. C e R percorrono la strada con diritto di precedenza, mentre A ha davanti il segnale di dare precedenza con i triangoli tracciati sulla corsia. A lascia quindi passare entrambi prima di entrare. A non attende H, che ha a sua volta il segnale di dare precedenza e si trova A alla propria destra. L'ordine è C, R, A, H.",
+   "fails": "1"
+  },
+  "23234": {
+   "en": "False. The last two vehicles are swapped. A and H both face a give-way sign, so both wait for C and R on the priority road. Between the two, H finds A on its right, so the right-hand rule puts A before H. The correct order is C, R, A, H.",
+   "it": "Falso. Gli ultimi due veicoli sono scambiati. A e H hanno entrambi davanti il segnale di dare precedenza, quindi entrambi attendono C e R, che percorrono la strada con diritto di precedenza. Tra i due, H si trova A alla propria destra, quindi la regola della precedenza a destra mette A prima di H. L'ordine corretto è C, R, A, H.",
+   "fails": "1"
+  },
+  "23236": {
+   "en": "False. A and H both face a give-way sign, so both wait for C and R on the priority road. Between the two, H finds A on its right, so H waits for A and not the reverse. A passes third in the order C, R, A, H.",
+   "it": "Falso. A e H hanno entrambi davanti il segnale di dare precedenza, quindi entrambi attendono C e R, che percorrono la strada con diritto di precedenza. Tra i due, H si trova A alla propria destra, quindi è H ad attendere A e non il contrario. A passa per terzo nell'ordine C, R, A, H.",
+   "fails": "1"
+  },
+  "23246": {
+   "en": "False. It is A that waits for O, because O arrives from A's right. O waits only for the tram T, which runs on rails and has precedence over ordinary vehicles. The order is T, O, A.",
+   "it": "Falso. È A ad attendere O, perché O arriva dalla destra di A. O attende solo il tram T, che viaggia su rotaia e ha la precedenza sui veicoli ordinari. L'ordine è T, O, A.",
+   "fails": "1"
+  }
+ },
+ "problems": []
+}

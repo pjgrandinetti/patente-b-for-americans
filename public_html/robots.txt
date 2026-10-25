@@ -1,0 +1,17 @@
+# Patente B — public study app (https://patente.physyapps.com)
+User-agent: *
+Allow: /
+
+Sitemap: https://patente.physyapps.com/sitemap.xml
+
+# NOTHING IS DISALLOWED, and the four data files are the reason to say so.
+# questions.json, abridged.json, topic_reviews.json and vocabulary.json were
+# disallowed until 20260928g on the reasoning that a crawler has no use for
+# them. The cost of that was invisible and larger: Googlebot RENDERS the page
+# to see what a visitor sees, its rendering fetches obey this file, so its
+# render of "/" could not load questions.json, `loadDataFile` threw, and
+# `showLoadError()` ran. What Google saw may have been "Couldn't load the
+# questions" rather than the app. The raw HTML carries 4,135 words of static
+# text and Google may have fallen back to that, but it is a coin flip taken
+# for no gain: crawl budget is not a constraint on a site of 27 URLs.
+# Do not re-add these lines.

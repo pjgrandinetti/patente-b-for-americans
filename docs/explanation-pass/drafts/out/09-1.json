@@ -1,0 +1,84 @@
+{
+ "read": 134,
+ "rewrites": {
+  "22541": {
+   "en": "True. The ordinary safe distance is never a fixed number, but this case has a fixed one. Outside built-up areas, when a no-passing rule applies only to certain categories of vehicle, those vehicles must keep at least 100 m from one another. Here the category is goods vehicles over 3.5 t. The rule applies on a road with one lane per direction and does not apply where there are two or more lanes per direction.",
+   "it": "Vero. La normale distanza di sicurezza non è mai un numero fisso, ma questo caso ne ha uno. Fuori dei centri abitati, quando il divieto di sorpasso vale solo per alcune categorie di veicoli, quei veicoli devono tenersi ad almeno 100 m l'uno dall'altro. Qui la categoria è quella dei veicoli per merci oltre 3,5 t. La regola vale su strada a una corsia per senso di marcia e non si applica dove le corsie per senso di marcia sono due o più.",
+   "fails": "1"
+  },
+  "22546": {
+   "en": "False. The word 'anche' (also) is not the trap here, because the true statements about the safe distance use it too. The factor named decides the answer. The safe distance is measured along the road, in the direction in which you must stop. The width of your vehicle does not change how much road stopping takes. Its speed, load, brakes and tires do.",
+   "it": "Falso. La parola 'anche' qui non è il trucco, perché la usano anche le affermazioni vere sulla distanza di sicurezza. Decide il fattore indicato. La distanza di sicurezza si misura lungo la strada, nella direzione in cui devi fermarti. La larghezza del veicolo non cambia quanta strada serve per l'arresto. La cambiano la velocità, il carico, i freni e gli pneumatici.",
+   "fails": "6"
+  },
+  "22553": {
+   "en": "False. The minimum safe distance is your reaction distance, which is the road you cover in about one second before braking begins. Above that minimum it grows with speed, reaction time, the condition of the vehicle, the weather and the road. The visibility distance is how far ahead you can see, and it is a separate quantity. On a clear, straight road you can see much farther than the gap you must keep, so the safe distance is not tied to it.",
+   "it": "Falso. La distanza minima di sicurezza è lo spazio di reazione, cioè la strada percorsa in circa un secondo prima che inizi la frenata. Sopra quel minimo cresce con la velocità, il tempo di reazione, lo stato del veicolo, il meteo e la strada. La distanza di visibilità è quanto lontano riesci a vedere davanti a te, ed è una grandezza a parte. Su una strada dritta e sgombra vedi molto più lontano dello spazio che devi mantenere, quindi la distanza di sicurezza non è legata a essa.",
+   "fails": "3,6"
+  },
+  "22570": {
+   "en": "False. The emergency lane (*corsia di emergenza*) is the strip on an autostrada for stopping in a breakdown or emergency. It is for stopping, not for driving, so no larger safe distance is prescribed for traveling in it. The safe distance grows with speed, weather, load and the driver's condition, not with the lane.",
+   "it": "Falso. La corsia di emergenza è la striscia dell'autostrada destinata alla fermata in caso di guasto o di emergenza. Serve per fermarsi, non per la marcia, quindi nessuna distanza di sicurezza maggiore è prevista per chi la percorre. La distanza di sicurezza cresce con la velocità, il meteo, il carico e le condizioni del conducente, non con la corsia.",
+   "fails": "1,3"
+  },
+  "22577": {
+   "en": "False. The distance traveled during reaction time is the minimum, and the safe distance can never be less. During your reaction time, about one second, you are not braking yet, while the vehicle ahead may already be slowing. A gap shorter than that road is used up before your brakes begin to act. The safe distance may be greater than this minimum.",
+   "it": "Falso. Lo spazio percorso nel tempo di reazione è il minimo, e la distanza di sicurezza non può mai essere inferiore. Durante il tempo di reazione, circa un secondo, non stai ancora frenando, mentre il veicolo che precede può già rallentare. Uno spazio più corto di quella strada si consuma prima che i tuoi freni inizino ad agire. La distanza di sicurezza può essere maggiore di questo minimo.",
+   "fails": "1"
+  },
+  "22588": {
+   "en": "True. Distraction takes the driver's eyes or mind off the road during the seconds that matter. Anything that delays your reaction lengthens the reaction distance, which is the road covered before braking begins. At 100 km/h one second of inattention is about 28 m driven without looking. Using a phone, lighting a cigarette and searching for the radio controls are common examples.",
+   "it": "Vero. La distrazione toglie gli occhi o la mente del conducente dalla strada proprio nei secondi che contano. Tutto ciò che ritarda la reazione allunga lo spazio di reazione, cioè la strada percorsa prima che inizi la frenata. A 100 km/h un secondo di disattenzione sono circa 28 m percorsi senza guardare. Usare il cellulare, accendere una sigaretta e cercare i comandi della radio sono esempi comuni.",
+   "fails": "6"
+  },
+  "22603": {
+   "en": "True. The braking distance is the road covered from the start of braking to the standstill. It grows with the square of the speed, not in proportion to it. At double the speed it is two times two, which is four times as long. At triple the speed it is nine times as long.",
+   "it": "Vero. Lo spazio di frenatura è la strada percorsa dall'inizio della frenata all'arresto. Cresce con il quadrato della velocità, non in proporzione a essa. A velocità doppia è due per due, cioè quattro volte più lungo. A velocità tripla è nove volte più lungo.",
+   "fails": "1"
+  },
+  "22613": {
+   "en": "False. Stopping has two separate parts. The reaction distance is the road covered from perceiving the danger to the moment braking begins, and quick reflexes shorten that part. The braking distance (*spazio di frenatura*) runs from the start of braking to the standstill. By then the driver has already reacted, so it depends on speed, grip, slope and the brakes, not on reflexes.",
+   "it": "Falso. L'arresto ha due parti distinte. Lo spazio di reazione è la strada percorsa dalla percezione del pericolo all'inizio della frenata, e i riflessi pronti accorciano questa parte. Lo spazio di frenatura va dall'inizio della frenata all'arresto. A quel punto il conducente ha già reagito, quindi dipende da velocità, aderenza, pendenza e freni, non dai riflessi.",
+   "fails": "1,3"
+  },
+  "22624": {
+   "en": "False. The distance covered during reaction time runs from perceiving the danger to the moment braking begins. At that moment the vehicle is still moving at full speed. It then covers the braking distance, from the start of braking to the standstill. The total stopping distance is the sum of the two, so it is longer than the reaction distance alone.",
+   "it": "Falso. Lo spazio percorso nel tempo di reazione va dalla percezione del pericolo all'inizio della frenata. In quell'istante il veicolo si muove ancora a piena velocità. Percorre poi lo spazio di frenatura, dall'inizio della frenata all'arresto. Lo spazio totale di arresto è la somma dei due, quindi è più lungo del solo spazio di reazione.",
+   "fails": "1"
+  },
+  "22625": {
+   "en": "False. The distance covered during braking runs only from the start of braking to the standstill. Before braking begins, the vehicle has already traveled the reaction distance, from perceiving the danger to the moment the brakes act. The total stopping distance is the sum of the two, so it is longer than the braking distance alone.",
+   "it": "Falso. Lo spazio percorso durante la frenata va solo dall'inizio della frenata all'arresto. Prima che la frenata inizi, il veicolo ha già percorso lo spazio di reazione, dalla percezione del pericolo al momento in cui i freni agiscono. Lo spazio totale di arresto è la somma dei due, quindi è più lungo del solo spazio di frenatura.",
+   "fails": "1"
+  },
+  "22631": {
+   "en": "False. The total stopping distance is the reaction distance plus the braking distance. Braking works through the grip between tire and road. Tires that are not worn keep their grip, so they do not lengthen the braking part. Worn tires grip less, and they are the ones that increase the total stopping distance.",
+   "it": "Falso. Lo spazio totale di arresto è lo spazio di reazione più lo spazio di frenatura. La frenata agisce attraverso l'aderenza tra pneumatico e strada. Gli pneumatici non usurati conservano l'aderenza, quindi non allungano la parte di frenatura. Gli pneumatici usurati fanno meno presa, e sono questi ad aumentare lo spazio totale di arresto.",
+   "fails": "1"
+  },
+  "22651": {
+   "en": "False. Every vehicle must keep a safe distance from the vehicle ahead, so that it can stop in time and avoid a collision. A motor quadricycle (*quadriciclo a motore*) is a small four-wheeled motor vehicle. It is bound by the rule like cars, trucks, motorcycles and every other vehicle, and not in its place. Read the whole sentence: strike «solo dai quadricicli a motore» and what is left is true; the added words are what make the statement false.",
+   "it": "Falso. Ogni veicolo deve tenere una distanza di sicurezza dal veicolo che precede, per potersi arrestare in tempo ed evitare la collisione. Un quadriciclo a motore è un piccolo veicolo a motore a quattro ruote. È tenuto alla regola come le autovetture, gli autocarri, i motocicli e ogni altro veicolo, e non al loro posto. Leggi tutta la frase: togli «solo dai quadricicli a motore» e ciò che resta è vero; sono le parole aggiunte a rendere falsa l'affermazione.",
+   "fails": "3"
+  },
+  "22661": {
+   "en": "False. Behind a truck (*autocarro*) the safe distance is never reduced. You cannot see the road past it, so you learn of a danger only when the truck itself brakes. The truck's longer braking distance is no reason to close up, because your gap must still cover the road you travel during your own reaction time.",
+   "it": "Falso. Dietro un autocarro la distanza di sicurezza non va mai ridotta. Non vedi la strada oltre il veicolo, quindi ti accorgi di un pericolo solo quando l'autocarro stesso frena. Il suo spazio di frenatura più lungo non è un motivo per avvicinarsi, perché il tuo spazio deve comunque coprire la strada che percorri durante il tuo tempo di reazione.",
+   "fails": "1,6"
+  }
+ },
+ "problems": [
+  {
+   "number": "22548",
+   "note": "Left as is, but the explanation calls 10 m 'the classic wrong number', which alludes to the question bank; consider dropping that clause."
+  },
+  {
+   "number": "22553",
+   "note": "The review does not define 'distanza di visibilità'; the rewrite defines it only by the plain meaning of the words (how far ahead you can see). Verify."
+  },
+  {
+   "number": "22651",
+   "note": "The review defines light and non-light quadricycles separately (topic 16) but has no single definition of 'quadriciclo a motore'; the rewrite says only 'a small four-wheeled motor vehicle'. Verify."
+  }
+ ]
+}

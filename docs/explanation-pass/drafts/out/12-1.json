@@ -1,0 +1,178 @@
+{
+ "read": 190,
+ "rewrites": {
+  "23618": {
+   "en": "False. On a parking disc (*disco orario*) you show the time you arrived, hour and minutes, never the time the parking will end. A warden reads the arrival time and works out when the allowed period ends. The arrival time may also be written on a sheet of paper, but it is still the arrival time that is shown.",
+   "it": "Falso. Sul disco orario si indica l'ora di arrivo, ora e minuti, mai l'ora in cui la sosta finirà. Chi controlla legge l'ora di arrivo e calcola quando scade il periodo consentito. L'ora di arrivo può anche essere scritta su un foglio di carta, ma ciò che si indica resta l'ora di arrivo.",
+   "fails": "6"
+  },
+  "23621": {
+   "en": "False. The arrival time must be shown with its minutes. It may be set on the parking disc (*disco orario*) or written on a sheet of paper, and in both cases it gives the hour and the minutes. Without the minutes a warden cannot work out when the allowed period ends.",
+   "it": "Falso. L'ora di arrivo va indicata con i minuti. Si può impostare sul disco orario oppure scrivere su un foglio di carta, e in entrambi i casi comprende l'ora e i minuti. Senza i minuti chi controlla non può calcolare quando scade il periodo consentito.",
+   "fails": "6"
+  },
+  "23626": {
+   "en": "False. During a *sosta* the engine is switched off, however short the stay. A sosta is parking: the vehicle is left standing and the driver may walk away. Switching the engine off is part of securing the parked vehicle, and keeping it running for the air conditioning is no exception.",
+   "it": "Falso. Durante la sosta il motore va spento, per quanto breve sia la sosta. La sosta è il parcheggio: il veicolo resta fermo e il conducente può allontanarsi. Spegnere il motore fa parte della messa in sicurezza del veicolo in sosta, e tenerlo acceso per l'aria condizionata non è un'eccezione.",
+   "fails": "1,6"
+  },
+  "23628": {
+   "en": "True. The seat and the headrest are set to the driver's own build before moving off, together with the mirrors. The headrest is a safety device, not a comfort one. Adjusted for height and angle, it prevents whiplash.",
+   "it": "Vero. Il sedile e il poggiatesta si regolano secondo la statura di chi guida prima di partire, insieme agli specchi. Il poggiatesta è un dispositivo di sicurezza, non di comodità. Regolato in altezza e inclinazione, previene il colpo di frusta.",
+   "fails": "1"
+  },
+  "23629": {
+   "en": "True. The inside mirror and the outside mirrors are all adjusted before moving off, together with the seat and the headrest. They are set for the driver's own build. A setting left by another driver may not show the road behind and beside the vehicle.",
+   "it": "Vero. Lo specchio interno e quelli esterni si regolano tutti prima di partire, insieme al sedile e al poggiatesta. Si regolano secondo la statura di chi guida. Una regolazione lasciata da un altro conducente può non mostrare la strada dietro e a fianco del veicolo.",
+   "fails": "1"
+  },
+  "23630": {
+   "en": "True. The rule on a motorcycle is the same as in a car: the mirrors are adjusted to the rider's own build before moving off. A mirror set for a rider of another height may not show the road behind.",
+   "it": "Vero. Sul motociclo la regola è la stessa dell'auto: gli specchi si regolano secondo la statura di chi guida prima di partire. Uno specchio regolato per un conducente di altra statura può non mostrare la strada alle spalle.",
+   "fails": "1"
+  },
+  "23631": {
+   "en": "True. The driver must carry the documents needed for driving, and each of them must be valid. The statement names them: the vehicle registration document (*carta di circolazione*), the insurance certificate and the driver's license. This is one of the checks made before moving off, together with confirming that the license category covers the vehicle.",
+   "it": "Vero. Il conducente deve avere con sé i documenti necessari per la guida, e ciascuno deve essere in corso di validità. L'affermazione li nomina: la carta di circolazione, il certificato di assicurazione e la patente. È uno dei controlli da fare prima di partire, insieme alla verifica che la categoria della patente copra il veicolo.",
+   "fails": "1"
+  },
+  "23632": {
+   "en": "True. A license is issued for a category, and each category covers only certain vehicles. Before driving a vehicle you must be certain that the category you hold covers it. This check goes together with carrying valid documents.",
+   "it": "Vero. La patente è rilasciata per una categoria, e ogni categoria copre solo certi veicoli. Prima di guidare un veicolo bisogna essere certi che la categoria posseduta lo comprenda. Questo controllo va insieme a quello di avere con sé documenti validi.",
+   "fails": "1"
+  },
+  "23633": {
+   "en": "True. The vehicle must be in working order, and the driver makes sure of it before moving off. The check is made before every drive, not only before a long trip. The same preparation includes finding the controls and learning what they do.",
+   "it": "Vero. Il veicolo deve essere in efficienza, e il conducente se ne accerta prima di partire. Il controllo si fa prima di ogni guida, non solo prima di un lungo viaggio. La stessa preparazione comprende individuare i comandi e capire come funzionano.",
+   "fails": "1"
+  },
+  "23634": {
+   "en": "True. Before moving off the driver checks that whatever the vehicle carries is stowed so that it cannot fall or scatter. A load that falls onto the road is a danger for the vehicles that follow. The same check covers visibility: the load must not block the view to the rear and to the sides.",
+   "it": "Vero. Prima di partire il conducente controlla che ciò che il veicolo trasporta sia sistemato in modo da non cadere né disperdersi. Un carico che cade sulla strada è un pericolo per i veicoli che seguono. Lo stesso controllo riguarda la visibilità: il carico non deve ostacolare la vista posteriore e laterale.",
+   "fails": "1"
+  },
+  "23635": {
+   "en": "True. The driver must be able to see to the rear and to the sides. Passengers or a badly placed load can block that view. The driver therefore checks it before moving off, together with checking that the load is secure against falling.",
+   "it": "Vero. Il conducente deve poter vedere dietro e ai lati. I passeggeri o un carico mal posizionato possono ostacolare questa vista. Il conducente la controlla quindi prima di partire, insieme al controllo che il carico sia assicurato contro la caduta.",
+   "fails": "1"
+  },
+  "23636": {
+   "en": "True. Before driving a vehicle the driver finds the controls needed for driving, the levers and the buttons, and learns how each one works. This matters most in a vehicle the driver does not know. It belongs to the same preparation as checking that the vehicle is in working order.",
+   "it": "Vero. Prima di guidare un veicolo il conducente individua i comandi necessari per la guida, leve e pulsanti, e ne comprende il funzionamento. Conta soprattutto su un veicolo che il conducente non conosce. Fa parte della stessa preparazione del controllo dell'efficienza del veicolo.",
+   "fails": "1"
+  },
+  "23637": {
+   "en": "True. Before moving off the driver checks that every passenger has fastened the seatbelt. Seatbelts are worn in all seats, and a short trip or a low speed is no exception.",
+   "it": "Vero. Prima di partire il conducente controlla che ogni passeggero abbia allacciato la cintura di sicurezza. Le cinture si indossano su tutti i sedili, e un tragitto breve o una velocità bassa non fanno eccezione.",
+   "fails": "1"
+  },
+  "23639": {
+   "en": "False. Nothing asks the driver to switch off the driver's airbag before moving off. The airbag is a safety device that works together with the seatbelt. The airbag that is sometimes switched off is the front passenger's, when a rear-facing child seat is placed on that seat. The real checks before driving are the seat, headrest and mirrors, the documents and license category, the vehicle's working order, the load, the visibility and the seatbelts.",
+   "it": "Falso. Nulla chiede al conducente di disinserire il proprio airbag prima di partire. L'airbag è un dispositivo di sicurezza che lavora insieme alla cintura. L'airbag che a volte si disattiva è quello del passeggero anteriore, quando su quel sedile si mette un seggiolino rivolto all'indietro. I veri controlli prima di guidare riguardano sedile, poggiatesta e specchi, documenti e categoria di patente, efficienza del veicolo, carico, visibilità e cinture.",
+   "fails": "1,6"
+  },
+  "23648": {
+   "en": "False. No fixed number of minutes defines a *fermata*. A fermata is a brief, voluntary halt during which the driver stays with the vehicle, ready to move off. What separates it from a *sosta*, which is parking, is the purpose of the halt and whether the driver stays, not a clock.",
+   "it": "Falso. Nessun numero fisso di minuti definisce la fermata. La fermata è una sospensione breve e volontaria della marcia durante la quale il conducente resta con il veicolo, pronto a ripartire. A distinguerla dalla sosta, che è il parcheggio, sono lo scopo e la presenza del conducente, non un orologio.",
+   "fails": "1,6"
+  },
+  "23666": {
+   "en": "True. A train or a tram runs on rails and cannot steer around a vehicle in its way. The *fermata*, which is a brief halt with the driver present, is therefore banned on the tracks of railroads and tramways alike. It is also banned beside the tracks when the vehicle would be close enough to obstruct the rail vehicles. Where the fermata is banned, parking is banned as well.",
+   "it": "Vero. Un treno o un tram corre su rotaie e non può scansare un veicolo che gli sta davanti. La fermata, cioè la breve sospensione della marcia con il conducente presente, è quindi vietata sui binari sia ferroviari sia tranviari. È vietata anche accanto ai binari quando il veicolo sarebbe così vicino da intralciare i veicoli su rotaia. Dove è vietata la fermata, è vietata anche la sosta.",
+   "fails": "1"
+  },
+  "23672": {
+   "en": "False. The right margin of the carriageway is the normal place for a *fermata*, which is a brief halt with the driver present. Outside built-up areas the vehicle goes off the carriageway if possible, and otherwise as close as possible to the right margin. The fermata is banned in particular places, such as curves, crests, tunnels and intersections, not along the right margin in general.",
+   "it": "Falso. Il margine destro della carreggiata è il posto normale per la fermata, che è una breve sospensione della marcia con il conducente presente. Fuori dai centri abitati il veicolo va collocato fuori della carreggiata se possibile, altrimenti il più vicino possibile al margine destro. La fermata è vietata in luoghi determinati, come curve, dossi, gallerie e incroci, non lungo il margine destro in generale.",
+   "fails": "1"
+  },
+  "23675": {
+   "en": "False. A *passo carrabile* is a driveway, the access by which vehicles pass between the road and a property beside it. Where it opens onto the road the *sosta* is banned, because a parked vehicle whose driver has walked away would block the access. A *fermata* is a brief halt with the driver still at the vehicle and ready to move at once. It obstructs nobody, so it remains allowed there.",
+   "it": "Falso. Il passo carrabile è l'accesso con cui i veicoli passano tra la strada e una proprietà laterale. Dove sbocca sulla strada è vietata la sosta, perché un veicolo parcheggiato, con il conducente lontano, bloccherebbe l'accesso. La fermata è una breve sospensione della marcia con il conducente ancora al veicolo e pronto a spostarsi subito. Non intralcia nessuno, quindi lì resta consentita.",
+   "fails": "1,3"
+  },
+  "23695": {
+   "en": "False. A *passo carrabile* is a driveway, the access by which vehicles pass between the road and a property beside it. Where it opens onto the road the *sosta* is banned, because a parked vehicle whose driver has walked away would block the access. A *fermata* is a brief halt with the driver still at the vehicle and ready to move at once. It obstructs nobody, so it remains allowed there.",
+   "it": "Falso. Il passo carrabile è l'accesso con cui i veicoli passano tra la strada e una proprietà laterale. Dove sbocca sulla strada è vietata la sosta, perché un veicolo parcheggiato, con il conducente lontano, bloccherebbe l'accesso. La fermata è una breve sospensione della marcia con il conducente ancora al veicolo e pronto a spostarsi subito. Non intralcia nessuno, quindi lì resta consentita.",
+   "fails": "1,3"
+  },
+  "23683": {
+   "en": "False. The pictured sign is NO PARKING (*divieto di sosta*), a blue circle with a red border and a single red diagonal. It forbids the *sosta*, which is parking, where the driver may walk away. A *fermata* is a brief halt with the driver present, and it remains allowed past this sign. The sign that forbids the fermata as well is NO STOPPING (*divieto di fermata*), [a blue circle with a red cross made of two diagonals](notes:domandeb_images/4141.svg).",
+   "it": "Falso. Il segnale raffigurato è il DIVIETO DI SOSTA, un cerchio blu con bordo rosso e una sola diagonale rossa. Vieta la sosta, cioè il parcheggio, in cui il conducente può allontanarsi. La fermata è una breve sospensione della marcia con il conducente presente, e oltre questo segnale resta consentita. Il segnale che vieta anche la fermata è il DIVIETO DI FERMATA, [un cerchio blu con una croce rossa formata da due diagonali](notes:domandeb_images/4141.svg).",
+   "fails": "1,2"
+  },
+  "23685": {
+   "en": "False. On an autostrada stopping is banned as a rule, and an emergency is the exception. An emergency stop (*sosta di emergenza*) is a halt because the vehicle has broken down, or because the driver or a passenger is suddenly unwell. It is made in the emergency lane (*corsia di emergenza*), [the strip beside the carriageway set off by a continuous line](notes:domandeb_images/4238.png), and it may last three hours at most. Read the whole sentence: strike «anche in caso di emergenza» and what is left is true; the added words are what make the statement false.",
+   "it": "Falso. In autostrada la fermata è vietata di regola, e l'emergenza è l'eccezione. La sosta di emergenza è l'interruzione della marcia perché il veicolo è in avaria, o perché il conducente o un passeggero ha un malessere improvviso. Si effettua nella corsia di emergenza, [la striscia a lato della carreggiata delimitata da una linea continua](notes:domandeb_images/4238.png), e può durare al massimo tre ore. Leggi tutta la frase: togli «anche in caso di emergenza» e ciò che resta è vero; sono le parole aggiunte a rendere falsa l'affermazione.",
+   "fails": "1,3"
+  },
+  "23686": {
+   "en": "False. In built-up areas the *fermata* and the *sosta* are banned on the intersection and near it at less than 5 meters (16 ft), unless signs provide otherwise. The statement turns the distance around. Beyond 5 meters from the intersection this ban no longer applies.",
+   "it": "Falso. Nei centri abitati la fermata e la sosta sono vietate sull'incrocio e in sua prossimità a meno di 5 metri, salvo diversa segnalazione. L'affermazione rovescia la distanza. Oltre i 5 metri dall'incrocio questo divieto non vale più.",
+   "fails": "1"
+  },
+  "23693": {
+   "en": "False. On a pedestrian crossing both parking and the *fermata*, the brief halt with the driver present, are always banned. Letting a passenger get out is no exception. A vehicle standing on the stripes hides the pedestrians and forces them to step into traffic to get around it.",
+   "it": "Falso. Sull'attraversamento pedonale sono sempre vietate sia la sosta sia la fermata, cioè la breve sospensione della marcia con il conducente presente. Far scendere un passeggero non è un'eccezione. Un veicolo fermo sulle strisce nasconde i pedoni e li costringe a scendere nel traffico per aggirarlo.",
+   "fails": "1"
+  },
+  "23708": {
+   "en": "False. A parked vehicle is secured with the parking brake and the lowest gear, which means first or reverse. The engine resists the wheels most in the lowest gear, which is also why engine braking is strongest in first. Fourth is a high gear and holds the vehicle far less. The rule is the same on an uphill and on a downhill road.",
+   "it": "Falso. Il veicolo in sosta si blocca con il freno di stazionamento e la marcia più bassa, cioè la prima o la retromarcia. Il motore trattiene di più le ruote con la marcia più bassa, ed è per questo che anche il freno motore è massimo in prima. La quarta è una marcia alta e trattiene il veicolo molto meno. La regola è la stessa in salita e in discesa.",
+   "fails": "1"
+  },
+  "23728": {
+   "en": "True. A train or a tram runs on rails and cannot steer around a vehicle in its way. Parking (*sosta*) is therefore banned on the tracks of railroads and tramways alike. It is also banned beside the tracks when the vehicle would be close enough to obstruct the rail vehicles. In these places even the brief halt with the driver present is banned.",
+   "it": "Vero. Un treno o un tram corre su rotaie e non può scansare un veicolo che gli sta davanti. La sosta è quindi vietata sui binari sia ferroviari sia tranviari. È vietata anche accanto ai binari quando il veicolo sarebbe così vicino da intralciare i veicoli su rotaia. In questi luoghi è vietata perfino la breve fermata con il conducente presente.",
+   "fails": "1"
+  },
+  "23749": {
+   "en": "False. A bike path (*pista ciclabile*) and its outlets are protected alike: parking and the brief halt are banned on both in every case. An outlet is the point where the path opens onto the road. A vehicle standing there cuts the cyclists off and forces them out into traffic, and a short stay changes nothing. Read the whole sentence: strike «ma non agli sbocchi di esse nel caso sia di breve durata» and what is left is true; the added words are what make the statement false.",
+   "it": "Falso. La pista ciclabile e i suoi sbocchi sono protetti allo stesso modo: sosta e fermata sono vietate su entrambi in ogni caso. Lo sbocco è il punto in cui la pista si apre sulla strada. Un veicolo fermo lì taglia la strada ai ciclisti e li costringe a uscire nel traffico, e la breve durata non cambia nulla. Leggi tutta la frase: togli «ma non agli sbocchi di esse nel caso sia di breve durata» e ciò che resta è vero; sono le parole aggiunte a rendere falsa l'affermazione.",
+   "fails": "1,3"
+  },
+  "23772": {
+   "en": "False. A pedestrian area (*area pedonale*) is a zone closed to vehicles and reserved for people on foot. Ordinary cars may not enter it at all, so parking there is banned. A short *sosta* is still a sosta, and its length changes nothing.",
+   "it": "Falso. L'area pedonale è una zona interdetta ai veicoli e riservata ai pedoni. Le normali automobili non possono nemmeno entrarvi, quindi la sosta vi è vietata. Una sosta breve è pur sempre una sosta, e la durata non cambia nulla.",
+   "fails": "1,3"
+  },
+  "23773": {
+   "en": "False. A space marked for emergency or public-hygiene services carries a ban on the *sosta* only. A sosta is parking, where the driver may walk away from the vehicle. A *fermata* is a brief halt with the driver present and ready to move at once, and it is not banned there. Read the whole sentence: the ban on sosta is real, and the clause adding the fermata is what makes the statement false.",
+   "it": "Falso. Lo spazio destinato ai servizi di emergenza o di igiene pubblica ha un divieto di sola sosta. La sosta è il parcheggio, in cui il conducente può allontanarsi dal veicolo. La fermata è una breve sospensione della marcia con il conducente presente e pronto a spostarsi subito, e lì non è vietata. Leggi tutta la frase: il divieto di sosta è vero, ed è la clausola che aggiunge la fermata a rendere falsa l'affermazione.",
+   "fails": "1"
+  },
+  "23774": {
+   "en": "False. In front of urban waste bins (*cassonetti*) the ban covers the *sosta* only. A sosta is parking, where the driver may walk away, and a parked vehicle would keep the bins from being reached. A *fermata* is a brief halt with the driver present and ready to move at once, so it remains allowed there. Read the whole sentence: the ban on sosta is real, and the clause adding the fermata is what makes the statement false.",
+   "it": "Falso. Davanti ai cassonetti dei rifiuti urbani il divieto riguarda la sola sosta. La sosta è il parcheggio, in cui il conducente può allontanarsi, e un veicolo parcheggiato impedirebbe di raggiungere i cassonetti. La fermata è una breve sospensione della marcia con il conducente presente e pronto a spostarsi subito, quindi lì resta consentita. Leggi tutta la frase: il divieto di sosta è vero, ed è la clausola che aggiunge la fermata a rendere falsa l'affermazione.",
+   "fails": "1"
+  },
+  "23793": {
+   "en": "False. A *sosta di emergenza* is a halt because the vehicle is unusable through a breakdown, or because the driver or a passenger is suddenly unwell. Letting a disabled person get out is a choice, not an emergency. It is an ordinary *fermata*: a brief, voluntary halt to let people get in or out, with the driver present.",
+   "it": "Falso. La sosta di emergenza è l'interruzione della marcia perché il veicolo è inutilizzabile per avaria, o perché il conducente o un passeggero ha un malessere improvviso. Far scendere una persona invalida è una scelta, non un'emergenza. È una normale fermata: una sospensione breve e volontaria della marcia per far salire o scendere persone, con il conducente presente.",
+   "fails": "1,3"
+  },
+  "23794": {
+   "en": "False. A *sosta di emergenza* is a halt because the vehicle is unusable through a breakdown, or because the driver or a passenger is suddenly unwell. Letting a disabled person get in is a choice, not an emergency. It is an ordinary *fermata*: a brief, voluntary halt to let people get in or out, with the driver present.",
+   "it": "Falso. La sosta di emergenza è l'interruzione della marcia perché il veicolo è inutilizzabile per avaria, o perché il conducente o un passeggero ha un malessere improvviso. Far salire una persona invalida è una scelta, non un'emergenza. È una normale fermata: una sospensione breve e volontaria della marcia per far salire o scendere persone, con il conducente presente.",
+   "fails": "1,3"
+  }
+ },
+ "problems": [
+  {
+   "number": "23792",
+   "note": "Left alone because it teaches the four terms, but it names 'the exam' / 'l'esame' and uses capitals for emphasis; outside the rubric's test, flagged for the maintainer."
+  },
+  {
+   "number": "23718",
+   "note": "Left alone because it teaches the rule, but it uses capitals for emphasis and runs to six sentences; outside the rubric's test."
+  },
+  {
+   "number": "23702",
+   "note": "Left alone. It says only that lights are not needed in a lit area; when position lights ARE required during a night sosta is not stated in the topic 12 review, so nothing was added."
+  },
+  {
+   "number": "23618",
+   "note": "Old explanation (and 23621's) said a time written on paper is not valid; the review says the arrival time may be written on a sheet of paper, minutes included. Both rewritten to follow the review."
+  }
+ ]
+}

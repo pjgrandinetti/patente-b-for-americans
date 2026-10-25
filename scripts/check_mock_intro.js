@@ -1,0 +1,45 @@
+// The mock exam as a full simulation (maintainer, 2026-10-01): Start on the main page opens a blank sheet under a dialog, the clock starts only on Start, the nav is locked during the exam, the app icon abandons it after a confirmation and saves nothing, and the clock runs to a fixed end time even while the app is away. Run: node scripts/check_mock_intro.js (UILANG=it-IT).
+const {JSDOM}=require(process.env.JSDOM||'/tmp/node_modules/jsdom'); const fs=require('fs');
+const root=process.env.SRC||require('path').resolve(__dirname,'../public_html');
+const LANG=process.env.UILANG||'en-US'; const IT=LANG.startsWith('it');
+let html=fs.readFileSync(root+'/index.html','utf8').replace(/<script[^>]*src="app\.js[^>]*><\/script>/,'');
+const dom=new JSDOM(html,{url:'https://patente.physyapps.com/',runScripts:'dangerously',pretendToBeVisual:true});
+const w=dom.window; Object.defineProperty(w.navigator,'language',{value:LANG}); Object.defineProperty(w.navigator,'languages',{value:[LANG]});
+w.localStorage.setItem('patente_level','3');
+w.fetch=async(u)=>{const p=root+'/'+String(u).replace(/^https:\/\/patente\.physyapps\.com\//,'').replace(/\?.*$/,'');return{ok:true,status:200,json:async()=>JSON.parse(fs.readFileSync(p,'utf8')),text:async()=>fs.readFileSync(p,'utf8')}};
+w.scrollTo=()=>{}; w.matchMedia=()=>({matches:false,addEventListener(){},addListener(){}});
+w.speechSynthesis={getVoices:()=>[],cancel(){},speak(){}}; w.SpeechSynthesisUtterance=class extends w.EventTarget{};
+const s=w.document.createElement('script'); s.textContent=fs.readFileSync(root+'/app.js','utf8'); w.document.body.appendChild(s);
+let fails=0; const ok=(c,m)=>{console.log((c?'ok  ':'FAIL')+' '+m); if(!c)fails++;};
+const $=id=>w.document.getElementById(id), vis=el=>{for(let e=el;e;e=e.parentElement) if(e.classList&&e.classList.contains('hidden')) return false; return !!el;};
+const locked=()=>w.document.body.classList.contains('exam-locked'), ex=k=>w.eval('examState.'+k), hist=()=>JSON.parse(w.localStorage.getItem('patente_exam_history')||'[]').length;
+setTimeout(()=>{
+  w.italianoComplete=()=>true; w.difficultCards=()=>[]; w.renderDashboard();
+  $('btn-dash-mock').click();
+  ok(/(a second time|una seconda volta)/.test($('mock-intro-tip').textContent),'the dialog recommends a second reading: '+$('mock-intro-tip').textContent);
+  ok(vis($('mock-intro-overlay')) && /20/.test($('mock-intro-line').textContent) && $('mock-intro-start').textContent===(IT?'Inizia l’esame':'Start the exam'),'Start opens the dialog: '+$('mock-intro-line').textContent.slice(0,60));
+  ok($('screen-exam').classList.contains('active') && vis($('exam-in-progress')) && $('exam-in-progress').classList.contains('is-veiled'),'the sheet is on screen behind it, blank');
+  ok(!ex('timerHandle'),'the clock has not started');
+  ok(locked(),'the nav is locked from the dialog on');
+  $('mock-intro-cancel').click();
+  ok(!locked() && $('screen-dashboard').classList.contains('active') && !vis($('exam-in-progress')) && hist()===0,'Not now: back on the main page, nothing saved');
+  $('btn-dash-mock').click(); $('mock-intro-start').click();
+  ok(!!ex('timerHandle') && ex('items').length===30 && !$('exam-in-progress').classList.contains('is-veiled') && locked(),'Start the exam: clock running, 30 statements, sheet shown, nav locked');
+  ok(Math.abs(ex('deadline')-Date.now()-1200000)<5000,'the clock runs to a fixed end 20 minutes out');
+  w.confirm=()=>false; $('nav-logo').click();
+  ok(!!ex('timerHandle') && locked() && $('screen-exam').classList.contains('active'),'app icon, then Keep going: the exam continues');
+  let asked=''; w.confirm=m=>{asked=m;return true;}; $('nav-logo').click();
+  ok(/lost|perse/.test(asked) && !ex('timerHandle') && !locked() && $('screen-dashboard').classList.contains('active') && hist()===0,'app icon, then confirm: abandoned, back on the main page, nothing saved');
+  $('btn-dash-mock').click(); $('mock-intro-start').click();
+  w.eval('examState.deadline = Date.now() - 1000');
+  w.document.dispatchEvent(new w.Event('visibilitychange'));
+  ok(!ex('timerHandle') && !locked() && hist()===1 && vis($('exam-results')),'time run out while away: the sheet is closed and scored on return');
+  // Statistics: a small button under Past Results starts another mock (20261007h).
+  w.updateExamAvailability();
+  const another=$('btn-stats-mock');
+  ok(another && vis(another) && another.textContent===(IT?'📝 Fai un’altra simulazione':'📝 Take another mock exam') && another.closest('#stats-mock-row'),'the button sits in its own row below the trend');
+  another.click();
+  ok(vis($('mock-intro-overlay')) && $('exam-in-progress').classList.contains('is-veiled') && locked(),'it opens the same start dialog');
+  $('mock-intro-cancel').click();
+  console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);
+},2500);

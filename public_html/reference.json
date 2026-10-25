@@ -1,0 +1,3772 @@
+{
+ "_note": "Reference page data: the quantities the exam tests, grouped by what they measure and by subject. Every number is traceable to a statement that tests it (src), or is marked \"trap\" when the exam only ever prints a wrong figure for it. See docs/review-glossary.md rules 34 and 35.",
+ "categories": [
+  {
+   "id": "speed",
+   "en": "Speeds by road type (velocità per tipo di strada)",
+   "it": "Velocità per tipo di strada"
+  },
+  {
+   "id": "speedveh",
+   "en": "Speeds by vehicle (velocità per veicolo)",
+   "it": "Velocità per veicolo"
+  },
+  {
+   "id": "distance",
+   "en": "Distances (distanze)",
+   "it": "Distanze",
+   "noteEn": "US equivalents are in parentheses, rounded. An inch is 2.54 cm, so divide centimeters by 2.5 to get inches. A meter is about 3.3 feet, so multiply meters by 3.3 to get feet."
+  },
+  {
+   "id": "mass",
+   "en": "Masses (masse)",
+   "it": "Masse",
+   "noteEn": "A metric ton (t) is 1,000 kilograms (kg), about 2,200 pounds. The questions write the same mass either way, as 3.5 t or as 3,500 kg."
+  },
+  {
+   "id": "power",
+   "en": "Engines and power (cilindrata e potenza)",
+   "it": "Cilindrate e potenze"
+  },
+  {
+   "id": "size",
+   "en": "Sizes and seats (dimensioni e posti)",
+   "it": "Dimensioni e posti",
+   "noteEn": "US equivalents are in parentheses, rounded. An inch is 2.54 cm, so divide centimeters by 2.5 to get inches. A meter is about 3.3 feet, so multiply meters by 3.3 to get feet."
+  },
+  {
+   "id": "time",
+   "en": "Times and periods (tempi)",
+   "it": "Tempi e periodi"
+  },
+  {
+   "id": "age",
+   "en": "Ages (età)",
+   "it": "Età"
+  },
+  {
+   "id": "alcohol",
+   "en": "Alcohol (tasso alcolemico)",
+   "it": "Alcol"
+  },
+  {
+   "id": "penalty",
+   "en": "Penalties",
+   "it": "Sanzioni"
+  }
+ ],
+ "numbers": [
+  {
+   "cat": "speed",
+   "en": "Autostrada sections with special characteristics, where signed",
+   "it": "Tratti di autostrada con caratteristiche particolari, se segnalato",
+   "value": "150 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22336",
+    "22397",
+    "22408"
+   ],
+   "group": "autostrada",
+   "asked": [
+    "22336",
+    "22342",
+    "22397",
+    "22408",
+    "22465",
+    "22468"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Car, motorcycle, truck or motorhome up to 3.5 t, or car with small utility trailer (carrello appendice)",
+   "it": "Autovettura, motociclo, autocarro o autocaravan fino a 3,5 t, o auto con carrello appendice",
+   "value": "130 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22328",
+    "22332",
+    "22368",
+    "21535",
+    "21538",
+    "22369",
+    "22349",
+    "22366",
+    "22398"
+   ],
+   "group": "autostrada",
+   "asked": [
+    "21535",
+    "21538",
+    "22328",
+    "22332",
+    "22349",
+    "22366",
+    "22368",
+    "22369",
+    "22377",
+    "22378",
+    "22398",
+    "22465",
+    "22466",
+    "22467",
+    "22468"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Car on autostrada in rain or any precipitation",
+   "it": "Autovettura in autostrada con pioggia o altra precipitazione",
+   "value": "110 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22338",
+    "22402"
+   ],
+   "group": "autostrada",
+   "asked": [
+    "22338",
+    "22380",
+    "22402"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Driver licensed less than 3 years, on autostrada",
+   "it": "Patente da meno di 3 anni, in autostrada",
+   "value": "100 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22357",
+    "22364"
+   ],
+   "group": "autostrada",
+   "asked": [
+    "22357",
+    "22364"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Car towing trailer or caravan on autostrada",
+   "it": "Autovettura che traina rimorchio o caravan in autostrada",
+   "value": "80 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22367",
+    "22370",
+    "22458"
+   ],
+   "group": "autostrada",
+   "asked": [
+    "22367",
+    "22370",
+    "22376",
+    "22379",
+    "22458"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Minimum design speed to use autostrada or main extra-urban road",
+   "it": "Velocità minima per costruzione per autostrada o strada extraurbana principale",
+   "value": "80 km/h",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "23853",
+    "23861"
+   ],
+   "group": [
+    "autostrada",
+    "main"
+   ],
+   "asked": [
+    "23853",
+    "23861"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Temporary limit in dense fog, autostrada and main extra-urban roads",
+   "it": "Limite temporaneo con nebbia fitta (autostrade ed extraurbane)",
+   "value": "50 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22454"
+   ],
+   "group": [
+    "autostrada",
+    "main"
+   ],
+   "noWrong": true,
+   "asked": [
+    "22454"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Car, motorcycle, truck or motorhome up to 3.5 t, or car with small utility trailer (carrello appendice)",
+   "it": "Autovettura, motociclo, autocarro o autocaravan fino a 3,5 t, o auto con carrello appendice",
+   "value": "110 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22329",
+    "22405",
+    "22371",
+    "21534",
+    "21538",
+    "22333",
+    "22413",
+    "22414",
+    "22372",
+    "22417",
+    "22409"
+   ],
+   "group": "main",
+   "asked": [
+    "18358",
+    "21534",
+    "21538",
+    "22329",
+    "22333",
+    "22343",
+    "22350",
+    "22371",
+    "22372",
+    "22381",
+    "22405",
+    "22409",
+    "22411",
+    "22413",
+    "22414",
+    "22416",
+    "22417",
+    "22455",
+    "22469",
+    "22470"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Driver licensed less than 3 years, on main extra-urban road",
+   "it": "Patente da meno di 3 anni, su strada extraurbana principale",
+   "value": "90 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22358",
+    "22365"
+   ],
+   "group": "main",
+   "asked": [
+    "22358",
+    "22365"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Car on main extra-urban road in rain or hail",
+   "it": "Autovettura su extraurbana principale con pioggia o grandine",
+   "value": "90 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22339",
+    "22403"
+   ],
+   "group": "main",
+   "asked": [
+    "22339",
+    "22403"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Cars or trucks towing trailer or caravan on extra-urban road, main or secondary (autovettura con rimorchio, autotreno)",
+   "it": "Autovettura che traina rimorchio o caravan, o autotreno, su strada extraurbana, principale o secondaria",
+   "value": "70 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22373",
+    "22410",
+    "22382",
+    "22375",
+    "22420",
+    "22459",
+    "22412",
+    "22423"
+   ],
+   "group": [
+    "main",
+    "secondary"
+   ],
+   "asked": [
+    "22373",
+    "22375",
+    "22382",
+    "22410",
+    "22412",
+    "22415",
+    "22420",
+    "22423",
+    "22428",
+    "22459",
+    "22471"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Car, motorcycle, truck or motorhome up to 3.5 t, or car with small utility trailer (carrello appendice)",
+   "it": "Autovettura, motociclo, autocarro o autocaravan fino a 3,5 t, o auto con carrello appendice",
+   "value": "90 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22330",
+    "22374",
+    "22427",
+    "21533",
+    "21536",
+    "22421",
+    "22422",
+    "22419",
+    "22430",
+    "22334",
+    "22418"
+   ],
+   "group": "secondary",
+   "asked": [
+    "21533",
+    "21536",
+    "22330",
+    "22334",
+    "22344",
+    "22374",
+    "22383",
+    "22418",
+    "22419",
+    "22421",
+    "22422",
+    "22426",
+    "22427",
+    "22429",
+    "22430"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Urban road with special characteristics, where signed",
+   "it": "Strada urbana con caratteristiche particolari, dove segnalato",
+   "value": "70 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22337",
+    "22404"
+   ],
+   "group": "urban",
+   "asked": [
+    "22337",
+    "22345",
+    "22346",
+    "22404"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Any vehicle in built-up area (centro abitato): car, motorcycle, truck",
+   "it": "Qualsiasi veicolo nel centro abitato: autovettura, motociclo, autocarro",
+   "value": "50 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22331",
+    "22399",
+    "22335",
+    "22348",
+    "22351",
+    "22352"
+   ],
+   "group": "urban",
+   "asked": [
+    "21536",
+    "22331",
+    "22335",
+    "22345",
+    "22346",
+    "22348",
+    "22351",
+    "22352",
+    "22399",
+    "22406",
+    "22456"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Non-light quadricycle (quadriciclo non leggero) outside built-up areas",
+   "it": "Quadriciclo non leggero fuori dai centri abitati",
+   "value": "80 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22341",
+    "22347",
+    "22407",
+    "22425"
+   ],
+   "group": [
+    "main",
+    "secondary"
+   ],
+   "asked": [
+    "22341",
+    "22347",
+    "22407",
+    "22425"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Moped (ciclomotore) or light quadricycle: top speed, by construction and on road",
+   "it": "Ciclomotore o quadriciclo leggero: velocità massima, per costruzione e su strada",
+   "value": "45 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22340",
+    "22400",
+    "22424",
+    "18544",
+    "18553",
+    "24515",
+    "18577"
+   ],
+   "group": [
+    "secondary",
+    "vehicle",
+    "urban"
+   ],
+   "asked": [
+    "18544",
+    "18553",
+    "18557",
+    "18561",
+    "18577",
+    "18635",
+    "22340",
+    "22400",
+    "22424",
+    "24515"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Design speed above which three-wheeler is motor tricycle",
+   "it": "Velocità per costruzione oltre la quale un tre ruote è triciclo",
+   "value": "oltre 45 km/h",
+   "topic": 16,
+   "topicKey": "Definizioni stradali e di traffico; definizioni e classificazione dei veicoli; doveri del conducente nell'uso della strada -",
+   "src": [
+    "18557",
+    "18561"
+   ],
+   "group": "vehicle",
+   "valueEn": "over 45 km/h",
+   "asked": [
+    "18557",
+    "18561"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Farm or work machine (macchina agricola, macchina operatrice) on tires",
+   "it": "Macchina agricola o operatrice su pneumatici",
+   "value": "40 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22355",
+    "22356",
+    "22401",
+    "18586",
+    "22472"
+   ],
+   "group": [
+    "secondary",
+    "vehicle",
+    "urban"
+   ],
+   "asked": [
+    "18586",
+    "22353",
+    "22354",
+    "22355",
+    "22356",
+    "22401",
+    "22472"
+   ]
+  },
+  {
+   "cat": "speed",
+   "en": "Top speed of tracked farm or work machine",
+   "it": "Velocità massima di macchina operatrice o agricola a cingoli",
+   "value": "15 km/h",
+   "topic": 16,
+   "topicKey": "Definizioni stradali e di traffico; definizioni e classificazione dei veicoli; doveri del conducente nell'uso della strada -",
+   "src": [
+    "18587"
+   ],
+   "trap": true,
+   "group": "vehicle",
+   "asked": [
+    "18587"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Autostrada",
+   "it": "Autostrada",
+   "value": "130 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22328",
+    "22332",
+    "22368",
+    "21535",
+    "21538",
+    "22369",
+    "22349",
+    "22366",
+    "22398"
+   ],
+   "group": "by_car",
+   "asked": [
+    "21535",
+    "21538",
+    "22328",
+    "22332",
+    "22349",
+    "22366",
+    "22368",
+    "22369",
+    "22377",
+    "22378",
+    "22398",
+    "22465",
+    "22466",
+    "22467",
+    "22468"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Autostrada, sections where signed",
+   "it": "Autostrada, tratti dove segnalato",
+   "value": "150 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22336",
+    "22397",
+    "22408"
+   ],
+   "group": "by_car",
+   "asked": [
+    "22336",
+    "22342",
+    "22397",
+    "22408",
+    "22465",
+    "22468"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Autostrada in rain or any precipitation",
+   "it": "Autostrada con pioggia o altra precipitazione",
+   "value": "110 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22338",
+    "22402"
+   ],
+   "group": "by_car",
+   "asked": [
+    "22338",
+    "22380",
+    "22402"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Main extra-urban road",
+   "it": "Strada extraurbana principale",
+   "value": "110 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22329",
+    "22405",
+    "22371",
+    "21534",
+    "21538",
+    "22333",
+    "22413",
+    "22414",
+    "22372",
+    "22417",
+    "22409"
+   ],
+   "group": "by_car",
+   "asked": [
+    "18358",
+    "21534",
+    "21538",
+    "22329",
+    "22333",
+    "22343",
+    "22350",
+    "22371",
+    "22372",
+    "22381",
+    "22405",
+    "22409",
+    "22411",
+    "22413",
+    "22414",
+    "22416",
+    "22417",
+    "22455",
+    "22469",
+    "22470"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Main extra-urban road in rain or hail",
+   "it": "Strada extraurbana principale con pioggia o grandine",
+   "value": "90 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22339",
+    "22403"
+   ],
+   "group": "by_car",
+   "asked": [
+    "22339",
+    "22403"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Secondary extra-urban road",
+   "it": "Strada extraurbana secondaria",
+   "value": "90 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22330",
+    "22374",
+    "22427",
+    "21533",
+    "21536",
+    "22421",
+    "22422",
+    "22419",
+    "22430",
+    "22334",
+    "22418"
+   ],
+   "group": "by_car",
+   "asked": [
+    "21533",
+    "21536",
+    "22330",
+    "22334",
+    "22344",
+    "22374",
+    "22383",
+    "22418",
+    "22419",
+    "22421",
+    "22422",
+    "22426",
+    "22427",
+    "22429",
+    "22430"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Urban road where signed",
+   "it": "Strada urbana dove segnalato",
+   "value": "70 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22337",
+    "22404"
+   ],
+   "group": "by_car",
+   "asked": [
+    "22337",
+    "22345",
+    "22346",
+    "22404"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Built-up area (centro abitato)",
+   "it": "Centro abitato",
+   "value": "50 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22331",
+    "22399",
+    "22335",
+    "22348",
+    "22351",
+    "22352"
+   ],
+   "group": "by_car",
+   "asked": [
+    "21536",
+    "22331",
+    "22335",
+    "22345",
+    "22346",
+    "22348",
+    "22351",
+    "22352",
+    "22399",
+    "22406",
+    "22456"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Temporary limit in dense fog, autostrada and main extra-urban roads",
+   "it": "Limite temporaneo con nebbia fitta, autostrade ed extraurbane principali",
+   "value": "50 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22454"
+   ],
+   "group": "by_car",
+   "noWrong": true,
+   "asked": [
+    "22454"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Autostrada",
+   "it": "Autostrada",
+   "value": "100 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22357",
+    "22364"
+   ],
+   "group": "by_new",
+   "asked": [
+    "22357",
+    "22364"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Main extra-urban road",
+   "it": "Strada extraurbana principale",
+   "value": "90 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22358",
+    "22365"
+   ],
+   "group": "by_new",
+   "asked": [
+    "22358",
+    "22365"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Autostrada",
+   "it": "Autostrada",
+   "value": "80 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22367",
+    "22370",
+    "22458"
+   ],
+   "group": "by_tow",
+   "asked": [
+    "22367",
+    "22370",
+    "22376",
+    "22379",
+    "22458"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Extra-urban road, main or secondary",
+   "it": "Strada extraurbana, principale o secondaria",
+   "value": "70 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22373",
+    "22410",
+    "22382",
+    "22375",
+    "22420",
+    "22459"
+   ],
+   "group": "by_tow",
+   "asked": [
+    "22373",
+    "22375",
+    "22382",
+    "22410",
+    "22415",
+    "22420",
+    "22428",
+    "22459",
+    "22471"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Extra-urban road, main or secondary",
+   "it": "Strada extraurbana, principale o secondaria",
+   "value": "70 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22412",
+    "22423"
+   ],
+   "group": "by_truck",
+   "asked": [
+    "22412",
+    "22423"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Outside built-up areas",
+   "it": "Fuori dai centri abitati",
+   "value": "80 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22341",
+    "22347",
+    "22407",
+    "22425"
+   ],
+   "group": "by_quad",
+   "asked": [
+    "22341",
+    "22347",
+    "22407",
+    "22425"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Any road",
+   "it": "Qualsiasi strada",
+   "value": "45 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22340",
+    "22400",
+    "22424",
+    "18544",
+    "18553",
+    "24515",
+    "18577"
+   ],
+   "group": "by_moped",
+   "asked": [
+    "18544",
+    "18553",
+    "18557",
+    "18561",
+    "18577",
+    "18635",
+    "22340",
+    "22400",
+    "22424",
+    "24515"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Any road, on tires",
+   "it": "Qualsiasi strada, su pneumatici",
+   "value": "40 km/h",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22355",
+    "22356",
+    "22401",
+    "18586",
+    "22472"
+   ],
+   "group": "by_farm",
+   "asked": [
+    "18586",
+    "22353",
+    "22354",
+    "22355",
+    "22356",
+    "22401",
+    "22472"
+   ]
+  },
+  {
+   "cat": "speedveh",
+   "en": "Any road, on tracks",
+   "it": "Qualsiasi strada, a cingoli",
+   "value": "15 km/h",
+   "topic": 16,
+   "topicKey": "Definizioni stradali e di traffico; definizioni e classificazione dei veicoli; doveri del conducente nell'uso della strada -",
+   "src": [
+    "18587"
+   ],
+   "trap": true,
+   "group": "by_farm",
+   "asked": [
+    "18587"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "Emergency lane usable to exit from advance exit sign at",
+   "it": "Corsia di emergenza per uscire dal preavviso di uscita a",
+   "value": "500 m",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "23893"
+   ],
+   "group": "autostrada",
+   "noWrong": true,
+   "alwaysTrue": true,
+   "us": "1/3 mi",
+   "asked": [
+    "23893"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "Advance warning outside built-up area: danger signs, and three-bar panel at railroad crossing",
+   "it": "Preavviso fuori dai centri abitati: segnali di pericolo e pannello a tre barre del passaggio a livello",
+   "value": "150 m",
+   "topic": 3,
+   "topicKey": "Segnali di pericolo",
+   "src": [
+    "18925",
+    "19032",
+    "19502",
+    "19106",
+    "21025",
+    "21054"
+   ],
+   "group": "warn",
+   "us": "500 ft",
+   "asked": [
+    "18856",
+    "18881",
+    "18925",
+    "18937",
+    "18954",
+    "18982",
+    "19007",
+    "19032",
+    "19055",
+    "19090",
+    "19098",
+    "19106",
+    "19147",
+    "19173",
+    "19502",
+    "21025",
+    "21054",
+    "21586",
+    "21986"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "Two-bar countdown panel before railroad crossing",
+   "it": "Pannello distanziometrico a due barre dal passaggio a livello",
+   "value": "100 m",
+   "topic": 3,
+   "topicKey": "Segnali di pericolo",
+   "src": [
+    "19106"
+   ],
+   "group": "warn",
+   "noWrong": true,
+   "us": "330 ft",
+   "asked": [
+    "19106"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "One-bar countdown panel before railroad crossing",
+   "it": "Pannello distanziometrico a una barra dal passaggio a livello",
+   "value": "50 m",
+   "topic": 3,
+   "topicKey": "Segnali di pericolo",
+   "src": [
+    "19106"
+   ],
+   "group": "warn",
+   "noWrong": true,
+   "us": "165 ft",
+   "asked": [
+    "19106"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "At 150 km/h",
+   "it": "A 150 km/h",
+   "value": "42 m",
+   "topic": 9,
+   "topicKey": "Distanza di sicurezza",
+   "src": [
+    "22581",
+    "22597",
+    "22587"
+   ],
+   "group": "follow",
+   "us": "140 ft",
+   "asked": [
+    "22581",
+    "22587",
+    "22597",
+    "22598"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "At 130 km/h",
+   "it": "A 130 km/h",
+   "value": "36 m",
+   "topic": 9,
+   "topicKey": "Distanza di sicurezza",
+   "src": [
+    "22582",
+    "22596",
+    "22586"
+   ],
+   "group": "follow",
+   "us": "120 ft",
+   "asked": [
+    "22582",
+    "22586",
+    "22596",
+    "22601"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "At 100 km/h",
+   "it": "A 100 km/h",
+   "value": "28 m",
+   "topic": 9,
+   "topicKey": "Distanza di sicurezza",
+   "src": [
+    "22580",
+    "22595",
+    "22585"
+   ],
+   "group": "follow",
+   "us": "90 ft",
+   "asked": [
+    "22580",
+    "22585",
+    "22595",
+    "22600"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "At 50 km/h",
+   "it": "A 50 km/h",
+   "value": "14 m",
+   "topic": 9,
+   "topicKey": "Distanza di sicurezza",
+   "src": [
+    "22579",
+    "22594",
+    "22584"
+   ],
+   "group": "follow",
+   "us": "45 ft",
+   "asked": [
+    "22579",
+    "22584",
+    "22594",
+    "22599"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "At 30 km/h",
+   "it": "A 30 km/h",
+   "value": "9 m",
+   "topic": 9,
+   "topicKey": "Distanza di sicurezza",
+   "src": [
+    "22578",
+    "22583"
+   ],
+   "group": "follow",
+   "us": "30 ft",
+   "asked": [
+    "22578",
+    "22583"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "Gap between trucks over 3.5 t barred from passing each other",
+   "it": "Distanza tra veicoli oltre 3,5 t con divieto di sorpasso reciproco",
+   "value": "100 m",
+   "topic": 9,
+   "topicKey": "Distanza di sicurezza",
+   "src": [
+    "22541",
+    "22550"
+   ],
+   "group": "gap",
+   "us": "330 ft",
+   "asked": [
+    "22541",
+    "22550"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "Safe distance from working snowplow or salt spreader",
+   "it": "Distanza di sicurezza da sgombraneve o spargisale in azione",
+   "value": "20 m",
+   "topic": 9,
+   "topicKey": "Distanza di sicurezza",
+   "src": [
+    "22536",
+    "22537",
+    "22548",
+    "22136",
+    "22142"
+   ],
+   "group": "gap",
+   "us": "65 ft",
+   "asked": [
+    "22136",
+    "22142",
+    "22536",
+    "22537",
+    "22548",
+    "22549"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "Parking banned from bus stop sign where no space is marked",
+   "it": "Sosta vietata dal segnale di fermata autobus senza stallo delimitato",
+   "value": "15 m",
+   "topic": 12,
+   "topicKey": "Fermata, sosta, arresto e partenza",
+   "src": [
+    "23755",
+    "23781",
+    "23786"
+   ],
+   "group": "park",
+   "us": "50 ft",
+   "asked": [
+    "23755",
+    "23781",
+    "23786"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "Stopping and parking banned near intersection in town",
+   "it": "Fermata e sosta vietate presso intersezione nei centri abitati",
+   "value": "5 m",
+   "topic": 12,
+   "topicKey": "Fermata, sosta, arresto e partenza",
+   "src": [
+    "23681",
+    "23686"
+   ],
+   "group": "park",
+   "noWrong": true,
+   "us": "16 ft",
+   "asked": [
+    "23681",
+    "23686"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "Carriageway left free to park along one-way street's left edge",
+   "it": "Spazio libero per sosta sul margine sinistro a senso unico",
+   "value": "3 m",
+   "topic": 12,
+   "topicKey": "Fermata, sosta, arresto e partenza",
+   "src": [
+    "23720"
+   ],
+   "group": "park",
+   "noWrong": true,
+   "us": "10 ft",
+   "asked": [
+    "23720"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "Space left for pedestrians where there is no raised sidewalk",
+   "it": "Spazio per transito dei pedoni senza marciapiede rialzato",
+   "value": "1 m",
+   "topic": 12,
+   "topicKey": "Fermata, sosta, arresto e partenza",
+   "src": [
+    "23659",
+    "23711"
+   ],
+   "group": "park",
+   "noWrong": true,
+   "us": "3 ft",
+   "asked": [
+    "23659",
+    "23711"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "Portable triangle: must be visible from this far, and is required by day when vehicle is not",
+   "it": "Triangolo: deve essere visibile da questa distanza, ed è obbligatorio di giorno se veicolo non lo è",
+   "value": "100 m",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "23833",
+    "23840",
+    "23828",
+    "23829",
+    "23836"
+   ],
+   "group": "triangle",
+   "us": "330 ft",
+   "asked": [
+    "23828",
+    "23829",
+    "23833",
+    "23835",
+    "23836",
+    "23840"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "Portable triangle: distance behind vehicle, or where best seen if intersection is nearer",
+   "it": "Triangolo: distanza dietro veicolo, o dove è più avvistabile se incrocio è più vicino",
+   "value": "50 m",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "23831",
+    "23832"
+   ],
+   "group": "triangle",
+   "us": "165 ft",
+   "asked": [
+    "23831",
+    "23832"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "Portable warning triangle: minimum distance from outer edge",
+   "it": "Triangolo: distanza minima dal bordo esterno della carreggiata",
+   "value": "1 m",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "23842",
+    "23844"
+   ],
+   "group": "triangle",
+   "noWrong": true,
+   "us": "3 ft",
+   "asked": [
+    "23842",
+    "23844"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "Visibility below which temporary fog limits may be imposed",
+   "it": "Visibilità sotto la quale si impongono limiti per nebbia",
+   "value": "100 m",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22454"
+   ],
+   "group": "visibility",
+   "noWrong": true,
+   "us": "330 ft",
+   "asked": [
+    "22454"
+   ]
+  },
+  {
+   "cat": "distance",
+   "en": "Visibility below which rear fog light must be used",
+   "it": "Visibilità sotto la quale si deve usare retronebbia",
+   "value": "50 m",
+   "topic": 14,
+   "topicKey": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+   "src": [
+    "24152"
+   ],
+   "group": "visibility",
+   "noWrong": true,
+   "alwaysTrue": true,
+   "us": "165 ft",
+   "asked": [
+    "24152"
+   ]
+  },
+  {
+   "cat": "mass",
+   "en": "Combination mass allowed with code 96 on B, BE above it",
+   "it": "Massa del complesso ammessa con codice 96 sulla B, oltre serve BE",
+   "value": "4.250 kg",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24557",
+    "24560",
+    "24561",
+    "24568",
+    "24571"
+   ],
+   "group": "license",
+   "valueEn": "4,250 kg",
+   "asked": [
+    "24557",
+    "24560",
+    "24561",
+    "24562",
+    "24565",
+    "24568",
+    "24571"
+   ]
+  },
+  {
+   "cat": "mass",
+   "en": "Maximum mass under BE license, for towing vehicle and for trailer alike",
+   "it": "Massa massima con patente BE, sia per motrice sia per rimorchio",
+   "value": "3.500 kg",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24567",
+    "24569",
+    "24572",
+    "24575"
+   ],
+   "group": "license",
+   "valueEn": "3,500 kg",
+   "asked": [
+    "24567",
+    "24569",
+    "24572",
+    "24575"
+   ]
+  },
+  {
+   "cat": "mass",
+   "en": "Maximum authorized mass of vehicle or motorhome driven with B",
+   "it": "Massa massima autorizzata di veicolo o autocaravan con patente B",
+   "value": "3,5 t",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24537",
+    "24549",
+    "24539"
+   ],
+   "group": "license",
+   "valueEn": "3.5 t",
+   "asked": [
+    "24537",
+    "24539",
+    "24549",
+    "24556"
+   ]
+  },
+  {
+   "cat": "mass",
+   "en": "Combination mass limit when B tows heavy trailer",
+   "it": "Massa del complesso quando B traina rimorchio non leggero",
+   "value": "3,5 t",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24541",
+    "24554"
+   ],
+   "group": "license",
+   "valueEn": "3.5 t",
+   "asked": [
+    "24541",
+    "24553",
+    "24554"
+   ]
+  },
+  {
+   "cat": "mass",
+   "en": "Boundary between light and heavy motor vehicles",
+   "it": "Soglia di massa tra autoveicoli leggeri e pesanti",
+   "value": "3,5 t",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22332",
+    "22411",
+    "22422"
+   ],
+   "group": "vehicledef",
+   "valueEn": "3.5 t",
+   "asked": [
+    "22332",
+    "22333",
+    "22334",
+    "22349",
+    "22350",
+    "22351",
+    "22369",
+    "22411",
+    "22413",
+    "22414",
+    "22421",
+    "22422",
+    "22429",
+    "22436",
+    "22437"
+   ]
+  },
+  {
+   "cat": "mass",
+   "en": "Laden mass above which truck or goods trailer carries rear panels and reflective stripes",
+   "it": "Massa a pieno carico oltre cui autocarro o rimorchio portano pannelli e strisce rifrangenti",
+   "value": "3,5 t",
+   "topic": 16,
+   "topicKey": "Definizioni stradali e di traffico; definizioni e classificazione dei veicoli; doveri del conducente nell'uso della strada -",
+   "src": [
+    "18609",
+    "18617",
+    "18620",
+    "23947",
+    "23951",
+    "18610",
+    "18618",
+    "18611",
+    "18619"
+   ],
+   "group": "equip",
+   "noWrong": true,
+   "valueEn": "3.5 t",
+   "asked": [
+    "18609",
+    "18610",
+    "18611",
+    "18617",
+    "18618",
+    "18619",
+    "18620",
+    "18625",
+    "23947",
+    "23951",
+    "24098"
+   ]
+  },
+  {
+   "cat": "mass",
+   "en": "Maximum laden mass of light trailer",
+   "it": "Massa massima a pieno carico di rimorchio leggero",
+   "value": "750 kg",
+   "topic": 16,
+   "topicKey": "Definizioni stradali e di traffico; definizioni e classificazione dei veicoli; doveri del conducente nell'uso della strada -",
+   "src": [
+    "18663",
+    "18667",
+    "24538",
+    "24557"
+   ],
+   "group": "towing",
+   "asked": [
+    "18663",
+    "18667",
+    "24046",
+    "24099",
+    "24538",
+    "24557"
+   ]
+  },
+  {
+   "cat": "mass",
+   "en": "Combination mass above which alcohol limit becomes zero",
+   "it": "Massa del complesso oltre la quale vige alcol zero",
+   "value": "3,5 t",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "24096"
+   ],
+   "group": "towing",
+   "valueEn": "3.5 t",
+   "asked": [
+    "24096"
+   ]
+  },
+  {
+   "cat": "mass",
+   "en": "Maximum towing ratio, braked trailer up to 3.5 t",
+   "it": "Rapporto di traino massimo, rimorchio frenato fino a 3,5 t",
+   "value": "1× la massa del veicolo",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "24092"
+   ],
+   "group": "towing",
+   "noWrong": true,
+   "valueEn": "1× the vehicle's mass",
+   "asked": [
+    "24092"
+   ]
+  },
+  {
+   "cat": "mass",
+   "en": "Maximum towing ratio, trailer with no braking device",
+   "it": "Rapporto di traino massimo, rimorchio senza freni",
+   "value": "0,5× la massa del veicolo",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "24093"
+   ],
+   "group": "towing",
+   "noWrong": true,
+   "alwaysTrue": true,
+   "valueEn": "0.5× the vehicle's mass",
+   "asked": [
+    "24093"
+   ]
+  },
+  {
+   "cat": "power",
+   "en": "Smallest motorcycle allowed on autostrada",
+   "it": "Cilindrata minima dei motocicli ammessi in autostrada",
+   "value": "150 cm³",
+   "topic": 16,
+   "topicKey": "Definizioni stradali e di traffico; definizioni e classificazione dei veicoli; doveri del conducente nell'uso della strada -",
+   "src": [
+    "18449",
+    "18457"
+   ],
+   "group": "moto_auto",
+   "asked": [
+    "18449",
+    "18455",
+    "18457"
+   ]
+  },
+  {
+   "cat": "power",
+   "en": "Maximum displacement of motorcycle driven with A1",
+   "it": "Cilindrata massima del motociclo guidato con A1",
+   "value": "125 cm³",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24488",
+    "24495",
+    "24532"
+   ],
+   "group": "lic_a1",
+   "noWrong": true,
+   "asked": [
+    "24488",
+    "24495",
+    "24532"
+   ]
+  },
+  {
+   "cat": "power",
+   "en": "Maximum motor power of pedal-assist bicycle, still bicycle",
+   "it": "Potenza massima del motore di bicicletta a pedalata assistita",
+   "value": "0,25 kW",
+   "topic": 16,
+   "topicKey": "Definizioni stradali e di traffico; definizioni e classificazione dei veicoli; doveri del conducente nell'uso della strada -",
+   "src": [
+    "18550"
+   ],
+   "group": "vehicledef",
+   "noWrong": true,
+   "valueEn": "0.25 kW",
+   "asked": [
+    "18550"
+   ]
+  },
+  {
+   "cat": "power",
+   "en": "Maximum engine displacement of moped or light quadricycle (gasoline)",
+   "it": "Cilindrata massima di ciclomotore o di quadriciclo leggero (benzina)",
+   "value": "50 cm³",
+   "topic": 16,
+   "topicKey": "Definizioni stradali e di traffico; definizioni e classificazione dei veicoli; doveri del conducente nell'uso della strada -",
+   "src": [
+    "18544",
+    "18547",
+    "18551",
+    "24479",
+    "24515",
+    "18563"
+   ],
+   "group": "vehicledef",
+   "noWrong": true,
+   "asked": [
+    "18544",
+    "18547",
+    "18551",
+    "18563",
+    "24479",
+    "24515"
+   ]
+  },
+  {
+   "cat": "power",
+   "en": "Displacement above which two-wheeler is motorcycle and three-wheeler motor tricycle",
+   "it": "Cilindrata oltre la quale un due ruote è motociclo e un tre ruote triciclo",
+   "value": "oltre 50 cm³",
+   "topic": 16,
+   "topicKey": "Definizioni stradali e di traffico; definizioni e classificazione dei veicoli; doveri del conducente nell'uso della strada -",
+   "src": [
+    "18627",
+    "18635",
+    "18556",
+    "18561"
+   ],
+   "group": "vehicledef",
+   "valueEn": "over 50 cm³",
+   "asked": [
+    "18556",
+    "18561",
+    "18627",
+    "18634",
+    "18635"
+   ]
+  },
+  {
+   "cat": "power",
+   "en": "Maximum power of non-light quadricycle, and of motor tricycle driven with A1 or A2",
+   "it": "Potenza massima di quadriciclo non leggero e di tricliclo guidato con A1 o A2",
+   "value": "15 kW",
+   "topic": 16,
+   "topicKey": "Definizioni stradali e di traffico; definizioni e classificazione dei veicoli; doveri del conducente nell'uso della strada -",
+   "src": [
+    "18568",
+    "24489",
+    "24496"
+   ],
+   "group": "vehicledef",
+   "asked": [
+    "18568",
+    "24489",
+    "24496"
+   ]
+  },
+  {
+   "cat": "power",
+   "en": "Maximum power of motorcycle driven with A2",
+   "it": "Potenza massima del motociclo guidato con A2",
+   "value": "35 kW",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24500",
+    "24507"
+   ],
+   "group": "lic_a2",
+   "asked": [
+    "24500",
+    "24507",
+    "24509"
+   ]
+  },
+  {
+   "cat": "power",
+   "en": "Maximum power of motorcycle driven with A1",
+   "it": "Potenza massima del motociclo guidato con A1",
+   "value": "11 kW",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24488",
+    "24486"
+   ],
+   "group": "lic_a1",
+   "asked": [
+    "24486",
+    "24488",
+    "24495",
+    "24532"
+   ]
+  },
+  {
+   "cat": "power",
+   "en": "Maximum power to weight ratio for A2 motorcycles",
+   "it": "Rapporto potenza/peso massimo per motocicli A2",
+   "value": "0,2 kW/kg",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24500"
+   ],
+   "group": "lic_a2",
+   "valueEn": "0.2 kW/kg",
+   "asked": [
+    "24500",
+    "24507"
+   ]
+  },
+  {
+   "cat": "power",
+   "en": "Maximum power to weight ratio for A1 motorcycles",
+   "it": "Rapporto potenza/peso massimo per motocicli A1",
+   "value": "0,1 kW/kg",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24488",
+    "24532"
+   ],
+   "group": "lic_a1",
+   "valueEn": "0.1 kW/kg",
+   "asked": [
+    "24488",
+    "24532"
+   ]
+  },
+  {
+   "cat": "size",
+   "en": "Combination length that must keep to two right lanes",
+   "it": "Lunghezza del complesso obbligato alle due corsie di destra",
+   "value": "7 m",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "24097"
+   ],
+   "group": "vehicle",
+   "noWrong": true,
+   "alwaysTrue": true,
+   "us": "23 ft",
+   "asked": [
+    "24097"
+   ]
+  },
+  {
+   "cat": "size",
+   "en": "Maximum number of people carried in category B vehicle",
+   "it": "Numero massimo di persone trasportate con patente B",
+   "value": "8 persone oltre al conducente",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24537",
+    "24552"
+   ],
+   "group": "license",
+   "valueEn": "8 passengers plus the driver",
+   "asked": [
+    "24537",
+    "24548",
+    "24552"
+   ]
+  },
+  {
+   "cat": "size",
+   "en": "Maximum seats in car including driver",
+   "it": "Posti massimi di autovettura compreso conducente",
+   "value": "9 posti",
+   "topic": 16,
+   "topicKey": "Definizioni stradali e di traffico; definizioni e classificazione dei veicoli; doveri del conducente nell'uso della strada -",
+   "src": [
+    "18648",
+    "18650",
+    "18657"
+   ],
+   "group": "vehicledef",
+   "valueEn": "9 seats",
+   "asked": [
+    "18648",
+    "18650",
+    "18657",
+    "18660"
+   ]
+  },
+  {
+   "cat": "size",
+   "en": "Maximum sideways overhang on two-wheeler, load or pet cage",
+   "it": "Sporgenza laterale massima su un due ruote, carico o gabbia per animali",
+   "value": "50 cm",
+   "topic": 13,
+   "topicKey": "Norme sulla circol. dei veicoli; pos. dei veicoli sulla carreggiata; cambio di direz. di corsia (svolta); comp. in presenza di funerali, cortei, convogli militari; comp. agli incroci; norme di prec.; obblighi verso veicoli di Polizia e di emergenza; rischi legati a manovra e a guida dei diversi tipi di veicolo e relativo campo visivo del cond.",
+   "src": [
+    "22691",
+    "18716"
+   ],
+   "group": "load",
+   "noWrong": true,
+   "us": "20 in",
+   "asked": [
+    "18716",
+    "22691"
+   ]
+  },
+  {
+   "cat": "size",
+   "en": "Maximum height of motor vehicle including its load",
+   "it": "Altezza massima di autoveicolo compreso carico",
+   "value": "4 m",
+   "topic": 13,
+   "topicKey": "Norme sulla circol. dei veicoli; pos. dei veicoli sulla carreggiata; cambio di direz. di corsia (svolta); comp. in presenza di funerali, cortei, convogli militari; comp. agli incroci; norme di prec.; obblighi verso veicoli di Polizia e di emergenza; rischi legati a manovra e a guida dei diversi tipi di veicolo e relativo campo visivo del cond.",
+   "src": [
+    "22698"
+   ],
+   "group": "load",
+   "us": "13 ft",
+   "asked": [
+    "22698"
+   ]
+  },
+  {
+   "cat": "size",
+   "en": "Maximum rear overhang of load, indivisible or not",
+   "it": "Sporgenza posteriore massima del carico, indivisibile o meno",
+   "value": "3/10 della lunghezza del veicolo",
+   "topic": 13,
+   "topicKey": "Norme sulla circol. dei veicoli; pos. dei veicoli sulla carreggiata; cambio di direz. di corsia (svolta); comp. in presenza di funerali, cortei, convogli militari; comp. agli incroci; norme di prec.; obblighi verso veicoli di Polizia e di emergenza; rischi legati a manovra e a guida dei diversi tipi di veicolo e relativo campo visivo del cond.",
+   "src": [
+    "22695",
+    "22700",
+    "23932",
+    "23939",
+    "24112"
+   ],
+   "group": "load",
+   "valueEn": "3/10 of the vehicle's length",
+   "asked": [
+    "22695",
+    "22697",
+    "22700",
+    "23932",
+    "23937",
+    "23939",
+    "23943",
+    "24112"
+   ]
+  },
+  {
+   "cat": "size",
+   "en": "Maximum side projection of load beyond position lights, also boat on T.A.T.S. trailer",
+   "it": "Sporgenza laterale massima del carico oltre luci di posizione, anche barca su rimorchio T.A.T.S.",
+   "value": "30 cm",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "23933",
+    "24105"
+   ],
+   "group": "load",
+   "us": "12 in",
+   "asked": [
+    "23933",
+    "24105"
+   ]
+  },
+  {
+   "cat": "size",
+   "en": "Height below which child needs approved restraint",
+   "it": "Statura sotto la quale serve sistema di ritenuta omologato",
+   "value": "1,50 m",
+   "topic": 19,
+   "topicKey": "Dispositivi di equipaggiamento: funzione ed uso; cinture di sicurezza e sistemi di ritenuta per bambini; casco protettivo;",
+   "src": [
+    "24369",
+    "24374"
+   ],
+   "group": "equip",
+   "valueEn": "1.50 m",
+   "us": "4 ft 11 in",
+   "asked": [
+    "24369",
+    "24374"
+   ]
+  },
+  {
+   "cat": "size",
+   "en": "Minimum tire tread depth, car",
+   "it": "Spessore minimo del battistrada, autoveicolo",
+   "value": "1,6 mm",
+   "topic": 20,
+   "topicKey": "Elementi costitutivi del veicolo importanti per la sicurezza; manutenzione ed uso; stabilità e tenuta di strada del veicolo;",
+   "src": [
+    "25240"
+   ],
+   "group": "equip",
+   "valueEn": "1.6 mm",
+   "asked": [
+    "25240"
+   ]
+  },
+  {
+   "cat": "size",
+   "en": "Minimum tire tread depth, motorcycle",
+   "it": "Spessore minimo del battistrada, motociclo",
+   "value": "1,0 mm",
+   "topic": 20,
+   "topicKey": "Elementi costitutivi del veicolo importanti per la sicurezza; manutenzione ed uso; stabilità e tenuta di strada del veicolo;",
+   "src": [
+    "25242"
+   ],
+   "group": "equip",
+   "noWrong": true,
+   "alwaysTrue": true,
+   "valueEn": "1.0 mm",
+   "asked": [
+    "25242"
+   ]
+  },
+  {
+   "cat": "size",
+   "en": "Maximum mirror projection beyond vehicle outline",
+   "it": "Sporgenza massima degli specchietti oltre sagoma",
+   "value": "20 cm",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "24091",
+    "24104"
+   ],
+   "group": "equip",
+   "us": "8 in",
+   "wrong": {
+    "value": "50 cm",
+    "valueEn": "50 cm, about 20 in",
+    "src": [
+     "24104"
+    ]
+   },
+   "asked": [
+    "24091",
+    "24104"
+   ]
+  },
+  {
+   "cat": "time",
+   "en": "Maximum parking time in autostrada service area",
+   "it": "Sosta massima in area di servizio autostradale",
+   "value": "24 ore",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "23873"
+   ],
+   "group": "autostrada",
+   "valueEn": "24 hours",
+   "asked": [
+    "23873",
+    "23877"
+   ]
+  },
+  {
+   "cat": "time",
+   "en": "Maximum emergency stop on autostrada",
+   "it": "Sosta di emergenza massima in autostrada",
+   "value": "3 ore",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "23900",
+    "23903"
+   ],
+   "group": "autostrada",
+   "valueEn": "3 hours",
+   "asked": [
+    "23900",
+    "23903"
+   ]
+  },
+  {
+   "cat": "time",
+   "en": "First periodic inspection after first registration",
+   "it": "Prima revisione periodica dopo prima immatricolazione",
+   "value": "4 anni",
+   "topic": 16,
+   "topicKey": "Definizioni stradali e di traffico; definizioni e classificazione dei veicoli; doveri del conducente nell'uso della strada -",
+   "src": [
+    "18548",
+    "18630"
+   ],
+   "group": "equip",
+   "noWrong": true,
+   "valueEn": "4 years",
+   "asked": [
+    "18548",
+    "18630"
+   ]
+  },
+  {
+   "cat": "time",
+   "en": "Interval between later periodic inspections",
+   "it": "Intervallo tra revisioni periodiche successive",
+   "value": "2 anni",
+   "topic": 16,
+   "topicKey": "Definizioni stradali e di traffico; definizioni e classificazione dei veicoli; doveri del conducente nell'uso della strada -",
+   "src": [
+    "18548",
+    "18630",
+    "18661"
+   ],
+   "group": "equip",
+   "valueEn": "2 years",
+   "asked": [
+    "18548",
+    "18630",
+    "18661"
+   ]
+  },
+  {
+   "cat": "time",
+   "en": "Three-year periods: new-driver rules, and B license between 70 and 80",
+   "it": "Periodi di tre anni: regole per neopatentati e patente B tra 70 e 80 anni",
+   "value": "3 anni",
+   "topic": 11,
+   "topicKey": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+   "src": [
+    "22357",
+    "22358",
+    "24682"
+   ],
+   "group": "validity",
+   "noWrong": true,
+   "valueEn": "3 years",
+   "asked": [
+    "22357",
+    "22358",
+    "22364",
+    "22365",
+    "24643",
+    "24650",
+    "24682"
+   ]
+  },
+  {
+   "cat": "time",
+   "en": "Validity of A, B, or BE license, holder under 50",
+   "it": "Validità patente A, B o BE, sotto 50 anni",
+   "value": "10 anni",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24680",
+    "24684",
+    "24685"
+   ],
+   "group": "validity",
+   "valueEn": "10 years",
+   "asked": [
+    "24680",
+    "24684",
+    "24685",
+    "24692",
+    "24694",
+    "24695",
+    "24696"
+   ]
+  },
+  {
+   "cat": "time",
+   "en": "Validity of category B license between 50 and 70, and of special B (BS) up to 70",
+   "it": "Validità della patente B tra 50 e 70 anni, e della B speciale fino a 70",
+   "value": "5 anni",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24681",
+    "24691",
+    "24686"
+   ],
+   "group": "validity",
+   "valueEn": "5 years",
+   "asked": [
+    "24681",
+    "24686",
+    "24691"
+   ]
+  },
+  {
+   "cat": "time",
+   "en": "Two-year periods: A2 held before A, clean record back to 20 points, B license over 80",
+   "it": "Periodi di due anni: A2 prima della A, nessuna infrazione per tornare a 20 punti, patente B oltre 80",
+   "value": "2 anni",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24504",
+    "24517",
+    "24645",
+    "24653",
+    "24683",
+    "24693"
+   ],
+   "group": "validity",
+   "noWrong": true,
+   "valueEn": "2 years",
+   "asked": [
+    "24499",
+    "24504",
+    "24508",
+    "24517",
+    "24522",
+    "24645",
+    "24653",
+    "24683",
+    "24693"
+   ]
+  },
+  {
+   "cat": "time",
+   "en": "Low beams compulsory in town during these hours",
+   "it": "Anabbaglianti obbligatori nei centri abitati in queste ore",
+   "value": "da mezz'ora dopo il tramonto a mezz'ora prima dell'alba",
+   "topic": 14,
+   "topicKey": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+   "src": [
+    "24150"
+   ],
+   "group": "periods",
+   "asked": [
+    "24150",
+    "24154"
+   ]
+  },
+  {
+   "cat": "age",
+   "en": "Age for A license by direct access",
+   "it": "Età per patente A con accesso diretto",
+   "value": "24 anni",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24516",
+    "24524",
+    "24526"
+   ],
+   "group": "license",
+   "valueEn": "24 years",
+   "asked": [
+    "24516",
+    "24524",
+    "24525",
+    "24526"
+   ]
+  },
+  {
+   "cat": "age",
+   "en": "Minimum age for motor tricycles over 15 kW",
+   "it": "Età minima per tricicli a motore oltre 15 kW",
+   "value": "21 anni",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24514",
+    "24519",
+    "24544"
+   ],
+   "group": "license",
+   "valueEn": "21 years",
+   "asked": [
+    "24514",
+    "24519",
+    "24523",
+    "24544"
+   ]
+  },
+  {
+   "cat": "age",
+   "en": "Age for A license by progressive access",
+   "it": "Età per patente A con accesso graduale",
+   "value": "20 anni",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24517",
+    "24522"
+   ],
+   "group": "license",
+   "valueEn": "20 years",
+   "asked": [
+    "24504",
+    "24508",
+    "24517",
+    "24522"
+   ]
+  },
+  {
+   "cat": "age",
+   "en": "Minimum age for B, BE and A2 licenses",
+   "it": "Età minima per patenti B, BE e A2",
+   "value": "18 anni",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24502",
+    "24506"
+   ],
+   "group": "license",
+   "valueEn": "18 years",
+   "asked": [
+    "24502",
+    "24506",
+    "24576"
+   ]
+  },
+  {
+   "cat": "age",
+   "en": "Minimum age for A1 and B1 licenses",
+   "it": "Età minima per patenti A1 e B1",
+   "value": "16 anni",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24491",
+    "24527"
+   ],
+   "group": "license",
+   "noWrong": true,
+   "valueEn": "16 years",
+   "asked": [
+    "24491",
+    "24527"
+   ]
+  },
+  {
+   "cat": "age",
+   "en": "Minimum age for AM license",
+   "it": "Età minima per patente AM",
+   "value": "14 anni",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24478",
+    "24482"
+   ],
+   "group": "license",
+   "noWrong": true,
+   "valueEn": "14 years",
+   "asked": [
+    "24478",
+    "24482"
+   ]
+  },
+  {
+   "cat": "age",
+   "en": "Age below which child may not travel without restraint",
+   "it": "Età sotto la quale non si viaggia senza sistema di ritenuta",
+   "value": "3 anni",
+   "topic": 19,
+   "topicKey": "Dispositivi di equipaggiamento: funzione ed uso; cinture di sicurezza e sistemi di ritenuta per bambini; casco protettivo;",
+   "src": [
+    "24364"
+   ],
+   "group": "equip",
+   "noWrong": true,
+   "valueEn": "3 years",
+   "asked": [
+    "24364"
+   ]
+  },
+  {
+   "cat": "age",
+   "en": "Minimum age for passenger on motorcycle or moped",
+   "it": "Età minima per passeggero di motociclo o ciclomotore",
+   "value": "5 anni",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "23917",
+    "23921"
+   ],
+   "group": "equip",
+   "valueEn": "5 years",
+   "asked": [
+    "23917",
+    "23921"
+   ]
+  },
+  {
+   "cat": "age",
+   "en": "Minimum age of rider to carry passenger on motorcycle or moped",
+   "it": "Età minima del conducente per trasportare passeggero su motociclo o ciclomotore",
+   "value": "16 anni",
+   "valueEn": "16 years",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "24498"
+   ],
+   "group": "equip",
+   "trap": true,
+   "asked": [
+    "24498"
+   ]
+  },
+  {
+   "cat": "alcohol",
+   "en": "General blood-alcohol limit for driving",
+   "it": "Tasso alcolemico generale consentito alla guida",
+   "value": "0,5 g/l",
+   "topic": 17,
+   "topicKey": "Guida in relazione alle qualità e condizioni fisiche e psichiche; alcool, droga e farmaci ; primo soccorso",
+   "src": [
+    "31060"
+   ],
+   "noWrong": true,
+   "valueEn": "0.5 g/l",
+   "asked": [
+    "31060"
+   ]
+  },
+  {
+   "cat": "alcohol",
+   "en": "Blood-alcohol limit when towing combination over 3.5 t",
+   "it": "Tasso alcolemico quando complesso trainato supera 3,5 t",
+   "value": "0,0 g/l",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "24096"
+   ],
+   "noWrong": true,
+   "valueEn": "0.0 g/l",
+   "asked": [
+    "24096"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Speeding margin that brings license suspension",
+   "it": "Superamento del limite che comporta sospensione",
+   "value": "oltre 40 km/h",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24620"
+   ],
+   "group": "points",
+   "valueEn": "over 40 km/h",
+   "asked": [
+    "24620"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Starting points, and ceiling restored by recovery course",
+   "it": "Punti iniziali e tetto a cui corso di recupero riporta la patente",
+   "value": "20 punti",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24639",
+    "24647"
+   ],
+   "group": "points",
+   "valueEn": "20 points",
+   "asked": [
+    "24639",
+    "24645",
+    "24647",
+    "24653"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Maximum points deducted for violations committed at once",
+   "it": "Punti massimi decurtati per violazioni commesse insieme",
+   "value": "15 punti",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24644",
+    "24652"
+   ],
+   "group": "points",
+   "valueEn": "15 points",
+   "asked": [
+    "24644",
+    "24652"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Speeding margin that costs license points",
+   "it": "Superamento del limite che comporta perdita di punti",
+   "value": "oltre 10 km/h",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24655"
+   ],
+   "group": "points",
+   "noWrong": true,
+   "valueEn": "over 10 km/h",
+   "asked": [
+    "24655"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Points restored by recovery course to A or B holder (9 for higher categories), never above 20",
+   "it": "Punti che corso di recupero restituisce a chi ha A o B (9 per categorie superiori), mai oltre 20",
+   "value": "6 punti",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24651"
+   ],
+   "group": "points",
+   "valueEn": "6 points",
+   "trap": true,
+   "asked": [
+    "24651"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Points deducted in first three years of category B license",
+   "it": "Punti decurtati nei primi tre anni dalla patente B",
+   "value": "il doppio",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24643"
+   ],
+   "group": "points",
+   "valueEn": "double",
+   "asked": [
+    "24643",
+    "24650"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Point loss per violation that, three times within 12 months, sends license back to exam",
+   "it": "Perdita di punti per violazione che, tre volte in 12 mesi, manda patente alla revisione",
+   "value": "5 punti",
+   "valueEn": "5 points",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24598"
+   ],
+   "group": "points",
+   "asked": [
+    "24598"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Emergency towing without solid connection",
+   "it": "Traino di emergenza senza collegamento solido",
+   "value": "2 punti",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "23956",
+    "23960"
+   ],
+   "group": "lost",
+   "valueEn": "2 points",
+   "tested": true,
+   "fine": {
+    "valueEn": "€87 to €344",
+    "value": "da 87 a 344 €",
+    "art": "art. 165 c. 3"
+   },
+   "wrong": {
+    "value": "4 punti",
+    "valueEn": "4 points",
+    "src": [
+     "23960"
+    ]
+   },
+   "asked": [
+    "23956",
+    "23960"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Driving in emergency lane of autostrada, outside allowed cases",
+   "it": "Circolare sulla corsia di emergenza in autostrada, fuori dei casi previsti",
+   "value": "10 punti",
+   "valueEn": "10 points",
+   "topic": 21,
+   "topicKey": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+   "src": [
+    "24663"
+   ],
+   "group": "lost",
+   "untested": "art. 176 c. 20 (c. 1 lett. c)",
+   "fine": {
+    "valueEn": "€430 to €1,731",
+    "value": "da 430 a 1.731 €",
+    "art": "art. 176 c. 20"
+   }
+  },
+  {
+   "cat": "penalty",
+   "en": "Not yielding to pedestrian on crosswalk",
+   "it": "Non dare la precedenza a pedone sulle strisce",
+   "value": "8 punti",
+   "valueEn": "8 points",
+   "topic": 5,
+   "topicKey": "Segnali di precedenza",
+   "src": [
+    "19160"
+   ],
+   "group": "lost",
+   "untested": "art. 191 c. 1",
+   "fine": {
+    "valueEn": "€167 to €665",
+    "value": "da 167 a 665 €",
+    "art": "art. 191 c. 4"
+   }
+  },
+  {
+   "cat": "penalty",
+   "en": "Driving without glasses or lenses prescribed on license",
+   "it": "Guidare senza lenti o apparecchi prescritti sulla patente",
+   "value": "8 punti",
+   "valueEn": "8 points",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24662"
+   ],
+   "group": "lost",
+   "untested": "art. 173 c. 3",
+   "fine": {
+    "valueEn": "€83 to €332",
+    "value": "da 83 a 332 €",
+    "art": "art. 173 c. 3"
+   }
+  },
+  {
+   "cat": "penalty",
+   "en": "Using phone in hand while driving (10 on repeat within two years)",
+   "it": "Usare telefono in mano alla guida (10 se si ripete entro due anni)",
+   "value": "5 punti",
+   "valueEn": "5 points",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24657"
+   ],
+   "group": "lost",
+   "untested": "art. 173 c. 3-bis",
+   "fine": {
+    "valueEn": "€250 to €1,000",
+    "value": "da 250 a 1.000 €",
+    "art": "art. 173 c. 3-bis",
+    "noteEn": "€350 to €1,400 on a repeat within two years",
+    "noteIt": "da 350 a 1.400 € se si ripete entro due anni"
+   }
+  },
+  {
+   "cat": "penalty",
+   "en": "Riding without helmet, or with it unfastened",
+   "it": "Circolare senza casco, o con casco slacciato",
+   "value": "5 punti",
+   "valueEn": "5 points",
+   "topic": 19,
+   "topicKey": "Dispositivi di equipaggiamento: funzione ed uso; cinture di sicurezza e sistemi di ritenuta per bambini; casco protettivo;",
+   "src": [
+    "24408",
+    "24658"
+   ],
+   "group": "lost",
+   "untested": "art. 171 c. 2",
+   "fine": {
+    "valueEn": "€83 to €332",
+    "value": "da 83 a 332 €",
+    "art": "art. 171 c. 2"
+   }
+  },
+  {
+   "cat": "penalty",
+   "en": "Following too closely, when it causes collision with serious damage (8 with injuries, 3 with no collision)",
+   "it": "Non rispettare distanza di sicurezza, se ne deriva collisione con grave danno (8 con lesioni, 3 senza collisione)",
+   "value": "5 punti",
+   "valueEn": "5 points",
+   "topic": 9,
+   "topicKey": "Distanza di sicurezza",
+   "src": [
+    "24659"
+   ],
+   "group": "lost",
+   "untested": "art. 149 c. 5",
+   "fine": {
+    "valueEn": "€87 to €344",
+    "value": "da 87 a 344 €",
+    "art": "art. 149 c. 5"
+   }
+  },
+  {
+   "cat": "penalty",
+   "en": "Parking in space reserved for people with disabilities, or on curb ramps they use",
+   "it": "Sostare nello spazio riservato ai veicoli per persone invalide, o sugli scivoli che usano",
+   "value": "4 punti",
+   "valueEn": "4 points",
+   "topic": 12,
+   "topicKey": "Fermata, sosta, arresto e partenza",
+   "src": [
+    "23782",
+    "23783",
+    "23787"
+   ],
+   "group": "lost",
+   "untested": "art. 158 c. 2 lett. g",
+   "fine": {
+    "valueEn": "€330 to €990",
+    "value": "da 330 a 990 €",
+    "art": "art. 158 c. 4-bis"
+   }
+  },
+  {
+   "cat": "penalty",
+   "en": "Overtaking against rules, from faulty pass (2 to 5) to passing where it is banned, on curve, crest, crossing or level crossing (10)",
+   "it": "Sorpassare contro regole, da sorpasso mal eseguito (2-5) a sorpasso dove è vietato, in curva, su dosso, a incrocio o a passaggio a livello (10)",
+   "value": "2 a 10 punti",
+   "valueEn": "2 to 10 points",
+   "topic": 10,
+   "topicKey": "Norme sul sorpasso",
+   "src": [
+    "24656"
+   ],
+   "group": "lost",
+   "untested": "art. 148 c. 15-16",
+   "fine": {
+    "valueEn": "€83 to €1,308",
+    "value": "da 83 a 1.308 €",
+    "art": "art. 148 c. 15-16"
+   }
+  },
+  {
+   "cat": "penalty",
+   "en": "Speeding by more than 10 km/h and up to 40 (6 points from 40 to 60 over, 10 beyond)",
+   "it": "Superare limite di oltre 10 km/h e fino a 40 (6 punti da 40 a 60 in più, 10 oltre)",
+   "value": "3 punti",
+   "valueEn": "3 points",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24655"
+   ],
+   "group": "lost",
+   "untested": "art. 142 c. 8",
+   "fine": {
+    "valueEn": "€173 to €694",
+    "value": "da 173 a 694 €",
+    "art": "art. 142 c. 8"
+   }
+  },
+  {
+   "cat": "penalty",
+   "en": "Not using lights, or using them wrongly",
+   "it": "Non usare luci, o usarle in modo improprio",
+   "value": "3 punti",
+   "valueEn": "3 points",
+   "topic": 14,
+   "topicKey": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+   "src": [
+    "24660"
+   ],
+   "group": "lost",
+   "untested": "art. 153 c. 10",
+   "fine": {
+    "valueEn": "€87 to €344",
+    "value": "da 87 a 344 €",
+    "art": "art. 153 c. 10"
+   }
+  },
+  {
+   "cat": "penalty",
+   "en": "Overloading, by how far mass limit is exceeded (1 point up to 1 t or 10%, 4 over 3 t or 30%)",
+   "it": "Sovraccarico, secondo eccedenza sulla massa limite (1 punto fino a 1 t o al 10%, 4 oltre 3 t o 30%)",
+   "value": "1 a 4 punti",
+   "valueEn": "1 to 4 points",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24661"
+   ],
+   "group": "lost",
+   "untested": "art. 167 c. 2-3",
+   "fine": {
+    "valueEn": "€42 to €1,734",
+    "value": "da 42 a 1.734 €",
+    "art": "art. 167 c. 2-3"
+   }
+  },
+  {
+   "cat": "penalty",
+   "en": "Parking in bus, tram or taxi stop, within 15 m of bus stop sign with no marked space, or in lane reserved for public transport",
+   "it": "Sostare in fermata di autobus, tram o taxi, a meno di 15 m dal segnale di fermata senza spazi delimitati, o nella corsia riservata ai mezzi pubblici",
+   "value": "2 punti",
+   "valueEn": "2 points",
+   "topic": 12,
+   "topicKey": "Fermata, sosta, arresto e partenza",
+   "src": [
+    "23780",
+    "23781",
+    "23784"
+   ],
+   "group": "lost",
+   "untested": "art. 158 c. 2 lett. d, h",
+   "fine": {
+    "valueEn": "€165 to €660",
+    "value": "da 165 a 660 €",
+    "art": "art. 158 c. 5-bis"
+   }
+  },
+  {
+   "cat": "penalty",
+   "en": "Entering traffic flow without required care",
+   "it": "Immettersi nel flusso della circolazione senza cautele prescritte",
+   "value": "2 punti",
+   "valueEn": "2 points",
+   "topic": 13,
+   "topicKey": "Norme sulla circol. dei veicoli; pos. dei veicoli sulla carreggiata; cambio di direz. di corsia (svolta); comp. in presenza di funerali, cortei, convogli militari; comp. agli incroci; norme di prec.; obblighi verso veicoli di Polizia e di emergenza; rischi legati a manovra e a guida dei diversi tipi di veicolo e relativo campo visivo del cond.",
+   "src": [
+    "22998",
+    "22999"
+   ],
+   "group": "lost",
+   "untested": "art. 154 c. 8",
+   "fine": {
+    "valueEn": "€42 to €173",
+    "value": "da 42 a 173 €",
+    "art": "art. 154 c. 8"
+   }
+  },
+  {
+   "cat": "penalty",
+   "en": "Parking in front of driveway (passo carrabile)",
+   "it": "Sostare davanti a passo carrabile",
+   "value": "0 punti",
+   "valueEn": "0 points",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24666"
+   ],
+   "group": "lost",
+   "tested": true,
+   "fine": {
+    "valueEn": "€42 to €173",
+    "value": "da 42 a 173 €",
+    "art": "art. 158 c. 6"
+   },
+   "asked": [
+    "24666"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Stopping at right edge without signaling in time",
+   "it": "Fermarsi sul margine destro senza segnalare con anticipo",
+   "value": "2 punti",
+   "valueEn": "2 points",
+   "topic": 13,
+   "topicKey": "Norme sulla circol. dei veicoli; pos. dei veicoli sulla carreggiata; cambio di direz. di corsia (svolta); comp. in presenza di funerali, cortei, convogli militari; comp. agli incroci; norme di prec.; obblighi verso veicoli di Polizia e di emergenza; rischi legati a manovra e a guida dei diversi tipi di veicolo e relativo campo visivo del cond.",
+   "src": [
+    "23000"
+   ],
+   "group": "lost",
+   "fine": {
+    "valueEn": "€42 to €173",
+    "value": "da 42 a 173 €",
+    "art": "art. 154 c. 8"
+   },
+   "untested": "art. 154 c. 8"
+  },
+  {
+   "cat": "penalty",
+   "en": "Driving without registration document on board",
+   "it": "Circolare senza carta di circolazione",
+   "value": "0 punti",
+   "valueEn": "0 points",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24668"
+   ],
+   "group": "lost",
+   "tested": true,
+   "fine": {
+    "valueEn": "€42 to €173",
+    "value": "da 42 a 173 €",
+    "art": "art. 180 c. 7"
+   },
+   "asked": [
+    "24668"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Driving without certificate of ownership on board",
+   "it": "Guidare senza certificato di proprietà",
+   "value": "0 punti",
+   "valueEn": "0 points",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24669"
+   ],
+   "group": "lost",
+   "tested": true,
+   "asked": [
+    "24669"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Driving with periodic inspection overdue",
+   "it": "Circolare con veicolo senza revisione periodica",
+   "value": "0 punti",
+   "valueEn": "0 points",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24676"
+   ],
+   "group": "lost",
+   "tested": true,
+   "fine": {
+    "valueEn": "€173 to €694",
+    "value": "da 173 a 694 €",
+    "art": "art. 80 c. 14"
+   },
+   "asked": [
+    "24676"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Driving another owner's vehicle without Motorizzazione authorization",
+   "it": "Guidare veicolo di un altro senza autorizzazione della Motorizzazione",
+   "value": "0 punti",
+   "valueEn": "0 points",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24670"
+   ],
+   "group": "lost",
+   "tested": true,
+   "asked": [
+    "24670"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "New B holder on autostrada or main extra-urban road",
+   "it": "Neopatentato B in autostrada o su strada extraurbana principale",
+   "value": "0 punti",
+   "valueEn": "0 points",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24674"
+   ],
+   "group": "lost",
+   "tested": true,
+   "asked": [
+    "24674"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Eight-seat car driven on C license",
+   "it": "Autovettura a otto posti guidata con patente C",
+   "value": "0 punti",
+   "valueEn": "0 points",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24673"
+   ],
+   "group": "lost",
+   "tested": true,
+   "asked": [
+    "24673"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Laden light truck (under 3.5 t) on holiday",
+   "it": "Autocarro leggero carico (sotto 3,5 t) in giorno festivo",
+   "value": "0 punti",
+   "valueEn": "0 points",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24675"
+   ],
+   "group": "lost",
+   "tested": true,
+   "asked": [
+    "24675"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Racing on private track with only B license under 24",
+   "it": "Gareggiare su piste private con sola patente B sotto 24 anni",
+   "value": "0 punti",
+   "valueEn": "0 points",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24665"
+   ],
+   "group": "lost",
+   "tested": true,
+   "asked": [
+    "24665"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Any violation that carries suspension",
+   "it": "Qualsiasi violazione che comporta la sospensione",
+   "value": "Ritiro",
+   "valueEn": "Withdrawal",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24577"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24577",
+    "24586"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Driving with expired license",
+   "it": "Guida con patente scaduta",
+   "value": "Ritiro",
+   "valueEn": "Withdrawal",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24578"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24578",
+    "24611"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Driving drunk",
+   "it": "Guida in stato di ebbrezza",
+   "value": "Ritiro",
+   "valueEn": "Withdrawal",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24579"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24579"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Badly arranged load not fixed after police request",
+   "it": "Carico mal disposto non sistemato dopo invito della polizia",
+   "value": "Ritiro",
+   "valueEn": "Withdrawal",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24580"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24580"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Crash causing injury",
+   "it": "Incidente con lesioni a persone",
+   "value": "Ritiro",
+   "valueEn": "Withdrawal",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24581"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24581"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Required revision not taken in time",
+   "it": "Revisione prescritta non sostenuta nei termini",
+   "value": "Ritiro",
+   "valueEn": "Withdrawal",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24582"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24582"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Vehicle emitting too many polluting exhaust gases (registration document withdrawn, not license)",
+   "it": "Veicolo che emette troppi gas di scarico inquinanti (ritiro carta di circolazione, non patente)",
+   "value": "Ritiro",
+   "valueEn": "Withdrawal",
+   "topic": 24,
+   "topicKey": "Limitazione dei consumi; rispetto dell¿ambiente; inquinamento: atmosferico, acustico, da cattivo smaltimento dei rifiuti",
+   "src": [
+    "25126"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "25126"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "New driver ignoring vehicle and speed limits",
+   "it": "Neopatentato che non rispetta limiti di veicolo e velocità",
+   "value": "Sospensione",
+   "valueEn": "Suspension",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24618"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24618"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Speeding by more than 40 km/h",
+   "it": "Superamento di oltre 40 km/h dei limiti di velocità",
+   "value": "Sospensione",
+   "valueEn": "Suspension",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24620"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24620"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Driving in emergency lane of autostrada, outside allowed cases",
+   "it": "Circolare sulla corsia di emergenza in autostrada, fuori dei casi previsti",
+   "value": "Sospensione",
+   "valueEn": "Suspension",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24621"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24621"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Driving drunk",
+   "it": "Guida in stato di ebbrezza",
+   "value": "Sospensione",
+   "valueEn": "Suspension",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24623"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24623"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Refusing breath test",
+   "it": "Rifiuto dell'accertamento sullo stato di ebbrezza",
+   "value": "Sospensione",
+   "valueEn": "Suspension",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24624"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24624"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Fleeing without helping person struck",
+   "it": "Fuga senza prestare soccorso alla persona investita",
+   "value": "Sospensione",
+   "valueEn": "Suspension",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24625"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24625"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Driving seized vehicle",
+   "it": "Circolare con veicolo sottoposto a sequestro",
+   "value": "Sospensione",
+   "valueEn": "Suspension",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24626"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24626"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Forging insurance documents",
+   "it": "Falsificazione dei documenti assicurativi",
+   "value": "Sospensione",
+   "valueEn": "Suspension",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24627"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24627"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Doubts about physical or mental fitness",
+   "it": "Dubbi sui requisiti fisici e psichici",
+   "value": "Revisione",
+   "valueEn": "Revision",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24589"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24589",
+    "24630"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Doubts about driving ability",
+   "it": "Dubbi sull'idoneità tecnica alla guida",
+   "value": "Revisione",
+   "valueEn": "Revision",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24592"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24592"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Crash causing serious injury",
+   "it": "Incidente con lesioni gravi a persone",
+   "value": "Revisione",
+   "valueEn": "Revision",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24591"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24591"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "All points lost",
+   "it": "Azzeramento dei punti",
+   "value": "Revisione",
+   "valueEn": "Revision",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24595",
+    "24641"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24595",
+    "24631",
+    "24641",
+    "24654"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Driving while license is suspended",
+   "it": "Guida con patente sospesa",
+   "value": "Revoca",
+   "valueEn": "Revocation",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24605"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24605",
+    "24628"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "U-turn or wrong-way driving on autostrada",
+   "it": "Inversione o marcia contromano in autostrada",
+   "value": "Revoca",
+   "valueEn": "Revocation",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24606"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24606"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Permanent loss of physical or mental requirements",
+   "it": "Perdita permanente dei requisiti fisici o psichici",
+   "value": "Revoca",
+   "valueEn": "Revocation",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24607",
+    "24608"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24599",
+    "24607",
+    "24608",
+    "24613",
+    "24629"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "License replaced by one issued by foreign state",
+   "it": "Patente sostituita con altra rilasciata da stato estero",
+   "value": "Revoca",
+   "valueEn": "Revocation",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24609"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24609"
+   ]
+  },
+  {
+   "cat": "penalty",
+   "en": "Failing revision",
+   "it": "Mancato superamento della revisione",
+   "value": "Revoca",
+   "valueEn": "Revocation",
+   "topic": 22,
+   "topicKey": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+   "src": [
+    "24610",
+    "24596"
+   ],
+   "group": "measures",
+   "measure": true,
+   "asked": [
+    "24596",
+    "24604",
+    "24610"
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "autostrada",
+   "en": "On the autostrada (Italy's motorway)",
+   "it": "In autostrada",
+   "foot": {
+    "en": "Which vehicles may use these roads (one list for both)",
+    "it": "Quali veicoli possono percorrere queste strade (un unico elenco per entrambe)",
+    "items": [
+     {
+      "en": "The autostrada and main extra-urban roads share one access list. Learn it once.",
+      "it": "Autostrada e strade extraurbane principali hanno un unico elenco di accesso. Imparalo una volta sola.",
+      "src": [
+       "18355",
+       "23865"
+      ]
+     },
+     {
+      "en": "Among those allowed: school buses, vehicles carrying live animals, horse trailers (van), and motorcycles of 150 cm³ or more.",
+      "it": "Tra i veicoli ammessi: gli autobus per il trasporto di studenti, i veicoli che trasportano animali vivi, i rimorchi per il trasporto di cavalli (van) e i motocicli di cilindrata pari o superiore a 150 cm3.",
+      "src": [
+       "23858",
+       "23860",
+       "24114",
+       "18449"
+      ]
+     },
+     {
+      "en": "Banned: (a) bicycles, mopeds and motorcycles under 150 cm³; (b) farm machines, with or without a trailer; (c) cars that cannot reach 80 km/h on the level by construction; (d) vehicles without tires; (e) vehicles whose condition, equipment or tires could endanger traffic; (f) vehicles whose load is loose, badly secured or sticking out past the legal limits; (g) vehicles that are not watertight carrying an uncovered load that could spill; (h) pedestrians and animals, except in service areas and rest areas.",
+      "it": "Sono vietati: (a) velocipedi, ciclomotori e motocicli di cilindrata inferiore a 150 cm3; (b) macchine agricole, con o senza rimorchio; (c) autovetture che non sviluppano per costruzione 80 km/h in piano; (d) veicoli non muniti di pneumatici; (e) veicoli le cui condizioni di uso, equipaggiamento e gommatura possono costituire pericolo; (f) veicoli con carico disordinato, non solidamente assicurato o sporgente oltre i limiti consentiti; (g) veicoli a tenuta non stagna con carico scoperto, se trasportano materiali che possono disperdersi; (h) pedoni e animali, salvo nelle aree di servizio e di sosta.",
+      "src": [
+       "18457",
+       "18459",
+       "23861",
+       "23854",
+       "18450",
+       "23862",
+       "23853",
+       "23863",
+       "23857",
+       "23855",
+       "23856",
+       "23864",
+       "23868"
+      ]
+     }
+    ],
+    "cat": "speed"
+   }
+  },
+  {
+   "id": "main",
+   "en": "Main extra-urban roads (strade extraurbane principali)",
+   "it": "Strade extraurbane principali",
+   "foot": {
+    "en": "Which vehicles may use these roads (one list for both)",
+    "it": "Quali veicoli possono percorrere queste strade (un unico elenco per entrambe)",
+    "items": [
+     {
+      "en": "The autostrada and main extra-urban roads share one access list. Learn it once.",
+      "it": "Autostrada e strade extraurbane principali hanno un unico elenco di accesso. Imparalo una volta sola.",
+      "src": [
+       "18355",
+       "23865"
+      ]
+     },
+     {
+      "en": "Among those allowed: school buses, vehicles carrying live animals, horse trailers (van), and motorcycles of 150 cm³ or more.",
+      "it": "Tra i veicoli ammessi: gli autobus per il trasporto di studenti, i veicoli che trasportano animali vivi, i rimorchi per il trasporto di cavalli (van) e i motocicli di cilindrata pari o superiore a 150 cm3.",
+      "src": [
+       "23858",
+       "23860",
+       "24114",
+       "18449"
+      ]
+     },
+     {
+      "en": "Banned: (a) bicycles, mopeds and motorcycles under 150 cm³; (b) farm machines, with or without a trailer; (c) cars that cannot reach 80 km/h on the level by construction; (d) vehicles without tires; (e) vehicles whose condition, equipment or tires could endanger traffic; (f) vehicles whose load is loose, badly secured or sticking out past the legal limits; (g) vehicles that are not watertight carrying an uncovered load that could spill; (h) pedestrians and animals, except in service areas and rest areas.",
+      "it": "Sono vietati: (a) velocipedi, ciclomotori e motocicli di cilindrata inferiore a 150 cm3; (b) macchine agricole, con o senza rimorchio; (c) autovetture che non sviluppano per costruzione 80 km/h in piano; (d) veicoli non muniti di pneumatici; (e) veicoli le cui condizioni di uso, equipaggiamento e gommatura possono costituire pericolo; (f) veicoli con carico disordinato, non solidamente assicurato o sporgente oltre i limiti consentiti; (g) veicoli a tenuta non stagna con carico scoperto, se trasportano materiali che possono disperdersi; (h) pedoni e animali, salvo nelle aree di servizio e di sosta.",
+      "src": [
+       "18457",
+       "18459",
+       "23861",
+       "23854",
+       "18450",
+       "23862",
+       "23853",
+       "23863",
+       "23857",
+       "23855",
+       "23856",
+       "23864",
+       "23868"
+      ]
+     }
+    ],
+    "cat": "speed"
+   }
+  },
+  {
+   "id": "secondary",
+   "en": "Secondary extra-urban roads (strade extraurbane secondarie)",
+   "it": "Strade extraurbane secondarie"
+  },
+  {
+   "id": "urban",
+   "en": "In a built-up area (centro abitato)",
+   "it": "Nei centri abitati",
+   "foot": {
+    "en": "What can change the limit here",
+    "it": "Che cosa può cambiare il limite",
+    "items": [
+     {
+      "en": "The 50 km/h is the default, not a fixed value: on an urban road with special characteristics a sign can raise it to 70 km/h, and a sign can equally set a lower one.",
+      "it": "I 50 km/h sono il limite ordinario, non un valore fisso: su una strada urbana con caratteristiche particolari un segnale può portarlo a 70 km/h, e un segnale può ugualmente imporne uno inferiore.",
+      "src": [
+       "22345",
+       "22346",
+       "22337",
+       "22404",
+       "22399"
+      ]
+     }
+    ],
+    "cat": "speed"
+   }
+  },
+  {
+   "id": "vehicle",
+   "en": "Limits the vehicle carries onto any road",
+   "it": "Limiti che il veicolo porta su ogni strada",
+   "noteEn": "A vehicle may never exceed its own top speed, whatever the road allows. Each of these also appears under the roads where the exam asks about it.",
+   "noteIt": "Il veicolo non può mai superare la propria velocità massima, qualunque cosa consenta la strada. Ognuno di questi limiti compare anche sotto le strade per cui l’esame lo chiede."
+  },
+  {
+   "id": "by_car",
+   "en": "Car, motorcycle, or truck or motorhome up to 3.5 t",
+   "it": "Autovettura, motociclo, o autocarro o autocaravan fino a 3,5 t",
+   "noteEn": "The same limits apply to a car towing a small utility trailer (carrello appendice).",
+   "noteIt": "Gli stessi limiti valgono per l'autovettura che traina un carrello appendice."
+  },
+  {
+   "id": "by_new",
+   "en": "Driver licensed less than 3 years ago",
+   "it": "Conducente con patente da meno di 3 anni",
+   "noteEn": "Only these two limits are lower. Every other limit is the same as for a car.",
+   "noteIt": "Solo questi due limiti sono più bassi. Tutti gli altri sono gli stessi dell'autovettura."
+  },
+  {
+   "id": "by_tow",
+   "en": "Car towing a trailer or caravan",
+   "it": "Autovettura che traina un rimorchio o un caravan",
+   "noteEn": "A light trailer (rimorchio leggero) is still a trailer, and the trailer's mass does not change these limits.",
+   "noteIt": "Anche il rimorchio leggero è un rimorchio, e la massa del rimorchio non cambia questi limiti."
+  },
+  {
+   "id": "by_truck",
+   "en": "Truck-and-trailer (autotreno)",
+   "it": "Autotreno"
+  },
+  {
+   "id": "by_quad",
+   "en": "Non-light quadricycle (quadriciclo non leggero)",
+   "it": "Quadriciclo non leggero"
+  },
+  {
+   "id": "by_moped",
+   "en": "Moped (ciclomotore) or light quadricycle",
+   "it": "Ciclomotore o quadriciclo leggero"
+  },
+  {
+   "id": "by_farm",
+   "en": "Farm or work machine (macchina agricola, macchina operatrice)",
+   "it": "Macchina agricola o macchina operatrice",
+   "noteEn": "A flashing yellow light does not raise these limits.",
+   "noteIt": "La luce gialla lampeggiante non aumenta questi limiti."
+  },
+  {
+   "id": "warn",
+   "en": "Warning signs and panels (segnali di preavviso)",
+   "it": "Segnali e pannelli di preavviso"
+  },
+  {
+   "id": "follow",
+   "en": "Following distance (distanza di sicurezza): the one-second rule",
+   "it": "Distanza di sicurezza: la regola del secondo",
+   "noteEn": "The meters you travel in one second, near enough: (speed in km/h ÷ 10) × 3. The rule is not exact but tells a true figure from a false one. It may be more, never less.",
+   "noteIt": "I metri percorsi in un secondo, all'incirca: (velocità in km/h ÷ 10) × 3. La regola non è esatta ma distingue una cifra vera da una falsa. Può essere di più, mai di meno."
+  },
+  {
+   "id": "gap",
+   "en": "Distance from particular vehicles",
+   "it": "Distanza da veicoli particolari"
+  },
+  {
+   "id": "park",
+   "en": "Stopping and parking (fermata e sosta)",
+   "it": "Fermata e sosta"
+  },
+  {
+   "id": "triangle",
+   "en": "The portable warning triangle (triangolo mobile)",
+   "it": "Il triangolo mobile"
+  },
+  {
+   "id": "visibility",
+   "en": "Visibility",
+   "it": "Visibilità"
+  },
+  {
+   "id": "vehicledef",
+   "en": "What makes a vehicle that category",
+   "it": "Che cosa definisce la categoria del veicolo",
+   "keepOrder": true
+  },
+  {
+   "id": "license",
+   "en": "What a license (patente) lets you drive",
+   "it": "Che cosa permette di guidare la patente"
+  },
+  {
+   "id": "lic_a1",
+   "en": "Motorcycles on the A1 license",
+   "it": "Motocicli con la patente A1",
+   "noteEn": "A motorcycle on this license must stay within every limit in this list at once.",
+   "noteIt": "Un motociclo guidato con questa patente deve rispettare insieme tutti i limiti di questo elenco."
+  },
+  {
+   "id": "lic_a2",
+   "en": "Motorcycles on the A2 license",
+   "it": "Motocicli con la patente A2",
+   "noteEn": "A motorcycle on this license must stay within both limits in this list at once.",
+   "noteIt": "Un motociclo guidato con questa patente deve rispettare insieme entrambi i limiti di questo elenco."
+  },
+  {
+   "id": "moto_auto",
+   "en": "Motorcycles on the autostrada",
+   "it": "Motocicli in autostrada"
+  },
+  {
+   "id": "load",
+   "en": "The load and what sticks out (sporgenze)",
+   "it": "Il carico e le sporgenze"
+  },
+  {
+   "id": "equip",
+   "en": "Equipment and condition",
+   "it": "Equipaggiamento e stato del veicolo"
+  },
+  {
+   "id": "towing",
+   "en": "Towing a trailer (rimorchio)",
+   "it": "Traino di un rimorchio"
+  },
+  {
+   "id": "validity",
+   "en": "How long a license lasts",
+   "it": "Quanto dura la patente"
+  },
+  {
+   "id": "points",
+   "en": "How the points system works (patente a punti)",
+   "it": "Come funziona la patente a punti",
+   "noteEn": "Memorize the figures in this list.",
+   "noteIt": "Da memorizzare: le cifre di questo elenco."
+  },
+  {
+   "id": "lost",
+   "en": "Points and fines, by violation",
+   "it": "Punti e multe, per violazione",
+   "noteEn": "The bank asks WHICH of these violations cost points. The figures it tests are marked: the 2 points for emergency towing, and the violations that cost none. Every other figure comes from the Code's table (art. 126-bis) and is never asked, so it is shown for reference and need not be memorized. In the first three years of a B license every figure is doubled. Each violation also shows its fine, from the Code; no fine amount is tested. Amounts are those in force for 2026 and may be revised from January 2027. Paying within 5 days takes 30% off the minimum, except where the license is also suspended.",
+   "noteIt": "I quiz chiedono QUALI di queste violazioni costano punti. Le cifre chieste sono contrassegnate: i 2 punti del traino di emergenza e le violazioni che non ne costano nessuno. Ogni altra cifra viene dalla tabella del Codice (art. 126-bis) e non è mai chiesta, quindi è indicata per riferimento e non va memorizzata. Nei primi tre anni di patente B ogni cifra è raddoppiata. Ogni violazione riporta anche la multa, dal Codice; nessun importo è chiesto nei quiz. Gli importi sono quelli in vigore per il 2026 e possono essere aggiornati da gennaio 2027. Pagando entro 5 giorni si ha uno sconto del 30% sul minimo, salvo quando è prevista anche la sospensione della patente.",
+   "foot": {
+    "cat": "penalty",
+    "en": "Also tested",
+    "it": "Chiesto anche",
+    "noteEn": "Points are not doubled for a powerful motorcycle or car, and the license is not withdrawn on the spot for every violation that costs points.",
+    "noteIt": "I punti non raddoppiano per un motociclo o un'autovettura potente, e la patente non viene ritirata sul posto per ogni violazione che costa punti.",
+    "noteSrc": [
+     "24671",
+     "24672",
+     "24586"
+    ]
+   }
+  },
+  {
+   "id": "measures",
+   "en": "Withdrawal, suspension, revision and revocation",
+   "it": "Ritiro, sospensione, revisione e revoca",
+   "noteEn": "These are the violations the bank links to each measure, and every row is tested. The Code names further causes, which the bank does not test.",
+   "noteIt": "Sono le violazioni che i quiz collegano a ciascun provvedimento, e ogni riga è chiesta nei quiz. Il Codice prevede altri casi, che i quiz non chiedono.",
+   "foot": {
+    "cat": "penalty",
+    "en": "Tested as bringing none of these",
+    "it": "Nei quiz non comportano nessuno di questi provvedimenti",
+    "noteEn": "Carrying a drunk passenger; driving in Italy on a license from a foreign country of residence; tires of a size not on the registration; any violation merely because it costs points; not carrying the registration, the ownership certificate or the license itself; an illegible license; no warning triangle on request; unpaid vehicle tax; parking in a space for people with disabilities. Also tested: an expired license, a temporary loss of the requirements and missing corrective lenses do not bring revocation, and losing all points brings a revision, not a revocation or a suspension.",
+    "noteIt": "Trasportare un passeggero ubriaco; circolare in Italia con patente dello stato estero di residenza; pneumatici di misura diversa da quella della carta di circolazione; una violazione solo perché costa punti; non avere con sé la carta di circolazione, il certificato di proprietà o la patente; una patente illeggibile; non esibire il triangolo su richiesta; il bollo non pagato; la sosta negli spazi per persone invalide. Nei quiz inoltre la patente scaduta, la perdita temporanea dei requisiti e la mancanza delle lenti prescritte non comportano la revoca, e l'azzeramento dei punti comporta la revisione, non la revoca né la sospensione.",
+    "noteSrc": [
+     "24583",
+     "24584",
+     "24585",
+     "24586",
+     "24587",
+     "24588",
+     "24603",
+     "24612",
+     "24633",
+     "24634",
+     "24635",
+     "24638",
+     "24637",
+     "23788",
+     "24611",
+     "24613",
+     "24614",
+     "24654",
+     "24631"
+    ]
+   },
+   "defs": {
+    "Ritiro": {
+     "en": "Police officers take your license at the roadside, and from then on you may not drive. It is a precaution, not a penalty: what follows is decided afterwards, and a driver found not responsible gets the license back.",
+     "it": "Gli agenti prendono la patente sul posto, e da quel momento non si può guidare. È una misura cautelare, non una sanzione: ciò che segue si decide dopo, e chi risulta non responsabile riottiene la patente."
+    },
+    "Sospensione": {
+     "en": "The Prefect orders that you may not drive for a fixed period, which depends on the violation. When the period ends, you get the license back.",
+     "it": "Il Prefetto dispone che non si possa guidare per un periodo stabilito, che dipende dalla violazione. Finito il periodo, la patente viene restituita."
+    },
+    "Revisione": {
+     "en": "The Motorizzazione (licensing office) or the Prefect requires you to prove again that you are fit and able to drive, with a new medical check, new theory and driving tests, or both. If you pass, you keep the license; if you fail, it is revoked.",
+     "it": "La Motorizzazione o il Prefetto chiede di dimostrare di nuovo l'idoneità alla guida, con una nuova visita medica, nuovi esami di teoria e di guida, o entrambi. Se si supera, si conserva la patente; se non si supera, la patente è revocata."
+    },
+    "Revoca": {
+     "en": "The Motorizzazione or the Prefect cancels the license for good. To drive again you must earn a new one from the beginning, often only after a waiting period of some years.",
+     "it": "La Motorizzazione o il Prefetto annulla definitivamente la patente. Per tornare a guidare bisogna conseguirne una nuova dall'inizio, spesso solo dopo un'attesa di alcuni anni."
+    }
+   }
+  },
+  {
+   "id": "periods",
+   "en": "Other periods and times",
+   "it": "Altri tempi e periodi"
+  }
+ ]
+}

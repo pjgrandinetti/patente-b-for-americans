@@ -1,0 +1,1442 @@
+[
+ {
+  "n": "18319",
+  "kind": "b",
+  "clause": "indifferentemente sia da destra che da sinistra",
+  "base": "In una carreggiata extraurbana del tipo rappresentato si può sorpassare"
+ },
+ {
+  "n": "18321",
+  "kind": "b",
+  "clause": "anche se il conducente che sta dietro ha già iniziato la stessa manovra",
+  "base": "In una carreggiata del tipo rappresentato possiamo iniziare un sorpasso"
+ },
+ {
+  "n": "18454",
+  "kind": "d",
+  "clause": "solo",
+  "base": "Nelle autostrade possono circolare le autovetture"
+ },
+ {
+  "n": "18455",
+  "kind": "b",
+  "clause": "tutti i tipi di",
+  "base": "Nelle autostrade possono circolare i motocicli"
+ },
+ {
+  "n": "18458",
+  "kind": "d",
+  "clause": "solo",
+  "base": "Nelle autostrade possono circolare gli autoveicoli"
+ },
+ {
+  "n": "18523",
+  "kind": "a",
+  "clause": "anche alle biciclette",
+  "base": "Il marciapiede è una parte della strada riservata ai pedoni"
+ },
+ {
+  "n": "18524",
+  "kind": "a",
+  "clause": "e ai veicoli in sosta, qualora non sia rialzato",
+  "base": "Il marciapiede è riservato ai pedoni"
+ },
+ {
+  "n": "18674",
+  "kind": "d",
+  "clause": "solo gli incroci regolati da semaforo",
+  "base": "Bisogna lasciare liberi gli incroci in caso di formazione di code di veicoli"
+ },
+ {
+  "n": "18738",
+  "kind": "d",
+  "clause": "solo se sono in divisa",
+  "base": "Il conducente di un veicolo deve rispettare gli agenti del traffico"
+ },
+ {
+  "n": "18762",
+  "kind": "d",
+  "clause": "ma non di quelli con bastone bianco-rosso",
+  "base": "Bisogna usare particolare prudenza nei confronti dei pedoni muniti di bastone bianco"
+ },
+ {
+  "n": "18774",
+  "kind": "d",
+  "clause": "solo a coloro che attraversano da sinistra a destra",
+  "base": "Quando le persone anziane attraversano la carreggiata bisogna dare la precedenza"
+ },
+ {
+  "n": "18783",
+  "kind": "d",
+  "clause": "solo se l'attraversamento pedonale dista oltre 100 metri",
+  "base": "Il conducente, quando un pedone non vedente con il bastone bianco attraversa la strada fuori dalle strisce pedonali, deve dargli la precedenza"
+ },
+ {
+  "n": "18784",
+  "kind": "d",
+  "clause": "solo se munito di bastone bianco-rosso",
+  "base": "Il conducente deve dare la precedenza a un pedone non vedente che attraversa la strada fuori dalle strisce pedonali"
+ },
+ {
+  "n": "18819",
+  "kind": "d",
+  "clause": "solo se vi sono bambini che attraversano",
+  "base": "Alla guida di un veicolo, in vicinanza di una piazzola di fermata di autobus per scolari, si deve rallentare"
+ },
+ {
+  "n": "18847",
+  "kind": "d",
+  "clause": "solo se attraversa da sinistra a destra",
+  "base": "Quando una donna in stato di gravidanza attraversa la carreggiata bisogna darle la precedenza"
+ },
+ {
+  "n": "18848",
+  "kind": "d",
+  "clause": "solo se attraversa da sinistra a destra",
+  "base": "Quando un pedone che spinge la carrozzina per bambini attraversa la carreggiata bisogna dargli la precedenza"
+ },
+ {
+  "n": "18878",
+  "kind": "c",
+  "clause": "solo se provengono veicoli dal senso opposto",
+  "base": "In presenza del segnale raffigurato è necessario rallentare"
+ },
+ {
+  "n": "18920",
+  "kind": "c",
+  "clause": "solo se provengono veicoli dal senso opposto",
+  "base": "In presenza del segnale raffigurato è necessario rallentare"
+ },
+ {
+  "n": "19000",
+  "kind": "c",
+  "clause": "esclusivamente nella prima curva",
+  "base": "In presenza del segnale raffigurato è necessario tenere una velocità moderata"
+ },
+ {
+  "n": "19024",
+  "kind": "c",
+  "clause": "esclusivamente nella prima curva",
+  "base": "In presenza del segnale raffigurato è necessario tenere una velocità moderata"
+ },
+ {
+  "n": "19051",
+  "kind": "c",
+  "clause": "solo in caso di scarsa visibilità",
+  "base": "In presenza del segnale raffigurato è necessario rallentare"
+ },
+ {
+  "n": "19073",
+  "kind": "c",
+  "clause": "esclusivamente in caso di nebbia",
+  "base": "In presenza del segnale raffigurato è necessario rallentare"
+ },
+ {
+  "n": "19111",
+  "kind": "c",
+  "clause": "solo",
+  "base": "I pannelli raffigurati si possono trovare se il passaggio a livello è con barriere"
+ },
+ {
+  "n": "19162",
+  "kind": "c",
+  "clause": "solo se vi sono bambini che attraversano sulle strisce pedonali",
+  "base": "In presenza del segnale raffigurato si deve rallentare"
+ },
+ {
+  "n": "19165",
+  "kind": "c",
+  "clause": "solo",
+  "base": "In presenza del segnale raffigurato si deve dare la precedenza ai pedoni che attraversano da sinistra"
+ },
+ {
+  "n": "19186",
+  "kind": "c",
+  "clause": "solo",
+  "base": "In presenza del segnale raffigurato bisogna dare la precedenza ai ciclisti che attraversano da destra"
+ },
+ {
+  "n": "19314",
+  "kind": "c",
+  "clause": "e non a quelli sul marciapiede",
+  "base": "In presenza del segnale raffigurato è necessario fare attenzione ai bambini sulla carreggiata"
+ },
+ {
+  "n": "19522",
+  "kind": "d",
+  "clause": "unicamente",
+  "base": "Il segnale raffigurato vieta il transito ai veicoli a motore"
+ },
+ {
+  "n": "19524",
+  "kind": "d",
+  "clause": "ma solo l'uscita dalla strada",
+  "base": "Il segnale raffigurato non consente l'ingresso"
+ },
+ {
+  "n": "19543",
+  "kind": "c",
+  "clause": "nei centri abitati, dalle ore 8.00 alle ore 20.00",
+  "base": "Il divieto imposto dal segnale raffigurato deve essere rispettato"
+ },
+ {
+  "n": "19611",
+  "kind": "d",
+  "clause": "valido solo per autoveicoli",
+  "base": "Il segnale raffigurato indica un limite di velocità"
+ },
+ {
+  "n": "19616",
+  "kind": "c",
+  "clause": "valido dalle ore 8.00 alle ore 20.00",
+  "base": "Il segnale raffigurato indica un limite di velocità"
+ },
+ {
+  "n": "19623",
+  "kind": "d",
+  "clause": "soltanto dalle ore 20.00 alle ore 8.00",
+  "base": "Il segnale raffigurato deve essere rispettato"
+ },
+ {
+  "n": "19651",
+  "kind": "c",
+  "clause": "nei centri abitati, dalle ore 8.00 alle ore 20.00",
+  "base": "Il segnale raffigurato vige"
+ },
+ {
+  "n": "19662",
+  "kind": "c",
+  "clause": "dalle ore 8.00 alle ore 20.00",
+  "base": "Il segnale raffigurato vale"
+ },
+ {
+  "n": "19673",
+  "kind": "c",
+  "clause": "dalle ore 8.00 alle ore 20.00",
+  "base": "Il segnale raffigurato vale"
+ },
+ {
+  "n": "19686",
+  "kind": "d",
+  "clause": "di cilindrata superiore ai 125 cm3",
+  "base": "Il segnale raffigurato si riferisce ai motocicli"
+ },
+ {
+  "n": "19710",
+  "kind": "d",
+  "clause": "non catalizzate",
+  "base": "Il segnale raffigurato vieta il transito alle autovetture"
+ },
+ {
+  "n": "19726",
+  "kind": "d",
+  "clause": "solo nei giorni feriali",
+  "base": "Il segnale raffigurato è valido"
+ },
+ {
+  "n": "19752",
+  "kind": "d",
+  "clause": "soltanto",
+  "base": "Il segnale raffigurato vale per i veicoli adibiti al trasporto di merci"
+ },
+ {
+  "n": "19814",
+  "kind": "d",
+  "clause": "soltanto dalle ore 8.00 alle ore 20.00",
+  "base": "Il segnale raffigurato nei centri abitati vale"
+ },
+ {
+  "n": "19823",
+  "kind": "d",
+  "clause": "solo",
+  "base": "Il segnale raffigurato deve essere rispettato dai conducenti di veicoli adibiti al trasporto di cose"
+ },
+ {
+  "n": "19827",
+  "kind": "b",
+  "clause": "anche se insieme superano i 10 metri",
+  "base": "In presenza del segnale raffigurato è consentito il transito di una autovettura che traina un caravan"
+ },
+ {
+  "n": "19836",
+  "kind": "c",
+  "clause": "nei centri abitati, vige dalle ore 8.00 alle ore 20.00",
+  "base": "Il segnale raffigurato vige"
+ },
+ {
+  "n": "19838",
+  "kind": "d",
+  "clause": "soli",
+  "base": "Il segnale raffigurato vieta il transito ai veicoli per trasporto merci di massa superiore a 7 tonnellate"
+ },
+ {
+  "n": "19847",
+  "kind": "d",
+  "clause": "solo per autoveicoli con ruote gemellate",
+  "base": "Il segnale raffigurato vale per autoveicoli con ruote gemellate"
+ },
+ {
+  "n": "19848",
+  "kind": "c",
+  "clause": "nei centri abitati vige dalle ore 8.00 alle ore 20.00",
+  "base": "Il segnale raffigurato vige"
+ },
+ {
+  "n": "19856",
+  "kind": "d",
+  "clause": "soltanto",
+  "base": "Il segnale raffigurato riguarda i veicoli in servizio pubblico"
+ },
+ {
+  "n": "19879",
+  "kind": "d",
+  "clause": "tra le sole autovetture",
+  "base": "Il segnale raffigurato indica la fine del divieto di sorpasso"
+ },
+ {
+  "n": "19903",
+  "kind": "a",
+  "clause": "anche sul lato destro",
+  "base": "Il segnale raffigurato, se posto sul lato sinistro di una strada a senso unico, vieta la sosta"
+ },
+ {
+  "n": "19935",
+  "kind": "d",
+  "clause": "soltanto nelle ore diurne",
+  "base": "Lungo le strade extraurbane, il segnale raffigurato vale"
+ },
+ {
+  "n": "19943",
+  "kind": "c",
+  "clause": "dalle ore 8.00 alle 20.00",
+  "base": "Lungo le strade urbane, il segnale raffigurato indica che il divieto di fermata vige"
+ },
+ {
+  "n": "19957",
+  "kind": "d",
+  "clause": "solo nei giorni feriali",
+  "base": "Il segnale raffigurato vale, salvo diversa indicazione"
+ },
+ {
+  "n": "19988",
+  "kind": "d",
+  "clause": "solo nelle ore diurne",
+  "base": "Il segnale raffigurato vale"
+ },
+ {
+  "n": "19989",
+  "kind": "d",
+  "clause": "solo nelle ore notturne",
+  "base": "Il segnale raffigurato vale"
+ },
+ {
+  "n": "20019",
+  "kind": "d",
+  "clause": "per i veicoli rappresentati in figura",
+  "base": "Il segnale raffigurato segnala che nelle ore indicate vige il DIVIETO DI SOSTA"
+ },
+ {
+  "n": "20188",
+  "kind": "d",
+  "clause": "solo",
+  "base": "Il segnale raffigurato consente di proseguire diritto"
+ },
+ {
+  "n": "20189",
+  "kind": "d",
+  "clause": "soltanto",
+  "base": "Il segnale raffigurato indica che è consentito svoltare a destra"
+ },
+ {
+  "n": "20209",
+  "kind": "d",
+  "clause": "solo",
+  "base": "Il segnale raffigurato consente di proseguire diritto"
+ },
+ {
+  "n": "20210",
+  "kind": "d",
+  "clause": "soltanto",
+  "base": "Il segnale raffigurato indica che è consentito svoltare a sinistra"
+ },
+ {
+  "n": "20288",
+  "kind": "d",
+  "clause": "solo per le autovetture",
+  "base": "Il segnale raffigurato prescrive un obbligo di ROTATORIA"
+ },
+ {
+  "n": "20302",
+  "kind": "b",
+  "clause": "senza alcun limite",
+  "base": "Il segnale raffigurato consente di marciare ad una velocità superiore a 30 km/h"
+ },
+ {
+  "n": "20393",
+  "kind": "d",
+  "clause": "soltanto se condotte a mano",
+  "base": "Il segnale raffigurato è posto in corrispondenza di un'area transitabile con biciclette"
+ },
+ {
+  "n": "20431",
+  "kind": "d",
+  "clause": "solo se si hanno oggetti o merci da dichiarare",
+  "base": "Il segnale raffigurato obbliga a rallentare fermandosi al varco doganale"
+ },
+ {
+  "n": "20442",
+  "kind": "a",
+  "clause": "e dare precedenza ai mezzi della polizia",
+  "base": "Il segnale raffigurato impone di fermarsi"
+ },
+ {
+  "n": "20502",
+  "kind": "c",
+  "clause": "soltanto in caso di incrocio con altri veicoli",
+  "base": "Il segnale raffigurato obbliga ad arrestarsi"
+ },
+ {
+  "n": "20503",
+  "kind": "c",
+  "clause": "solo",
+  "base": "Il segnale raffigurato obbliga ad arrestarsi per dare la precedenza ai veicoli provenienti da destra"
+ },
+ {
+  "n": "20506",
+  "kind": "b",
+  "clause": "anche se il semaforo emette luce verde",
+  "base": "Il segnale raffigurato preannuncia di arrestarsi all'incrocio"
+ },
+ {
+  "n": "20508",
+  "kind": "c",
+  "clause": "solo se sopraggiungono altri veicoli",
+  "base": "Il segnale raffigurato obbliga ad arrestarsi"
+ },
+ {
+  "n": "20520",
+  "kind": "c",
+  "clause": "solo",
+  "base": "Il segnale raffigurato preannuncia un incrocio in cui vale la regola di dare la precedenza a destra"
+ },
+ {
+  "n": "20566",
+  "kind": "b",
+  "clause": "qualsiasi",
+  "base": "Il segnale raffigurato si incontra prima di un restringimento della carreggiata"
+ },
+ {
+  "n": "20576",
+  "kind": "b",
+  "clause": "anche se il semaforo è a luce verde",
+  "base": "In presenza del segnale raffigurato e del semaforo a tre luci dobbiamo dare la precedenza"
+ },
+ {
+  "n": "20578",
+  "kind": "c",
+  "clause": ", ma l'agente del traffico ci ordina di fermarci",
+  "base": "In presenza del segnale raffigurato e del semaforo a tre luci abbiamo la precedenza se il semaforo è a luce verde"
+ },
+ {
+  "n": "20579",
+  "kind": "c",
+  "clause": "e l'agente del traffico ci ordina di passare",
+  "base": "In presenza del segnale raffigurato e del semaforo a tre luci dobbiamo dare la precedenza se il semaforo è spento"
+ },
+ {
+  "n": "20590",
+  "kind": "b",
+  "clause": "sempre",
+  "base": "Il segnale raffigurato preannuncia un incrocio con precedenza a destra"
+ },
+ {
+  "n": "20674",
+  "kind": "c",
+  "clause": "soli",
+  "base": "Il segnale raffigurato preannuncia incrocio con precedenza rispetto ai veicoli provenienti da destra"
+ },
+ {
+  "n": "20684",
+  "kind": "c",
+  "clause": "esclusivamente",
+  "base": "Il segnale raffigurato si trova all'inizio di una strada statale"
+ },
+ {
+  "n": "20688",
+  "kind": "c",
+  "clause": "fino all'uscita del centro abitato",
+  "base": "Il segnale raffigurato indica che si ha la precedenza"
+ },
+ {
+  "n": "20705",
+  "kind": "b",
+  "clause": "anche se il semaforo è a luce rossa",
+  "base": "In presenza del segnale raffigurato e del semaforo a tre luci abbiamo la precedenza"
+ },
+ {
+  "n": "20707",
+  "kind": "c",
+  "clause": "e l'agente del traffico ci ordina di fermarci",
+  "base": "In presenza del segnale raffigurato e del semaforo a tre luci abbiamo la precedenza se il semaforo è a luce verde"
+ },
+ {
+  "n": "20708",
+  "kind": "c",
+  "clause": "e l'agente del traffico ci ordina di fermarci",
+  "base": "In presenza del segnale raffigurato e del semaforo a tre luci abbiamo la precedenza se il semaforo è spento"
+ },
+ {
+  "n": "20722",
+  "kind": "c",
+  "clause": "ma si può circolare stando a cavallo di essa",
+  "base": "La doppia striscia in figura non può essere superata"
+ },
+ {
+  "n": "20750",
+  "kind": "b",
+  "clause": "anche se le strisce di corsia sono discontinue (tratteggiate)",
+  "base": "Le frecce direzionali in figura obbligano a seguire la direzione indicata"
+ },
+ {
+  "n": "20775",
+  "kind": "a",
+  "clause": "anche al veicolo che viene di fronte",
+  "base": "Rispetto al veicolo che procede nel senso della freccia, la striscia discontinua in figura consente di superare le strisce"
+ },
+ {
+  "n": "20817",
+  "kind": "d",
+  "clause": "solo",
+  "base": "La corsia di sinistra rappresentata in figura consente al conducente di svoltare a sinistra"
+ },
+ {
+  "n": "20819",
+  "kind": "d",
+  "clause": "solo",
+  "base": "La corsia di destra rappresentata in figura consente al conducente di svoltare a destra"
+ },
+ {
+  "n": "20820",
+  "kind": "b",
+  "clause": "anche superando la striscia continua",
+  "base": "Con la segnaletica rappresentata in figura è consentito al conducente cambiare corsia"
+ },
+ {
+  "n": "20833",
+  "kind": "d",
+  "clause": "solo",
+  "base": "La corsia B rappresentata in figura consente al conducente di proseguire diritto"
+ },
+ {
+  "n": "20834",
+  "kind": "d",
+  "clause": "solo",
+  "base": "La corsia C rappresentata in figura consente al conducente la svolta a destra"
+ },
+ {
+  "n": "20885",
+  "kind": "b",
+  "clause": "con qualsiasi condizione di visibilità e di traffico",
+  "base": "In una strada a doppio senso di circolazione con la segnaletica indicata in figura si può sorpassare"
+ },
+ {
+  "n": "20887",
+  "kind": "c",
+  "clause": "ma senza occupare l'altra corsia",
+  "base": "In una strada a doppio senso di circolazione con la segnaletica indicata in figura si può fare l'inversione di marcia"
+ },
+ {
+  "n": "20909",
+  "kind": "d",
+  "clause": "solo",
+  "base": "La striscia bianca discontinua in figura si trova nelle strade a senso unico"
+ },
+ {
+  "n": "20919",
+  "kind": "b",
+  "clause": "anche superandola, purché con le sole ruote di sinistra",
+  "base": "La striscia bianca continua di mezzo in figura consente il sorpasso"
+ },
+ {
+  "n": "20938",
+  "kind": "d",
+  "clause": "solo in caso di emergenza",
+  "base": "La striscia bianca laterale discontinua in figura può essere superata"
+ },
+ {
+  "n": "20951",
+  "kind": "d",
+  "clause": "solo",
+  "base": "La segnaletica rappresentata in figura si trova in vicinanza di passaggi a livello con barriere"
+ },
+ {
+  "n": "20966",
+  "kind": "c",
+  "clause": "se non è regolato",
+  "base": "La striscia trasversale continua in figura indica il punto in cui dobbiamo arrestarci ad un incrocio"
+ },
+ {
+  "n": "20967",
+  "kind": "b",
+  "clause": "sempre",
+  "base": "La striscia trasversale continua in figura indica il punto in cui bisogna arrestarsi in vicinanza di un incrocio stradale"
+ },
+ {
+  "n": "20987",
+  "kind": "c",
+  "clause": "ma solo quando si accende anche la luce gialla",
+  "base": "Quando è accesa la luce verde del semaforo in figura si può svoltare a sinistra"
+ },
+ {
+  "n": "20989",
+  "kind": "c",
+  "clause": "solo se la carreggiata è divisa in corsie",
+  "base": "Quando è accesa la luce verde del semaforo in figura si può svoltare"
+ },
+ {
+  "n": "20991",
+  "kind": "c",
+  "clause": "dando però la precedenza ai pedoni",
+  "base": "Quando è accesa la luce verde del semaforo in figura si può proseguire diritto"
+ },
+ {
+  "n": "21005",
+  "kind": "b",
+  "clause": "in ogni caso",
+  "base": "La luce gialla fissa ci obbliga ad arrestarci, senza impegnare l'incrocio"
+ },
+ {
+  "n": "21100",
+  "kind": "d",
+  "clause": "solo",
+  "base": "Il semaforo in figura è valido per i veicoli che marciano su rotaie (tram, treni)"
+ },
+ {
+  "n": "21156",
+  "kind": "d",
+  "clause": "solo",
+  "base": "Il semaforo di corsie reversibili in figura è posto su carreggiate a senso unico di circolazione"
+ },
+ {
+  "n": "21180",
+  "kind": "b",
+  "clause": "in ogni caso",
+  "base": "Se il vigile ha un braccio alzato come in figura bisogna arrestarsi"
+ },
+ {
+  "n": "21199",
+  "kind": "d",
+  "clause": "solo",
+  "base": "Il suono prolungato del fischietto da parte dell'agente preposto al traffico serve per arrestare o deviare i veicoli che arrivano dalla sua destra"
+ },
+ {
+  "n": "21201",
+  "kind": "d",
+  "clause": "soli",
+  "base": "Il suono prolungato del fischietto da parte dell'agente preposto al traffico impone ai veicoli pesanti di arrestarsi"
+ },
+ {
+  "n": "21341",
+  "kind": "c",
+  "clause": "riservato solo ai veicoli alimentati a GPL",
+  "base": "Il segnale raffigurato indica un distributore di carburante"
+ },
+ {
+  "n": "21395",
+  "kind": "a",
+  "clause": "anche agli autobus",
+  "base": "Il segnale raffigurato vieta agli autocarri di massa a pieno carico superiore a 3,5 tonnellate di raggiungere Avezzano"
+ },
+ {
+  "n": "21500",
+  "kind": "d",
+  "clause": "solo ai residenti",
+  "base": "Il segnale raffigurato consente il transito ad alcune categorie di veicoli"
+ },
+ {
+  "n": "21935",
+  "kind": "d",
+  "clause": "solo",
+  "base": "I delineatori raffigurati sono utili nelle ore notturne"
+ },
+ {
+  "n": "22130",
+  "kind": "d",
+  "clause": "perché la strada può essere attraversata dai tram",
+  "base": "Il pannello integrativo raffigurato indica di fare attenzione"
+ },
+ {
+  "n": "22269",
+  "kind": "d",
+  "clause": "urbani",
+  "base": "Il pannello integrativo in figura vale solo per gli autobus"
+ },
+ {
+  "n": "22282",
+  "kind": "d",
+  "clause": "esclusivamente",
+  "base": "Il conducente deve regolare la velocità tenendo conto dei limiti massimi"
+ },
+ {
+  "n": "22346",
+  "kind": "b",
+  "clause": "sempre",
+  "base": "Il limite massimo di velocità per un'autovettura nei centri abitati è di 50 km/h"
+ },
+ {
+  "n": "22448",
+  "kind": "d",
+  "clause": "solo",
+  "base": "Si deve tenere una velocità adeguata alle nostre condizioni di salute"
+ },
+ {
+  "n": "22509",
+  "kind": "d",
+  "clause": "solo nelle ore notturne",
+  "base": "Attraversare un passaggio a livello con manovra azzardata per guadagnare tempo, può essere pericoloso"
+ },
+ {
+  "n": "22524",
+  "kind": "d",
+  "clause": "solo se una delle portiere risulta già aperta",
+  "base": "Passare molto vicino ad un'auto parcheggiata, a bordo della quale si trovano ancora persone, è pericoloso"
+ },
+ {
+  "n": "22525",
+  "kind": "d",
+  "clause": "solo se il conducente ed alcuni passeggeri sono già scesi",
+  "base": "Passare molto vicino ad un'auto parcheggiata, a bordo della quale si trovano ancora persone, è pericoloso"
+ },
+ {
+  "n": "22526",
+  "kind": "d",
+  "clause": "solo se si viaggia ad alta velocità",
+  "base": "Passare molto vicino ad un'auto parcheggiata, a bordo della quale si trovano ancora persone, può essere pericoloso"
+ },
+ {
+  "n": "22651",
+  "kind": "d",
+  "clause": "solo dai quadricicli a motore",
+  "base": "La distanza di sicurezza deve essere mantenuta"
+ },
+ {
+  "n": "22669",
+  "kind": "d",
+  "clause": "solo",
+  "base": "Il veicolo S, muovendosi in retromarcia per immettersi nella circolazione, deve dare la precedenza ai veicoli che transitano nel suo senso di marcia"
+ },
+ {
+  "n": "22704",
+  "kind": "b",
+  "clause": "anche se non saldamente assicurati",
+  "base": "Sui motocicli è consentito trasportare sacchetti con la spesa"
+ },
+ {
+  "n": "22769",
+  "kind": "d",
+  "clause": "limitarsi ad",
+  "base": "Per non costituire pericolo o intralcio per la circolazione, è necessario osservare i limiti massimi di velocità"
+ },
+ {
+  "n": "22823",
+  "kind": "a",
+  "clause": "utilizzando le corsie riservate agli autobus e ai veicoli in servizio pubblico",
+  "base": "In caso di intenso traffico è consentito circolare per file parallele"
+ },
+ {
+  "n": "22873",
+  "kind": "b",
+  "clause": "sempre",
+  "base": "E' consentito viaggiare per file parallele se la carreggiata a doppio senso ha almeno due corsie per ogni senso di marcia, come quella in figura"
+ },
+ {
+  "n": "22936",
+  "kind": "d",
+  "clause": "solo sulle strade larghe, che permettono di eseguirla con una sola manovra",
+  "base": "Il conducente che intende effettuare l'inversione di marcia su una strada a doppio senso può effettuarla"
+ },
+ {
+  "n": "22969",
+  "kind": "d",
+  "clause": "ai soli veicoli pesanti",
+  "base": "Se sul tetto di un'auto della polizia è presente un display con la scritta luminosa RALLENTARE, l'obbligo è rivolto a tutti i veicoli"
+ },
+ {
+  "n": "22975",
+  "kind": "d",
+  "clause": "solo in presenza di apposito segnale",
+  "base": "Il conducente che intende immettersi nel flusso della circolazione deve dare la precedenza ai veicoli in transito"
+ },
+ {
+  "n": "22976",
+  "kind": "c",
+  "clause": "ad eccezione delle biciclette",
+  "base": "Il conducente che si immette nel flusso della circolazione deve dare la precedenza ai veicoli in transito"
+ },
+ {
+  "n": "22989",
+  "kind": "c",
+  "clause": "ad eccezione delle biciclette",
+  "base": "Il conducente del veicolo S in figura, muovendosi in retromarcia per immettersi nella circolazione, deve dare la precedenza ai veicoli che transitano nel suo senso di marcia"
+ },
+ {
+  "n": "23049",
+  "kind": "a",
+  "clause": "ed il veicolo M",
+  "base": "Nella situazione rappresentata in figura il veicolo O deve attendere che passi il tram"
+ },
+ {
+  "n": "23051",
+  "kind": "c",
+  "clause": "ma non al veicolo M",
+  "base": "Nella situazione rappresentata in figura il veicolo A deve dare la precedenza al tram"
+ },
+ {
+  "n": "23052",
+  "kind": "a",
+  "clause": "ed al veicolo M",
+  "base": "Nella situazione rappresentata in figura il veicolo O deve dare la precedenza al tram"
+ },
+ {
+  "n": "23060",
+  "kind": "a",
+  "clause": "e C",
+  "base": "Nella situazione rappresentata in figura il veicolo H deve impegnare l'incrocio dopo il passaggio del veicolo B"
+ },
+ {
+  "n": "23061",
+  "kind": "c",
+  "clause": "in quanto è un autobus",
+  "base": "Nella situazione rappresentata in figura il veicolo H ha la precedenza sul veicolo C"
+ },
+ {
+  "n": "23121",
+  "kind": "a",
+  "clause": "ma dopo quello N",
+  "base": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo P passa prima del veicolo B"
+ },
+ {
+  "n": "23202",
+  "kind": "a",
+  "clause": "H",
+  "base": "Nell'incrocio rappresentato in figura il veicolo V deve attendere che siano transitati i veicoli A, E"
+ },
+ {
+  "n": "23227",
+  "kind": "a",
+  "clause": "ed E",
+  "base": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo A deve attendere che sia transitato il veicolo S"
+ },
+ {
+  "n": "23259",
+  "kind": "c",
+  "clause": "ma deve fermarsi al centro di esso",
+  "base": "Nella situazione rappresentata in figura il veicolo T impegna per primo l'incrocio"
+ },
+ {
+  "n": "23301",
+  "kind": "a",
+  "clause": "C",
+  "base": "Nell'incrocio rappresentato nella figura i veicoli T, B transitano contemporaneamente"
+ },
+ {
+  "n": "23332",
+  "kind": "a",
+  "clause": "ma prima del veicolo D",
+  "base": "Nell'incrocio rappresentato nella figura il conducente del veicolo A passa dopo i veicoli E e S"
+ },
+ {
+  "n": "23351",
+  "kind": "d",
+  "clause": "solo",
+  "base": "Nell'incrocio rappresentato nella figura il conducente del veicolo P deve dare la precedenza al veicolo proveniente dalla sua destra"
+ },
+ {
+  "n": "23381",
+  "kind": "c",
+  "clause": "purché il veicolo M non stia svolgendo un servizio pubblico di linea",
+  "base": "Nell'intersezione in figura, il veicolo T può passare per primo"
+ },
+ {
+  "n": "23393",
+  "kind": "a",
+  "clause": "ma prima del veicolo A",
+  "base": "Dovendo attraversare l'incrocio rappresentato in figura il veicolo S transita dopo il veicolo T"
+ },
+ {
+  "n": "23402",
+  "kind": "c",
+  "clause": "ma si deve fermare al centro di esso",
+  "base": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo P impegna l'incrocio per primo"
+ },
+ {
+  "n": "23467",
+  "kind": "d",
+  "clause": "semplicemente",
+  "base": "Il conducente che intende sorpassare deve accertarsi che nessun veicolo provenga dalla direzione opposta"
+ },
+ {
+  "n": "23468",
+  "kind": "d",
+  "clause": "unico",
+  "base": "Il conducente che intende sorpassare ha come obbligo quello di azionare l'indicatore di direzione (frecce)"
+ },
+ {
+  "n": "23469",
+  "kind": "d",
+  "clause": "unicamente",
+  "base": "Il conducente che intende sorpassare deve accertarsi che non vi sia nessun segnale di divieto di sorpasso"
+ },
+ {
+  "n": "23492",
+  "kind": "d",
+  "clause": "soltanto se il veicolo da sorpassare sta svoltando a destra",
+  "base": "La manovra di sorpasso può effettuarsi a sinistra"
+ },
+ {
+  "n": "23526",
+  "kind": "b",
+  "clause": "anche se la strada è a due carreggiate separate",
+  "base": "Il sorpasso è vietato in curva"
+ },
+ {
+  "n": "23527",
+  "kind": "b",
+  "clause": "anche se la strada è ad almeno due corsie per senso di marcia",
+  "base": "Il sorpasso è vietato in curva"
+ },
+ {
+  "n": "23585",
+  "kind": "b",
+  "clause": "anche se non esiste salvagente",
+  "base": "Il sorpasso a destra è consentito quando il filobus è fermo per la salita e la discesa dei passeggeri"
+ },
+ {
+  "n": "23602",
+  "kind": "b",
+  "clause": "anche se in servizio di emergenza",
+  "base": "Sulle autostrade a tre corsie per senso di marcia è consentito sorpassare un'auto della polizia"
+ },
+ {
+  "n": "23627",
+  "kind": "c",
+  "clause": "ma non di quelli di fronte",
+  "base": "Il conducente di un autoveicolo in sosta su una strada stretta, prima di scendere deve preoccuparsi dei veicoli che sopraggiungono da dietro"
+ },
+ {
+  "n": "23641",
+  "kind": "d",
+  "clause": "solo se si deve intraprendere un lungo viaggio",
+  "base": "Prima di iniziare a guidare un veicolo, bisogna verificarne lo stato di efficienza"
+ },
+ {
+  "n": "23657",
+  "kind": "b",
+  "clause": "sempre",
+  "base": "La fermata di un veicolo è consentita per chiedere informazioni agli agenti del traffico"
+ },
+ {
+  "n": "23664",
+  "kind": "a",
+  "clause": "eventualmente su una pista ciclabile",
+  "base": "Fuori dei centri abitati, il conducente, in caso di fermata ha l'obbligo di collocare il veicolo fuori della carreggiata"
+ },
+ {
+  "n": "23684",
+  "kind": "b",
+  "clause": "anche se il veicolo non ne occulta la vista",
+  "base": "La fermata è vietata in prossimità dei segnali stradali"
+ },
+ {
+  "n": "23685",
+  "kind": "b",
+  "clause": "anche in caso di emergenza",
+  "base": "La fermata è vietata lungo le autostrade"
+ },
+ {
+  "n": "23694",
+  "kind": "c",
+  "clause": "ma non agli sbocchi di esse",
+  "base": "La fermata per esigenze di brevissima durata è vietata sulle piste ciclabili"
+ },
+ {
+  "n": "23716",
+  "kind": "b",
+  "clause": "anche dove non esiste il marciapiede rialzato",
+  "base": "In caso di sosta in un centro abitato, il conducente deve collocare il veicolo il più vicino possibile al margine destro della carreggiata"
+ },
+ {
+  "n": "23717",
+  "kind": "a",
+  "clause": "eventualmente anche sulle piste ciclabili",
+  "base": "Fuori dei centri abitati, il conducente in caso di sosta deve collocare il veicolo fuori della carreggiata"
+ },
+ {
+  "n": "23733",
+  "kind": "c",
+  "clause": "ma non in loro prossimità",
+  "base": "La sosta è vietata in corrispondenza dei passaggi a livello"
+ },
+ {
+  "n": "23734",
+  "kind": "c",
+  "clause": "ma non di quelle tranviarie",
+  "base": "La sosta è vietata sui binari delle linee ferroviarie"
+ },
+ {
+  "n": "23736",
+  "kind": "c",
+  "clause": "ma non la fermata",
+  "base": "La sosta è vietata nei sottovia, sotto i sovrapassaggi, sotto i fornici e i portici"
+ },
+ {
+  "n": "23743",
+  "kind": "c",
+  "clause": "ma, fuori dei centri abitati e sulle strade di scorrimento, non è vietata in loro prossimità",
+  "base": "La sosta è vietata nelle curve"
+ },
+ {
+  "n": "23744",
+  "kind": "c",
+  "clause": "ma non la fermata",
+  "base": "La sosta è vietata in prossimità e in corrispondenza di segnali semaforici in modo da occultarne la vista"
+ },
+ {
+  "n": "23745",
+  "kind": "c",
+  "clause": "ma non lungo le corsie di canalizzazione",
+  "base": "La sosta è vietata in corrispondenza dei segnali orizzontali di preselezione"
+ },
+ {
+  "n": "23746",
+  "kind": "c",
+  "clause": "ma non in loro prossimità",
+  "base": "Fuori dei centri abitati, la sosta è vietata in corrispondenza delle aree di intersezione"
+ },
+ {
+  "n": "23748",
+  "kind": "c",
+  "clause": "ma non la fermata",
+  "base": "La sosta è vietata sugli attraversamenti pedonali"
+ },
+ {
+  "n": "23749",
+  "kind": "c",
+  "clause": "ma non agli sbocchi di esse nel caso sia di breve durata",
+  "base": "La sosta è vietata sulle piste ciclabili"
+ },
+ {
+  "n": "23773",
+  "kind": "a",
+  "clause": "ed anche la fermata",
+  "base": "La sosta è vietata negli spazi destinati a servizi di emergenza o di igiene pubblica indicati dalla apposita segnaletica"
+ },
+ {
+  "n": "23774",
+  "kind": "a",
+  "clause": "così come la fermata",
+  "base": "La sosta è vietata davanti ai cassonetti dei rifiuti urbani"
+ },
+ {
+  "n": "23778",
+  "kind": "b",
+  "clause": "anche quando i distributori sono chiusi",
+  "base": "La sosta è vietata in corrispondenza dei distributori di carburante, sino a 5 metri prima e dopo"
+ },
+ {
+  "n": "23787",
+  "kind": "c",
+  "clause": "ma non la sottrazione di punti dalla patente del conducente",
+  "base": "La sosta negli spazi riservati alla fermata e alla sosta dei veicoli per persone invalide comporta una sanzione pecuniaria"
+ },
+ {
+  "n": "23804",
+  "kind": "c",
+  "clause": "ma non in quelle in salita",
+  "base": "Prima di scendere dal veicolo in sosta, il conducente deve azionare il freno a mano del veicolo, su tutte le strade in discesa"
+ },
+ {
+  "n": "23817",
+  "kind": "c",
+  "clause": "senza dover opportunamente presegnalare la zona",
+  "base": "Nel caso di ingombro della carreggiata per avaria del veicolo che non è possibile spostare, il conducente deve informare l'organo di polizia"
+ },
+ {
+  "n": "23837",
+  "kind": "b",
+  "clause": "anche nei centri abitati",
+  "base": "Fuori dei centri abitati, di notte, quando mancano o sono insufficienti le luci posteriori di posizione o di emergenza, è obbligatorio presegnalare il veicolo fermo con il segnale triangolare mobile di pericolo"
+ },
+ {
+  "n": "23851",
+  "kind": "b",
+  "clause": "anche nei centri abitati",
+  "base": "Il conducente deve indossare il giubbotto ad alta visibilità di notte, fuori dei centri abitati, qualora debba fermarsi sulla carreggiata perché il suo veicolo ha un guasto"
+ },
+ {
+  "n": "23868",
+  "kind": "b",
+  "clause": "anche nelle aree di servizio e nelle aree di sosta",
+  "base": "Sulle autostrade e strade extraurbane principali è vietata la circolazione di pedoni e animali"
+ },
+ {
+  "n": "23894",
+  "kind": "b",
+  "clause": "anche nel tratto successivo al suo inizio",
+  "base": "Sulle autostrade e sulle strade extraurbane principali, per uscire dalla carreggiata il conducente può immettersi nella corsia di decelerazione dal suo inizio"
+ },
+ {
+  "n": "23896",
+  "kind": "b",
+  "clause": "anche in assenza di traffico",
+  "base": "Sulle autostrade e sulle strade extraurbane principali è consentita la marcia per file parallele in caso di traffico intenso"
+ },
+ {
+  "n": "23915",
+  "kind": "c",
+  "clause": "purché adeguatamente trattenuti al guinzaglio",
+  "base": "Sui veicoli è consentito il trasporto di cani anche in numero superiore ad uno, purché custoditi in gabbia o nel vano posteriore diviso da rete"
+ },
+ {
+  "n": "23921",
+  "kind": "d",
+  "clause": "solo se quest'ultimo è maggiorenne",
+  "base": "Sui motocicli è possibile trasportare un passeggero"
+ },
+ {
+  "n": "23928",
+  "kind": "d",
+  "clause": "solo se il conducente deve condurre il veicolo su strada extraurbana",
+  "base": "Il carico del veicolo deve essere sistemato in modo da evitarne la caduta o la dispersione"
+ },
+ {
+  "n": "23929",
+  "kind": "d",
+  "clause": "soltanto durante la circolazione notturna",
+  "base": "Il carico dei veicoli deve essere sistemato in modo da non mascherare dispositivi di illuminazione e di segnalazione visiva"
+ },
+ {
+  "n": "23958",
+  "kind": "b",
+  "clause": "anche se non è possibile segnalarlo",
+  "base": "Il traino per incombente situazione di emergenza di un veicolo in avaria deve avvenire attraverso un solido collegamento, idoneamente segnalato"
+ },
+ {
+  "n": "24026",
+  "kind": "b",
+  "clause": "anche se in curva",
+  "base": "Circolando dietro ad un veicolo che trasporta un carico che sta per cadere, conviene sorpassarlo appena possibile"
+ },
+ {
+  "n": "24068",
+  "kind": "d",
+  "clause": "solo se il carico sporge di oltre tre decimi della lunghezza del veicolo",
+  "base": "Il pannello raffigurato si usa se il carico sporge dietro al veicolo"
+ },
+ {
+  "n": "24069",
+  "kind": "a",
+  "clause": "anche di lato, quando il carico sporge oltre la larghezza del veicolo",
+  "base": "Il pannello raffigurato va messo all'estremità del carico che sporge dietro al veicolo"
+ },
+ {
+  "n": "24072",
+  "kind": "d",
+  "clause": "solo se il carico sporge di almeno 50 centimetri",
+  "base": "Il pannello raffigurato va messo sui veicoli se il carico sporge dietro"
+ },
+ {
+  "n": "24113",
+  "kind": "c",
+  "clause": "senza obbligo di specifiche segnalazioni",
+  "base": "Sui rimorchi leggeri, il carico trasportato può sporgere posteriormente, segnalato con il pannello"
+ },
+ {
+  "n": "24159",
+  "kind": "d",
+  "clause": "solo se scarsamente illuminate",
+  "base": "E' obbligatorio accendere i proiettori anabbaglianti nelle gallerie stradali"
+ },
+ {
+  "n": "24235",
+  "kind": "c",
+  "clause": "ma non quando si svolta a destra",
+  "base": "Si devono usare gli indicatori di direzione quando si effettua una svolta a sinistra"
+ },
+ {
+  "n": "24244",
+  "kind": "c",
+  "clause": "ma non quando la si termina rientrando nella corsia di marcia normale",
+  "base": "L'uso degli indicatori di direzione è necessario quando si inizia una manovra di sorpasso"
+ },
+ {
+  "n": "24260",
+  "kind": "d",
+  "clause": "soltanto sulle strade extraurbane",
+  "base": "E' consentito l'uso intermittente dei proiettori di profondità (a luce abbagliante)"
+ },
+ {
+  "n": "24261",
+  "kind": "d",
+  "clause": "ma unicamente di giorno",
+  "base": "E' consentito l'uso intermittente dei proiettori di profondità (a luce abbagliante), anche all'interno dei centri urbani"
+ },
+ {
+  "n": "24262",
+  "kind": "d",
+  "clause": "solo quando si trasportano feriti o ammalati gravi",
+  "base": "E' consentito l'uso intermittente dei proiettori di profondità (a luce abbagliante)"
+ },
+ {
+  "n": "24263",
+  "kind": "c",
+  "clause": "purché l'illuminazione esterna manchi o sia insufficiente",
+  "base": "E' consentito l'uso intermittente dei proiettori di profondità (a luce abbagliante)"
+ },
+ {
+  "n": "24264",
+  "kind": "d",
+  "clause": "esclusivamente nei casi di pericolo immediato",
+  "base": "E' consentito l'uso intermittente dei proiettori di profondità (a luce abbagliante)"
+ },
+ {
+  "n": "24321",
+  "kind": "d",
+  "clause": "solo se si circola a velocità uguale o superiore a 30 km/h",
+  "base": "Le cinture di sicurezza vanno agganciate"
+ },
+ {
+  "n": "24340",
+  "kind": "d",
+  "clause": "solo se minorenni",
+  "base": "Il casco è obbligatorio per i conducenti di ciclomotori a due ruote"
+ },
+ {
+  "n": "24386",
+  "kind": "d",
+  "clause": "soltanto nei percorsi extraurbani",
+  "base": "L'airbag è utile"
+ },
+ {
+  "n": "24412",
+  "kind": "d",
+  "clause": "solo sui percorsi extraurbani",
+  "base": "Il casco deve essere completamente allacciato"
+ },
+ {
+  "n": "24414",
+  "kind": "b",
+  "clause": "qualunque",
+  "base": "L'uso del casco è obbligatorio sui quadricicli a motore privi di carrozzeria"
+ },
+ {
+  "n": "24482",
+  "kind": "b",
+  "clause": "in tutti i paesi dell'Unione Europea",
+  "base": "La patente AM consente, a chi ha compiuto 14 anni, di condurre i ciclomotori"
+ },
+ {
+  "n": "24494",
+  "kind": "d",
+  "clause": "solo da chi è già in possesso della patente AM",
+  "base": "La patente di categoria A1 può essere conseguita da chi ha almeno 16 anni di età"
+ },
+ {
+  "n": "24495",
+  "kind": "b",
+  "clause": "tutti i",
+  "base": "La patente di categoria A1 abilita alla guida di motocicli di cilindrata fino a 125 cm3, potenza non superiore a 11 kW e rapporto potenza/peso non superiore a 0,1 kW/kg"
+ },
+ {
+  "n": "24508",
+  "kind": "d",
+  "clause": "solo se è già in possesso della patente di categoria AM ed ha più di 24 anni di età",
+  "base": "Il titolare di patente di categoria A2 da almeno due anni, può conseguire la patente A che abilita alla guida di tutti i motocicli"
+ },
+ {
+  "n": "24510",
+  "kind": "d",
+  "clause": "solo se si è già in possesso della patente di categoria A1",
+  "base": "La patente di categoria A2 può essere conseguita da chi ha almeno 18 anni di età"
+ },
+ {
+  "n": "24520",
+  "kind": "c",
+  "clause": "purché abbiano una potenza inferiore a 35 kW per i primi 2 anni dal conseguimento",
+  "base": "Con la patente di categoria A si possono condurre i motocicli (con o senza carrozzetta) di qualsiasi cilindrata"
+ },
+ {
+  "n": "24523",
+  "kind": "b",
+  "clause": "qualunque sia l'età del conducente",
+  "base": "Con la patente di categoria A si possono condurre anche i tricicli di potenza superiore a 15 kW, ma solo se il conducente ha almeno 21 anni di età"
+ },
+ {
+  "n": "24525",
+  "kind": "d",
+  "clause": "ma solo in Italia, per guidare all'estero è necessario sostenere un ulteriore esame",
+  "base": "La patente di categoria A conseguita per accesso diretto ad almeno 24 anni di età, consente di condurre tutti i motocicli"
+ },
+ {
+  "n": "24526",
+  "kind": "b",
+  "clause": "in ogni caso",
+  "base": "Per conseguire la patente di categoria A con accesso diretto è necessario aver compiuto almeno 24 anni di età"
+ },
+ {
+  "n": "24552",
+  "kind": "d",
+  "clause": "solo",
+  "base": "La patente di categoria B abilita a condurre autovetture con al massimo 9 posti compreso il conducente"
+ },
+ {
+  "n": "24553",
+  "kind": "a",
+  "clause": "anche se trainano rimorchi aventi massa superiore a 3.500 chilogrammi",
+  "base": "La patente di categoria B abilita a condurre le autovetture"
+ },
+ {
+  "n": "24556",
+  "kind": "b",
+  "clause": "tutti",
+  "base": "La patente di categoria B consente di guidare gli autocaravan (camper) di massa massima autorizzata non superiore a 3,5 tonnellate"
+ },
+ {
+  "n": "24564",
+  "kind": "d",
+  "clause": "solo se si è già in possesso della patente A",
+  "base": "La patente di categoria B con codice armonizzato 96, può essere conseguita anche successivamente al conseguimento della patente di categoria B"
+ },
+ {
+  "n": "24566",
+  "kind": "d",
+  "clause": "solo in Italia",
+  "base": "Il codice armonizzato 96, apposto sulla patente di categoria B, indica che il titolare può condurre un'autovettura che traina un rimorchio"
+ },
+ {
+  "n": "24648",
+  "kind": "b",
+  "clause": "qualunque",
+  "base": "Il punteggio sulla patente diminuisce quando si commettono particolari infrazioni al codice della strada"
+ },
+ {
+  "n": "24649",
+  "kind": "d",
+  "clause": "esclusivamente",
+  "base": "Il punteggio sulla patente diminuisce quando si commette un'infrazione al codice della strada che comporta la sospensione o il ritiro della patente"
+ },
+ {
+  "n": "24695",
+  "kind": "b",
+  "clause": "in ogni caso di rilascio o di conferma",
+  "base": "La patente di guida di categoria B, salvo diversa limitazione riportata sul documento stesso o salvo allineamento alla data del compleanno del titolare, vale dieci anni se rilasciata o confermata a chi non ha superato i 50 anni di età"
+ },
+ {
+  "n": "24769",
+  "kind": "d",
+  "clause": "solo di notte",
+  "base": "Dopo un incidente stradale è obbligatorio apporre il segnale mobile di pericolo in prossimità del veicolo (fuori dei centri abitati)"
+ },
+ {
+  "n": "24771",
+  "kind": "a",
+  "clause": "anche nei centri abitati",
+  "base": "Dopo un incidente stradale, è obbligatorio segnalare il veicolo fermo con il segnale mobile di pericolo (fuori dei centri abitati)"
+ },
+ {
+  "n": "24798",
+  "kind": "b",
+  "clause": "anche se in netto contrasto con gli ordini vocali impartiti dai vigili del fuoco",
+  "base": "Percorrendo un lungo tunnel o traforo, in caso d'incendio, bisogna seguire la segnaletica di emergenza"
+ },
+ {
+  "n": "24825",
+  "kind": "d",
+  "clause": "nella sola eventualità che il suo veicolo sia dotato di cambio automatico",
+  "base": "Le rotaie del tram o i tombini presenti sulla carreggiata stradale costituiscono un pericolo per un conducente di veicolo a due ruote"
+ },
+ {
+  "n": "24858",
+  "kind": "c",
+  "clause": "solo se si considera grave l'incidente",
+  "base": "Bisogna soccorrere un ferito della strada"
+ },
+ {
+  "n": "24860",
+  "kind": "c",
+  "clause": "solo per i medici e il personale sanitario",
+  "base": "Soccorrere un ferito della strada è obbligatorio"
+ },
+ {
+  "n": "24881",
+  "kind": "d",
+  "clause": "solo",
+  "base": "Se un infortunato della strada ha un'abbondante emorragia esterna, bisogna medicare la ferita"
+ },
+ {
+  "n": "24882",
+  "kind": "a",
+  "clause": "e far camminare l'infortunato",
+  "base": "Se un infortunato della strada ha un'abbondante emorragia esterna, si deve coprire la ferita"
+ },
+ {
+  "n": "24982",
+  "kind": "b",
+  "clause": "in ogni caso",
+  "base": "Chi è penalmente e civilmente responsabile di un sinistro stradale può incorrere nella revoca della patente di guida"
+ },
+ {
+  "n": "25013",
+  "kind": "d",
+  "clause": "solo",
+  "base": "L'assicurazione obbligatoria copre i danni subiti da terzi trasportati sui taxi"
+ },
+ {
+  "n": "25018",
+  "kind": "d",
+  "clause": "solo",
+  "base": "La responsabilità per danni connessi alla circolazione dei veicoli è a carico del conducente del veicolo se ci sono stati danni alle cose"
+ },
+ {
+  "n": "25053",
+  "kind": "b",
+  "clause": "anche se superiore al massimale stabilito",
+  "base": "L'assicurazione per la responsabilità civile auto (R.C.A.) copre ogni danno causato entro il massimale"
+ },
+ {
+  "n": "25064",
+  "kind": "c",
+  "clause": "purché guidato dal proprietario",
+  "base": "L'assicurazione per la responsabilità civile auto (R.C.A.), obbligatoria per legge, comprende il risarcimento dei danni provocati dal veicolo"
+ },
+ {
+  "n": "25088",
+  "kind": "d",
+  "clause": "solo",
+  "base": "Il rumore prodotto dai veicoli a motore è causato dal motore"
+ },
+ {
+  "n": "25184",
+  "kind": "d",
+  "clause": "solo in curva",
+  "base": "Se il coefficiente di aderenza è basso bisogna ridurre la velocità"
+ },
+ {
+  "n": "25302",
+  "kind": "d",
+  "clause": "solo",
+  "base": "Per garantire l'aderenza e la stabilità del veicolo, bisogna controllare la pressione di gonfiaggio degli pneumatici"
+ },
+ {
+  "n": "31050",
+  "kind": "d",
+  "clause": "solo se la loro violazione comporta una sanzione economica elevata",
+  "base": "Il rispetto delle norme di circolazione è importante"
+ },
+ {
+  "n": "31055",
+  "kind": "d",
+  "clause": "solo quando si compiono manovre pericolose quali, ad esempio, un sorpasso",
+  "base": "L'attenzione alla guida è importante"
+ }
+]

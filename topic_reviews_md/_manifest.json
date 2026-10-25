@@ -1,0 +1,105 @@
+{
+  "source": "en",
+  "topics": [
+    {
+      "file": "01-segnali-di-indicazione.md",
+      "topic": "Segnali di indicazione"
+    },
+    {
+      "file": "02-segnali-di-obbligo.md",
+      "topic": "Segnali di obbligo"
+    },
+    {
+      "file": "03-segnali-di-pericolo.md",
+      "topic": "Segnali di pericolo"
+    },
+    {
+      "file": "04-segnali-di-divieto.md",
+      "topic": "Segnali di divieto"
+    },
+    {
+      "file": "05-segnali-di-precedenza.md",
+      "topic": "Segnali di precedenza"
+    },
+    {
+      "file": "06-segnali-complementari-segnali-temporanei-e-di-cant.md",
+      "topic": "Segnali complementari; segnali temporanei e di cantiere"
+    },
+    {
+      "file": "07-segnaletica-orizzontale-segni-sugli-ostacoli.md",
+      "topic": "Segnaletica orizzontale; segni sugli ostacoli"
+    },
+    {
+      "file": "08-pannelli-integrativi-dei-segnali.md",
+      "topic": "Pannelli integrativi dei segnali"
+    },
+    {
+      "file": "09-distanza-di-sicurezza.md",
+      "topic": "Distanza di sicurezza"
+    },
+    {
+      "file": "10-norme-sul-sorpasso.md",
+      "topic": "Norme sul sorpasso"
+    },
+    {
+      "file": "11-limiti-di-velocit-pericolo-e-intralcio-alla-circol.md",
+      "topic": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello"
+    },
+    {
+      "file": "12-fermata-sosta-arresto-e-partenza.md",
+      "topic": "Fermata, sosta, arresto e partenza"
+    },
+    {
+      "file": "13-norme-sulla-circol-dei-veicoli-pos-dei-veicoli-sul.md",
+      "topic": "Norme sulla circol. dei veicoli; pos. dei veicoli sulla carreggiata; cambio di direz. di corsia (svolta); comp. in presenza di funerali, cortei, convogli militari; comp. agli incroci; norme di prec.; obblighi verso veicoli di Polizia e di emergenza; rischi legati a manovra e a guida dei diversi tipi di veicolo e relativo campo visivo del cond."
+    },
+    {
+      "file": "14-uso-delle-luci-uso-dei-dispositivi-acustici-spie-e.md",
+      "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli"
+    },
+    {
+      "file": "15-segnalazioni-semaforiche-segnalazioni-degli-agenti.md",
+      "topic": "Segnalazioni semaforiche; segnalazioni degli agenti del traffico"
+    },
+    {
+      "file": "16-definizioni-stradali-e-di-traffico-definizioni-e-c.md",
+      "topic": "Definizioni stradali e di traffico; definizioni e classificazione dei veicoli; doveri del conducente nell'uso della strada -"
+    },
+    {
+      "file": "17-guida-in-relazione-alle-qualit-e-condizioni-fisich.md",
+      "topic": "Guida in relazione alle qualità e condizioni fisiche e psichiche; alcool, droga e farmaci ; primo soccorso"
+    },
+    {
+      "file": "18-comportamenti-per-prevenire-incidenti-stradali-com.md",
+      "topic": "Comportamenti per prevenire  incidenti stradali; comportamento in caso di incidente stradale; peculiarità della guida di"
+    },
+    {
+      "file": "19-dispositivi-di-equipaggiamento-funzione-ed-uso-cin.md",
+      "topic": "Dispositivi di equipaggiamento: funzione ed uso; cinture di sicurezza e sistemi di ritenuta per bambini; casco protettivo;"
+    },
+    {
+      "file": "20-elementi-costitutivi-del-veicolo-importanti-per-la.md",
+      "topic": "Elementi costitutivi del veicolo importanti per la sicurezza; manutenzione ed uso; stabilità e tenuta di strada del veicolo;"
+    },
+    {
+      "file": "21-ingombro-della-carreggiata-segnalazione-di-veicolo.md",
+      "topic": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane"
+    },
+    {
+      "file": "22-patenti-di-guida-documenti-di-circolazione-del-vei.md",
+      "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a"
+    },
+    {
+      "file": "23-responsabilit-civile-penale-amministrativa-assicur.md",
+      "topic": "Responsabilità civile, penale, amministrativa; assicurazione R.C.A.; altre forme assicurative legate al veicolo"
+    },
+    {
+      "file": "24-limitazione-dei-consumi-rispetto-dell-ambiente-inq.md",
+      "topic": "Limitazione dei consumi; rispetto dell¿ambiente; inquinamento: atmosferico, acustico, da cattivo smaltimento dei rifiuti"
+    },
+    {
+      "file": "25-esempi-di-precedenza-ordine-di-precedenza-agli-inc.md",
+      "topic": "Esempi di precedenza (ordine di precedenza agli incroci)"
+    }
+  ]
+}

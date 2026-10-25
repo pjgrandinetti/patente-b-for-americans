@@ -1,0 +1,3508 @@
+{
+ "4004": {
+  "en": "Parts of the road",
+  "it": "Le parti della strada",
+  "stmts": {
+   "18345": {
+    "topic": "Fermata, sosta, arresto e partenza",
+    "en": "Where stopping and parking are forbidden",
+    "it": "Dove fermata e sosta sono vietate"
+   },
+   "18350": {
+    "topic": "Fermata, sosta, arresto e partenza",
+    "en": "Where stopping and parking are forbidden",
+    "it": "Dove fermata e sosta sono vietate"
+   }
+  }
+ },
+ "4005": {
+  "en": "Types of road",
+  "it": "I tipi di strada",
+  "stmts": {
+   "18358": {
+    "topic": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+    "en": "The numbers",
+    "it": "I numeri"
+   },
+   "18361": {
+    "topic": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+    "en": "The numbers",
+    "it": "I numeri"
+   }
+  }
+ },
+ "4006": {
+  "en": "Traffic islands (*isola di traffico*)",
+  "it": "Isole di traffico"
+ },
+ "4007": {
+  "en": "Junctions and railroad crossings",
+  "it": "Incroci e passaggi a livello",
+  "stmts": {
+   "18393": {
+    "topic": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+    "en": "The numbers",
+    "it": "I numeri"
+   }
+  }
+ },
+ "4008": {
+  "en": "Junctions and railroad crossings",
+  "it": "Incroci e passaggi a livello"
+ },
+ "4009": {
+  "en": "Types of road",
+  "it": "I tipi di strada"
+ },
+ "4010": {
+  "en": "Junctions and railroad crossings",
+  "it": "Incroci e passaggi a livello"
+ },
+ "4011": {
+  "en": "Types of road",
+  "it": "I tipi di strada"
+ },
+ "4012": {
+  "en": "Parts of the road",
+  "it": "Le parti della strada"
+ },
+ "4013": {
+  "en": "Types of road",
+  "it": "I tipi di strada"
+ },
+ "4014": {
+  "en": "Parts of the road",
+  "it": "Le parti della strada"
+ },
+ "4015": {
+  "en": "Parts of the road",
+  "it": "Le parti della strada"
+ },
+ "4016": {
+  "en": "Parts of the road",
+  "it": "Le parti della strada",
+  "stmts": {
+   "18485": {
+    "topic": "Segnali di obbligo",
+    "en": "Minimum versus maximum speed",
+    "it": "Velocità minima e velocità massima"
+   },
+   "18496": {
+    "topic": "Norme sulla circol. dei veicoli; pos. dei veicoli sulla carreggiata; cambio di direz. di corsia (svolta); comp. in presenza di funerali, cortei, convogli militari; comp. agli incroci; norme di prec.; obblighi verso veicoli di Polizia e di emergenza; rischi legati a manovra e a guida dei diversi tipi di veicolo e relativo campo visivo del cond.",
+    "en": "Driving in parallel lines",
+    "it": "Marcia per file parallele"
+   },
+   "18497": {
+    "topic": "Norme sulla circol. dei veicoli; pos. dei veicoli sulla carreggiata; cambio di direz. di corsia (svolta); comp. in presenza di funerali, cortei, convogli militari; comp. agli incroci; norme di prec.; obblighi verso veicoli di Polizia e di emergenza; rischi legati a manovra e a guida dei diversi tipi di veicolo e relativo campo visivo del cond.",
+    "en": "Driving in parallel lines",
+    "it": "Marcia per file parallele"
+   }
+  }
+ },
+ "4017": {
+  "en": "Parts of the road",
+  "it": "Le parti della strada"
+ },
+ "4018": {
+  "en": "Parts of the road",
+  "it": "Le parti della strada"
+ },
+ "4019": {
+  "en": "Parts of the road",
+  "it": "Le parti della strada"
+ },
+ "4020": {
+  "en": "Parts of the road",
+  "it": "Le parti della strada"
+ },
+ "4021": {
+  "en": "Parts of the road",
+  "it": "Le parti della strada"
+ },
+ "4022": {
+  "en": "Parts of the road",
+  "it": "Le parti della strada",
+  "stmts": {
+   "18537": {
+    "topic": "Fermata, sosta, arresto e partenza",
+    "en": "Bans that hit only the sosta",
+    "it": "I divieti che colpiscono solo la sosta"
+   },
+   "18543": {
+    "topic": "Fermata, sosta, arresto e partenza",
+    "en": "Bans that hit only the sosta",
+    "it": "I divieti che colpiscono solo la sosta"
+   }
+  }
+ },
+ "4023": {
+  "en": "How vehicles are classified (the numbers)",
+  "it": "Come sono classificati i veicoli (i numeri)",
+  "stmts": {
+   "18548": {
+    "en": "Periodic inspection (revisione)",
+    "it": "Revisione periodica"
+   },
+   "18553": {
+    "topic": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+    "en": "The numbers",
+    "it": "I numeri"
+   },
+   "18554": {
+    "en": "Periodic inspection (revisione)",
+    "it": "Revisione periodica"
+   }
+  }
+ },
+ "4024": {
+  "en": "How vehicles are classified (the numbers)",
+  "it": "Come sono classificati i veicoli (i numeri)",
+  "stmts": {
+   "18558": {
+    "en": "Periodic inspection (revisione)",
+    "it": "Revisione periodica"
+   },
+   "18562": {
+    "en": "Periodic inspection (revisione)",
+    "it": "Revisione periodica"
+   }
+  }
+ },
+ "4025": {
+  "en": "How vehicles are classified (the numbers)",
+  "it": "Come sono classificati i veicoli (i numeri)",
+  "stmts": {
+   "18569": {
+    "en": "Periodic inspection (revisione)",
+    "it": "Revisione periodica"
+   },
+   "18573": {
+    "topic": "Comportamenti per prevenire  incidenti stradali; comportamento in caso di incidente stradale; peculiarità della guida di",
+    "en": "Vehicle care: no do-it-yourself tuning",
+    "it": "Cura del veicolo: niente elaborazioni fai-da-te"
+   },
+   "18574": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "18575": {
+    "topic": "Dispositivi di equipaggiamento: funzione ed uso; cinture di sicurezza e sistemi di ritenuta per bambini; casco protettivo;",
+    "en": "The helmet",
+    "it": "Il casco"
+   },
+   "18576": {
+    "topic": "Comportamenti per prevenire  incidenti stradali; comportamento in caso di incidente stradale; peculiarità della guida di",
+    "en": "Vehicle care: no do-it-yourself tuning",
+    "it": "Cura del veicolo: niente elaborazioni fai-da-te"
+   },
+   "18577": {
+    "topic": "Comportamenti per prevenire  incidenti stradali; comportamento in caso di incidente stradale; peculiarità della guida di",
+    "en": "Vehicle care: no do-it-yourself tuning",
+    "it": "Cura del veicolo: niente elaborazioni fai-da-te"
+   },
+   "18578": {
+    "en": "Periodic inspection (revisione)",
+    "it": "Revisione periodica"
+   }
+  }
+ },
+ "4026": {
+  "en": "How vehicles are classified (the numbers)",
+  "it": "Come sono classificati i veicoli (i numeri)",
+  "stmts": {
+   "18589": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "License categories: minimum age and what each permits",
+    "it": "Le categorie di patente: età minima e cosa abilitano a guidare"
+   },
+   "18592": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "License categories: minimum age and what each permits",
+    "it": "Le categorie di patente: età minima e cosa abilitano a guidare"
+   },
+   "18593": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "License categories: minimum age and what each permits",
+    "it": "Le categorie di patente: età minima e cosa abilitano a guidare"
+   }
+  }
+ },
+ "4027": {
+  "en": "How vehicles are classified (the numbers)",
+  "it": "Come sono classificati i veicoli (i numeri)"
+ },
+ "4028": {
+  "en": "How vehicles are classified (the numbers)",
+  "it": "Come sono classificati i veicoli (i numeri)",
+  "stmts": {
+   "18603": {
+    "en": "Periodic inspection (revisione)",
+    "it": "Revisione periodica"
+   },
+   "18608": {
+    "en": "Periodic inspection (revisione)",
+    "it": "Revisione periodica"
+   }
+  }
+ },
+ "4030": {
+  "en": "How vehicles are classified (the numbers)",
+  "it": "Come sono classificati i veicoli (i numeri)",
+  "stmts": {
+   "18630": {
+    "en": "Periodic inspection (revisione)",
+    "it": "Revisione periodica"
+   }
+  }
+ },
+ "4031": {
+  "en": "How vehicles are classified (the numbers)",
+  "it": "Come sono classificati i veicoli (i numeri)"
+ },
+ "4032": {
+  "en": "How vehicles are classified (the numbers)",
+  "it": "Come sono classificati i veicoli (i numeri)",
+  "stmts": {
+   "18653": {
+    "en": "Periodic inspection (revisione)",
+    "it": "Revisione periodica"
+   },
+   "18655": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "18661": {
+    "en": "Periodic inspection (revisione)",
+    "it": "Revisione periodica"
+   }
+  }
+ },
+ "4033": {
+  "en": "How vehicles are classified (the numbers)",
+  "it": "Come sono classificati i veicoli (i numeri)"
+ },
+ "4034": {
+  "en": "Keeping junctions clear and the road clean",
+  "it": "Tenere liberi gli incroci e pulita la strada"
+ },
+ "4035": {
+  "en": "Keeping junctions clear and the road clean",
+  "it": "Tenere liberi gli incroci e pulita la strada",
+  "stmts": {
+   "18681": {
+    "topic": "Distanza di sicurezza",
+    "en": "The safe following distance is your reaction distance",
+    "it": "La distanza di sicurezza è il tuo spazio di reazione"
+   },
+   "18682": {
+    "topic": "Distanza di sicurezza",
+    "en": "The safe following distance is your reaction distance",
+    "it": "La distanza di sicurezza è il tuo spazio di reazione"
+   },
+   "18687": {
+    "topic": "Norme sul sorpasso",
+    "en": "Before you start: the checks",
+    "it": "Prima di iniziare: i controlli"
+   }
+  }
+ },
+ "4036": {
+  "en": "Types of road",
+  "it": "I tipi di strada",
+  "stmts": {
+   "18693": {
+    "topic": "Fermata, sosta, arresto e partenza",
+    "en": "Where stopping and parking are forbidden",
+    "it": "Dove fermata e sosta sono vietate"
+   },
+   "18694": {
+    "topic": "Norme sulla circol. dei veicoli; pos. dei veicoli sulla carreggiata; cambio di direz. di corsia (svolta); comp. in presenza di funerali, cortei, convogli militari; comp. agli incroci; norme di prec.; obblighi verso veicoli di Polizia e di emergenza; rischi legati a manovra e a guida dei diversi tipi di veicolo e relativo campo visivo del cond.",
+    "en": "Driving in parallel lines",
+    "it": "Marcia per file parallele"
+   },
+   "18695": {
+    "en": "Extra care for vulnerable road users",
+    "it": "Particolare attenzione agli utenti deboli"
+   }
+  }
+ },
+ "4037": {
+  "en": "Keeping junctions clear and the road clean",
+  "it": "Tenere liberi gli incroci e pulita la strada"
+ },
+ "4038": {
+  "en": "Keeping junctions clear and the road clean",
+  "it": "Tenere liberi gli incroci e pulita la strada"
+ },
+ "4039": {
+  "en": "Keeping junctions clear and the road clean",
+  "it": "Tenere liberi gli incroci e pulita la strada",
+  "stmts": {
+   "18724": {
+    "topic": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+    "en": "The general rule of speed",
+    "it": "La regola generale della velocità"
+   },
+   "18725": {
+    "topic": "Norme sul sorpasso",
+    "en": "What makes overtaking dangerous",
+    "it": "Cosa rende pericoloso il sorpasso"
+   }
+  }
+ },
+ "4040": {
+  "en": "The driver's general duties",
+  "it": "I doveri generali del conducente"
+ },
+ "4041": {
+  "en": "The driver's general duties",
+  "it": "I doveri generali del conducente",
+  "stmts": {
+   "18743": {
+    "topic": "Comportamenti per prevenire  incidenti stradali; comportamento in caso di incidente stradale; peculiarità della guida di",
+    "en": "Getting in and out safely",
+    "it": "Salire e scendere in sicurezza"
+   },
+   "18744": {
+    "topic": "Norme sulla circol. dei veicoli; pos. dei veicoli sulla carreggiata; cambio di direz. di corsia (svolta); comp. in presenza di funerali, cortei, convogli militari; comp. agli incroci; norme di prec.; obblighi verso veicoli di Polizia e di emergenza; rischi legati a manovra e a guida dei diversi tipi di veicolo e relativo campo visivo del cond.",
+    "en": "Before every maneuver: mirrors and blind spots",
+    "it": "Prima di ogni manovra: specchietti e angoli ciechi"
+   },
+   "18745": {
+    "topic": "Norme sulla circol. dei veicoli; pos. dei veicoli sulla carreggiata; cambio di direz. di corsia (svolta); comp. in presenza di funerali, cortei, convogli militari; comp. agli incroci; norme di prec.; obblighi verso veicoli di Polizia e di emergenza; rischi legati a manovra e a guida dei diversi tipi di veicolo e relativo campo visivo del cond.",
+    "en": "Before every maneuver: mirrors and blind spots",
+    "it": "Prima di ogni manovra: specchietti e angoli ciechi"
+   },
+   "18747": {
+    "topic": "Comportamenti per prevenire  incidenti stradali; comportamento in caso di incidente stradale; peculiarità della guida di",
+    "en": "Getting in and out safely",
+    "it": "Salire e scendere in sicurezza"
+   }
+  }
+ },
+ "4042": {
+  "en": "Extra care for vulnerable road users",
+  "it": "Particolare attenzione agli utenti deboli"
+ },
+ "4043": {
+  "en": "Extra care for vulnerable road users",
+  "it": "Particolare attenzione agli utenti deboli"
+ },
+ "4044": {
+  "en": "Extra care for vulnerable road users",
+  "it": "Particolare attenzione agli utenti deboli"
+ },
+ "4045": {
+  "en": "Extra care for vulnerable road users",
+  "it": "Particolare attenzione agli utenti deboli"
+ },
+ "4046": {
+  "en": "Extra care for vulnerable road users",
+  "it": "Particolare attenzione agli utenti deboli",
+  "stmts": {
+   "18805": {
+    "topic": "Segnalazioni semaforiche; segnalazioni degli agenti del traffico",
+    "en": "The standard vehicle traffic light",
+    "it": "Il semaforo veicolare normale"
+   }
+  }
+ },
+ "4047": {
+  "en": "Extra care for vulnerable road users",
+  "it": "Particolare attenzione agli utenti deboli"
+ },
+ "4048": {
+  "en": "Extra care for vulnerable road users",
+  "it": "Particolare attenzione agli utenti deboli",
+  "stmts": {
+   "18825": {
+    "topic": "Fermata, sosta, arresto e partenza",
+    "en": "Where stopping and parking are forbidden",
+    "it": "Dove fermata e sosta sono vietate"
+   },
+   "18829": {
+    "topic": "Fermata, sosta, arresto e partenza",
+    "en": "Where stopping and parking are forbidden",
+    "it": "Dove fermata e sosta sono vietate"
+   }
+  }
+ },
+ "4049": {
+  "en": "Extra care for vulnerable road users",
+  "it": "Particolare attenzione agli utenti deboli"
+ },
+ "4050": {
+  "en": "Extra care for vulnerable road users",
+  "it": "Particolare attenzione agli utenti deboli",
+  "stmts": {
+   "18842": {
+    "topic": "Fermata, sosta, arresto e partenza",
+    "en": "Where stopping and parking are forbidden",
+    "it": "Dove fermata e sosta sono vietate"
+   },
+   "18846": {
+    "topic": "Fermata, sosta, arresto e partenza",
+    "en": "Where stopping and parking are forbidden",
+    "it": "Dove fermata e sosta sono vietate"
+   },
+   "18849": {
+    "topic": "Fermata, sosta, arresto e partenza",
+    "en": "Where stopping and parking are forbidden",
+    "it": "Dove fermata e sosta sono vietate"
+   }
+  }
+ },
+ "4263": {
+  "en": "The officer's whistle",
+  "it": "Il fischietto dell'agente"
+ },
+ "4264": {
+  "en": "Flashing red and railroad-crossing lights",
+  "it": "Rosso lampeggiante e luci dei passaggi a livello"
+ },
+ "4265": {
+  "en": "What to carry and show on request",
+  "it": "Cosa tenere ed esibire su richiesta"
+ },
+ "4266": {
+  "en": "How to recognize a traffic-police officer",
+  "it": "Come si riconosce un agente di polizia stradale"
+ },
+ "4374": {
+  "en": "Never be a hazard: adjusting to conditions",
+  "it": "Mai essere un pericolo o un intralcio"
+ },
+ "4375": {
+  "en": "Never be a hazard: adjusting to conditions",
+  "it": "Mai essere un pericolo o un intralcio"
+ },
+ "4376": {
+  "en": "Never be a hazard: adjusting to conditions",
+  "it": "Mai essere un pericolo o un intralcio"
+ },
+ "4377": {
+  "en": "The numbers",
+  "it": "I numeri"
+ },
+ "4378": {
+  "en": "The numbers",
+  "it": "I numeri",
+  "stmts": {
+   "22359": {
+    "topic": "Limitazione dei consumi; rispetto dell¿ambiente; inquinamento: atmosferico, acustico, da cattivo smaltimento dei rifiuti",
+    "en": "Saving fuel",
+    "it": "Risparmiare carburante"
+   },
+   "22360": {
+    "topic": "Limitazione dei consumi; rispetto dell¿ambiente; inquinamento: atmosferico, acustico, da cattivo smaltimento dei rifiuti",
+    "en": "Saving fuel",
+    "it": "Risparmiare carburante"
+   },
+   "22361": {
+    "en": "Speed, the curve, and the environment",
+    "it": "Mai in folle a motore spento in discesa"
+   },
+   "22362": {
+    "en": "Speed, the curve, and the environment",
+    "it": "Mai in folle a motore spento in discesa"
+   },
+   "22363": {
+    "en": "Speed, the curve, and the environment",
+    "it": "Mai in folle a motore spento in discesa"
+   }
+  }
+ },
+ "4379": {
+  "en": "The numbers",
+  "it": "I numeri"
+ },
+ "4380": {
+  "en": "Never be a hazard: adjusting to conditions",
+  "it": "Mai essere un pericolo o un intralcio"
+ },
+ "4381": {
+  "en": "The general rule of speed",
+  "it": "La regola generale della velocità"
+ },
+ "4382": {
+  "en": "The numbers",
+  "it": "I numeri"
+ },
+ "4383": {
+  "en": "The numbers",
+  "it": "I numeri"
+ },
+ "4384": {
+  "en": "The numbers",
+  "it": "I numeri"
+ },
+ "4386": {
+  "en": "Never be a hazard: adjusting to conditions",
+  "it": "Mai essere un pericolo o un intralcio"
+ },
+ "4387": {
+  "en": "Never be a hazard: adjusting to conditions",
+  "it": "Mai essere un pericolo o un intralcio",
+  "stmts": {
+   "22454": {
+    "en": "The numbers",
+    "it": "I numeri"
+   },
+   "22455": {
+    "en": "The numbers",
+    "it": "I numeri"
+   },
+   "22456": {
+    "en": "The numbers",
+    "it": "I numeri"
+   }
+  }
+ },
+ "4388": {
+  "en": "The numbers",
+  "it": "I numeri",
+  "stmts": {
+   "22460": {
+    "en": "When you must slow down (and when you needn't)",
+    "it": "Velocità, curva e ambiente"
+   },
+   "22461": {
+    "en": "When you must slow down (and when you needn't)",
+    "it": "Velocità, curva e ambiente"
+   },
+   "22462": {
+    "topic": "Norme sulla circol. dei veicoli; pos. dei veicoli sulla carreggiata; cambio di direz. di corsia (svolta); comp. in presenza di funerali, cortei, convogli militari; comp. agli incroci; norme di prec.; obblighi verso veicoli di Polizia e di emergenza; rischi legati a manovra e a guida dei diversi tipi di veicolo e relativo campo visivo del cond.",
+    "en": "Driving in parallel lines",
+    "it": "Marcia per file parallele"
+   },
+   "22463": {
+    "topic": "Norme sulla circol. dei veicoli; pos. dei veicoli sulla carreggiata; cambio di direz. di corsia (svolta); comp. in presenza di funerali, cortei, convogli militari; comp. agli incroci; norme di prec.; obblighi verso veicoli di Polizia e di emergenza; rischi legati a manovra e a guida dei diversi tipi di veicolo e relativo campo visivo del cond.",
+    "en": "Driving in parallel lines",
+    "it": "Marcia per file parallele"
+   },
+   "22464": {
+    "topic": "Norme sulla circol. dei veicoli; pos. dei veicoli sulla carreggiata; cambio di direz. di corsia (svolta); comp. in presenza di funerali, cortei, convogli militari; comp. agli incroci; norme di prec.; obblighi verso veicoli di Polizia e di emergenza; rischi legati a manovra e a guida dei diversi tipi di veicolo e relativo campo visivo del cond.",
+    "en": "Driving in parallel lines",
+    "it": "Marcia per file parallele"
+   }
+  }
+ },
+ "4389": {
+  "en": "Never be a hazard: adjusting to conditions",
+  "it": "Mai essere un pericolo o un intralcio",
+  "stmts": {
+   "22473": {
+    "topic": "Responsabilità civile, penale, amministrativa; assicurazione R.C.A.; altre forme assicurative legate al veicolo",
+    "en": "The three liabilities",
+    "it": "Le tre responsabilità"
+   },
+   "22474": {
+    "en": "The numbers",
+    "it": "I numeri"
+   },
+   "22475": {
+    "topic": "Responsabilità civile, penale, amministrativa; assicurazione R.C.A.; altre forme assicurative legate al veicolo",
+    "en": "The three liabilities",
+    "it": "Le tre responsabilità"
+   },
+   "22476": {
+    "topic": "Responsabilità civile, penale, amministrativa; assicurazione R.C.A.; altre forme assicurative legate al veicolo",
+    "en": "The three liabilities",
+    "it": "Le tre responsabilità"
+   }
+  }
+ },
+ "4390": {
+  "en": "Behavior at railroad crossings",
+  "it": "Comportamento ai passaggi a livello",
+  "stmts": {
+   "22482": {
+    "en": "Never coast downhill in neutral with the engine off",
+    "it": "Comportamento ai passaggi a livello"
+   },
+   "22483": {
+    "en": "Never coast downhill in neutral with the engine off",
+    "it": "Comportamento ai passaggi a livello"
+   },
+   "22484": {
+    "en": "Never coast downhill in neutral with the engine off",
+    "it": "Comportamento ai passaggi a livello"
+   },
+   "22485": {
+    "en": "Never coast downhill in neutral with the engine off",
+    "it": "Comportamento ai passaggi a livello"
+   },
+   "22486": {
+    "en": "Never coast downhill in neutral with the engine off",
+    "it": "Comportamento ai passaggi a livello"
+   },
+   "22487": {
+    "en": "Never coast downhill in neutral with the engine off",
+    "it": "Comportamento ai passaggi a livello"
+   },
+   "22488": {
+    "en": "Never coast downhill in neutral with the engine off",
+    "it": "Comportamento ai passaggi a livello"
+   },
+   "22489": {
+    "en": "Never coast downhill in neutral with the engine off",
+    "it": "Comportamento ai passaggi a livello"
+   },
+   "22490": {
+    "en": "Never coast downhill in neutral with the engine off",
+    "it": "Comportamento ai passaggi a livello"
+   },
+   "22491": {
+    "en": "Never coast downhill in neutral with the engine off",
+    "it": "Comportamento ai passaggi a livello"
+   },
+   "22492": {
+    "en": "Never coast downhill in neutral with the engine off",
+    "it": "Comportamento ai passaggi a livello"
+   }
+  }
+ },
+ "4391": {
+  "en": "Behavior at railroad crossings",
+  "it": "Comportamento ai passaggi a livello"
+ },
+ "4392": {
+  "en": "Never be a hazard: adjusting to conditions",
+  "it": "Mai essere un pericolo o un intralcio"
+ },
+ "4393": {
+  "en": "Never be a hazard: adjusting to conditions",
+  "it": "Mai essere un pericolo o un intralcio"
+ },
+ "4394": {
+  "en": "The safe following distance is your reaction distance",
+  "it": "La distanza di sicurezza è il tuo spazio di reazione",
+  "stmts": {
+   "22530": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22531": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22532": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22533": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22534": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22535": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22536": {
+    "en": "Specific distances to memorize",
+    "it": "Distanze specifiche da ricordare"
+   },
+   "22537": {
+    "en": "Specific distances to memorize",
+    "it": "Distanze specifiche da ricordare"
+   },
+   "22538": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22539": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22540": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22541": {
+    "en": "Specific distances to memorize",
+    "it": "Distanze specifiche da ricordare"
+   },
+   "22542": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22543": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22544": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22545": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22546": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22548": {
+    "en": "Specific distances to memorize",
+    "it": "Distanze specifiche da ricordare"
+   },
+   "22549": {
+    "en": "Specific distances to memorize",
+    "it": "Distanze specifiche da ricordare"
+   },
+   "22550": {
+    "en": "Specific distances to memorize",
+    "it": "Distanze specifiche da ricordare"
+   },
+   "22555": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   }
+  }
+ },
+ "4395": {
+  "en": "The safe following distance is your reaction distance",
+  "it": "La distanza di sicurezza è il tuo spazio di reazione",
+  "stmts": {
+   "22556": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22558": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22559": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22560": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22561": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22562": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   }
+  }
+ },
+ "4396": {
+  "en": "The safe following distance is your reaction distance",
+  "it": "La distanza di sicurezza è il tuo spazio di reazione",
+  "stmts": {
+   "22565": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   },
+   "22567": {
+    "en": "Specific distances to memorize",
+    "it": "Distanze specifiche da ricordare"
+   },
+   "22568": {
+    "en": "Specific distances to memorize",
+    "it": "Distanze specifiche da ricordare"
+   },
+   "22569": {
+    "en": "What the distance depends on, and what it does not",
+    "it": "Da cosa dipende, e da cosa no"
+   }
+  }
+ },
+ "4397": {
+  "en": "The safe following distance is your reaction distance",
+  "it": "La distanza di sicurezza è il tuo spazio di reazione",
+  "stmts": {
+   "22572": {
+    "en": "Three distances: reaction, braking, and total stopping",
+    "it": "Tre spazi: reazione, frenata e arresto totale"
+   }
+  }
+ },
+ "4398": {
+  "en": "The safe following distance is your reaction distance",
+  "it": "La distanza di sicurezza è il tuo spazio di reazione",
+  "stmts": {
+   "22578": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   },
+   "22579": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   },
+   "22580": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   },
+   "22581": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   },
+   "22582": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   },
+   "22583": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   },
+   "22584": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   },
+   "22585": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   },
+   "22586": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   },
+   "22587": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   }
+  }
+ },
+ "4399": {
+  "en": "Distraction lengthens everything",
+  "it": "La distrazione allunga tutto"
+ },
+ "4400": {
+  "en": "Three distances: reaction, braking, and total stopping",
+  "it": "Tre spazi: reazione, frenata e arresto totale",
+  "stmts": {
+   "22594": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   },
+   "22595": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   },
+   "22596": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   },
+   "22597": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   },
+   "22598": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   },
+   "22599": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   },
+   "22600": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   },
+   "22601": {
+    "en": "The numbers (your reaction distance is the minimum safe distance)",
+    "it": "I numeri (il tuo spazio di reazione è la distanza minima)"
+   }
+  }
+ },
+ "4401": {
+  "en": "Three distances: reaction, braking, and total stopping",
+  "it": "Tre spazi: reazione, frenata e arresto totale"
+ },
+ "4402": {
+  "en": "Three distances: reaction, braking, and total stopping",
+  "it": "Tre spazi: reazione, frenata e arresto totale"
+ },
+ "4403": {
+  "en": "Three distances: reaction, braking, and total stopping",
+  "it": "Tre spazi: reazione, frenata e arresto totale"
+ },
+ "4404": {
+  "en": "Three distances: reaction, braking, and total stopping",
+  "it": "Tre spazi: reazione, frenata e arresto totale"
+ },
+ "4405": {
+  "en": "What the distance depends on, and what it does not",
+  "it": "Da cosa dipende, e da cosa no"
+ },
+ "4406": {
+  "en": "What the distance depends on, and what it does not",
+  "it": "Da cosa dipende, e da cosa no",
+  "stmts": {
+   "22647": {
+    "en": "When to increase the gap",
+    "it": "Quando aumentare lo spazio"
+   }
+  }
+ },
+ "4407": {
+  "en": "The safe following distance is your reaction distance",
+  "it": "La distanza di sicurezza è il tuo spazio di reazione",
+  "stmts": {
+   "22653": {
+    "en": "When to increase the gap",
+    "it": "Quando aumentare lo spazio"
+   }
+  }
+ },
+ "4408": {
+  "en": "When to increase the gap",
+  "it": "Quando aumentare lo spazio",
+  "stmts": {
+   "22658": {
+    "en": "Specific distances to memorize",
+    "it": "Distanze specifiche da ricordare"
+   }
+  }
+ },
+ "4410": {
+  "en": "Being a danger or obstruction, and your load",
+  "it": "Essere un pericolo o un intralcio, e il carico",
+  "stmts": {
+   "22679": {
+    "topic": "Fermata, sosta, arresto e partenza",
+    "en": "What is still allowed",
+    "it": "Cosa è invece consentito"
+   }
+  }
+ },
+ "4411": {
+  "en": "Being a danger or obstruction, and your load",
+  "it": "Essere un pericolo o un intralcio, e il carico",
+  "stmts": {
+   "22680": {
+    "topic": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+    "en": "The numbers",
+    "it": "I numeri"
+   },
+   "22681": {
+    "en": "The right of way at intersections",
+    "it": "Precedenza agli incroci"
+   },
+   "22683": {
+    "en": "Before every maneuver: mirrors and blind spots",
+    "it": "Prima di ogni manovra: specchietti e angoli ciechi"
+   },
+   "22684": {
+    "en": "The maneuvers",
+    "it": "Le manovre"
+   },
+   "22685": {
+    "en": "Where you belong on the road",
+    "it": "Dove stare sulla strada"
+   },
+   "22686": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "High beams",
+    "it": "Abbaglianti"
+   },
+   "22687": {
+    "topic": "Norme sul sorpasso",
+    "en": "Where passing is forbidden",
+    "it": "Dove il sorpasso è vietato"
+   },
+   "22688": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "The horn",
+    "it": "Il clacson"
+   },
+   "22689": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "The horn",
+    "it": "Il clacson"
+   }
+  }
+ },
+ "4412": {
+  "en": "Being a danger or obstruction, and your load",
+  "it": "Essere un pericolo o un intralcio, e il carico"
+ },
+ "4413": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada"
+ },
+ "4414": {
+  "en": "The maneuvers",
+  "it": "Le manovre",
+  "stmts": {
+   "22721": {
+    "en": "The right of way at intersections",
+    "it": "Precedenza agli incroci"
+   },
+   "22722": {
+    "en": "The right of way at intersections",
+    "it": "Precedenza agli incroci"
+   }
+  }
+ },
+ "4415": {
+  "en": "Special situations",
+  "it": "Situazioni particolari"
+ },
+ "4416": {
+  "en": "Special situations",
+  "it": "Situazioni particolari"
+ },
+ "4417": {
+  "en": "The right of way at intersections",
+  "it": "Precedenza agli incroci",
+  "stmts": {
+   "22748": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "The horn",
+    "it": "Il clacson"
+   },
+   "22750": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "The horn",
+    "it": "Il clacson"
+   },
+   "22752": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "The horn",
+    "it": "Il clacson"
+   },
+   "22753": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "The horn",
+    "it": "Il clacson"
+   }
+  }
+ },
+ "4418": {
+  "en": "Special situations",
+  "it": "Situazioni particolari",
+  "stmts": {
+   "22761": {
+    "en": "Before every maneuver: mirrors and blind spots",
+    "it": "Prima di ogni manovra: specchietti e angoli ciechi"
+   }
+  }
+ },
+ "4419": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada",
+  "stmts": {
+   "22766": {
+    "en": "Being a danger or obstruction, and your load",
+    "it": "Essere un pericolo o un intralcio, e il carico"
+   },
+   "22767": {
+    "en": "Being a danger or obstruction, and your load",
+    "it": "Essere un pericolo o un intralcio, e il carico"
+   },
+   "22768": {
+    "en": "Being a danger or obstruction, and your load",
+    "it": "Essere un pericolo o un intralcio, e il carico"
+   },
+   "22769": {
+    "topic": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+    "en": "The general rule of speed",
+    "it": "La regola generale della velocità"
+   },
+   "22770": {
+    "en": "Being a danger or obstruction, and your load",
+    "it": "Essere un pericolo o un intralcio, e il carico"
+   },
+   "22771": {
+    "en": "The right of way at intersections",
+    "it": "Precedenza agli incroci"
+   },
+   "22772": {
+    "topic": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+    "en": "The general rule of speed",
+    "it": "La regola generale della velocità"
+   }
+  }
+ },
+ "4420": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada",
+  "stmts": {
+   "22774": {
+    "topic": "Distanza di sicurezza",
+    "en": "The safe following distance is your reaction distance",
+    "it": "La distanza di sicurezza è il tuo spazio di reazione"
+   },
+   "22775": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "The horn",
+    "it": "Il clacson"
+   },
+   "22778": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "Turn signals",
+    "it": "Indicatori di direzione"
+   }
+  }
+ },
+ "4421": {
+  "en": "The maneuvers",
+  "it": "Le manovre"
+ },
+ "4423": {
+  "en": "The maneuvers",
+  "it": "Le manovre"
+ },
+ "4425": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada"
+ },
+ "4426": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada"
+ },
+ "4430": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada"
+ },
+ "4431": {
+  "en": "The right of way at intersections",
+  "it": "Precedenza agli incroci"
+ },
+ "4432": {
+  "en": "The maneuvers",
+  "it": "Le manovre",
+  "stmts": {
+   "22890": {
+    "en": "The right of way at intersections",
+    "it": "Precedenza agli incroci"
+   },
+   "22894": {
+    "en": "The right of way at intersections",
+    "it": "Precedenza agli incroci"
+   },
+   "22896": {
+    "en": "The right of way at intersections",
+    "it": "Precedenza agli incroci"
+   },
+   "22898": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "The horn",
+    "it": "Il clacson"
+   }
+  }
+ },
+ "4433": {
+  "en": "The maneuvers",
+  "it": "Le manovre",
+  "stmts": {
+   "22902": {
+    "topic": "Fermata, sosta, arresto e partenza",
+    "en": "Where stopping and parking are forbidden",
+    "it": "Dove fermata e sosta sono vietate"
+   },
+   "22903": {
+    "topic": "Fermata, sosta, arresto e partenza",
+    "en": "Where stopping and parking are forbidden",
+    "it": "Dove fermata e sosta sono vietate"
+   },
+   "22904": {
+    "topic": "Norme sul sorpasso",
+    "en": "Where passing is forbidden",
+    "it": "Dove il sorpasso è vietato"
+   },
+   "22905": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "Low beams: when they are required",
+    "it": "Anabbaglianti: quando sono obbligatori"
+   },
+   "22906": {
+    "topic": "Limiti di velocità; pericolo e intralcio alla circolazione; comportamenti ai passaggi a livello",
+    "en": "The numbers",
+    "it": "I numeri"
+   },
+   "22908": {
+    "topic": "Norme sul sorpasso",
+    "en": "Where passing is forbidden",
+    "it": "Dove il sorpasso è vietato"
+   },
+   "22909": {
+    "topic": "Segnalazioni semaforiche; segnalazioni degli agenti del traffico",
+    "en": "The standard vehicle traffic light",
+    "it": "Il semaforo veicolare normale"
+   },
+   "22910": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "The horn",
+    "it": "Il clacson"
+   }
+  }
+ },
+ "4434": {
+  "en": "The right of way at intersections",
+  "it": "Precedenza agli incroci",
+  "stmts": {
+   "22918": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "The horn",
+    "it": "Il clacson"
+   }
+  }
+ },
+ "4435": {
+  "en": "Special situations",
+  "it": "Situazioni particolari"
+ },
+ "4436": {
+  "en": "The maneuvers",
+  "it": "Le manovre"
+ },
+ "4437": {
+  "en": "The maneuvers",
+  "it": "Le manovre",
+  "stmts": {
+   "22944": {
+    "topic": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+    "en": "Conduct",
+    "it": "Comportamento"
+   }
+  }
+ },
+ "4438": {
+  "en": "The right of way at intersections",
+  "it": "Precedenza agli incroci",
+  "stmts": {
+   "22950": {
+    "en": "Special situations",
+    "it": "Situazioni particolari"
+   },
+   "22951": {
+    "topic": "Segnali di precedenza",
+    "en": "Stop and yield",
+    "it": "Dare precedenza e fermarsi"
+   }
+  }
+ },
+ "4439": {
+  "en": "Special situations",
+  "it": "Situazioni particolari",
+  "stmts": {
+   "22959": {
+    "topic": "Segnali di precedenza",
+    "en": "Stop and yield",
+    "it": "Dare precedenza e fermarsi"
+   },
+   "22960": {
+    "topic": "Segnali di precedenza",
+    "en": "Stop and yield",
+    "it": "Dare precedenza e fermarsi"
+   },
+   "22962": {
+    "topic": "Fermata, sosta, arresto e partenza",
+    "en": "Where stopping and parking are forbidden",
+    "it": "Dove fermata e sosta sono vietate"
+   }
+  }
+ },
+ "4440": {
+  "en": "Special situations",
+  "it": "Situazioni particolari"
+ },
+ "4441": {
+  "en": "The maneuvers",
+  "it": "Le manovre"
+ },
+ "4442": {
+  "en": "The maneuvers",
+  "it": "Le manovre",
+  "stmts": {
+   "22977": {
+    "topic": "Dispositivi di equipaggiamento: funzione ed uso; cinture di sicurezza e sistemi di ritenuta per bambini; casco protettivo;",
+    "en": "The helmet",
+    "it": "Il casco"
+   },
+   "22978": {
+    "topic": "Dispositivi di equipaggiamento: funzione ed uso; cinture di sicurezza e sistemi di ritenuta per bambini; casco protettivo;",
+    "en": "Seatbelts",
+    "it": "Cinture di sicurezza"
+   },
+   "22979": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "Low beams: when they are required",
+    "it": "Anabbaglianti: quando sono obbligatori"
+   },
+   "22981": {
+    "topic": "Dispositivi di equipaggiamento: funzione ed uso; cinture di sicurezza e sistemi di ritenuta per bambini; casco protettivo;",
+    "en": "Seatbelts",
+    "it": "Cinture di sicurezza"
+   },
+   "22982": {
+    "topic": "Dispositivi di equipaggiamento: funzione ed uso; cinture di sicurezza e sistemi di ritenuta per bambini; casco protettivo;",
+    "en": "The helmet",
+    "it": "Il casco"
+   }
+  }
+ },
+ "4444": {
+  "en": "The maneuvers",
+  "it": "Le manovre"
+ },
+ "4445": {
+  "en": "The maneuvers",
+  "it": "Le manovre",
+  "stmts": {
+   "22998": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "The points system",
+    "it": "Il sistema a punti"
+   },
+   "22999": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "The points system",
+    "it": "Il sistema a punti"
+   },
+   "23000": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "The points system",
+    "it": "Il sistema a punti"
+   }
+  }
+ },
+ "4446": {
+  "en": "Before every maneuver: mirrors and blind spots",
+  "it": "Prima di ogni manovra: specchietti e angoli ciechi"
+ },
+ "4447": {
+  "en": "Before every maneuver: mirrors and blind spots",
+  "it": "Prima di ogni manovra: specchietti e angoli ciechi"
+ },
+ "4448": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4449": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4450": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4451": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4452": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4453": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4454": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4455": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4456": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4457": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4458": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4459": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4460": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4461": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4462": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4463": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4464": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4465": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4466": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4467": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4468": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4469": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4470": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4471": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4472": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4473": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4474": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4475": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4476": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4477": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4478": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4479": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4480": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4481": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4482": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4483": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4484": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4485": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4486": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4487": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4488": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4489": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4490": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4491": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4492": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4493": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4494": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4495": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4496": {
+  "en": "The rules",
+  "it": "Le regole"
+ },
+ "4497": {
+  "en": "Before you start: the checks",
+  "it": "Prima di iniziare: i controlli"
+ },
+ "4498": {
+  "en": "Before you start: the checks",
+  "it": "Prima di iniziare: i controlli",
+  "stmts": {
+   "23471": {
+    "en": "How to pass and return",
+    "it": "Come sorpassare e rientrare"
+   },
+   "23472": {
+    "en": "How to pass and return",
+    "it": "Come sorpassare e rientrare"
+   },
+   "23473": {
+    "en": "How to pass and return",
+    "it": "Come sorpassare e rientrare"
+   },
+   "23474": {
+    "en": "The driver being passed",
+    "it": "Il veicolo che viene superato"
+   },
+   "23475": {
+    "en": "The driver being passed",
+    "it": "Il veicolo che viene superato"
+   },
+   "23480": {
+    "en": "How to pass and return",
+    "it": "Come sorpassare e rientrare"
+   },
+   "23481": {
+    "en": "The driver being passed",
+    "it": "Il veicolo che viene superato"
+   }
+  }
+ },
+ "4499": {
+  "en": "When you pass on the right",
+  "it": "Quando si sorpassa a destra",
+  "stmts": {
+   "23483": {
+    "en": "How to pass and return",
+    "it": "Come sorpassare e rientrare"
+   },
+   "23493": {
+    "en": "How to pass and return",
+    "it": "Come sorpassare e rientrare"
+   }
+  }
+ },
+ "4500": {
+  "en": "Where passing is forbidden",
+  "it": "Dove il sorpasso è vietato",
+  "stmts": {
+   "23514": {
+    "en": "Space, and some common misconceptions",
+    "it": "Spazio e alcune idee sbagliate"
+   },
+   "23515": {
+    "en": "Space, and some common misconceptions",
+    "it": "Spazio e alcune idee sbagliate"
+   },
+   "23516": {
+    "en": "Space, and some common misconceptions",
+    "it": "Spazio e alcune idee sbagliate"
+   },
+   "23517": {
+    "en": "Space, and some common misconceptions",
+    "it": "Spazio e alcune idee sbagliate"
+   },
+   "23518": {
+    "en": "Space, and some common misconceptions",
+    "it": "Spazio e alcune idee sbagliate"
+   },
+   "23520": {
+    "en": "Before you start: the checks",
+    "it": "Prima di iniziare: i controlli"
+   },
+   "23521": {
+    "en": "What makes overtaking dangerous",
+    "it": "Cosa rende pericoloso il sorpasso"
+   },
+   "23523": {
+    "en": "What makes overtaking dangerous",
+    "it": "Cosa rende pericoloso il sorpasso"
+   },
+   "23524": {
+    "en": "How to pass and return",
+    "it": "Come sorpassare e rientrare"
+   },
+   "23535": {
+    "en": "When you pass on the right",
+    "it": "Quando si sorpassa a destra"
+   },
+   "23536": {
+    "en": "When you pass on the right",
+    "it": "Quando si sorpassa a destra"
+   },
+   "23537": {
+    "en": "Space, and some common misconceptions",
+    "it": "Spazio e alcune idee sbagliate"
+   },
+   "23538": {
+    "en": "Space, and some common misconceptions",
+    "it": "Spazio e alcune idee sbagliate"
+   },
+   "23542": {
+    "en": "When you pass on the right",
+    "it": "Quando si sorpassa a destra"
+   },
+   "23543": {
+    "en": "Space, and some common misconceptions",
+    "it": "Spazio e alcune idee sbagliate"
+   }
+  }
+ },
+ "4501": {
+  "en": "Space, and some common misconceptions",
+  "it": "Spazio e alcune idee sbagliate",
+  "stmts": {
+   "23545": {
+    "en": "How to pass and return",
+    "it": "Come sorpassare e rientrare"
+   },
+   "23549": {
+    "en": "How to pass and return",
+    "it": "Come sorpassare e rientrare"
+   }
+  }
+ },
+ "4502": {
+  "en": "Where passing is forbidden",
+  "it": "Dove il sorpasso è vietato",
+  "stmts": {
+   "23569": {
+    "en": "When you pass on the right",
+    "it": "Quando si sorpassa a destra"
+   }
+  }
+ },
+ "4503": {
+  "en": "What makes overtaking dangerous",
+  "it": "Cosa rende pericoloso il sorpasso",
+  "stmts": {
+   "23570": {
+    "en": "How to pass and return",
+    "it": "Come sorpassare e rientrare"
+   },
+   "23576": {
+    "en": "How to pass and return",
+    "it": "Come sorpassare e rientrare"
+   },
+   "23580": {
+    "en": "Where passing is forbidden",
+    "it": "Dove il sorpasso è vietato"
+   },
+   "23581": {
+    "en": "Where passing is forbidden",
+    "it": "Dove il sorpasso è vietato"
+   },
+   "23582": {
+    "en": "Where passing is forbidden",
+    "it": "Dove il sorpasso è vietato"
+   },
+   "23583": {
+    "en": "How to pass and return",
+    "it": "Come sorpassare e rientrare"
+   },
+   "23584": {
+    "en": "How to pass and return",
+    "it": "Come sorpassare e rientrare"
+   },
+   "23585": {
+    "en": "When you pass on the right",
+    "it": "Quando si sorpassa a destra"
+   },
+   "23586": {
+    "en": "When you pass on the right",
+    "it": "Quando si sorpassa a destra"
+   },
+   "23587": {
+    "en": "Before you start: the checks",
+    "it": "Prima di iniziare: i controlli"
+   }
+  }
+ },
+ "4504": {
+  "en": "The driver being passed",
+  "it": "Il veicolo che viene superato",
+  "stmts": {
+   "23596": {
+    "en": "Where passing is forbidden",
+    "it": "Dove il sorpasso è vietato"
+   }
+  }
+ },
+ "4505": {
+  "en": "The driver being passed",
+  "it": "Il veicolo che viene superato",
+  "stmts": {
+   "23597": {
+    "en": "Where passing is forbidden",
+    "it": "Dove il sorpasso è vietato"
+   },
+   "23601": {
+    "en": "Where passing is forbidden",
+    "it": "Dove il sorpasso è vietato"
+   },
+   "23602": {
+    "en": "Where passing is forbidden",
+    "it": "Dove il sorpasso è vietato"
+   }
+  }
+ },
+ "4506": {
+  "en": "Space, and some common misconceptions",
+  "it": "Spazio e alcune idee sbagliate",
+  "stmts": {
+   "23606": {
+    "en": "What makes overtaking dangerous",
+    "it": "Cosa rende pericoloso il sorpasso"
+   },
+   "23607": {
+    "en": "What makes overtaking dangerous",
+    "it": "Cosa rende pericoloso il sorpasso"
+   },
+   "23608": {
+    "en": "What makes overtaking dangerous",
+    "it": "Cosa rende pericoloso il sorpasso"
+   },
+   "23609": {
+    "en": "How to pass and return",
+    "it": "Come sorpassare e rientrare"
+   },
+   "23610": {
+    "en": "What makes overtaking dangerous",
+    "it": "Cosa rende pericoloso il sorpasso"
+   },
+   "23611": {
+    "en": "What makes overtaking dangerous",
+    "it": "Cosa rende pericoloso il sorpasso"
+   },
+   "23612": {
+    "en": "What makes overtaking dangerous",
+    "it": "Cosa rende pericoloso il sorpasso"
+   },
+   "23613": {
+    "en": "What makes overtaking dangerous",
+    "it": "Cosa rende pericoloso il sorpasso"
+   }
+  }
+ },
+ "4507": {
+  "en": "Regulated parking zones",
+  "it": "Zone di sosta regolamentata"
+ },
+ "4508": {
+  "en": "Getting out and moving off",
+  "it": "Scendere e ripartire",
+  "stmts": {
+   "23626": {
+    "en": "Parking (sosta): securing the vehicle",
+    "it": "Sosta: mettere in sicurezza il veicolo"
+   }
+  }
+ },
+ "4509": {
+  "en": "Getting out and moving off",
+  "it": "Scendere e ripartire",
+  "stmts": {
+   "23639": {
+    "topic": "Dispositivi di equipaggiamento: funzione ed uso; cinture di sicurezza e sistemi di ritenuta per bambini; casco protettivo;",
+    "en": "The airbag",
+    "it": "L'airbag"
+   },
+   "23640": {
+    "topic": "Dispositivi di equipaggiamento: funzione ed uso; cinture di sicurezza e sistemi di ritenuta per bambini; casco protettivo;",
+    "en": "Seatbelts",
+    "it": "Cinture di sicurezza"
+   }
+  }
+ },
+ "4510": {
+  "en": "The three states",
+  "it": "I tre stati"
+ },
+ "4511": {
+  "en": "During a brief halt (fermata)",
+  "it": "Durante una fermata"
+ },
+ "4512": {
+  "en": "During a brief halt (fermata)",
+  "it": "Durante una fermata"
+ },
+ "4513": {
+  "en": "Where stopping and parking are forbidden",
+  "it": "Dove fermata e sosta sono vietate"
+ },
+ "4515": {
+  "en": "Where stopping and parking are forbidden",
+  "it": "Dove fermata e sosta sono vietate",
+  "stmts": {
+   "23692": {
+    "en": "Bans that hit only the sosta",
+    "it": "I divieti che colpiscono solo la sosta"
+   },
+   "23696": {
+    "en": "Bans that hit only the sosta",
+    "it": "I divieti che colpiscono solo la sosta"
+   }
+  }
+ },
+ "4516": {
+  "en": "The three states",
+  "it": "I tre stati",
+  "stmts": {
+   "23700": {
+    "en": "Parking (sosta): securing the vehicle",
+    "it": "Sosta: mettere in sicurezza il veicolo"
+   },
+   "23701": {
+    "en": "Parking (sosta): securing the vehicle",
+    "it": "Sosta: mettere in sicurezza il veicolo"
+   },
+   "23702": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "Position lights, plate light, and parking",
+    "it": "Luci di posizione, luce targa e sosta"
+   }
+  }
+ },
+ "4517": {
+  "en": "Parking (sosta): securing the vehicle",
+  "it": "Sosta: mettere in sicurezza il veicolo"
+ },
+ "4518": {
+  "en": "Parking (sosta): securing the vehicle",
+  "it": "Sosta: mettere in sicurezza il veicolo"
+ },
+ "4519": {
+  "en": "What is still allowed",
+  "it": "Cosa è invece consentito",
+  "stmts": {
+   "23726": {
+    "en": "Regulated parking zones",
+    "it": "Zone di sosta regolamentata"
+   }
+  }
+ },
+ "4520": {
+  "en": "Where stopping and parking are forbidden",
+  "it": "Dove fermata e sosta sono vietate"
+ },
+ "4521": {
+  "en": "Where stopping and parking are forbidden",
+  "it": "Dove fermata e sosta sono vietate"
+ },
+ "4522": {
+  "en": "Where stopping and parking are forbidden",
+  "it": "Dove fermata e sosta sono vietate"
+ },
+ "4523": {
+  "en": "Bans that hit only the sosta",
+  "it": "I divieti che colpiscono solo la sosta"
+ },
+ "4524": {
+  "en": "Bans that hit only the sosta",
+  "it": "I divieti che colpiscono solo la sosta"
+ },
+ "4525": {
+  "en": "Bans that hit only the sosta",
+  "it": "I divieti che colpiscono solo la sosta"
+ },
+ "4526": {
+  "en": "Bans that hit only the sosta",
+  "it": "I divieti che colpiscono solo la sosta"
+ },
+ "4527": {
+  "en": "Bans that hit only the sosta",
+  "it": "I divieti che colpiscono solo la sosta",
+  "stmts": {
+   "23780": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "The points system",
+    "it": "Il sistema a punti"
+   },
+   "23781": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "The points system",
+    "it": "Il sistema a punti"
+   },
+   "23782": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "The points system",
+    "it": "Il sistema a punti"
+   },
+   "23783": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "The points system",
+    "it": "Il sistema a punti"
+   },
+   "23784": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "The points system",
+    "it": "Il sistema a punti"
+   },
+   "23787": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "The points system",
+    "it": "Il sistema a punti"
+   },
+   "23788": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "Withdrawal, suspension, revision, and revocation",
+    "it": "Ritiro, sospensione, revisione e revoca"
+   }
+  }
+ },
+ "4528": {
+  "en": "The three states",
+  "it": "I tre stati"
+ },
+ "4529": {
+  "en": "Getting out and moving off",
+  "it": "Scendere e ripartire",
+  "stmts": {
+   "23800": {
+    "en": "Parking (sosta): securing the vehicle",
+    "it": "Sosta: mettere in sicurezza il veicolo"
+   },
+   "23803": {
+    "en": "Parking (sosta): securing the vehicle",
+    "it": "Sosta: mettere in sicurezza il veicolo"
+   },
+   "23804": {
+    "en": "Parking (sosta): securing the vehicle",
+    "it": "Sosta: mettere in sicurezza il veicolo"
+   }
+  }
+ },
+ "4530": {
+  "en": "When something goes wrong",
+  "it": "Quando qualcosa va storto"
+ },
+ "4531": {
+  "en": "When something goes wrong",
+  "it": "Quando qualcosa va storto"
+ },
+ "4532": {
+  "en": "When something goes wrong",
+  "it": "Quando qualcosa va storto"
+ },
+ "4533": {
+  "en": "When something goes wrong",
+  "it": "Quando qualcosa va storto"
+ },
+ "4534": {
+  "en": "When something goes wrong",
+  "it": "Quando qualcosa va storto"
+ },
+ "4535": {
+  "en": "When something goes wrong",
+  "it": "Quando qualcosa va storto"
+ },
+ "4536": {
+  "en": "When something goes wrong",
+  "it": "Quando qualcosa va storto"
+ },
+ "4537": {
+  "en": "Out on the autostrada",
+  "it": "In autostrada"
+ },
+ "4538": {
+  "en": "Out on the autostrada",
+  "it": "In autostrada",
+  "stmts": {
+   "23867": {
+    "en": "Emergency towing of a broken-down vehicle",
+    "it": "Traino di emergenza di un veicolo in avaria"
+   }
+  }
+ },
+ "4539": {
+  "en": "Out on the autostrada",
+  "it": "In autostrada"
+ },
+ "4540": {
+  "en": "Out on the autostrada",
+  "it": "In autostrada"
+ },
+ "4541": {
+  "en": "Out on the autostrada",
+  "it": "In autostrada",
+  "stmts": {
+   "23888": {
+    "en": "The emergency lane",
+    "it": "La corsia di emergenza"
+   }
+  }
+ },
+ "4542": {
+  "en": "Out on the autostrada",
+  "it": "In autostrada",
+  "stmts": {
+   "23892": {
+    "en": "The emergency lane",
+    "it": "La corsia di emergenza"
+   },
+   "23893": {
+    "en": "The emergency lane",
+    "it": "La corsia di emergenza"
+   }
+  }
+ },
+ "4543": {
+  "en": "Out on the autostrada",
+  "it": "In autostrada"
+ },
+ "4544": {
+  "en": "Out on the autostrada",
+  "it": "In autostrada",
+  "stmts": {
+   "23908": {
+    "en": "Emergency towing of a broken-down vehicle",
+    "it": "Traino di emergenza di un veicolo in avaria"
+   }
+  }
+ },
+ "4545": {
+  "en": "Before you set off: people, animals, cargo",
+  "it": "Prima di partire: persone, animali, carico"
+ },
+ "4546": {
+  "en": "Before you set off: people, animals, cargo",
+  "it": "Prima di partire: persone, animali, carico"
+ },
+ "4547": {
+  "en": "Before you set off: people, animals, cargo",
+  "it": "Prima di partire: persone, animali, carico"
+ },
+ "4551": {
+  "en": "Towing a trailer",
+  "it": "Trainare un rimorchio",
+  "stmts": {
+   "23952": {
+    "en": "Emergency towing of a broken-down vehicle",
+    "it": "Traino di emergenza di un veicolo in avaria"
+   },
+   "23953": {
+    "en": "Emergency towing of a broken-down vehicle",
+    "it": "Traino di emergenza di un veicolo in avaria"
+   },
+   "23954": {
+    "en": "Emergency towing of a broken-down vehicle",
+    "it": "Traino di emergenza di un veicolo in avaria"
+   },
+   "23955": {
+    "en": "Emergency towing of a broken-down vehicle",
+    "it": "Traino di emergenza di un veicolo in avaria"
+   },
+   "23956": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "The points system",
+    "it": "Il sistema a punti"
+   },
+   "23957": {
+    "en": "Emergency towing of a broken-down vehicle",
+    "it": "Traino di emergenza di un veicolo in avaria"
+   },
+   "23958": {
+    "en": "Emergency towing of a broken-down vehicle",
+    "it": "Traino di emergenza di un veicolo in avaria"
+   },
+   "23959": {
+    "en": "Emergency towing of a broken-down vehicle",
+    "it": "Traino di emergenza di un veicolo in avaria"
+   },
+   "23960": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "The points system",
+    "it": "Il sistema a punti"
+   }
+  }
+ },
+ "4552": {
+  "en": "Sharing the road: speed, mass, and blind spots",
+  "it": "Condividere la strada: velocità, massa e angoli ciechi"
+ },
+ "4553": {
+  "en": "Sharing the road: speed, mass, and blind spots",
+  "it": "Condividere la strada: velocità, massa e angoli ciechi"
+ },
+ "4554": {
+  "en": "Sharing the road: speed, mass, and blind spots",
+  "it": "Condividere la strada: velocità, massa e angoli ciechi"
+ },
+ "4555": {
+  "en": "Sharing the road: speed, mass, and blind spots",
+  "it": "Condividere la strada: velocità, massa e angoli ciechi"
+ },
+ "4556": {
+  "en": "Sharing the road: speed, mass, and blind spots",
+  "it": "Condividere la strada: velocità, massa e angoli ciechi"
+ },
+ "4557": {
+  "en": "Sharing the road: speed, mass, and blind spots",
+  "it": "Condividere la strada: velocità, massa e angoli ciechi"
+ },
+ "4558": {
+  "en": "Sharing the road: speed, mass, and blind spots",
+  "it": "Condividere la strada: velocità, massa e angoli ciechi"
+ },
+ "4559": {
+  "en": "Sharing the road: speed, mass, and blind spots",
+  "it": "Condividere la strada: velocità, massa e angoli ciechi"
+ },
+ "4560": {
+  "en": "When something goes wrong",
+  "it": "Quando qualcosa va storto"
+ },
+ "4561": {
+  "en": "Sharing the road: speed, mass, and blind spots",
+  "it": "Condividere la strada: velocità, massa e angoli ciechi"
+ },
+ "4562": {
+  "en": "Towing a trailer",
+  "it": "Trainare un rimorchio",
+  "stmts": {
+   "24034": {
+    "en": "Emergency towing of a broken-down vehicle",
+    "it": "Traino di emergenza di un veicolo in avaria"
+   },
+   "24042": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24043": {
+    "en": "Emergency towing of a broken-down vehicle",
+    "it": "Traino di emergenza di un veicolo in avaria"
+   },
+   "24044": {
+    "en": "Emergency towing of a broken-down vehicle",
+    "it": "Traino di emergenza di un veicolo in avaria"
+   },
+   "24047": {
+    "en": "Emergency towing of a broken-down vehicle",
+    "it": "Traino di emergenza di un veicolo in avaria"
+   },
+   "24050": {
+    "en": "Emergency towing of a broken-down vehicle",
+    "it": "Traino di emergenza di un veicolo in avaria"
+   }
+  }
+ },
+ "4563": {
+  "en": "Before you set off: people, animals, cargo",
+  "it": "Prima di partire: persone, animali, carico"
+ },
+ "4565": {
+  "en": "Towing a trailer",
+  "it": "Trainare un rimorchio"
+ },
+ "4566": {
+  "en": "Towing a trailer",
+  "it": "Trainare un rimorchio"
+ },
+ "4567": {
+  "en": "Towing a trailer",
+  "it": "Trainare un rimorchio",
+  "stmts": {
+   "24090": {
+    "en": "Hooking up",
+    "it": "Agganciare"
+   },
+   "24096": {
+    "en": "The numbers to memorize",
+    "it": "I numeri da ricordare"
+   },
+   "24097": {
+    "en": "The numbers to memorize",
+    "it": "I numeri da ricordare"
+   },
+   "24098": {
+    "en": "Marker panels: know them at a glance",
+    "it": "Pannelli segnalatori: riconoscerli a colpo d'occhio"
+   },
+   "24106": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "C and D: the professional categories",
+    "it": "C e D: le categorie professionali"
+   },
+   "24107": {
+    "en": "The numbers to memorize",
+    "it": "I numeri da ricordare"
+   },
+   "24112": {
+    "en": "Before you set off: people, animals, cargo",
+    "it": "Prima di partire: persone, animali, carico"
+   },
+   "24113": {
+    "en": "Before you set off: people, animals, cargo",
+    "it": "Prima di partire: persone, animali, carico"
+   },
+   "24114": {
+    "en": "Who may not enter",
+    "it": "Chi non può entrare"
+   }
+  }
+ },
+ "4568": {
+  "en": "Towing a trailer",
+  "it": "Trainare un rimorchio"
+ },
+ "4569": {
+  "en": "Towing a trailer",
+  "it": "Trainare un rimorchio"
+ },
+ "4570": {
+  "en": "Towing a trailer",
+  "it": "Trainare un rimorchio"
+ },
+ "4571": {
+  "en": "Seeing: which beam, when",
+  "it": "Vedere: quale proiettore, quando",
+  "stmts": {
+   "24148": {
+    "en": "Position lights, plate light, and parking",
+    "it": "Luci di posizione, luce targa e sosta"
+   },
+   "24149": {
+    "en": "Position lights, plate light, and parking",
+    "it": "Luci di posizione, luce targa e sosta"
+   }
+  }
+ },
+ "4572": {
+  "en": "Seeing: which beam, when",
+  "it": "Vedere: quale proiettore, quando",
+  "stmts": {
+   "24153": {
+    "en": "Position lights, plate light, and parking",
+    "it": "Luci di posizione, luce targa e sosta"
+   },
+   "24155": {
+    "en": "Position lights, plate light, and parking",
+    "it": "Luci di posizione, luce targa e sosta"
+   },
+   "24156": {
+    "en": "Position lights, plate light, and parking",
+    "it": "Luci di posizione, luce targa e sosta"
+   }
+  }
+ },
+ "4573": {
+  "en": "Seeing: which beam, when",
+  "it": "Vedere: quale proiettore, quando"
+ },
+ "4574": {
+  "en": "Seeing: which beam, when",
+  "it": "Vedere: quale proiettore, quando"
+ },
+ "4575": {
+  "en": "Being seen",
+  "it": "Farsi vedere"
+ },
+ "4576": {
+  "en": "Being seen",
+  "it": "Farsi vedere"
+ },
+ "4577": {
+  "en": "Being seen",
+  "it": "Farsi vedere"
+ },
+ "4578": {
+  "en": "Dashboard lights: color means severity",
+  "it": "Spie del cruscotto: il colore indica la gravità"
+ },
+ "4583": {
+  "en": "Talking to other drivers",
+  "it": "Parlare agli altri conducenti"
+ },
+ "4584": {
+  "en": "Talking to other drivers",
+  "it": "Parlare agli altri conducenti"
+ },
+ "4585": {
+  "en": "Seeing: which beam, when",
+  "it": "Vedere: quale proiettore, quando"
+ },
+ "4586": {
+  "en": "Talking to other drivers",
+  "it": "Parlare agli altri conducenti"
+ },
+ "4587": {
+  "en": "Talking to other drivers",
+  "it": "Parlare agli altri conducenti",
+  "stmts": {
+   "24265": {
+    "en": "High beams",
+    "it": "Abbaglianti"
+   },
+   "24266": {
+    "en": "High beams",
+    "it": "Abbaglianti"
+   },
+   "24267": {
+    "en": "High beams",
+    "it": "Abbaglianti"
+   },
+   "24268": {
+    "en": "High beams",
+    "it": "Abbaglianti"
+   },
+   "24269": {
+    "en": "High beams",
+    "it": "Abbaglianti"
+   },
+   "24270": {
+    "en": "High beams",
+    "it": "Abbaglianti"
+   },
+   "24271": {
+    "en": "High beams",
+    "it": "Abbaglianti"
+   }
+  }
+ },
+ "4593": {
+  "en": "Seatbelts",
+  "it": "Cinture di sicurezza"
+ },
+ "4594": {
+  "en": "The airbag",
+  "it": "L'airbag",
+  "stmts": {
+   "24322": {
+    "en": "Child restraints",
+    "it": "Sistemi di ritenuta per bambini"
+   },
+   "24323": {
+    "en": "Child restraints",
+    "it": "Sistemi di ritenuta per bambini"
+   }
+  }
+ },
+ "4595": {
+  "en": "The headrest",
+  "it": "Il poggiatesta"
+ },
+ "4596": {
+  "en": "Seatbelts",
+  "it": "Cinture di sicurezza"
+ },
+ "4597": {
+  "en": "The helmet",
+  "it": "Il casco"
+ },
+ "4598": {
+  "en": "Seatbelts",
+  "it": "Cinture di sicurezza",
+  "stmts": {
+   "24362": {
+    "en": "Child restraints",
+    "it": "Sistemi di ritenuta per bambini"
+   }
+  }
+ },
+ "4599": {
+  "en": "Child restraints",
+  "it": "Sistemi di ritenuta per bambini"
+ },
+ "4600": {
+  "en": "The airbag",
+  "it": "L'airbag"
+ },
+ "4601": {
+  "en": "The helmet",
+  "it": "Il casco"
+ },
+ "4602": {
+  "en": "Other protective gear",
+  "it": "Altro abbigliamento protettivo"
+ },
+ "4603": {
+  "en": "Other protective gear",
+  "it": "Altro abbigliamento protettivo"
+ },
+ "4604": {
+  "en": "Other protective gear",
+  "it": "Altro abbigliamento protettivo"
+ },
+ "4605": {
+  "en": "License categories: minimum age and what each permits",
+  "it": "Le categorie di patente: età minima e cosa abilitano a guidare",
+  "stmts": {
+   "24458": {
+    "en": "Vehicle documents and plates",
+    "it": "Documenti del veicolo e targhe"
+   },
+   "24459": {
+    "en": "Vehicle documents and plates",
+    "it": "Documenti del veicolo e targhe"
+   },
+   "24460": {
+    "en": "Vehicle documents and plates",
+    "it": "Documenti del veicolo e targhe"
+   },
+   "24461": {
+    "en": "Vehicle documents and plates",
+    "it": "Documenti del veicolo e targhe"
+   },
+   "24462": {
+    "en": "Vehicle documents and plates",
+    "it": "Documenti del veicolo e targhe"
+   },
+   "24463": {
+    "en": "Vehicle documents and plates",
+    "it": "Documenti del veicolo e targhe"
+   }
+  }
+ },
+ "4606": {
+  "en": "Vehicle documents and plates",
+  "it": "Documenti del veicolo e targhe"
+ },
+ "4607": {
+  "en": "Vehicle documents and plates",
+  "it": "Documenti del veicolo e targhe"
+ },
+ "4608": {
+  "en": "License categories: minimum age and what each permits",
+  "it": "Le categorie di patente: età minima e cosa abilitano a guidare"
+ },
+ "4609": {
+  "en": "License categories: minimum age and what each permits",
+  "it": "Le categorie di patente: età minima e cosa abilitano a guidare"
+ },
+ "4610": {
+  "en": "License categories: minimum age and what each permits",
+  "it": "Le categorie di patente: età minima e cosa abilitano a guidare"
+ },
+ "4611": {
+  "en": "License categories: minimum age and what each permits",
+  "it": "Le categorie di patente: età minima e cosa abilitano a guidare"
+ },
+ "4612": {
+  "en": "License categories: minimum age and what each permits",
+  "it": "Le categorie di patente: età minima e cosa abilitano a guidare"
+ },
+ "4613": {
+  "en": "License categories: minimum age and what each permits",
+  "it": "Le categorie di patente: età minima e cosa abilitano a guidare",
+  "stmts": {
+   "24538": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24541": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24553": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24554": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   }
+  }
+ },
+ "4614": {
+  "en": "License categories: minimum age and what each permits",
+  "it": "Le categorie di patente: età minima e cosa abilitano a guidare",
+  "stmts": {
+   "24557": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24558": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24559": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24560": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24561": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24562": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24563": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24564": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24565": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24566": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   }
+  }
+ },
+ "4615": {
+  "en": "License categories: minimum age and what each permits",
+  "it": "Le categorie di patente: età minima e cosa abilitano a guidare",
+  "stmts": {
+   "24567": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24568": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24569": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24571": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24572": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24573": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24575": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   },
+   "24576": {
+    "en": "The B categories: B1, B, B96 and BE",
+    "it": "Le categorie B: B1, B, B96 e BE"
+   }
+  }
+ },
+ "4616": {
+  "en": "Withdrawal, suspension, revision, and revocation",
+  "it": "Ritiro, sospensione, revisione e revoca"
+ },
+ "4617": {
+  "en": "Withdrawal, suspension, revision, and revocation",
+  "it": "Ritiro, sospensione, revisione e revoca"
+ },
+ "4618": {
+  "en": "Withdrawal, suspension, revision, and revocation",
+  "it": "Ritiro, sospensione, revisione e revoca"
+ },
+ "4619": {
+  "en": "Withdrawal, suspension, revision, and revocation",
+  "it": "Ritiro, sospensione, revisione e revoca"
+ },
+ "4620": {
+  "en": "The points system",
+  "it": "Il sistema a punti"
+ },
+ "4621": {
+  "en": "The points system",
+  "it": "Il sistema a punti"
+ },
+ "4622": {
+  "en": "License validity by age",
+  "it": "Validità della patente per età"
+ },
+ "4623": {
+  "en": "Causes of accidents",
+  "it": "Cause degli incidenti"
+ },
+ "4624": {
+  "en": "Driving the conditions",
+  "it": "Guidare nelle condizioni difficili"
+ },
+ "4625": {
+  "en": "Driving the conditions",
+  "it": "Guidare nelle condizioni difficili"
+ },
+ "4626": {
+  "en": "Driving the conditions",
+  "it": "Guidare nelle condizioni difficili"
+ },
+ "4627": {
+  "en": "Driving the conditions",
+  "it": "Guidare nelle condizioni difficili"
+ },
+ "4628": {
+  "en": "Driving the conditions",
+  "it": "Guidare nelle condizioni difficili"
+ },
+ "4629": {
+  "en": "At a crash scene",
+  "it": "Sul luogo di un incidente",
+  "stmts": {
+   "24772": {
+    "en": "Vehicle care: no do-it-yourself tuning",
+    "it": "Cura del veicolo: niente elaborazioni fai-da-te"
+   },
+   "24773": {
+    "topic": "Distanza di sicurezza",
+    "en": "Three distances: reaction, braking, and total stopping",
+    "it": "Tre spazi: reazione, frenata e arresto totale"
+   },
+   "24774": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "Dashboard lights: color means severity",
+    "it": "Spie del cruscotto: il colore indica la gravità"
+   },
+   "24775": {
+    "en": "Vehicle care: no do-it-yourself tuning",
+    "it": "Cura del veicolo: niente elaborazioni fai-da-te"
+   },
+   "24776": {
+    "topic": "Elementi costitutivi del veicolo importanti per la sicurezza; manutenzione ed uso; stabilità e tenuta di strada del veicolo;",
+    "en": "Brakes and ABS",
+    "it": "Freni e ABS"
+   },
+   "24777": {
+    "topic": "Elementi costitutivi del veicolo importanti per la sicurezza; manutenzione ed uso; stabilità e tenuta di strada del veicolo;",
+    "en": "Brakes and ABS",
+    "it": "Freni e ABS"
+   },
+   "24778": {
+    "en": "Vehicle care: no do-it-yourself tuning",
+    "it": "Cura del veicolo: niente elaborazioni fai-da-te"
+   }
+  }
+ },
+ "4630": {
+  "en": "Before you drive",
+  "it": "Prima di metterti alla guida"
+ },
+ "4631": {
+  "en": "Driving the conditions",
+  "it": "Guidare nelle condizioni difficili"
+ },
+ "4632": {
+  "en": "Causes of accidents",
+  "it": "Cause degli incidenti"
+ },
+ "4633": {
+  "en": "Driving the conditions",
+  "it": "Guidare nelle condizioni difficili"
+ },
+ "4634": {
+  "en": "Riding two-wheelers",
+  "it": "Guidare i due ruote",
+  "stmts": {
+   "24806": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "The horn",
+    "it": "Il clacson"
+   },
+   "24808": {
+    "en": "Snow and ice",
+    "it": "Neve e ghiaccio"
+   },
+   "24811": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "High beams",
+    "it": "Abbaglianti"
+   }
+  }
+ },
+ "4635": {
+  "en": "Riding two-wheelers",
+  "it": "Guidare i due ruote"
+ },
+ "4636": {
+  "en": "Fatigue",
+  "it": "Stanchezza"
+ },
+ "4637": {
+  "en": "Alcohol",
+  "it": "Alcol"
+ },
+ "4638": {
+  "en": "Drugs and medicines",
+  "it": "Droghe e farmaci",
+  "stmts": {
+   "24836": {
+    "en": "Alcohol",
+    "it": "Alcol"
+   }
+  }
+ },
+ "4639": {
+  "en": "Drugs and medicines",
+  "it": "Droghe e farmaci"
+ },
+ "4640": {
+  "en": "Other factors: meals, emotion, eyesight",
+  "it": "Altri fattori: pasti, emozioni, vista",
+  "stmts": {
+   "24848": {
+    "en": "Alcohol",
+    "it": "Alcol"
+   }
+  }
+ },
+ "4641": {
+  "en": "Alcohol",
+  "it": "Alcol",
+  "stmts": {
+   "24851": {
+    "en": "Other factors: meals, emotion, eyesight",
+    "it": "Altri fattori: pasti, emozioni, vista"
+   }
+  }
+ },
+ "4642": {
+  "en": "First aid: the duty and the goal",
+  "it": "Primo soccorso: il dovere e l'obiettivo"
+ },
+ "4643": {
+  "en": "First aid: the duty and the goal",
+  "it": "Primo soccorso: il dovere e l'obiettivo"
+ },
+ "4644": {
+  "en": "First aid: common situations",
+  "it": "Primo soccorso: situazioni comuni"
+ },
+ "4645": {
+  "en": "First aid: common situations",
+  "it": "Primo soccorso: situazioni comuni"
+ },
+ "4646": {
+  "en": "First aid: common situations",
+  "it": "Primo soccorso: situazioni comuni"
+ },
+ "4647": {
+  "en": "First aid: common situations",
+  "it": "Primo soccorso: situazioni comuni"
+ },
+ "4648": {
+  "en": "First aid: common situations",
+  "it": "Primo soccorso: situazioni comuni"
+ },
+ "4649": {
+  "en": "First aid: common situations",
+  "it": "Primo soccorso: situazioni comuni"
+ },
+ "4650": {
+  "en": "First aid: common situations",
+  "it": "Primo soccorso: situazioni comuni"
+ },
+ "4651": {
+  "en": "First aid: common situations",
+  "it": "Primo soccorso: situazioni comuni"
+ },
+ "4652": {
+  "en": "First aid: common situations",
+  "it": "Primo soccorso: situazioni comuni"
+ },
+ "4653": {
+  "en": "First aid: the duty and the goal",
+  "it": "Primo soccorso: il dovere e l'obiettivo"
+ },
+ "4654": {
+  "en": "First aid: common situations",
+  "it": "Primo soccorso: situazioni comuni"
+ },
+ "4655": {
+  "en": "Alcohol",
+  "it": "Alcol"
+ },
+ "4656": {
+  "en": "Other factors: meals, emotion, eyesight",
+  "it": "Altri fattori: pasti, emozioni, vista"
+ },
+ "4657": {
+  "en": "The three liabilities",
+  "it": "Le tre responsabilità",
+  "stmts": {
+   "24973": {
+    "en": "When criminal liability arises or is excluded",
+    "it": "Quando sorge o è esclusa la responsabilità penale"
+   }
+  }
+ },
+ "4658": {
+  "en": "The three liabilities",
+  "it": "Le tre responsabilità",
+  "stmts": {
+   "24977": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "Withdrawal, suspension, revision, and revocation",
+    "it": "Ritiro, sospensione, revisione e revoca"
+   },
+   "24978": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "Withdrawal, suspension, revision, and revocation",
+    "it": "Ritiro, sospensione, revisione e revoca"
+   },
+   "24979": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "Withdrawal, suspension, revision, and revocation",
+    "it": "Ritiro, sospensione, revisione e revoca"
+   },
+   "24981": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "Withdrawal, suspension, revision, and revocation",
+    "it": "Ritiro, sospensione, revisione e revoca"
+   },
+   "24982": {
+    "topic": "Patenti di guida; documenti di circolazione del veicolo; obbligo verso funzionari ed agenti; sistema sanzionatorio; patente a",
+    "en": "Withdrawal, suspension, revision, and revocation",
+    "it": "Ritiro, sospensione, revisione e revoca"
+   }
+  }
+ },
+ "4659": {
+  "en": "When criminal liability arises or is excluded",
+  "it": "Quando sorge o è esclusa la responsabilità penale"
+ },
+ "4660": {
+  "en": "When criminal liability arises or is excluded",
+  "it": "Quando sorge o è esclusa la responsabilità penale"
+ },
+ "4661": {
+  "en": "The three liabilities",
+  "it": "Le tre responsabilità",
+  "stmts": {
+   "25006": {
+    "en": "Compulsory RCA insurance",
+    "it": "L'assicurazione RC auto obbligatoria"
+   }
+  }
+ },
+ "4662": {
+  "en": "Compulsory RCA insurance",
+  "it": "L'assicurazione RC auto obbligatoria"
+ },
+ "4663": {
+  "en": "The three liabilities",
+  "it": "Le tre responsabilità"
+ },
+ "4664": {
+  "en": "Compulsory RCA insurance",
+  "it": "L'assicurazione RC auto obbligatoria"
+ },
+ "4665": {
+  "en": "Other coverage and the guarantee fund",
+  "it": "Altre coperture e il fondo di garanzia"
+ },
+ "4666": {
+  "en": "Other coverage and the guarantee fund",
+  "it": "Altre coperture e il fondo di garanzia"
+ },
+ "4667": {
+  "en": "Compulsory RCA insurance",
+  "it": "L'assicurazione RC auto obbligatoria"
+ },
+ "4668": {
+  "en": "Compulsory RCA insurance",
+  "it": "L'assicurazione RC auto obbligatoria"
+ },
+ "4669": {
+  "en": "Compulsory RCA insurance",
+  "it": "L'assicurazione RC auto obbligatoria"
+ },
+ "4670": {
+  "en": "Compulsory RCA insurance",
+  "it": "L'assicurazione RC auto obbligatoria"
+ },
+ "4671": {
+  "en": "Saving fuel",
+  "it": "Risparmiare carburante",
+  "stmts": {
+   "25075": {
+    "en": "Reducing air pollution",
+    "it": "Ridurre l'inquinamento dell'aria"
+   }
+  }
+ },
+ "4672": {
+  "en": "Reducing noise pollution",
+  "it": "Ridurre l'inquinamento acustico"
+ },
+ "4673": {
+  "en": "Reducing noise pollution",
+  "it": "Ridurre l'inquinamento acustico"
+ },
+ "4674": {
+  "en": "Reducing noise pollution",
+  "it": "Ridurre l'inquinamento acustico"
+ },
+ "4675": {
+  "en": "Reducing noise pollution",
+  "it": "Ridurre l'inquinamento acustico"
+ },
+ "4676": {
+  "en": "Reducing air pollution",
+  "it": "Ridurre l'inquinamento dell'aria"
+ },
+ "4677": {
+  "en": "Reducing air pollution",
+  "it": "Ridurre l'inquinamento dell'aria"
+ },
+ "4678": {
+  "en": "Reducing air pollution",
+  "it": "Ridurre l'inquinamento dell'aria"
+ },
+ "4679": {
+  "en": "Reducing air pollution",
+  "it": "Ridurre l'inquinamento dell'aria"
+ },
+ "4680": {
+  "en": "Reducing air pollution",
+  "it": "Ridurre l'inquinamento dell'aria"
+ },
+ "4681": {
+  "en": "Saving fuel",
+  "it": "Risparmiare carburante",
+  "stmts": {
+   "25140": {
+    "en": "Reducing air pollution",
+    "it": "Ridurre l'inquinamento dell'aria"
+   },
+   "25141": {
+    "en": "Reducing air pollution",
+    "it": "Ridurre l'inquinamento dell'aria"
+   },
+   "25142": {
+    "en": "Reducing air pollution",
+    "it": "Ridurre l'inquinamento dell'aria"
+   }
+  }
+ },
+ "4682": {
+  "en": "Saving fuel",
+  "it": "Risparmiare carburante",
+  "stmts": {
+   "25147": {
+    "en": "Reducing air pollution",
+    "it": "Ridurre l'inquinamento dell'aria"
+   },
+   "25148": {
+    "en": "Reducing air pollution",
+    "it": "Ridurre l'inquinamento dell'aria"
+   }
+  }
+ },
+ "4683": {
+  "en": "Reducing air pollution",
+  "it": "Ridurre l'inquinamento dell'aria",
+  "stmts": {
+   "25150": {
+    "topic": "Comportamenti per prevenire  incidenti stradali; comportamento in caso di incidente stradale; peculiarità della guida di",
+    "en": "Vehicle care: no do-it-yourself tuning",
+    "it": "Cura del veicolo: niente elaborazioni fai-da-te"
+   },
+   "25151": {
+    "topic": "Comportamenti per prevenire  incidenti stradali; comportamento in caso di incidente stradale; peculiarità della guida di",
+    "en": "Vehicle care: no do-it-yourself tuning",
+    "it": "Cura del veicolo: niente elaborazioni fai-da-te"
+   }
+  }
+ },
+ "4684": {
+  "en": "Waste and the environment",
+  "it": "Rifiuti e ambiente"
+ },
+ "4685": {
+  "en": "Waste and the environment",
+  "it": "Rifiuti e ambiente",
+  "stmts": {
+   "25165": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "The horn",
+    "it": "Il clacson"
+   },
+   "25167": {
+    "topic": "Fermata, sosta, arresto e partenza",
+    "en": "Where stopping and parking are forbidden",
+    "it": "Dove fermata e sosta sono vietate"
+   }
+  }
+ },
+ "4686": {
+  "en": "Grip and road-holding",
+  "it": "Aderenza e tenuta di strada"
+ },
+ "4687": {
+  "en": "Grip and road-holding",
+  "it": "Aderenza e tenuta di strada"
+ },
+ "4688": {
+  "en": "Grip and road-holding",
+  "it": "Aderenza e tenuta di strada"
+ },
+ "4689": {
+  "en": "Grip and road-holding",
+  "it": "Aderenza e tenuta di strada"
+ },
+ "4690": {
+  "en": "Grip and road-holding",
+  "it": "Aderenza e tenuta di strada"
+ },
+ "4691": {
+  "en": "Grip and road-holding",
+  "it": "Aderenza e tenuta di strada"
+ },
+ "4692": {
+  "en": "Curves: skidding and rollover",
+  "it": "Curve: slittamento e ribaltamento"
+ },
+ "4693": {
+  "en": "Curves: skidding and rollover",
+  "it": "Curve: slittamento e ribaltamento"
+ },
+ "4694": {
+  "en": "Curves: skidding and rollover",
+  "it": "Curve: slittamento e ribaltamento"
+ },
+ "4695": {
+  "en": "Brakes and ABS",
+  "it": "Freni e ABS"
+ },
+ "4696": {
+  "en": "Tires",
+  "it": "Pneumatici"
+ },
+ "4697": {
+  "en": "Tires",
+  "it": "Pneumatici"
+ },
+ "4698": {
+  "en": "Tires",
+  "it": "Pneumatici"
+ },
+ "4699": {
+  "en": "Tires",
+  "it": "Pneumatici"
+ },
+ "4700": {
+  "en": "Brakes and ABS",
+  "it": "Freni e ABS"
+ },
+ "4701": {
+  "en": "Fire, visibility, and the cabin",
+  "it": "Incendio, visibilità e abitacolo"
+ },
+ "4702": {
+  "en": "Fire, visibility, and the cabin",
+  "it": "Incendio, visibilità e abitacolo",
+  "stmts": {
+   "25283": {
+    "topic": "Responsabilità civile, penale, amministrativa; assicurazione R.C.A.; altre forme assicurative legate al veicolo",
+    "en": "Attention and distraction",
+    "it": "Attenzione e distrazione"
+   },
+   "25286": {
+    "topic": "Responsabilità civile, penale, amministrativa; assicurazione R.C.A.; altre forme assicurative legate al veicolo",
+    "en": "Attention and distraction",
+    "it": "Attenzione e distrazione"
+   },
+   "25287": {
+    "topic": "Responsabilità civile, penale, amministrativa; assicurazione R.C.A.; altre forme assicurative legate al veicolo",
+    "en": "Attention and distraction",
+    "it": "Attenzione e distrazione"
+   },
+   "25288": {
+    "topic": "Segnali complementari; segnali temporanei e di cantiere",
+    "en": "Temporary warning and routing signs",
+    "it": "Segnali temporanei di avvertimento e instradamento"
+   }
+  }
+ },
+ "4703": {
+  "en": "Fire, visibility, and the cabin",
+  "it": "Incendio, visibilità e abitacolo"
+ },
+ "4704": {
+  "en": "Tires",
+  "it": "Pneumatici"
+ },
+ "4705": {
+  "en": "Brakes and ABS",
+  "it": "Freni e ABS"
+ },
+ "4706": {
+  "en": "Brakes and ABS",
+  "it": "Freni e ABS"
+ },
+ "4707": {
+  "en": "Suspension and shock absorbers",
+  "it": "Sospensioni e ammortizzatori"
+ },
+ "4708": {
+  "en": "Suspension and shock absorbers",
+  "it": "Sospensioni e ammortizzatori"
+ },
+ "4709": {
+  "en": "Suspension and shock absorbers",
+  "it": "Sospensioni e ammortizzatori"
+ },
+ "4710": {
+  "en": "Suspension and shock absorbers",
+  "it": "Sospensioni e ammortizzatori"
+ },
+ "4711": {
+  "en": "Steering",
+  "it": "Sterzo"
+ },
+ "4712": {
+  "en": "The exhaust system",
+  "it": "L'impianto di scarico"
+ },
+ "4713": {
+  "en": "Motorcycle-specific checks",
+  "it": "Controlli specifici della moto"
+ },
+ "4714": {
+  "en": "Motorcycle-specific checks",
+  "it": "Controlli specifici della moto"
+ },
+ "4715": {
+  "en": "Motorcycle-specific checks",
+  "it": "Controlli specifici della moto"
+ },
+ "4716": {
+  "en": "Attention and distraction",
+  "it": "Attenzione e distrazione",
+  "stmts": {
+   "31031": {
+    "topic": "Guida in relazione alle qualità e condizioni fisiche e psichiche; alcool, droga e farmaci ; primo soccorso",
+    "en": "Fatigue",
+    "it": "Stanchezza"
+   },
+   "31039": {
+    "topic": "Norme sulla circol. dei veicoli; pos. dei veicoli sulla carreggiata; cambio di direz. di corsia (svolta); comp. in presenza di funerali, cortei, convogli militari; comp. agli incroci; norme di prec.; obblighi verso veicoli di Polizia e di emergenza; rischi legati a manovra e a guida dei diversi tipi di veicolo e relativo campo visivo del cond.",
+    "en": "The right of way at intersections",
+    "it": "Precedenza agli incroci"
+   },
+   "31048": {
+    "topic": "Norme sulla circol. dei veicoli; pos. dei veicoli sulla carreggiata; cambio di direz. di corsia (svolta); comp. in presenza di funerali, cortei, convogli militari; comp. agli incroci; norme di prec.; obblighi verso veicoli di Polizia e di emergenza; rischi legati a manovra e a guida dei diversi tipi di veicolo e relativo campo visivo del cond.",
+    "en": "Before every maneuver: mirrors and blind spots",
+    "it": "Prima di ogni manovra: specchietti e angoli ciechi"
+   },
+   "31049": {
+    "topic": "Norme sulla circol. dei veicoli; pos. dei veicoli sulla carreggiata; cambio di direz. di corsia (svolta); comp. in presenza di funerali, cortei, convogli militari; comp. agli incroci; norme di prec.; obblighi verso veicoli di Polizia e di emergenza; rischi legati a manovra e a guida dei diversi tipi di veicolo e relativo campo visivo del cond.",
+    "en": "Before every maneuver: mirrors and blind spots",
+    "it": "Prima di ogni manovra: specchietti e angoli ciechi"
+   },
+   "31056": {
+    "topic": "Guida in relazione alle qualità e condizioni fisiche e psichiche; alcool, droga e farmaci ; primo soccorso",
+    "en": "Alcohol",
+    "it": "Alcol"
+   },
+   "31058": {
+    "topic": "Guida in relazione alle qualità e condizioni fisiche e psichiche; alcool, droga e farmaci ; primo soccorso",
+    "en": "Alcohol",
+    "it": "Alcol"
+   },
+   "31060": {
+    "topic": "Guida in relazione alle qualità e condizioni fisiche e psichiche; alcool, droga e farmaci ; primo soccorso",
+    "en": "Alcohol",
+    "it": "Alcol"
+   }
+  }
+ },
+ "5040": {
+  "en": "The right of way at intersections",
+  "it": "Precedenza agli incroci"
+ },
+ "5041": {
+  "en": "The right of way at intersections",
+  "it": "Precedenza agli incroci"
+ },
+ "5062": {
+  "en": "Marker panels on heavy vehicles",
+  "it": "Pannelli sui veicoli pesanti"
+ },
+ "5065": {
+  "en": "Longitudinal lines (along the road)",
+  "it": "Linee longitudinali (lungo la strada)",
+  "stmts": {
+   "20723": {
+    "en": "Color tells you the type",
+    "it": "Il colore indica il tipo"
+   }
+  }
+ },
+ "5066": {
+  "en": "Words and symbols painted on the road",
+  "it": "Iscrizioni e simboli sulla pavimentazione"
+ },
+ "5069": {
+  "en": "Longitudinal lines (along the road)",
+  "it": "Linee longitudinali (lungo la strada)"
+ },
+ "5073": {
+  "img": "domandeb_images/4213.jpeg"
+ },
+ "5076": {
+  "en": "Edge and side lines",
+  "it": "Strisce di margine e laterali"
+ },
+ "5123": {
+  "en": "Never be a hazard: adjusting to conditions",
+  "it": "Mai essere un pericolo o un intralcio"
+ },
+ "5124": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada",
+  "stmts": {
+   "22707": {
+    "topic": "Segnalazioni semaforiche; segnalazioni degli agenti del traffico",
+    "en": "The standard vehicle traffic light",
+    "it": "Il semaforo veicolare normale"
+   },
+   "22709": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "Low beams: when they are required",
+    "it": "Anabbaglianti: quando sono obbligatori"
+   },
+   "22710": {
+    "en": "Before every maneuver: mirrors and blind spots",
+    "it": "Prima di ogni manovra: specchietti e angoli ciechi"
+   },
+   "22713": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "High beams",
+    "it": "Abbaglianti"
+   },
+   "22715": {
+    "en": "Being a danger or obstruction, and your load",
+    "it": "Essere un pericolo o un intralcio, e il carico"
+   }
+  }
+ },
+ "5127": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada",
+  "stmts": {
+   "22791": {
+    "topic": "Fermata, sosta, arresto e partenza",
+    "en": "Where stopping and parking are forbidden",
+    "it": "Dove fermata e sosta sono vietate"
+   }
+  }
+ },
+ "5130": {
+  "en": "The maneuvers",
+  "it": "Le manovre",
+  "stmts": {
+   "22806": {
+    "en": "The right of way at intersections",
+    "it": "Precedenza agli incroci"
+   },
+   "22810": {
+    "en": "The right of way at intersections",
+    "it": "Precedenza agli incroci"
+   },
+   "22811": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "The horn",
+    "it": "Il clacson"
+   }
+  }
+ },
+ "5131": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada"
+ },
+ "5132": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada"
+ },
+ "5133": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada"
+ },
+ "5134": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada"
+ },
+ "5135": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada",
+  "stmts": {
+   "22820": {
+    "en": "The maneuvers",
+    "it": "Le manovre"
+   }
+  }
+ },
+ "5136": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada"
+ },
+ "5137": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada"
+ },
+ "5138": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada"
+ },
+ "5140": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada",
+  "stmts": {
+   "22832": {
+    "en": "The maneuvers",
+    "it": "Le manovre"
+   },
+   "22837": {
+    "topic": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+    "en": "The emergency lane",
+    "it": "La corsia di emergenza"
+   }
+  }
+ },
+ "5141": {
+  "en": "The maneuvers",
+  "it": "Le manovre",
+  "stmts": {
+   "22844": {
+    "topic": "Segnaletica orizzontale; segni sugli ostacoli",
+    "en": "Longitudinal lines (along the road)",
+    "it": "Linee longitudinali (lungo la strada)"
+   },
+   "22848": {
+    "topic": "Norme sul sorpasso",
+    "en": "How to pass and return",
+    "it": "Come sorpassare e rientrare"
+   }
+  }
+ },
+ "5144": {
+  "en": "The maneuvers",
+  "it": "Le manovre",
+  "stmts": {
+   "22855": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "The horn",
+    "it": "Il clacson"
+   }
+  }
+ },
+ "5145": {
+  "en": "The maneuvers",
+  "it": "Le manovre"
+ },
+ "5146": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada"
+ },
+ "5147": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada"
+ },
+ "5148": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada"
+ },
+ "5149": {
+  "en": "Where you belong on the road",
+  "it": "Dove stare sulla strada",
+  "stmts": {
+   "22863": {
+    "en": "The maneuvers",
+    "it": "Le manovre"
+   },
+   "22870": {
+    "en": "The maneuvers",
+    "it": "Le manovre"
+   },
+   "22876": {
+    "topic": "Uso delle luci; uso dei dispositivi acustici; spie e simboli",
+    "en": "Turn signals",
+    "it": "Indicatori di direzione"
+   }
+  }
+ },
+ "5150": {
+  "en": "The right of way at intersections",
+  "it": "Precedenza agli incroci",
+  "stmts": {
+   "22881": {
+    "en": "U-turns and reversing",
+    "it": "Inversione di marcia e retromarcia"
+   },
+   "22882": {
+    "en": "U-turns and reversing",
+    "it": "Inversione di marcia e retromarcia"
+   },
+   "22887": {
+    "topic": "Segnalazioni semaforiche; segnalazioni degli agenti del traffico",
+    "en": "The standard vehicle traffic light",
+    "it": "Il semaforo veicolare normale"
+   }
+  }
+ },
+ "5151": {
+  "en": "Where stopping and parking are forbidden",
+  "it": "Dove fermata e sosta sono vietate",
+  "stmts": {
+   "23685": {
+    "topic": "Ingombro della carreggiata; segnalazione di veicolo fermo; norme sulla circolazione in autostrada e strade extraurbane",
+    "en": "The emergency lane",
+    "it": "La corsia di emergenza"
+   }
+  }
+ },
+ "5152": {
+  "en": "Before you set off: people, animals, cargo",
+  "it": "Prima di partire: persone, animali, carico"
+ }
+}

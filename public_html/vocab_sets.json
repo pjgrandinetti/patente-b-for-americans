@@ -1,0 +1,1167 @@
+{
+ "_note": "One American English word, several Italian ones. Each set lists vocabulary.json terms (exact 'term' strings) under the English word they share. A set with a 'note' groups words the rules keep apart, and the note says how; 'topic' is the review that teaches the difference. Checked by validate_data.py.",
+ "sets": [
+  {
+   "en": "stop",
+   "terms": [
+    "fermata",
+    "sosta",
+    "arresto",
+    "fermarsi"
+   ],
+   "note": "Three different things in Italian law. A fermata is a brief interruption of the journey, and the driver stays with the vehicle. A sosta is a longer stop, and the driver may leave the vehicle; English usually calls it parking. An arresto is a halt the traffic imposes, such as at a red light or in a queue. Fermarsi is the everyday verb and can mean any of the three.",
+   "topic": 12
+  },
+  {
+   "en": "parking",
+   "terms": [
+    "sosta",
+    "parcheggio",
+    "stazionamento"
+   ],
+   "note": "Sosta is the act of parking. Parcheggio is usually the place, a parking area set aside for it. Stazionamento appears mainly in freno di stazionamento, the parking brake.",
+   "topic": 12
+  },
+  {
+   "en": "road",
+   "terms": [
+    "strada",
+    "carreggiata"
+   ],
+   "note": "A strada is the whole road, including sidewalks and shoulders. The carreggiata is only the part vehicles drive on, so the shoulder (banchina) and the sidewalk are part of the strada but not of the carreggiata.",
+   "topic": 16
+  },
+  {
+   "en": "shoulder",
+   "terms": [
+    "banchina",
+    "la corsia di emergenza"
+   ],
+   "note": "An American calls both of these the shoulder. The banchina is the strip beside the carriageway on an ordinary road. The corsia di emergenza is the emergency lane of an autostrada or a main extra-urban road, meant for emergency stops and emergency vehicles.",
+   "topic": 16
+  },
+  {
+   "en": "highway",
+   "terms": [
+    "autostrada",
+    "strade extraurbane principali",
+    "strade extraurbane secondarie"
+   ],
+   "note": "Three different road classes with different limits. The autostrada is the toll motorway (130 km/h). The strada extraurbana principale is a divided highway without at-grade junctions (110 km/h). A strada extraurbana secondaria is an ordinary two-lane road outside town (90 km/h).",
+   "topic": 11
+  },
+  {
+   "en": "to pass",
+   "terms": [
+    "sorpassare",
+    "superare",
+    "incrociare"
+   ],
+   "note": "Sorpassare is to overtake a vehicle, the maneuver the overtaking rules govern. Superare is the general verb: to get past something, to exceed a limit, or to cross a line, and it is also used for overtaking. Incrociare is to meet a vehicle coming the other way, which is never overtaking.",
+   "topic": 10
+  },
+  {
+   "en": "motor vehicle",
+   "terms": [
+    "autoveicolo",
+    "autovettura",
+    "autocarro",
+    "veicoli a motore"
+   ],
+   "note": "Not interchangeable. An autovettura is a car. An autocarro is a truck. An autoveicolo is the whole class of motor vehicles with at least four wheels, cars and trucks included. Veicoli a motore is wider still: any vehicle with an engine, mopeds and motorcycles included.",
+   "topic": 16
+  },
+  {
+   "en": "must / should",
+   "terms": [
+    "è obbligatorio",
+    "bisogna",
+    "occorre",
+    "si deve",
+    "è opportuno",
+    "è consigliabile",
+    "conviene"
+   ],
+   "note": "The first four state a duty, and the last three only give advice. A statement can turn advice into a duty, or a duty into advice, so check which kind of word it uses before answering."
+  },
+  {
+   "en": "offense",
+   "terms": [
+    "infrazione",
+    "violazione",
+    "reato"
+   ],
+   "note": "Infrazione and violazione are usually administrative violations, punished with a fine and sometimes points. A reato is a crime, handled by a criminal court, such as driving with a blood alcohol level above 0.8 g/l or leaving the scene of an accident with injuries.",
+   "topic": 23
+  },
+  {
+   "en": "garage",
+   "terms": [
+    "officina",
+    "autorimessa"
+   ],
+   "note": "American English uses garage for both. An officina is a repair shop. An autorimessa is a building where vehicles are parked."
+  },
+  {
+   "en": "camper",
+   "terms": [
+    "autocaravan",
+    "caravan",
+    "roulotte"
+   ],
+   "note": "An autocaravan is a motorhome, which has its own engine and needs no tow vehicle. A caravan or roulotte is a trailer that has to be towed, so the towing limits apply to it.",
+   "topic": 16
+  },
+  {
+   "en": "vehicle",
+   "terms": [
+    "veicolo",
+    "mezzo"
+   ]
+  },
+  {
+   "en": "driver",
+   "terms": [
+    "conducente",
+    "automobilista",
+    "autista"
+   ]
+  },
+  {
+   "en": "car",
+   "terms": [
+    "autovettura",
+    "auto",
+    "vettura"
+   ]
+  },
+  {
+   "en": "motorcycle",
+   "terms": [
+    "motociclo",
+    "moto"
+   ]
+  },
+  {
+   "en": "intersection",
+   "terms": [
+    "incrocio",
+    "intersezione",
+    "crocevia"
+   ]
+  },
+  {
+   "en": "traffic",
+   "terms": [
+    "circolazione",
+    "traffico"
+   ]
+  },
+  {
+   "en": "lane",
+   "terms": [
+    "corsia",
+    "pista"
+   ]
+  },
+  {
+   "en": "tire",
+   "terms": [
+    "pneumatico",
+    "gomma"
+   ]
+  },
+  {
+   "en": "road surface",
+   "terms": [
+    "fondo stradale",
+    "pavimentazione",
+    "piano stradale",
+    "asfalto"
+   ]
+  },
+  {
+   "en": "accident",
+   "terms": [
+    "incidente",
+    "sinistro stradale"
+   ]
+  },
+  {
+   "en": "collision",
+   "terms": [
+    "collisione",
+    "urto",
+    "impatto"
+   ]
+  },
+  {
+   "en": "railroad crossing",
+   "terms": [
+    "passaggio a livello",
+    "attraversamento ferroviario"
+   ]
+  },
+  {
+   "en": "crosswalk",
+   "terms": [
+    "attraversamento pedonale",
+    "strisce pedonali"
+   ]
+  },
+  {
+   "en": "center line",
+   "terms": [
+    "mezzeria",
+    "linea di mezzeria",
+    "striscia di mezzo",
+    "linea di mezzo"
+   ]
+  },
+  {
+   "en": "broken line",
+   "terms": [
+    "discontinua",
+    "tratteggiate"
+   ]
+  },
+  {
+   "en": "two-way",
+   "terms": [
+    "a doppio senso di circolazione",
+    "a doppio senso di marcia",
+    "a doppio senso"
+   ]
+  },
+  {
+   "en": "one-way",
+   "terms": [
+    "a senso unico",
+    "a senso unico di circolazione"
+   ]
+  },
+  {
+   "en": "direction of travel",
+   "terms": [
+    "senso di marcia",
+    "direzione di marcia"
+   ]
+  },
+  {
+   "en": "U-turn",
+   "terms": [
+    "l'inversione di marcia",
+    "l'inversione del senso di marcia"
+   ]
+  },
+  {
+   "en": "tunnel",
+   "terms": [
+    "galleria",
+    "traforo",
+    "tunnel"
+   ]
+  },
+  {
+   "en": "traffic island",
+   "terms": [
+    "l'isola di traffico",
+    "isola spartitraffico"
+   ]
+  },
+  {
+   "en": "pull-off",
+   "terms": [
+    "una piazzola di sosta",
+    "piazzola"
+   ]
+  },
+  {
+   "en": "parking area",
+   "terms": [
+    "parcheggio",
+    "area di sosta",
+    "area di parcheggio"
+   ]
+  },
+  {
+   "en": "roundabout",
+   "terms": [
+    "rotatoria",
+    "circolazione rotatoria"
+   ]
+  },
+  {
+   "en": "exit ramp",
+   "terms": [
+    "svincolo",
+    "raccordo di uscita"
+   ]
+  },
+  {
+   "en": "speed bump",
+   "terms": [
+    "dossi artificiali",
+    "cordoli trasversali di rallentamento"
+   ]
+  },
+  {
+   "en": "work zone",
+   "terms": [
+    "cantiere",
+    "cantiere di lavoro"
+   ]
+  },
+  {
+   "en": "roadblock",
+   "terms": [
+    "posto di blocco",
+    "blocco stradale"
+   ]
+  },
+  {
+   "en": "traffic jam",
+   "terms": [
+    "ingorgo",
+    "congestione"
+   ]
+  },
+  {
+   "en": "road signs",
+   "terms": [
+    "segnali stradali",
+    "cartelli stradali"
+   ]
+  },
+  {
+   "en": "portable warning triangle",
+   "terms": [
+    "il segnale mobile di pericolo",
+    "triangolo mobile di pericolo"
+   ]
+  },
+  {
+   "en": "hazard",
+   "terms": [
+    "pericolo",
+    "intralcio"
+   ]
+  },
+  {
+   "en": "high beams",
+   "terms": [
+    "proiettori di profondità",
+    "proiettori abbaglianti",
+    "luci abbaglianti",
+    "fari abbaglianti"
+   ]
+  },
+  {
+   "en": "low beams",
+   "terms": [
+    "proiettori anabbaglianti",
+    "luci anabbaglianti",
+    "fari anabbaglianti"
+   ]
+  },
+  {
+   "en": "turn signal",
+   "terms": [
+    "indicatori di direzione",
+    "freccia"
+   ]
+  },
+  {
+   "en": "horn",
+   "terms": [
+    "clacson",
+    "avvisatore acustico",
+    "segnalatore acustico",
+    "trombe"
+   ]
+  },
+  {
+   "en": "rearview mirror",
+   "terms": [
+    "specchio retrovisore",
+    "specchietto retrovisore"
+   ]
+  },
+  {
+   "en": "steering wheel",
+   "terms": [
+    "volante",
+    "sterzo"
+   ]
+  },
+  {
+   "en": "gearbox",
+   "terms": [
+    "cambio",
+    "cambio di velocità"
+   ]
+  },
+  {
+   "en": "muffler",
+   "terms": [
+    "marmitta",
+    "silenziatore"
+   ]
+  },
+  {
+   "en": "breakdown",
+   "terms": [
+    "guasto",
+    "per avaria"
+   ]
+  },
+  {
+   "en": "broken-down vehicle",
+   "terms": [
+    "veicolo guasto",
+    "veicolo in avaria"
+   ]
+  },
+  {
+   "en": "flat tire",
+   "terms": [
+    "foratura",
+    "ruota forata"
+   ]
+  },
+  {
+   "en": "skid",
+   "terms": [
+    "slittamento",
+    "sbandamenti"
+   ]
+  },
+  {
+   "en": "fuel",
+   "terms": [
+    "carburante",
+    "benzina"
+   ]
+  },
+  {
+   "en": "gas station",
+   "terms": [
+    "distributore di carburante",
+    "distributore"
+   ]
+  },
+  {
+   "en": "repair shop",
+   "terms": [
+    "officina",
+    "officina di riparazione"
+   ]
+  },
+  {
+   "en": "registration document",
+   "terms": [
+    "carta di circolazione",
+    "libretto",
+    "documento di circolazione"
+   ]
+  },
+  {
+   "en": "driver's license",
+   "terms": [
+    "patente",
+    "patente di guida"
+   ]
+  },
+  {
+   "en": "loss of points",
+   "terms": [
+    "perdita di punti",
+    "decurtazione di punti",
+    "sottrazione di punti"
+   ]
+  },
+  {
+   "en": "fine",
+   "terms": [
+    "sanzione",
+    "sanzione amministrativa",
+    "sanzione pecuniaria"
+   ]
+  },
+  {
+   "en": "insurance company",
+   "terms": [
+    "impresa assicuratrice",
+    "impresa di assicurazione"
+   ]
+  },
+  {
+   "en": "insurance policy",
+   "terms": [
+    "polizza",
+    "polizza assicurativa"
+   ]
+  },
+  {
+   "en": "weight",
+   "terms": [
+    "massa",
+    "peso"
+   ]
+  },
+  {
+   "en": "gross weight",
+   "terms": [
+    "massa complessiva",
+    "massa a pieno carico",
+    "massa complessiva a pieno carico"
+   ]
+  },
+  {
+   "en": "tiredness",
+   "terms": [
+    "stanchezza",
+    "affaticamento"
+   ]
+  },
+  {
+   "en": "hard liquor",
+   "terms": [
+    "superalcolici",
+    "bevanda superalcolica"
+   ]
+  },
+  {
+   "en": "slippery",
+   "terms": [
+    "sdrucciolevole",
+    "viscido",
+    "scivoloso"
+   ]
+  },
+  {
+   "en": "uneven",
+   "terms": [
+    "irregolare",
+    "dissestato"
+   ]
+  },
+  {
+   "en": "curb",
+   "terms": [
+    "bordo del marciapiede",
+    "cordolo"
+   ]
+  },
+  {
+   "en": "heavy vehicles",
+   "terms": [
+    "veicoli pesanti",
+    "mezzi pesanti"
+   ]
+  },
+  {
+   "en": "farm machinery",
+   "terms": [
+    "macchine agricole",
+    "le macchine agricole"
+   ]
+  },
+  {
+   "en": "hands-free",
+   "terms": [
+    "viva voce",
+    "viva-voce"
+   ]
+  },
+  {
+   "en": "right of way",
+   "terms": [
+    "precedenza",
+    "diritto di precedenza"
+   ]
+  },
+  {
+   "en": "goes first",
+   "terms": [
+    "passa per primo",
+    "transita per primo"
+   ]
+  },
+  {
+   "en": "passage",
+   "terms": [
+    "transito",
+    "passaggio"
+   ]
+  },
+  {
+   "en": "to drive",
+   "terms": [
+    "guidare",
+    "condurre"
+   ]
+  },
+  {
+   "en": "to travel",
+   "terms": [
+    "circolare",
+    "marciare",
+    "viaggiare",
+    "transitare",
+    "percorrere",
+    "procedere"
+   ]
+  },
+  {
+   "en": "to park",
+   "terms": [
+    "sostare",
+    "parcheggiare",
+    "posteggiare",
+    "stazionare",
+    "effettuare la sosta"
+   ]
+  },
+  {
+   "en": "to halt",
+   "terms": [
+    "arrestarsi",
+    "arrestare",
+    "fermarsi"
+   ]
+  },
+  {
+   "en": "to slow down",
+   "terms": [
+    "rallentare",
+    "moderare la velocità",
+    "diminuire la velocità",
+    "ridurre la velocità"
+   ]
+  },
+  {
+   "en": "to reduce",
+   "terms": [
+    "diminuire",
+    "ridurre",
+    "moderare"
+   ]
+  },
+  {
+   "en": "to enter",
+   "terms": [
+    "entrare",
+    "immettersi",
+    "impegnare",
+    "accedere",
+    "inserirsi"
+   ]
+  },
+  {
+   "en": "to cross",
+   "terms": [
+    "attraversare",
+    "superare",
+    "oltrepassando",
+    "valicare"
+   ]
+  },
+  {
+   "en": "to turn",
+   "terms": [
+    "svoltare",
+    "girare"
+   ]
+  },
+  {
+   "en": "to pull over",
+   "terms": [
+    "accostare",
+    "accostarsi"
+   ]
+  },
+  {
+   "en": "to back up",
+   "terms": [
+    "retrocedere",
+    "fare retromarcia"
+   ]
+  },
+  {
+   "en": "to approach",
+   "terms": [
+    "sopraggiungere",
+    "avvicinarsi",
+    "approssimarsi"
+   ]
+  },
+  {
+   "en": "to continue",
+   "terms": [
+    "proseguire",
+    "procedere",
+    "continuare"
+   ]
+  },
+  {
+   "en": "to leave",
+   "terms": [
+    "lasciare",
+    "abbandonare",
+    "allontanarsi"
+   ]
+  },
+  {
+   "en": "to get out",
+   "terms": [
+    "scendere",
+    "uscire"
+   ]
+  },
+  {
+   "en": "to obstruct",
+   "terms": [
+    "ostacolare",
+    "intralciare",
+    "impedire",
+    "ostruire"
+   ]
+  },
+  {
+   "en": "to warn in advance",
+   "terms": [
+    "preannuncia",
+    "presegnala",
+    "preavvisa"
+   ]
+  },
+  {
+   "en": "to indicate",
+   "terms": [
+    "indica",
+    "segnala"
+   ]
+  },
+  {
+   "en": "to show",
+   "terms": [
+    "indicare",
+    "mostrare",
+    "rappresentare",
+    "raffigurato",
+    "riporta"
+   ]
+  },
+  {
+   "en": "to place",
+   "terms": [
+    "collocare",
+    "posizionare",
+    "sistemare",
+    "apporre",
+    "mettere"
+   ]
+  },
+  {
+   "en": "to carry out",
+   "terms": [
+    "effettuare",
+    "eseguire",
+    "compiere",
+    "svolgere",
+    "attuare"
+   ]
+  },
+  {
+   "en": "to cause",
+   "terms": [
+    "causare",
+    "provocare",
+    "determinare",
+    "arrecare",
+    "procurato"
+   ]
+  },
+  {
+   "en": "to damage",
+   "terms": [
+    "danneggiare",
+    "rovinare"
+   ]
+  },
+  {
+   "en": "to check",
+   "terms": [
+    "controllare",
+    "verificare",
+    "accertare"
+   ]
+  },
+  {
+   "en": "to make sure",
+   "terms": [
+    "assicurarsi",
+    "accertarsi"
+   ]
+  },
+  {
+   "en": "to obey",
+   "terms": [
+    "rispettare",
+    "osservare",
+    "attenersi"
+   ]
+  },
+  {
+   "en": "to keep",
+   "terms": [
+    "mantenere",
+    "tenere"
+   ]
+  },
+  {
+   "en": "to use",
+   "terms": [
+    "usare",
+    "utilizzare",
+    "servirsi",
+    "fare uso"
+   ]
+  },
+  {
+   "en": "to switch on",
+   "terms": [
+    "accendere",
+    "azionare",
+    "attivare",
+    "inserire"
+   ]
+  },
+  {
+   "en": "to switch off",
+   "terms": [
+    "spegnere",
+    "disattivare",
+    "disinserire"
+   ]
+  },
+  {
+   "en": "to allow",
+   "terms": [
+    "consentire",
+    "permettere",
+    "autorizza"
+   ]
+  },
+  {
+   "en": "to require",
+   "terms": [
+    "richiedere",
+    "imporre",
+    "prescrive",
+    "obbligano"
+   ]
+  },
+  {
+   "en": "to happen",
+   "terms": [
+    "avvenire",
+    "verificarsi",
+    "accadere"
+   ]
+  },
+  {
+   "en": "to pay attention",
+   "terms": [
+    "fare attenzione",
+    "prestare attenzione",
+    "porre attenzione"
+   ]
+  },
+  {
+   "en": "switched on",
+   "terms": [
+    "acceso",
+    "in funzione",
+    "in azione"
+   ]
+  },
+  {
+   "en": "forbidden",
+   "terms": [
+    "vietato",
+    "proibito"
+   ]
+  },
+  {
+   "en": "allowed",
+   "terms": [
+    "consentito",
+    "permesso",
+    "ammessi"
+   ]
+  },
+  {
+   "en": "equipped with",
+   "terms": [
+    "dotati di",
+    "munito di",
+    "provvisto",
+    "attrezzata",
+    "equipaggiati"
+   ]
+  },
+  {
+   "en": "without",
+   "terms": [
+    "senza",
+    "privo di",
+    "sprovvisti"
+   ]
+  },
+  {
+   "en": "stationary",
+   "terms": [
+    "fermo",
+    "in sosta"
+   ]
+  },
+  {
+   "en": "thick (fog)",
+   "terms": [
+    "fitta",
+    "denso"
+   ]
+  },
+  {
+   "en": "specific",
+   "terms": [
+    "apposito",
+    "specifica",
+    "predisposte"
+   ]
+  },
+  {
+   "en": "reserved for",
+   "terms": [
+    "riservato",
+    "destinata"
+   ]
+  },
+  {
+   "en": "temporary",
+   "terms": [
+    "temporanea",
+    "provvisoria"
+   ]
+  },
+  {
+   "en": "visible",
+   "terms": [
+    "visibile",
+    "avvistabile"
+   ]
+  },
+  {
+   "en": "only",
+   "terms": [
+    "solo",
+    "soltanto",
+    "solamente",
+    "esclusivamente",
+    "unicamente"
+   ]
+  },
+  {
+   "en": "except",
+   "terms": [
+    "salvo",
+    "eccetto",
+    "tranne",
+    "con esclusione di"
+   ]
+  },
+  {
+   "en": "if",
+   "terms": [
+    "qualora",
+    "nel caso in cui"
+   ]
+  },
+  {
+   "en": "provided that",
+   "terms": [
+    "purché",
+    "a condizione che"
+   ]
+  },
+  {
+   "en": "when",
+   "terms": [
+    "quando",
+    "allorché"
+   ]
+  },
+  {
+   "en": "because",
+   "terms": [
+    "perché",
+    "in quanto",
+    "poiché",
+    "dato che"
+   ]
+  },
+  {
+   "en": "because of",
+   "terms": [
+    "a causa di",
+    "per la presenza di",
+    "dovuti"
+   ]
+  },
+  {
+   "en": "according to",
+   "terms": [
+    "secondo",
+    "in base",
+    "in funzione del"
+   ]
+  },
+  {
+   "en": "by means of",
+   "terms": [
+    "mediante",
+    "tramite",
+    "attraverso"
+   ]
+  },
+  {
+   "en": "near",
+   "terms": [
+    "in prossimità di",
+    "in vicinanza di",
+    "nelle vicinanze di",
+    "vicino",
+    "presso"
+   ]
+  },
+  {
+   "en": "at",
+   "terms": [
+    "in corrispondenza di",
+    "presso"
+   ]
+  },
+  {
+   "en": "up to",
+   "terms": [
+    "fino a",
+    "entro",
+    "sino a"
+   ]
+  },
+  {
+   "en": "more than",
+   "terms": [
+    "superiore a",
+    "oltre",
+    "maggiore"
+   ]
+  },
+  {
+   "en": "less than",
+   "terms": [
+    "inferiore a",
+    "minore"
+   ]
+  },
+  {
+   "en": "equal to",
+   "terms": [
+    "pari a",
+    "uguale"
+   ]
+  },
+  {
+   "en": "always",
+   "terms": [
+    "sempre",
+    "sempre e comunque"
+   ]
+  },
+  {
+   "en": "in any case",
+   "terms": [
+    "in ogni caso",
+    "comunque"
+   ]
+  },
+  {
+   "en": "normally",
+   "terms": [
+    "di norma",
+    "normalmente",
+    "di solito",
+    "solitamente"
+   ]
+  },
+  {
+   "en": "immediately",
+   "terms": [
+    "subito",
+    "immediatamente",
+    "tempestivamente",
+    "prontamente"
+   ]
+  },
+  {
+   "en": "quickly",
+   "terms": [
+    "rapidamente",
+    "velocemente",
+    "sollecitamente",
+    "in fretta"
+   ]
+  },
+  {
+   "en": "at the same time",
+   "terms": [
+    "contemporaneamente",
+    "contestualmente",
+    "simultaneamente"
+   ]
+  },
+  {
+   "en": "especially",
+   "terms": [
+    "soprattutto",
+    "specialmente",
+    "specie"
+   ]
+  },
+  {
+   "en": "at night",
+   "terms": [
+    "di notte",
+    "nelle ore notturne"
+   ]
+  },
+  {
+   "en": "as soon as possible",
+   "terms": [
+    "al più presto",
+    "quanto prima",
+    "il prima possibile"
+   ]
+  },
+  {
+   "en": "carefully",
+   "terms": [
+    "con prudenza",
+    "attentamente",
+    "prudentemente"
+   ]
+  }
+ ]
+}

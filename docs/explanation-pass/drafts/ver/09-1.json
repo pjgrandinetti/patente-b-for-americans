@@ -1,0 +1,49 @@
+{
+ "verdicts": {
+  "22541": {
+   "v": "accept"
+  },
+  "22546": {
+   "v": "accept"
+  },
+  "22553": {
+   "v": "correct",
+   "en": "False. The minimum safe distance is your reaction distance, which is the road you cover in about one second before braking begins. It varies with speed, reaction time, the condition of the vehicle, the weather and the road. The visibility distance is how far ahead you can see, and it is a separate quantity. On a clear, straight road you can see much farther than the gap you must keep, so the safe distance is not tied to it.",
+   "it": "Falso. La distanza minima di sicurezza è lo spazio di reazione, cioè la strada percorsa in circa un secondo prima che inizi la frenata. Varia con la velocità, il tempo di reazione, lo stato del veicolo, il meteo e la strada. La distanza di visibilità è quanto lontano riesci a vedere davanti a te, ed è una grandezza a parte. Su una strada dritta e sgombra vedi molto più lontano dello spazio che devi mantenere, quindi la distanza di sicurezza non è legata a essa.",
+   "why": "'Above that minimum it grows with speed' implies the minimum itself is fixed; the reaction distance (the minimum) itself grows with speed. Restored the original 'varies with'."
+  },
+  "22570": {
+   "v": "accept"
+  },
+  "22577": {
+   "v": "accept"
+  },
+  "22588": {
+   "v": "accept"
+  },
+  "22603": {
+   "v": "accept"
+  },
+  "22613": {
+   "v": "accept"
+  },
+  "22624": {
+   "v": "accept"
+  },
+  "22625": {
+   "v": "accept"
+  },
+  "22631": {
+   "v": "accept"
+  },
+  "22651": {
+   "v": "correct",
+   "en": "False. Every vehicle must keep a safe distance from the vehicle ahead, so that it can stop in time and avoid a collision. A motor quadricycle (*quadriciclo a motore*) is a small four-wheeled motor vehicle. It is bound by the rule like cars, trucks, motorcycles and every other vehicle, not instead of them. Read the whole sentence: strike «solo dai quadricicli a motore» and what is left is true; the added words are what make the statement false.",
+   "it": "Falso. Ogni veicolo deve tenere una distanza di sicurezza dal veicolo che precede, per potersi arrestare in tempo ed evitare la collisione. Un quadriciclo a motore è un piccolo veicolo a motore a quattro ruote. È tenuto alla regola come le autovetture, gli autocarri, i motocicli e ogni altro veicolo, non al loro posto. Leggi tutta la frase: togli «solo dai quadricicli a motore» e ciò che resta è vero; sono le parole aggiunte a rendere falsa l'affermazione.",
+   "why": "'and not in its place' has the wrong pronoun and reads as nonsense; the meaning is 'not instead of them'. Tail kept verbatim."
+  },
+  "22661": {
+   "v": "accept"
+  }
+ }
+}

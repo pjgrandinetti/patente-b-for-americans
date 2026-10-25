@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 178" role="img"
+     aria-label="Which license a car and trailer needs, by the mass of the whole combination">
+  <title>Combination mass decides the license: up to 3.5 t category B, from there to 4,250 kg category B with code 96, and above that BE, which reaches 7 t.</title>
+
+  <!-- Original work for this project, from art. 116 comma 3 of the Codice
+       della Strada: a trailer over 750 kg is allowed on B provided the
+       COMBINATION stays within 4,250 kg, and once the combination passes
+       3,500 kg the code-96 driving test is required.
+
+       The axis is the combination mass, which is the quantity the questions
+       give you. The 750 kg light-trailer case is a different quantity, the
+       trailer's own mass, so it is left to the caption rather than drawn on
+       this axis. Tokens are numbers and category codes only. -->
+  <rect x="1" y="1" width="468" height="176" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+
+    <!-- bands: 0 to 3.5 t B, 3.5 to 4.25 t B96, 4.25 to 7 t BE.
+         Scale: x = 34 + t * 56 px, so 0 t at 34 and 7 t at 426. -->
+    <rect x="34" y="62" width="196" height="40" rx="4" fill="#5eead4" stroke="#0f766e" stroke-width="1.8"/>
+    <text x="132" y="88" text-anchor="middle" font-size="19" font-weight="700" fill="#134e4a">B</text>
+
+    <rect x="230" y="62" width="42" height="40" rx="4" fill="#99f6e4" stroke="#0f766e" stroke-width="1.8"/>
+    <text x="251" y="88" text-anchor="middle" font-size="12.5" font-weight="700" fill="#134e4a">B96</text>
+
+    <rect x="272" y="62" width="154" height="40" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+    <text x="349" y="88" text-anchor="middle" font-size="19" font-weight="700" fill="#134e4a">BE</text>
+
+    <!-- axis with the three thresholds that matter -->
+    <line x1="34" y1="118" x2="440" y2="118" stroke="#334155" stroke-width="1.6"/>
+    <g stroke="#334155" stroke-width="1.4">
+      <line x1="34" y1="118" x2="34" y2="126"/>
+      <line x1="230" y1="118" x2="230" y2="126"/>
+      <line x1="272" y1="118" x2="272" y2="126"/>
+      <line x1="426" y1="118" x2="426" y2="126"/>
+    </g>
+    <g font-size="13" font-weight="700" fill="#334155" text-anchor="middle">
+      <text x="34" y="142">0</text>
+      <text x="230" y="142">3,5</text>
+      <text x="272" y="142">4,25</text>
+      <text x="426" y="142">7</text>
+    </g>
+    <text x="448" y="142" font-size="13" font-weight="700" fill="#334155">t</text>
+
+    <!-- what the axis measures, drawn rather than named: car plus trailer -->
+    <g>
+      <rect x="186" y="24" width="34" height="14" rx="4" fill="#334155"/>
+      <circle cx="195" cy="40" r="3.4" fill="#1e293b"/>
+      <circle cx="212" cy="40" r="3.4" fill="#1e293b"/>
+      <line x1="220" y1="33" x2="228" y2="33" stroke="#334155" stroke-width="2"/>
+      <rect x="228" y="22" width="40" height="16" rx="3" fill="#94a3b8" stroke="#334155" stroke-width="1.4"/>
+      <circle cx="248" cy="40" r="3.4" fill="#1e293b"/>
+      <path d="M184 48 L184 54 L270 54 L270 48" fill="none" stroke="#334155" stroke-width="1.3"/>
+    </g>
+  </g>
+</svg>

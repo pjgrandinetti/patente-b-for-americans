@@ -1,0 +1,43 @@
+// The "ready for the exam" banner (maintainer, 2026-10-01): shown only when the Student-t prediction over the last 15 mocks gives a 95% or better chance of passing the next one, and no weak spot is open; the text gives the real chance and count. Run: node scripts/check_ready_banner.js (UILANG=it-IT).
+const {JSDOM}=require(process.env.JSDOM||'/tmp/node_modules/jsdom'); const fs=require('fs');
+const root=process.env.SRC||require('path').resolve(__dirname,'../public_html');
+const LANG=process.env.UILANG||'en-US'; const IT=LANG.startsWith('it');
+let html=fs.readFileSync(root+'/index.html','utf8').replace(/<script[^>]*src="app\.js[^>]*><\/script>/,'');
+const dom=new JSDOM(html,{url:'https://patente.physyapps.com/',runScripts:'dangerously',pretendToBeVisual:true});
+const w=dom.window; Object.defineProperty(w.navigator,'language',{value:LANG}); Object.defineProperty(w.navigator,'languages',{value:[LANG]});
+w.localStorage.setItem('patente_level','3');
+w.fetch=async(u)=>{const p=root+'/'+String(u).replace(/^https:\/\/patente\.physyapps\.com\//,'').replace(/\?.*$/,'');return{ok:true,status:200,json:async()=>JSON.parse(fs.readFileSync(p,'utf8')),text:async()=>fs.readFileSync(p,'utf8')}};
+w.scrollTo=()=>{}; w.matchMedia=()=>({matches:false,addEventListener(){},addListener(){}});
+w.speechSynthesis={getVoices:()=>[],cancel(){},speak(){}}; w.SpeechSynthesisUtterance=class extends w.EventTarget{};
+const s=w.document.createElement('script'); s.textContent=fs.readFileSync(root+'/app.js','utf8'); w.document.body.appendChild(s);
+let fails=0; const ok=(c,m)=>{console.log((c?'ok  ':'FAIL')+' '+m); if(!c)fails++;};
+const sheets=wr=>wr.map((x,i)=>({date:new Date(Date.UTC(2026,9,1,12,0,0)-i*3600e3).toISOString(),correct:30-x,total:30,wrong:x,pass:x<=3,level:3,items:[]}));
+setTimeout(()=>{
+  const b=w.document.getElementById('exam-ready-banner');
+  const show=(wr,weak)=>{ w.localStorage.setItem('patente_exam_history',JSON.stringify(sheets(wr))); w.italianoComplete=()=>true;
+    w.difficultCards=weak?()=>[{topic:w.eval('questions')[0].topic,stmts:[1,2],weight:2}]:()=>[]; w.renderDashboard(); return !b.classList.contains('hidden') && b.classList.contains('banner-success'); };
+  const warn=()=>!b.classList.contains('hidden') && b.classList.contains('banner-warn') && !b.classList.contains('banner-success');
+  ok(!show([0,2,2],false),'three good sheets (the maintainer\'s, 0, 2, 2 wrong): no banner');
+  ok(!show(Array(14).fill(0),false),'fourteen perfect sheets: no banner, fifteen are needed');
+  const good=[1,0,1,1,0,2,1,0,1,1,0,1,1,0,1];
+  ok(show(good,false),'fifteen sheets averaging under 1 wrong: banner');
+  ok(/\d+%/.test(b.textContent) && /15/.test(b.textContent) && !/—|!|5 mock exams average/.test(b.textContent),'text: '+b.textContent);
+  ok(/(failing|non superare)/.test(b.textContent) && parseFloat(b.textContent.match(/([\d.,]+)%/)[1].replace(',','.'))<=5,'it gives the chance of failing, 5% or less');
+  ok(b.textContent.startsWith(IT?'✅ Pronto':'✅ Ready'),'in the reader\'s language');
+  w.applyI18n(); ok(b.textContent.includes('15'),'a repaint does not bring back the old static text');
+  ok(show(good,true) && /(Ready for the exam|Pronto per l’esame)/.test(b.textContent),'the same sheets with weak spots open: still the ready banner (20261009x)');
+  ok(!show(Array(15).fill(2),false),'fifteen sheets at 2 wrong each: no banner (that never reaches 95%)');
+  // The not-ready notice (maintainer, 2026-10-02): shown once a mock is on record, saying what is missing.
+  show([],false); ok(b.classList.contains('hidden') && b.textContent==='','no mock on record: nothing shown');
+  show([0,2,2],false); ok(warn() && /\b3\b/.test(b.textContent) && /\b15\b/.test(b.textContent) && /(at least 15 mock exams before we can make any recommendations|almeno 15 simulazioni prima che possiamo dirti)/.test(b.textContent),'three mocks: a warning, 3 of the 15 needed: '+b.textContent);
+  show(Array(15).fill(2),false); ok(warn() && /(\d+)%/.test(b.textContent) && parseFloat(b.textContent.match(/([\d.,]+)%/)[1].replace(',','.'))>5 && /5%/.test(b.textContent) && /(failing|non superare)/.test(b.textContent),'fifteen at 2 wrong: a warning with the chance of failing and the 5% target: '+b.textContent);
+  show(good,true); ok(!warn() && b.classList.contains('banner-success') && /(We suggest you also work through your remaining weak spots: 2\.|Ti suggeriamo di eliminare anche i punti deboli rimasti: 2\.)/.test(b.textContent) && !/\u26a0|Not ready|Non ancora/.test(b.textContent),'good mocks, weak spots open: ready, with the weak spots as a suggestion: '+b.textContent);
+  ok(/(school’s app|app dell’autoscuola)/.test(b.textContent) && /(to stay prepared|per restare preparato)/.test(b.textContent),'a ready banner names what comes next: the school\'s mock exams, and staying prepared');
+  show(Array(15).fill(2),false); ok(!/(school’s app|app dell’autoscuola)/.test(b.textContent),'a not-ready banner does not');
+  ok(show(good,false) && !b.classList.contains('banner-warn') && !/\u26a0/.test(b.textContent),'ready: the warning is replaced by the good news');
+  show([],false); ok(b.classList.contains('hidden'),'all results cleared: the notice goes');
+  ok(IT ? !/Not |mock exam/.test([0].map(()=>{show([1],false);return b.textContent;})[0]) : /You have taken 1\./.test([0].map(()=>{show([1],false);return b.textContent;})[0]),'in the reader\'s language');
+  show(good,false);
+  const f=w.mockRecentForm(); ok(f && f.n===15,'the Statistics chance reads the same 15 sheets as the banner');
+  console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);
+},2500);

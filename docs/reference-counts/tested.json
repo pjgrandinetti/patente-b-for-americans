@@ -1,0 +1,1381 @@
+{
+ "97": {
+  "tested": [
+   "24516",
+   "24524",
+   "24525",
+   "24526"
+  ],
+  "doubts": "24504 and 24508 name 24 but turn on the progressive route, listed under row 2. 24555 (B after 24 drives all motorcycles) and 24665 (racing under 24) not counted: different context."
+ },
+ "98": {
+  "tested": [
+   "24514",
+   "24519",
+   "24523",
+   "24544"
+  ],
+  "doubts": "24496 (A1, tricycles over 15 kW if adult) is false because A1 does not cover them, not on the age; not counted."
+ },
+ "99": {
+  "tested": [
+   "24504",
+   "24508",
+   "24517",
+   "24522"
+  ],
+  "doubts": "24504 (VERO) and 24508 (FALSO) test that progressive access to A after two years of A2 is not bound by the 24-year direct-access age; they could also be read as row 0."
+ },
+ "100": {
+  "tested": [
+   "24502",
+   "24506",
+   "24576"
+  ],
+  "doubts": "24576 gives 21 for BE taken with B; the age is 18, so counted here."
+ },
+ "101": {
+  "tested": [
+   "24491",
+   "24527"
+  ],
+  "doubts": ""
+ },
+ "102": {
+  "tested": [
+   "24478",
+   "24482"
+  ],
+  "doubts": ""
+ },
+ "103": {
+  "tested": [
+   "24364"
+  ],
+  "doubts": "24370 to 24373 deny carrying children without restraints under conditions, but name no age; not counted."
+ },
+ "104": {
+  "tested": [
+   "23917",
+   "23921"
+  ],
+  "doubts": "23921 (passenger only if adult) is about the passenger's age, so counted here rather than in row 8 where it was cited."
+ },
+ "113": {
+  "tested": [
+   "24498"
+  ],
+  "doubts": "Cited 23921 moved to row 7: it concerns the passenger's age, not the rider's."
+ },
+ "105": {
+  "tested": [
+   "31060"
+  ],
+  "doubts": "31060 (FALSO, 0.5 g/l makes you concentrate better) is about alcohol's effect, not the legal limit; knowing 0.5 is the limit does not decide it. Kept only because it is the cited source. No candidate states or fakes the general limit; 24093's 0,5 is the towing ratio, 31058 names no figure."
+ },
+ "106": {
+  "tested": [
+   "24096"
+  ],
+  "doubts": ""
+ },
+ "37": {
+  "tested": [
+   "23893"
+  ],
+  "doubts": ""
+ },
+ "38": {
+  "tested": [
+   "18856",
+   "18881",
+   "18925",
+   "18937",
+   "18954",
+   "18982",
+   "19007",
+   "19032",
+   "19055",
+   "19090",
+   "19098",
+   "19106",
+   "19147",
+   "19173",
+   "19502",
+   "21025",
+   "21054",
+   "21586",
+   "21986"
+  ],
+  "doubts": "19106 also tests rows 2 and 3. Included FALSO statements that put the 150 m advance placement on a sign or device that stands at the hazard itself (19090, 19098 St Andrew cross; 21025, 21054 lights, as already cited; 21986 chevron; 21586 pedestrian-crossing indication sign) and 18937 (5 m instead of 150 m). Excluded 20504 and 20476 (STOP and YIELD at the junction, whose 150 m belongs to their advance-warning signs, not danger signs) and 19614."
+ },
+ "39": {
+  "tested": [
+   "19106"
+  ],
+  "doubts": "19106 states all three panel distances and also counts in rows 1 and 3."
+ },
+ "40": {
+  "tested": [
+   "19106"
+  ],
+  "doubts": "19106 states all three panel distances and also counts in rows 1 and 2."
+ },
+ "41": {
+  "tested": [
+   "22581",
+   "22587",
+   "22597",
+   "22598"
+  ],
+  "doubts": ""
+ },
+ "42": {
+  "tested": [
+   "22582",
+   "22586",
+   "22596",
+   "22601"
+  ],
+  "doubts": ""
+ },
+ "43": {
+  "tested": [
+   "22580",
+   "22585",
+   "22595",
+   "22600"
+  ],
+  "doubts": ""
+ },
+ "44": {
+  "tested": [
+   "22579",
+   "22584",
+   "22594",
+   "22599"
+  ],
+  "doubts": ""
+ },
+ "45": {
+  "tested": [
+   "22578",
+   "22583"
+  ],
+  "doubts": ""
+ },
+ "46": {
+  "tested": [
+   "22541",
+   "22550"
+  ],
+  "doubts": "Not counted: 22567, 22568, 22658 (a 100 m safe distance on descents, in snow, in heavy rain; false because no fixed figure exists, not because of the truck rule) and 19754 (the sign is a transit ban)."
+ },
+ "47": {
+  "tested": [
+   "22136",
+   "22142",
+   "22536",
+   "22537",
+   "22548",
+   "22549"
+  ],
+  "doubts": ""
+ },
+ "48": {
+  "tested": [
+   "23755",
+   "23781",
+   "23786"
+  ],
+  "doubts": ""
+ },
+ "49": {
+  "tested": [
+   "23681",
+   "23686"
+  ],
+  "doubts": ""
+ },
+ "50": {
+  "tested": [
+   "23720"
+  ],
+  "doubts": ""
+ },
+ "51": {
+  "tested": [
+   "23659",
+   "23711"
+  ],
+  "doubts": ""
+ },
+ "52": {
+  "tested": [
+   "23828",
+   "23829",
+   "23833",
+   "23835",
+   "23836",
+   "23840"
+  ],
+  "doubts": "23835 gives 150 m for the visibility threshold; 23840 gives 50 m for the visibility distance."
+ },
+ "53": {
+  "tested": [
+   "23831",
+   "23832"
+  ],
+  "doubts": ""
+ },
+ "54": {
+  "tested": [
+   "23842",
+   "23844"
+  ],
+  "doubts": ""
+ },
+ "55": {
+  "tested": [
+   "22454"
+  ],
+  "doubts": ""
+ },
+ "56": {
+  "tested": [
+   "24152"
+  ],
+  "doubts": ""
+ },
+ "57": {
+  "tested": [
+   "24557",
+   "24560",
+   "24561",
+   "24562",
+   "24565",
+   "24568",
+   "24571"
+  ],
+  "doubts": "24562 (FALSO) is about autosnodati 4,250 to 7,500 kg, false partly for the vehicle type; kept because the range beyond 4,250 is what code 96 does not cover. 24568 and 24571 are decided by the combination exceeding 4,250 kg; 24567 also mentions 4,250 but is listed under the BE row."
+ },
+ "58": {
+  "tested": [
+   "24567",
+   "24569",
+   "24572",
+   "24575"
+  ],
+  "doubts": "24573 (minibus towing 1,500 kg) is false for the vehicle type, not the 3,500 kg figure, so not counted."
+ },
+ "59": {
+  "tested": [
+   "24537",
+   "24539",
+   "24549",
+   "24556"
+  ],
+  "doubts": "24556 (FALSO, B covers all motorhomes) is false because of the 3.5 t limit."
+ },
+ "60": {
+  "tested": [
+   "24541",
+   "24553",
+   "24554"
+  ],
+  "doubts": "24553 (FALSO, B with a trailer over 3,500 kg) counted here since the B combination limit decides it."
+ },
+ "61": {
+  "tested": [
+   "22332",
+   "22333",
+   "22334",
+   "22349",
+   "22350",
+   "22351",
+   "22369",
+   "22411",
+   "22413",
+   "22414",
+   "22421",
+   "22422",
+   "22429",
+   "22436",
+   "22437"
+  ],
+  "doubts": "The speed statements for vehicles up to 3.5 t also test the speed rows; the FALSO ones are false on the speed. 22436/22437 (speed discs on vehicles up to 3.5 t) depend on the light/heavy boundary. Not counted, but arguable: about 30 sign statements where the truck symbol means goods vehicles over 3.5 t (19628, 19629, 19630, 19635, 19559, 19720, 19727, 19734, 19735, 19889, 20454-20459, 21391, 21394, 21705, 21709, 21836, 21838, 21916, 22052); 24675 (holiday ban, truck under 3.5 t); 24107 (speed discs on combinations with trailers up to 3.5 t); 22541 (100 m gap for goods vehicles over 3.5 t)."
+ },
+ "62": {
+  "tested": [
+   "18609",
+   "18610",
+   "18611",
+   "18617",
+   "18618",
+   "18619",
+   "18620",
+   "18625",
+   "23947",
+   "23951",
+   "24098"
+  ],
+  "doubts": "18625 (FALSO) puts the figure in context and is false on which panel is pictured. 24098 (FALSO) gives trailers up to 3.5 t."
+ },
+ "63": {
+  "tested": [
+   "18663",
+   "18667",
+   "24046",
+   "24099",
+   "24538",
+   "24557"
+  ],
+  "doubts": "24557 only names 750 kg parenthetically (cited already); 24541, 24560, 24561, 24565 do the same and are not counted here. 24046 and 24099 (FALSO) use the 750 kg light-trailer boundary and are false because no such exemption exists. 22428 not counted: the 70 km/h limit applies to any trailer."
+ },
+ "64": {
+  "tested": [
+   "24096"
+  ],
+  "doubts": ""
+ },
+ "65": {
+  "tested": [
+   "24092"
+  ],
+  "doubts": ""
+ },
+ "66": {
+  "tested": [
+   "24093"
+  ],
+  "doubts": ""
+ },
+ "107": {
+  "tested": [
+   "24620"
+  ],
+  "doubts": ""
+ },
+ "108": {
+  "tested": [
+   "24639",
+   "24645",
+   "24647",
+   "24653"
+  ],
+  "doubts": "24645 and 24653 test 20 as the ceiling restored after two clean years, not by the course; 24651 (course, max 30) is listed under row 111."
+ },
+ "109": {
+  "tested": [
+   "24644",
+   "24652"
+  ],
+  "doubts": ""
+ },
+ "110": {
+  "tested": [
+   "24655"
+  ],
+  "doubts": "24655 also listed under row 124 (same statement: over 10 km/h costs points)."
+ },
+ "111": {
+  "tested": [
+   "24651"
+  ],
+  "doubts": ""
+ },
+ "112": {
+  "tested": [
+   "24643",
+   "24650"
+  ],
+  "doubts": "24671 and 24672 (no doubling for powerful vehicles) are a different context and are excluded."
+ },
+ "114": {
+  "tested": [
+   "24598"
+  ],
+  "doubts": ""
+ },
+ "115": {
+  "tested": [
+   "23956",
+   "23960"
+  ],
+  "doubts": ""
+ },
+ "116": {
+  "tested": [
+   "24663"
+  ],
+  "doubts": "Points figure itself is not in any statement; listed statements tie this violation to a point loss. 24621 (suspension for the emergency lane) is a measure, not points, and is excluded."
+ },
+ "117": {
+  "tested": [
+   "19160"
+  ],
+  "doubts": "Points figure itself is not in any statement; listed statements tie this violation to a point loss."
+ },
+ "118": {
+  "tested": [
+   "24662"
+  ],
+  "doubts": "Points figure itself is not in any statement; listed statements tie this violation to a point loss. 24614 (revocation for no lenses, FALSO) is a measure and is excluded."
+ },
+ "119": {
+  "tested": [
+   "24657"
+  ],
+  "doubts": "Points figure itself is not in any statement; listed statements tie this violation to a point loss."
+ },
+ "120": {
+  "tested": [
+   "24408",
+   "24658"
+  ],
+  "doubts": "Points figure itself is not in any statement; listed statements tie this violation to a point loss."
+ },
+ "121": {
+  "tested": [
+   "24659"
+  ],
+  "doubts": "Points figure itself is not in any statement; listed statements tie this violation to a point loss."
+ },
+ "122": {
+  "tested": [
+   "23782",
+   "23783",
+   "23787"
+  ],
+  "doubts": "Points figure itself is not in any statement; listed statements tie this violation to a point loss. 23788 and 24637 (suspension for this parking, FALSO) concern a measure and are excluded."
+ },
+ "123": {
+  "tested": [
+   "24656"
+  ],
+  "doubts": "Points figure itself is not in any statement; listed statements tie this violation to a point loss."
+ },
+ "124": {
+  "tested": [
+   "24655"
+  ],
+  "doubts": "Points figure itself is not in any statement; listed statements tie this violation to a point loss. Shared with row 110."
+ },
+ "125": {
+  "tested": [
+   "24660"
+  ],
+  "doubts": "Points figure itself is not in any statement; listed statements tie this violation to a point loss."
+ },
+ "126": {
+  "tested": [
+   "24661"
+  ],
+  "doubts": "Points figure itself is not in any statement; listed statements tie this violation to a point loss."
+ },
+ "127": {
+  "tested": [
+   "23780",
+   "23781",
+   "23784"
+  ],
+  "doubts": "Points figure itself is not in any statement; listed statements tie this violation to a point loss."
+ },
+ "128": {
+  "tested": [
+   "22998",
+   "22999"
+  ],
+  "doubts": "Points figure itself is not in any statement; listed statements tie this violation to a point loss."
+ },
+ "129": {
+  "tested": [
+   "24666"
+  ],
+  "doubts": ""
+ },
+ "130": {
+  "tested": [
+   "23000"
+  ],
+  "doubts": ""
+ },
+ "131": {
+  "tested": [
+   "24668"
+  ],
+  "doubts": "24587 (no on-the-spot withdrawal for this) concerns a measure and is excluded."
+ },
+ "132": {
+  "tested": [
+   "24669"
+  ],
+  "doubts": "24588 (no on-the-spot withdrawal for this) concerns a measure and is excluded."
+ },
+ "133": {
+  "tested": [
+   "24676"
+  ],
+  "doubts": "24600 (no license revision for this) concerns a measure and is excluded."
+ },
+ "134": {
+  "tested": [
+   "24670"
+  ],
+  "doubts": "24602 and 24616 (no revision or revocation for this) concern measures and are excluded."
+ },
+ "135": {
+  "tested": [
+   "24674"
+  ],
+  "doubts": ""
+ },
+ "136": {
+  "tested": [
+   "24673"
+  ],
+  "doubts": ""
+ },
+ "137": {
+  "tested": [
+   "24675"
+  ],
+  "doubts": ""
+ },
+ "138": {
+  "tested": [
+   "24665"
+  ],
+  "doubts": ""
+ },
+ "139": {
+  "tested": [
+   "24577",
+   "24586"
+  ],
+  "doubts": "24586 FALSO: ritiro tied to every point-losing violation; decided by knowing ritiro follows violations carrying suspension."
+ },
+ "140": {
+  "tested": [
+   "24578",
+   "24611"
+  ],
+  "doubts": "24611 FALSO: revoca for an expired license; the expired license brings ritiro."
+ },
+ "141": {
+  "tested": [
+   "24579"
+  ],
+  "doubts": "24583 (drunk passenger, ritiro, FALSO) left out: different violation."
+ },
+ "142": {
+  "tested": [
+   "24580"
+  ],
+  "doubts": ""
+ },
+ "143": {
+  "tested": [
+   "24581"
+  ],
+  "doubts": ""
+ },
+ "144": {
+  "tested": [
+   "24582"
+  ],
+  "doubts": ""
+ },
+ "145": {
+  "tested": [
+   "25126"
+  ],
+  "doubts": ""
+ },
+ "146": {
+  "tested": [
+   "24618"
+  ],
+  "doubts": ""
+ },
+ "147": {
+  "tested": [
+   "24620"
+  ],
+  "doubts": ""
+ },
+ "148": {
+  "tested": [
+   "24621"
+  ],
+  "doubts": ""
+ },
+ "149": {
+  "tested": [
+   "24623"
+  ],
+  "doubts": ""
+ },
+ "150": {
+  "tested": [
+   "24624"
+  ],
+  "doubts": ""
+ },
+ "151": {
+  "tested": [
+   "24625"
+  ],
+  "doubts": ""
+ },
+ "152": {
+  "tested": [
+   "24626"
+  ],
+  "doubts": ""
+ },
+ "153": {
+  "tested": [
+   "24627"
+  ],
+  "doubts": ""
+ },
+ "154": {
+  "tested": [
+   "24589",
+   "24630"
+  ],
+  "doubts": "24630 FALSO: sospensione when doubts arise about the requirements; the measure is revisione. Wording is generic, could also touch row 19."
+ },
+ "155": {
+  "tested": [
+   "24592"
+  ],
+  "doubts": ""
+ },
+ "156": {
+  "tested": [
+   "24591"
+  ],
+  "doubts": ""
+ },
+ "157": {
+  "tested": [
+   "24595",
+   "24631",
+   "24641",
+   "24654"
+  ],
+  "doubts": "24631 (sospensione) and 24654 (revoca) FALSO on loss of all points."
+ },
+ "158": {
+  "tested": [
+   "24605",
+   "24628"
+  ],
+  "doubts": "24628 FALSO: sospensione for driving with a suspended license."
+ },
+ "159": {
+  "tested": [
+   "24606"
+  ],
+  "doubts": ""
+ },
+ "160": {
+  "tested": [
+   "24599",
+   "24607",
+   "24608",
+   "24613",
+   "24629"
+  ],
+  "doubts": "24599 (revisione) and 24629 (sospensione) FALSO on permanent loss. 24613 FALSO is revoca for TEMPORARY loss; included because the permanent condition decides it."
+ },
+ "161": {
+  "tested": [
+   "24609"
+  ],
+  "doubts": "24584 (foreign license, ritiro, FALSO) left out: different situation."
+ },
+ "162": {
+  "tested": [
+   "24596",
+   "24604",
+   "24610"
+  ],
+  "doubts": "24604 FALSO: after failing the revision one may retake it while driving; the measure is revoca."
+ },
+ "82": {
+  "tested": [
+   "24500",
+   "24507",
+   "24509"
+  ],
+  "doubts": "24500 and 24507 also test row 2 (0,2 kW/kg). 24509 is FALSO because A2 allows up to 35 kW, not 25. 24520 (A license, 35 kW for 2 years) left out: it is about category A having no power limit, not A2's figure."
+ },
+ "83": {
+  "tested": [
+   "24486",
+   "24488",
+   "24495",
+   "24532"
+  ],
+  "doubts": "24488 and 24532 also test row 3 (0,1 kW/kg). 24495 is FALSO because A1 also has the 11 kW and 0,1 kW/kg limits, not cylinder size alone. 24486 and 24532 are false for the wrong license (AM, B1)."
+ },
+ "84": {
+  "tested": [
+   "24500",
+   "24507"
+  ],
+  "doubts": "Both also in row 0; 24507 states 0,2 correctly and is FALSO for the 25 kW and triple-power clauses."
+ },
+ "85": {
+  "tested": [
+   "24488",
+   "24532"
+  ],
+  "doubts": "Both also in row 1."
+ },
+ "86": {
+  "tested": [
+   "18568",
+   "24489",
+   "24496"
+  ],
+  "doubts": "24519, 24523 and 24544 name tricycles over 15 kW but turn on the age of 21 (categories A and B), not on the A1/A2 limit, so left out."
+ },
+ "87": {
+  "tested": [
+   "18550"
+  ],
+  "doubts": ""
+ },
+ "67": {
+  "tested": [
+   "18449",
+   "18455",
+   "18457"
+  ],
+  "doubts": "18455 (all motorcycles may use the autostrada, FALSO) is decided by the 150 cm3 floor. 18459 left out: the mopeds in it make it false on their own."
+ },
+ "68": {
+  "tested": [
+   "24097"
+  ],
+  "doubts": ""
+ },
+ "69": {
+  "tested": [
+   "24488",
+   "24495",
+   "24532"
+  ],
+  "doubts": "24495 is false for the omitted power limits, not the 125. 24532 is the A1 figure attributed to B1."
+ },
+ "70": {
+  "tested": [
+   "24537",
+   "24548",
+   "24552"
+  ],
+  "doubts": "24548 (B drives buses up to 16 seats) is decided by the eight-passenger limit, though one could also answer it from 'B does not cover buses'."
+ },
+ "71": {
+  "tested": [
+   "18544",
+   "18547",
+   "18551",
+   "18563",
+   "24479",
+   "24515"
+  ],
+  "doubts": "24515 (A license, motorcycles over 50 cm3) fits row 5 at least as well; kept here because it was cited here."
+ },
+ "72": {
+  "tested": [
+   "18556",
+   "18561",
+   "18627",
+   "18634",
+   "18635"
+  ],
+  "doubts": "18634 (motorcycles only up to 125 cm3, FALSO) is decided by the motorcycle definition, above 50 with no upper limit."
+ },
+ "73": {
+  "tested": [
+   "18648",
+   "18650",
+   "18657",
+   "18660"
+  ],
+  "doubts": ""
+ },
+ "74": {
+  "tested": [
+   "18716",
+   "22691"
+  ],
+  "doubts": ""
+ },
+ "75": {
+  "tested": [
+   "22698"
+  ],
+  "doubts": ""
+ },
+ "76": {
+  "tested": [
+   "22695",
+   "22697",
+   "22700",
+   "23932",
+   "23937",
+   "23939",
+   "23943",
+   "24112"
+  ],
+  "doubts": "22697 and 23937 apply the 3/10 sideways; they are also decided by the 30 cm side limit of row 10. 23943 is false for the wrong panel, not the 3/10."
+ },
+ "77": {
+  "tested": [
+   "23933",
+   "24105"
+  ],
+  "doubts": "23937 (indivisible load sideways up to 3/10 of the width) could also count here; listed under row 9."
+ },
+ "78": {
+  "tested": [
+   "24369",
+   "24374"
+  ],
+  "doubts": ""
+ },
+ "79": {
+  "tested": [
+   "25240"
+  ],
+  "doubts": ""
+ },
+ "80": {
+  "tested": [
+   "25242"
+  ],
+  "doubts": ""
+ },
+ "81": {
+  "tested": [
+   "24091",
+   "24104"
+  ],
+  "doubts": ""
+ },
+ "0": {
+  "tested": [
+   "22336",
+   "22342",
+   "22397",
+   "22408",
+   "22465",
+   "22468"
+  ],
+  "doubts": "22468 (150 by day, 130 at night) also turns on the 130 row; 22465 (170 on a four-lane autostrada) is answered by knowing 150 is the highest limit anywhere."
+ },
+ "1": {
+  "tested": [
+   "21535",
+   "21538",
+   "22328",
+   "22332",
+   "22349",
+   "22366",
+   "22368",
+   "22369",
+   "22377",
+   "22378",
+   "22398",
+   "22465",
+   "22466",
+   "22467",
+   "22468"
+  ],
+  "doubts": "21538 (130 on main extra-urban roads) is cited here and also tests the 110 main-road row; listed in both."
+ },
+ "2": {
+  "tested": [
+   "22338",
+   "22380",
+   "22402"
+  ],
+  "doubts": ""
+ },
+ "3": {
+  "tested": [
+   "22357",
+   "22364"
+  ],
+  "doubts": ""
+ },
+ "4": {
+  "tested": [
+   "22367",
+   "22370",
+   "22376",
+   "22379",
+   "22458"
+  ],
+  "doubts": ""
+ },
+ "5": {
+  "tested": [
+   "23853",
+   "23861"
+  ],
+  "doubts": ""
+ },
+ "6": {
+  "tested": [
+   "22454"
+  ],
+  "doubts": ""
+ },
+ "7": {
+  "tested": [
+   "18358",
+   "21534",
+   "21538",
+   "22329",
+   "22333",
+   "22343",
+   "22350",
+   "22371",
+   "22372",
+   "22381",
+   "22405",
+   "22409",
+   "22411",
+   "22413",
+   "22414",
+   "22416",
+   "22417",
+   "22455",
+   "22469",
+   "22470"
+  ],
+  "doubts": "21538 also listed under the 130 autostrada row, where it is cited."
+ },
+ "8": {
+  "tested": [
+   "22358",
+   "22365"
+  ],
+  "doubts": ""
+ },
+ "9": {
+  "tested": [
+   "22339",
+   "22403"
+  ],
+  "doubts": ""
+ },
+ "10": {
+  "tested": [
+   "22373",
+   "22375",
+   "22382",
+   "22410",
+   "22412",
+   "22415",
+   "22420",
+   "22423",
+   "22428",
+   "22459",
+   "22471"
+  ],
+  "doubts": ""
+ },
+ "11": {
+  "tested": [
+   "21533",
+   "21536",
+   "22330",
+   "22334",
+   "22344",
+   "22374",
+   "22383",
+   "22418",
+   "22419",
+   "22421",
+   "22422",
+   "22426",
+   "22427",
+   "22429",
+   "22430"
+  ],
+  "doubts": "21536 (90 in built-up areas) is cited here but is decided by the 50 built-up row; listed in both."
+ },
+ "12": {
+  "tested": [
+   "22337",
+   "22345",
+   "22346",
+   "22404"
+  ],
+  "doubts": "22345 ('always 70') and 22346 ('always 50') turn on both the 50 ordinary limit and the signed 70; listed in both rows."
+ },
+ "13": {
+  "tested": [
+   "21536",
+   "22331",
+   "22335",
+   "22345",
+   "22346",
+   "22348",
+   "22351",
+   "22352",
+   "22399",
+   "22406",
+   "22456"
+  ],
+  "doubts": "22345, 22346 also in the 70 urban row; 21536 also in the 90 secondary row, where it is cited."
+ },
+ "14": {
+  "tested": [
+   "22341",
+   "22347",
+   "22407",
+   "22425"
+  ],
+  "doubts": ""
+ },
+ "15": {
+  "tested": [
+   "18544",
+   "18553",
+   "18557",
+   "18561",
+   "18577",
+   "18635",
+   "22340",
+   "22400",
+   "22424",
+   "24515"
+  ],
+  "doubts": "18635 (motorcycles up to 50 cc and 45 km/h) is false because it describes a moped; included on the same ground as the cited 24515."
+ },
+ "16": {
+  "tested": [
+   "18557",
+   "18561"
+  ],
+  "doubts": ""
+ },
+ "17": {
+  "tested": [
+   "18586",
+   "22353",
+   "22354",
+   "22355",
+   "22356",
+   "22401",
+   "22472"
+  ],
+  "doubts": ""
+ },
+ "18": {
+  "tested": [
+   "18587"
+  ],
+  "doubts": ""
+ },
+ "19": {
+  "tested": [
+   "21535",
+   "21538",
+   "22328",
+   "22332",
+   "22349",
+   "22366",
+   "22368",
+   "22369",
+   "22377",
+   "22378",
+   "22398",
+   "22465",
+   "22466",
+   "22467",
+   "22468"
+  ],
+  "doubts": "21538 (130 on a main road) is kept because it was cited, but it really tests row 22; 22468 and 22465 also bear on the 150 row (22468 listed there too)."
+ },
+ "20": {
+  "tested": [
+   "22336",
+   "22342",
+   "22397",
+   "22408",
+   "22465",
+   "22468"
+  ],
+  "doubts": "22468 (150 by day, 130 by night) listed in rows 19 and 20."
+ },
+ "21": {
+  "tested": [
+   "22338",
+   "22380",
+   "22402"
+  ],
+  "doubts": ""
+ },
+ "22": {
+  "tested": [
+   "18358",
+   "21534",
+   "21538",
+   "22329",
+   "22333",
+   "22343",
+   "22350",
+   "22371",
+   "22372",
+   "22381",
+   "22405",
+   "22409",
+   "22411",
+   "22413",
+   "22414",
+   "22416",
+   "22417",
+   "22455",
+   "22469",
+   "22470"
+  ],
+  "doubts": "21538 also listed under row 19, where it was cited."
+ },
+ "23": {
+  "tested": [
+   "22339",
+   "22403"
+  ],
+  "doubts": ""
+ },
+ "24": {
+  "tested": [
+   "21533",
+   "21536",
+   "22330",
+   "22334",
+   "22344",
+   "22374",
+   "22383",
+   "22418",
+   "22419",
+   "22421",
+   "22422",
+   "22426",
+   "22427",
+   "22429",
+   "22430"
+  ],
+  "doubts": "21536 (90 in built-up areas) was cited here but really tests the 50 built-up row; listed in both."
+ },
+ "25": {
+  "tested": [
+   "22337",
+   "22345",
+   "22346",
+   "22404"
+  ],
+  "doubts": "22345 (always 70) and 22346 (always 50) in built-up areas: listed in both the 70 and 50 rows."
+ },
+ "26": {
+  "tested": [
+   "21536",
+   "22331",
+   "22335",
+   "22345",
+   "22346",
+   "22348",
+   "22351",
+   "22352",
+   "22399",
+   "22406",
+   "22456"
+  ],
+  "doubts": "21536, 22345, 22346 also listed in other rows."
+ },
+ "27": {
+  "tested": [
+   "22454"
+  ],
+  "doubts": ""
+ },
+ "28": {
+  "tested": [
+   "22357",
+   "22364"
+  ],
+  "doubts": ""
+ },
+ "29": {
+  "tested": [
+   "22358",
+   "22365"
+  ],
+  "doubts": ""
+ },
+ "30": {
+  "tested": [
+   "22367",
+   "22370",
+   "22376",
+   "22379",
+   "22458"
+  ],
+  "doubts": ""
+ },
+ "31": {
+  "tested": [
+   "22373",
+   "22375",
+   "22382",
+   "22410",
+   "22415",
+   "22420",
+   "22428",
+   "22459",
+   "22471"
+  ],
+  "doubts": "22415 (light trailer, 80 on a main road) counted here: a rimorchio leggero is a trailer, not a carrello appendice."
+ },
+ "32": {
+  "tested": [
+   "22412",
+   "22423"
+  ],
+  "doubts": ""
+ },
+ "33": {
+  "tested": [
+   "22341",
+   "22347",
+   "22407",
+   "22425"
+  ],
+  "doubts": ""
+ },
+ "34": {
+  "tested": [
+   "18544",
+   "18553",
+   "18557",
+   "18561",
+   "18577",
+   "18635",
+   "22340",
+   "22400",
+   "22424",
+   "24515"
+  ],
+  "doubts": "18544, 24515, 18577, 18557, 18561, 18635 use 45 km/h as the moped's defining design speed rather than a road limit; included because the cited set already counts that kind."
+ },
+ "35": {
+  "tested": [
+   "18586",
+   "22353",
+   "22354",
+   "22355",
+   "22356",
+   "22401",
+   "22472"
+  ],
+  "doubts": ""
+ },
+ "36": {
+  "tested": [
+   "18587"
+  ],
+  "doubts": ""
+ },
+ "88": {
+  "tested": [
+   "23873",
+   "23877"
+  ],
+  "doubts": "23903 (cited here) is about the emergency stop on the carriageway with a borrowed 24-hour figure; listed under row 1, not here."
+ },
+ "89": {
+  "tested": [
+   "23900",
+   "23903"
+  ],
+  "doubts": "21698 (lay-by sign, 3 hours) borrows the figure in a different context and is not counted."
+ },
+ "90": {
+  "tested": [
+   "18548",
+   "18630"
+  ],
+  "doubts": "18548 and 18630 state both the 4-year first inspection and the 2-year interval, so they are also listed in row 3. 18554 (mopeds not subject to inspection) needs no figure."
+ },
+ "91": {
+  "tested": [
+   "18548",
+   "18630",
+   "18661"
+  ],
+  "doubts": "18548 and 18630 also in row 2."
+ },
+ "92": {
+  "tested": [
+   "22357",
+   "22358",
+   "22364",
+   "22365",
+   "24643",
+   "24650",
+   "24682"
+  ],
+  "doubts": "22364 and 22365 are FALSO on the speed figure, with the 3-year new-driver period stated correctly; they mainly test the speed rows. 24643 and 24650 are the first-three-years double points."
+ },
+ "93": {
+  "tested": [
+   "24680",
+   "24684",
+   "24685",
+   "24692",
+   "24694",
+   "24695",
+   "24696"
+  ],
+  "doubts": "24692 and 24694 give 5 years under 50 (FALSO); 24695 says 10 years in every case; 24696 says no expiry until 50."
+ },
+ "94": {
+  "tested": [
+   "24681",
+   "24686",
+   "24691"
+  ],
+  "doubts": ""
+ },
+ "95": {
+  "tested": [
+   "24499",
+   "24504",
+   "24508",
+   "24517",
+   "24522",
+   "24645",
+   "24653",
+   "24683",
+   "24693"
+  ],
+  "doubts": "24499 (A1 becoming A2 then A automatically after two years each) and 24522 (A1 for 2 years at 18) are FALSO on the graduated-access rule; included with some doubt. 24516 and 24524 mention A2 held 2 years only to set up the direct-access age of 24, so they test that age and are not counted. 24520 invents a 2-year power limit and is not counted."
+ },
+ "96": {
+  "tested": [
+   "24150",
+   "24154"
+  ],
+  "doubts": "24154 (high beams from sunset to sunrise, FALSO) is the same driving-lights-at-night context with the wrong beams and wrong times; included with doubt. 24173 (reflectors) is a different context."
+ }
+}

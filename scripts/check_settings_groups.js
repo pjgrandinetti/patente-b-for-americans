@@ -1,0 +1,38 @@
+// Settings grouped by the stage of the learner's path (20261011f, maintainer, 2026-10-04): six groups, Your data first (20261013b), then the stages in order, every row in its group, the weak-spots-and-mocks group hidden until Italiano is cleared (or the early-mock option is on), the review group hidden until an exam date is entered. STALE=1 removes the new review row from index.html first. Run: node scripts/check_settings_groups.js (UILANG=it-IT).
+const {JSDOM}=require(process.env.JSDOM||'/tmp/node_modules/jsdom'); const fs=require('fs');
+const root=process.env.SRC||require('path').resolve(__dirname,'../public_html');
+const LANG=process.env.UILANG||'en-US', IT=LANG.startsWith('it');
+let html=fs.readFileSync(root+'/index.html','utf8').replace(/<script[^>]*src="app\.js[^>]*><\/script>/,'');
+const dom=new JSDOM(html,{url:'https://patente.physyapps.com/',runScripts:'dangerously',pretendToBeVisual:true});
+const w=dom.window; Object.defineProperty(w.navigator,'language',{value:LANG}); Object.defineProperty(w.navigator,'languages',{value:[LANG]});
+w.fetch=async(u)=>{const p=root+'/'+String(u).replace(/^https:\/\/patente\.physyapps\.com\//,'').replace(/\?.*$/,'');return{ok:true,status:200,json:async()=>JSON.parse(fs.readFileSync(p,'utf8')),text:async()=>fs.readFileSync(p,'utf8')}};
+w.scrollTo=()=>{}; w.matchMedia=()=>({matches:false,addEventListener(){},addListener(){}});
+w.speechSynthesis={getVoices:()=>[],cancel(){},speak(){}}; w.SpeechSynthesisUtterance=class extends w.EventTarget{};
+const s=w.document.createElement('script'); s.textContent=fs.readFileSync(root+'/app.js','utf8'); w.document.body.appendChild(s);
+let fails=0; const ok=(c,m)=>{console.log((c?'ok  ':'FAIL')+' '+m); if(!c)fails++;};
+const key=n=>{const d=new Date(); d.setDate(d.getDate()+n); return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');};
+setTimeout(()=>{
+  const $=id=>w.document.getElementById(id);
+  const groups=[...w.document.querySelectorAll('#settings-overlay .settings-body > .settings-group')].map(g=>g.id);
+  ok(JSON.stringify(groups)===JSON.stringify(['sg-data','sg-answer','sg-levels','sg-after','sg-review','sg-reviewer']),'six groups: Your data first, then the stages in order, Reviewers last: '+groups.join(', '));
+  const inG=(id,g)=>$(id)&&$(id).closest('.settings-group')?.id===g;
+  ok(['set-sound','set-vibrate','set-tts-rate','set-expl-correct','set-autoscroll'].every(id=>inG(id,'sg-answer')),'answering rows grouped');
+  ok(['set-abridged','set-english-only','set-review-note','set-mock-early'].every(id=>inG(id,'sg-levels')),'level rows grouped, the topic-notes note among them');
+  const lvOrder=[...$('sg-levels').querySelectorAll('input')].map(i=>i.id);
+  ok(JSON.stringify(lvOrder)===JSON.stringify(['set-abridged','set-english-only','set-review-note','set-mock-early']),'levels group in order: abridged, English only, notes note, early mock: '+lvOrder.join(', '));
+  ok(inG('set-dash-full','sg-after') && inG('set-exam-mix','sg-after'),'after-Italiano rows grouped');
+  ok(inG('set-review-expl','sg-review'),'the review row grouped');
+  ok($('settings-sync').closest('.settings-group')?.id==='sg-data' && $('settings-backup').closest('.settings-group')?.id==='sg-data','sync and backup under Your data');
+  ok(inG('set-reviewer','sg-reviewer') && inG('set-reviewer-code','sg-reviewer'),'reviewer rows grouped');
+  ok(![...w.document.querySelectorAll('#settings-overlay .settings-body > *')].some(e=>!e.classList.contains('settings-group')),'no row left outside a group');
+  w.italianoComplete=()=>false; w.syncSettings();
+  ok($('sg-after').classList.contains('hidden') && $('sg-review').classList.contains('hidden') && !$('sg-levels').classList.contains('hidden'),'while studying the levels, the later groups are hidden');
+  w.setMockEarlyOn(true); w.syncSettings(); ok(!$('sg-after').classList.contains('hidden'),'the early-mock option opens the mocks group');
+  w.setMockEarlyOn(false); w.italianoComplete=()=>true; w.syncSettings();
+  ok(!$('sg-after').classList.contains('hidden') && $('sg-review').classList.contains('hidden'),'Italiano cleared: the mocks group shows, the review group not yet');
+  w.localStorage.setItem('patente_exam_date',key(9)); w.syncSettings();
+  ok(!$('sg-review').classList.contains('hidden') && !$('sg-levels').classList.contains('hidden'),'an exam date: the review group shows, and past groups stay');
+  w.localStorage.setItem('patente_settings_lang',IT?'it':'en'); w.paintSettingsLang && w.paintSettingsLang();
+  ok($('sg-review').querySelector('.settings-group-head').textContent===(IT?'Prima dell’esame':'Before your exam'),'headings in the reader’s language: '+$('sg-review').querySelector('.settings-group-head').textContent);
+  console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);
+},2500);

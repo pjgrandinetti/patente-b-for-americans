@@ -1,0 +1,45 @@
+// Adding a question answered right in a mock to the weak spots (maintainer, 2026-10-01): a button on each right row of the review; the question joins the weak spots without a miss being recorded, the tap can be taken back, it leaves after two right answers in a row, it carries no language-miss note, and the mark survives a sync merge. Run: node scripts/check_weak_pin.js (UILANG=it-IT).
+const {JSDOM}=require(process.env.JSDOM||'/tmp/node_modules/jsdom'); const fs=require('fs');
+const root=process.env.SRC||require('path').resolve(__dirname,'../public_html');
+const LANG=process.env.UILANG||'en-US'; const IT=LANG.startsWith('it');
+const Q=JSON.parse(fs.readFileSync(root+'/questions.json','utf8')).filter(c=>c.statements.some(s=>!s.retired));
+const C=Q[40], st=C.statements.find(s=>!s.retired), W=Q[41], sw=W.statements.find(s=>!s.retired);
+const rec={seen:3,correct:3,streak:3};
+const L={1:{[C.id]:{st:{[st.number]:{seen:1,correct:1,streak:1}}}},2:{},3:{[C.id]:{st:{[st.number]:{...rec}}}}};
+let html=fs.readFileSync(root+'/index.html','utf8').replace(/<script[^>]*src="app\.js[^>]*><\/script>/,'');
+const dom=new JSDOM(html,{url:'https://patente.physyapps.com/',runScripts:'dangerously',pretendToBeVisual:true});
+const w=dom.window; Object.defineProperty(w.navigator,'language',{value:LANG}); Object.defineProperty(w.navigator,'languages',{value:[LANG]});
+w.localStorage.setItem('patente_level','3');
+for (const l of [1,2,3]) w.localStorage.setItem('patente_progress_L'+l, JSON.stringify(L[l]));
+w.localStorage.setItem('patente_exam_history', JSON.stringify([{date:'2026-10-01T12:00:00.000Z',correct:29,total:30,wrong:1,pass:true,level:3,time:600,
+  items:[{id:C.id,n:st.number,chosen:st.answer,s:20},{id:W.id,n:sw.number,chosen:sw.answer==='VERO'?'FALSO':'VERO',s:30}]}]));
+w.fetch=async(u)=>{const p=root+'/'+String(u).replace(/^https:\/\/patente\.physyapps\.com\//,'').replace(/\?.*$/,'');return{ok:true,status:200,json:async()=>JSON.parse(fs.readFileSync(p,'utf8')),text:async()=>fs.readFileSync(p,'utf8')}};
+w.scrollTo=()=>{}; w.Element.prototype.scrollIntoView=function(){}; w.matchMedia=()=>({matches:false,addEventListener(){},addListener(){}});
+w.speechSynthesis={getVoices:()=>[],cancel(){},speak(){}}; w.SpeechSynthesisUtterance=class extends w.EventTarget{};
+const s=w.document.createElement('script'); s.textContent=fs.readFileSync(root+'/app.js','utf8'); w.document.body.appendChild(s);
+let fails=0; const ok=(c,m)=>{console.log((c?'ok  ':'FAIL')+' '+m); if(!c)fails++;};
+setTimeout(()=>{
+  w.document.querySelector('.nav-btn[data-screen="exam"]').click();
+  w.openPastExamReview(0);
+  const items=[...w.document.querySelectorAll('#exam-history-review .exam-rev-item')];
+  const btn=()=>w.document.querySelector('#exam-history-review .exam-rev-pin');
+  ok(items.length===2 && items[0].querySelector('.exam-rev-pin') && !items[1].querySelector('.exam-rev-pin'),'the button is on the right answer only');
+  ok(btn().textContent===(IT?'+ Aggiungi ai punti deboli':'+ Add to weak spots'),'label: '+btn().textContent);
+  const inWeak=()=>w.difficultCards().some(d=>d.id===C.id && d.stmts.includes(String(st.number)));
+  const r3=()=>w.eval(`loadProgressForLevel(3)[${JSON.stringify(C.id)}].st[${JSON.stringify(String(st.number))}]`);
+  ok(!inWeak(),'not in the weak spots before');
+  btn().click();
+  ok(inWeak() && r3().pin && r3().streak===0 && r3().pinPrev===3 && !r3().miss && r3().seen===3,'added: in the weak spots, run reset, no miss recorded');
+  ok(btn().classList.contains('is-on') && /(weak spots|punti deboli)/.test(btn().textContent) && btn().textContent.startsWith('✓'),'the button says so: '+btn().textContent);
+  ok(w.drillMissKind(C.id, st.number)===null,'no language-miss note for it in the drill');
+  btn().click();
+  ok(!inWeak() && !r3().pin && r3().streak===3,'a second tap takes it back and restores the run');
+  btn().click();
+  w.eval(`(()=>{const r=loadProgressForLevel(3)[${JSON.stringify(C.id)}].st[${JSON.stringify(String(st.number))}]; r.streak=1;})()`); w.invalidateDrillMemo();
+  ok(inWeak(),'one right answer is not enough to leave');
+  w.eval(`(()=>{const r=loadProgressForLevel(3)[${JSON.stringify(C.id)}].st[${JSON.stringify(String(st.number))}]; r.streak=2;})()`); w.invalidateDrillMemo();
+  ok(!inWeak(),'two right answers in a row: out of the weak spots');
+  const m=w.mergeCardRecord({lastSeen:null,st:{1:{seen:3,correct:3,streak:0,pin:111,sAt:5}}},{lastSeen:null,st:{1:{seen:3,correct:3,streak:3,sAt:1}}});
+  ok(m.st[1].pin===111,'the mark survives a sync merge');
+  console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);
+},2500);

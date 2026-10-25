@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 146" role="img"
+     aria-label="Braking distance grows with the square of speed: one, four and nine times">
+  <title>Braking distance against speed: doubling the speed makes it four times longer, and tripling it makes it nine times longer.</title>
+
+  <!-- Original work for this project. Every token is a number or a symbol, so
+       one file serves both halves of the review. The bars are drawn to true
+       scale, 20 px for the first, so the shape of the growth is the figure.
+       The three speeds are all real Italian figures: 50 in town, 100 on the
+       autostrada in the first three years, 150 on the autostrada where signed.
+       200 km/h was drawn first and dropped, since it is not a speed to put in
+       front of a learner and the relation is already plain at three bars. -->
+  <rect x="1" y="1" width="468" height="144" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+    <text x="20" y="24" font-size="12" font-weight="700" fill="#334155">km/h</text>
+
+    <!-- 50 km/h, the unit bar -->
+    <text x="46" y="52" text-anchor="end" font-size="14" font-weight="700" fill="#334155">50</text>
+    <rect x="54" y="40" width="20" height="18" rx="3" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.3"/>
+    <text x="82" y="53" font-size="12" font-weight="700" fill="#1e3a8a">&#215;1</text>
+
+    <!-- 100 km/h -->
+    <text x="46" y="82" text-anchor="end" font-size="14" font-weight="700" fill="#334155">100</text>
+    <rect x="54" y="70" width="80" height="18" rx="3" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1.3"/>
+    <text x="142" y="83" font-size="12" font-weight="700" fill="#1e3a8a">&#215;4</text>
+
+    <!-- 150 km/h -->
+    <text x="46" y="112" text-anchor="end" font-size="14" font-weight="700" fill="#334155">150</text>
+    <rect x="54" y="100" width="180" height="18" rx="3" fill="#60a5fa" stroke="#1d4ed8" stroke-width="1.3"/>
+    <text x="242" y="113" font-size="12" font-weight="700" fill="#1e3a8a">&#215;9</text>
+
+    <!-- the common origin, so the bars are read from one line -->
+    <line x1="54" y1="34" x2="54" y2="124" stroke="#334155" stroke-width="1.4"/>
+
+    <text x="235" y="138" text-anchor="middle" font-size="12" font-weight="700" fill="#1e3a8a">spazio di frenata</text>
+  </g>
+</svg>

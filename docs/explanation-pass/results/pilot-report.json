@@ -1,0 +1,75 @@
+{
+ "refused": [],
+ "problems": [
+  [
+   "01-2",
+   {
+    "number": "21715",
+    "note": "Left alone. The existing explanation gives 60 km/h as the middle lane's minimum; the figure is an SVG that could not be viewed, so the value was not verified."
+   }
+  ],
+  [
+   "01-2",
+   {
+    "number": "21719",
+    "note": "Left alone, but it never states the left lane's minimum speed, which decides the answer. The figure is an SVG and the review does not give the value, so it could not be added without inventing it."
+   }
+  ],
+  [
+   "01-2",
+   {
+    "number": "21305",
+    "note": "Existing explanation calls the left figure a 'white square'; the topic review calls it a 'black square'. The figure was not checked; one of the two is wrong."
+   }
+  ],
+  [
+   "01-2",
+   {
+    "number": "21533",
+    "note": "Passes the test and was left alone, but it mentions 'what the exam tests' (EN) / 'L'esame verifica' (IT), wording the rubric bars in rewrites."
+   }
+  ],
+  [
+   "01-2",
+   {
+    "number": "21538",
+    "note": "Passes the test and was left alone, but it ends with 'the classic trap in this series' / 'il tranello classico di questa serie'."
+   }
+  ],
+  [
+   "01-2",
+   {
+    "number": "21749",
+    "note": "The English halves of 21749 to 21759 carry a parenthetical US TRUCK ROUTE note with no Italian twin. Left as is on the statements that pass; the two rewrites (21755, 21759) drop it so the halves match."
+   }
+  ],
+  [
+   "03-1",
+   {
+    "number": "19131",
+    "note": "Not rewritten. The explanations of 19131, 19138, 19140 and 19141 say a moving tram is passed 'normally on the right' and on the left only on one-way streets, while the topic review says it may be overtaken on either side if there is room and you stay in your half of the road. The two wordings should be reconciled against the Code (art. 148) by the maintainer."
+   }
+  ],
+  [
+   "03-1",
+   {
+    "number": "19083",
+    "note": "Not rewritten. The explanation only restates the statement (the cross may be mounted horizontally or vertically). The review gives no reason for the two mountings, so nothing could be added without inventing a fact."
+   }
+  ],
+  [
+   "03-1",
+   {
+    "number": "19126",
+    "note": "Rewritten. The old explanation assigned the two alternately flashing red lights to crossings WITH BARRIERS. The review and art. 44 assign them to half-barriers (full barriers get one steady red light)."
+   }
+  ],
+  [
+   "03-1",
+   {
+    "number": "18946",
+    "note": "Rewritten without 'The trick is anche'. The statement has no clause marker, and striking the clause does not leave a true statement."
+   }
+  ]
+ ]
+}

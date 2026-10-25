@@ -1,0 +1,161 @@
+{
+ "read": 179,
+ "rewrites": {
+  "21907": {
+   "en": "False. The red arrow shows the right lane merging into the lane beside it because of road work. It does not show a road that turns back. A place to reverse direction is announced by a different sign, [the indication sign for an overpass or underpass used to turn back](notes:domandeb_images/4314.svg). That sign stands on roads with separate carriageways.",
+   "it": "Falso. La freccia rossa mostra la corsia di destra che confluisce in quella accanto a causa dei lavori. Non mostra una strada che torna indietro. Un punto in cui invertire la marcia è preannunciato da un altro segnale, [il segnale di indicazione di un cavalcavia o sottopassaggio per tornare indietro](notes:domandeb_images/4314.svg). Quel segnale si trova sulle strade a carreggiate separate.",
+   "fails": "2"
+  },
+  "21909": {
+   "en": "False. The red arrow shows a lane that ends because of road work, so the carriageway loses space. A pull-out for a bus stop would add space at the side of the road. A bus stop is marked by [an indication sign showing a bus](notes:domandeb_images/4322.svg), and it has nothing to do with road work.",
+   "it": "Falso. La freccia rossa mostra una corsia che termina a causa dei lavori, quindi la carreggiata perde spazio. Una piazzola per la fermata degli autobus aggiungerebbe spazio a lato della strada. La fermata degli autobus è indicata da [un segnale di indicazione con il simbolo dell'autobus](notes:domandeb_images/4322.svg), e non ha nulla a che vedere con i lavori.",
+   "fails": "2"
+  },
+  "21899": {
+   "en": "False. The board is a detour sign. The disc marked 7 t tells vehicles of more than 7 metric tons of actual mass to take the detour for Lucca. It gives no rule on overtaking. A ban on overtaking for heavy vehicles is given by [the no-passing sign for trucks](notes:domandeb_images/4114.svg), a prohibition sign that binds goods vehicles over 3.5 metric tons.",
+   "it": "Falso. Il pannello è un segnale di deviazione. Il disco con la scritta 7 t dice ai veicoli di massa effettiva superiore a 7 tonnellate di seguire la deviazione per Lucca. Non dà alcuna regola sul sorpasso. Il divieto di sorpasso per i veicoli pesanti è dato dal [segnale di divieto di sorpasso per gli autocarri](notes:domandeb_images/4114.svg), un segnale di divieto che vincola i veicoli per trasporto merci oltre 3,5 tonnellate.",
+   "fails": "2"
+  },
+  "21900": {
+   "en": "False. The letter t on the disc stands for metric tons (*tonnellate*), so the figure 7 is a mass. Vehicles whose actual mass exceeds 7 metric tons must take the detour. A length limit is given by [the maximum-length sign](notes:domandeb_images/4131.svg), whose figure is in meters and counts the whole vehicle combination, trailer included.",
+   "it": "Falso. La lettera t sul disco significa tonnellate, quindi la cifra 7 è una massa. I veicoli la cui massa effettiva supera 7 tonnellate devono seguire la deviazione. Un limite di lunghezza è dato dal [segnale di lunghezza massima](notes:domandeb_images/4131.svg), la cui cifra è in metri e conta l'intero complesso di veicoli, rimorchio compreso.",
+   "fails": "1,2"
+  },
+  "21918": {
+   "en": "False. The panel assigns lanes by category in a work zone. Cars may use either lane, and trucks over 3.5 metric tons must keep to the right lane. Driving in parallel lines (*file parallele*) means lines of vehicles moving side by side in adjacent lanes. It is allowed in heavy traffic on roads with at least two lanes per direction, and it is permitted, never mandatory. This panel does not order it.",
+   "it": "Falso. Il pannello assegna le corsie per categoria in un cantiere. Le autovetture possono usare entrambe le corsie, e gli autocarri oltre 3,5 tonnellate devono tenere la corsia di destra. La marcia per file parallele è quella di file di veicoli che procedono affiancate in corsie adiacenti. È ammessa con traffico intenso sulle strade con almeno due corsie per senso di marcia, ed è consentita, mai obbligatoria. Questo pannello non la impone.",
+   "fails": "1,3"
+  },
+  "21975": {
+   "en": "False. The white arrowheads on this black barrier point both left and right. They mean that the road ends ahead at a T-junction, where you must turn one way or the other. A railroad crossing is announced by a warning triangle, followed by [the countdown panels, upright white rectangles with red oblique bars](notes:domandeb_images/4071.jpeg). Those panels carry red bars that count down the distance to the tracks, and they carry no arrowheads.",
+   "it": "Falso. Le punte di freccia bianche su questa barriera nera indicano sia la sinistra sia la destra. Significano che la strada termina più avanti a un incrocio a T, dove devi svoltare da un lato o dall'altro. Un passaggio a livello è preannunciato da un triangolo di pericolo, seguito dai [pannelli distanziometrici, rettangoli bianchi verticali con barre oblique rosse](notes:domandeb_images/4071.jpeg). Quei pannelli portano barre rosse che scandiscono la distanza dai binari, e non portano punte di freccia.",
+   "fails": "1,2"
+  },
+  "21976": {
+   "en": "False. The double chevrons mark a T-junction, where no way continues straight and you turn left or right. A movable bridge (*ponte mobile*) is a bridge that can open for boats. It is announced by [a warning triangle that shows a bridge with one section raised over water](notes:domandeb_images/4084.jpeg).",
+   "it": "Falso. I chevron doppi segnalano un incrocio a T, dove non si può proseguire diritto e si svolta a sinistra o a destra. Un ponte mobile è un ponte che può aprirsi per il passaggio delle imbarcazioni. È preannunciato da [un triangolo di pericolo che mostra un ponte con una parte sollevata sopra l'acqua](notes:domandeb_images/4084.jpeg).",
+   "fails": "1,2,3"
+  },
+  "21978": {
+   "en": "False. Each arrowhead on the barrier points to a direction you may take, left or right, because the road ends at a T-junction. The arrowheads do not stand for lanes. An increase in the number of lanes is announced by [the lane-increase diagram](notes:domandeb_images/4319.svg), an indication sign that announces a change in the number of lanes.",
+   "it": "Falso. Ogni punta di freccia sulla barriera indica una direzione possibile, sinistra o destra, perché la strada termina a un incrocio a T. Le punte non rappresentano corsie. Un aumento del numero di corsie è preannunciato dallo [schema di aumento delle corsie](notes:domandeb_images/4319.svg), un segnale di indicazione che annuncia il cambio del numero di corsie.",
+   "fails": "2"
+  },
+  "21890": {
+   "en": "False. The lane panel shows three lanes dropping to two, with the carriageway narrowing on the left because of a mobile work site. Space is taken away on the left. A pull-off (*piazzola*) is an area beside the carriageway where a vehicle can stop. It is marked by [the pull-off sign](notes:domandeb_images/4315.svg), an indication sign that is blue on extra-urban roads.",
+   "it": "Falso. Il pannello di corsie mostra tre corsie che diventano due, con la carreggiata che si restringe a sinistra per un cantiere mobile. A sinistra lo spazio viene tolto. Una piazzola è uno spazio a lato della carreggiata dove un veicolo può fermarsi. È indicata dal [segnale di piazzola](notes:domandeb_images/4315.svg), un segnale di indicazione che sulle strade extraurbane è blu.",
+   "fails": "2,3"
+  },
+  "21880": {
+   "en": "False. The blue disc on the panel shows the side on which to pass, and its arrow points to that side. Here the arrow points down and to the right, so you pass the work vehicle on its right. Passing on the left would be shown by [the same blue disc with the arrow pointing to the left](notes:domandeb_images/4166.svg).",
+   "it": "Falso. Il disco blu sul pannello indica il lato da cui passare, e la sua freccia punta verso quel lato. Qui la freccia punta in basso a destra, quindi il veicolo di lavoro si supera sulla destra. Il passaggio a sinistra sarebbe indicato dallo [stesso disco blu con la freccia rivolta a sinistra](notes:domandeb_images/4166.svg).",
+   "fails": "1,2"
+  },
+  "21882": {
+   "en": "False. This panel does not describe the road. It is mounted on a work vehicle that is stopped or moving slowly, and its arrow tells you to pass that vehicle on the right. A closed lane is announced by [a yellow panel with a red arrow that bends one lane into the next](notes:domandeb_images/4338.svg).",
+   "it": "Falso. Questo pannello non descrive la strada. È montato su un veicolo di lavoro fermo o in lento movimento, e la sua freccia dice di superare quel veicolo sulla destra. La chiusura di una corsia è preannunciata da [un pannello giallo con una freccia rossa che fa confluire una corsia in quella accanto](notes:domandeb_images/4338.svg).",
+   "fails": "1,2"
+  },
+  "21844": {
+   "en": "False. The yellow panel recommends a direction to trucks over 3.5 metric tons, so that they avoid a stretch under road work. It reserves nothing, so other vehicles may take the same road. It also says nothing about the direction of traffic on that road. A one-way street is shown by an information sign such as [the panel with a horizontal arrow](notes:domandeb_images/4274.jpeg).",
+   "it": "Falso. Il pannello giallo consiglia una direzione agli autocarri oltre 3,5 tonnellate, perché evitino un tratto in lavorazione. Non riserva nulla, quindi anche gli altri veicoli possono prendere la stessa strada. Non dice nulla nemmeno sul senso di marcia di quella strada. Una strada a senso unico è indicata da un segnale di indicazione come [il pannello con una freccia orizzontale](notes:domandeb_images/4274.jpeg).",
+   "fails": "1,2"
+  },
+  "21851": {
+   "en": "False. A warning triangle announces a danger and sets no right of way. This one tells you that a work site is ahead, so you slow down and stay alert for vehicles and people near the carriageway. The duty to yield is given by a priority sign, such as [the inverted triangle with a red border](notes:domandeb_images/4190.svg).",
+   "it": "Falso. Un triangolo di pericolo preannuncia un pericolo e non stabilisce alcuna precedenza. Questo dice che più avanti c'è un cantiere, quindi si rallenta e si presta attenzione a veicoli e persone vicino alla carreggiata. L'obbligo di dare la precedenza è dato da un segnale di precedenza, come [il triangolo rovesciato a bordo rosso](notes:domandeb_images/4190.svg).",
+   "fails": "1,2"
+  },
+  "21852": {
+   "en": "False. The yellow triangle with the worker only warns of road work ahead. The duty to yield to oncoming vehicles is given by [a round sign with a red border and two vertical arrows](notes:domandeb_images/4196.svg). That sign stands before a narrowing wide enough for one line of vehicles, and it may be found where part of the carriageway is closed for road work. It is a separate sign, and the worker triangle does not announce it.",
+   "it": "Falso. Il triangolo giallo con l'operaio avverte soltanto di lavori più avanti. L'obbligo di dare la precedenza ai veicoli che provengono in senso opposto è dato da [un segnale circolare a bordo rosso con due frecce verticali](notes:domandeb_images/4196.svg). Quel segnale si trova prima di una strettoia larga per una sola fila di veicoli, e può trovarsi dove una parte della carreggiata è sbarrata per lavori. È un segnale distinto, e il triangolo dell'operaio non lo preannuncia.",
+   "fails": "1,2"
+  },
+  "21854": {
+   "en": "False. The sign is a warning. It tells you that people may be working on or beside the carriageway, so you slow down and are ready to stop. It creates no rule of right of way in favor of the workers. A warning triangle never sets priority, which is the task of the priority signs.",
+   "it": "Falso. Il segnale è un avvertimento. Dice che possono esserci persone al lavoro sulla carreggiata o ai margini, quindi si rallenta e si è pronti a fermarsi. Non crea alcuna regola di precedenza a favore degli operai. Un triangolo di pericolo non stabilisce mai la precedenza, che è compito dei segnali di precedenza.",
+   "fails": "1"
+  },
+  "21855": {
+   "en": "False. This triangle warns of road work in general. Alternating one-way traffic (*senso unico alternato*) means that the two directions take turns through a stretch wide enough for one line of vehicles. At a work site that stretch is often controlled by a temporary traffic light, which is announced by [the yellow triangle with a traffic light whose center disc flashes yellow](notes:domandeb_images/4347.svg).",
+   "it": "Falso. Questo triangolo avverte di lavori in generale. Il senso unico alternato significa che i due sensi di marcia passano a turno in un tratto largo per una sola fila di veicoli. In un cantiere quel tratto è spesso regolato da un semaforo temporaneo, preannunciato dal [triangolo giallo con un semaforo il cui disco centrale lampeggia in giallo](notes:domandeb_images/4347.svg).",
+   "fails": "3"
+  },
+  "21994": {
+   "en": "False. The yellow background and the flashing yellow center disc mark this as the warning for a temporary traffic light at a road work site. A movable bridge (*ponte mobile*) is a bridge that can open for boats. It has its own warning sign, [a triangle that shows a bridge with one section raised over water](notes:domandeb_images/4084.jpeg). The lights that stop traffic there are two red lights that flash alternately, and this sign does not announce them.",
+   "it": "Falso. Il fondo giallo e il disco centrale giallo lampeggiante fanno di questo segnale il preavviso di un semaforo temporaneo di cantiere. Un ponte mobile è un ponte che può aprirsi per il passaggio delle imbarcazioni. Ha un proprio segnale di pericolo, [un triangolo che mostra un ponte con una parte sollevata sopra l'acqua](notes:domandeb_images/4084.jpeg). Le luci che lì fermano il traffico sono due luci rosse lampeggianti alternate, e questo segnale non le preannuncia.",
+   "fails": "2,3"
+  },
+  "21995": {
+   "en": "False. The sign shows a traffic light, and its yellow background says the light is temporary and belongs to a road work site. A STOP sign ahead is announced by [the STOP sign itself with a distance panel](notes:domandeb_images/4194.svg). Each advance sign announces only its own sign.",
+   "it": "Falso. Il segnale mostra un semaforo, e il fondo giallo dice che il semaforo è temporaneo e appartiene a un cantiere. Uno STOP più avanti è preannunciato dallo [stesso segnale di STOP con un pannello di distanza](notes:domandeb_images/4194.svg). Ogni preavviso annuncia solo il proprio segnale.",
+   "fails": "2"
+  },
+  "21996": {
+   "en": "False. The sign announces a temporary traffic light at a road work site, typically before a narrowing where the two directions take turns. A road that ends at a quay or pier is announced by [the warning triangle for a quay or embankment](notes:domandeb_images/4092.svg). At a ferry jetty the lights that order a stop are two red lights that flash alternately.",
+   "it": "Falso. Il segnale preannuncia un semaforo temporaneo di cantiere, tipicamente prima di una strettoia in cui i due sensi passano a turno. Una strada che sbocca su una banchina o su un molo è preannunciata dal [triangolo di pericolo di sbocco su argine o banchina](notes:domandeb_images/4092.svg). All'imbarco di un traghetto le luci che impongono l'arresto sono due luci rosse lampeggianti alternate.",
+   "fails": "1,2"
+  },
+  "21997": {
+   "en": "False. The three discs with the flashing yellow center announce a temporary traffic light at a road work site. A railroad crossing without barriers is announced by [a warning triangle with a locomotive](notes:domandeb_images/4067.svg). The locomotive tells you that no gate closes the road when a train comes.",
+   "it": "Falso. I tre dischi con il centro giallo lampeggiante preannunciano un semaforo temporaneo di cantiere. Un passaggio a livello senza barriere è preannunciato da [un triangolo di pericolo con una locomotiva](notes:domandeb_images/4067.svg). La locomotiva dice che nessuna sbarra chiude la strada quando arriva un treno.",
+   "fails": "2"
+  },
+  "21968": {
+   "en": "False. The arrowheads point the way the road turns. On this panel they point left, so the bend is to the left. A right bend is marked by [chevrons that point right](notes:domandeb_images/4346.svg).",
+   "it": "Falso. Le punte di freccia indicano il verso in cui gira la strada. Su questo pannello puntano a sinistra, quindi la curva è a sinistra. Una curva a destra è segnalata da [chevron che puntano a destra](notes:domandeb_images/4346.svg).",
+   "fails": "2"
+  },
+  "21969": {
+   "en": "False. The white arrowheads on black mark a sharp bend and point the way it turns. The approach to a railroad crossing is marked by [the countdown panels, upright white rectangles with one, two or three red oblique bars](notes:domandeb_images/4071.jpeg). Both are striped panels beside the road, but the countdown panels carry red bars that count down the distance to the tracks.",
+   "it": "Falso. Le punte di freccia bianche su fondo nero segnalano una curva stretta e ne indicano il verso. L'avvicinamento a un passaggio a livello è segnalato dai [pannelli distanziometrici, rettangoli bianchi verticali con una, due o tre barre oblique rosse](notes:domandeb_images/4071.jpeg). Entrambi sono pannelli a strisce a lato della strada, ma i pannelli distanziometrici portano barre rosse che scandiscono la distanza dai binari.",
+   "fails": "1,2"
+  },
+  "21985": {
+   "en": "False. The arrowhead points the way the road turns. This one points right, so the bend is to the right. A left bend is marked by [a panel of white arrowheads on black that point left](notes:domandeb_images/4344.jpeg).",
+   "it": "Falso. La punta di freccia indica il verso in cui gira la strada. Questa punta a destra, quindi la curva è a destra. Una curva a sinistra è segnalata da [un pannello di punte di freccia bianche su fondo nero rivolte a sinistra](notes:domandeb_images/4344.jpeg).",
+   "fails": "2"
+  },
+  "21830": {
+   "en": "False. The panel reads '1° tornante', which means first hairpin. A hairpin is a bend with a very tight radius, and the panel counts the hairpins of a mountain climb. A roundabout is ordered by [a blue circle with three curved arrows](notes:domandeb_images/4170.svg) and announced by a warning triangle.",
+   "it": "Falso. Sul pannello si legge '1° tornante', cioè primo tornante. Un tornante è una curva a raggio molto ridotto, e il pannello conta i tornanti di una salita di montagna. Una rotatoria è imposta da [un cerchio blu con tre frecce curve](notes:domandeb_images/4170.svg) ed è preannunciata da un triangolo di pericolo.",
+   "fails": "1,2"
+  },
+  "21865": {
+   "en": "False. The red-and-white barrier is a work-zone device. It closes off the area that a road work site occupies. A bike path (*pista ciclabile*) is marked by [a blue circle showing a bicycle](notes:domandeb_images/4178.svg), an obligation sign that reserves the path for bicycles.",
+   "it": "Falso. La transenna bianca e rossa è un dispositivo di cantiere. Chiude l'area occupata da un cantiere stradale. Una pista ciclabile è indicata da [un cerchio blu con una bicicletta](notes:domandeb_images/4178.svg), un segnale di obbligo che riserva il percorso alle biciclette.",
+   "fails": "1,2"
+  },
+  "21874": {
+   "en": "False. Cones stand on the carriageway. They delimit short-duration work, temporary detours and accident areas, and they can separate the two directions of travel for a time. In every case they mark space on the road that you may not enter. They are not used for an obstacle that lies off the carriageway.",
+   "it": "Falso. I coni stanno sulla carreggiata. Delimitano lavori di breve durata, deviazioni provvisorie e aree di incidente, e possono separare provvisoriamente i due sensi di marcia. In ogni caso delimitano uno spazio della strada in cui non puoi entrare. Non si usano per un ostacolo che si trova fuori della carreggiata.",
+   "fails": "1"
+  },
+  "21921": {
+   "en": "True. Edge delineators exist in two versions. This is the version for a one-way road or carriageway, with yellow reflectors: two yellow dots on the post to your left and a single yellow bar on the post to your right. A two-way road has [delineators with a red reflector on your right and a white one on your left](notes:domandeb_images/4341.jpeg). Both versions stand at the sides of the carriageway, at the outer edge of the shoulder.",
+   "it": "Vero. I delineatori di margine esistono in due versioni. Questa è la versione per una strada o carreggiata a senso unico, con catarifrangenti gialli: due punti gialli sul paletto alla tua sinistra e una sola barra gialla sul paletto alla tua destra. Una strada a doppio senso ha [delineatori con un catarifrangente rosso alla tua destra e uno bianco alla tua sinistra](notes:domandeb_images/4341.jpeg). Entrambe le versioni stanno ai lati della carreggiata, al limite esterno della banchina.",
+   "fails": "1"
+  },
+  "21925": {
+   "en": "False. These are the edge delineators of a one-way road. Their reflectors are yellow: the post on your left shows two yellow dots and the post on your right a single yellow bar. A two-way road has [delineators with a red reflector on your right and a white one on your left](notes:domandeb_images/4341.jpeg). The colors there tell you which edge is which and where the oncoming traffic is.",
+   "it": "Falso. Questi sono i delineatori di margine di una strada a senso unico. I loro catarifrangenti sono gialli: il paletto alla tua sinistra mostra due punti gialli e quello alla tua destra una sola barra gialla. Una strada a doppio senso ha [delineatori con un catarifrangente rosso alla tua destra e uno bianco alla tua sinistra](notes:domandeb_images/4341.jpeg). Lì i colori dicono quale margine è quale e da che parte arriva chi viene in senso opposto.",
+   "fails": "2,6"
+  },
+  "21933": {
+   "en": "True. This is the edge delineator for a two-way road. Its reflectors are red on your right and white on your left, so at night the colors tell you which edge is which. The one-way version has [yellow reflectors, two dots on the left post and one bar on the right post](notes:domandeb_images/4340.jpeg). Both versions stand at the edges of the road.",
+   "it": "Vero. Questo è il delineatore di margine per una strada a doppio senso. I suoi catarifrangenti sono rossi alla tua destra e bianchi alla tua sinistra, così di notte i colori dicono quale margine è quale. La versione per il senso unico ha [catarifrangenti gialli, due punti sul paletto di sinistra e una barra su quello di destra](notes:domandeb_images/4340.jpeg). Entrambe le versioni stanno ai margini della strada.",
+   "fails": "1"
+  },
+  "21939": {
+   "en": "False. These delineators belong to a two-way road. Their reflectors are red on your right and white on your left. A one-way road has [delineators with yellow reflectors, two dots on the left post and one bar on the right post](notes:domandeb_images/4340.jpeg).",
+   "it": "Falso. Questi delineatori appartengono a una strada a doppio senso. I loro catarifrangenti sono rossi alla tua destra e bianchi alla tua sinistra. Una strada a senso unico ha [delineatori con catarifrangenti gialli, due punti sul paletto di sinistra e una barra su quello di destra](notes:domandeb_images/4340.jpeg).",
+   "fails": "1,2"
+  },
+  "21958": {
+   "en": "False. The banded pole is used on mountain roads subject to snow, and what decides its use is the snow. A guardrail is the side barrier along the edge of the road. The pole can stand together with a guardrail. It does not replace one, and it is not reserved for roads that have none.",
+   "it": "Falso. Il paletto a bande si usa sulle strade di montagna soggette a innevamento, e a deciderne l'uso è la neve. Il guardrail è la barriera laterale lungo il margine della strada. Il paletto può stare insieme a un guardrail. Non lo sostituisce, e non è riservato alle strade che ne sono prive.",
+   "fails": "1,3"
+  }
+ },
+ "problems": []
+}

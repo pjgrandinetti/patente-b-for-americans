@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 292" role="img"
+     aria-label="License containment, drawn as nested boxes">
+  <title>Containment: AM sits inside A1, inside A2, inside A; and AM sits inside B1, inside B, inside B96, inside BE. Within Italy only, B also reaches A1 and the three-wheelers of A from age 21.</title>
+
+  <!-- Original work for this project, drawn from the containment principle of
+       art. 116 of the Codice della Strada: a license category permits whatever
+       a narrower category permits.
+
+       DELIBERATELY WORDLESS apart from the category codes, which are the same
+       in both languages, so one file serves the English and the Italian review
+       exactly as green-wave.svg does. Ages are NOT shown: the figure makes one
+       point, and putting "A 24" on it would quietly contradict the graduated
+       route at 20 that the paragraph above it teaches.
+
+       Self-contained light panel so it reads on both review backgrounds. -->
+  <rect x="1" y="1" width="468" height="290" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="700">
+
+    <!-- ══ the A categories: AM inside A1 inside A2 inside A ══
+         Shifted down so the shorter nest sits centred against the taller one. -->
+    <g transform="translate(0,30)">
+    <rect x="18" y="18" width="196" height="196" rx="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.4"/>
+    <text x="32" y="41" font-size="19" fill="#4c1d95">A</text>
+
+    <rect x="34" y="50" width="164" height="150" rx="8" fill="#ddd6fe" stroke="#6d28d9" stroke-width="2"/>
+    <text x="48" y="72" font-size="17" fill="#4c1d95">A2</text>
+
+    <rect x="50" y="81" width="132" height="104" rx="7" fill="#c4b5fd" stroke="#6d28d9" stroke-width="1.8"/>
+    <text x="64" y="102" font-size="16" fill="#3b0764">A1</text>
+
+    <rect x="66" y="112" width="100" height="58" rx="6" fill="#a78bfa" stroke="#5b21b6" stroke-width="1.6"/>
+    <text x="80" y="147" font-size="16" fill="#2e1065">AM</text>
+    </g>
+
+    <!-- ══ the B categories: AM inside B1 inside B inside B96 inside BE ══ -->
+    <rect x="252" y="18" width="200" height="256" rx="9" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.4"/>
+    <text x="266" y="41" font-size="19" fill="#134e4a">BE</text>
+
+    <rect x="266" y="50" width="172" height="210" rx="8" fill="#99f6e4" stroke="#0f766e" stroke-width="2"/>
+    <text x="280" y="72" font-size="17" fill="#134e4a">B96</text>
+
+    <rect x="280" y="81" width="144" height="165" rx="7" fill="#5eead4" stroke="#0f766e" stroke-width="1.8"/>
+    <text x="294" y="102" font-size="17" fill="#134e4a">B</text>
+
+    <!-- Reached within Italy only, so drawn DASHED; the prose says what dashed
+         means. Kept in the A palette, because these are A's vehicles sitting
+         inside B rather than anything of B's own. -->
+    <rect x="292" y="111" width="54" height="34" rx="5" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.6" stroke-dasharray="5 3"/>
+    <text x="305" y="133" font-size="15" fill="#4c1d95">A1</text>
+
+    <rect x="354" y="111" width="58" height="34" rx="5" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.6" stroke-dasharray="5 3"/>
+    <text x="363" y="127" font-size="13" fill="#4c1d95">A 21+</text>
+    <circle cx="373" cy="137" r="2.7" fill="#5b21b6"/>
+    <circle cx="383" cy="137" r="2.7" fill="#5b21b6"/>
+    <circle cx="393" cy="137" r="2.7" fill="#5b21b6"/>
+
+    <rect x="292" y="155" width="120" height="80" rx="6" fill="#2dd4bf" stroke="#0f766e" stroke-width="1.6"/>
+    <text x="306" y="176" font-size="16" fill="#134e4a">B1</text>
+
+    <!-- AM again, in the A palette both times: one category, two families -->
+    <rect x="306" y="186" width="92" height="40" rx="5" fill="#a78bfa" stroke="#5b21b6" stroke-width="1.5"/>
+    <text x="320" y="213" font-size="16" fill="#2e1065">AM</text>
+  </g>
+</svg>

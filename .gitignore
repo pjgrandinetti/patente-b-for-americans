@@ -1,0 +1,65 @@
+# macOS
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Source PDFs — large binary files, not needed to run the app
+# (questions.json and domandeb_images/ contain all extracted content)
+*.pdf
+
+# The whole sources/ tree, not just the PDFs in it. README has always said
+# "sources/ (gitignored)", but only *.pdf was, so anything else dropped in there
+# was committable. Found on 2026-09-17 when a 459 MB Wiktionary extract landed in
+# sources/ and showed up as an untracked file ready for the next `git add -A`.
+# This repo is going public; a half-gigabyte accident is not recoverable by
+# deleting it in a later commit.
+sources/
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Generated build backup (topic_reviews.json is generated from topic_reviews_md/)
+public_html/topic_reviews.json.bak
+topic_reviews.json.bak
+
+# improve_explanations.py resume state
+scripts/.improve_progress.json
+
+# Private server config (admin keys, reviewer codes) — never commit.
+# Copy public_html/secrets.example.php to public_html/secrets.php and fill in.
+public_html/secrets.php
+
+# High-res sign SVGs downloaded for review before wiring in
+sign_svgs_staging/
+
+# Local backup of originals replaced by high-res figures (revert safety net)
+replaced_images_backup/
+sign_library/
+review_verdicts.csv
+review_progress.json
+_server_f/
+
+# Local-only reference material (a copyrighted driving-school textbook and
+# the learner reports). Never commit. The pattern must match the folder's
+# case exactly: git's `core.ignorecase` is true on macOS, so a wrongly cased
+# pattern appears to work there and stops matching on a case-sensitive
+# filesystem, where an 819 MB copyrighted PDF would become committable.
+private/
+
+# Session notes, screenshots and drafts, never committed
+HANDOFF.md
+sidaQuiz.png
+facebook-post-*.txt
+scripts/.fixbare_progress.json

@@ -1,0 +1,83 @@
+# ── Cache policy for the Patente B PWA ───────────────────────────────
+# The server default sends a long max-age (≈15 days) for everything, which
+# stops Safari / installed PWAs from noticing new service-worker and shell
+# files. These rules override that so updates are picked up promptly.
+
+<IfModule mod_headers.c>
+  # App shell, code, and data: allow caching but always revalidate against the
+  # server (cheap 304s via ETag). Guarantees fresh HTML/JS/CSS/JSON once the
+  # worker updates, while still working offline through the service worker.
+  <FilesMatch "\.(html|js|css|json|webmanifest)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+
+  # Service worker: never stored. Apache applies <Files> and <FilesMatch>
+  # sections in the order written and the last "Header set" wins, so this
+  # block must come AFTER the .js rule above. Until 20261012z it came before
+  # it, and the browser received "no-cache, must-revalidate" for sw.js, which
+  # permits a cached copy. A worker script kept in the HTTP cache is the one
+  # way a device can be offered a stale version as an "update".
+  <Files "sw.js">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </Files>
+
+  # Sign images never change — let them cache for a year.
+  <FilesMatch "\.(png|jpe?g|gif|webp|svg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
+# Make sure the service worker is served with the correct MIME type.
+<IfModule mod_mime.c>
+  AddType application/javascript .js
+  AddType application/manifest+json .webmanifest
+</IfModule>
+
+# ── Security headers ─────────────────────────────────────────────────
+# The app is a fully self-hosted static PWA: no backend, no external scripts,
+# no eval, no frames, no secrets. These headers harden it as defense-in-depth.
+<IfModule mod_headers.c>
+  # Force HTTPS for a year. This host only; add includeSubDomains (and later
+  # preload) once every *.physyapps.com host is HTTPS-only.
+  Header always set Strict-Transport-Security "max-age=31536000"
+
+  # Don't let browsers MIME-sniff a response into a different content type.
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Block framing (clickjacking); CSP frame-ancestors covers modern browsers.
+  Header always set X-Frame-Options "DENY"
+
+  # Send only the origin (not the path) on cross-site navigations.
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Turn off device features the app never uses. MICROPHONE IS THE EXCEPTION
+  # and must stay at (self), however wrong that looks for an app that never
+  # records: WebKit gates navigator.audioSession on the microphone feature
+  # (DOMAudioSession::setType returns early when it is disallowed), and it
+  # refuses SILENTLY, so the assignment does nothing and the getter keeps
+  # answering 'auto'. That API is the only way to let the app be heard on an
+  # iPhone whose side switch is set to silent, which is what the Settings
+  # option "Play sounds and speech even when the phone is silenced" does. With
+  # microphone=() that option could not work whatever the app set (diagnosed
+  # 2026-09-17, after the self-test reported the session as 'auto' immediately
+  # after asking for 'playback'). (self) only permits SAME-ORIGIN code to ask
+  # for the microphone, and asking still raises the browser's own permission
+  # prompt; no code here asks, and the CSP above admits no third-party script
+  # that could. If you ever remove that Settings option, put this back to ().
+  Header always set Permissions-Policy "geolocation=(), camera=(), microphone=(self), payment=(), usb=(), accelerometer=(), gyroscope=(), magnetometer=()"
+
+  # Content Security Policy. Everything is same-origin. The single inline script
+  # is the pre-paint theme setter in index.html, allowlisted by its SHA-256 hash
+  # below; if you edit that inline script, recompute the hash (the page still
+  # works, but the theme may flash for one frame). 'unsafe-inline' is permitted
+  # for STYLES only, for the inline style="width:..%" progress bars.
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'sha256-ha43Xp+zvCrPyD3GYG4IZGjEsqmebz1zTic9Yp5vmoI='; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+</IfModule>
+
+# The guide pages moved from /guide/ to /about/ on 2026-09-24. Googlebot had
+# already crawled the old URLs, so they are sent on permanently rather than
+# left to 404, and any link to them keeps working.
+RedirectMatch 301 ^/guide/?$ /about/
+RedirectMatch 301 ^/guide/(.+)$ /about/$1

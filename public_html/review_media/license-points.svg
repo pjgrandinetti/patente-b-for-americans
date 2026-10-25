@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 150" role="img"
+     aria-label="The points scale, with twenty as both the starting total and a ceiling">
+  <title>A license starts at 20 points and deductions run down toward 0. A recovery course adds points but stops at 20. Only clean conduct reaches the range above 20, which ends at 30.</title>
+
+  <!-- Original work for this project. It shows the ONE thing a bullet list
+       hides: 20 is both where every licence starts and a ceiling that a
+       recovery course cannot pass, so the scale has two regions rather than
+       one, and the second is reachable only by conduct.
+
+       The first draft also carried "max 15" and a doubling badge. Both are
+       single facts that a bullet states perfectly well, and crowding them in
+       made the figure collide with itself, so they went back to the prose.
+       Tokens are numbers and an arrow, so one file serves both halves. -->
+  <rect x="1" y="1" width="468" height="148" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+
+    <!-- scale: x = 34 + points * 12.4, so 0 at 34, 20 at 282, 30 at 406 -->
+
+    <!-- a recovery course adds points and stops dead at 20 -->
+    <g>
+      <line x1="196" y1="34" x2="270" y2="34" stroke="#15803d" stroke-width="2.2"/>
+      <path d="M270 29 L280 34 L270 39 Z" fill="#15803d"/>
+      <text x="190" y="39" text-anchor="end" font-size="14" font-weight="700" fill="#14532d">+6</text>
+      <line x1="282" y1="24" x2="282" y2="46" stroke="#991b1b" stroke-width="2.6"/>
+    </g>
+
+    <!-- the ordinary range, 0 to 20, where deductions bite -->
+    <rect x="34" y="62" width="248" height="36" rx="4" fill="#bae6fd" stroke="#0369a1" stroke-width="1.8"/>
+    <!-- above 20, reachable only by clean conduct, so drawn dashed -->
+    <rect x="282" y="62" width="124" height="36" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.8"
+          stroke-dasharray="6 4"/>
+    <!-- zero, where a revision is ordered -->
+    <rect x="34" y="62" width="15" height="36" rx="3" fill="#ef4444" stroke="#991b1b" stroke-width="1.5"/>
+
+    <!-- axis -->
+    <line x1="34" y1="110" x2="420" y2="110" stroke="#334155" stroke-width="1.6"/>
+    <g stroke="#334155" stroke-width="1.4">
+      <line x1="34" y1="110" x2="34" y2="118"/>
+      <line x1="282" y1="110" x2="282" y2="118"/>
+      <line x1="406" y1="110" x2="406" y2="118"/>
+    </g>
+    <g font-size="14" font-weight="700" fill="#334155" text-anchor="middle">
+      <text x="34" y="136">0</text>
+      <text x="282" y="136">20</text>
+      <text x="406" y="136">30</text>
+    </g>
+  </g>
+</svg>

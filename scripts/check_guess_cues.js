@@ -1,0 +1,50 @@
+// "If you had to guess" on the Statistics page (maintainer, 2026-10-01): thirteen words and phrases whose statements lean true or false by 70% or more, in two tables, each row with its count, its percentage computed live from the bank and a reason; shown to every user, with no mock taken; Italian chrome for an Italian browser. Run: node scripts/check_guess_cues.js (UILANG=it-IT).
+const {JSDOM}=require(process.env.JSDOM||'/tmp/node_modules/jsdom'); const fs=require('fs');
+const root=process.env.SRC||require('path').resolve(__dirname,'../public_html');
+const LANG=process.env.UILANG||'en-US'; const IT=LANG.startsWith('it');
+let html=fs.readFileSync(root+'/index.html','utf8').replace(/<script[^>]*src="app\.js[^>]*><\/script>/,'');
+const dom=new JSDOM(html,{url:'https://patente.physyapps.com/',runScripts:'dangerously',pretendToBeVisual:true});
+const w=dom.window; Object.defineProperty(w.navigator,'language',{value:LANG}); Object.defineProperty(w.navigator,'languages',{value:[LANG]});
+w.fetch=async(u)=>{const p=root+'/'+String(u).replace(/^https:\/\/patente\.physyapps\.com\//,'').replace(/\?.*$/,'');return{ok:true,status:200,json:async()=>JSON.parse(fs.readFileSync(p,'utf8')),text:async()=>fs.readFileSync(p,'utf8')}};
+w.scrollTo=()=>{}; w.matchMedia=()=>({matches:false,addEventListener(){},addListener(){}});
+w.speechSynthesis={getVoices:()=>[],cancel(){},speak(){}}; w.SpeechSynthesisUtterance=class extends w.EventTarget{};
+const s=w.document.createElement('script'); s.textContent=fs.readFileSync(root+'/app.js','utf8'); w.document.body.appendChild(s);
+let fails=0; const ok=(c,m)=>{console.log((c?'ok  ':'FAIL')+' '+m); if(!c)fails++;};
+setTimeout(()=>{
+  w.document.querySelector('.nav-btn[data-screen="exam"]').click();
+  const el=w.document.getElementById('exam-guess');
+  const vis=e=>{for(let x=e;x;x=x.parentElement) if(x.classList&&x.classList.contains('hidden')) return false; return !!e;};
+  ok(el && vis(el),'the section is on the Statistics page with no mock taken');
+  const box=el.querySelector('details.stats-box');
+  ok(box && box.querySelector('summary').textContent===(IT?'Strategie statistiche':'Statistical strategies'),'a disclosure titled: '+(box&&box.querySelector('summary').textContent));
+  ok(!box.open,'closed by default');
+  box.open=true; box.dispatchEvent(new w.Event('toggle')); w.updateExamAvailability();
+  ok(el.querySelector('details.stats-box').open,'once opened it stays open when the page redraws');
+  const tables=[...el.querySelectorAll('table.guess-table:not(.topic-odds)')];
+  const rows=i=>[...tables[i].querySelectorAll('tbody tr')].map(r=>[...r.children].map(c=>c.textContent));
+  ok(tables.length===2 && rows(0).length===8 && rows(1).length===5,'two tables: 8 cues lean false, 5 lean true');
+  ok([...rows(0),...rows(1)].every(r=>parseInt(r[2])>=70 && parseInt(r[1].replace(/\D/g,''))>=50),'every cue at 70% or more over 50 or more statements');
+  const solo=rows(0).find(r=>r[0]==='solo'); ok(solo && Math.abs(parseInt(solo[2])-76)<=1 && solo[1].replace(/\D/g,'')==='242','solo: 242 statements, 76% false ('+solo+')');
+  ok(rows(0).every((r,i,a)=>i===0||parseInt(a[i-1][2])>=parseInt(r[2])),'strongest first');
+  ok([...rows(0),...rows(1)].every(r=>r[3].length>5),'every row has a reason');
+  ok(IT ? /più probabilmente vera o falsa/.test(el.textContent) && /Perché/.test(el.textContent) : /more likely to be true or false/.test(el.textContent) && /Why/.test(el.textContent),'chrome in the reader\'s language');
+  ok(el.previousElementSibling && (el.previousElementSibling.id==='exam-weak' || el.previousElementSibling.id==='exam-status'),'placed after the diagnosis');
+  // The topic table (20261007u): 25 topics, the likeliest statement first, eight topics at "1 or 2".
+  const odds=[...el.querySelectorAll('table.topic-odds tbody tr')].map(r=>[...r.children].map(c=>c.textContent));
+  const num=x=>parseFloat(x.replace(',','.'));
+  ok(odds.length===25 && odds.filter(r=>r[2]===(IT?'1 o 2':'1 or 2')).length===8 && odds.filter(r=>r[2]==='1').length===17,'the topic table lists 25 topics, eight of them with a second place');
+  ok(odds.every((r,i,a)=>i===0||num(a[i-1][3])>=num(r[3])) && num(odds[0][3])>1 && num(odds[24][3])<0.2,'ordered by the chance per sheet, from '+odds[0][3]+' to '+odds[24][3]);
+  ok(odds[0][1]==='126' && odds[0][3]===(IT?'1,3%':'1.3%'),'first row: 126 statements at 1.3% ('+odds[0].join(' | ')+')');
+  const pos=x=>el.textContent.indexOf(x);
+  ok(pos(IT?'Quali argomenti ripassare per primi':'Which topics to review first')>=0 && pos(IT?'Quali argomenti':'Which topics')<pos(IT?'Se dovessi tirare a indovinare':'If you had to guess'),'the topic part comes first, then If you had to guess as a heading');
+  ok(IT ? /Il Ministero non pubblica questa regola/.test(el.textContent) && !/Course books/.test(el.textContent) : /The Ministry does not publish this rule/.test(el.textContent),'the text says the rule is not published');
+  // Each topic name opens that topic's notes (20261008a).
+  const links=[...el.querySelectorAll('table.topic-odds .topic-odds-link')];
+  let opened=null; const orig=w.openReview; w.openReview=t=>{opened=t;};
+  links[0].click();
+  ok(links.length===25 && opened && w.topicShortUi(opened)===links[0].textContent,'25 topic names are links; the first opens its own notes: '+(opened||'').slice(0,40));
+  w.updateExamAvailability(); opened=null; el.querySelector('table.topic-odds .topic-odds-link').click();
+  ok(!!opened,'the link still works after the page redraws');
+  w.openReview=orig;
+  console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);
+},2500);

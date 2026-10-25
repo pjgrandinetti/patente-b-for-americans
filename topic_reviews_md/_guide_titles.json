@@ -1,0 +1,118 @@
+{
+  "_comment": [
+    "English titles and one-line descriptions for the generated guide pages",
+    "(scripts/build_topic_pages.py). The Ministry's own topic strings are",
+    "Italian and read as bureaucratic Italian even to an Italian, so they make",
+    "poor page titles for an American searching in English.",
+    "",
+    "`title` is the <h1> and the first half of the <title> tag. Write it the way",
+    "somebody would SAY the subject, not the way the Ministry files it.",
+    "`desc` is the meta description and the line under the entry on the index",
+    "page: one sentence, under about 155 characters, saying what the page",
+    "covers. Both are learner-facing prose, so the app's writing rules apply:",
+    "plain English, complete sentences, no colloquialisms.",
+    "",
+    "Keyed by the markdown file's leading number. The generator fails if a",
+    "topic has no entry here, so a new topic cannot ship untitled."
+  ],
+  "01": {
+    "title": "Italian Information Signs",
+    "desc": "Blue and white signs that tell you where you are and what is ahead: route numbers, place names, services, tunnels and lay-bys."
+  },
+  "02": {
+    "title": "Italian Mandatory Signs",
+    "desc": "The blue circles that tell you what you must do: compulsory direction, minimum speed, snow chains, and the lanes reserved for each kind of traffic."
+  },
+  "03": {
+    "title": "Italian Warning Signs",
+    "desc": "The red triangles, what each one warns of, how far ahead it stands, and what the law expects you to do when you see one."
+  },
+  "04": {
+    "title": "Italian Prohibition Signs",
+    "desc": "The red circles: no entry, no passing, no stopping, no parking, weight and size limits, and exactly how far each prohibition reaches."
+  },
+  "05": {
+    "title": "Italian Right-of-Way Signs",
+    "desc": "STOP, give way, the priority road and the signs that end it, and which vehicle goes first when two of these meet."
+  },
+  "06": {
+    "title": "Italian Temporary and Roadworks Signs",
+    "desc": "Signs at roadworks, complementary signs, delineators and barriers, and why a temporary sign overrides the permanent one beside it."
+  },
+  "07": {
+    "title": "Italian Road Markings",
+    "desc": "Lines painted on the road: centre lines, lane lines, edge lines, arrows, crossings and the markings on obstacles, and which may be crossed."
+  },
+  "08": {
+    "title": "Italian Supplementary Sign Panels",
+    "desc": "The small rectangular panels under a sign that say how far, how long, which vehicles and which hours the sign above applies to."
+  },
+  "09": {
+    "title": "Safe Following Distance in Italy",
+    "desc": "How much space the law requires behind the vehicle in front, how braking distance grows with speed, and the rules for tunnels and heavy vehicles."
+  },
+  "10": {
+    "title": "Passing and Overtaking Rules in Italy",
+    "desc": "When you may pass, which side you pass on, where passing is forbidden outright, and what the vehicle being passed has to do."
+  },
+  "11": {
+    "title": "Italian Speed Limits",
+    "desc": "The limits on each kind of road, what lowers them, the separate limits for new drivers and for heavy vehicles, and the penalties for exceeding them."
+  },
+  "12": {
+    "title": "Stopping and Parking in Italy",
+    "desc": "The difference between fermata, sosta and arresto, where each is allowed, and the rules for parking on a hill, in a town and on a highway."
+  },
+  "13": {
+    "title": "Rules of the Road in Italy",
+    "desc": "Where to position your vehicle, how to change lane and turn, who goes first at an intersection, and what to do for emergency vehicles and processions."
+  },
+  "14": {
+    "title": "Using Lights and the Horn in Italy",
+    "desc": "Which lights to use by day, at night, in fog and in a tunnel, when the horn may be sounded, and what each warning light on the dashboard means."
+  },
+  "15": {
+    "title": "Italian Traffic Lights and Police Signals",
+    "desc": "What each light and arrow means, the yellow you may cross and the yellow you may not, and the hand signals a traffic officer uses."
+  },
+  "16": {
+    "title": "Italian Road and Vehicle Definitions",
+    "desc": "The words the Italian road code defines and the exam depends on: carriageway, lane, shoulder, built-up area, and every class of vehicle."
+  },
+  "17": {
+    "title": "Fitness to Drive in Italy",
+    "desc": "Alcohol and drug limits, the effect of fatigue, medicines and illness, the blood alcohol table, and the penalties for driving unfit."
+  },
+  "18": {
+    "title": "Accident Prevention and First Aid in Italy",
+    "desc": "Defensive driving, what the law requires at the scene of a crash, how to protect the scene, and the first aid you may and may not give."
+  },
+  "19": {
+    "title": "Seat Belts and Child Seats in Italy",
+    "desc": "Who must wear a belt and when, how children are restrained by height and age, airbags, helmets, and the reflective vest and warning triangle."
+  },
+  "20": {
+    "title": "Vehicle Parts and Maintenance for Safety",
+    "desc": "Tires, brakes, steering, suspension and lights: what each does, how it fails, and the checks the driver is responsible for."
+  },
+  "21": {
+    "title": "Loads, Trailers and Breakdowns in Italy",
+    "desc": "Load limits and overhang, towing a trailer or a broken-down vehicle, what to do when you stop on a highway, and the rules for a caravan."
+  },
+  "22": {
+    "title": "Italian Driving Licenses and Documents",
+    "desc": "Every license category and its minimum age, the points system, the papers you must carry, and the restrictions on a new driver."
+  },
+  "23": {
+    "title": "Insurance and Liability in Italy",
+    "desc": "Compulsory RCA insurance, what civil, criminal and administrative liability each mean, and the penalties for driving uninsured."
+  },
+  "24": {
+    "title": "Fuel Economy and Pollution in Italy",
+    "desc": "Driving to use less fuel, what each pollutant does, the rules on noise and idling, and the restrictions a city may impose on traffic."
+  },
+  "25": {
+    "title": "Right of Way at Italian Intersections",
+    "desc": "The intersection diagrams the exam draws, the order the vehicles go in, and the rule that decides each one."
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Patente B Study App for Americans",
+  "short_name": "Patente B",
+  "description": "Study app for the Italian driver's license written test (Patente B), written for Americans. Every official question in English and Italian, with the rule behind each answer.",
+  "scope": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdfaf4",
+  "theme_color": "#5546d6",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/",
+      "accept": {
+        "application/x-patente": [
+          ".patente"
+        ]
+      }
+    }
+  ],
+  "share_target": {
+    "action": "/",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "files": [
+        {
+          "name": "file",
+          "accept": [
+            "application/x-patente",
+            ".patente"
+          ]
+        }
+      ]
+    }
+  }
+}

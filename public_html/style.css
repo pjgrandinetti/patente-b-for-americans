@@ -1,0 +1,3436 @@
+/* ── Reset & base ──────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Warm & Friendly Aesthetic — inviting, encouraging, soft warmth */
+  --accent:      #5546d6; /* warm blue-violet */
+  --accent-dim:  #4338ca;
+  --accent-tint: #f0eefc; /* pale violet wash */
+  --accent-border: #d8d2f6;
+  /* A surface that must read as floating ABOVE --card-bg (the sticky note in
+     the concept review). --accent-tint is too close to the card to separate
+     from it, so this is a step deeper, still well behind --text. */
+  --note-bg:     #dcd6f5;
+  --note-border: #b9aeee;
+  /* Amber and red as INK, for a glyph or a thin border on the card. The bar
+     colors are mixed for wide filled bars and are far too pale for text:
+     --bar-warn on white measures 1.97, unreadable. These measure 5.2 and 5.5. */
+  --warn-ink:   #a15c00;
+  --danger-ink: #c62f28;
+
+  /* Semantic feedback */
+  --correct:  #2e9e5b; /* friendly green */
+  --wrong:    #ed5a52; /* warm coral red */
+
+  --green:    var(--correct);
+  --red:      var(--wrong);
+
+  /* Surfaces */
+  --bg:       #fdfaf4; /* warm ivory */
+  --card-bg:  #ffffff;
+  --inset:    #f7f3ea; /* soft warm sand */
+  --text:     #3c3640; /* warm charcoal */
+  --muted:    #8c8492; /* warm gray */
+  --border:   #ece5da; /* warm border */
+  --radius:   12px;
+  --shadow:   rgba(85, 70, 214, 0.10);
+
+  /* Progress bar states */
+  --bar-empty:  #ece5da;
+  --bar-danger: #f08a76; /* warm coral */
+  --bar-warn:   #f1ab46; /* warm amber */
+  --bar-good:   #4fbd83; /* fresh green */
+
+  /* Legacy aliases */
+  --unseen:   var(--bar-empty);
+  --learning: var(--bar-warn);
+  --mastered: var(--bar-good);
+  --white:    #ffffff;
+}
+
+/* ── Dark theme ──────────────────────────────────────────────────
+   Applied via [data-theme="dark"] on <html> (set by an early inline script
+   and the in-app toggle). Only the CSS variables change; the rest of the
+   stylesheet is theme-agnostic because it reads these variables. */
+:root[data-theme="dark"] {
+  --accent:      #9a8cf5; /* lifted violet for contrast on dark */
+  --accent-dim:  #b3a7f8;
+  --accent-tint: #2b2545; /* deep violet wash */
+  --accent-border: #463d6e;
+  --note-bg:     #3d3468;
+  --note-border: #5d5194;
+  --warn-ink:   #e0a23f;
+  --danger-ink: #f0726a;
+
+  --correct:  #43c47e;
+  --wrong:    #f0726a;
+  --green:    var(--correct);
+  --red:      var(--wrong);
+
+  --bg:       #161219; /* warm near-black */
+  --card-bg:  #1f1b26;
+  --inset:    #272230;
+  --text:     #ece7f1;
+  --muted:    #a59caf;
+  --border:   #342e3e;
+  --shadow:   rgba(0, 0, 0, 0.45);
+
+  --bar-empty:  #342e3e;
+  --bar-danger: #e87a63;
+  --bar-warn:   #e0a23f;
+  --bar-good:   #45b97a;
+
+  --unseen:   var(--bar-empty);
+  --learning: var(--bar-warn);
+  --mastered: var(--bar-good);
+}
+
+html { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+/* ── Nav ────────────────────────────────────────────────────────── */
+#nav {
+  background: var(--card-bg);
+  border-bottom: 2px solid var(--accent);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .75rem 1.25rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+/* Session progress drawn ON the nav's 2px bottom border, which is otherwise a
+   plain accent rule. The border stays the empty track and this fills it from
+   the left, so the bar costs no extra height. It sits at bottom: -2px because
+   an absolute child is placed against the PADDING box, and the border is the
+   2px below that. */
+.nav-progress {
+  position: absolute; left: 0; right: 0; bottom: -2px; height: 2px;
+  pointer-events: none;
+}
+/* One segment per card of the topic, so the cards still to clear can be
+   counted along the line. The container's own color shows through the flex gap
+   and is what makes each hairline gap read as a gap: it cuts the remaining
+   (accent) stretch into segments exactly as it cuts the cleared (green) one. */
+.nav-progress-bar {
+  display: flex; height: 100%; width: 0;
+  background: var(--bg);
+}
+.nav-progress-seg {
+  flex: 1 1 0; min-width: 0;
+  background: var(--accent);
+  transition: background .3s ease;
+}
+.nav-progress-seg.is-done { background: var(--bar-good); }
+.nav-logo { cursor: pointer; display: flex; align-items: center; }
+.nav-logo-icon { height: 30px; width: 30px; border-radius: 7px; display: block; }
+.nav-links { display: flex; gap: .5rem; align-items: center; margin-left: auto; }   /* tabs at the right; icon and Resume at the left */
+.nav-btn { display: inline-flex; align-items: center; gap: .4rem; white-space: nowrap; }
+.nav-ico { font-size: 1rem; line-height: 1; }
+.nav-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: var(--radius);
+  padding: .35rem .85rem;
+  cursor: pointer;
+  font-size: .9rem;
+  transition: background .15s, color .15s, border-color .15s;
+}
+.nav-btn.active {
+  background: var(--accent-tint);
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
+/* Hover only where a pointer can hover. On iOS a tap leaves :hover stuck on
+   the button until something else is tapped, so the ▶ button stayed tinted
+   and outlined for the whole study session after Resume was pressed, which
+   read as a selected tab (maintainer's screenshot, 2026-09-30). */
+@media (hover: hover) {
+  .nav-btn:hover {
+    background: var(--accent-tint);
+    border-color: var(--accent-border);
+    color: var(--accent);
+  }
+}
+/* Shared icon-only nav buttons (theme toggle, reviewer toggle). */
+.nav-icon-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  padding: .3rem .5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  opacity: .7;
+  transition: opacity .15s, filter .15s, background .15s, border-color .15s;
+}
+.nav-icon-btn:hover {
+  opacity: 1;
+  background: var(--accent-tint);
+  border-color: var(--accent-border);
+}
+/* Reviewer toggle stays extra-quiet (grayscale) until used. */
+.nav-dev-toggle { opacity: .45; filter: grayscale(1); }
+.nav-dev-toggle:hover { opacity: .9; filter: none; }
+.nav-dev-toggle.is-on {
+  opacity: 1;
+  filter: none;
+  background: var(--accent-tint);
+  border-color: var(--accent-border);
+}
+/* Quick-mode toggle: highlight when active. */
+#btn-quick-toggle.is-on {
+  opacity: 1;
+  background: var(--accent-tint);
+  border-color: var(--accent-border);
+}
+
+/* ── Screens ─────────────────────────────────────────────────────── */
+.screen { display: none; max-width: 860px; margin: 0 auto; padding: 1.5rem 1rem; }
+.screen.active { display: block; }
+.hidden { display: none !important; }
+
+.readiness-ring-wrap {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+}
+#readiness-ring { transform: rotate(-90deg); }
+.ring-bg  { fill: none; stroke: var(--bar-empty); stroke-width: 10; }
+.ring-fg  {
+  fill: none;
+  stroke: var(--green);
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+  transition: stroke-dashoffset .6s ease;
+}
+.ring-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ring-label span { font-size: 1.4rem; font-weight: 700; }
+.ring-label small { color: var(--muted); font-size: .72rem; text-align: center; max-width: 84px; line-height: 1.2; }
+/* Below the ready banner's bar the ring is amber (20261007i). */
+.ring-fg.is-short { stroke: var(--warn-ink); }
+
+/* ── "How it works" rules ────────────────────────────────────────── */
+.rules-note {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+.backup-controls + .rules-note { margin-top: 2.5rem; }
+.rules-note > summary {
+  cursor: pointer;
+  padding: .8rem 1.1rem;
+  font-weight: 600;
+  font-size: .92rem;
+  color: var(--accent-dim);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.rules-note > summary::-webkit-details-marker { display: none; }
+.rules-note > summary::before {
+  content: "▸";
+  font-size: .8rem;
+  transition: transform .15s;
+}
+.rules-note[open] > summary {
+  background: var(--accent-tint);
+  border-bottom: 1px solid var(--border);
+}
+.rules-note[open] > summary::before { transform: rotate(90deg); }
+.rules-note > summary:hover { color: var(--accent); }
+.rules-body {
+  padding: 1.1rem 1.35rem 1.2rem;
+  font-size: .85rem;
+  line-height: 1.65;
+  color: var(--text);
+}
+.rules-body p { margin: 0 0 .95rem; }
+.rules-body p:last-child { margin-bottom: 0; }
+.rules-body ul {
+  list-style: none;
+  margin: .25rem 0 1.05rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+}
+.rules-body ul li {
+  padding-left: 1.1rem;
+  position: relative;
+}
+.rules-body ul li::before {
+  content: "•";
+  position: absolute;
+  left: .2rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+.rules-body ol {
+  margin: .25rem 0 1.05rem;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+}
+.rules-body ol li { padding-left: .25rem; }
+/* A bulleted list inside a numbered step (the conditions on the certificato
+   anamnestico, 20261012v): `ol li` above would otherwise take its padding
+   and put the bullet on the first letter. Tighter, since it is one list. */
+.rules-body ol li li { padding-left: 1.1rem; }
+.rules-body li ul { gap: .3rem; margin: .4rem 0 .6rem; }
+/* A paragraph continuing a bullet: stays inside the item, so it lines up with
+   the bullet's text instead of jumping back to the left margin. */
+.rules-body li .li-cont { margin: .5rem 0 0; }
+.rules-body ol li::marker { color: var(--accent); font-weight: 700; }
+.rules-body strong { color: var(--accent-dim); }
+/* The time-commitment table in "How to use this app": one label column and
+   five rate columns, so it stays compact and the numbers line up. */
+.rules-table {
+  width: auto;
+  max-width: 34rem;
+  border-collapse: collapse;
+  margin: .25rem auto .95rem;
+  font-size: .8rem;
+  line-height: 1.35;
+}
+.rules-table th,
+.rules-table td {
+  padding: .25rem .4rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  text-align: right;
+  white-space: nowrap;
+}
+.rules-table th:first-child,
+.rules-table td:first-child { text-align: left; white-space: normal; }
+.rules-table th { color: var(--muted); font-weight: 600; }
+.rules-table td:first-child { font-weight: 600; }
+
+.card-instruction {
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: .6rem;
+}
+
+.dashboard-level-label {
+  font-size: .85rem;
+  color: var(--muted);
+  margin: -.5rem 0 1.25rem;
+  line-height: 1.5;
+}
+.dashboard-level-label strong { color: var(--accent-dim); }
+/* Overall card-clearing progress bar — shown on the dashboard at every level. */
+.cards-progress { margin: .5rem 0 1.25rem; }
+.cards-progress .progress-bar-wrap { height: 10px; margin-top: 0; }
+.cards-progress .progress-bar { height: 10px; }
+.cards-progress-label { font-size: .8rem; color: var(--muted); margin-top: .4rem; }
+
+/* ── Banners ─────────────────────────────────────────────────────── */
+.banner {
+  border-radius: var(--radius);
+  padding: .85rem 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.banner-success { background: #e6f6ec; color: #1d6e3d; border: 1px solid #b4e0c3; }
+.banner-warn    { background: #fdf3e0; color: #8a5a12; border: 1px solid #f3d49a; }
+.exam-date-box { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .85rem; margin: -.35rem 0 1rem; padding: .7rem 1.25rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); font-size: .92rem; }
+.exam-date-box .link-btn { background: none; border: 0; padding: 0; font: inherit; color: var(--accent); text-decoration: underline; cursor: pointer; }
+.exam-date-box.hidden { display: none; }
+.exam-date-box .exam-date-text { flex: 1 1 16rem; min-width: 0; }
+.exam-date-box .btn-primary { padding: .4rem .9rem; }
+.exam-date-box .btn-secondary { padding: .3rem .8rem; border-radius: 8px; font: inherit; cursor: pointer; }
+.exam-date-box .exam-date-text strong { display: block; }
+.exam-date-box .exam-date-advice { margin: .3rem 0 .45rem; }
+.exam-date-box .exam-date-today { display: grid; grid-template-columns: max-content max-content; column-gap: 1.25rem; row-gap: .15rem; margin: 0 0 .2rem; }
+.exam-date-box .exam-date-today .exam-date-row { display: contents; }
+.exam-date-box .exam-date-today dt { color: var(--muted); }
+.exam-date-box .exam-date-today dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+.review-ctx { display: block; font-size: .8rem; color: var(--accent); margin-bottom: .1rem; }
+.review-missed { display: block; font-size: .8rem; color: var(--wrong, #c0392b); text-align: right; }
+.exam-date-box .exam-date-pool { flex: 1 1 100%; font-size: .88rem; }
+.exam-date-box .exam-date-pool summary { cursor: pointer; color: var(--accent); }
+.exam-date-box .exam-date-pool table { border-collapse: collapse; margin: .4rem 0 .3rem; }
+.exam-date-box .exam-date-pool th, .exam-date-box .exam-date-pool td { text-align: left; padding: .15rem 1rem .15rem 0; border-bottom: 1px solid var(--border); }
+.exam-date-box .exam-date-pool th.num, .exam-date-box .exam-date-pool td.num { text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; }
+.exam-date-box .exam-date-pool p { margin: .2rem 0 0; color: var(--muted); }
+.exam-date-box input[type="date"] { font: inherit; padding: .3rem .5rem; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--text); max-width: 100%; }
+.banner-install { background: var(--accent-tint); color: var(--text); border: 1px solid var(--accent-border); }
+.banner-install strong { display: block; margin-bottom: .15rem; color: var(--accent-dim); }
+.install-text { flex: 1; font-size: .88rem; line-height: 1.5; }
+.banner-dismiss {
+  background: transparent; border: none; color: var(--muted);
+  font-size: 1rem; cursor: pointer; line-height: 1;
+  padding: .25rem .45rem; border-radius: 6px; flex-shrink: 0;
+}
+.banner-dismiss:hover { background: rgba(0,0,0,.06); color: var(--text); }
+
+/* ── Update prompt ───────────────────────────────────────────────── */
+.update-banner {
+  position: fixed;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  max-width: 480px;
+  margin: 0 auto;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: .75rem 1rem;
+  box-shadow: 0 4px 16px var(--shadow);
+}
+.update-text { flex: 1; font-size: .9rem; line-height: 1.4; }
+.update-reload {
+  background: #fff;
+  color: var(--accent-dim);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: .4rem .9rem;
+  font-size: .85rem;
+  flex-shrink: 0;
+}
+.update-reload:hover { background: var(--accent-tint); }
+.update-banner .banner-dismiss { color: rgba(255,255,255,.85); }
+.update-banner .banner-dismiss:hover { background: rgba(255,255,255,.18); color: #fff; }
+/* Storage-failure warning reuses the banner layout with an alert color. */
+.storage-banner { background: #b3261e; }
+
+/* ── Buttons ─────────────────────────────────────────────────────── */
+.btn-primary, .btn-secondary, .btn-ghost {
+  border: none; border-radius: var(--radius); cursor: pointer;
+  font-size: 1rem; padding: .6rem 1.4rem;
+  transition: background .15s, color .15s, border-color .15s;
+}
+.btn-primary   { background: var(--bg); color: var(--text); border: 2px solid var(--text); font-weight: 600; }
+.btn-primary:hover   { background: var(--inset); }
+.btn-secondary { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
+.btn-secondary:hover { background: var(--inset); }
+.btn-ghost     { background: transparent; color: var(--muted); }
+.btn-ghost:hover { color: var(--text); }
+.btn-primary:disabled, .btn-ghost:disabled {
+  opacity: .4; cursor: default; pointer-events: none;
+}
+.btn-large     { font-size: 1.1rem; padding: .85rem 2rem; }
+.btn-file-label {
+  display: inline-block;
+  background: var(--card-bg);
+  color: var(--text);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: .6rem 1.4rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.dashboard-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+
+/* ── Section titles ──────────────────────────────────────────────── */
+.section-title { font-size: 1.15rem; font-weight: 600; margin-bottom: 1rem; }
+
+/* ── Topic grid ──────────────────────────────────────────────────── */
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: .85rem;
+  margin-bottom: 2rem;
+}
+.app-tagline {
+  text-align: center;
+  color: var(--muted);
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .25rem auto 1.25rem;
+  max-width: 40ch;
+  /* The 40ch cap wraps this line, and where it breaks depends on the language:
+     the Italian used to leave "offline" alone on the second line. Balancing
+     evens the lines instead of filling the first one greedily. Ignored by
+     browsers that do not support it, which simply wrap as before. */
+  text-wrap: balance;
+}
+.app-tagline strong { color: var(--accent-dim); }
+.topic-group-header {
+  grid-column: 1 / -1;
+  margin: 1.4rem 0 0;
+  font-size: .9rem;
+  font-weight: 700;
+  color: var(--accent-dim);
+  letter-spacing: .01em;
+}
+.topic-grid > .topic-group-header:first-child { margin-top: 0; }
+.topic-card {
+  background: color-mix(in srgb, var(--topic-tint, transparent) 7%, var(--card-bg));
+  border: 1px solid color-mix(in srgb, var(--topic-tint, var(--border)) 30%, var(--border));
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: 0 1px 4px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.topic-card h3 { font-size: .95rem; margin-bottom: .5rem; }
+
+/* Topic card header */
+.topic-title-it {
+  font-size: .92rem; font-weight: 700; color: var(--text);
+  margin-bottom: .25rem; line-height: 1.35;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.topic-meta-row { display: flex; flex-direction: column; gap: .1rem; margin-bottom: .5rem; min-width: 0; align-items: center; width: 100%; }
+.topic-title-en {
+  font-size: .82rem; font-weight: 400; font-style: italic; color: var(--text); opacity: .8;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden; max-width: 100%;
+}
+.topic-qrange { font-size: .68rem; color: var(--muted); opacity: .65; }
+
+/* Progress section — sits below the action buttons, above Reset. */
+.progress-bar-wrap { background: var(--bar-empty); border-radius: 4px; height: 6px; position: relative; margin-top: .75rem; width: 100%; }
+.progress-bar {
+  height: 6px;
+  border-radius: 4px;
+  background: var(--bar-empty);
+  transition: width .4s ease, background .4s ease;
+}
+/* The topic tile's bar: one segment per card, from drawCardSegments, so the
+   cards left in a topic can be counted here as well as in the study header.
+   The gap is the container's own background showing through, and the tile's
+   tint is a custom property, so repeating the tile's background expression
+   here makes each gap read as tile rather than as a stripe of some other
+   color. `.progress-bar` is left alone: the dashboard's overall bar uses it
+   and spans 849 cards, where a segment would be under two pixels wide. */
+.topic-bar {
+  display: flex;
+  height: 6px;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--topic-tint, transparent) 7%, var(--card-bg));
+}
+.topic-bar-seg {
+  flex: 1 1 0; min-width: 0;
+  background: var(--bar-empty);
+  transition: background .4s ease;
+}
+/* Before anything is answered the cleared segments match the track, exactly as
+   the old percentage fill did, so an untouched topic still reads as empty. */
+.topic-bar-seg.is-done { background: var(--bar-empty); }
+.topic-bar.learning .topic-bar-seg.is-done { background: var(--bar-warn); }
+.topic-bar.mastered .topic-bar-seg.is-done { background: var(--bar-good); }
+.topic-bar.danger   .topic-bar-seg.is-done { background: var(--bar-danger); }
+
+.progress-bar.learning { background: var(--bar-warn); }
+.progress-bar.mastered { background: var(--bar-good); }
+.progress-bar.danger   { background: var(--bar-danger); }
+.topic-count  { font-size: .72rem; color: var(--muted); margin-top: .3rem; }
+
+/* Per-topic reset — quiet by default, red on hover to signal it's destructive */
+.topic-reset {
+  margin-top: .35rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--muted);
+  font-size: .72rem;
+  padding: .25rem .6rem;
+  cursor: pointer;
+  transition: color .15s, border-color .15s, background .15s;
+}
+.topic-reset:hover {
+  color: var(--bar-danger);
+  border-color: var(--bar-danger);
+  background: var(--inset);
+}
+
+/* Explicit action row on topic cards: primary "Study" + secondary "Review".
+   Both are real buttons sharing the row, so click targets never overlap. */
+.topic-actions {
+  display: flex;
+  gap: .4rem;
+  width: 100%;
+  /* Push the action row (and the progress + reset below it) to the card bottom
+     so the buttons align across cards regardless of title height. */
+  margin-top: auto;
+  padding-top: .7rem;
+}
+.topic-actions > button { flex: 1; }
+
+/* Both card actions share one quiet, consistent style — soft tint, dark text,
+   no harsh solid-blue fill. */
+.topic-study-btn,
+.topic-review-btn {
+  background: var(--accent-tint);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .4rem .7rem;
+  cursor: pointer;
+  transition: background .15s;
+}
+.topic-study-btn:hover,
+.topic-review-btn:hover { background: color-mix(in srgb, var(--accent) 16%, var(--card-bg)); }
+
+/* ── Topic concept-review overlay (Phase 1.5) ────────────────────── */
+.review-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, .55);
+  display: flex;
+  align-items: flex-start;
+  /* NOT justify-content: center. If the dialog is ever wider than the screen
+     (a long unbreakable sync code did it on a phone), centering spills the
+     overflow to BOTH sides and the left edge is cut off with no way to scroll
+     to it. Aligning to the start and letting the dialog's own auto margins
+     center it keeps the left edge reachable. */
+  justify-content: flex-start;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+  /* Keep scrolling inside the overlay — don't let it chain to the page behind. */
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+/* Applied to <body> while any overlay is open: pin the page so it can't scroll
+   underneath (the reliable cross-browser/iOS fix for background scroll bleed). */
+.scroll-locked {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.review-dialog {
+  position: relative;
+  margin: 0 auto;            /* centers, and never pushes past the left edge */
+  min-width: 0;              /* let long content shrink instead of stretching */
+  background: var(--card-bg);
+  color: var(--text);
+  border-radius: 14px;
+  max-width: min(640px, 100%);
+  width: 100%;
+  padding: 1.6rem 1.5rem 1.4rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .3);
+}
+.review-close {
+  position: absolute;
+  top: .6rem;
+  right: .7rem;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--muted);
+  cursor: pointer;
+  padding: .25rem;
+}
+.review-close:hover { color: var(--text); }
+.lookup-remove-dialog { max-width: 420px; }
+.lookup-remove-lang { margin: 0 0 .75rem; }
+.lookup-remove-ack {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin: .75rem 0 1rem;
+  color: var(--muted);
+  font-size: .95rem;
+  cursor: pointer;
+}
+.review-title {
+  margin: 0 1.5rem .9rem 0;
+  font-size: 1.2rem;
+  color: var(--accent-dim);
+}
+.review-body { font-size: .92rem; line-height: 1.55; }
+.review-body h3 {
+  font-size: 1rem;
+  margin: 1.1rem 0 .4rem;
+  color: var(--accent-dim);
+}
+.review-body h4 { font-size: .9rem; margin: .9rem 0 .35rem; }
+.review-body p  { margin: .5rem 0; }
+/* A bolded color word is printed in its own color, so "its light is red" shows
+   the color it is naming. Each value is picked for legibility against the page
+   rather than for accuracy to paint: a true traffic red on a dark background is
+   hard to read, so these are lifted. The word itself still carries the meaning;
+   the color only reinforces it. */
+.review-body .c-red    { color: #d93b30; }
+.review-body .c-green  { color: #1f8a4c; }
+.review-body .c-blue   { color: #1d5fd0; }
+.review-body .c-amber  { color: #9a6b00; }
+.review-body .c-orange { color: #c2570a; }
+:root[data-theme="dark"] .review-body .c-red    { color: #ff8a7e; }
+:root[data-theme="dark"] .review-body .c-green  { color: #5fd493; }
+:root[data-theme="dark"] .review-body .c-blue   { color: #82aaff; }
+:root[data-theme="dark"] .review-body .c-amber  { color: #f2c14e; }
+:root[data-theme="dark"] .review-body .c-orange { color: #ffa45c; }
+.review-body ul, .review-body ol { margin: .5rem 0; padding-left: 1.4rem; }
+.review-body li { margin: .25rem 0; }
+/* Inline bold is emphasis only — keep it the normal text color so it never
+   clashes with the meaning (e.g. a bold "red triangle" must not read as violet). */
+.review-body strong { color: var(--text); font-weight: 700; }
+.review-body blockquote {
+  margin: .7rem 0;
+  padding: .5rem .8rem;
+  border-left: 3px solid var(--accent-border);
+  background: var(--accent-tint);
+  border-radius: 0 8px 8px 0;
+  font-size: .88rem;
+}
+.review-start { margin-top: 1.2rem; width: 100%; }
+.review-close-bottom { margin-top: 1.2rem; width: 100%; }
+/* Floating "to top / to bottom" pill inside the review overlay. Fixed to the
+   viewport (the overlay is the scroller), bottom-right, clear of the iOS
+   home indicator; same look as the study screen's floating pill. */
+.review-controls { display: none; }
+#review-overlay:not(.hidden) ~ .review-controls { display: block; }
+.review-ends {
+  position: fixed;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1001;
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid var(--accent-border);
+  background: var(--accent-tint);
+  border-radius: 999px;
+  box-shadow: 0 2px 8px var(--shadow);
+  overflow: hidden;
+}
+.review-end-btn {
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: .6rem .7rem;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+}
+.review-end-btn svg { display: block; }
+.review-end-btn + .review-end-btn { border-top: 1px solid var(--accent-border); }
+.review-end-btn:hover { filter: brightness(1.1); }
+.review-close-float {
+  position: fixed;
+  right: 18px;
+  top: calc(12px + env(safe-area-inset-top, 0px));
+  z-index: 1001;
+  width: 2.4rem; height: 2.4rem;
+  border: 1px solid var(--accent-border);
+  background: var(--accent-tint);
+  color: var(--accent);
+  border-radius: 999px;
+  font: inherit; font-size: 1.05rem; font-weight: 700; line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+.review-close-float:hover { filter: brightness(1.1); }
+
+/* Sign figures inside a review */
+/* Figure + its explanation as one bordered unit (see groupFigureBlocks). */
+.review-figblock {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: .2rem .9rem .55rem;
+  margin: 1rem 0;
+  background: color-mix(in srgb, var(--card-bg) 92%, var(--text) 8%);
+}
+.review-figblock .review-figs { margin: .6rem 0 .5rem; }
+.review-figblock > ul, .review-figblock > ol, .review-figblock > p { margin-top: .25rem; }
+.review-figblock > ul:last-child, .review-figblock > ol:last-child, .review-figblock > p:last-child { margin-bottom: .1rem; }
+.review-figs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+/* Dense catalog rows (4+ signs) render as a uniform grid so the signs line up in
+   even columns instead of drifting apart when their captions differ in length.
+   The 2-3 image rows stay flexible (content-sized) — see app.js. */
+.review-figs:not(.review-figs-single):not(.review-figs-few):not(.review-figs-pair) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+  justify-content: center;
+  align-items: start;
+}
+.review-figs:not(.review-figs-single):not(.review-figs-few) .review-fig { width: 150px; }
+.review-figs:not(.review-figs-single):not(.review-figs-few) .review-fig-img { max-width: 140px; }
+.review-fig { margin: 0; text-align: center; }
+.review-fig-img {
+  /* The concrete size is set per-image by app.js, which scales each figure by its
+     CONTENT (a blend of equal-height and equal-area) so a sparse one-word sign and
+     a dense multi-line sign show text at comparable sizes. These are pre-load
+     fallbacks so nothing flashes at intrinsic size before the load handler runs. */
+  height: 100px;
+  width: auto;
+  max-width: 320px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 5px;
+}
+.review-figs-single .review-fig-img { height: 150px; max-width: 360px; }
+.review-fig { max-width: 100%; min-width: 0; }
+/* Legacy jpegs carry a small white margin; the new svg/png/gif figures fill their
+   canvas edge-to-edge. Shrink the new formats slightly (centered, so the bordered
+   box is unchanged) so a row mixing both shares the same framing. Skipped for
+   standalone single figures. */
+.review-figs:not(.review-figs-single) .review-fig-img:not([src$=".jpeg"]) {
+  transform: scale(0.9);
+}
+
+.review-fig figcaption .rb-itxt { display: block; margin-top: .2rem; }
+.review-fig figcaption .rb-itxt.hidden { display: none; }
+.review-fig figcaption {
+  font-size: .72rem;
+  line-height: 1.25;
+  color: var(--muted);
+  max-width: 100%;         /* wrap within the cell/figure width */
+  margin: .35rem auto 0;   /* app.js caps max-width for 2-3 image rows; center it */
+}
+
+/* ── Footer / Support button ─────────────────────────────────────── */
+.app-footer {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.app-footer p {
+  color: var(--muted);
+  font-size: .85rem;
+  margin-bottom: .85rem;
+}
+/* ── Reviewer / developer mode ──────────────────────────────────── */
+.dev-flag { margin-top: .5rem; }
+.dev-flag-btn {
+  background: #fff5e6; color: #92400e; border: 1px solid #f0c27a;
+  border-radius: 6px; padding: 2px 8px; font-size: .72rem; cursor: pointer;
+  display: block; margin-left: auto;   /* compact pill, right-aligned */
+}
+.dev-flag-form { display: flex; flex-direction: column; gap: 8px; margin-top: 6px; width: 100%; }
+.dev-flag-form select, .dev-flag-form textarea {
+  /* 16px keeps iOS from auto-zooming the page when the field gains focus. */
+  font-size: 16px; padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px;
+  width: 100%;
+}
+.dev-flag-form .dev-flag-note {
+  min-height: 4.5em; resize: vertical; line-height: 1.4; font-family: inherit;
+}
+.dev-flag-actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+.dev-flag-form button {
+  font-size: .85rem; padding: 6px 14px; border-radius: 6px; cursor: pointer;
+  border: 1px solid var(--accent); background: var(--accent); color: #fff;
+}
+.dev-flag-form .dev-flag-del,
+.dev-flag-form .dev-flag-cancel { background: var(--card-bg); color: var(--text); border-color: var(--border); }
+/* Reviewer mode on the Reference lists (20261011z): a small ⚑ at the end of
+   each Vocabulary, Glossario and Numbers row, accented once the entry carries
+   an unsent comment, and the comment form on a line of its own under the row. */
+.entry-flag {
+  flex: none; background: none; border: 1px solid var(--border); border-radius: 6px;
+  color: var(--muted); font-size: .8rem; line-height: 1; padding: .25rem .4rem; cursor: pointer;
+}
+.entry-flag.is-flagged { color: var(--accent); border-color: var(--accent); }
+.has-flag-form { flex-wrap: wrap; }
+.review-row > .entry-flag { align-self: center; }
+/* The ⚑ is a third child of the row, so space-between would push the value
+   to the middle; the label grows into the free space instead. */
+.review-row > .review-fact { flex: 1 1 auto; }
+.has-flag-form > .dev-flag { flex-basis: 100%; width: 100%; order: 99; }
+
+.app-disclosures {
+  max-width: 52ch;
+  margin: 1.75rem auto 0;
+  text-align: left;
+}
+.app-disclosures > summary {
+  list-style: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: .72rem;
+  color: var(--muted);
+  opacity: .75;
+  padding: 4px 0;
+  user-select: none;
+}
+.app-disclosures > summary::-webkit-details-marker { display: none; }
+.app-disclosures > summary::before { content: "▸ "; font-size: .7em; }
+.app-disclosures[open] > summary::before { content: "▾ "; }
+.app-disclosures > summary:hover { opacity: 1; }
+.app-disclaimer {
+  max-width: 52ch;
+  margin: .9rem auto 0;
+  font-size: .72rem;
+  line-height: 1.5;
+  color: var(--muted);
+  opacity: .85;
+}
+.app-about {
+  margin: 1rem auto 0;
+  font-size: .8rem;
+}
+.app-about a { color: var(--muted); }
+.app-about a:hover { color: var(--text); }
+.app-copyright {
+  margin: 1rem auto 0;
+  font-size: .68rem;
+  color: var(--muted);
+  opacity: .7;
+}
+.app-version {
+  margin: .35rem auto 0;
+  font-size: .62rem;
+  color: var(--muted);
+  opacity: .5;
+  letter-spacing: .03em;
+}
+.kofi-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  background: #72a4f2;
+  color: #ffffff;
+  font-size: .95rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: .6rem 1.3rem;
+  border-radius: 999px;
+  box-shadow: 0 2px 6px var(--shadow);
+  transition: filter .15s, transform .1s;
+}
+.kofi-btn:hover { filter: brightness(1.05); transform: translateY(-1px); }
+.kofi-btn:active { transform: translateY(0); }
+.kofi-cup { font-size: 1.05rem; }
+/* Muted dark-blue so the button sits quietly on the dark background. */
+:root[data-theme="dark"] .kofi-btn { background: #303d63; color: #e9ecf8; }
+:root[data-theme="dark"] .kofi-btn:hover { filter: brightness(1.2); }
+
+.update-check {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .35rem;
+}
+.update-check .btn-ghost {
+  font-size: .85rem;
+  font-weight: 600;
+  padding: .5rem 1.2rem;
+  color: var(--accent);
+  background: var(--card-bg);
+  border: 1.5px solid var(--accent-border);
+  border-radius: var(--radius);
+}
+.update-check .btn-ghost:hover {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.update-check-status {
+  font-size: .8rem;
+  color: var(--muted);
+  min-height: 1em;
+}
+.update-check-status.found { color: var(--accent-dim); font-weight: 600; }
+
+/* ── Backup controls ─────────────────────────────────────────────── */
+.backup-controls { margin-top: 2rem; }
+.backup-controls p { color: var(--muted); font-size: .9rem; margin-bottom: 1rem; }
+.backup-buttons { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
+#drop-zone {
+  border: 2px dashed var(--border);
+  border-radius: 8px;
+  padding: .6rem 1.2rem;
+  color: var(--muted);
+  font-size: .9rem;
+  transition: border-color .15s;
+}
+#drop-zone.dragover { border-color: var(--accent); color: var(--accent); }
+/* ── Level selector ────────────────────────────────────────────────── */
+.level-selector {
+  display: flex;
+  gap: .75rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+/* Language toggle at the top of a concept review (L1 and L2 only). Lets the
+   reader see the same review in the other language without leaving the dialog. */
+.review-lang { display: flex; gap: .35rem; margin: -.25rem 0 .75rem; }
+
+/* ── "IT" reveal pills in the English concept notes ──────────────────── */
+/* One pill per paragraph, bullet and numbered item, opening that block's
+   Italian underneath it. The Italian sits INSIDE the same element, so it keeps
+   the bullet's indent and stays with its English when the page reflows. */
+.review-it-all {
+  font: inherit;
+  font-size: .78rem;
+  padding: .25rem .7rem;
+  margin: -.25rem 0 .75rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  align-self: flex-start;
+}
+.review-it-all:hover { border-color: var(--accent-border); color: var(--accent); }
+.review-it-all.is-on {
+  background: var(--accent-tint);
+  border-color: var(--accent-border);
+  color: var(--accent);
+  font-weight: 600;
+}
+.rb-it {
+  font: inherit;
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  line-height: 1;
+  padding: .16rem .34rem;
+  margin-left: .3rem;
+  vertical-align: .08em;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  /* Never let the pill wrap to a line of its own, orphaned from its text. */
+  white-space: nowrap;
+}
+.rb-it:hover { border-color: var(--accent-border); color: var(--accent); }
+.rb-it.is-on {
+  background: var(--accent-tint);
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
+.rb-itxt {
+  display: block;
+  margin: .4rem 0 .1rem;
+  padding-left: .6rem;
+  border-left: 2px solid var(--accent-border);
+  color: var(--muted);
+  font-size: .95em;
+}
+.rb-itxt.hidden { display: none; }
+.rb-itxt strong { color: var(--text); }
+.review-lang-btn {
+  font: inherit;
+  font-size: .8rem;
+  padding: .25rem .7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+.review-lang-btn:hover { border-color: var(--accent-border); color: var(--accent); }
+.review-lang-btn.active {
+  background: var(--accent-tint);
+  border-color: var(--accent-border);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.level-btn {
+  flex: 1;
+  min-width: 90px;
+  padding: .65rem .75rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  color: var(--text);
+  cursor: pointer;
+  text-align: center;
+  transition: border-color .15s, background .15s, color .15s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .2rem;
+}
+.level-btn:hover:not(:disabled) { border-color: var(--accent-border); background: var(--accent-tint); color: var(--accent); }
+.level-btn.active {
+  border-color: var(--accent);
+  background: var(--accent-tint);
+  color: var(--accent);
+}
+.level-pct  { font-size: .68rem; margin-top: .25rem; color: var(--muted); opacity: .8; }
+.level-btn.active .level-pct { color: var(--accent); opacity: .9; }
+.level-name { font-weight: 700; font-size: 1rem; }
+
+/* ── Level 1 English translation (shown below Italian) ───────────── */
+.stmt-english-primary { font-size: .85rem; color: var(--muted); margin-top: .25rem; font-style: italic; }
+.stmt-lookedup { font-size: .82rem; color: var(--muted); margin-top: .3rem; line-height: 1.45; }
+.stmt-lookedup-head { font-weight: 600; }
+.stmt-lookedup-w { padding-left: .8rem; }
+.stmt-lookedup-w i { font-style: italic; color: var(--text); margin-right: .3rem; }
+/* The English EXPLANATION shown under the Italian one after a wrong answer at
+   Solo italiano. It needs pre-line for the same reason .stmt-explanation does:
+   an explanation may carry a blank line between paragraphs and is set with
+   textContent, so without this 22934's three-step argument runs together. */
+.stmt-english-expl { white-space: pre-line; }
+/* L1 English-only: the translation IS the question, so style it as primary text. */
+.stmt-english-solo { font-size: 1rem; color: var(--text); margin-top: 0; font-style: normal; }
+/* English-only mode: per-statement IT reveal. The pill sits beside the number;
+   the revealed Italian renders as the secondary line (hierarchy inverted). */
+.stmt-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
+.stmt-head .stmt-number { margin-bottom: 0; }
+/* The number (with its 🤔 badge) on the left, the per-statement aids on the
+   right. The aids never shrink; a long number line wraps instead. */
+/* The left side WRAPS: with the ↺ and the 📖 both on the right, a phone has
+   no room for "#19265 missed 3 times" on one line, and a nowrap count used to
+   run on underneath the ↺ (maintainer's screenshot, 2026-09-30). The count
+   now drops to a second line under the number instead. */
+.stmt-head-left { display: flex; align-items: center; flex-wrap: wrap; gap: .1rem .4rem; min-width: 0; }
+/* The drill's miss count on the number line: muted like the number, and at
+   DRILL_ATTENTION misses it gains the warning mark and the card's wrong color,
+   so the statements that keep coming back are the ones that stand out. */
+.stmt-miss-count { font-size: .7rem; color: var(--muted); white-space: nowrap; }
+.stmt-miss-count.stmt-miss-hot { color: var(--wrong); font-weight: 600; opacity: 1; }
+.stmt-head-aids { display: flex; align-items: center; gap: .4rem; flex-shrink: 0; }
+.stmt-it-btn {
+  font-size: .68rem; font-weight: 700; letter-spacing: .03em; line-height: 1;
+  padding: 3px 9px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--accent-border); background: var(--accent-tint); color: var(--accent);
+}
+.stmt-it-btn.is-on { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* L2 post-answer English reveal: the EN pill reuses the IT pill's look; the
+   translation it reveals reuses the L1 English line style. */
+.stmt-en-reveal { margin-top: .45rem; }
+/* Buttons under an exam-review row (today only the link into the notes). */
+.exam-rev-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-top: .5rem; }
+
+/* "Why?" pill that unfolds the explanation after a correct answer. */
+.stmt-why { margin-top: .45rem; }
+.stmt-en-reveal .stmt-english-primary { margin-top: .35rem; }
+
+/* Speaker button (speech synthesis). It lives in the answer-button row, away
+   from the underlined vocabulary terms whose taps it used to intercept. */
+.stmt-tts {
+  border: 1px solid var(--border); background: var(--card-bg); cursor: pointer;
+  border-radius: 6px; font-size: 1rem; line-height: 1;
+  min-height: 36px; min-width: 42px; padding: .4rem .6rem;
+  opacity: .8; transition: opacity .15s, border-color .15s;
+}
+.stmt-tts:hover { opacity: 1; border-color: var(--accent-border); }
+/* 📖 per statement: the notes at the paragraph that answers this statement.
+   Same shape as the speaker button, but it rides at the top right of the
+   statement box, on the number line (see the comment in renderStatements). */
+.stmt-book {
+  border: 1px solid var(--border); background: var(--card-bg); cursor: pointer;
+  border-radius: 6px; font-size: 1.35rem; line-height: 1;
+  /* The glyph is larger than the speaker's but the BOX is the same 42x36. The
+     padding is trimmed to pay for it, and inline-flex centers the glyph once
+     the min sizes, not the padding, decide the box. Keeping the padding in rem
+     means the button still grows for a reader using a large text size. */
+  min-height: 36px; min-width: 42px; padding: .2rem .4rem;
+  display: inline-flex; align-items: center; justify-content: center;
+  opacity: .8; transition: opacity .15s, border-color .15s;
+}
+.stmt-book:hover { opacity: 1; border-color: var(--accent-border); }
+/* ↺ "answer again", on an answered statement whose answer was given in this
+   session. It shipped at the weight of a rescue control, a muted glyph at .55
+   opacity, on the reasoning that it is not a study aid and should not compete
+   with the 📖. The maintainer then looked for it on a real device and reported
+   it missing, twice, while it was on screen the whole time: a thin outline
+   glyph beside a full-color 📖 reads as empty space. So it now carries the
+   📖's weight. A control nobody can find has the same value as one that was
+   never added, and discretion is not worth that. */
+.stmt-undo { font-size: 1.25rem; font-weight: 700; color: var(--text); opacity: .8; }
+/* The speaker sits at the left of the row and the V/F pair at the right. Keep
+   this row to THREE controls. The 📖 was briefly a fourth one here, and with
+   the wide anti-mistap gap the row no longer fit a 320 px phone: flex-end
+   sends an overflow off the LEFT edge, so the 📖 ended up outside the card
+   with half of it past the screen. It lives on the number line instead. */
+#card-statements .stmt-btns { justify-content: flex-end; align-items: center; }
+#card-statements .stmt-tts { margin-right: auto; }
+
+/* ── Vocabulary screen ─────────────────────────────────────────── */
+.vocab-intro { color: var(--muted); font-size: .9rem; line-height: 1.55; margin: .4rem 0 1rem; max-width: 60ch; }
+/* ── Review screen ─────────────────────────────────────────────────── */
+/* Each section is a pane; only the chosen one is in the flow. */
+.review-pane { display: block; }
+.review-pane.hidden { display: none !important; }
+/* Three sections (Numbers, Lists, Vocabulary) chosen by a row of buttons. */
+.review-sections { display: flex; gap: .5rem; margin: 0 0 1rem; flex-wrap: wrap; }
+.review-section-btn {
+  border: 1px solid var(--border); background: var(--card-bg); color: var(--muted);
+  border-radius: var(--radius); padding: .5rem 1rem; min-height: 44px;
+  cursor: pointer; font-size: .95rem; font-weight: 600;
+}
+.review-section-btn:hover { border-color: var(--accent-border); color: var(--accent); }
+.review-section-btn.active { background: var(--accent-tint); border-color: var(--accent-border); color: var(--accent); }
+.review-hint { color: var(--muted); font-size: .88rem; margin: 0 0 .75rem; line-height: 1.5; }
+
+/* The folded explanation above each list. It is prose that is read once and is
+   then in the way of the list, which is what the page is for, so it ships
+   closed and takes one line instead of five. */
+.ref-about { margin: 0 0 .9rem; }
+.ref-about > summary {
+  cursor: pointer; color: var(--muted); font-size: .85rem;
+  padding: .35rem 0; list-style: revert;
+}
+.ref-about > summary:hover { color: var(--accent); }
+.ref-about[open] > summary { margin-bottom: .35rem; }
+.ref-about .vocab-intro, .ref-about .review-hint { margin-bottom: .5rem; }
+/* The heading over one list's share of the search results. */
+.ref-result-head {
+  font-size: .95rem; font-weight: 700; color: var(--accent);
+  margin: 1.2rem 0 .6rem; padding-bottom: .3rem;
+  border-bottom: 1px solid var(--border);
+}
+.review-pane:first-of-type .ref-result-head { margin-top: .2rem; }
+/* While a search is running the page shows all three lists at once, so every
+   per-list control goes: the tabs and filters would each be claiming to govern
+   one of three stacked lists, and the folded prose would separate every
+   heading from its own results. */
+#screen-vocab.is-searching .ref-about,
+#screen-vocab.is-searching .vocab-tabs,
+#screen-vocab.is-searching .vocab-filterbar,
+#screen-vocab.is-searching .review-toolbar { display: none; }
+.review-toolbar {
+  display: flex; gap: .75rem; align-items: flex-start;
+  justify-content: space-between; flex-wrap: wrap; margin-bottom: .6rem;
+}
+.review-chips { display: flex; gap: .4rem; flex-wrap: wrap; }
+.review-chip {
+  border: 1px solid var(--border); background: var(--card-bg); color: var(--muted);
+  border-radius: 999px; padding: .3rem .7rem; cursor: pointer;
+  font-size: .82rem; font-weight: 600;
+}
+.review-chip:hover { border-color: var(--accent-border); color: var(--accent); }
+.review-chip.active { background: var(--accent-tint); border-color: var(--accent-border); color: var(--accent); }
+.review-chip-n { opacity: .6; font-weight: 400; }
+.review-toggle {
+  border: 1px solid var(--border); background: var(--card-bg); color: var(--muted);
+  border-radius: var(--radius); padding: .4rem .8rem; min-height: 40px;
+  cursor: pointer; font-size: .85rem; font-weight: 600; white-space: nowrap;
+}
+.review-toggle:hover { border-color: var(--accent-border); color: var(--accent); }
+.review-toggle.is-on { background: var(--accent-tint); border-color: var(--accent-border); color: var(--accent); }
+.review-cat-title { font-size: 1rem; margin: 1.2rem 0 .5rem; color: var(--accent); }
+.review-group-note {
+  font-size: .82rem; color: var(--muted); line-height: 1.5;
+  margin: 0 0 .5rem; max-width: 60ch;
+}
+/* The group heading is the control that folds its own rows away. It keeps the
+   quiet heading look rather than looking like a button: the whole line is the
+   target, and the caret says what it does. */
+.review-group-title {
+  display: flex; align-items: center; gap: .4rem; width: 100%;
+  background: none; border: 0; padding: 0; text-align: left; cursor: pointer;
+  font-family: inherit; font-size: .82rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .04em; color: var(--muted); margin: .9rem 0 .35rem;
+  min-height: 32px;
+}
+.review-group-title:hover { color: var(--accent); }
+.review-caret {
+  width: 0; height: 0; flex-shrink: 0;
+  border-left: 5px solid currentColor;
+  border-top: 4px solid transparent; border-bottom: 4px solid transparent;
+  transform: rotate(90deg); transition: transform .15s;
+}
+.review-group-title[aria-expanded="false"] .review-caret { transform: rotate(0deg); }
+/* How many rows are folded inside, so a closed group still says what it holds. */
+.review-group-n { font-weight: 400; opacity: .7; letter-spacing: 0; }
+.review-toggles { display: flex; gap: .4rem; flex-wrap: wrap; }
+.review-table { display: flex; flex-direction: column; gap: .35rem; }
+/* The definition of a measure (withdrawal, suspension...), over its rows or,
+   with the values hidden, all four together above them. */
+.review-def {
+  font-size: .85rem; line-height: 1.5; max-width: 60ch;
+  margin: .9rem 0 .45rem;
+}
+.review-def strong { color: var(--text); }
+.review-defs .review-def { margin: 0 0 .5rem; }
+.review-defs { margin-bottom: .6rem; }
+.review-table:empty { display: none; }
+/* One fact per row: what it applies to on the left, the quantity on the right. */
+.review-row {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+  background: var(--inset); border-radius: var(--radius); padding: .55rem .8rem;
+}
+.review-fact { min-width: 0; }
+.review-label { display: block; font-size: .92rem; line-height: 1.35; }
+/* The same case in the other language, under the leading one. Quieter, because
+   it confirms a reading the learner has already made rather than competing
+   with it for attention. */
+.review-alt {
+  display: block; font-size: .82rem; line-height: 1.3;
+  color: var(--muted); margin-top: .1rem;
+}
+/* The stronger mark: the figure occurs once in the bank, in a true statement. */
+.review-safe.review-true {
+  color: var(--card-bg); background: var(--correct); border-color: var(--correct); opacity: 1;
+}
+/* The points table: the one figure the bank asks for, against the Code's
+   figures shown for reference and never tested (the value drawn muted too). */
+.review-safe.review-untested {
+  color: var(--muted); border-color: var(--border); opacity: .9;
+}
+.review-value.is-untested { color: var(--muted); font-weight: 400; }
+/* The fine under a violation row: from the Code, never tested. */
+.review-fine { display: block; font-size: .8rem; color: var(--muted); margin-top: .1rem; }
+.review-value.is-zero { color: var(--muted); font-weight: 400; }
+/* No statement in the bank prints a wrong figure for this quantity. */
+.review-safe {
+  margin-left: .45rem; padding: .05rem .4rem; border-radius: 999px;
+  font-size: .68rem; font-weight: 600; white-space: nowrap;
+  color: var(--correct); border: 1px solid var(--correct); opacity: .8;
+}
+/* A group can close with a list that has no quantity of its own but belongs
+   with it (the vehicles banned from the autostrada). Set apart from the rows
+   above it, since nothing here is a number to memorize. */
+.review-foot {
+  margin: .6rem 0 .2rem; padding: .6rem .8rem;
+  border: 1px dashed var(--border); border-radius: var(--radius);
+}
+.review-foot-title {
+  margin: 0 0 .4rem; font-size: .8rem; font-weight: 700;
+  letter-spacing: .03em; text-transform: uppercase; color: var(--muted);
+}
+.review-foot-item { margin: 0 0 .45rem; font-size: .92rem; line-height: 1.35; }
+.review-foot-item:last-child { margin-bottom: 0; }
+.review-foot-note {
+  margin: .5rem 0 0; font-size: .82rem; line-height: 1.35; color: var(--muted);
+}
+.review-value {
+  font-weight: 700; font-size: .98rem; white-space: nowrap; flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+/* Self-test: the value is a button until it is tapped. */
+button.review-value {
+  border: 1px dashed var(--accent-border); background: transparent; color: var(--muted);
+  border-radius: 999px; padding: .2rem .7rem; cursor: pointer;
+  font-weight: 600; font-size: .8rem;
+}
+button.review-value.is-shown { border-style: solid; color: var(--text); font-size: .98rem; }
+@media (max-width: 480px) {
+  .review-row { flex-direction: column; align-items: flex-start; gap: .25rem; }
+  .review-value { align-self: flex-end; }
+  .review-valcol { align-self: flex-end; }
+  .review-row > .entry-flag { align-self: flex-end; }
+}
+
+.vocab-tabs { display: flex; gap: .5rem; margin-bottom: .75rem; flex-wrap: wrap; }
+.vocab-tab, .gloss-tab {
+  border: 1px solid var(--border); background: var(--card-bg); color: var(--muted);
+  border-radius: var(--radius); padding: .5rem .9rem; min-height: 44px;
+  cursor: pointer; font-size: .9rem; font-weight: 600;
+}
+.vocab-tab::after, .gloss-tab::after { content: " (" attr(data-count) ")"; font-weight: 400; opacity: .75; }
+/* The section tabs carry a count only WHILE SEARCHING, so a reader who has
+   narrowed to one list can still see that the word they typed sits in another
+   one. The attribute is removed when the search ends, so nothing shows then. */
+.review-section-btn[data-count]::after { content: " (" attr(data-count) ")"; font-weight: 400; opacity: .75; }
+.vocab-tab:hover, .gloss-tab:hover { border-color: var(--accent-border); color: var(--accent); }
+.vocab-tab.active, .gloss-tab.active { background: var(--accent-tint); border-color: var(--accent-border); color: var(--accent); }
+/* Reviewer: review-before-send overlay. One row per flagged issue with the
+   category and note editable in place. */
+.flags-dialog { max-width: 640px; }
+.flags-list { margin: .5rem 0 1rem; }
+.flag-row { padding: .7rem 0; border-bottom: 1px solid var(--border); }
+.flag-row:last-child { border-bottom: none; }
+.flag-row-head { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+.flag-row-num { font-weight: 700; }
+.flag-row-topic {
+  flex: 1 1 auto; min-width: 8rem;
+  font-size: .82rem; color: var(--muted);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.flag-row-del {
+  border: 1px solid var(--border); background: var(--card-bg); color: var(--muted);
+  width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0;
+  font-size: .9rem; line-height: 1; cursor: pointer;
+}
+.flag-row-del:hover { color: var(--wrong, #c0392b); border-color: currentColor; }
+.flag-row-it { margin: .45rem 0 .1rem; font-size: .92rem; }
+.flag-row-note {
+  width: 100%; margin-top: .35rem; padding: .45rem .6rem;
+  font: inherit; font-size: .88rem; resize: vertical;
+  border: 1px solid var(--border); border-radius: 8px;
+  background: var(--card-bg); color: var(--text);
+}
+.flags-footer { margin-top: .25rem; }
+.flags-group-head { display: flex; align-items: center; justify-content: space-between; gap: .6rem;
+  margin: 1rem 0 .1rem; font-size: .95rem; color: var(--muted); }
+.flags-group-head:first-child { margin-top: 0; }
+.flag-row-sentline { display: flex; align-items: center; justify-content: space-between; gap: .6rem;
+  flex-wrap: wrap; margin-top: .35rem; font-size: .82rem; color: var(--muted); }
+.flag-row-sent .flag-row-note { opacity: .85; }
+/* Sent flags fold away, closed by default. The summary keeps the group
+   heading's look and gains a caret, since display:flex drops the marker. */
+.flags-sent { margin-top: 1rem; }
+.flags-sent > summary.flags-group-head { cursor: pointer; list-style: none; justify-content: flex-start; margin-top: 0; }
+.flags-sent > summary::-webkit-details-marker { display: none; }
+.flags-sent > summary::before { content: '▸'; display: inline-block; transition: transform .15s; }
+.flags-sent[open] > summary::before { transform: rotate(90deg); }
+.flags-sent-tools { display: flex; justify-content: flex-end; margin: .2rem 0 .1rem; }
+
+/* Floating jump-to-first-unanswered pill: fixed just below the sticky nav,
+   above the pinned image bar, visible only once the status-line link has
+   scrolled out of view. */
+.unans-float {
+  position: fixed;
+  top: calc(var(--nav-h, 52px) + 8px);
+  right: 12px;
+  z-index: 20;
+  border: 1px solid var(--accent-border);
+  background: var(--accent-tint);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: .4rem .85rem;
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+.unans-float:hover { filter: brightness(1.1); }
+/* The concept-review icon, floating on cards that have no sign image. Same
+   pinned line as the unanswered pill, at the LEFT so the two never collide,
+   and clear of the daily count, which only appears once the header has
+   scrolled away and sits inside the card. */
+/* On narrow screens the full wording would overlap the pinned sign image:
+   show only the count and the arrow (the full text stays as the tooltip). */
+.unans-float .uf-mini { display: none; }
+@media (max-width: 640px) {
+  .unans-float .uf-full { display: none; }
+  .unans-float .uf-mini { display: inline; }
+  .unans-float { padding: .4rem .7rem; }
+}
+
+/* Weak-spot drill: questions still to clear, fixed at the top left, the
+   mirror of the unanswered pill at the top right. */
+.drill-float {
+  position: fixed;
+  top: calc(var(--nav-h, 52px) + 8px);
+  left: 12px;
+  z-index: 20;
+  border: 1px solid var(--accent-border);
+  background: var(--accent-tint);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: .4rem .85rem;
+  font-size: .82rem;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px var(--shadow);
+  pointer-events: none;
+}
+.drill-float .uf-mini { display: none; }
+/* The same count carried inside Today's floating pill once the header has
+   scrolled away, so the two top-left pills never overlap. */
+.daily-float-drill { color: var(--accent); }
+@media (max-width: 640px) {
+  .drill-float .uf-full { display: none; }
+  .drill-float .uf-mini { display: inline; }
+  .drill-float { padding: .4rem .7rem; }
+}
+
+/* Skipped-question helper: the note under the statements list and the
+   status-line count both jump to the first unanswered question. */
+.card-unanswered-note {
+  margin: .5rem 0 .75rem; padding: .55rem .8rem;
+  border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--card-bg); color: var(--muted); font-size: .88rem;
+}
+.unans-jump {
+  border: none; background: none; padding: 0; margin: 0;
+  font: inherit; color: var(--accent); cursor: pointer;
+  text-decoration: underline; text-underline-offset: 2px;
+}
+.unans-jump:hover { opacity: .8; }
+/* Brief highlight after jumping, so the eye lands on the right question. */
+@keyframes stmt-flash-kf {
+  0% { background: var(--accent-tint); }
+  100% { background: transparent; }
+}
+.statement-item.stmt-flash { animation: stmt-flash-kf 1.6s ease-out 1; }
+
+/* Entry-type filter (all / phrases / single words) and sort order (A–Z /
+   most frequent). Smaller than the list tabs above so the rows read as
+   different controls; the two groups share one wrapping bar. */
+.vocab-filterbar { display: flex; gap: .5rem 1.25rem; margin-bottom: .75rem; flex-wrap: wrap; }
+.vocab-kinds, .vocab-sorts { display: flex; gap: .5rem; flex-wrap: wrap; }
+.vocab-kind, .vocab-sort, .gloss-sort {
+  border: 1px solid var(--border); background: var(--card-bg); color: var(--muted);
+  border-radius: 999px; padding: .35rem .8rem; min-height: 36px;
+  font: inherit; font-size: .82rem; font-weight: 600; cursor: pointer;
+}
+.vocab-kind:hover, .vocab-sort:hover, .gloss-sort:hover { color: var(--accent); border-color: var(--accent-border); }
+.vocab-kind.active, .vocab-sort.active, .gloss-sort.active { background: var(--accent-tint); border-color: var(--accent-border); color: var(--accent); }
+/* In "Most frequent" order each row shows the number of exam statements the
+   entry appears in. */
+.lookups-freq {
+  flex-shrink: 0; align-self: center; margin-left: .4rem;
+  font-size: .78rem; opacity: .6; font-variant-numeric: tabular-nums;
+}
+/* The two search fields, and OUR clear button.
+   The ✕ the desktop used to show was the browser's own
+   ::-webkit-search-cancel-button, and iOS Safari does not render it, so an
+   iPhone had no way to empty the field (reported 2026-09-17). The native one is
+   switched off everywhere and .search-clear replaces it, so both platforms get
+   the same single control.
+
+   The FIELD is styled by id, not through .search-wrap. Styling it as a
+   descendant of the wrapper was the first attempt and it made the appearance
+   depend on markup: index.html and style.css are cached separately, so a
+   browser holding the new CSS with the older HTML found no wrapper, matched
+   nothing, and painted a bare default input. Keep these two rulesets
+   independent, so a stale copy of either still looks right. */
+#review-search {
+  width: 100%; max-width: 420px; margin-bottom: 1rem;
+  padding: .55rem 2.6rem .55rem .75rem;   /* right side leaves room for the ✕ */
+  font: inherit;
+  border: 1px solid var(--border); border-radius: 8px;
+  background: var(--card-bg); color: var(--text);
+}
+input[type="search"] { -webkit-appearance: none; appearance: none; }
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; appearance: none; display: none; }
+/* The wrapper only gives the button something to anchor to, so it takes over
+   the width and the gap below and the field keeps its own look. */
+.search-wrap { position: relative; width: 100%; max-width: 420px; margin-bottom: 1rem; }
+.search-wrap #review-search { max-width: none; margin-bottom: 0; }
+.search-clear {
+  position: absolute; top: 50%; right: .5rem; transform: translateY(-50%);
+  width: 26px; height: 26px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  border: 0; padding: 0; cursor: pointer;
+  background: var(--muted); color: var(--card-bg);
+  font: inherit; font-size: .72rem; line-height: 1;
+  opacity: .7;
+}
+/* A transparent cuff, so the target is thumb-sized without the circle growing
+   to match. The painted ✕ stays the size it has always been. */
+.search-clear::after { content: ''; position: absolute; top: -9px; right: -8px; bottom: -9px; left: -9px; }
+.search-clear:hover, .search-clear:focus-visible { opacity: 1; }
+/* Expand-all / collapse-all bar above the A–Z groups. */
+.vocab-groupbar { display: flex; gap: .5rem; margin: 0 0 .6rem; }
+.vocab-groupbar button {
+  border: 1px solid var(--border); background: var(--card-bg); color: var(--muted);
+  border-radius: 8px; padding: .4rem .7rem; min-height: 36px;
+  font: inherit; font-size: .82rem; cursor: pointer;
+}
+.vocab-groupbar button:hover { color: var(--accent); border-color: var(--accent-border); background: var(--accent-tint); }
+#vocab-body .lookups-list li { padding-left: 0; }
+#vocab-body .lookups-list li::before { content: none; }
+/* Move between lists: big round target, quiet until hover. */
+.vocab-move, .gloss-move {
+  margin-left: auto; flex-shrink: 0;
+  border: 1px solid var(--border); background: var(--card-bg); color: var(--muted);
+  width: 34px; height: 34px; border-radius: 50%;
+  font-size: 1.1rem; line-height: 1; cursor: pointer;
+  transition: color .15s, border-color .15s, background .15s;
+}
+.vocab-move:hover { color: var(--accent); border-color: var(--accent-border); background: var(--accent-tint); }
+/* The − button carries the removal history: amber once the word has been
+   removed before, red when the next press retires it for good (its title
+   says the same, so the warning does not rest on color alone). */
+.vocab-move-again, .gloss-move.vocab-move-again { color: var(--warn-ink); border-color: var(--warn-ink); }
+.vocab-move-again:hover { color: var(--warn-ink); border-color: var(--warn-ink); background: var(--inset); }
+.vocab-move-final, .gloss-move.vocab-move-final { color: var(--danger-ink); border-color: var(--danger-ink); font-weight: 700; }
+.vocab-move-final:hover { color: var(--danger-ink); border-color: var(--danger-ink); background: var(--inset); }
+#vocab-body .lookups-gloss { flex: 1 1 auto; }
+/* Verb grammar under the gloss on the vocabulary screen. */
+.lookups-gram { display: block; font-size: .78rem; opacity: .75; font-style: italic; margin-top: .1rem; }
+/* The word's parts, a memory aid (vocabulary `ety`): muted, under the gloss. */
+.lookups-ety { display: block; font-size: .78rem; opacity: .75; margin-top: .1rem; }
+
+/* Look-ups: A–Z disclosure groups (long lists only). */
+.lookups-group { border-bottom: none; }
+.lookups-group > summary {
+  cursor: pointer; list-style: none; user-select: none;
+  /* Full-width bar, >=44px tall: the whole row is the target, not the
+     triangle. A small triangle alone is far too fine for a fingertip. */
+  min-height: 44px;
+  padding: .55rem .75rem;
+  margin: .15rem 0;
+  font-weight: 700; font-size: .95rem;
+  color: var(--accent-dim);
+  display: flex; align-items: center; gap: .6rem;
+  background: var(--inset);
+  border-radius: 8px;
+  -webkit-tap-highlight-color: var(--accent-tint);
+}
+.lookups-group > summary::-webkit-details-marker { display: none; }
+.lookups-group > summary::before {
+  content: "▸"; font-size: .9rem; transition: transform .15s; flex-shrink: 0;
+}
+.lookups-group[open] > summary::before { transform: rotate(90deg); }
+.lookups-group[open] > summary { background: var(--accent-tint); }
+.lookups-group > summary:hover { color: var(--accent); background: var(--accent-tint); }
+/* Count sits at the far right of the bar. */
+.lookups-count { color: var(--muted); font-weight: 400; font-size: .8rem; margin-left: auto; }
+.lookups-group .lookups-list { margin: 0 0 .5rem .6rem; }
+
+/* Look-ups list (dashboard panel). */
+.lookups-list { list-style: none; padding: 0; margin: 0 0 .75rem; }
+.lookups-list li {
+  display: flex; gap: .6rem; align-items: center;
+  padding: .3rem 0; border-bottom: 1px solid var(--border);
+  font-size: .9rem;
+}
+/* The panel borrows .rules-body styling, whose `.rules-body ul li::before`
+   paints a • before each item. The id selector outranks it, so the speaker
+   button takes that leading slot instead. */
+#lookups-body .lookups-list li { padding-left: 0; }
+#lookups-body .lookups-list li::before { content: none; display: none; }
+.lookups-term  { font-weight: 600; min-width: 8rem; }
+.lookups-say {
+  border: none; background: none; cursor: pointer;
+  font-size: .9rem; line-height: 1; padding: .2rem .25rem;
+  border-radius: 6px; opacity: .55; flex-shrink: 0;
+  order: -1;              /* leading slot, where the bullet used to be */
+  margin-right: -.15rem;
+}
+.lookups-say:hover { opacity: 1; background: var(--accent-tint); }
+.lookups-gloss { color: var(--muted); flex: 1; }
+.lookups-remove {
+  border: none; background: none; cursor: pointer;
+  color: var(--muted); font-size: .8rem; line-height: 1; padding: .15rem .35rem;
+  border-radius: 6px;
+}
+.lookups-remove:hover { color: var(--danger, #c0392b); background: var(--accent-tint); }
+.lookups-empty { color: var(--muted); font-size: .9rem; }
+.stmt-italian-hidden { display: none; }
+.stmt-english-solo ~ .stmt-italian { font-size: .85rem; color: var(--muted); margin-top: .3rem; }
+/* Polarity words (prohibited / permitted / forbidden / allowed) in the L1 English
+   line. The line itself is small, muted and italic, so plain bold barely reads:
+   these are pulled up to full text colour, set upright, and slightly enlarged so
+   the polarity registers at a glance. Reviewers reported answering wrongly after
+   skimming "prohibited" as "permitted". */
+.stmt-english-primary .polarity {
+  font-size: 1.12em;
+  color: var(--text);
+  font-style: normal;
+  font-weight: 700;
+}
+/* Vehicle category (the X in "transito vietato a X"). Bold, but deliberately
+   quieter than the polarity word: the verdict stays the loudest thing on the
+   line, and the category is the second cue, not a competing one. On the English
+   line it is pulled upright and to full colour so it reads against the muted
+   italic; on the Italian line <strong> already carries it. */
+.stmt-english-primary .category {
+  color: var(--text);
+  font-style: normal;
+  font-weight: 700;
+}
+/* ── Study card ──────────────────────────────────────────────────── */
+.study-jump-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: .75rem;
+  font-size: .85rem;
+  color: var(--muted);
+}
+.study-jump-wrap select {
+  font-size: .85rem;
+  padding: .25rem .4rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card-bg);
+  color: var(--text);
+  cursor: pointer;
+  max-width: 14rem;
+}
+/* "First unanswered" lives at the right end of the jump row. */
+.study-jump-wrap #btn-jump-unanswered { margin-left: auto; font-size: .8rem; padding: .25rem .6rem; }
+.study-header {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .6rem;
+  min-width: 0;
+}
+#study-progress-label { flex: 1; text-align: center; color: var(--muted); font-size: .85rem; line-height: 1.3; }
+
+.study-progress-bar-wrap {
+  height: 5px;
+  background: var(--border);
+  border-radius: 0;
+  margin: 0 -1rem .75rem;
+  overflow: hidden;
+}
+/* One segment per card of the topic, the same drawing as the nav's line and
+   from the same function, so the learner can count the cards left here too.
+   The bar's own background shows through the flex gap and is what makes each
+   hairline gap read as a gap; the track color lives on the segments now
+   rather than on the wrap, or the gaps would vanish into it. */
+.study-progress-bar {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: var(--bg);
+  border-radius: 0;
+}
+.study-progress-seg {
+  flex: 1 1 0; min-width: 0;
+  background: var(--border);
+  transition: background .3s ease;
+}
+.study-progress-seg.is-done { background: var(--bar-good); }
+
+.study-nav {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-top: 1rem;
+}
+.study-nav #btn-prev { margin-right: auto; }
+.study-nav #btn-next { margin-left: auto; }
+.toggle-label { font-size: .85rem; display: flex; align-items: center; gap: .4rem; cursor: pointer; }
+
+.card-topic-note {
+  background: #fdf3e0;
+  border: 1px solid #f3d49a;
+  border-left: 4px solid var(--bar-warn);
+  color: #8a5a12;
+  border-radius: var(--radius);
+  padding: .6rem .85rem;
+  font-size: .82rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Feedback retry controls (Retry missed / Retry all). */
+.feedback-actions { display: flex; gap: .6rem; flex-wrap: wrap; }
+
+/* Settings dialog (gear in the nav). Reuses .review-overlay + .review-dialog. */
+.settings-dialog { max-width: 460px; }
+.settings-body { display: flex; flex-direction: column; gap: 1.15rem; margin-top: .5rem; }
+.settings-row { display: flex; gap: .7rem; align-items: flex-start; cursor: pointer; }
+.settings-row input[type="checkbox"] {
+  margin: .15rem 0 0; width: 1.15rem; height: 1.15rem; flex: 0 0 auto;
+  cursor: pointer; accent-color: var(--accent);
+}
+.settings-row-text { display: flex; flex-direction: column; gap: .2rem; }
+.settings-row-title { font-weight: 600; }
+.settings-row-desc { font-size: .82rem; color: var(--muted); line-height: 1.45; }
+.settings-select {
+  align-self: flex-start;
+  margin-top: .35rem;
+  padding: .35rem .6rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+.settings-flags { display: flex; gap: .6rem; align-items: center; margin: -.4rem 0 0 1.85rem; }
+.settings-action {
+  border: 1px solid var(--accent-border);
+  background: var(--accent-tint);
+  color: var(--accent);
+  border-radius: var(--radius);
+  padding: .35rem .7rem;
+  font-size: .82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.settings-action:hover:not(:disabled) { filter: brightness(.97); }
+.settings-action:disabled { opacity: .5; cursor: default; }
+.settings-action-muted {
+  background: transparent;
+  border-color: transparent;
+  color: var(--muted);
+  font-weight: 500;
+  text-decoration: underline;
+}
+.settings-code { display: flex; flex-direction: column; gap: .25rem; margin: 0 0 .6rem 1.85rem; }
+.settings-code span { font-size: .8rem; color: var(--muted); }
+.settings-code input {
+  font: inherit; font-size: 16px; padding: .35rem .5rem;  /* 16px: avoid iOS zoom-on-focus */
+  border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--inset); color: var(--text); max-width: 260px;
+}
+.settings-flags-status { font-size: .82rem; margin: .35rem 0 0 1.85rem; min-height: 1em; }
+.settings-flags-status.ok  { color: var(--accent); }
+.settings-flags-status.err { color: var(--bar-danger, #c0392b); }
+
+/* Cross-device sync section */
+.settings-sync { display: flex; flex-direction: column; gap: .7rem; }
+/* Divider that separates the "your data" group (Sync, Backup) from preferences. */
+.settings-divide { border-top: 1px solid var(--border); padding-top: 1.15rem; }
+/* Settings grouped by stage (20261011f). */
+.settings-group { display: flex; flex-direction: column; gap: 1.15rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+.settings-group.hidden { display: none; }
+.settings-group:first-child { border-top: 0; padding-top: 0; }
+.settings-group-head { margin: 0; font-size: .8rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+
+.settings-sync .settings-row-desc { margin-left: 0; }
+/* The "sync on" panel stacks code / warning / Sync ID / buttons — give them rhythm. */
+#sync-on { display: flex; flex-direction: column; gap: .7rem; }
+.sync-actions { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; margin-top: .25rem; }
+.sync-code-display { display: flex; gap: .55rem; align-items: center; flex-wrap: wrap; }
+.sync-code-label { font-size: .8rem; color: var(--muted); }
+#sync-code-value {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .95rem;
+  padding: .25rem .5rem; border-radius: var(--radius);
+  background: var(--inset); border: 1px solid var(--border); user-select: all;
+  /* The code is one long token: allow it to break so it can never widen the
+     dialog past the screen. */
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+}
+/* Any field inside a dialog stays within it, on a phone too. */
+.review-dialog input[type="text"], .review-dialog textarea, .review-dialog select {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.sync-warn { color: var(--bar-warn, #b7791f); }
+#sync-status { margin-left: 0; }
+.settings-sync .settings-code { margin-left: 0; }
+
+/* Backup (Export / Import), grouped with Sync under "your progress" in Settings */
+.settings-backup { border-top: 1px solid var(--border); padding-top: 1.1rem; display: flex; flex-direction: column; gap: .7rem; }
+.settings-backup .backup-buttons { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; margin-top: .25rem; }
+.settings-backup #drop-zone { font-size: .8rem; color: var(--muted); }
+
+/* Report a problem (bug report) dialog */
+.report-bug-row { margin-top: .55rem; }
+#bug-text {
+  width: 100%; box-sizing: border-box; font: inherit; font-size: 16px;  /* 16px: avoid iOS zoom-on-focus */
+  padding: .5rem .6rem; margin-top: .6rem; resize: vertical; min-height: 5.5rem;
+  border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--inset); color: var(--text);
+}
+.bug-email-label { display: block; margin-top: .7rem; font-size: .88rem; color: var(--muted); }
+#bug-email {
+  width: 100%; box-sizing: border-box; font: inherit; font-size: 16px;  /* 16px: avoid iOS zoom-on-focus */
+  padding: .45rem .6rem; margin-top: .3rem;
+  border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--inset); color: var(--text);
+}
+.bug-actions { display: flex; gap: .6rem; margin-top: .7rem; flex-wrap: wrap; }
+#bug-status { margin-left: 0; margin-top: .5rem; }
+
+/* Reviewer flag actions relocated to the bottom of the dashboard (Reviewer mode). */
+.dashboard-flags { margin-top: 1.6rem; }
+.dashboard-flags .settings-flags { margin: .5rem 0 0 0; }
+.dashboard-flags .settings-flags-status { margin: .4rem 0 0 0; }
+
+/* Quick-mode banner shown on an abridged card. */
+.card-quick-note {
+  font-size: .8rem;
+  color: var(--muted);
+  margin: 0 0 .75rem;
+}
+.quick-showall {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-left: .15rem;
+  color: var(--accent);
+  font-size: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.quick-showall:hover { opacity: .8; }
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 1px 4px var(--shadow);
+  margin-bottom: 1rem;
+}
+.topic-badge {
+  display: inline-flex;
+  flex-direction: column;
+  background: var(--accent-tint);
+  color: var(--accent-dim);
+  font-size: .8rem;
+  font-weight: 700;
+  padding: .35rem .85rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  border: 1px solid var(--accent-border);
+}
+.card-variant-label {
+  font-size: .7rem;
+  font-weight: 500;
+  opacity: .6;
+  margin-left: .4rem;
+  letter-spacing: .03em;
+}
+.exam-quesito-ref {
+  font-size: .72rem;
+  color: var(--muted);
+  opacity: .7;
+  text-align: center;
+  margin-bottom: .6rem;
+  letter-spacing: .03em;
+}
+
+/* Post-exam answer review */
+.exam-review { margin-top: 1.25rem; text-align: left; }
+.exam-rev-item {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-left-width: 4px;
+  border-radius: var(--radius);
+  padding: .7rem .9rem;
+  margin-bottom: .6rem;
+}
+.exam-rev-right { border-left-color: var(--correct); }
+.exam-rev-wrong { border-left-color: var(--wrong); }
+.exam-rev-skip  { border-left-color: var(--muted); }
+.exam-rev-head {
+  display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap;
+  font-size: .75rem; margin-bottom: .35rem;
+}
+.exam-rev-num    { font-weight: 700; color: var(--text); }
+.exam-rev-status { font-weight: 600; }
+.exam-rev-right .exam-rev-status { color: var(--correct); }
+.exam-rev-wrong .exam-rev-status { color: var(--wrong); }
+.exam-rev-skip  .exam-rev-status { color: var(--muted); }
+.exam-rev-qid   { margin-left: auto; color: var(--muted); opacity: .7; font-size: .7rem; }
+.exam-rev-it    { font-size: .9rem; color: var(--text); margin-bottom: .15rem; }
+.exam-rev-en    { font-size: .82rem; font-style: italic; color: var(--muted); margin-bottom: .35rem; }
+.exam-rev-ans   { font-size: .8rem; color: var(--text); margin-bottom: .35rem; }
+.exam-rev-expl  { font-size: .82rem; line-height: 1.45; color: var(--muted); white-space: pre-line; }
+/* The English explanation under the Italian one: italic, like the translation
+   above it, so the reader can tell the two languages apart at a glance. */
+.exam-rev-expl-en { font-style: italic; margin-top: .3rem; }
+.topic-english {
+  font-size: .72rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--accent);
+  opacity: .85;
+}
+.card-image { text-align: center; margin-bottom: 1.25rem; }
+.card-image img { width: 100%; max-width: 560px; height: auto; border-radius: var(--radius); }
+
+/* Sticky image: stays pinned at the top of the card while scrolling questions */
+#card-image-wrap {
+  position: sticky;
+  /* Pin just below the nav. --nav-h is measured at runtime (the nav can be one
+     or two lines depending on width), falling back to 52px before it's set. */
+  top: var(--nav-h, 52px);
+  z-index: 5;
+  background: var(--card-bg);
+  margin: 0 -1.5rem 1.25rem;
+  padding: .75rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+#card-image-wrap img, .km-figure img {
+  max-height: 130px;
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 0;
+}
+/* Tall composites (sign-over-panel, multi-sign figures) get more height so their
+   parts stay legible; single square signs keep the smaller cap above. */
+#card-image-wrap img.img-tall, .km-figure img.img-tall { max-height: 210px; }
+/* Roadway diagrams get an inline width from app.js (up to 2x natural size);
+   lift the height cap so the upscale is not squashed. max-width still applies. */
+#card-image-wrap img.img-wide, .km-figure img.img-wide { max-height: none; height: auto; }
+/* Hide the image element while a new source is still loading so the
+   previous card's image is never shown. */
+#card-image-wrap img.img-loading, .km-figure img.img-loading { visibility: hidden; }
+/* Image that doubles as a link to its figure in the concept review. */
+#card-image-wrap img.card-image-link { cursor: pointer; }
+#card-image-wrap img.card-image-link:hover { outline: 2px solid var(--accent-border); outline-offset: 3px; border-radius: 4px; }
+.review-fig-flash { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 6px; transition: outline-color 1.5s ease; }
+/* The paragraph or bullet a statement's 📖 landed on. A left bar and a tint
+   rather than an outline: a bullet's outline would box its marker awkwardly. */
+/* The paragraph the statement's 📖 landed on: a bar down its left side. No
+   background wash, because the sentence mark inside it carries that. */
+.review-block-flash {
+  box-shadow: inset 4px 0 0 var(--accent);
+  border-radius: 4px;
+  transition: box-shadow 1.5s ease;
+}
+/* The one sentence in that paragraph which answers the statement. The bar
+   marks the bullet, this marks the line, so a bullet holding three related
+   rules does not send the reader to whichever rule happens to come first. */
+mark.rb-hit {
+  background: var(--note-bg);
+  color: inherit;
+  box-shadow: 0 0 0 2px var(--note-bg);
+  border-bottom: 2px solid var(--accent);
+  border-radius: 2px;
+}
+/* The standing line under the notes' header when opened from a card. Sticky
+   inside the scrolling overlay, so it is still there when the reader has
+   scrolled to the section the card pointed at. */
+/* It floats over the notes as they scroll under it, so it must read as a
+   separate layer: the dialog's own --card-bg made it invisible, and text
+   slid beneath an apparently empty gap. Accent wash, accent border, full
+   text color, and a shadow to lift it off the page. */
+.review-note {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+  margin: 0 0 .7rem;
+  padding: .55rem .7rem;
+  font-size: .8rem;
+  line-height: 1.45;
+  color: var(--text);
+  background: var(--note-bg);
+  border: 1px solid var(--note-border);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  box-shadow: 0 4px 14px var(--shadow);
+}
+.review-note.hidden { display: none; }
+/* The note's two controls sit on their own line at the LEFT, as words. They
+   used to be a ✕ at the right edge, a thumb's width from the overlay's own
+   close ✕ (flag 20940, 2026-09-23). */
+.review-note-actions { display: flex; gap: 1.1rem; }
+.review-note-btn {
+  font: inherit;
+  font-weight: 600;
+  line-height: 1.3;
+  padding: .15rem 0;
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Book icon → concept review. Pinned top-right of the sticky image bar; when a
+   card has no image, the bar becomes a slim strip that just holds the icon. */
+/* Strip under the sign inside the sticky area: today's count at the left, the
+   concept-review button at the right, both in normal flow so neither ever
+   sits on top of the sign (a phone gives the image the full width, so there
+   is no free corner to tuck anything into). Collapses when both are hidden. */
+.card-image-bar {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: .5rem; width: 100%; margin-top: .4rem;
+}
+#card-image-wrap.no-image { padding: .4rem 1.5rem; }
+#card-image-wrap.no-image .card-image-bar { margin-top: 0; }
+#card-image-wrap.no-image img { display: none; }
+
+.statements-list { list-style: none; display: flex; flex-direction: column; gap: .6rem; }
+.statement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+  background: var(--inset);
+  border-radius: var(--radius);
+  padding: .75rem 1rem;
+}
+/* Answered versus still-to-answer, on the study card. The two surface colors
+   (--inset and --card-bg) are only a few levels apart, so tinting between them
+   is invisible: instead an answered item drops back to the PAGE background and
+   an unanswered one keeps the raised panel plus an accent bar down its left
+   edge. The eye then lands on the bars. Text stays fully readable; only the
+   panel changes, and hovering an answered item restores it. */
+#card-statements .statement-item {
+  border-left: 3px solid transparent;
+  transition: background .2s, border-color .2s;
+}
+#card-statements .statement-item:not(.is-answered) {
+  background: color-mix(in srgb, var(--accent) 8%, var(--inset));
+  border-left-color: var(--accent);
+}
+#card-statements .statement-item.is-answered {
+  background: var(--bg);
+  border-left-color: transparent;
+}
+#card-statements .statement-item.is-answered:hover,
+#card-statements .statement-item.is-answered:focus-within {
+  background: var(--inset);
+}
+
+.stmt-btns { display: flex; flex-direction: column; gap: .5rem; flex-shrink: 0; }
+.btn-vero, .btn-falso {
+  border: none; border-radius: 6px; cursor: pointer; font-weight: 600;
+  padding: .4rem .85rem; font-size: .9rem;
+  transition: filter .15s;
+  min-height: 36px;
+}
+.btn-vero  { background: #e6f6ec; color: #1d6e3d; border: 1.5px solid #b4e0c3; }
+.btn-falso { background: #fdeceb; color: #ab362f; border: 1.5px solid #f3c0bc; }
+.btn-vero:hover  { background: #d4efde; border-color: #91d2a9; }
+.btn-falso:hover { background: #fad9d7; border-color: #eda19b; }
+.btn-vero:disabled, .btn-falso:disabled { filter: grayscale(1) opacity(.4); cursor: default; }
+/* The answer the user actually chose stays highlighted, even once disabled */
+.btn-vero.chosen:disabled  { filter: none; opacity: 1; box-shadow: 0 0 0 2px #1d6e3d inset; }
+.btn-falso.chosen:disabled { filter: none; opacity: 1; box-shadow: 0 0 0 2px #ab362f inset; }
+
+.stmt-text { flex: 1; min-width: 0; }
+/* Study deck: question is full-width with the V/F buttons below it, right-aligned
+   (the exam screen keeps the side-by-side row layout). */
+#card-statements .statement-item { flex-direction: column; align-items: stretch; gap: .5rem; }
+/* Wider gap between V and F so a slightly-off tap lands in the gap, not on the
+   wrong answer, rather than the tight default spacing. NOTE: this rule is
+   later in the file than the one above and of equal specificity, so the gap
+   set HERE is the one that wins. Change it here, not there. */
+#card-statements .stmt-btns { flex-direction: row; align-self: stretch; gap: 2.25rem; }
+/* Wider targets in the study deck: a tap that lands a little off still hits
+   the intended button, and the gap is wide enough that it never hits the
+   other one. */
+#card-statements .btn-vero, #card-statements .btn-falso {
+  flex: 1 1 0; min-width: 0; max-width: 5.5rem;
+  /* Center the letter ourselves. A button that grows as a flex item keeps
+     its label at the content's natural spot in Safari, so V and F drifted
+     toward the top-left of the wider box. */
+  display: inline-flex; align-items: center; justify-content: center;
+  line-height: 1;
+}
+#card-statements .stmt-tts { flex: 0 0 auto; }
+.stmt-number { display: block; font-size: .7rem; color: var(--muted); opacity: .7; margin-bottom: .15rem; font-variant-numeric: tabular-nums; }
+.stmt-italian { font-size: .95rem; line-height: 1.5; overflow-wrap: break-word; }
+/* Bolded sign-class name in classification questions (study levels only). */
+.stmt-italian .sign-class { font-weight: 700; }
+.stmt-english { font-size: .85rem; color: var(--muted); margin-top: .25rem; font-style: italic; }
+.stmt-english.hidden { display: none; }
+
+.stmt-result { font-size: .8rem; font-weight: 700; margin-top: .3rem; }
+.stmt-result.correct { color: var(--correct); }
+.stmt-result.wrong   { color: var(--wrong); }
+
+.pips { display: flex; gap: .5rem; margin-top: 1rem; flex-wrap: wrap; }
+.pip {
+  font-size: .75rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: .2rem .6rem;
+  color: var(--muted);
+}
+
+/* ── Feedback card ───────────────────────────────────────────────── */
+.card-feedback { border-left: 4px solid var(--correct); }
+.card-feedback.wrong { border-left-color: var(--wrong); }
+
+@keyframes pop-correct {
+  0%   { transform: scale(1); box-shadow: 0 1px 4px var(--shadow); }
+  30%  { transform: scale(1.03); box-shadow: 0 0 0 6px rgba(46,158,91,.22); }
+  60%  { transform: scale(.99); }
+  100% { transform: scale(1); box-shadow: 0 1px 4px var(--shadow); }
+}
+.pop-correct { animation: pop-correct .45s ease; }
+
+.streak-badge {
+  display: inline-block;
+  background: #fdeed1;
+  color: #8a5a12;
+  font-size: .8rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: .15rem .65rem;
+  vertical-align: middle;
+  animation: pop-correct .45s ease;
+}
+#feedback-header { font-weight: 700; margin-bottom: .75rem; font-size: 1.05rem; }
+#feedback-explanation { font-size: .9rem; color: var(--text); line-height: 1.6; margin-bottom: 1rem; }
+.memorize-callout {
+  background: #fdf3e0;
+  border-left: 3px solid #f1ab46;
+  border-radius: 4px;
+  padding: .6rem .9rem;
+  font-size: .85rem;
+  margin-top: .75rem;
+}
+
+/* ── Answer buttons (exam mode) ──────────────────────────────────── */
+.answer-btns { display: flex; gap: 1rem; margin: 1rem 0; }
+.answer-btns button {
+  flex: 1; padding: 1rem; font-size: 1rem; font-weight: 700;
+  border-radius: var(--radius); cursor: pointer;
+  transition: filter .15s;
+}
+.answer-btns .btn-vero  { background: #e6f6ec; color: var(--green); border: 1px solid #b4e0c3; }
+.answer-btns .btn-falso { background: #fdeceb; color: var(--red);   border: 1px solid #f3c0bc; }
+
+/* ── Exam screen ─────────────────────────────────────────────────── */
+.exam-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; }
+.exam-timer {
+  font-size: 1.4rem; font-weight: 700; font-variant-numeric: tabular-nums;
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: 999px; padding: .25rem .9rem;
+}
+
+/* The mock sheet (ensureExamSheet in app.js) is a copy of the Ministry's
+   terminal, at the maintainer's request (2026-09-23): a white surface
+   whatever the app's theme, since the room is what is being rehearsed; a
+   left column with the sheet box and the clock box ("Tempo a disposizione")
+   with Riepilogo under it; the question at the top right and the neutral V/F
+   squares at the lower right; and along the bottom Precedente, the three
+   group tabs over ten chips, and Successiva in solid blue. The Ministry's
+   crest and the candidate's data are the only things left out. The controls
+   are pinned to the bottom of the viewport so they never move with the
+   statement's height (reported as disconcerting the same day). */
+.exam-terminal {
+  --xb: #3a5fd0;          /* the terminal's blue */
+  --xb-soft: #b9c7ec;     /* the open tab and the chips */
+  --xb-pale: #e4e9f7;
+  --xg: #e9ecf3;          /* Precedente */
+  --xline: #cfd6e6;
+  --xtext: #111;
+  background: #fff; color: var(--xtext);
+  border: 1px solid var(--xline); border-radius: 8px; overflow: hidden;
+}
+#exam-sheet {
+  display: grid; gap: 0;
+  grid-template-columns: minmax(11rem, 24%) 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "side main" "nav nav";
+  /* The sheet is a 4:3 FRAME, the terminal's own proportion, sized to the
+     window: as wide as the window allows or as tall as the window allows,
+     whichever binds, and centered. A page cannot resize the browser window,
+     so this is the way to give every window the terminal's screen. Filling
+     the viewport put the controls under a screen of empty space on a tall
+     window (reported 2026-09-23); a fixed cap was the first answer, this is
+     the second. The frame still grows for a statement longer than the
+     space, so the controls never cover one. */
+  aspect-ratio: 4 / 3;
+  width: min(100%, calc((100vh - 11rem) * 4 / 3));
+  width: min(100%, calc((100dvh - 11rem) * 4 / 3));
+  margin-inline: auto;
+  /* The frame MUST NOT be a scroll container. `.exam-terminal` sets
+     `overflow: hidden` for its rounded corners, and on a scroll container the
+     aspect ratio's content-based minimum height is switched off (CSS Sizing
+     4), so a sheet taller than 4:3 stopped at the ratio and the chip row was
+     cut off at the bottom (reported 2026-09-23, first release of the frame).
+     Visible overflow restores the minimum; the corners are rounded on the
+     three children that touch them instead. */
+  overflow: visible;
+}
+#exam-sheet .exam-side { border-start-start-radius: 7px; }
+#exam-sheet #exam-prev { border-end-start-radius: 7px; }
+#exam-sheet #exam-next { border-end-end-radius: 7px; }
+.exam-side { grid-area: side; display: grid; grid-template-rows: auto auto 1fr; gap: 6px; padding: 6px; background: var(--xb); }
+.exam-side-box { background: #fff; border-radius: 4px; padding: 1rem .75rem; display: grid; justify-items: center; align-content: center; gap: .35rem; text-align: center; }
+.exam-side-cand { min-height: 9rem; }
+.exam-side-icon { font-size: 2.6rem; line-height: 1; }
+.exam-side-title { font-weight: 700; font-size: .95rem; }
+.exam-side-sub { font-size: .85rem; }
+.exam-side-label { font-weight: 700; font-size: .9rem; }
+.exam-time { font-size: 1.7rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.exam-blue-btn { width: 100%; padding: .55rem .8rem; background: var(--xb); color: #fff; border: 0; border-radius: 4px; font-weight: 700; cursor: pointer; }
+.exam-main { grid-area: main; display: grid; grid-template-rows: auto 1fr auto; gap: .75rem; padding: .9rem 1.1rem; min-width: 0; }
+.exam-counter { font-weight: 700; font-size: 1.15rem; }
+.exam-q { align-self: start; }
+.exam-q .stmt-italian { font-size: 1.15rem; line-height: 1.45; }
+.exam-q .stmt-number { font-size: .8rem; color: #666; }
+.exam-quesito-ref { font-size: .8rem; color: #666; margin-bottom: .25rem; }
+.exam-card-img { max-width: 260px; width: auto; height: auto; object-fit: contain; display: block; margin: .5rem 0 1rem; }
+/* On a wide screen the figure sits to the LEFT of the question, as it does on
+   the Ministry's terminal, so a tall figure adds nothing to the text's height
+   and the answer squares and the strip stay inside the window. */
+@media (min-width: 760px) {
+  #exam-card.exam-card-fig { display: grid; grid-template-columns: auto 1fr; column-gap: 1.25rem; align-items: start; }
+  #exam-card.exam-card-fig .exam-card-img { grid-row: 1 / span 2; margin: .25rem 0 0; }
+}
+.exam-sheet-answer { display: grid; justify-items: center; gap: .5rem; justify-self: end; padding-bottom: 1rem; }
+.exam-answer-label { font-size: 1.2rem; color: var(--xtext); }
+.exam-vf { display: flex; gap: .6rem; }
+.exam-vf-btn {
+  width: 5rem; height: 5rem; font-size: 2.6rem; font-weight: 400; line-height: 1;
+  background: #fff; color: var(--xtext); border: 2px solid var(--xb); border-radius: 6px; cursor: pointer;
+}
+.exam-vf-btn[aria-pressed="true"], .exam-sum-vf.chosen {
+  /* The chosen letter is crossed out, as on the terminal. */
+  border-color: #111;
+  background:
+    linear-gradient(to top right, transparent calc(50% - 1.5px), #111 calc(50% - 1.5px), #111 calc(50% + 1.5px), transparent calc(50% + 1.5px)),
+    linear-gradient(to bottom right, transparent calc(50% - 1.5px), #111 calc(50% - 1.5px), #111 calc(50% + 1.5px), transparent calc(50% + 1.5px)),
+    #fff;
+  color: var(--xtext);
+}
+.exam-sheet-nav { grid-area: nav; display: grid; grid-template-columns: minmax(7rem, 12%) 1fr minmax(7rem, 12%); gap: 2px; align-items: stretch; background: #fff; border-top: 2px solid var(--xline); }
+.exam-nav-btn {
+  display: grid; justify-items: center; align-content: center; gap: .15rem;
+  padding: .6rem .5rem; font-weight: 700; border: 0; border-radius: 0; cursor: pointer;
+  background: var(--xg); color: #333;
+}
+.exam-arrow { font-size: 2rem; line-height: 1; }
+/* Both arrows are the terminal's blue when they lead somewhere, and pale
+   with dark ink when they do not (question 1, question 30). */
+#exam-prev, #exam-next { background: var(--xb); color: #fff; }
+#exam-prev:disabled, #exam-next:disabled { background: var(--xb-pale); color: #333; opacity: 1; cursor: default; }
+.exam-tick { margin-right: .25em; font-weight: 700; }
+.exam-tick2 { letter-spacing: -.35em; margin-right: .6em; }
+@media (max-width: 640px) {
+  /* Ten chips across a phone leave no room beside the number: the tick sits above it. */
+  .exam-chip .exam-tick { display: block; margin: 0; font-size: .6rem; line-height: 1; }
+  .exam-chip { overflow: hidden; }
+  .exam-group { white-space: nowrap; }
+  .exam-group .exam-tick2 { font-size: .65rem; margin-right: .45em; }
+}
+.exam-main { position: relative; }
+.exam-mark { position: absolute; top: .35rem; right: .5rem; width: 2rem; height: 2rem; display: grid; place-items: center; padding: 0; background: #fff; border: 1px solid var(--xline); border-radius: 4px; cursor: pointer; z-index: 1; }
+.exam-mark svg { width: 18px; height: 18px; }
+.exam-counter { padding-right: 2.6rem; }
+.exam-mark svg { fill: none; stroke: #111; stroke-width: 2; stroke-linejoin: round; }
+.exam-mark.is-on svg { fill: #111; }
+
+.exam-strip { display: grid; grid-template-rows: 1fr 1fr; gap: 2px; }
+.exam-groups, .exam-chips { display: grid; gap: 2px; }
+.exam-groups { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.exam-chips  { grid-template-columns: repeat(10, minmax(0, 1fr)); }
+.exam-strip, .exam-sheet-nav { min-width: 0; }
+.exam-group, .exam-chip {
+  padding: .7rem 0; font-size: .95rem; font-variant-numeric: tabular-nums; font-weight: 600;
+  background: #fff; color: var(--xb); border: 0; cursor: pointer; position: relative;
+}
+.exam-group.open, .exam-chip { background: var(--xb-soft); }
+.exam-chip.done { background: var(--xb-pale); }
+.exam-chip.current { font-weight: 800; }
+.exam-chip.current::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 5px; background: var(--xb);
+}
+#exam-summary { padding: 1rem; }
+.exam-summary-note { color: #555; }
+.exam-summary-list { list-style: none; padding: 0; margin: 0; }
+.exam-summary-row {
+  display: grid; grid-template-columns: 2.4rem 8rem minmax(0, 1fr) auto auto; gap: .2rem .8rem; align-items: start;
+  width: 100%; text-align: left; padding: .7rem .2rem 1rem; color: var(--xtext);
+  background: #fff; border: 0; border-top: 1px solid #555; cursor: pointer;
+}
+.exam-summary-row.blank .exam-sum-vf { border-style: dashed; }
+.exam-summary-n { font-weight: 700; }
+.exam-summary-fig img { display: block; max-width: 100%; max-height: 7rem; }
+.exam-summary-txt { font-size: .95rem; line-height: 1.4; }
+.exam-summary-ans { display: flex; gap: .3rem; }
+.exam-sum-vf { display: grid; place-items: center; width: 1.9rem; height: 1.9rem; font-size: 1.15rem; border: 1px solid transparent; }
+.exam-sum-flag { width: 2rem; height: 1.9rem; display: grid; place-items: center; padding: 0; background: none; border: 0; cursor: pointer; }
+.exam-sum-flag svg { fill: none; stroke: #999; stroke-width: 2; stroke-linejoin: round; }
+.exam-sum-flag.is-on svg { fill: #111; stroke: #111; }
+@media (max-width: 560px) {
+  /* On a phone the figure goes under the statement, so the text keeps the width. */
+  .exam-summary-row { grid-template-columns: 1.6rem minmax(0, 1fr) auto auto; gap: .3rem .4rem; }
+  .exam-summary-n { grid-column: 1; grid-row: 1; }
+  .exam-summary-txt { grid-column: 2; grid-row: 1; font-size: .88rem; }
+  .exam-summary-ans { grid-column: 3; grid-row: 1; }
+  .exam-sum-flag { grid-column: 4; grid-row: 1; }
+  .exam-summary-fig { grid-column: 2 / -1; grid-row: 2; }
+  .exam-summary-fig:empty { display: none; }
+  .exam-summary-fig img { max-height: 5.5rem; }
+  .exam-sum-vf { width: 1.5rem; height: 1.5rem; font-size: .95rem; }
+  .exam-sum-flag { width: 1.5rem; }
+}
+.score-display.exam-res-line { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.4rem; font-size: 1rem; font-weight: 400; text-align: left; color: var(--text); margin: 1rem 0 .4rem; }
+.exam-res-n { color: #111; background: #fff; }
+.exam-res-line .exam-res { color: var(--text); }
+.exam-res-n { display: inline-block; min-width: 2.2rem; padding: .25rem .5rem; margin-left: .3rem; text-align: center; border: 1px solid #111; border-radius: 4px; font-weight: 600; }
+.exam-res-n.is-ok { background: #3fa34d; color: #111; }
+.exam-res-n.is-ko { background: #d21f1f; color: #111; }
+.exam-res-esito { margin-left: auto; }
+.exam-summary-actions { display: flex; gap: .6rem; justify-content: flex-end; margin-top: 1rem; }
+.exam-summary-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.exam-summary-head h2 { margin: 0; }
+.exam-blue-btn.exam-end-btn { background: #b01515; }
+.exam-nav-btn:disabled { opacity: .45; cursor: default; }
+.exam-summary-actions .exam-nav-btn, .exam-summary-actions .exam-blue-btn { width: auto; padding: .6rem 1.2rem; border-radius: 4px; }
+@media (max-width: 759px) {
+  #exam-sheet { grid-template-columns: 1fr; grid-template-rows: auto 1fr auto; grid-template-areas: "side" "main" "nav"; aspect-ratio: auto; width: 100%; min-height: calc(100vh - 11rem); min-height: calc(100dvh - 11rem); }
+  .exam-side { grid-template-rows: none; grid-template-columns: 1fr; }
+  .exam-side-cand { display: none; }
+  .exam-side-time { grid-template-columns: 1fr auto auto; grid-template-rows: none; align-items: center; justify-items: start; padding: .5rem .75rem; }
+  .exam-side-time .exam-blue-btn { width: auto; }
+  .exam-time { font-size: 1.3rem; }
+  .exam-sheet-answer { justify-self: center; }
+  .exam-sheet-nav { grid-template-columns: auto 1fr auto; }
+  .exam-nav-btn { padding: .5rem .4rem; font-size: .8rem; }
+  .exam-arrow { font-size: 1.5rem; }
+  .exam-group, .exam-chip { padding: .5rem 0; font-size: .8rem; }
+}
+
+/* Pre-exam start panel */
+#exam-start { display: grid; gap: 1.25rem; }
+/* The Mock exam and Weak spots sections.
+   These were cards: a border, a shadow, text-align:center and a 480px cap. The
+   maintainer asked what the boxes were for (2026-09-17), and the honest answer
+   is that they were costing more than they gave. Each section is a heading, a
+   paragraph and one button, which a heading and some space already separate,
+   and the centering was doing real harm: the weak-spot paragraph runs to about
+   sixty words, and centered prose in a 480px column is hard to read. Past
+   Results below them was never boxed, so the page was inconsistent with itself
+   as well. Now all three are plain sections on the same 560px measure. The
+   buttons carry the call to action, which is their job.
+   (Named .exam-start-card until the box went; the name outlived the box
+   by one edit, and the two comments elsewhere that cite the old name are
+   describing what it used to do, so they keep it.) */
+.exam-section { max-width: 560px; margin: 0 auto 2rem; }
+.exam-section .section-title { margin-bottom: 0.75rem; }
+.exam-intro {
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0 0 1.25rem;
+}
+.exam-section .btn-large { display: inline-block; min-width: 240px; }
+.score-display {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+.score-display.pass { color: var(--correct); }
+.score-display.fail { color: var(--wrong); }
+.exam-result-msg { text-align: center; font-size: 1.1rem; margin: 0 0 1rem; }
+.exam-result-msg:empty { display: none; }
+/* The finished mock's score now sits ABOVE the rest of the Final Stretch page
+   rather than in place of it, so it needs a foot of its own: a rule and some
+   air, or the score and the weak spots below it read as one block. The score
+   is centred, so the button under it is centred too. */
+#exam-results:not(.hidden) {
+  max-width: 560px;
+  margin: 0 auto 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+#exam-results .score-display { margin-top: 1rem; }
+#exam-results .exam-review { text-align: left; }
+
+/* ── Exam history table ──────────────────────────────────────────────── */
+.exam-history { margin: 0 auto; max-width: 560px; width: 100%; }
+.exam-history .exam-history-box { margin-top: 0; }
+.exam-readiness { display: flex; align-items: center; gap: 1.2rem; margin: 0 0 1rem; }
+.exam-readiness-top { width: 100%; max-width: 560px; margin: 0 auto; justify-self: center; }
+.exam-readiness-top .exam-readiness { margin: 0; }
+.exam-readiness-note { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.45; }
+/* The chance of passing one sitting is the line a learner acts on, so it
+   carries the page's own text color while the notes around it stay muted. */
+.exam-form-note { color: var(--fg); }
+.exam-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .85rem;
+}
+.exam-history-table th,
+.exam-history-table td {
+  padding: .35rem .6rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.exam-history-table th { color: var(--muted); font-weight: 600; }
+.exam-row-pass td:last-child { color: var(--correct); font-weight: 600; }
+.exam-row-fail td:last-child { color: var(--wrong);   font-weight: 600; }
+.exam-history-hint { font-size: .8rem; color: var(--muted); margin: 0 0 .5rem; }
+.exam-history-actions { margin-top: 1rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .6rem; }
+.btn-stats-mock { font-size: .88rem; padding: .4rem .8rem; }
+.btn-danger { color: var(--wrong); font-size: .82rem; }
+.btn-danger:hover { text-decoration: underline; }
+.exam-row-clickable { cursor: pointer; }
+.exam-row-clickable:hover td { background: var(--bg); }
+.exam-history-table tr.is-open td { background: var(--accent-tint); }
+.exam-history-table tr.is-open td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
+.exam-rev-pasthead {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: .75rem; margin: .25rem 0 .75rem; font-weight: 700; color: var(--text);
+}
+
+/* ── Vocab hint label ────────────────────────────────────────────────── */
+.vocab-hint {
+  font-size: .78rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ── Inline vocab term — click-to-reveal gloss ───────────────────────── */
+.vocab-term {
+  border-bottom: 1px dotted var(--accent);
+  /* A pointer, not `help`: the translation is revealed by a deliberate click
+     or tap, never by the mouse passing over (see below). */
+  cursor: pointer;
+  color: inherit;
+  position: relative;
+  /* Phrase entries span several words, so the text MUST be allowed to wrap:
+     `nowrap` here (harmless when every entry was a single word) pushed a long
+     highlighted phrase off the right edge of a phone screen. */
+  white-space: normal;
+}
+
+.vocab-term::after {
+  content: attr(data-tooltip);
+  /* Positioned in VIEWPORT coordinates, computed and clamped in JS
+     (positionTooltip). Anchoring to the word could not be kept on screen: a
+     word near the margin pushed the bubble past the edge, and a mobile
+     override then pinned it to the word's left edge, which overflowed to the
+     right. Fixed coordinates also escape any clipping ancestor. */
+  position: fixed;
+  left: var(--tt-x, 0px);
+  top: var(--tt-y, 0px);
+  transform: none;
+  background: var(--card-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: .3rem .75rem;
+  border-radius: var(--radius);
+  font-size: .8rem;
+  font-style: normal;
+  /* pre-line renders the grammar line under the gloss; max-width keeps a long
+     two-line tooltip from running off a phone screen. */
+  white-space: pre-line;
+  text-align: center;
+  max-width: min(22rem, calc(100vw - 16px));
+  width: max-content;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .15s;
+  z-index: 200;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+/* Hidden twin of the tooltip bubble, used only to measure how wide it will be
+   (a ::after pseudo-element cannot be measured from JS). Same box metrics as
+   .vocab-term::after, kept off-screen and out of the accessibility tree. */
+.tt-ruler {
+  position: fixed;
+  left: -9999px;
+  top: 0;
+  visibility: hidden;
+  pointer-events: none;
+  padding: .3rem .75rem;
+  border: 1px solid transparent;
+  font-size: .8rem;
+  font-family: inherit;
+  white-space: pre-line;
+  max-width: min(22rem, calc(100vw - 16px));
+  width: max-content;
+}
+
+/* Small arrow under the tooltip bubble */
+/* No room above: the bubble goes below the word, so the arrow points up. */
+.vocab-term.tt-below::before {
+  bottom: auto;
+  top: calc(100% + 1px);
+  border-top-color: transparent;
+  border-bottom-color: var(--border);
+}
+.vocab-term::before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% + 1px);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: var(--border);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .15s;
+  z-index: 200;
+}
+
+/* Deliberately NOT on :hover. The translation appears only when the learner
+   asks for it, because the ask is what tells us the word belongs in their
+   vocabulary list; a tooltip that opens on a passing cursor would teach the
+   word and record nothing. `.active` is set by click or tap;
+   :focus-visible keeps the keyboard path working. */
+.vocab-term:focus-visible::after,
+.vocab-term:focus-visible::before,
+.vocab-term.active::after,
+.vocab-term.active::before {
+  opacity: 1;
+}
+
+/* Keep tooltip bubble inside the viewport on narrow screens */
+@media (max-width: 480px) {
+  .vocab-term::after {
+    /* Narrower bubble on a phone. Position is handled in JS for every screen
+       size, so this must NOT set `left` or `transform`: doing so cancelled the
+       clamp and let the bubble run off the right edge. */
+    max-width: min(260px, calc(100vw - 16px));
+  }
+}
+
+/* ── Post-answer feedback ────────────────────────────────────────────── */
+.feedback-stmt {
+  margin-bottom: .85rem;
+  padding-bottom: .85rem;
+  border-bottom: 1px solid var(--border);
+}
+.feedback-stmt:last-child { border-bottom: none; margin-bottom: 0; }
+.stmt-italian-small { font-size: .88rem; color: var(--muted); margin: .2rem 0; }
+.stmt-english-feedback {
+  font-size: .88rem;
+  font-style: italic;
+  margin: .2rem 0;
+}
+.stmt-explanation {
+  font-size: .85rem;
+  line-height: 1.55;
+  margin-top: .3rem;
+  padding: .4rem .6rem;
+  background: var(--bg);
+  border-radius: 6px;
+  /* pre-line: an explanation may carry a blank line between paragraphs, and it
+     is set with textContent, so without this the paragraphs would run together.
+     Only 22934 uses it so far (2026-09-17): its argument has three steps, and
+     the steps have to be visible for it to teach. */
+  white-space: pre-line;
+}
+.muted { color: var(--muted); }
+
+/* ── Responsive tweaks ───────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .nav-btn { font-size: .8rem; padding: .3rem .6rem; }
+
+  /* Larger VERO / FALSO tap targets on phones, with a wide gap to avoid mis-taps */
+  .stmt-btns { gap: 1.25rem; }
+  #card-statements .stmt-btns { gap: 2.5rem; }
+  .btn-vero, .btn-falso {
+    padding: .65rem 1.1rem;
+    font-size: 1rem;
+    min-height: 44px;
+    border-radius: 8px;
+  }
+  #card-statements .btn-vero, #card-statements .btn-falso { max-width: none; }
+
+  /* Study navigation: a tidy 2-column grid instead of one overflowing row */
+  .study-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .6rem;
+  }
+  .study-nav > button {
+    margin: 0 !important;        /* override desktop auto-margins */
+    width: 100%;
+    min-height: 44px;
+    justify-content: center;
+    text-align: center;
+  }
+  .study-nav #btn-prev { order: 1; }   /* Previous | Next */
+  .study-nav #btn-next { order: 2; }
+}
+
+/* ── App loading overlay (first launch / after update) ───────────── */
+.app-loading {
+  position: fixed; inset: 0; z-index: 2000;
+  background: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  padding: 2rem;
+}
+.app-loading-box { text-align: center; max-width: 320px; width: 100%; }
+.app-loading-spinner {
+  width: 40px; height: 40px; margin: 0 auto 1.1rem;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: app-spin .8s linear infinite;
+}
+@keyframes app-spin { to { transform: rotate(360deg); } }
+.app-loading-msg { font-size: 1rem; color: var(--text); margin: 0 0 .9rem; }
+.app-loading-bar-wrap {
+  height: 6px; background: var(--border); border-radius: 4px; overflow: hidden;
+}
+.app-loading-bar {
+  height: 100%; width: 0; background: var(--accent);
+  border-radius: 4px; transition: width .2s ease;
+}
+.app-loading-bar-wrap.indeterminate .app-loading-bar {
+  width: 40%;
+  animation: app-indeterminate 1.1s ease-in-out infinite;
+}
+@keyframes app-indeterminate {
+  0%   { margin-left: -42%; }
+  100% { margin-left: 100%; }
+}
+.app-loading-hint { font-size: .78rem; color: var(--muted); margin: .8rem 0 0; }
+
+/* Completed-topic collapsed row + disclosure controls. */
+.topic-card { position: relative; }
+.topic-card-done {
+  display: flex; flex-direction: row; align-items: center; gap: .6rem;
+  padding: .45rem .9rem;
+  /* Don't stretch to match a tall neighbor in the same grid row: hug the top of
+     the cell so the chevron+title line stays pinned top-left. */
+  align-self: start;
+}
+.topic-card-done { cursor: pointer; }
+.topic-card-done:hover .topic-title-it { color: var(--accent); }
+.topic-card-done:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.topic-card-done .topic-title-it { margin: 0; flex: 1; min-width: 0; font-size: .88rem; text-align: left; }
+/* Expanded completed card: reserve headroom so the centered title clears the
+   top-left collapse control. */
+.topic-done-open { padding-top: 2.1rem; }
+.topic-done-check { color: var(--correct); font-weight: 700; font-size: .8rem; white-space: nowrap; }
+.topic-disclose {
+  background: transparent; border: 1px solid var(--border); border-radius: 6px;
+  color: var(--muted); cursor: pointer; padding: .1rem .5rem; font-size: .85rem; line-height: 1.3;
+}
+.topic-disclose:hover { background: var(--accent-tint); color: var(--accent); border-color: var(--accent-border); }
+.topic-collapse-btn { position: absolute; top: .5rem; left: .6rem; }
+.topic-done-review { padding: .1rem .35rem; }
+.topic-card-done { gap: .5rem; }
+
+/* ── Narrow phones: the nav labels do not fit beside the icon buttons
+   (English "Vocabulary" + "Exam Prep" overflow a 375-390px screen), so the
+   labels collapse and the icon carries the button. The localized tooltip and
+   aria-label keep it explained and accessible. ── */
+@media (max-width: 480px) {
+  .nav-btn .nav-label { display: none; }
+  /* Icon-only: match the theme/settings icon buttons exactly — no outline
+     until hover, same muted-then-tinted treatment — so the row reads as one
+     set of icons rather than two different button styles. */
+  .nav-btn {
+    background: transparent;
+    border: 1px solid transparent;
+    padding: .3rem .5rem;
+    min-width: 44px; min-height: 40px;
+    justify-content: center;
+    opacity: .7;
+    transition: opacity .15s, background .15s, border-color .15s;
+  }
+  @media (hover: hover) {
+    .nav-btn:hover { opacity: 1; background: var(--accent-tint); border-color: var(--accent-border); }
+  }
+  .nav-btn.active {
+    opacity: 1;
+    background: var(--accent-tint);
+    border-color: var(--accent-border);
+  }
+  .nav-ico { font-size: 1.15rem; }
+  /* The play glyph is a thin text character and looks smaller than the emoji
+     beside it; scale it up and give it the accent color so it reads as the
+     primary action it is. */
+  .nav-resume { opacity: 1; }
+  .nav-resume .nav-ico { font-size: 1.6rem; color: var(--accent); }
+}
+
+/* Ambiguous official wording: 🤔 badge next to the statement number (L1/L2)
+   and its tap-to-show note. */
+.stmt-warn {
+  border: none; background: none; padding: 0 .15rem; margin-left: .3rem;
+  font-size: 1rem; line-height: 1; cursor: pointer; vertical-align: baseline;
+}
+.stmt-warn-note {
+  margin: .35rem 0 .5rem; padding: .5rem .7rem;
+  border-left: 3px solid var(--wrong);
+  background: var(--accent-tint); border-radius: 6px;
+  font-size: .85rem; color: var(--text);
+}
+/* Weak spots drill: why this statement is here (language or rule), above the
+   Italian. A quiet line, not a box: it is a reminder read once per card. */
+.stmt-drill-note {
+  margin: .1rem 0 .4rem;
+  font-size: .82rem;
+  color: var(--muted);
+}
+
+/* Exam prep: the ambiguous-questions review list. */
+/* The ambiguous list. It sat inside an .exam-start-card until 2026-09-17,
+   which centered every line and capped the column at 480px, so a long Italian
+   statement was read down a narrow ribbon. It is a reading list, so it is
+   left-aligned and takes the pane's width, with the same measure cap the rest
+   of the reading prose uses. */
+#amb-list { text-align: left; max-width: 68ch; }
+.amb-item { padding: .7rem 0; border-bottom: 1px solid var(--border); }
+.amb-item:last-child { border-bottom: none; }
+.amb-stmt { font-size: .95rem; }
+.amb-en { font-size: .85rem; color: var(--muted); margin-top: .2rem; }
+.amb-ans { font-weight: 700; margin-top: .3rem; }
+.amb-note {
+  margin-top: .35rem; padding: .5rem .7rem;
+  border-left: 3px solid var(--wrong);
+  background: var(--accent-tint); border-radius: 6px;
+  font-size: .85rem;
+}
+/* Left, not centered: the card that used to center it is gone. */
+.amb-img { display: block; margin: 0 0 .5rem; max-height: 110px; width: auto; max-width: 100%; }
+/* The sign a reviewed exam question refers to, above the statement. */
+.exam-rev-img { display: block; margin: 0 auto .5rem; max-height: 130px; width: auto; max-width: 100%; }
+
+/* ── Daily loop: one row, today's count + 14-day strip ─────────────── */
+.cards-progress-eta { font-size: .8rem; color: var(--muted); margin-top: .15rem; line-height: 1.45; }
+.exam-plan-line { margin-top: .3rem; }
+.exam-plan-line:first-child { margin-top: .15rem; }
+/* "you would be READY for the exam around Oct 8": the one word inside the date
+   sentence that links into the How-to at step 4, which is what the date is for. */
+.exam-plan-step {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+.daily-loop {
+  margin: .25rem 0 1rem;
+  padding: .45rem .7rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card-bg);
+}
+.daily-row {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  flex-wrap: wrap;
+}
+/* The rate and ready-date lines under the count row, in the same box. Hidden when it has
+   nothing to say (no exam date and no pace yet gives a one-line estimate). */
+.daily-plan { margin-top: .5rem; padding-top: .5rem; border-top: 1px solid var(--border); }
+.daily-plan:empty { display: none; }
+.daily-ring-wrap { position: relative; width: 36px; height: 36px; flex-shrink: 0; }
+.daily-ring { transform: rotate(-90deg); display: block; }
+.daily-ring-bg { fill: none; stroke: var(--bar-empty); stroke-width: 7; }
+.daily-ring-num {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: .7rem;
+}
+.daily-title { font-weight: 600; font-size: .9rem; white-space: nowrap; }
+/* Row highlight when Settings is opened on a specific control. */
+@keyframes settingsFlash { 0%, 60% { background: var(--accent-tint); } 100% { background: transparent; } }
+.settings-flash { animation: settingsFlash 2.2s ease-out; border-radius: 8px; }
+.daily-strip { display: flex; gap: 4px; }
+.daily-dot {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: var(--bar-empty);
+}
+/* Weight, not verdict: the same hue at three strengths says how much was done
+   against this learner's own average, and an empty dot is a rest day, never a
+   miss. The old red, amber and green scale judged the day against a quota. */
+/* Answered, but nothing newly cleared: a hollow ring rather than the empty
+   dot of a rest day, since the learner did work that day. */
+.daily-dot.ew { background: transparent; box-shadow: inset 0 0 0 2px var(--accent); opacity: .45; }
+.daily-dot.e1 { background: var(--accent); opacity: .35; }
+.daily-dot.e2 { background: var(--accent); opacity: .65; }
+.daily-dot.e3 { background: var(--accent); opacity: 1; }
+.daily-dot.today { box-shadow: 0 0 0 2px var(--card-bg), 0 0 0 3px var(--accent-dim); }
+.daily-streak { font-size: .8rem; font-weight: 600; color: var(--accent-dim); white-space: nowrap; }
+
+/* Session summary card, shown once on return from study. */
+.session-summary {
+  position: relative;
+  margin: -.25rem 0 .9rem;
+  padding: .7rem 2.2rem .7rem .9rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  border-left: 4px solid var(--green);
+}
+.session-summary .sess-title { font-weight: 700; font-size: .9rem; margin-bottom: .15rem; }
+.session-summary .sess-line { font-size: .85rem; color: var(--text); }
+.session-summary .sess-record { font-size: .85rem; font-weight: 600; margin-top: .25rem; }
+.session-summary .banner-dismiss { position: absolute; top: .45rem; right: .5rem; }
+
+
+/* ── Weak spots card (dashboard entry to the drill) ───────────────── */
+.weak-spots {
+  display: flex; align-items: center; gap: .9rem; flex-wrap: wrap;
+  margin: 0 0 1.1rem;
+  padding: .75rem .9rem;
+  border-radius: 12px;
+  /* One even border all round (maintainer, 2026-09-30): the thick left
+     rule read as a lopsided frame, not as emphasis. */
+  border: 2px solid var(--accent-border);
+  background: var(--card-bg);
+}
+.weak-text { flex: 1; min-width: 200px; }
+.weak-title { font-weight: 700; font-size: .95rem; }
+.weak-sub { font-size: .8rem; color: var(--muted); margin-top: .2rem; line-height: 1.45; }
+
+.weak-spots .btn-primary { flex-shrink: 0; }
+
+/* The weak spots and the mock exam side by side once every level is cleared
+   (maintainer, 2026-10-01); stacked on a phone. */
+.dash-next { display: grid; grid-template-columns: 1fr; gap: .75rem; margin: 0 0 1.1rem; }
+.dash-next.hidden { display: none; }
+.dash-next > .weak-spots { margin: 0; }
+.dash-next > .weak-spots.hidden { display: none; }
+@media (min-width: 700px) {
+  .dash-next { grid-template-columns: 1fr 1fr; }
+  .dash-next.is-single { grid-template-columns: 1fr; }
+  .dash-next > .weak-spots { align-content: space-between; }
+}
+/* No weak spots left: the card stays, quieter. */
+.weak-spots.is-empty { border-color: var(--border); }
+.weak-spots.is-empty .weak-title { font-weight: 600; }
+/* The finished work is hidden; the topics become plain Concepts buttons. */
+/* A mock exam in progress: the nav is locked, so nothing can be looked up
+   (maintainer, 2026-10-01). The app icon stays as the one way out. */
+body.exam-locked .nav-btn,
+body.exam-locked #btn-theme-toggle,
+body.exam-locked #btn-settings { visibility: hidden; pointer-events: none; }
+/* The page's bottom padding is room for floating controls, none of which
+   exists during a mock; only the iPhone's home-indicator inset is kept. */
+body.exam-locked { padding-bottom: env(safe-area-inset-bottom, 0px); }
+/* The page heading says Statistics, which is not what the sheet is. The
+   header holds nothing else during a mock, so it goes whole and gives its
+   height back to the sheet. */
+body.exam-locked #screen-exam .exam-header { display: none; }
+/* The sheet is blank under the start dialog, so no statement is read before
+   the clock starts. */
+#exam-in-progress.is-veiled #exam-counter,
+#exam-in-progress.is-veiled #exam-card,
+#exam-in-progress.is-veiled .exam-sheet-answer,
+#exam-in-progress.is-veiled .exam-sheet-nav,
+#exam-in-progress.is-veiled #exam-summary-btn { visibility: hidden; }
+#screen-dashboard.dash-compact #level-selector,
+#screen-dashboard.dash-compact #cards-progress { display: none; }
+.topic-card-concepts { font: inherit; color: inherit; width: 100%; }
+.topic-card-concepts:disabled { cursor: default; opacity: .6; }
+
+/* Today's count in the study header. */
+.study-daily {
+  display: inline-flex; align-items: center; gap: .3rem;
+  margin-left: auto;
+  font-size: .78rem; font-weight: 600; white-space: nowrap;
+  color: var(--muted);
+}
+
+
+/* Copy of today's count in the strip under the pinned sign, shown while the
+   study header is scrolled out of view. The area is sticky, so this stays
+   visible down the whole card. */
+.daily-float {
+  display: inline-flex; align-items: center; gap: .3rem;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  border-radius: 999px;
+  padding: .35rem .7rem;
+  font-size: .82rem; font-weight: 600; white-space: nowrap;
+  color: var(--muted);
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+
+/* Study header on narrow screens: the progress label is the flexible item
+   and may wrap; the count keeps its size and stays inside the edge; the
+   hover hint (about a pointer, which a phone lacks) is dropped. */
+#study-progress-label { flex: 1 1 auto; min-width: 0; }
+.study-daily { flex-shrink: 0; }
+@media (max-width: 480px) {
+  #study-level-hint { display: none; }
+  .study-header { gap: .4rem; }
+  .study-daily { font-size: .78rem; }
+  #btn-back { white-space: nowrap; }
+}
+
+/* Small centered dialog (the unfinished-session prompt). */
+.goal-dialog { max-width: 420px; text-align: center; }
+.goal-line { color: var(--muted); font-size: .92rem; line-height: 1.5; margin: .5rem 0 0; }
+.goal-actions { display: flex; gap: .6rem; justify-content: center; margin-top: 1.1rem; flex-wrap: wrap; }
+
+
+/* Output of the speech self-test in Settings. Monospace and wrapped, because it
+   is meant to be read on a phone and pasted into a bug report. */
+.tts-test-out {
+  margin: .5rem 0 0; padding: .5rem .6rem;
+  background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .72rem; line-height: 1.5;
+  white-space: pre-wrap; word-break: break-word;
+}
+
+/* ── Final Stretch: the "are you actually here yet?" banner ──────────
+   Styled by ID, not by a class the markup has to carry, because style.css and
+   index.html are cached independently and appearance that depends on new
+   markup breaks for anyone who has one file and not the other. Same width as
+   .exam-section so the page reads as one column. */
+#exam-status {
+  max-width: 560px;
+  margin: 0 auto 2.2rem;
+  padding: 0;
+}
+#exam-status p {
+  margin: 0 0 .6rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+#exam-status .exam-status-title {
+  color: var(--fg);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+/* --green is theme-aware (it resolves to --correct in both themes); an
+   invented name would have silently fallen back to nothing. */
+#exam-status.is-ready .exam-status-title { color: var(--green); }
+#exam-status .exam-status-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem 1.1rem;
+  margin-top: .9rem;
+  font-size: .85rem;
+  color: var(--muted);
+}
+#exam-status .exam-status-lvl b { font-weight: 600; color: var(--fg); }
+/* A level still holding work is a way back into it. Button element, link
+   appearance: the app is one page, so there is no href to give an anchor, and
+   a button is what a keyboard and a screen reader already understand. */
+#exam-status .exam-status-go {
+  font: inherit;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+#exam-status .exam-status-go b { color: var(--accent); }
+#exam-status .exam-status-go:hover { opacity: .8; }
+
+/* ---- "Where your misses are" (Final Stretch) ---------------------------
+   Same column and rhythm as the status block above it, so the page reads as
+   one thing. Three kinds of row share one shape (name left, number right):
+   a level total that is also the switcher, a group heading with its count,
+   and a link into the notes (a paragraph or a topic). */
+#exam-weak, #exam-guess {
+  /* Grid items with auto side margins shrink to their content, which drew
+     the closed disclosures as narrow centered pills (20261007q). */
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+}
+#exam-weak .weak-title   { color: var(--fg); font-weight: 600; font-size: 1.05rem; margin: 0 0 .2rem; }
+#exam-weak .weak-note    { color: var(--muted); font-size: .85rem; line-height: 1.45; margin: 0 0 .7rem; }
+#exam-weak .weak-sub     { color: var(--muted); font-size: .84rem; line-height: 1.45; margin: .2rem 0 .3rem .5rem; }
+#exam-weak .weak-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: .32rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: .9rem;
+  text-align: left;
+}
+#exam-weak .weak-name { color: var(--fg); }
+#exam-weak .weak-num  { color: var(--muted); font-size: .82rem; white-space: nowrap; }
+/* The headline: how much of what has been answered at this level was ever
+   missed. A plain line, deliberately NOT row-shaped and with no selected
+   marker — as a single row with an accent bar it read as a chosen tab in a set
+   of one, which is a control that does nothing. */
+#exam-weak .weak-stat { color: var(--fg); font-size: .95rem; margin: 0 0 .15rem; }
+/* Opens the rest of a truncated list, in place. Same link styling as a row so
+   it reads as part of the list rather than as a button bolted under it. */
+#exam-weak .weak-more {
+  font: inherit;
+  font-size: .84rem;
+  background: none;
+  border: 0;
+  padding: .45rem 0 .1rem .5rem;
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+#exam-weak .weak-more:hover { opacity: .8; }
+/* A group heading: the diagnosis and its count. Heavier than a link row and
+   with no hairline under it, so its rows read as belonging to it. */
+#exam-weak .weak-group { border-bottom: 0; padding-top: .9rem; padding-bottom: .1rem; }
+#exam-weak .weak-group .weak-name { font-weight: 600; }
+#exam-weak .weak-group .weak-num  { color: var(--fg); font-weight: 600; font-size: .9rem; }
+/* A row that is a way into the notes, styled like the level links above
+   rather than as a filled control. */
+#exam-weak .weak-link {
+  font: inherit;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  padding-left: .5rem;
+  cursor: pointer;
+}
+#exam-weak .weak-link .weak-name { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+#exam-weak .weak-link:hover { opacity: .8; }
+/* A topic heading inside the "missed in English too" list: a DISCLOSURE for
+   the topic, with a caret and how many of the rows belong to it. Every one is
+   closed on arrival, so the whole list of topics is readable at a glance and
+   the reader opens the one they want. It is the only tappable thing at its own
+   indent; the rows it reveals sit further in and are the links. It stays plain
+   text rather than accent-colored, so a topic does not compete with the rules
+   underneath it. */
+#exam-weak .weak-topic {
+  display: flex;
+  align-items: baseline;
+  gap: .45rem;
+  width: calc(100% - .5rem);
+  /* Tight between closed headings, since the collapsed list is a dozen of them
+     and is meant to be read at a glance; opened up again where a heading
+     follows the rows of the topic above it. */
+  margin: .45rem 0 .1rem .5rem;
+  padding: .1rem 0;
+  font: inherit;
+  font-size: .86rem;
+  font-weight: 600;
+  color: var(--fg);
+  background: none;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+}
+#exam-weak .weak-topic .weak-name { flex: 1 1 auto; }
+/* The percentage is the number to compare topics by, so it carries the weight;
+   the ratio behind it stays quiet but present, because a rate says nothing
+   about whether it rests on twenty answers or four hundred. */
+#exam-weak .weak-topic .weak-pct  { color: var(--fg); font-weight: 600; white-space: nowrap; }
+#exam-weak .weak-topic .weak-num  { color: var(--muted); font-weight: 400; font-size: .78rem; }
+#exam-weak .weak-caret { color: var(--muted); font-size: .8rem; }
+#exam-weak .weak-topic:hover { opacity: .8; }
+/* A topic holding no misses: the same line, nothing to open, so it is a div and
+   not a button. Its caret span is kept but empty, so the names of every topic
+   stay on one left edge whether the line opens or not. */
+#exam-weak .weak-topic-clean { cursor: default; color: var(--muted); }
+#exam-weak .weak-topic-clean:hover { opacity: 1; }
+#exam-weak .weak-topic-clean .weak-pct { color: var(--muted); }
+#exam-weak .weak-caret { display: inline-block; min-width: .6rem; }
+#exam-weak .weak-sub + .weak-topic,
+#exam-weak .weak-link + .weak-topic { margin-top: .9rem; }
+#exam-weak .weak-topic + .weak-link { border-top: 1px solid var(--border); }
+
+/* "Same in English" (Vocabulary tab): one English word, several Italian. */
+.same-intro { font-size: .88rem; color: var(--muted); margin: .2rem 0 .6rem; max-width: 60ch; }
+.same-head { font-size: .95rem; color: var(--accent); margin: 1.1rem 0 .3rem; }
+.same-headnote { font-size: .82rem; color: var(--muted); margin: 0 0 .4rem; max-width: 60ch; }
+.same-trap > summary { color: var(--warn-ink); }
+.same-note {
+  font-size: .86rem; line-height: 1.5; margin: .35rem .6rem .5rem;
+  padding: .5rem .7rem; border-left: 3px solid var(--warn-ink); background: var(--inset);
+  border-radius: 0 6px 6px 0; max-width: 62ch;
+}
+
+/* A displayed equation in the notes ("$$ ... $$" on its own line): centered,
+   with space above and below, as in a paper. */
+.review-body p.rb-eq { text-align: center; margin: 1.1rem 0; overflow-x: auto; }
+.review-body p.rb-eq .rb-eq-x { white-space: nowrap; }
+.review-body p.rb-eq .rb-itxt { text-align: left; }
+
+/* ── Reference: the Grammar tab ─────────────────────────────────────── */
+/* Each topic is a box with its title as a bar. Open, the bar fills with the
+   accent tint and the box takes a heavier frame, so with every topic open
+   the reader can still see where one ends and the next begins. */
+.gr-topic { margin: 0 0 .8rem; border: 1px solid var(--border); border-radius: 10px; padding: 0 .9rem .6rem; overflow: hidden; }
+.gr-topic > summary { cursor: pointer; font-weight: 600; padding: .6rem .9rem; margin: 0 -.9rem; }
+.gr-topic[open] { border-color: var(--accent-border); margin-bottom: 1.4rem; }
+.gr-topic[open] > summary { background: var(--accent-tint); color: var(--accent); font-size: 1.05rem; margin-bottom: .4rem; border-bottom: 2px solid var(--accent); }
+.gr-intro, .gr-sec p { font-size: .95rem; line-height: 1.5; }
+.gr-sec { margin-top: 1rem; padding-top: .8rem; border-top: 1px solid var(--border); }
+.gr-fold { display: flex; gap: .4rem; margin-right: auto; }
+.gr-sec h4 { margin: 0 0 .3rem; font-size: 1rem; }
+/* The Questions tab: statements found in the bank, no answers. */
+.bank-row { margin: .5rem 0; padding: .5rem .7rem; border-left: 3px solid var(--accent); background: var(--inset); border-radius: 0 8px 8px 0; }
+.bank-en { font-size: .85rem; color: var(--muted); margin-top: .2rem; }
+.bank-meta { display: flex; align-items: center; justify-content: space-between; gap: .6rem; margin-top: .3rem; font-size: .75rem; color: var(--muted); }
+.bank-hit { background: var(--note-bg); color: inherit; box-shadow: 0 0 0 2px var(--note-bg); padding: 0 .1em; border-radius: 3px; font-weight: 600; }
+.gr-ex { margin: .5rem 0 .5rem .2rem; padding: .45rem .6rem; border-left: 3px solid var(--accent); background: var(--inset); border-radius: 0 8px 8px 0; }
+.gr-it { font-size: .95rem; }
+.gr-en { font-size: .85rem; color: var(--muted); margin-top: .2rem; }
+.gr-num { font-size: .75rem; color: var(--muted); margin-top: .15rem; }
+.gr-hit { background: var(--note-bg); color: inherit; box-shadow: 0 0 0 2px var(--note-bg); padding: 0 .1em; border-radius: 3px; font-weight: 600; }
+.gr-speak { font-size: .9rem; padding: 0 .15rem; background: none; border: none; cursor: pointer; }
+.gr-enx { margin: .15rem 0 .15rem 1.2rem; color: var(--muted); }
+.gr-after { font-size: .9rem; line-height: 1.5; color: var(--muted); margin: .2rem 0 0; }
+.gr-after i { color: var(--text); }
+.gr-tools { display: flex; justify-content: flex-end; margin: 0 0 .6rem; }
+.gr-recap { width: 100%; border-collapse: collapse; font-size: .88rem; margin-top: .3rem; }
+.gr-recap th, .gr-recap td { text-align: left; vertical-align: top; padding: .35rem .45rem; border-bottom: 1px solid var(--border); }
+.gr-recap th { font-weight: 600; color: var(--muted); }
+.gr-recap-it { font-style: italic; }
+#review-pane-grammar.gr-en-hidden .gr-ex { cursor: pointer; }
+#review-pane-grammar.gr-en-hidden .gr-ex:not(.gr-reveal) .gr-en { display: none; }
+.gr-exit { color: var(--text); }
+.gr-parse-it { margin: .3rem 0 .3rem 1.2rem; font-size: .95rem; }
+.gr-parse { display: grid; gap: .35rem; margin: .3rem 0 .6rem 1.2rem; }
+.gr-parse-row { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: .6rem; padding: .3rem .5rem; border-left: 3px solid var(--border); background: var(--inset); border-radius: 0 8px 8px 0; }
+.gr-parse-main { border-left-color: var(--accent); }
+.gr-parse-main .gr-exit { font-weight: 600; }
+.gr-parse-lab { font-size: .8rem; color: var(--muted); padding-top: .1rem; }
+.gr-parse-main .gr-parse-lab { color: var(--accent); font-weight: 600; }
+.gr-parse-en { display: block; font-size: .85rem; color: var(--muted); }
+.stmt-reading { margin-top: .6rem; white-space: normal; font-style: normal; }
+.stmt-reading .gr-parse { margin-left: 0; }
+.stmt-reading-head { margin: 0 0 .3rem; font-weight: 600; font-size: .9rem; }
+.stmt-reading-note { margin: .4rem 0 0; font-size: .9rem; }
+@media (max-width: 440px) { .stmt-reading .gr-parse-row { grid-template-columns: 4.8rem minmax(0, 1fr); gap: .4rem; } }
+
+
+/* "Questions you keep missing" on the Statistics page (20261006p). */
+.km-controls { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; margin: 0 0 .4rem; }
+.km-min { display: inline-flex; align-items: center; gap: .35rem; font-size: .88rem; color: var(--muted); }
+.km-min select { font: inherit; padding: .1rem .3rem; border-radius: 6px; border: 1px solid var(--border); background: var(--card-bg); color: var(--fg); }
+.km-hint { font-size: .85rem; color: var(--muted); line-height: 1.45; margin: 0 0 .5rem; }
+.km-row { border-top: 1px solid var(--border); }
+.km-row > summary { display: flex; gap: .7rem; align-items: flex-start; padding: .6rem .1rem; cursor: pointer; list-style: none; }
+.km-row > summary::-webkit-details-marker { display: none; }
+.km-img { width: 64px; height: 64px; object-fit: contain; flex-shrink: 0; background: #fff; border-radius: 6px; }
+.km-main { display: flex; flex-direction: column; gap: .25rem; min-width: 0; }
+.km-it { font-size: .95rem; line-height: 1.4; color: var(--fg); }
+.km-misses { font-size: .78rem; color: var(--muted); }
+.km-lvl.has-miss { color: var(--wrong); font-weight: 600; }
+.km-body { padding: 0 .1rem .8rem; display: flex; flex-direction: column; gap: .5rem; align-items: flex-start; }
+.km-en { font-size: .9rem; font-style: italic; color: var(--muted); line-height: 1.4; }
+.km-answer { font-weight: 700; margin-bottom: .3rem; }
+.km-expl { font-size: .88rem; line-height: 1.45; margin-bottom: .3rem; white-space: pre-line; }
+.km-expl-en { color: var(--muted); }
+/* An opened row is the question itself: the figure at the study card's size,
+   then VERO / FALSO, then the result (20261006v). */
+.km-row[open] .km-img { display: none; }
+.km-figure { align-self: stretch; text-align: center; padding: .4rem 0; }
+.km-vfrow { display: flex; gap: 1.2rem; }
+.km-vf { min-width: 6.5rem; font-weight: 700; }
+.km-vf:disabled { opacity: .55; cursor: default; }
+.km-vf.km-correct { opacity: 1; border-color: var(--correct); color: var(--correct); }
+.km-vf.km-chosen:not(.km-correct) { opacity: 1; border-color: var(--wrong); color: var(--wrong); }
+.km-ans.is-wrong .km-answer { color: var(--wrong); }
+
+/* A phone held sideways (reported 2026-10-01): about 390 px high, so the 4:3
+   frame, sized from the height, came out 285 px wide and pushed the answer
+   squares and the strip off the screen. In a short, wide window the sheet
+   fills the width instead: the clock and Riepilogo in a narrow column on the
+   left, the question beside it with V and F at its right, and a compact strip
+   along the bottom. Placed last, so it overrides both width layouts. */
+@media (orientation: landscape) and (max-height: 560px) {
+  body.exam-locked #screen-exam { padding-top: .4rem; padding-bottom: .4rem; max-width: none; }
+  #exam-sheet {
+    width: 100%; aspect-ratio: auto;
+    /* Fill the window below the app bar, so the strip sits at the bottom of
+       the screen as in portrait and never moves with the statement. */
+    min-height: calc(100vh - 4.4rem); min-height: calc(100dvh - 4.4rem);
+    grid-template-columns: 8.5rem 1fr; grid-template-rows: 1fr auto;
+    grid-template-areas: "side main" "nav nav";
+  }
+  .exam-side { grid-template-columns: none; grid-template-rows: auto; align-content: start; }
+  .exam-side-cand { display: none; }
+  .exam-side-time { grid-template-columns: none; grid-template-rows: auto; justify-items: center; padding: .5rem .4rem; gap: .3rem; }
+  .exam-side-time .exam-blue-btn { width: 100%; padding: .4rem .5rem; }
+  .exam-side-label { font-size: .75rem; }
+  .exam-time { font-size: 1.35rem; }
+  .exam-main {
+    grid-template-columns: 1fr auto; grid-template-rows: auto 1fr;
+    grid-template-areas: "counter answer" "q answer";
+    gap: .3rem 1rem; padding: .5rem .8rem;
+  }
+  .exam-counter { grid-area: counter; font-size: .95rem; }
+  #exam-card { grid-area: q; }
+  .exam-q .stmt-italian { font-size: 1rem; line-height: 1.35; }
+  .exam-quesito-ref, .exam-q .stmt-number { font-size: .72rem; margin-bottom: 0; }
+  #exam-card.exam-card-fig { display: grid; grid-template-columns: minmax(0, 42%) 1fr; column-gap: .9rem; align-items: start; }
+  #exam-card.exam-card-fig .exam-card-img { grid-row: 1 / span 2; margin: .1rem 0 0; max-width: 100%; }
+  .exam-sheet-answer { grid-area: answer; align-self: center; justify-self: end; padding-bottom: 0; gap: .3rem; }
+  .exam-answer-label { font-size: .9rem; }
+  .exam-vf-btn { width: 3.6rem; height: 3.6rem; font-size: 1.9rem; }
+  .exam-sheet-nav { grid-template-columns: auto 1fr auto; }
+  .exam-nav-btn { padding: .25rem .6rem; font-size: .75rem; grid-auto-flow: column; gap: .35rem; }
+  .exam-arrow { font-size: 1.2rem; }
+  .exam-group, .exam-chip { padding: .3rem 0; font-size: .78rem; }
+}
+@media (orientation: landscape) and (max-height: 560px) and (max-width: 759px) {
+  .exam-vf { flex-direction: column; gap: .4rem; }
+  .exam-vf-btn { width: 3.2rem; height: 3.2rem; font-size: 1.7rem; }
+}
+
+/* A short portrait phone (Display Zoom puts an iPhone at 320 x 693; an SE is
+   375 x 667): the stacked layout's fixed sizes add up to more than the
+   screen once a figure is shown, so the same parts are drawn smaller. */
+@media (orientation: portrait) and (max-height: 760px) and (max-width: 759px) {
+  body.exam-locked #screen-exam { padding-top: .5rem; padding-bottom: .5rem; }
+  #exam-sheet { min-height: calc(100vh - 5.2rem); min-height: calc(100dvh - 5.2rem); }
+  .exam-side-time { padding: .35rem .6rem; }
+  .exam-main { gap: .4rem; padding: .55rem .8rem; }
+  .exam-counter { font-size: 1rem; }
+  .exam-q .stmt-italian { font-size: 1.02rem; line-height: 1.35; }
+  .exam-quesito-ref, .exam-q .stmt-number { font-size: .72rem; margin-bottom: 0; }
+  .exam-card-img { margin: .3rem auto .5rem; }
+  .exam-sheet-answer { padding-bottom: .4rem; gap: .25rem; }
+  .exam-answer-label { font-size: .95rem; }
+  .exam-vf-btn { width: 3.8rem; height: 3.8rem; font-size: 2rem; }
+  .exam-nav-btn { padding: .35rem .4rem; }
+  .exam-group, .exam-chip { padding: .4rem 0; }
+}
+
+/* Narrow phones (320 px under iOS Display Zoom, reported 2026-10-01): two
+   rows that could not wrap made the whole page wider than the screen. */
+@media (max-width: 560px) {
+  /* The readiness ring and its notes: the notes go under the ring. */
+  .exam-readiness { flex-wrap: wrap; justify-content: center; }
+  .exam-readiness-note { flex: 1 1 100%; }
+}
+@media (max-width: 440px) {
+  /* A vocabulary row: the word, its count and the +/- on one line, the gloss
+     on its own line under them. */
+  .lookups-list li { flex-wrap: wrap; row-gap: .15rem; }
+  .lookups-term { min-width: 0; flex: 1 1 auto; overflow-wrap: anywhere; }
+  .lookups-gloss { order: 5; flex: 1 1 100%; min-width: 0; overflow-wrap: anywhere; }
+  /* The time table in the How-to: six columns, drawn tighter. */
+  .rules-table { font-size: .72rem; }
+  .rules-table th, .rules-table td { padding: .2rem .22rem; }
+  /* A Settings row's text column may shrink, and its select with it. */
+  .settings-row-text { min-width: 0; }
+  .settings-select { max-width: 100%; }
+}
+
+/* The two routes in the licensing How-to (20261007c). */
+.route-tabs { display: flex; flex-wrap: wrap; gap: .5rem; margin: .9rem 0 .6rem; }
+.route-tab {
+  font: inherit; font-size: .9rem; font-weight: 600; padding: .45rem .9rem; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--card-bg); color: var(--muted); cursor: pointer;
+}
+.route-tab.is-on { background: var(--accent-tint); border-color: var(--accent-border); color: var(--accent); }
+.route-pane.hidden { display: none; }
+
+/* Mock exam timings (20261007d). */
+.exam-time-used { margin: .2rem 0 .8rem; color: var(--muted); font-size: .92rem; }
+.exam-rev-time { margin-left: .4rem; font-size: .8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.exam-rev-time.is-slow { color: var(--warn-ink, var(--wrong)); font-weight: 600; }
+
+/* Adding a right answer to the weak spots from a mock review (20261007f). */
+.exam-rev-pin.is-on { color: var(--accent); border-color: var(--accent-border); background: var(--accent-tint); }
+
+/* The mean and standard deviation under the mock results (20261007j). */
+.exam-sort { background: none; border: 0; padding: 0; margin: 0; font: inherit; color: inherit; cursor: pointer; text-align: inherit; white-space: nowrap; }
+.exam-sort.is-on { color: var(--text); }
+.exam-sort-dir { font-size: .7em; margin-left: .2em; }
+.exam-history-table tfoot td { font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
+.exam-history-table tfoot tr:first-child td { border-top: 2px solid var(--border); }
+@media (max-width: 440px) {
+  /* Five columns and two closing rows on a narrow phone: tighter cells. */
+  .exam-history-table th, .exam-history-table td { padding: .3rem .35rem; }
+}
+
+/* "If you had to guess" on the Statistics page (20261007p). */
+.exam-guess .weak-title { color: var(--fg); font-weight: 600; font-size: 1.05rem; margin: 0 0 .2rem; }
+.exam-guess .weak-note  { color: var(--muted); font-size: .85rem; line-height: 1.45; margin: 0 0 .7rem; }
+.guess-head { font-weight: 600; margin: 1rem 0 .3rem; }
+.guess-table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+.guess-table th, .guess-table td { padding: .3rem .45rem; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; }
+.guess-table th { color: var(--muted); font-weight: 600; }
+.guess-table td:nth-child(2), .guess-table td:nth-child(3) { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.guess-table td:last-child { color: var(--muted); }
+.topic-odds td:last-child { color: inherit; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.topic-odds-link { background: none; border: 0; padding: 0; margin: 0; font: inherit; text-align: left; color: var(--accent); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+.strat-read { margin: .3rem 0 .6rem 1.2rem; padding: 0; font-size: .9rem; line-height: 1.45; }
+.strat-read li { margin: .25rem 0; }
+.strat-length { margin-top: .8rem; }
+/* The trend shares the page's 560 px centered column (20261009l): at full
+   width it was left-aligned against the narrower boxes below it. */
+#exam-trend { width: 100%; max-width: 560px; margin: 0 auto; justify-self: center; }
+#exam-trend > .section-title { margin-top: 0; }
+.exam-history-box { width: 100%; margin-top: 1rem; }
+.exam-history-box .exam-history-hint { margin-top: 0; }
+.trend-chart .guess-head { margin-top: 0; }
+.trend-axis { display: flex; gap: .4rem; margin: 0 0 .5rem; }
+.trend-axis-btn { font: inherit; font-size: .82rem; padding: .2rem .7rem; border: 1px solid var(--border); border-radius: 999px; background: var(--card-bg); color: var(--muted); cursor: pointer; }
+.trend-axis-btn.active { border-color: var(--accent-border); color: var(--accent); background: var(--accent-tint); }
+.trend-legend { display: flex; flex-wrap: wrap; gap: .3rem 1rem; font-size: .82rem; color: var(--muted); margin: 0 0 .3rem; }
+.trend-key { display: inline-flex; align-items: center; gap: .35rem; }
+.trend-swatch { display: inline-block; width: 16px; height: 0; border-top: 2px solid var(--accent); }
+.trend-swatch.is-level { border-top: 1px solid var(--muted); opacity: .7; }
+.trend-effort { margin-bottom: 1rem; }
+.trend-swatch.is-dot { width: 8px; height: 8px; border: 0; border-radius: 50%; background: var(--text); opacity: .45; }
+/* Result colors for the trend's dots (20261009k), checked for color-blind
+   separation with the dataviz validator, light and dark. */
+:root { --tc-pass: #0f9d8a; --tc-edge: #e0a800; --tc-fail: #d03a3a; }
+:root[data-theme="dark"] { --tc-pass: #22a892; --tc-edge: #cc9a00; --tc-fail: #e3584f; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --tc-pass: #22a892; --tc-edge: #cc9a00; --tc-fail: #e3584f; } }
+.trend-swatch.is-dot.is-pass { background: var(--tc-pass); opacity: 1; }
+.trend-swatch.is-dot.is-edge { background: var(--tc-edge); opacity: 1; }
+.trend-swatch.is-dot.is-fail { background: var(--tc-fail); opacity: 1; }
+.stats-mock-row { width: 100%; display: flex; justify-content: center; margin: .2rem 0 1rem; }
+.trend-plot { position: relative; max-width: 100%; }
+.trend-svg { display: block; max-width: 100%; height: auto; touch-action: pan-y; }
+.tc-grid { stroke: var(--border); stroke-width: 1; }
+.tc-tick, .tc-axis, .tc-reflab { fill: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.tc-reflab { fill: var(--text); font-weight: 600; }
+.tc-ref { stroke: var(--muted); stroke-width: 1; opacity: .7; }
+.tc-line { fill: none; stroke-linejoin: round; stroke-linecap: round; }
+.tc-line.is-main { stroke: var(--accent); stroke-width: 2; }
+.tc-end.is-main { fill: var(--accent); stroke: var(--card-bg); stroke-width: 2; }
+.tc-dot { fill: var(--text); fill-opacity: .45; stroke: var(--card-bg); stroke-width: 2; }
+.tc-dot.is-pass { fill: var(--tc-pass); fill-opacity: 1; }
+.tc-dot.is-edge { fill: var(--tc-edge); fill-opacity: 1; }
+.tc-dot.is-fail { fill: var(--tc-fail); fill-opacity: 1; }
+.tc-dot.is-open { stroke: var(--text); stroke-width: 2.5; r: 6; }
+.trend-svg { cursor: pointer; }
+.trend-tip .trend-tip-open { color: var(--muted); font-size: .9em; }
+.tc-band { fill: var(--accent); fill-opacity: .13; }
+.trend-swatch.is-band { width: 16px; height: 10px; border: 0; border-radius: 2px; background: var(--accent); opacity: .22; }
+.tc-cross { stroke: var(--muted); stroke-width: 1; }
+.trend-tip { position: absolute; top: 4px; width: 170px; padding: .3rem .45rem; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 2px 8px var(--shadow, rgba(0,0,0,.12)); font-size: .78rem; line-height: 1.35; pointer-events: none; }
+.trend-tip strong, .trend-tip span { display: block; }
+.guess-part { margin-top: 1.6rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+@media (max-width: 440px) {
+  .guess-table { font-size: .76rem; }
+  .guess-table th, .guess-table td { padding: .25rem .25rem; }
+  .guess-table td:last-child { overflow-wrap: anywhere; }
+}
+
+/* The two Statistics sections in disclosures (20261007q). */
+.stats-box { margin: 0; }
+.stats-box-body { padding: .8rem 1rem 1rem; }
+.stats-box-body > .weak-note:first-child { margin-top: 0; }
+
+/* The mock sheet on a phone held upright (20261009j, maintainer): the two
+   arrows take their short labels, Prec. and Succ., and a narrow column, so
+   the group tabs and the ten number chips get the width between them. */
+.exam-nav-short { display: none; }
+@media (max-width: 640px) and (orientation: portrait) {
+  .exam-nav-full { display: none; }
+  .exam-nav-short { display: inline; }
+  .exam-sheet-nav { grid-template-columns: 3.6rem minmax(0, 1fr) 3.6rem; }
+  .exam-nav-btn { padding: .4rem .15rem; font-size: .8rem; }
+  .exam-arrow { font-size: 1.4rem; }
+  .exam-group, .exam-chip { font-size: .85rem; }
+}
+
+
+/* A link from an explanation into the notes (20261010n). */
+a.expl-notes { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+
+/* A sent comment is a record: read-only in the Review and Send panel (20261010x). */
+.flag-row-sent .flag-row-note[readonly] { background: var(--inset, transparent); color: var(--muted); }
+
+/* The value with, right under it, how many questions turn on it (20261011a). */
+.review-valcol { display: flex; flex-direction: column; align-items: flex-end; flex-shrink: 0; text-align: right; }
+.review-asked { font-size: .78rem; color: var(--accent); white-space: nowrap; margin-top: .15rem; }

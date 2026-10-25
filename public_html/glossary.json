@@ -1,0 +1,1719 @@
+{
+ "_note": "Glossario: the hard words of the Ministry bank, explained IN ITALIAN. This is not the vocabulary list. vocabulary.json translates a word for an English speaker and, by glossary rule 14, never teaches a concept; this file explains what a word MEANS IN THE BANK'S REGISTER, for a reader who already speaks Italian and still cannot be sure which sense is meant. `src` is PROVENANCE, NOT CONTENT: where the Codice della Strada defines the term the entry follows the law and records the article here, so the wording can be checked against it, but the reference is never shown to the learner. They need to know what the word means, not which comma of art. 3 says so. Those definitions are law and Italian copyright does not cover official acts of the State, which is why following them is both safe and better sourced than paraphrasing a textbook. NO FIGURES in a definition: a quantity belongs in reference.json, where every number is traceable to the statements that test it.",
+ "entries": [
+  {
+   "t": "a livelli sfalsati",
+   "en": "On different levels, one above the other, joined by ramps. The streams of vehicles never cross.",
+   "d": "Su piani diversi, uno sopra l'altro, collegati da rampe. Le correnti di veicoli non si incrociano.",
+   "src": "art. 3 c. 1 n. 25",
+   "f": 9
+  },
+  {
+   "t": "a raso",
+   "en": "At the same level. At an at-grade junction the roads cross on one level, so you have to watch for vehicles coming from the others.",
+   "d": "Sullo stesso piano. In un'intersezione a raso le strade si incrociano allo stesso livello, per cui occorre badare ai veicoli che arrivano dalle altre.",
+   "src": "art. 3 c. 1 n. 26",
+   "f": 15
+  },
+  {
+   "t": "abbagliare",
+   "en": "To blind someone for a moment with a light too strong to see past, so they lose sight of the road.",
+   "d": "Accecare per un istante con una luce troppo forte, al punto che chi la riceve non distingue più la strada.",
+   "f": 7
+  },
+  {
+   "t": "abitacolo",
+   "en": "The enclosed space of the vehicle where the driver and passengers sit.",
+   "d": "Lo spazio chiuso del veicolo in cui stanno il conducente e i passeggeri.",
+   "f": 1
+  },
+  {
+   "t": "abrasione",
+   "en": "A surface wound made by the skin scraping against something.",
+   "d": "Ferita superficiale prodotta dallo sfregamento della pelle.",
+   "f": 3
+  },
+  {
+   "t": "ABS",
+   "en": "A braking system that keeps the wheels from locking, so the vehicle can still be steered; once it cuts in, you keep the pedal pressed all the way down.",
+   "d": "Sistema di frenata che impedisce alle ruote di bloccarsi, così che il veicolo resti sterzabile; entrato in azione, il pedale va tenuto premuto a fondo.",
+   "f": 2
+  },
+  {
+   "t": "accedere",
+   "en": "To enter a place or a road.",
+   "d": "Entrare in un luogo o su una strada.",
+   "f": 2
+  },
+  {
+   "t": "acceleratore",
+   "en": "The pedal that asks the engine for more power.",
+   "d": "Il pedale con cui si aumenta la potenza erogata dal motore.",
+   "f": 4
+  },
+  {
+   "t": "accelerazione",
+   "en": "An increase in speed. An acceleration lane is there to build up speed before merging into the flow.",
+   "d": "Aumento della velocità. La corsia di accelerazione serve a prendere velocità prima di immettersi nel flusso.",
+   "src": "art. 3 c. 1 n. 13",
+   "f": 30
+  },
+  {
+   "t": "accertamento sanitario",
+   "en": "The medical examination in which an authorized doctor checks that you meet the physical and mental requirements for driving.",
+   "d": "La visita con cui un medico autorizzato verifica i requisiti fisici e psichici richiesti per guidare.",
+   "f": 1
+  },
+  {
+   "t": "accostare",
+   "en": "To bring the vehicle over close to the edge of the roadway.",
+   "d": "Portare il veicolo vicino al margine della carreggiata.",
+   "f": 4
+  },
+  {
+   "t": "aderenza",
+   "en": "The grip the tire keeps on the road surface. Rain, ice, speed and a worn tread all reduce it, and without it the vehicle neither brakes nor steers.",
+   "d": "Il contatto che il pneumatico mantiene con il manto stradale. Si riduce con la pioggia, il ghiaccio, la velocità e il battistrada consumato, e senza di essa il veicolo non frena e non sterza.",
+   "f": 31
+  },
+  {
+   "t": "aerea",
+   "en": "Overhead: an overhead power line is the cable strung above the road that a trolleybus stays connected to.",
+   "d": "Sospesa in alto: la linea elettrica aerea è il cavo teso sopra la strada a cui il filobus resta collegato.",
+   "f": 1
+  },
+  {
+   "t": "afflusso",
+   "en": "The flow of a liquid or gas to where it is needed: an inertia switch cuts off the flow of fuel to the engine.",
+   "d": "L'arrivo di un liquido o di un gas dove serve: l'interruttore inerziale blocca l'afflusso di carburante al motore.",
+   "f": 1
+  },
+  {
+   "t": "airbag",
+   "en": "A cushion that inflates in an instant during a crash and softens the blow. It protects together with the belt, not instead of it.",
+   "d": "Cuscino che si gonfia in un istante durante l'urto e attutisce il colpo. Protegge insieme alla cintura, non al posto di essa.",
+   "f": 19
+  },
+  {
+   "t": "alternato",
+   "en": "By turns. Where one-way traffic is alternating, vehicles go one direction first and then the other.",
+   "d": "A turno. Nel senso unico alternato i veicoli passano prima in una direzione e poi nell'altra.",
+   "f": 13
+  },
+  {
+   "t": "alternatore",
+   "en": "The generator that, driven by the engine, makes the current and recharges the battery.",
+   "d": "Il generatore che, mosso dal motore, produce la corrente e ricarica la batteria.",
+   "f": 2
+  },
+  {
+   "t": "ammortizzatore",
+   "en": "The suspension part that, with the spring, damps the wheel's bouncing and keeps the tire on the road.",
+   "d": "Elemento della sospensione che, insieme alla molla, smorza le oscillazioni della ruota e tiene il pneumatico a contatto con la strada.",
+   "f": 24
+  },
+  {
+   "t": "anabbagliante",
+   "en": "A beam aimed downward, lighting the road ahead without shining into the eyes of anyone coming the other way or driving in front.",
+   "d": "Fascio luminoso orientato verso il basso, che illumina la strada davanti al veicolo senza colpire negli occhi chi arriva in senso opposto o chi precede.",
+   "f": 37
+  },
+  {
+   "t": "anomalo",
+   "en": "Not normal, irregular.",
+   "d": "Non normale, irregolare.",
+   "f": 8
+  },
+  {
+   "t": "anteriore",
+   "en": "At the front. The headlights, the windshield, the front axle.",
+   "d": "Che sta davanti. I fari anteriori, il parabrezza, l'asse anteriore.",
+   "f": 19
+  },
+  {
+   "t": "antiabbagliante",
+   "en": "Anti-dazzle: an anti-dazzle inside rearview mirror tilts to dim the headlights of the vehicle behind you.",
+   "d": "Detto del dispositivo che attenua una luce troppo forte: lo specchio retrovisore interno antiabbagliante si inclina per smorzare i fari di chi segue.",
+   "f": 1
+  },
+  {
+   "t": "appannamento",
+   "en": "The film of condensation that forms on the glass and takes away visibility.",
+   "d": "Il velo di condensa che si forma sui vetri e toglie visibilità.",
+   "f": 2
+  },
+  {
+   "t": "aquaplaning",
+   "en": "The tire riding up on a film of water the tread cannot clear. The wheel loses all contact with the asphalt and the vehicle answers neither the steering nor the brakes.",
+   "d": "Galleggiamento del pneumatico su un velo d'acqua che il battistrada non riesce ad allontanare. La ruota perde ogni contatto con l'asfalto e il veicolo non risponde più né allo sterzo né al freno.",
+   "f": 9
+  },
+  {
+   "t": "articolazione",
+   "en": "The point where two parts are joined and can turn against each other.",
+   "d": "Il punto in cui due parti sono unite e possono ruotare l'una rispetto all'altra.",
+   "f": 2
+  },
+  {
+   "t": "asse",
+   "en": "The crosswise member carrying two wheels: the mass bearing on it is the axle load, and the most heavily loaded axle is the one carrying most. Elsewhere the word means the centerline of the roadway, the line dividing it in half.",
+   "d": "Elemento trasversale che porta due ruote: la massa che vi grava è la massa sull'asse, e l'asse più caricato è quello che ne sopporta di più. Altrove la parola indica la mezzeria della carreggiata, cioè la linea che la divide a metà.",
+   "f": 14
+  },
+  {
+   "t": "assetto",
+   "en": "The settings that keep the vehicle planted: suspension, wheel geometry and how the load is distributed.",
+   "d": "La regolazione delle parti che tengono il veicolo in strada: sospensioni, geometria delle ruote e ripartizione del carico.",
+   "f": 1
+  },
+  {
+   "t": "attraversamento ciclabile",
+   "en": "A marked point where a bike path crosses the roadway.",
+   "d": "Punto segnalato in cui una pista ciclabile attraversa la carreggiata.",
+   "f": 13
+  },
+  {
+   "t": "attraversamento ferroviario",
+   "en": "A point where a road crosses a railroad line.",
+   "d": "Punto in cui una strada incrocia una linea ferroviaria.",
+   "f": 15
+  },
+  {
+   "t": "autoarticolato",
+   "en": "A combination made of a road tractor and a semi-trailer, which rests part of its weight on the tractor.",
+   "d": "Complesso di veicoli formato da un trattore stradale e da un semirimorchio, che scarica parte del proprio peso sul trattore.",
+   "src": "art. 54 c. 1 lett. i",
+   "f": 16
+  },
+  {
+   "t": "autocaravan",
+   "en": "A motor vehicle with special bodywork, permanently fitted out to carry and house at most seven people including the driver. It moves under its own engine, while a caravan is a trailer to be towed.",
+   "d": "Autoveicolo con carrozzeria speciale, attrezzato in modo permanente per il trasporto e l'alloggio di sette persone al massimo compreso il conducente. Si muove con un motore proprio, mentre il caravan è un rimorchio da trainare.",
+   "src": "art. 54 c. 1 lett. m",
+   "f": 33
+  },
+  {
+   "t": "autocarro",
+   "en": "A motor vehicle meant for carrying goods and the people who handle or accompany them.",
+   "d": "Autoveicolo destinato al trasporto di cose e delle persone addette al loro uso o trasporto.",
+   "src": "art. 54 c. 1 lett. d",
+   "f": 106
+  },
+  {
+   "t": "autocisterna",
+   "en": "A truck fitted with a tank for carrying liquids.",
+   "d": "Autocarro attrezzato con una cisterna per trasportare liquidi.",
+   "f": 3
+  },
+  {
+   "t": "autosnodato",
+   "en": "A bus made of two rigid sections joined by an articulated one, which passengers can walk through.",
+   "d": "Autobus formato da due tronconi rigidi uniti da una sezione snodata, che i viaggiatori possono attraversare liberamente.",
+   "src": "art. 54 c. 1 lett. l",
+   "f": 8
+  },
+  {
+   "t": "autotreno",
+   "en": "A combination made of two separate coupled units, one of which is the prime mover.",
+   "d": "Complesso di veicoli formato da due unità distinte e agganciate, una delle quali è la motrice.",
+   "src": "art. 54 c. 1 lett. h",
+   "f": 34
+  },
+  {
+   "t": "autoveicolo",
+   "en": "A motor vehicle with at least four wheels, motorcycles excluded. It is the family that takes in cars, buses, trucks, road tractors and motorhomes.",
+   "d": "Veicolo a motore con almeno quattro ruote, esclusi i motoveicoli. È la famiglia che comprende autovetture, autobus, autocarri, trattori stradali e autocaravan.",
+   "src": "art. 54 c. 1",
+   "f": 145
+  },
+  {
+   "t": "autovettura",
+   "en": "A motor vehicle meant for carrying people, with at most nine seats including the driver's.",
+   "d": "Autoveicolo destinato al trasporto di persone, con al massimo nove posti compreso quello del conducente.",
+   "src": "art. 54 c. 1 lett. a",
+   "f": 158
+  },
+  {
+   "t": "avaria",
+   "en": "A failure that stops the vehicle, or one of its parts, from working as it should.",
+   "d": "Guasto che impedisce al veicolo, o a una sua parte, di funzionare come dovrebbe.",
+   "f": 17
+  },
+  {
+   "t": "azione frenante",
+   "en": "The braking effect acting on a vehicle; the engine's own comes from shifting down and lifting off the accelerator, and is strongest in the lowest gear.",
+   "d": "L'effetto frenante che agisce su un veicolo; quella del motore si ottiene scalando di marcia e togliendo il piede dall'acceleratore, ed è tanto più forte quanto più bassa è la marcia.",
+   "f": 3
+  },
+  {
+   "t": "banchina",
+   "en": "The part of the road between the edge of the roadway and the first of these: sidewalk, median, verge or gutter. It is not part of the roadway. The banchina portuale on a warning sign is something else entirely: a harbor quay.",
+   "d": "Parte della strada compresa tra il margine della carreggiata e il primo tra marciapiede, spartitraffico, arginello o cunetta. Non fa parte della carreggiata. La banchina portuale di un segnale di pericolo è invece tutt'altro: la riva attrezzata di un porto.",
+   "src": "art. 3 c. 1 n. 4",
+   "f": 23
+  },
+  {
+   "t": "barriera laterale",
+   "en": "The metal barrier at the edge of the roadway, also called a guardrail, there to hold a vehicle that has left the road.",
+   "d": "La barriera metallica al margine della carreggiata, detta anche guardrail, che trattiene il veicolo uscito di strada.",
+   "f": 3
+  },
+  {
+   "t": "battistrada",
+   "en": "The part of the tire that touches the road, cut with grooves that clear water away and hold the grip.",
+   "d": "La parte del pneumatico che tocca la strada, scolpita con scanalature che allontanano l'acqua e trattengono l'aderenza.",
+   "f": 6
+  },
+  {
+   "t": "bitonale",
+   "en": "Two-toned. A tromba bitonale alternates two notes.",
+   "d": "A due suoni. Una tromba bitonale alterna due note.",
+   "f": 2
+  },
+  {
+   "t": "bonus malus",
+   "en": "The insurance system where the premium falls after a year with no at-fault claims and rises after one.",
+   "d": "Sistema assicurativo per cui il premio scende dopo un anno senza sinistri causati e sale dopo un sinistro.",
+   "f": 4
+  },
+  {
+   "t": "canalizzazione",
+   "en": "The islands, lines and chevrons that separate the streams of traffic and steer them in set directions.",
+   "d": "Insieme di isole, strisce e zebrature che separa le correnti di traffico per guidarle in direzioni determinate.",
+   "src": "art. 3 c. 1 n. 6",
+   "f": 6
+  },
+  {
+   "t": "cantoniere",
+   "en": "A road maintenance worker.",
+   "d": "L'operaio addetto alla manutenzione della strada.",
+   "f": 1
+  },
+  {
+   "t": "caravan",
+   "en": "A trailer on one or two axles, with special bodywork, fitted out to serve as living space only while stationary. It has no engine and must be towed: the one that moves under its own power is the autocaravan.",
+   "d": "Rimorchio a uno o due assi, con carrozzeria speciale, attrezzato per servire da alloggio soltanto a veicolo fermo. Non ha motore e va trainato: quello che si muove da sé è l'autocaravan.",
+   "src": "art. 56 c. 2 lett. e",
+   "f": 27
+  },
+  {
+   "t": "carrabile",
+   "en": "Passable by vehicles. A passo carrabile is a driveway entrance from the road to a property.",
+   "d": "Che consente il passaggio dei veicoli. Il passo carrabile è l'accesso dalla strada a una proprietà.",
+   "f": 25
+  },
+  {
+   "t": "carreggiata",
+   "en": "The part of the road meant for vehicles to run on, made up of one or more traffic lanes. It does not include the shoulder, the sidewalk, the emergency lane or the bike path.",
+   "d": "Parte della strada destinata allo scorrimento dei veicoli, composta da una o più corsie di marcia. Non ne fanno parte la banchina, il marciapiede, la corsia di emergenza né la pista ciclabile.",
+   "src": "art. 3 c. 1 n. 7",
+   "f": 405
+  },
+  {
+   "t": "carrello appendice",
+   "en": "A small single-axle trailer for luggage and gear, hitched behind the vehicle.",
+   "d": "Piccolo rimorchio a un asse per bagagli e attrezzi, agganciato dietro il veicolo.",
+   "f": 7
+  },
+  {
+   "t": "casello",
+   "en": "The station at the entrance to or the exit from an autostrada, where you take a ticket or pay the toll.",
+   "d": "La stazione posta all'ingresso o all'uscita di un'autostrada, dove si ritira il biglietto o si paga il pedaggio.",
+   "f": 11
+  },
+  {
+   "t": "catadiottro",
+   "en": "A device that gives off no light of its own but sends back the light it receives, so it shows up when headlights strike it.",
+   "d": "Dispositivo che non emette luce propria ma rimanda indietro quella che riceve, così da farsi vedere quando i fari lo illuminano.",
+   "f": 16
+  },
+  {
+   "t": "catalitico",
+   "en": "Turning the harmful substances in the exhaust into less harmful ones.",
+   "d": "Che trasforma le sostanze nocive dello scarico in altre meno dannose.",
+   "f": 2
+  },
+  {
+   "t": "cavalcavia",
+   "en": "A bridge carrying one road over another road or over a railroad.",
+   "d": "Ponte con cui una strada scavalca un'altra strada o una ferrovia.",
+   "f": 18
+  },
+  {
+   "t": "cellula di sicurezza",
+   "en": "The rigid part of the passenger compartment, built not to deform and to protect the people inside.",
+   "d": "La parte rigida dell'abitacolo, costruita per non deformarsi e proteggere chi vi si trova.",
+   "f": 3
+  },
+  {
+   "t": "centro abitato",
+   "en": "A continuous group of buildings marked off along its approaches by the begin and end signs. Those signs decide where it starts and stops, not the houses you can see.",
+   "d": "Insieme continuo di edifici delimitato lungo le vie di accesso dai segnali di inizio e fine. Sono quei segnali a stabilire dove comincia e dove finisce, non le case che si vedono.",
+   "src": "art. 3 c. 1 n. 8",
+   "f": 149
+  },
+  {
+   "t": "ciclabile",
+   "en": "For bicycles. A pista ciclabile is the part of the road set aside for them.",
+   "d": "Riservato alle biciclette. La pista ciclabile è la parte della strada destinata a loro.",
+   "f": 48
+  },
+  {
+   "t": "ciclomotore",
+   "en": "A two- or three-wheeled motor vehicle whose engine size and top speed stay within the limits the Code sets. It does not count as a motorcycle.",
+   "d": "Veicolo a motore a due o tre ruote, con cilindrata e velocità massima contenute entro i limiti fissati dal Codice. Non rientra fra i motoveicoli.",
+   "src": "art. 52",
+   "f": 73
+  },
+  {
+   "t": "cilindrata",
+   "en": "The total volume the pistons sweep inside the cylinders, measured in cubic centimeters. It is not the engine's power, which is given in kW.",
+   "d": "Il volume complessivo percorso dai pistoni dentro i cilindri, misurato in centimetri cubici. Non è la potenza del motore, che si esprime in kW.",
+   "f": 26
+  },
+  {
+   "t": "clacson",
+   "en": "The common name for the horn. Sounding it is almost always wrong, and no maneuver requires it. Three cases are allowed: (a) outside built-up areas, to avoid a crash, in particular before passing cyclists or pedestrians; (b) inside built-up areas, only in real and immediate danger; (c) carrying injured or seriously ill people, even where a sign bans it.",
+   "d": "Nome comune del segnalatore acustico. Suonare è quasi sempre sbagliato e nessuna manovra lo impone. I soli casi ammessi sono tre: (a) fuori dei centri abitati, per evitare un incidente, in particolare prima di sorpassare ciclisti o pedoni; (b) nei centri abitati, solo in caso di pericolo effettivo e immediato; (c) trasportando feriti o ammalati gravi, anche dove un segnale lo vieta.",
+   "src": "art. 156",
+   "f": 35
+  },
+  {
+   "t": "climatizzatore",
+   "en": "The system that cools and dries the air inside the vehicle.",
+   "d": "Impianto che raffredda e deumidifica l'aria nell'abitacolo.",
+   "f": 4
+  },
+  {
+   "t": "complesso di veicoli",
+   "en": "A motor vehicle joined to a trailer or a semi-trailer, taken together.",
+   "d": "Un veicolo a motore unito a un rimorchio o a un semirimorchio, considerati insieme.",
+   "f": 7
+  },
+  {
+   "t": "confluenza",
+   "en": "The point where a one-way road runs obliquely into another one-way road without crossing it.",
+   "d": "Punto in cui una strada a senso unico entra obliquamente in un'altra a senso unico, senza incrociarla.",
+   "f": 11
+  },
+  {
+   "t": "cono",
+   "en": "A rubber or plastic cone used to mark off work or to channel traffic temporarily.",
+   "d": "Birillo di gomma o plastica usato per delimitare un cantiere o incanalare il traffico in via provvisoria.",
+   "f": 10
+  },
+  {
+   "t": "contiguo",
+   "en": "Adjacent: right next to something, with nothing in between.",
+   "d": "Attaccato, che sta subito accanto senza nulla in mezzo.",
+   "f": 1
+  },
+  {
+   "t": "contrassegno",
+   "en": "A document or tag displayed on the vehicle to show that a duty has been met or a permission granted.",
+   "d": "Documento o tagliando da esporre sul veicolo per mostrare che un obbligo è stato assolto o un permesso concesso.",
+   "f": 10
+  },
+  {
+   "t": "contromano",
+   "en": "Against traffic: on the side of the roadway meant for vehicles coming the other way.",
+   "d": "Nel senso di marcia vietato, cioè sulla parte di carreggiata riservata a chi viene in senso opposto.",
+   "f": 1
+  },
+  {
+   "t": "convergenza",
+   "en": "Toe-in: the slight inward angle of the front wheels set by the manufacturer; when it is off, the steering loses precision.",
+   "d": "La leggera inclinazione verso l'interno delle ruote anteriori, fissata dal costruttore; se è alterata, la sterzata perde precisione.",
+   "f": 1
+  },
+  {
+   "t": "convogliare",
+   "en": "To gather and channel toward one outlet: the exhaust system channels the engine's gases outside.",
+   "d": "Raccogliere e condurre verso una sola uscita: l'impianto di scarico convoglia all'esterno i gas del motore.",
+   "f": 3
+  },
+  {
+   "t": "corrente di traffico",
+   "en": "All the vehicles travelling in the same direction.",
+   "d": "L'insieme dei veicoli che procedono nella stessa direzione.",
+   "src": "art. 3 c. 1 n. 11",
+   "f": 5
+  },
+  {
+   "t": "corsia di emergenza",
+   "en": "A lane alongside the roadway, kept for emergency stops and for emergency vehicles. It is not part of the roadway.",
+   "d": "Corsia affiancata alla carreggiata, riservata alle soste di emergenza e al transito dei veicoli di soccorso. Non fa parte della carreggiata.",
+   "src": "art. 3 c. 1 n. 15",
+   "f": 18
+  },
+  {
+   "t": "crocevia",
+   "en": "A crossroads, the point where two or more roads meet.",
+   "d": "Incrocio, punto in cui due o più strade si intersecano.",
+   "f": 1
+  },
+  {
+   "t": "cunetta",
+   "en": "A channel that collects rainwater and carries it away, running along the road or across it. On a warning sign the word also means a sharp dip in the road surface.",
+   "d": "Manufatto che raccoglie e allontana l'acqua piovana, ricavato lungo la strada o di traverso. Nei segnali di pericolo la parola indica anche un brusco avvallamento del piano stradale.",
+   "src": "art. 3 c. 1 n. 19",
+   "f": 9
+  },
+  {
+   "t": "decelerazione",
+   "en": "A decrease in speed. A deceleration lane is there to slow down out of the flow before leaving the roadway.",
+   "d": "Diminuzione della velocità. La corsia di decelerazione serve a rallentare fuori dal flusso prima di lasciare la carreggiata.",
+   "src": "art. 3 c. 1 n. 14",
+   "f": 15
+  },
+  {
+   "t": "defluire",
+   "en": "To flow away: a slow vehicle pulls over to let the traffic built up behind it flow past.",
+   "d": "Scorrere via: un veicolo lento accosta per far defluire il traffico che si è formato dietro.",
+   "f": 1
+  },
+  {
+   "t": "delineatore",
+   "en": "A complementary device that makes the edge of the road, or the line a carriageway takes, visible in the dark, by reflecting the light that falls on it.",
+   "d": "Il dispositivo complementare che rende visibile al buio il margine della strada, o l'andamento della carreggiata, rimandando la luce che lo colpisce.",
+   "f": 78
+  },
+  {
+   "t": "diesel",
+   "en": "Diesel: an engine that burns gas oil, ignited by compressing the air rather than by a spark plug.",
+   "d": "Detto del motore che brucia gasolio, acceso dalla compressione dell'aria invece che da una candela.",
+   "f": 1
+  },
+  {
+   "t": "differenziale",
+   "en": "The mechanism that lets the two driven wheels turn at different speeds when the vehicle corners.",
+   "d": "Il meccanismo che lascia girare le due ruote motrici a velocità diverse quando il veicolo curva.",
+   "f": 2
+  },
+  {
+   "t": "direttrice",
+   "en": "Steered: said of the wheel the steering wheel turns, the one that points the vehicle.",
+   "d": "Detto della ruota che il volante orienta, quella che dà la direzione al veicolo.",
+   "f": 1
+  },
+  {
+   "t": "disappannamento",
+   "en": "The defogger, which clears the film of condensation off the glass by blowing warm air on the windshield or heating the rear window.",
+   "d": "Il dispositivo che toglie dai vetri il velo di condensa, soffiando aria calda sul parabrezza o riscaldando il lunotto.",
+   "f": 1
+  },
+  {
+   "t": "discendente",
+   "en": "Descending: the descending stretch of a hump is the part you drive after the crest.",
+   "d": "In discesa: il tratto discendente di un dosso è quello che si percorre dopo il culmine.",
+   "f": 1
+  },
+  {
+   "t": "discontinua",
+   "en": "Broken, that is interrupted at regular intervals, as opposed to a solid line.",
+   "d": "Tratteggiata, cioè interrotta a tratti regolari, in contrapposizione alla striscia continua.",
+   "f": 51
+  },
+  {
+   "t": "disimpegnare",
+   "en": "To clear by getting all the way out of it: to clear the intersection means to leave it completely free.",
+   "d": "Liberare uscendone del tutto: disimpegnare l'incrocio significa sgombrarlo completamente.",
+   "f": 1
+  },
+  {
+   "t": "dispositivo",
+   "en": "A device fitted to the vehicle or placed on the road to do one particular job.",
+   "d": "Apparecchio o congegno montato sul veicolo o posto sulla strada per svolgere una funzione precisa.",
+   "f": 36
+  },
+  {
+   "t": "dissestato",
+   "en": "Broken up and uneven. A fondo dissestato has potholes and dips.",
+   "d": "Rovinato e irregolare. Un fondo stradale dissestato ha buche e avvallamenti.",
+   "f": 3
+  },
+  {
+   "t": "distanza di sicurezza",
+   "en": "The distance from the vehicle ahead that lets you stop in time and avoid running into it, whatever your speed.",
+   "d": "La distanza dal veicolo che precede che permette di arrestarsi in tempo ed evitare il tamponamento, qualunque sia la velocità.",
+   "src": "art. 149 c. 1",
+   "f": 107
+  },
+  {
+   "t": "distanziometrico",
+   "en": "Showing how far away something is. Countdown markers, with their slanted bars, say how much is left to a railroad crossing.",
+   "d": "Che indica la distanza. I pannelli distanziometrici, a bande oblique, segnalano quanto manca a un passaggio a livello.",
+   "f": 9
+  },
+  {
+   "t": "distintivo",
+   "en": "The badge worn or displayed on a vehicle that identifies someone on duty.",
+   "d": "Il contrassegno portato addosso o esposto sul veicolo che fa riconoscere chi svolge un servizio.",
+   "f": 1
+  },
+  {
+   "t": "emorragia",
+   "en": "Heavy bleeding from a wound.",
+   "d": "Perdita di sangue abbondante da una ferita.",
+   "f": 7
+  },
+  {
+   "t": "entità",
+   "en": "How much of something there is: how big, how heavy, how costly. A danno di lieve entità is a small one.",
+   "d": "La misura di qualcosa: quanto è grande, quanto pesa, quanto vale. Un danno di lieve entità è un danno piccolo.",
+   "f": 3
+  },
+  {
+   "t": "equilibrato",
+   "en": "Evenly balanced, with no side carrying or doing more than the other.",
+   "d": "Distribuito in modo uniforme, senza che un lato pesi o lavori più dell'altro.",
+   "f": 1
+  },
+  {
+   "t": "equipaggiamento",
+   "en": "The set of devices the vehicle is required to carry.",
+   "d": "L'insieme dei dispositivi di cui il veicolo deve essere dotato.",
+   "f": 2
+  },
+  {
+   "t": "esibire",
+   "en": "To show a document to someone entitled to ask for it.",
+   "d": "Mostrare un documento a chi ha il potere di richiederlo.",
+   "f": 7
+  },
+  {
+   "t": "esito",
+   "en": "The result of a check or of a medical examination.",
+   "d": "Il risultato di un controllo o di un esame medico.",
+   "f": 2
+  },
+  {
+   "t": "extraurbano",
+   "en": "Outside built-up areas. An extraurbana road is one running beyond the begin and end signs of the built-up area.",
+   "d": "Fuori dai centri abitati. Una strada extraurbana è quella che corre oltre i segnali di inizio e fine dell'abitato.",
+   "f": 189
+  },
+  {
+   "t": "fendinebbia",
+   "en": "A lamp with a wide, low beam that lights the edge of the road when fog, heavy rain or snow cut visibility.",
+   "d": "Proiettore dal fascio largo e basso, che illumina il margine della strada quando nebbia, pioggia fitta o neve riducono la visibilità.",
+   "f": 2
+  },
+  {
+   "t": "feriale",
+   "en": "A working day, Saturday included: every day except Sundays and public holidays.",
+   "d": "Giorno lavorativo, sabato compreso: tutti i giorni tranne le domeniche e le festività.",
+   "f": 2
+  },
+  {
+   "t": "fermata",
+   "en": "A brief halt to let people get on or off, or for other very short needs. The driver stays with the vehicle, ready to move off, and must not obstruct traffic.",
+   "d": "Sospensione temporanea della marcia per far salire o scendere le persone, o per altre esigenze di brevissima durata. Il conducente resta presente e pronto a ripartire, e non deve intralciare la circolazione.",
+   "src": "art. 157 c. 1 lett. b",
+   "f": 153
+  },
+  {
+   "t": "ferroviario",
+   "en": "Of the railroad, that is of the tracks.",
+   "d": "Della ferrovia, cioè dei binari.",
+   "f": 47
+  },
+  {
+   "t": "festivi",
+   "en": "Sundays and public holidays. Working days are all the rest.",
+   "d": "Le domeniche e i giorni di festa. I giorni lavorativi sono tutti gli altri.",
+   "f": 10
+  },
+  {
+   "t": "flusso",
+   "en": "The body of vehicles moving in the same direction.",
+   "d": "L'insieme dei veicoli che scorrono nella stessa direzione.",
+   "f": 23
+  },
+  {
+   "t": "folle",
+   "en": "The gearbox position with no gear engaged, so the engine drives nothing.",
+   "d": "La posizione del cambio in cui nessuna marcia è inserita e il motore non trasmette moto alle ruote.",
+   "f": 15
+  },
+  {
+   "t": "fornice",
+   "en": "An arched opening under a building, such as the passage beneath an arcade.",
+   "d": "Apertura ad arco sotto una costruzione, per esempio il passaggio sotto un portico.",
+   "f": 3
+  },
+  {
+   "t": "forza maggiore",
+   "en": "An outside, unforeseeable cause that made what happened unavoidable.",
+   "d": "Una causa esterna e imprevedibile che rende inevitabile ciò che si è fatto.",
+   "f": 2
+  },
+  {
+   "t": "frizione",
+   "en": "The device that connects the engine to the gearbox and separates them, used to move off, change gear and stop.",
+   "d": "Dispositivo che collega e stacca il motore dal cambio, e serve a partire, a cambiare marcia e a fermarsi.",
+   "f": 9
+  },
+  {
+   "t": "frontale",
+   "en": "Facing you. A senso unico frontale is the one-way street ahead of you, not the one you are on.",
+   "d": "Che sta di fronte. Un senso unico frontale è quello della strada che si ha davanti, non di quella che si percorre.",
+   "f": 8
+  },
+  {
+   "t": "furto",
+   "en": "The theft of the vehicle or of what is in it.",
+   "d": "La sottrazione del veicolo o di ciò che contiene.",
+   "f": 4
+  },
+  {
+   "t": "ganasce",
+   "en": "The clamp fitted to the wheel of an illegally parked vehicle to stop it from being driven away.",
+   "d": "Le morse che si applicano alla ruota di un veicolo in sosta vietata e gli impediscono di ripartire.",
+   "f": 2
+  },
+  {
+   "t": "gasolio",
+   "en": "Gas oil, the fuel that diesel engines burn.",
+   "d": "Il carburante dei motori diesel.",
+   "f": 1
+  },
+  {
+   "t": "generalità",
+   "en": "Someone's personal particulars: name, surname, place and date of birth, address.",
+   "d": "I dati anagrafici di una persona: nome, cognome, luogo e data di nascita, residenza.",
+   "f": 1
+  },
+  {
+   "t": "generatore",
+   "en": "The unit that produces the vehicle's electricity and recharges the battery while the engine runs.",
+   "d": "L'organo che produce la corrente elettrica del veicolo e ricarica la batteria mentre il motore gira.",
+   "f": 1
+  },
+  {
+   "t": "immissione",
+   "en": "Entering a road from another road or from private ground.",
+   "d": "L'entrare in una strada provenendo da un'altra o da un'area privata.",
+   "f": 7
+  },
+  {
+   "t": "impegnare",
+   "en": "To enter a junction or a crossing and take up space in it with your vehicle.",
+   "d": "Entrare in un incrocio o in un attraversamento occupandone l'area con il veicolo.",
+   "f": 33
+  },
+  {
+   "t": "in corrispondenza",
+   "en": "At exactly that point, not nearby. A ban that holds in corrispondenza of a crossing applies to the crossing itself.",
+   "d": "Esattamente in quel punto, non nelle vicinanze. Un divieto valido in corrispondenza di un attraversamento riguarda proprio il tratto dell'attraversamento.",
+   "f": 118
+  },
+  {
+   "t": "incanalamento",
+   "en": "Channeling: the orderly movement of vehicles into the lane that leads where they are going.",
+   "d": "L'inserimento ordinato dei veicoli nella corsia che porta alla direzione scelta.",
+   "f": 1
+  },
+  {
+   "t": "infrastruttura",
+   "en": "Something built to make traffic work: bridges, tunnels, interchanges, lighting.",
+   "d": "Opera costruita per far funzionare la circolazione: ponti, gallerie, svincoli, illuminazione.",
+   "f": 2
+  },
+  {
+   "t": "infrazione",
+   "en": "Conduct that breaks a rule of the Code.",
+   "d": "Comportamento che viola una norma del Codice.",
+   "f": 10
+  },
+  {
+   "t": "iniettore",
+   "en": "The device that sprays the measured fuel into the engine.",
+   "d": "Il dispositivo che spruzza il carburante dosato dentro il motore.",
+   "f": 2
+  },
+  {
+   "t": "iniezione",
+   "en": "The system that pushes fuel into the cylinders in measured amounts.",
+   "d": "Il sistema che spinge il carburante nei cilindri in quantità dosata.",
+   "f": 3
+  },
+  {
+   "t": "innestare",
+   "en": "To engage: a gear in the gearbox, or drive to the other wheels.",
+   "d": "Inserire: la marcia nel cambio, o la trazione sulle altre ruote.",
+   "f": 2
+  },
+  {
+   "t": "integrativo",
+   "en": "Completing or narrowing something. On signs, the supplementary panel narrows or spells out the meaning of the sign above it.",
+   "d": "Che completa o precisa. Il pannello integrativo è il cartello posto sotto un segnale per limitarne o precisarne il significato.",
+   "f": 207
+  },
+  {
+   "t": "intersezione",
+   "en": "The point where two or more roads meet. The Code calls it at grade when they cross on one level, and grade separated when they lie on different levels joined by ramps.",
+   "d": "Punto in cui due o più strade si incontrano. È a raso quando si incrociano sullo stesso piano, a livelli sfalsati quando stanno su piani diversi collegati da rampe.",
+   "f": 56
+  },
+  {
+   "t": "inversione",
+   "en": "The maneuver that turns you around to go back the way you came.",
+   "d": "Manovra con cui si cambia il senso di marcia per tornare indietro.",
+   "f": 48
+  },
+  {
+   "t": "lampeggiare",
+   "en": "To flash the headlights briefly to signal that you are there.",
+   "d": "Dare brevi lampi con i proiettori per segnalare la propria presenza.",
+   "f": 1
+  },
+  {
+   "t": "lavorativo",
+   "en": "A day that is neither a Sunday nor a public holiday.",
+   "d": "Giorno che non è domenica né festa comandata.",
+   "f": 9
+  },
+  {
+   "t": "lesione",
+   "en": "Damage to part of the body: a wound, a fracture, a burn.",
+   "d": "Danno a una parte del corpo: una ferita, una frattura, un'ustione.",
+   "f": 8
+  },
+  {
+   "t": "limitazione",
+   "en": "A restriction placed on something allowed: a speed limit, a class of vehicle excluded, a time of day, a condition on the license.",
+   "d": "Restrizione posta a una facoltà: un limite di velocità, una categoria esclusa, un orario, una condizione sulla patente.",
+   "f": 15
+  },
+  {
+   "t": "linea",
+   "en": "In road markings, a stripe painted on the asphalt, solid or broken. Elsewhere the word means the railroad line or the trolleybus's overhead line.",
+   "d": "Nella segnaletica orizzontale è una striscia tracciata sull'asfalto, continua o discontinua. Altrove la parola indica la linea ferroviaria o la linea elettrica del filobus.",
+   "f": 47
+  },
+  {
+   "t": "lubrificazione",
+   "en": "The film of oil that separates the moving parts of the engine and cuts the friction between them.",
+   "d": "Il velo d'olio che separa le parti in movimento del motore e ne riduce l'attrito.",
+   "f": 12
+  },
+  {
+   "t": "lunotto",
+   "en": "The rear window of the vehicle. A heated one carries wires that clear the misting.",
+   "d": "Il vetro posteriore del veicolo. Quello termico porta fili riscaldanti che ne sciolgono l'appannamento.",
+   "f": 3
+  },
+  {
+   "t": "manutenzione",
+   "en": "The checks and replacements that keep the vehicle in working order.",
+   "d": "L'insieme dei controlli e delle sostituzioni che tengono il veicolo in efficienza.",
+   "f": 12
+  },
+  {
+   "t": "margine",
+   "en": "The edge of the roadway. The white edge line marks where the roadway ends and the shoulder begins.",
+   "d": "Il bordo della carreggiata. La striscia bianca di margine segna dove la carreggiata finisce e comincia la banchina.",
+   "f": 68
+  },
+  {
+   "t": "marmitta catalitica",
+   "en": "A muffler that passes the exhaust over special metals and turns the most harmful substances into less harmful ones.",
+   "d": "Marmitta che, facendo passare i gas su speciali metalli, trasforma le sostanze più nocive in altre meno dannose.",
+   "f": 2
+  },
+  {
+   "t": "massimale",
+   "en": "The most the insurance will pay out on a claim.",
+   "d": "La somma massima che l'assicurazione paga per un sinistro.",
+   "f": 8
+  },
+  {
+   "t": "molo",
+   "en": "A structure reaching out into the water of a harbor, where boats tie up.",
+   "d": "Struttura che si protende nell'acqua di un porto, dove le imbarcazioni attraccano.",
+   "f": 2
+  },
+  {
+   "t": "motociclo",
+   "en": "A two-wheeled motorcycle meant for carrying people, no more than two including the rider.",
+   "d": "Motoveicolo a due ruote destinato al trasporto di persone, non più di due compreso il conducente.",
+   "src": "art. 53 c. 1 lett. a",
+   "f": 156
+  },
+  {
+   "t": "Motorizzazione",
+   "en": "The government motor vehicle office, which issues licenses and vehicle documents and orders retests and inspections.",
+   "d": "L'ufficio pubblico che rilascia patenti e documenti dei veicoli e ne dispone revisioni ed esami.",
+   "f": 3
+  },
+  {
+   "t": "motoveicolo",
+   "en": "A motor vehicle on two, three or four wheels. It takes in motorcycles, sidecar machines, three-wheeled trucks and quadricycles.",
+   "d": "Veicolo a motore a due, tre o quattro ruote. Comprende i motocicli, le motocarrozzette, i motocarri e i quadricicli.",
+   "src": "art. 53 c. 1",
+   "f": 3
+  },
+  {
+   "t": "motrice",
+   "en": "The unit that carries the engine and pulls the rest of the combination.",
+   "d": "L'unità che porta il motore e traina il resto del complesso di veicoli.",
+   "f": 26
+  },
+  {
+   "t": "neopatentato",
+   "en": "A newly licensed driver, subject for a time to limits on speed and on the power of the vehicle.",
+   "d": "Chi ha conseguito la patente da poco e per un certo periodo è soggetto a limiti di velocità e di potenza del veicolo.",
+   "f": 1
+  },
+  {
+   "t": "normativa",
+   "en": "The body of rules covering a subject. The normativa antinquinamento sets how much a vehicle may emit.",
+   "d": "L'insieme delle norme su una materia. La normativa antinquinamento fissa quanto un veicolo può emettere.",
+   "f": 2
+  },
+  {
+   "t": "nylon",
+   "en": "Nylon, the light, strong synthetic fiber the airbag cushion is made of.",
+   "d": "Fibra sintetica leggera e resistente, con cui è fatto il sacco dell'airbag.",
+   "f": 1
+  },
+  {
+   "t": "omologato",
+   "en": "Officially approved as meeting the requirements of the law.",
+   "d": "Approvato ufficialmente come conforme ai requisiti di legge.",
+   "f": 16
+  },
+  {
+   "t": "onda verde",
+   "en": "Traffic lights timed along a route so that, by holding the posted speed, you meet them green one after another.",
+   "d": "Semafori regolati lungo un percorso in modo che, mantenendo la velocità indicata, si trovino via via verdi.",
+   "f": 8
+  },
+  {
+   "t": "orientamento",
+   "en": "The direction something points. The aim of the headlamps decides where the beam falls and who risks being dazzled.",
+   "d": "La direzione in cui qualcosa punta. L'orientamento dei proiettori decide dove cade il fascio e chi rischia di essere abbagliato.",
+   "f": 2
+  },
+  {
+   "t": "ostruzione",
+   "en": "Something blocking a passage; in first aid, whatever is keeping air from reaching the lungs.",
+   "d": "Ciò che chiude un passaggio; nel primo soccorso, quello che impedisce all'aria di arrivare ai polmoni.",
+   "f": 1
+  },
+  {
+   "t": "ovalizzazione",
+   "en": "The way a tire loses its round shape after standing in one position for a long time.",
+   "d": "La deformazione del pneumatico che, restando fermo a lungo nella stessa posizione, perde la forma rotonda.",
+   "f": 1
+  },
+  {
+   "t": "pannello integrativo",
+   "en": "The rectangular plate under a sign that narrows or spells out its meaning: the distance, how far the stretch runs, which vehicles are affected, the hours, the exceptions.",
+   "d": "Il cartello rettangolare posto sotto un segnale, che ne precisa o ne limita il significato: la distanza, l'estensione del tratto, le categorie di veicoli interessate, gli orari, le eccezioni.",
+   "f": 204
+  },
+  {
+   "t": "parabrezza",
+   "en": "The windshield.",
+   "d": "Il vetro anteriore del veicolo.",
+   "f": 9
+  },
+  {
+   "t": "parchimetro",
+   "en": "The machine that issues the ticket for paid parking.",
+   "d": "Apparecchio automatico che rilascia il tagliando per la sosta a pagamento.",
+   "f": 7
+  },
+  {
+   "t": "pavimentazione",
+   "en": "The surfacing the vehicles run on.",
+   "d": "Il rivestimento della strada su cui i veicoli transitano.",
+   "f": 23
+  },
+  {
+   "t": "pecuniaria",
+   "en": "In money. A sanzione pecuniaria is a sum to be paid.",
+   "d": "In denaro. Una sanzione pecuniaria è una somma da pagare.",
+   "f": 3
+  },
+  {
+   "t": "pedaggio",
+   "en": "The sum paid to use a toll road or to cross a toll structure.",
+   "d": "La somma che si paga per percorrere un'autostrada o attraversare un'opera a pagamento.",
+   "f": 4
+  },
+  {
+   "t": "pedivella",
+   "en": "The crank arm joining the pedal to the axle it turns on, on pedal-driven vehicles.",
+   "d": "La leva che unisce il pedale all'asse su cui gira, sui veicoli a pedali.",
+   "f": 3
+  },
+  {
+   "t": "pertinenza",
+   "en": "A structure or area belonging to the road and serving it: a freeway's service areas, parking areas and interchanges are its pertinenze.",
+   "d": "Opera o area che appartiene alla strada e la serve: le aree di servizio, i parcheggi, gli svincoli di un'autostrada ne sono pertinenze.",
+   "f": 3
+  },
+  {
+   "t": "pesatura",
+   "en": "Weighing: measuring the mass of a vehicle and its load.",
+   "d": "L'operazione con cui si misura la massa del veicolo e del suo carico.",
+   "f": 1
+  },
+  {
+   "t": "piazzola",
+   "en": "An area off to the side of the roadway, outside it, where vehicles can stop or park.",
+   "d": "Spiazzo ricavato a lato della carreggiata, fuori di essa, dove i veicoli possono fermarsi o sostare.",
+   "f": 35
+  },
+  {
+   "t": "pietrisco",
+   "en": "Loose gravel on the road surface, which cuts grip and can be thrown up by the wheels.",
+   "d": "Sassolini sciolti sul fondo stradale, che riducono l'aderenza e possono essere proiettati dalle ruote.",
+   "f": 3
+  },
+  {
+   "t": "polizza di assicurazione",
+   "en": "The document proving that an insurance contract exists.",
+   "d": "Il documento che prova l'esistenza del contratto di assicurazione.",
+   "f": 6
+  },
+  {
+   "t": "ponte mobile",
+   "en": "A bridge that can be opened to let boats through, breaking the road while it is open.",
+   "d": "Ponte che può essere aperto per lasciar passare le imbarcazioni, interrompendo la strada.",
+   "f": 11
+  },
+  {
+   "t": "pontile",
+   "en": "A jetty or pier reaching out over the water.",
+   "d": "Passerella o molo che si protende sull'acqua.",
+   "f": 8
+  },
+  {
+   "t": "posteriore",
+   "en": "At the rear. The tail lights, the rear window, the rear axle.",
+   "d": "Che sta dietro. Le luci posteriori, il lunotto posteriore, l'asse posteriore.",
+   "f": 58
+  },
+  {
+   "t": "precluso",
+   "en": "Blocked off: a blocked view is one that something is hiding.",
+   "d": "Impedito, sbarrato: una visuale preclusa è una visuale che qualcosa nasconde.",
+   "f": 1
+  },
+  {
+   "t": "preposto",
+   "en": "Put in charge of something. The bodies preposti to enforcement are the ones the law assigns it to.",
+   "d": "Incaricato di un compito. Gli organi preposti ai controlli sono quelli a cui la legge li affida.",
+   "f": 9
+  },
+  {
+   "t": "presegnalare",
+   "en": "To signal in advance, before the point the warning is about.",
+   "d": "Segnalare in anticipo, prima del punto a cui l'avviso si riferisce.",
+   "f": 18
+  },
+  {
+   "t": "preselezione",
+   "en": "Choosing your lane ahead of time according to the direction you mean to take, before you reach the junction.",
+   "d": "La scelta anticipata della corsia secondo la direzione che si intende prendere, fatta prima di arrivare all'incrocio.",
+   "f": 16
+  },
+  {
+   "t": "proiettore",
+   "en": "The headlamp unit that lights the road. Low beams aim down; the proiettori di profondità are the high beams, which throw light far ahead.",
+   "d": "Il gruppo ottico che illumina la strada. Gli anabbaglianti puntano verso il basso; i proiettori di profondità sono gli abbaglianti, che illuminano lontano.",
+   "f": 46
+  },
+  {
+   "t": "promiscuo",
+   "en": "Shared: used at the same time by different kinds of road user, such as a roadway shared by vehicles and streetcars.",
+   "d": "Percorso insieme da utenti di tipo diverso, come una carreggiata a circolazione promiscua veicoli e tram.",
+   "f": 1
+  },
+  {
+   "t": "proprietà laterali",
+   "en": "The properties that border the road: houses, yards, land, shops. They are entered and left by the passo carrabile, the access that joins them to the carriageway.",
+   "d": "Le proprietà che confinano con la strada: case, cortili, terreni, negozi. Vi si entra e se ne esce dal passo carrabile, l'accesso che le collega alla carreggiata.",
+   "f": 2
+  },
+  {
+   "t": "psicofisico",
+   "en": "Having to do with body and mind together. A driver's condizioni psicofisiche are their clarity and readiness.",
+   "d": "Che riguarda insieme il corpo e la mente. Le condizioni psicofisiche del conducente sono la sua lucidità e la sua prontezza.",
+   "f": 1
+  },
+  {
+   "t": "quadriciclo",
+   "en": "A four-wheeled vehicle whose mass, power and speed stay within limits of its own, which keep it apart from a car.",
+   "d": "Veicolo a quattro ruote con massa, potenza e velocità contenute entro limiti propri, che lo tengono distinto dall'autovettura.",
+   "f": 43
+  },
+  {
+   "t": "raccordo",
+   "en": "A stretch joining two roads, or two separate stretches of one: an exit connector takes you off the freeway, a connector ramp feeds you onto it. The word also means the curb ramp joining the sidewalk to the roadway.",
+   "d": "Tratto che collega fra loro due strade o due tratti diversi: il raccordo di uscita porta fuori dall'autostrada, la rampa di raccordo vi immette. La parola indica anche lo scivolo che unisce il marciapiede alla carreggiata.",
+   "f": 7
+  },
+  {
+   "t": "radiatore",
+   "en": "The exchanger where the coolant gives up its heat to the air.",
+   "d": "Lo scambiatore in cui il liquido di raffreddamento cede calore all'aria.",
+   "f": 2
+  },
+  {
+   "t": "raggio della curva",
+   "en": "How tight the curve is: a small radius means a tight curve.",
+   "d": "Quanto la curva è stretta: piccolo raggio, curva stretta.",
+   "f": 4
+  },
+  {
+   "t": "rampa",
+   "en": "A road linking two arms of a junction.",
+   "d": "Strada che collega fra loro due rami di un'intersezione.",
+   "src": "art. 3 c. 1 n. 43",
+   "f": 20
+  },
+  {
+   "t": "rapporto",
+   "en": "In the gearbox, the gear engaged. The rapporto di traino compares the trailer's mass with that of the vehicle towing it. Elsewhere the word means your dealings with other road users, that is how you behave toward them.",
+   "d": "Nel cambio è la marcia inserita. Il rapporto di traino confronta la massa del rimorchio con quella del veicolo che lo traina. Altrove la parola indica i rapporti con gli altri utenti, cioè il modo di comportarsi verso di loro.",
+   "f": 10
+  },
+  {
+   "t": "ravvicinato",
+   "en": "Close up: passing at close range to a vehicle means going right by it.",
+   "d": "Molto vicino: passare a distanza ravvicinata da un veicolo significa sfiorarlo.",
+   "f": 1
+  },
+  {
+   "t": "requisiti morali",
+   "en": "The conditions on a person's criminal record for holding a license, which have nothing to do with the way they drive. A habitual offender, a person placed under court-ordered preventive or security measures, or a person convicted of drug trafficking cannot hold a license. If such a condition arises later, the Prefect revokes the license, and it never leads to a suspension or a revision.",
+   "d": "Le condizioni sui precedenti penali di una persona per poter avere la patente, che non riguardano il suo modo di guidare. Non può avere la patente il delinquente abituale, chi è sottoposto a misure di prevenzione o di sicurezza disposte dal giudice, o chi è stato condannato per traffico di droga. Se una di queste condizioni sopravviene dopo, il Prefetto revoca la patente, e non si arriva mai a una sospensione o a una revisione.",
+   "src": "art. 120",
+   "f": 3
+  },
+  {
+   "t": "restringimento",
+   "en": "The point where the roadway becomes narrower.",
+   "d": "Punto in cui la carreggiata diventa più stretta.",
+   "f": 15
+  },
+  {
+   "t": "retrocedere",
+   "en": "To go backward, to reverse.",
+   "d": "Andare indietro, fare retromarcia.",
+   "f": 4
+  },
+  {
+   "t": "retroriflettente",
+   "en": "Sending light back toward the source it came from, so it looks bright when headlights strike it.",
+   "d": "Che rimanda la luce verso la sorgente da cui arriva, così da apparire luminoso quando i fari lo colpiscono.",
+   "f": 27
+  },
+  {
+   "t": "retrovisore",
+   "en": "The mirror that lets you see what is behind and beside the vehicle.",
+   "d": "Specchio che permette di vedere quello che sta dietro e di lato al veicolo.",
+   "f": 54
+  },
+  {
+   "t": "reversibile",
+   "en": "A lane whose direction of travel can be switched as traffic requires, with overhead signals showing which way it is open at the time.",
+   "d": "Corsia il cui senso di marcia può essere invertito secondo le necessità del traffico, con segnali luminosi che indicano volta per volta come è aperta.",
+   "f": 10
+  },
+  {
+   "t": "revisione",
+   "en": "A word with two meanings, told apart by the noun it goes with. The revisione della patente is a retest of the driver: the driver must prove again that they are fit and able to drive, with a medical check, the theory and driving tests, or both, and failing it means the license is revoked. The revisione del veicolo, or revisione periodica, is the periodic technical inspection the vehicle must pass to stay on the road.",
+   "d": "Parola con due significati, che si distinguono dal nome che la accompagna. La revisione della patente riguarda il conducente: deve dimostrare di nuovo l'idoneità alla guida, con la visita medica, gli esami di teoria e di guida o entrambi, e se non la supera la patente è revocata. La revisione del veicolo, o revisione periodica, è il controllo tecnico periodico che il veicolo deve superare per continuare a circolare.",
+   "src": "art. 80; art. 128",
+   "f": 33
+  },
+  {
+   "t": "revoca",
+   "en": "The measure that takes the license away for good, unlike suspension, which takes it away for a period.",
+   "d": "Provvedimento che toglie la patente in modo definitivo, a differenza della sospensione, che la toglie per un periodo.",
+   "f": 16
+  },
+  {
+   "t": "rifrangente",
+   "en": "Sending back the light it receives, so it shows up in the dark.",
+   "d": "Che rimanda indietro la luce che riceve, rendendosi visibile al buio.",
+   "f": 2
+  },
+  {
+   "t": "rimorchio",
+   "en": "A vehicle with no engine of its own, meant to be towed by another.",
+   "d": "Veicolo privo di motore proprio, destinato a essere trainato da un altro veicolo.",
+   "src": "art. 56 c. 1",
+   "f": 139
+  },
+  {
+   "t": "rimozione",
+   "en": "The towing away of a vehicle left where it could not stand.",
+   "d": "Lo spostamento forzato di un veicolo lasciato dove non poteva stare.",
+   "f": 6
+  },
+  {
+   "t": "risarcimento",
+   "en": "The sum paid to make good the harm done to someone.",
+   "d": "La somma pagata per riparare il danno causato a qualcuno.",
+   "f": 13
+  },
+  {
+   "t": "ruote gemellate",
+   "en": "Dual wheels: two wheels side by side on the same hub, used on heavy vehicles to spread the weight.",
+   "d": "Due ruote affiancate sullo stesso mozzo, usate sui veicoli pesanti per ripartire meglio il peso.",
+   "f": 1
+  },
+  {
+   "t": "ruote simmetriche",
+   "en": "Symmetrical wheels: wheels set in pairs at equal distance from the vehicle's centerline, one opposite the other.",
+   "d": "Ruote disposte a coppie alla stessa distanza dall'asse longitudinale del veicolo, una di fronte all'altra.",
+   "f": 1
+  },
+  {
+   "t": "ruotino pivottante di manovra",
+   "en": "A small wheel on a vertical post under a trailer's drawbar, free to swivel in any direction. Cranked down, it holds up the drawbar and lets you move the unhitched trailer by hand. Before driving it is cranked up and locked, or removed. It is not the spare wheel, which is also called ruotino.",
+   "d": "Piccola ruota montata su un montante verticale sotto il timone del rimorchio, libera di girare in ogni direzione. Abbassata con la manovella, sostiene il timone e permette di spostare a mano il rimorchio sganciato. Prima di partire va sollevata e bloccata, o smontata. Non è la ruota di scorta, anch'essa chiamata ruotino.",
+   "f": 1
+  },
+  {
+   "t": "sanzione accessoria",
+   "en": "A measure added on top of the money paid: suspension or revocation of the license, impounding or confiscation of the vehicle.",
+   "d": "Provvedimento che si aggiunge alla somma da pagare: la sospensione o la revoca della patente, il fermo o la confisca del veicolo.",
+   "f": 2
+  },
+  {
+   "t": "sanzione amministrativa",
+   "en": "The sum of money paid for a violation, as distinct from the added penalties such as suspension of the license.",
+   "d": "La somma di denaro che si paga per una violazione, distinta dalle sanzioni accessorie come la sospensione della patente.",
+   "f": 5
+  },
+  {
+   "t": "scalo",
+   "en": "A place where goods are loaded and unloaded, often served by railroad tracks.",
+   "d": "Luogo dove le merci vengono caricate e scaricate, spesso servito da binari.",
+   "f": 2
+  },
+  {
+   "t": "scalzarsi",
+   "en": "To come off the foot: motorcycle footwear that is type-approved is built not to come off in a fall.",
+   "d": "Sfilarsi dal piede: una calzatura omologata per la moto è fatta per non scalzarsi in caso di caduta.",
+   "f": 1
+  },
+  {
+   "t": "sconnessione",
+   "en": "A break or dip that makes the road surface uneven.",
+   "d": "Il dislivello o la buca che rende irregolare il fondo stradale.",
+   "f": 1
+  },
+  {
+   "t": "scuolabus",
+   "en": "A bus for carrying children to and from school.",
+   "d": "Autobus destinato al trasporto dei bambini da e per la scuola.",
+   "f": 11
+  },
+  {
+   "t": "sdrucciolevole",
+   "en": "Slippery, with little grip.",
+   "d": "Scivoloso, con poca aderenza.",
+   "f": 16
+  },
+  {
+   "t": "secondaria",
+   "en": "Less important than the others. At a junction the minor road is the one that must give way to the major.",
+   "d": "Meno importante delle altre. All'incrocio, la strada secondaria è quella che deve dare la precedenza alla principale.",
+   "f": 34
+  },
+  {
+   "t": "segnale complementare",
+   "en": "A device that picks out the line of the road, a curve or an obstacle. It shows where things are; it orders nothing.",
+   "d": "Il dispositivo che evidenzia il tracciato della strada, una curva o un ostacolo. Mostra dove sono le cose, non prescrive alcun comportamento.",
+   "src": "art. 42 c. 1",
+   "f": 6
+  },
+  {
+   "t": "segnale di direzione",
+   "en": "An information sign standing at the junction itself, naming where each arm leads.",
+   "d": "Il segnale di indicazione posto al bivio stesso, che dice dove porta ciascun ramo.",
+   "src": "art. 39 c. 1 lett. C b",
+   "f": 7
+  },
+  {
+   "t": "segnale di divieto",
+   "en": "A regulatory sign, usually round with a red border, that forbids something: a maneuver, or a category of vehicle coming through.",
+   "d": "Il segnale di prescrizione, per lo più rotondo con il bordo rosso, che vieta qualcosa: una manovra, oppure il transito a una categoria di veicoli.",
+   "src": "art. 39 c. 1 lett. B b",
+   "f": 20
+  },
+  {
+   "t": "segnale di fine prescrizione",
+   "en": "A sign that lifts a duty or a ban imposed earlier, putting traffic back under the general rule.",
+   "d": "Il segnale che fa cessare un obbligo o un divieto imposto prima, riportando la circolazione alla regola generale.",
+   "f": 3
+  },
+  {
+   "t": "segnale di indicazione",
+   "en": "A sign that gives information useful for driving: places, routes, services, facilities. It neither orders anything nor warns of a hazard. The segnale di preavviso and the segnale di direzione belong to it.",
+   "d": "Il segnale che fornisce informazioni utili alla guida: località, itinerari, servizi, impianti. Non prescrive nulla e non avverte di un pericolo. Ne fanno parte il segnale di preavviso e il segnale di direzione.",
+   "src": "art. 39 c. 1 lett. C",
+   "f": 19
+  },
+  {
+   "t": "segnale di obbligo",
+   "en": "A regulatory sign, round on a blue field, that imposes something: the direction to take, the lane to use, or who must use it.",
+   "d": "Il segnale di prescrizione, rotondo su fondo azzurro, che impone qualcosa: la direzione da prendere, la corsia da usare, o chi deve usarla.",
+   "src": "art. 39 c. 1 lett. B c",
+   "f": 19
+  },
+  {
+   "t": "segnale di pericolo",
+   "en": "A triangular sign with a red border. It warns that a hazard is coming, says what kind it is, and requires the driver to behave prudently.",
+   "d": "Il segnale triangolare con il bordo rosso. Preavvisa un pericolo, ne indica la natura e impone al conducente di tenere un comportamento prudente.",
+   "src": "art. 39 c. 1 lett. A",
+   "f": 45
+  },
+  {
+   "t": "segnale di preavviso",
+   "en": "An information sign that announces a junction, an interchange or a direction ahead of the point where the choice has to be made.",
+   "d": "Il segnale di indicazione che annuncia un bivio, uno svincolo o una direzione prima del punto in cui si deve scegliere.",
+   "src": "art. 39 c. 1 lett. C a",
+   "f": 7
+  },
+  {
+   "t": "segnale di precedenza",
+   "en": "A regulatory sign that settles who goes first where streams of vehicles meet.",
+   "d": "Il segnale di prescrizione che stabilisce chi passa per primo dove le correnti di veicoli si incontrano.",
+   "src": "art. 39 c. 1 lett. B a",
+   "f": 9
+  },
+  {
+   "t": "segnale di prescrizione",
+   "en": "The family that makes duties, prohibitions and limits known. It covers three kinds: the segnale di precedenza (STOP, yield), the segnale di divieto (no entry, no parking, no passing) and the segnale di obbligo (compulsory direction, minimum speed).",
+   "d": "La famiglia che rende noti obblighi, divieti e limitazioni. Riunisce tre tipi: il segnale di precedenza (STOP, dare precedenza), il segnale di divieto (divieto di transito, divieto di sosta, divieto di sorpasso) e il segnale di obbligo (direzione obbligatoria, velocità minima).",
+   "src": "art. 39 c. 1 lett. B",
+   "f": 26
+  },
+  {
+   "t": "segnale luminoso",
+   "en": "A sign that speaks with a light instead of a panel: traffic lights, flashing amber lamps, variable message boards.",
+   "d": "Il segnale che comunica con una luce invece che con un cartello: le lanterne semaforiche, le luci gialle lampeggianti, i pannelli a messaggio variabile.",
+   "src": "art. 41 c. 1",
+   "f": 15
+  },
+  {
+   "t": "segnale orizzontale",
+   "en": "A sign drawn on the road surface rather than carried on a post: a line, an arrow, a word, a crossing, a parking space.",
+   "d": "Il segnale tracciato sulla strada invece che su un sostegno: una striscia, una freccia, un'iscrizione, un attraversamento, uno stallo di sosta.",
+   "src": "art. 40 c. 1",
+   "f": 3
+  },
+  {
+   "t": "segnale stradale",
+   "en": "A single item of that set: one panel, one marking, one light.",
+   "d": "Il singolo elemento di quell'insieme: un cartello, un segno tracciato, una luce.",
+   "src": "art. 38 c. 1",
+   "f": 8
+  },
+  {
+   "t": "segnale temporaneo",
+   "en": "A sign put up for a limited time, typically for roadworks or an emergency, binding for as long as it stands.",
+   "d": "Il segnale posto per un periodo limitato, di solito per un cantiere o un'emergenza, che vincola finché resta in opera.",
+   "src": "art. 38 c. 3",
+   "f": 2
+  },
+  {
+   "t": "segnale verticale",
+   "en": "A sign carried on a post beside the road, the panel itself. The segnale di pericolo, the segnale di prescrizione and the segnale di indicazione are all of this kind.",
+   "d": "Il segnale montato su un sostegno a lato della strada, il cartello vero e proprio. Sono di questo tipo il segnale di pericolo, il segnale di prescrizione e il segnale di indicazione.",
+   "src": "art. 39 c. 1",
+   "f": 5
+  },
+  {
+   "t": "segnaletica orizzontale",
+   "en": "Those painted signs taken together, the whole set of markings on the road surface.",
+   "d": "L'insieme di quei segnali tracciati, tutto ciò che è dipinto sul manto stradale.",
+   "src": "art. 40 c. 2",
+   "f": 11
+  },
+  {
+   "t": "segnaletica stradale",
+   "en": "Every sign a road carries, taken together: the segnale verticale, the segnale orizzontale painted on the surface, the segnale luminoso and the segnale complementare.",
+   "d": "L'insieme dei segnali di una strada: il segnale verticale, il segnale orizzontale tracciato sul manto, il segnale luminoso e il segnale complementare.",
+   "src": "art. 38 c. 1",
+   "f": 7
+  },
+  {
+   "t": "semaforizzato",
+   "en": "Signalized: controlled by a traffic light.",
+   "d": "Regolato da un semaforo.",
+   "f": 1
+  },
+  {
+   "t": "semibarriera",
+   "en": "A railroad crossing barrier that closes only the right half of the roadway and leaves the other half clear.",
+   "d": "Barriera di passaggio a livello che chiude soltanto la metà destra della carreggiata e lascia libera l'altra.",
+   "f": 28
+  },
+  {
+   "t": "semicarreggiata",
+   "en": "Half the roadway, from the centerline to one of the two edges.",
+   "d": "Metà della carreggiata, dalla mezzeria a uno dei due margini.",
+   "f": 4
+  },
+  {
+   "t": "semirimorchio",
+   "en": "A trailer with no front axle, resting part of its weight on the vehicle towing it.",
+   "d": "Rimorchio senza asse anteriore, che appoggia una parte del proprio peso sul veicolo che lo traina.",
+   "f": 7
+  },
+  {
+   "t": "servofreno",
+   "en": "The device that cuts the effort needed to press the brake pedal.",
+   "d": "Dispositivo che riduce la forza necessaria a premere il pedale del freno.",
+   "f": 8
+  },
+  {
+   "t": "servosterzo",
+   "en": "The device that cuts the effort needed to turn the steering wheel.",
+   "d": "Dispositivo che riduce la forza necessaria a girare il volante.",
+   "f": 13
+  },
+  {
+   "t": "sgombraneve",
+   "en": "A vehicle equipped to clear snow from the road.",
+   "d": "Veicolo attrezzato per liberare la strada dalla neve.",
+   "f": 15
+  },
+  {
+   "t": "shock",
+   "en": "A serious general collapse that can follow a heavy injury or a loss of blood.",
+   "d": "Grave stato di debolezza generale che può seguire un forte trauma o una perdita di sangue.",
+   "f": 24
+  },
+  {
+   "t": "silenziatore",
+   "en": "The part of the exhaust that damps the engine's noise.",
+   "d": "Dispositivo dello scarico che attenua il rumore del motore.",
+   "f": 7
+  },
+  {
+   "t": "simultaneo",
+   "en": "Done at the same moment.",
+   "d": "Fatto nello stesso momento.",
+   "f": 3
+  },
+  {
+   "t": "sincronizzato",
+   "en": "Synchronized: timed together, so the lights turn green one after another at the posted speed.",
+   "d": "Regolato a tempo insieme ad altri: i semafori sincronizzati diventano verdi uno dopo l'altro alla velocità indicata.",
+   "f": 1
+  },
+  {
+   "t": "sollecitazione",
+   "en": "The stress the road surface puts on the vehicle and its suspension.",
+   "d": "Lo sforzo che il fondo stradale trasmette al veicolo e alle sue sospensioni.",
+   "f": 1
+  },
+  {
+   "t": "sosta",
+   "en": "A halt drawn out in time, during which the driver may also leave the vehicle.",
+   "d": "Sospensione della marcia protratta nel tempo, durante la quale il conducente può anche allontanarsi dal veicolo.",
+   "src": "art. 157 c. 1 lett. c",
+   "f": 312
+  },
+  {
+   "t": "sovrappasso",
+   "en": "A structure carrying one road over another.",
+   "d": "Opera che porta una strada a scavalcarne un'altra.",
+   "f": 4
+  },
+  {
+   "t": "spartitraffico",
+   "en": "A lengthwise part of the road, not driveable, that keeps two streams of traffic apart.",
+   "d": "Parte longitudinale della strada, non percorribile dai veicoli, che tiene separate due correnti di marcia.",
+   "src": "art. 3 c. 1 n. 49",
+   "f": 10
+  },
+  {
+   "t": "spazio di frenatura",
+   "en": "The distance covered from the moment the brakes begin to bite until the vehicle stops. Added to the distance covered during the reaction time it gives the total stopping distance.",
+   "d": "Lo spazio percorso da quando i freni cominciano ad agire fino all'arresto. Sommato allo spazio percorso durante il tempo di reazione dà lo spazio di arresto.",
+   "f": 28
+  },
+  {
+   "t": "squilibrato",
+   "en": "Unbalanced from side to side: braking that is unbalanced pulls the vehicle sideways.",
+   "d": "Non uniforme fra un lato e l'altro: una frenata squilibrata tira il veicolo di traverso.",
+   "f": 18
+  },
+  {
+   "t": "stato di ebbrezza",
+   "en": "The condition of someone who has drunk enough alcohol for it to have impaired their ability to drive.",
+   "d": "La condizione di chi ha bevuto alcolici al punto da avere le proprie capacità di guida alterate.",
+   "f": 8
+  },
+  {
+   "t": "stazionamento",
+   "en": "The freno di stazionamento is the brake that holds the vehicle still, independently of the foot brake.",
+   "d": "Il freno di stazionamento è quello che trattiene il veicolo fermo, indipendentemente dal freno a pedale.",
+   "f": 23
+  },
+  {
+   "t": "sterile",
+   "en": "Free of germs, so it can be used on a wound without infecting it.",
+   "d": "Privo di germi, quindi utilizzabile su una ferita senza infettarla.",
+   "f": 4
+  },
+  {
+   "t": "strade extraurbane",
+   "en": "The roads running outside built-up areas. The Code splits them into principali and secondarie, and the speed limits for the two are not the same.",
+   "d": "Le strade che corrono fuori dai centri abitati. Il Codice le divide in principali e secondarie, e i limiti di velocità delle due non coincidono.",
+   "src": "art. 2 c. 2",
+   "f": 170
+  },
+  {
+   "t": "striscia longitudinale",
+   "en": "A line painted along the direction of travel, separating lanes or marking the edge.",
+   "d": "Striscia tracciata nel senso della marcia, che separa le corsie o segna il margine.",
+   "f": 1
+  },
+  {
+   "t": "successione",
+   "en": "One after another. Curve in successione are bends following each other with no straight between them.",
+   "d": "Uno dopo l'altro. Curve in successione sono curve che si susseguono senza tratti diritti fra loro.",
+   "f": 2
+  },
+  {
+   "t": "surriscaldamento",
+   "en": "The engine running too hot because the cooling can no longer keep up.",
+   "d": "L'eccesso di calore del motore quando il raffreddamento non basta più.",
+   "f": 4
+  },
+  {
+   "t": "svincolo",
+   "en": "A grade-separated junction in which the streams of vehicles do not cross one another.",
+   "d": "Intersezione a livelli sfalsati nella quale le correnti di veicoli non si incrociano fra loro.",
+   "src": "art. 3 c. 1 n. 53",
+   "f": 27
+  },
+  {
+   "t": "tamburo",
+   "en": "The hollow cylinder that turns with the wheel and that the linings of a drum brake press against from inside.",
+   "d": "Il cilindro cavo che gira con la ruota e contro la cui parete interna premono le guarnizioni del freno a tamburo.",
+   "f": 2
+  },
+  {
+   "t": "tamponare",
+   "en": "To run into the back of the vehicle in front.",
+   "d": "Urtare con la parte anteriore il veicolo che precede.",
+   "f": 6
+  },
+  {
+   "t": "tara",
+   "en": "The mass of the vehicle empty, with no load and nobody aboard.",
+   "d": "La massa del veicolo vuoto, senza carico né persone.",
+   "f": 1
+  },
+  {
+   "t": "tergicristallo",
+   "en": "The arm and blade that wipe rain off the windshield.",
+   "d": "Il braccio con la spazzola che pulisce il parabrezza dalla pioggia.",
+   "f": 3
+  },
+  {
+   "t": "termico",
+   "en": "Running by burning fuel. A motore termico is the opposite of an electric one.",
+   "d": "Che funziona bruciando carburante. Il motore termico si contrappone a quello elettrico.",
+   "f": 4
+  },
+  {
+   "t": "tornante",
+   "en": "A very tight curve that almost reverses your direction, typical of mountain climbs.",
+   "d": "Curva strettissima che inverte quasi del tutto la direzione, tipica delle salite di montagna.",
+   "f": 9
+  },
+  {
+   "t": "traiettoria",
+   "en": "The line the vehicle traces as it moves.",
+   "d": "La linea che il veicolo descrive muovendosi.",
+   "f": 8
+  },
+  {
+   "t": "transitabile",
+   "en": "Passable, that is somewhere you can get through.",
+   "d": "Su cui è possibile passare.",
+   "f": 1
+  },
+  {
+   "t": "transitabilità",
+   "en": "Passability: whether a road can be driven, which snow, ice or roadwork can limit.",
+   "d": "La possibilità di percorrere una strada, che neve, ghiaccio o lavori possono limitare.",
+   "f": 1
+  },
+  {
+   "t": "tranviario",
+   "en": "Of the streetcar.",
+   "d": "Del tram.",
+   "f": 14
+  },
+  {
+   "t": "trasversale",
+   "en": "Crosswise, that is across the road rather than along it.",
+   "d": "Di traverso, cioè attraverso la strada e non lungo di essa.",
+   "f": 30
+  },
+  {
+   "t": "trattore stradale",
+   "en": "A motor vehicle meant only for towing trailers or semi-trailers.",
+   "d": "Autoveicolo destinato soltanto a trainare rimorchi o semirimorchi.",
+   "src": "art. 54 c. 1 lett. e",
+   "f": 2
+  },
+  {
+   "t": "trattrice",
+   "en": "An agricultural machine on wheels or tracks, built to tow or to drive implements.",
+   "d": "Macchina agricola a ruote o a cingoli, fatta per trainare o per azionare attrezzi.",
+   "f": 1
+  },
+  {
+   "t": "trauma",
+   "en": "Injury caused by a violent blow.",
+   "d": "Danno prodotto da un colpo violento.",
+   "f": 10
+  },
+  {
+   "t": "trazione",
+   "en": "The force the engine passes to the wheels to drive the vehicle forward. It is called front, rear or all-wheel according to which wheels are driven.",
+   "d": "La forza che il motore trasmette alle ruote per far avanzare il veicolo. Si dice anteriore, posteriore o integrale secondo le ruote motrici.",
+   "f": 12
+  },
+  {
+   "t": "triciclo",
+   "en": "A three-wheeled motor vehicle, with engine-size and speed requirements of its own.",
+   "d": "Veicolo a tre ruote a motore, con requisiti di cilindrata e velocità propri.",
+   "f": 21
+  },
+  {
+   "t": "tromba",
+   "en": "An air horn, which the questions name alongside the clacson. The same rules apply: sounding it is almost always wrong, and no maneuver requires it. Three cases are allowed: (a) outside built-up areas, to avoid a crash, in particular before passing cyclists or pedestrians; (b) inside built-up areas, only in real and immediate danger; (c) carrying injured or seriously ill people, even where a sign bans it.",
+   "d": "Avvisatore acustico a tromba, che le domande nominano accanto al clacson. Valgono le stesse regole: suonare è quasi sempre sbagliato e nessuna manovra lo impone. I soli casi ammessi sono tre: (a) fuori dei centri abitati, per evitare un incidente, in particolare prima di sorpassare ciclisti o pedoni; (b) nei centri abitati, solo in caso di pericolo effettivo e immediato; (c) trasportando feriti o ammalati gravi, anche dove un segnale lo vieta.",
+   "src": "art. 156",
+   "f": 7
+  },
+  {
+   "t": "turbolenza",
+   "en": "The churned-up air a fast vehicle leaves behind, which shakes anyone following close.",
+   "d": "Il movimento disordinato dell'aria che un veicolo lanciato si lascia dietro e che scuote chi lo segue da vicino.",
+   "f": 1
+  },
+  {
+   "t": "uniforme",
+   "en": "The uniform that identifies someone on public duty. As an adjective it means steady, always the same.",
+   "d": "La divisa da cui si riconosce chi svolge un servizio pubblico. Come aggettivo significa invece costante, sempre uguale.",
+   "f": 2
+  },
+  {
+   "t": "urbano",
+   "en": "Inside the built-up area, that is within the signs that mark it off.",
+   "d": "Dentro il centro abitato, cioè entro i segnali che lo delimitano.",
+   "f": 75
+  },
+  {
+   "t": "ustione",
+   "en": "An injury caused by heat, by a flame or by a corrosive substance.",
+   "d": "Lesione prodotta dal calore, da una fiamma o da una sostanza corrosiva.",
+   "f": 2
+  },
+  {
+   "t": "usura",
+   "en": "The wear that use puts on a part of the vehicle, above all on the tread and the brakes.",
+   "d": "Il consumo che l'uso produce su una parte del veicolo, in particolare sul battistrada e sui freni.",
+   "f": 13
+  },
+  {
+   "t": "utente",
+   "en": "Anyone using the road: drivers, passengers, pedestrians. The Code calls pedestrians, disabled people, cyclists and riders of mopeds and motorcycles vulnerable road users.",
+   "d": "Chi usa la strada: conducenti, passeggeri, pedoni. Il Codice chiama utenti vulnerabili i pedoni, le persone con disabilità, i ciclisti e i conducenti di ciclomotori e motocicli.",
+   "src": "art. 3 c. 1 n. 53-bis",
+   "f": 36
+  },
+  {
+   "t": "vagante",
+   "en": "Roaming loose. Animali vaganti are animals that may be on the road with nobody minding them.",
+   "d": "Che gira libero. Gli animali vaganti sono quelli che possono trovarsi sulla strada senza custodia.",
+   "f": 4
+  },
+  {
+   "t": "varco doganale",
+   "en": "The point where you cross from one country into another under customs control.",
+   "d": "Il punto in cui si passa da uno Stato all'altro sotto controllo doganale.",
+   "f": 4
+  },
+  {
+   "t": "veicolare",
+   "en": "Of vehicles. Vehicle traffic is the traffic of vehicles, as distinct from pedestrian traffic.",
+   "d": "Dei veicoli. Il traffico veicolare è quello dei veicoli, distinto da quello pedonale.",
+   "f": 6
+  },
+  {
+   "t": "velocipede",
+   "en": "A bicycle, driven by the muscle power of the person riding it.",
+   "d": "La bicicletta, mossa dalla forza dei muscoli di chi la usa.",
+   "f": 4
+  },
+  {
+   "t": "vettura",
+   "en": "A car; in the question bank it means the same as autovettura.",
+   "d": "Automobile; nei quesiti vale quanto autovettura.",
+   "f": 2
+  },
+  {
+   "t": "viadotto",
+   "en": "A long bridge carrying a road across a valley or a dip.",
+   "d": "Ponte lungo che scavalca una valle o un avvallamento.",
+   "f": 5
+  },
+  {
+   "t": "violazione",
+   "en": "Failing to observe a rule of law.",
+   "d": "Il non rispettare una norma di legge.",
+   "f": 8
+  },
+  {
+   "t": "viscido",
+   "en": "Slippery because of a film of dirt, oil or wet mud.",
+   "d": "Scivoloso perché coperto da un velo di sporco, olio o fango bagnato.",
+   "f": 5
+  },
+  {
+   "t": "visibilità",
+   "en": "How far ahead you can see the road. Curves, crests, darkness, fog and heavy rain all cut it down.",
+   "d": "Fin dove si riesce a vedere la strada. La riducono le curve, i dossi, il buio, la nebbia e la pioggia fitta.",
+   "f": 76
+  },
+  {
+   "t": "vittima",
+   "en": "The person harmed in a crash.",
+   "d": "Chi ha subito il danno in un incidente.",
+   "f": 8
+  },
+  {
+   "t": "viva voce",
+   "en": "The device that lets you speak on the phone without holding it.",
+   "d": "Il dispositivo che permette di parlare al telefono senza tenerlo in mano.",
+   "f": 2
+  },
+  {
+   "t": "zebratura",
+   "en": "A set of slanted white stripes marking off a part of the roadway that must not be driven on.",
+   "d": "Insieme di strisce bianche oblique che delimita una parte di carreggiata sulla quale non si deve transitare.",
+   "f": 3
+  }
+ ]
+}

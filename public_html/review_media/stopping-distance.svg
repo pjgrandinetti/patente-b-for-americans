@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 196" role="img"
+     aria-label="Reaction distance plus braking distance equals total stopping distance">
+  <title>The car covers the spazio di reazione before the brakes bite, then the spazio di frenata before it stops. The two added together are the spazio di arresto.</title>
+
+  <!-- Original work for this project. Labelled with the ITALIAN terms only,
+       which both halves of the review teach and gloss, so one file serves the
+       English and the Italian notes. The segments are drawn to scale for a
+       car at speed: braking is the longer of the two. -->
+  <rect x="1" y="1" width="468" height="194" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- road -->
+  <rect x="16" y="74" width="438" height="34" fill="#64748b"/>
+  <line x1="20" y1="91" x2="450" y2="91" stroke="#f1f5f9" stroke-width="2" stroke-dasharray="13 11"/>
+
+  <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+
+    <!-- the hazard the driver perceives, at the point where the car must stop -->
+    <g>
+      <path d="M432 70 L444 70 L438 58 Z" fill="#ef4444" stroke="#991b1b" stroke-width="1.4"/>
+      <rect x="434" y="70" width="8" height="38" fill="#ef4444" opacity="0.28"/>
+    </g>
+
+    <!-- car at the moment of perceiving. Filled, not just outlined: an
+         unfilled dashed shape vanished against the grey road and the lane
+         dashes showed straight through it. -->
+    <g>
+      <rect x="26" y="80" width="42" height="17" rx="5" fill="#e2e8f0" stroke="#1e293b" stroke-width="1.4" stroke-dasharray="4 3"/>
+      <circle cx="37" cy="99" r="4" fill="#cbd5e1" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="58" cy="99" r="4" fill="#cbd5e1" stroke="#1e293b" stroke-width="1"/>
+    </g>
+    <!-- car stopped at the hazard: solid -->
+    <g>
+      <rect x="386" y="80" width="42" height="17" rx="5" fill="#334155"/>
+      <circle cx="397" cy="99" r="4" fill="#1e293b"/>
+      <circle cx="418" cy="99" r="4" fill="#1e293b"/>
+    </g>
+
+    <!-- boundaries: perception, brakes bite, stop -->
+    <g stroke="#0f172a" stroke-width="1.3">
+      <line x1="30" y1="52" x2="30" y2="120"/>
+      <line x1="150" y1="52" x2="150" y2="120"/>
+      <line x1="430" y1="52" x2="430" y2="120"/>
+    </g>
+
+    <!-- reaction segment -->
+    <g>
+      <rect x="30" y="56" width="120" height="14" rx="3" fill="#fbbf24" stroke="#b45309" stroke-width="1.2"/>
+      <text x="90" y="46" text-anchor="middle" font-size="12.5" font-weight="700" fill="#78350f">spazio di reazione</text>
+    </g>
+    <!-- braking segment -->
+    <g>
+      <rect x="150" y="56" width="280" height="14" rx="3" fill="#60a5fa" stroke="#1d4ed8" stroke-width="1.2"/>
+      <text x="290" y="46" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e3a8a">spazio di frenata</text>
+    </g>
+
+    <!-- the sum, bracketed underneath -->
+    <g>
+      <path d="M30 128 L30 136 L430 136 L430 128" fill="none" stroke="#166534" stroke-width="1.6"/>
+      <rect x="30" y="140" width="400" height="14" rx="3" fill="#4ade80" stroke="#166534" stroke-width="1.2"/>
+      <text x="230" y="170" text-anchor="middle" font-size="13" font-weight="700" fill="#14532d">spazio di arresto</text>
+    </g>
+  </g>
+</svg>

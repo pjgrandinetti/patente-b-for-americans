@@ -1,0 +1,210 @@
+{
+ "read": 208,
+ "rewrites": {
+  "23258": {
+   "en": "False. B faces a give-way sign, so it waits at the sign, before the intersection, until it can complete the crossing. The tram and G travel the priority road and go before it. P comes from the facing arm and goes straight, while B turns left across P's path, and a vehicle turning left yields to oncoming traffic. B therefore enters last and does not stop at the center.",
+   "it": "Falso. B ha davanti il segnale di dare precedenza, quindi attende al segnale, prima dell'incrocio, finché non può completare l'attraversamento. Il tram e G percorrono la strada con diritto di precedenza e passano prima di lui. P arriva dal braccio opposto e prosegue diritto, mentre B svolta a sinistra tagliandogli la traiettoria, e chi svolta a sinistra dà la precedenza a chi gli viene incontro. B impegna quindi l'incrocio per ultimo e non si ferma al centro.",
+   "fails": "1"
+  },
+  "23259": {
+   "en": "False. A vehicle stops at the center of an intersection only when it turns left and must let another vehicle pass. The tram runs on rails, and rail vehicles have precedence over all other vehicles, so it yields to nobody. It enters first and clears the intersection in one movement. Read the whole sentence: strike «ma deve fermarsi al centro di esso» and what is left is true; the added words are what make the statement false.",
+   "it": "Falso. Un veicolo si ferma al centro dell'incrocio solo quando svolta a sinistra e deve lasciar passare un altro veicolo. Il tram viaggia su rotaia, e i veicoli su rotaia hanno la precedenza su tutti gli altri, quindi non deve la precedenza a nessuno. Impegna l'incrocio per primo e lo libera con una sola manovra. Leggi tutta la frase: togli «ma deve fermarsi al centro di esso» e ciò che resta è vero; sono le parole aggiunte a rendere falsa l'affermazione.",
+   "fails": "1"
+  },
+  "23349": {
+   "en": "False. P and B come from facing arms, and both face a give-way sign. P goes straight, while B turns left across P's path. Two vehicles cross together only when their paths never meet, and a vehicle turning left yields to the oncoming vehicle that goes straight. P therefore passes before B, after the tram and G.",
+   "it": "Falso. P e B arrivano da bracci opposti, ed entrambi hanno davanti il segnale di dare precedenza. P prosegue diritto, mentre B svolta a sinistra tagliandogli la traiettoria. Due veicoli passano insieme solo se le loro traiettorie non si incontrano mai, e chi svolta a sinistra dà la precedenza al veicolo che gli viene incontro e prosegue diritto. P passa quindi prima di B, dopo il tram e G.",
+   "fails": "1"
+  },
+  "23350": {
+   "en": "False. P faces a give-way sign, so it must let the vehicles on the priority road pass. Those are the tram, which also has precedence because it runs on rails, and G. P has the right of way only over B, which comes from the facing arm and turns left across P's path.",
+   "it": "Falso. P ha davanti il segnale di dare precedenza, quindi deve lasciar passare i veicoli che percorrono la strada con diritto di precedenza. Sono il tram, che ha la precedenza anche perché viaggia su rotaia, e G. P ha la precedenza soltanto su B, che arriva dal braccio opposto e svolta a sinistra tagliandogli la traiettoria.",
+   "fails": "1"
+  },
+  "23351": {
+   "en": "False. The vehicle coming from P's right is the tram, and P must yield to it. P also faces a give-way sign, so it must yield to G as well, which travels the priority road and comes from P's left. Read the whole sentence: strike «solo» and what is left is true; the added words are what make the statement false.",
+   "it": "Falso. Il veicolo che proviene dalla destra di P è il tram, e P deve dargli la precedenza. P ha però davanti anche il segnale di dare precedenza, quindi deve darla pure a G, che percorre la strada con diritto di precedenza e arriva dalla sinistra di P. Leggi tutta la frase: togli «solo» e ciò che resta è vero; sono le parole aggiunte a rendere falsa l'affermazione.",
+   "fails": "1"
+  },
+  "23267": {
+   "en": "False. E must yield only to L, which comes from E's right. R is the trolleybus (*filobus*) in the arm facing E, not on E's right. A trolleybus runs on tires, not rails, so it is an ordinary vehicle with no special priority. R must wait for N, which comes from R's right, and passes last in the order L, E, N, R.",
+   "it": "Falso. E deve dare la precedenza solo a L, che proviene dalla sua destra. R è il filobus che si trova nel braccio di fronte a E, non alla sua destra. Il filobus viaggia su gomma, non su rotaia, quindi è un veicolo ordinario senza alcuna precedenza speciale. R deve attendere N, che proviene dalla destra di R, e passa per ultimo nell'ordine L, E, N, R.",
+   "fails": "1,3"
+  },
+  "23268": {
+   "en": "False. R, the trolleybus (*filobus*), does stand in the arm on L's right, but a driver yields to a vehicle on the right only when the two paths cross. R turns left into the arm L is leaving, and the two paths never meet. A trolleybus runs on tires, not rails, so it has no special priority either. L therefore waits for no one and passes first.",
+   "it": "Falso. R, il filobus, si trova effettivamente nel braccio alla destra di L, ma si dà la precedenza a un veicolo alla propria destra solo quando le due traiettorie si incrociano. R svolta a sinistra verso il braccio da cui L proviene, e le due traiettorie non si incontrano mai. Il filobus viaggia su gomma, non su rotaia, quindi non ha nemmeno una precedenza speciale. L non attende perciò nessuno e passa per primo.",
+   "fails": "1,3"
+  },
+  "23269": {
+   "en": "False. E must wait only for L, which comes from E's right. N comes from E's left, and it is N that waits for E, because E is on N's right. R is the trolleybus (*filobus*) in the facing arm. It runs on tires, not rails, so it has no special priority, and it passes last. The order is L, E, N, R.",
+   "it": "Falso. E deve attendere solo L, che proviene dalla sua destra. N arriva dalla sinistra di E, ed è N ad attendere E, perché E si trova alla destra di N. R è il filobus che si trova nel braccio opposto. Viaggia su gomma, non su rotaia, quindi non ha alcuna precedenza speciale, e passa per ultimo. L'ordine è L, E, N, R.",
+   "fails": "1,3"
+  },
+  "23356": {
+   "en": "False. A trolleybus (*filobus*) runs on tires, not rails, so it is an ordinary vehicle. Only rail vehicles, such as a tram, have precedence because of what they are. E therefore owes the trolleybus nothing and waits only for L, which comes from E's right. E passes after L and before the truck N, and the trolleybus passes last.",
+   "it": "Falso. Il filobus viaggia su gomma, non su rotaia, quindi è un veicolo ordinario. Solo i veicoli su rotaia, come il tram, hanno la precedenza per ciò che sono. E non deve perciò nulla al filobus e attende solo L, che proviene dalla sua destra. E passa dopo L e prima dell'autocarro N, e il filobus passa per ultimo.",
+   "fails": "1,3"
+  },
+  "23358": {
+   "en": "False. At an intersection without signs, a driver yields to the vehicle coming from the right when their paths cross. L comes from E's right, so E must wait for L. E has the right of way only over the truck N, which comes from E's left.",
+   "it": "Falso. A un incrocio senza segnali si dà la precedenza al veicolo che proviene da destra quando le traiettorie si incrociano. L proviene dalla destra di E, quindi E deve attendere L. E ha la precedenza soltanto sull'autocarro N, che arriva dalla sua sinistra.",
+   "fails": "1,6"
+  },
+  "23359": {
+   "en": "False. L comes from E's right and their paths cross, so E must let L pass first. E crosses second, ahead of the truck N, which comes from E's left and must wait for E.",
+   "it": "Falso. L proviene dalla destra di E e le loro traiettorie si incrociano, quindi E deve lasciar passare prima L. E attraversa per secondo, davanti all'autocarro N, che arriva dalla sinistra di E e deve attenderlo.",
+   "fails": "1,6"
+  },
+  "23278": {
+   "en": "False. At an intersection without signs, each driver yields to the vehicle coming from the right. H has nobody on its right, so it passes first, not last. A waits for H, which comes from A's right, and F waits for A, which comes from F's right. L must yield to all the others and passes last. The correct order is H, A, F, L.",
+   "it": "Falso. A un incrocio senza segnali ogni conducente dà la precedenza al veicolo che proviene da destra. H non ha nessuno alla propria destra, quindi passa per primo, non per ultimo. A attende H, che proviene dalla destra di A, e F attende A, che proviene dalla destra di F. L deve dare la precedenza a tutti gli altri e passa per ultimo. L'ordine corretto è H, A, F, L.",
+   "fails": "1"
+  },
+  "23282": {
+   "en": "False. It is the other way round. A comes from F's right, so F must wait for A. A waits only for H, which comes from A's right, and passes second in the order H, A, F, L.",
+   "it": "Falso. È il contrario. A proviene dalla destra di F, quindi è F a dover attendere A. A attende solo H, che proviene dalla sua destra, e passa per secondo nell'ordine H, A, F, L.",
+   "fails": "1"
+  },
+  "23289": {
+   "en": "False. N stands in the arm on R's right and their paths cross, so R must yield to N. N enters the intersection first and moves to the center. There it waits for A, because N turns left and A comes toward it going straight. R passes behind N in the meantime.",
+   "it": "Falso. N si trova nel braccio alla destra di R e le loro traiettorie si incrociano, quindi è R a dover dare la precedenza a N. N impegna l'incrocio per primo e si porta al centro. Lì attende A, perché N svolta a sinistra e A gli viene incontro proseguendo diritto. Nel frattempo R passa dietro N.",
+   "fails": "1"
+  },
+  "23290": {
+   "en": "False. N turns left, and A comes from the facing arm and goes straight. Where their paths cross, a vehicle turning left yields to the oncoming vehicle that goes straight. N therefore waits at the center of the intersection until A has passed.",
+   "it": "Falso. N svolta a sinistra, e A arriva dal braccio opposto e prosegue diritto. Dove le traiettorie si incrociano, chi svolta a sinistra dà la precedenza al veicolo che gli viene incontro e prosegue diritto. N attende quindi al centro dell'incrocio finché A non è passato.",
+   "fails": "1"
+  },
+  "23292": {
+   "en": "False. N has no vehicle on its right, and R must yield to it, so N enters the intersection first. N turns left, so it moves to the center and waits there for A, which comes toward it going straight. N is the first to enter and the last to complete the crossing.",
+   "it": "Falso. N non ha alcun veicolo alla propria destra, e R deve dargli la precedenza, quindi N impegna l'incrocio per primo. N svolta a sinistra, perciò si porta al centro e lì attende A, che gli viene incontro proseguendo diritto. N è il primo a impegnare l'incrocio e l'ultimo a concludere l'attraversamento.",
+   "fails": "1"
+  },
+  "23314": {
+   "en": "False. R comes from A's right and their paths cross, so A must yield to R. R yields only to N, which stands in the arm on R's right and enters first to wait at the center. R then crosses ahead of A.",
+   "it": "Falso. R proviene dalla destra di A e le loro traiettorie si incrociano, quindi è A a dover dare la precedenza a R. R dà la precedenza solo a N, che si trova nel braccio alla destra di R e impegna l'incrocio per primo per attendere al centro. R attraversa poi prima di A.",
+   "fails": "1"
+  },
+  "23315": {
+   "en": "False. R waits only for N to move to the center of the intersection, then crosses in one movement. A must yield to R, which comes from A's right. N turns left and waits at the center until A, which comes toward it going straight, has passed. R is therefore the first to complete the crossing, and N is the last.",
+   "it": "Falso. R attende solo che N si porti al centro dell'incrocio, poi attraversa con una sola manovra. A deve dare la precedenza a R, che proviene dalla destra di A. N svolta a sinistra e attende al centro finché non è passato A, che gli viene incontro proseguendo diritto. R è quindi il primo a concludere l'attraversamento, e N è l'ultimo.",
+   "fails": "1"
+  },
+  "23307": {
+   "en": "False. A driver yields to the vehicle coming from the right. No vehicle comes from D's right, so D has no duty to yield to anyone. D passes first, and the other vehicles wait for it.",
+   "it": "Falso. Si dà la precedenza al veicolo che proviene da destra. Nessun veicolo proviene dalla destra di D, quindi D non ha l'obbligo di dare la precedenza a nessuno. D passa per primo, e gli altri veicoli lo attendono.",
+   "fails": "1"
+  },
+  "23308": {
+   "en": "False. A driver yields to the vehicle coming from the right, and E comes from D's left. Going straight gives E no right of way over D. It is E that must wait, because D is on E's right. D passes first.",
+   "it": "Falso. Si dà la precedenza al veicolo che proviene da destra, ed E arriva dalla sinistra di D. Il fatto di proseguire diritto non dà a E alcuna precedenza su D. È E a dover attendere, perché D si trova alla destra di E. D passa per primo.",
+   "fails": "1"
+  },
+  "23330": {
+   "en": "False. A's right is not clear. E and S come from the arm on A's right, and their paths cross A's path. A must yield to them, and to D as well, so it passes last.",
+   "it": "Falso. La destra di A non è libera. E ed S arrivano dal braccio alla destra di A, e le loro traiettorie incrociano la sua. A deve dare la precedenza a entrambi, e anche a D, quindi passa per ultimo.",
+   "fails": "1"
+  },
+  "23333": {
+   "en": "False. The duty to yield depends on where the other vehicle comes from and on whether the paths cross. It does not depend on whether that vehicle goes straight or turns. E, which goes straight, and S, which turns, both come from A's right, and A must yield to both. A must also wait for D, so it passes last.",
+   "it": "Falso. L'obbligo di dare la precedenza dipende da dove arriva l'altro veicolo e dal fatto che le traiettorie si incrocino. Non dipende dal fatto che quel veicolo prosegua diritto o svolti. E, che prosegue diritto, ed S, che svolta, provengono entrambi dalla destra di A, e A deve dare la precedenza a tutti e due. A deve attendere anche D, quindi passa per ultimo.",
+   "fails": "1"
+  },
+  "23325": {
+   "en": "False. This is the correct order written backwards. R has nobody on its right, so it yields to no one and passes first. A waits for R, which comes from A's right. T must yield to both and passes last. The correct order is R, A, T.",
+   "it": "Falso. È l'ordine corretto scritto al contrario. R non ha nessuno alla propria destra, quindi non deve la precedenza a nessuno e passa per primo. A attende R, che proviene dalla destra di A. T deve dare la precedenza a entrambi e passa per ultimo. L'ordine corretto è R, A, T.",
+   "fails": "1"
+  },
+  "23365": {
+   "en": "True. R has nobody on its right, so it passes first. D waits for R, which comes from D's right. F waits for D, which comes from F's right. F is a trolleybus (*filobus*), and it runs on tires, not rails, so being tied to its overhead line gives it no priority.",
+   "it": "Vero. R non ha nessuno alla propria destra, quindi passa per primo. D attende R, che proviene dalla destra di D. F attende D, che proviene dalla destra di F. F è un filobus, e viaggia su gomma, non su rotaia, quindi il fatto di essere vincolato alla linea aerea non gli dà alcuna precedenza.",
+   "fails": "6"
+  },
+  "23366": {
+   "en": "False. The trolleybus (*filobus*) is F. It is tied to an overhead electric line, but it runs on tires, not rails, so it is an ordinary vehicle. Only rail vehicles, such as a tram, have precedence because of what they are. The right-hand rule decides here: R has nobody on its right, D waits for R, and F waits for D, which comes from F's right. The trolleybus passes last.",
+   "it": "Falso. Il filobus è F. È vincolato a una linea elettrica aerea, ma viaggia su gomma, non su rotaia, quindi è un veicolo ordinario. Solo i veicoli su rotaia, come il tram, hanno la precedenza per ciò che sono. Qui decide la regola della precedenza a destra: R non ha nessuno alla propria destra, D attende R, e F attende D, che proviene dalla destra di F. Il filobus passa per ultimo.",
+   "fails": "1,3"
+  },
+  "23367": {
+   "en": "False. F is a trolleybus (*filobus*), and a trolleybus has no special priority, because it runs on tires, not rails. F must yield to D, which comes from F's right, and D must yield to R, which comes from D's right. R has nobody on its right and passes first. The correct order is R, D, F.",
+   "it": "Falso. F è un filobus, e il filobus non ha alcuna precedenza speciale, perché viaggia su gomma, non su rotaia. F deve dare la precedenza a D, che proviene dalla destra di F, e D deve darla a R, che proviene dalla destra di D. R non ha nessuno alla propria destra e passa per primo. L'ordine corretto è R, D, F.",
+   "fails": "3,6"
+  },
+  "23374": {
+   "en": "False. A faces a give-way sign and N does not, so N passes first. A and R both face a give-way sign and cross after N. Between those two, A goes straight and R turns left across A's path, so A goes before R. The correct order is N, A, R.",
+   "it": "Falso. A ha davanti il segnale di dare precedenza e N no, quindi N passa per primo. A ed R hanno entrambi davanti il segnale di dare precedenza e attraversano dopo N. Tra i due, A prosegue diritto ed R svolta a sinistra tagliandogli la traiettoria, quindi A passa prima di R. L'ordine corretto è N, A, R.",
+   "fails": "1"
+  },
+  "23375": {
+   "en": "False. N faces no give-way sign and passes first, as stated. A and R both face a give-way sign, and between them the turning rule decides. A goes straight and R turns left across A's path, and a vehicle turning left yields to one going straight. The correct order is N, A, R.",
+   "it": "Falso. N non ha davanti alcun segnale di dare precedenza e passa per primo, come affermato. A ed R hanno entrambi davanti il segnale di dare precedenza, e tra loro decide la regola delle svolte. A prosegue diritto ed R svolta a sinistra tagliandogli la traiettoria, e chi svolta a sinistra dà la precedenza a chi prosegue diritto. L'ordine corretto è N, A, R.",
+   "fails": "1"
+  },
+  "23380": {
+   "en": "False. The tram T passes first because it runs on rails. P and M then follow the ordinary rule of yielding to the right. P comes from M's right, so M must wait for P. M is a bus, and being in public service gives it no priority. The correct order is T, P, M.",
+   "it": "Falso. Il tram T passa per primo perché viaggia su rotaia. P ed M seguono poi la regola ordinaria della precedenza a destra. P proviene dalla destra di M, quindi M deve attendere P. M è un autobus, e il fatto di essere in servizio pubblico non gli dà alcuna precedenza. L'ordine corretto è T, P, M.",
+   "fails": "1"
+  },
+  "23389": {
+   "en": "True. The tram has precedence because it runs on rails, so S waits for it. S also turns left across the path of A, which comes from the facing arm and goes straight. A vehicle turning left yields to the oncoming vehicle that goes straight. S therefore passes last, after T and A.",
+   "it": "Vero. Il tram ha la precedenza perché viaggia su rotaia, quindi S lo attende. S inoltre svolta a sinistra tagliando la traiettoria di A, che arriva dal braccio opposto e prosegue diritto. Chi svolta a sinistra dà la precedenza al veicolo che gli viene incontro e prosegue diritto. S passa quindi per ultimo, dopo T e A.",
+   "fails": "6"
+  },
+  "23393": {
+   "en": "False. S turns left across the path of A, which comes from the facing arm and goes straight. A vehicle turning left yields to the oncoming vehicle that goes straight, so S waits for A as well as for the tram. S passes last. Read the whole sentence: strike «ma prima del veicolo A» and what is left is true; the added words are what make the statement false.",
+   "it": "Falso. S svolta a sinistra tagliando la traiettoria di A, che arriva dal braccio opposto e prosegue diritto. Chi svolta a sinistra dà la precedenza al veicolo che gli viene incontro e prosegue diritto, quindi S attende A oltre al tram. S passa per ultimo. Leggi tutta la frase: togli «ma prima del veicolo A» e ciò che resta è vero; sono le parole aggiunte a rendere falsa l'affermazione.",
+   "fails": "6"
+  },
+  "23394": {
+   "en": "False. Two vehicles cross together only when their paths never meet. S turns left across the path of A, which comes from the facing arm and goes straight. A vehicle turning left yields to the oncoming vehicle that goes straight, so A passes before S. The order is T, A, S.",
+   "it": "Falso. Due veicoli attraversano insieme solo se le loro traiettorie non si incontrano mai. S svolta a sinistra tagliando la traiettoria di A, che arriva dal braccio opposto e prosegue diritto. Chi svolta a sinistra dà la precedenza al veicolo che gli viene incontro e prosegue diritto, quindi A passa prima di S. L'ordine è T, A, S.",
+   "fails": "1"
+  },
+  "23402": {
+   "en": "False. A vehicle turning left stops at the center of an intersection only when it must let an oncoming vehicle pass. P turns left, but C, the vehicle in the facing arm, turns left as well, and two facing left turns never meet. P has nobody on its right, so it yields to no one and clears the intersection in one movement. Read the whole sentence: strike «ma si deve fermare al centro di esso» and what is left is true; the added words are what make the statement false.",
+   "it": "Falso. Chi svolta a sinistra si ferma al centro dell'incrocio solo quando deve lasciar passare un veicolo che gli viene incontro. P svolta a sinistra, ma anche C, il veicolo nel braccio opposto, svolta a sinistra, e due svolte a sinistra opposte non si incontrano mai. P non ha nessuno alla propria destra, quindi non deve la precedenza a nessuno e libera l'incrocio con una sola manovra. Leggi tutta la frase: togli «ma si deve fermare al centro di esso» e ciò che resta è vero; sono le parole aggiunte a rendere falsa l'affermazione.",
+   "fails": "1"
+  },
+  "23408": {
+   "en": "False. Every driver must moderate speed when approaching an intersection, and that includes the driver who has the right of way. Precedence is a right, not a guarantee, so each driver must be able to stop if another vehicle fails to yield. B, T and S must all slow down.",
+   "it": "Falso. Ogni conducente deve moderare la velocità avvicinandosi a un incrocio, compreso chi ha la precedenza. La precedenza è un diritto, non una garanzia, quindi ciascuno deve potersi fermare se un altro veicolo non la rispetta. B, T ed S devono tutti rallentare.",
+   "fails": "1"
+  },
+  "23422": {
+   "en": "False. D goes straight, and B comes from the facing arm and turns left across D's path. A vehicle turning left yields to the oncoming vehicle that goes straight, so it is B that waits for D. D waits only for H, which comes from D's right. The order is H, D, B.",
+   "it": "Falso. D prosegue diritto, e B arriva dal braccio opposto e svolta a sinistra tagliandogli la traiettoria. Chi svolta a sinistra dà la precedenza al veicolo che gli viene incontro e prosegue diritto, quindi è B ad attendere D. D attende solo H, che proviene dalla sua destra. L'ordine è H, D, B.",
+   "fails": "1"
+  },
+  "23423": {
+   "en": "False. B turns left across the path of D, which comes from the facing arm and goes straight. A vehicle turning left yields to the oncoming vehicle that goes straight, so D passes before B. H passes first, because D must yield to it and its path never meets B's path. The correct order is H, D, B.",
+   "it": "Falso. B svolta a sinistra tagliando la traiettoria di D, che arriva dal braccio opposto e prosegue diritto. Chi svolta a sinistra dà la precedenza al veicolo che gli viene incontro e prosegue diritto, quindi D passa prima di B. H passa per primo, perché D deve dargli la precedenza e la sua traiettoria non incontra mai quella di B. L'ordine corretto è H, D, B.",
+   "fails": "1"
+  },
+  "23424": {
+   "en": "False. B turns left, and D comes from the facing arm and goes straight. Where their paths cross, the vehicle turning left yields to the one going straight. The right of way therefore belongs to D, and B passes last.",
+   "it": "Falso. B svolta a sinistra, e D arriva dal braccio opposto e prosegue diritto. Dove le traiettorie si incrociano, chi svolta a sinistra dà la precedenza a chi prosegue diritto. La precedenza spetta quindi a D, e B passa per ultimo.",
+   "fails": "1"
+  },
+  "23447": {
+   "en": "False. This is the correct order written backwards. A has no vehicle on its right whose path crosses its own, so it passes first. C waits for A, which comes from C's right. L must yield to both and passes last. The correct order is A, C, L.",
+   "it": "Falso. È l'ordine corretto scritto al contrario. A non ha alla propria destra alcun veicolo la cui traiettoria incroci la sua, quindi passa per primo. C attende A, che proviene dalla destra di C. L deve dare la precedenza a entrambi e passa per ultimo. L'ordine corretto è A, C, L.",
+   "fails": "1"
+  },
+  "23456": {
+   "en": "False. Two vehicles pass together only when their paths never meet. E comes from C's right and their paths cross, so C must yield to E. E passes first and C second.",
+   "it": "Falso. Due veicoli passano insieme solo se le loro traiettorie non si incontrano mai. E proviene dalla destra di C e le loro traiettorie si incrociano, quindi C deve dare la precedenza a E. E passa per primo e C per secondo.",
+   "fails": "1"
+  }
+ },
+ "problems": [
+  {
+   "number": "23365",
+   "note": "The old explanations of 23365 and 23367 read as though R were the trolleybus. The figure labels F as FILOBUS and D as AUTOCARRO, and R is a car. Rewritten accordingly. Separately, topic 25's review (worked example 2) calls D a bus in both halves, while the figure labels it a truck; the review was not edited."
+  },
+  {
+   "number": "23250",
+   "note": "Not rewritten, but the explanation says B 'finds its right occupied with respect to every other'. In the figure only G comes from B's right; B is last because it faces a give-way sign and turns left across P. Same loose use of 'right occupied' in 23451 and 23273 was left alone because the figure could not settle it."
+  }
+ ]
+}

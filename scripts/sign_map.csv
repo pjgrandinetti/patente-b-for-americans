@@ -1,0 +1,517 @@
+id,figure,note,score,margin,file,candidates
+4001,rm-doppia-striscia-longitudinale-continua,Doppia Striscia Longitudinale Continua,1.361,0.020,,rm-doppia-striscia-longitudinale-continua|rm-aree-di-sosta|rm-striscia-di-margine-della-carreggiata
+4002,rm-aree-di-sosta,Aree di Sosta,1.365,0.041,,rm-aree-di-sosta|rm-doppia-striscia-longitudinale-continua|rm-striscia-di-margine-della-carreggiata
+4003,II 415,Strisce longitudinali,1.157,0.005,,ii415|rm-aree-di-sosta|rm-doppia-striscia-longitudinale-continua
+4029,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,0.994,0.025,,rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-continua|ii459
+4051,II 1,Strada deformata,1.271,0.062,,ii1|ii3|ii2
+4052,II 1,Strada deformata,1.271,0.062,,ii1|ii3|ii2
+4053,II 2,Dosso,1.296,0.103,,ii2|ii1|ii3
+4054,II 2,Dosso,1.296,0.103,,ii2|ii1|ii3
+4055,II 3,Cunetta,1.284,0.004,,ii3|ii1|ii2
+4056,II 3,Cunetta,1.284,0.004,,ii3|ii1|ii2
+4057,II 4,Curva a destra,1.160,0.090,,ii4|ii18|ii17
+4058,II 4,Curva a destra,1.160,0.090,,ii4|ii18|ii17
+4059,II 5,Curva a sinistra,1.167,0.135,,ii5|ii19|ii27
+4060,II 5,Curva a sinistra,1.167,0.135,,ii5|ii19|ii27
+4061,II 6,"Doppia curva, la prima a destra",1.173,0.056,,ii6|ii4|ii18
+4062,II 6,"Doppia curva, la prima a destra",1.173,0.056,,ii6|ii4|ii18
+4063,II 7,"Doppia curva, la prima a sinistra",1.239,0.074,,ii7|ii25|ii5
+4064,II 7,"Doppia curva, la prima a sinistra",1.239,0.074,,ii7|ii25|ii5
+4065,II 8,Passaggio a livello con barriere,1.213,0.163,,ii8|ii21|ii14
+4066,II 8,Passaggio a livello con barriere,1.213,0.163,,ii8|ii21|ii14
+4067,II 9,Passaggio a livello senza barriere,1.263,0.241,,ii9|ii27|ii2
+4068,II 9,Passaggio a livello senza barriere,1.263,0.241,,ii9|ii27|ii2
+4069,II 10/a,Croce di S. Andrea,1.336,1.408,,ii10a|ii10b|ii11c
+4070,II 10/b,Doppia croce di S. Andrea,0.633,0.768,,ii10b|ii10a|ii10d
+4071,II 11/b,2° pannello distanziometrico,0.563,0.757,,ii11b|ii10a|ii11c
+4072,II 2,Dosso,1.131,0.000,,ii2|ii1|ii3
+4073,II 2,Dosso,1.131,0.000,,ii2|ii1|ii3
+4074,II 13,Attraversamento pedonale,1.041,0.020,,ii13|ii14|ii1
+4075,II 13,Attraversamento pedonale,1.041,0.020,,ii13|ii14|ii1
+4076,II 14,Attraversamento ciclabile,1.188,0.125,,ii14|ii18|ii25
+4077,II 14,Attraversamento ciclabile,1.188,0.125,,ii14|ii18|ii25
+4078,II 15,Discesa pericolosa,1.063,0.019,,ii15|ii9|ii8
+4079,II 15,Discesa pericolosa,1.063,0.019,,ii15|ii9|ii8
+4080,II 16,Salita ripida,1.070,0.109,,ii16|ii9|ii8
+4081,II 17,Strettoia simmetrica,1.312,0.077,,ii17|ii19|ii18
+4082,II 18,Strettoia asimmetrica a sinistra,1.314,0.151,,ii18|ii17|ii26
+4083,II 19,Strettoia asimmetrica a destra,1.277,0.145,,ii19|ii17|ii26
+4084,II 12,Attraversamento tranviario,1.147,0.026,,ii12|ii31b|ii1
+4085,II 22,Strada sdrucciolevole,1.218,0.153,,ii22|ii19|ii17
+4086,II 22,Strada sdrucciolevole,1.218,0.153,,ii22|ii19|ii17
+4087,II 23,Bambini,1.247,0.226,,ii23|ii26|ii24
+4088,II 23,Bambini,1.247,0.226,,ii23|ii26|ii24
+4089,II 25,Animali selvatici vaganti,1.121,0.007,,ii25|ii24|ii7
+4090,II 25,Animali selvatici vaganti,1.192,0.113,,ii25|ii33|ii5
+4091,II 26,Doppio senso di circolazione,1.304,0.148,,ii26|ii18|ii19
+4092,II 28,Sbocco su molo o su argine,1.023,0.001,,ii28|ii23|ii12
+4093,II 29,Materiale instabile sulla strada,1.101,0.059,,ii29|ii12|ii31b
+4094,II 30/a,Caduta massi,1.182,0.319,,ii30a|ii15|ii9
+4095,II 30/b,Caduta massi,1.204,0.383,,ii30b|ii16|ii13
+4096,II 31/a,Semaforo,1.249,0.101,,ii31a|ii35|ii34
+4097,II 32,Aeromobili,1.136,0.039,,ii32|ii25|ii14
+4098,II 33,Forte vento laterale,1.236,0.121,,ii33|ii25|ii32
+4099,II 33,Forte vento laterale,1.236,0.121,,ii33|ii25|ii32
+4100,II 34,Pericolo di incendio,1.286,0.255,,ii34|ii35|ii31a
+4101,II 27,Circolazione rotatoria,1.190,0.143,,ii27|ii17|ii19
+4102,II 35,Altri pericoli,1.290,0.155,,ii35|ii31a|ii34
+4103,II 21,Banchina pericolosa,1.302,0.151,,ii21|ii14|ii23
+4104,II 31/b,Semaforo,1.253,0.044,,ii31b|ii3|ii1
+4105,II 46,Divieto di transito,0.822,0.377,,ii46|ii57|ii55
+4106,II 47,Senso vietato,1.104,1.153,,ii47|ii69|ii79d
+4107,II 48,Divieto di sorpasso,0.641,0.037,,ii48|ii57|ii59
+4108,II 48,Divieto di sorpasso,0.641,0.037,,ii48|ii57|ii59
+4109,II 48,Divieto di sorpasso,0.641,0.037,,ii48|ii57|ii59
+4110,II 49,Distanziamento minimo di ... metri,0.967,0.216,,ii49|ii59|ii48
+4111,II 50,Limite massimo di velocità ... km/h,0.532,0.042,,ii50|ii58|ii66
+4112,II 50,Limite massimo di velocità ... km/h,0.532,0.042,,ii50|ii58|ii66
+4113,II 51,Divieto di segnalazioni acustiche,0.593,0.161,,ii51|ii59|ii58
+4114,II 52,"Divieto di sorpasso per i veicoli di massa a pieno carico superiore a 3,5 tonnellate",0.666,0.168,,ii52|ii59|ii58
+4115,II 59,Transito vietato agli autobus,0.660,0.055,,ii59|ii53|ii55
+4116,II 54,Transito vietato ai pedoni,0.817,0.300,,ii54|ii56|ii46
+4117,II 55,Transito vietato ai velocipedi,0.623,0.064,,ii55|ii59|ii57
+4118,II 56,Transito vietato ai motocicli,0.744,0.225,,ii56|ii58|ii54
+4119,II 57,Transito vietato ai veicoli a braccia,0.665,0.044,,ii57|ii46|ii59
+4120,II 58,Transito vietato a tutti gli autoveicoli,0.861,0.279,,ii58|ii59|ii55
+4121,II 59,Transito vietato agli autobus,0.810,0.173,,ii59|ii57|ii58
+4122,II 60/a,"Transito vietato ai veicoli di massa a pieno carico superiore alle 3,5 tonnellate",0.753,0.102,,ii60a|ii60b|ii58
+4123,II 60/a,"Transito vietato ai veicoli di massa a pieno carico superiore alle 3,5 tonnellate",0.681,0.013,,ii60a|ii60b|ii58
+4124,II 61,Transito vietato ai veicoli trainanti un rimorchio,0.744,0.120,,ii61|ii59|ii60b
+4125,II 58,Transito vietato a tutti gli autoveicoli,0.618,0.058,,ii58|ii55|ii59
+4126,II 63,Transito vietato ai veicoli che trasportano merci pericolose,0.714,0.145,,ii63|ii64b|ii58
+4127,II 64/a,Transito vietato ai veicoli che trasportano esplosivi o prodotti facilmente infiammabili,0.748,0.201,,ii64a|ii54|ii46
+4128,II 64/b,Transito vietato ai veicoli che trasportano prodotti suscettibili di contaminare l'acqua,0.649,0.098,,ii64b|ii58|ii54
+4129,II 65,Transito vietato ai veicoli aventi larghezza superiore a ... metri,0.641,0.116,,ii65|ii68|ii55
+4130,II 66,Transito vietato ai veicoli aventi altezza superiore a ... metri,0.584,0.176,,ii66|ii68|ii58
+4131,II 67,"Transito vietato ai veicoli, o complessi di veicoli, aventi lunghezza superiore a ... metri",0.753,0.282,,ii67|ii60a|ii55
+4132,II 68,Transito vietato ai veicoli aventi una massa superiore a ... tonnellate,0.614,0.169,,ii68|ii56|ii46
+4133,II 69,Transito vietato ai veicoli aventi massa per asse superiore a ... tonnellate,0.681,0.283,,ii69|ii68|ii56
+4134,II 70,Via libera,1.407,0.111,,ii70|ii72|ii73
+4135,II 71,Fine limitazione di velocità,1.190,0.204,,ii71|ii73|ii72
+4136,II 72,Fine del divieto di sorpasso,1.347,0.127,,ii72|ii70|ii73
+4137,II 73,"Fine del divieto di sorpasso per i veicoli di massa a pieno carico superiore a 3,5 tonnellate",1.238,0.209,,ii73|ii72|ii71
+4138,II 74,Divieto di sosta,0.590,0.253,,ii74|ii75|ii77
+4141,II 75,Divieto di fermata,0.606,0.140,,ii75|ii74|ii77
+4142,II 75,Divieto di fermata,0.606,0.140,,ii75|ii74|ii77
+4143,II 76,Parcheggio,0.837,1.134,,ii76|ii64a|ii69
+4144,II 77,Preavviso di parcheggio,1.051,0.721,,ii77|ii79a|ii79b
+4145,II 78,Passo carrabile,1.161,0.579,,ii78|ii79c|ii79b
+4146,II 79/a,Sosta consentita a particolari categorie,1.327,0.128,,ii79a|ii79b|ii79c
+4147,II 79/d,Regolazione flessibile della sosta in centro abitato,0.939,1.230,,ii79d|ii46|ii47
+4148,II 78,Passo carrabile,0.531,0.006,,ii78|ii79c|ii79a
+4149,II 71,Fine limitazione di velocità,-0.009,0.043,,ii71|ii70|ii72
+4150,II 80/e,Preavviso di direzione obbligatoria a sinistra,0.849,0.455,,ii80e|ii94|ii95
+4151,II 80/a,Direzione obbligatoria dritto,0.944,0.423,,ii80a|ii88|ii92b
+4152,II 80/b,Direzione obbligatoria a sinistra,0.940,0.516,,ii80b|ii80c|ii90
+4153,II 80/b,Direzione obbligatoria a sinistra,0.940,0.516,,ii80b|ii80c|ii90
+4154,II 80/c,Direzione obbligatoria a destra,0.975,0.465,,ii80c|ii90|ii80b
+4155,II 80/c,Direzione obbligatoria a destra,0.975,0.465,,ii80c|ii90|ii80b
+4156,II 80/d,Preavviso di direzione obbligatoria a destra,0.826,0.424,,ii80d|ii88|ii82a
+4157,II 80/d,Preavviso di direzione obbligatoria a destra,0.826,0.424,,ii80d|ii88|ii82a
+4158,II 80/e,Preavviso di direzione obbligatoria a sinistra,0.849,0.455,,ii80e|ii94|ii95
+4159,II 81/a,Direzioni consentite destra e sinistra,0.786,0.316,,ii81a|ii80c|ii80b
+4160,II 81/a,Direzioni consentite destra e sinistra,0.786,0.316,,ii81a|ii80c|ii80b
+4161,II 81/b,Direzioni consentite dritto e destra,0.686,0.430,,ii81b|ii86|ii95
+4162,II 81/b,Direzioni consentite dritto e destra,0.686,0.430,,ii81b|ii86|ii95
+4163,II 81/c,Direzioni consentite dritto e sinistra,0.657,0.507,,ii81c|ii82a|ii88
+4164,II 81/c,Direzioni consentite dritto e sinistra,0.657,0.507,,ii81c|ii82a|ii88
+4165,II 82/a,Passaggio obbligatorio a sinistra,0.853,0.614,,ii82a|ii85|ii88
+4166,II 82/a,Passaggio obbligatorio a sinistra,0.853,0.614,,ii82a|ii85|ii88
+4167,II 82/b,Passaggio obbligatorio a destra,0.851,0.603,,ii82b|ii94|ii86
+4168,II 82/b,Passaggio obbligatorio a destra,0.851,0.603,,ii82b|ii94|ii86
+4169,II 83,Passaggi consentiti,0.598,0.166,,ii83|ii80c|ii80b
+4170,II 84,Rotatoria,0.542,0.468,,ii84|ii93b|ii92b
+4172,II 85,Limite minimo di velocità,0.794,0.265,,ii85|ii86|ii90
+4173,II 85,Limite minimo di velocità,0.794,0.265,,ii85|ii86|ii90
+4174,II 86,Fine del limite minimo di velocità,0.787,0.258,,ii86|ii85|ii91
+4175,II 87,Catene per neve obbligatorie,0.651,0.208,,ii87|ii88|ii80a
+4176,II 88,Percorso pedonale,0.718,0.227,,ii88|ii92b|ii89
+4177,II 89,Fine percorso pedonale,0.778,0.190,,ii89|ii88|ii93b
+4178,II 90,Pista ciclabile,0.481,0.185,,ii90|ii91|ii94
+4179,II 91,Fine pista ciclabile,0.329,0.051,,ii91|ii90|ii86
+4180,II 92/a,Pista ciclabile contigua al marciapiede,0.735,0.077,,ii92a|ii93a|ii90
+4181,II 92/b,Percorso pedonale e ciclabile,0.830,0.094,,ii92b|ii93b|ii89
+4182,II 93/a,Fine della pista ciclabile contigua al marciapiede,0.693,0.130,,ii93a|ii92a|ii90
+4183,II 93/b,Fine del percorso pedonale e ciclabile,0.772,0.158,,ii93b|ii92b|ii89
+4184,II 94,Percorso riservato ai quadrupedi da soma e da sella,1.005,0.254,,ii94|ii95|ii88
+4185,II 95,Fine del percorso riservato ai quadrupedi da soma e da sella,1.016,0.223,,ii95|ii94|ii86
+4186,II 98,Alt - Polizia,0.487,0.052,,ii98|ii96|ii99
+4187,II 98,Alt - Polizia,0.573,0.114,,ii98|ii99|ii96
+4188,II 98,Alt - Polizia,0.577,0.039,,ii98|ii99|ii96
+4189,II 97/b,Preavviso di confine di Stato tra paesi della Comunità Europea,-0.593,0.159,,ii97b|ii91|ii93a
+4190,II 36,Dare precedenza,1.282,1.260,,ii36|ii39|ii38
+4191,II 36,Dare precedenza,1.282,1.260,,ii36|ii39|ii38
+4192,II 37,Fermarsi e dare precedenza,1.100,1.379,,ii37|ii38|ii39
+4193,II 38,Preavviso di dare precedenza,1.061,0.041,,ii38|ii39|ii36
+4194,II 39,Preavviso di fermarsi e dare precedenza,1.100,0.008,,ii39|ii38|ii36
+4195,II 40,Intersezione con precedenza a destra,1.270,0.226,,ii40|ii43b|ii43c
+4196,II 41,Dare precedenza nei sensi unici alternati,0.716,1.033,,ii41|ii37|ii36
+4197,II 41,Dare precedenza nei sensi unici alternati,0.716,1.033,,ii41|ii37|ii36
+4198,II 41,Dare precedenza nei sensi unici alternati,0.716,1.033,,ii41|ii37|ii36
+4199,II 42,Fine del diritto di precedenza,1.116,0.636,,ii42|ii44|ii43a
+4200,II 42,Fine del diritto di precedenza,1.116,0.636,,ii42|ii44|ii43a
+4201,II 43/a,Intersezione con diritto di precedenza,1.283,0.025,,ii43a|ii43c|ii43b
+4202,II 43/b,"Intersezione a ""T"" con diritto di precedenza",1.293,0.053,,ii43b|ii43a|ii43c
+4203,II 43/c,"Intersezione a ""T"" con diritto di precedenza",1.305,0.053,,ii43c|ii43a|ii43b
+4204,II 43/d,Confluenza a destra,1.293,0.039,,ii43d|ii43b|ii43c
+4205,II 43/e,Confluenza a sinistra,1.276,0.037,,ii43e|ii43c|ii43b
+4206,II 44,Diritto di precedenza,0.738,0.223,,ii44|ii42|ii43a
+4208,II 45,Diritto di precedenza nei sensi unici alternati,0.648,1.257,,ii45|ii37|ii43e
+4209,II 45,Diritto di precedenza nei sensi unici alternati,0.648,1.257,,ii45|ii37|ii43e
+4210,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,1.531,0.005,,rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-continua|rm-frecce-direzionali-su-strade-a-doppio-se
+4211,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,1.542,0.043,,rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-continua|rm-frecce-direzionali-su-strade-a-doppio-se
+4212,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,1.553,0.021,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|rm-frecce-direzionali-su-strade-a-doppio-se
+4213,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,0.722,0.034,,rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-continua|rm-passaggio-a-livello
+4214,rm-passaggio-a-livello,Passaggio a Livello,1.436,0.080,,rm-passaggio-a-livello|rm-obbligo-diritto|ii447
+4215,rm-strisce-di-raccordo-bianche-continue,Strisce di Raccordo Bianche Continue,1.202,0.070,,rm-strisce-di-raccordo-bianche-continue|rm-strisce-guida-intersezione-bianche-disco|rm-aree-di-sosta
+4216,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,1.490,0.023,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|rm-frecce-direzionali-su-strade-a-doppio-se
+4217,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,1.506,0.017,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|rm-frecce-direzionali-su-strade-a-doppio-se
+4218,rm-strisce-gialle-e-nere,Strisce Gialle e Nere,1.451,0.941,,rm-strisce-gialle-e-nere|rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-discontinu
+4219,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,1.133,0.082,,rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-discontinu|rm-striscia-bianca-longitudinale-continua
+4220,rm-strisce-di-raccordo-bianche-continue,Strisce di Raccordo Bianche Continue,1.202,0.070,,rm-strisce-di-raccordo-bianche-continue|rm-strisce-guida-intersezione-bianche-disco|rm-aree-di-sosta
+4221,rm-strisce-di-raccordo-bianche-continue,Strisce di Raccordo Bianche Continue,1.172,0.009,,rm-strisce-di-raccordo-bianche-continue|rm-strisce-guida-intersezione-bianche-disco|rm-schema-colonnina-118
+4222,rm-frecce-direzionali-su-strade-a-senso-uni,Frecce Direzionali su Strade a Senso Unico,1.360,0.133,,rm-frecce-direzionali-su-strade-a-senso-uni|rm-striscia-bianca-longitudinale-continua|rm-frecce-direzionali-su-strade-a-doppio-se
+4223,rm-frecce-direzionali-su-strade-a-senso-uni,Frecce Direzionali su Strade a Senso Unico,1.433,0.262,,rm-frecce-direzionali-su-strade-a-senso-uni|rm-striscia-bianca-longitudinale-continua|rm-frecce-direzionali-su-strade-a-doppio-se
+4224,rm-frecce-direzionali-su-strade-a-senso-uni,Frecce Direzionali su Strade a Senso Unico,1.356,0.168,,rm-frecce-direzionali-su-strade-a-senso-uni|rm-striscia-bianca-longitudinale-continua|rm-frecce-direzionali-su-strade-a-doppio-se
+4225,rm-strisce-gialle-e-nere,Strisce Gialle e Nere,1.451,0.941,,rm-strisce-gialle-e-nere|rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-discontinu
+4226,II 444,Delimitazione degli stalli di sosta,0.966,0.134,,ii444|rm-italia-segnaletica-orizzontale-strada-ex|rm-italia-segnaletica-orizzontale-autostrad
+4227,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,1.531,0.005,,rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-continua|rm-frecce-direzionali-su-strade-a-doppio-se
+4228,II 441/f,Iscrizione di velocità consigliata su strade tipo D-E-F con V ≤ 50 km/h,0.394,0.052,,ii441f|ii434d|ii442b
+4229,rm-frecce-direzionali-su-strade-a-doppio-se,Frecce Direzionali su Strade a Doppio Senso di Circolazione,1.389,0.063,,rm-frecce-direzionali-su-strade-a-doppio-se|rm-striscia-di-margine-della-carreggiata|rm-striscia-bianca-longitudinale-continua
+4230,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,1.531,0.005,,rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-continua|rm-frecce-direzionali-su-strade-a-doppio-se
+4231,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,1.553,0.021,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|rm-frecce-direzionali-su-strade-a-doppio-se
+4232,II 441/f,Iscrizione di velocità consigliata su strade tipo D-E-F con V ≤ 50 km/h,0.394,0.052,,ii441f|ii434d|ii442b
+4233,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,1.531,0.005,,rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-continua|rm-frecce-direzionali-su-strade-a-doppio-se
+4234,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,1.542,0.043,,rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-continua|rm-frecce-direzionali-su-strade-a-doppio-se
+4235,rm-fig-134b-frecce-direzionali-urbane-1959,Fig. 134b - Frecce direzionali urbane - 1959,0.561,0.113,,rm-fig-134b-frecce-direzionali-urbane-1959|ii441f|ii441b
+4236,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,1.206,0.038,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|rm-frecce-direzionali-su-strade-a-doppio-se
+4237,rm-passaggio-a-livello,Passaggio a Livello,1.485,0.138,,rm-passaggio-a-livello|rm-obbligo-diritto|rm-frecce-di-rientro
+4238,rm-striscia-di-margine-della-carreggiata,Striscia di Margine della Carreggiata,1.534,0.240,,rm-striscia-di-margine-della-carreggiata|rm-frecce-direzionali-su-strade-a-doppio-se|rm-striscia-bianca-longitudinale-continua
+4239,rm-frecce-direzionali-su-strade-a-senso-uni,Frecce Direzionali su Strade a Senso Unico,1.394,0.151,,rm-frecce-direzionali-su-strade-a-senso-uni|rm-frecce-direzionali-su-strade-a-doppio-se|rm-striscia-di-margine-della-carreggiata
+4240,II 449,Lanterna semaforica veicolare normale,0.618,0.192,,ii449|ii454|ii452
+4241,II 449,Lanterna semaforica veicolare normale,0.618,0.192,,ii449|ii454|ii452
+4242,II 459,Dimensioni dei simboli delle lanterne semaforiche per corsie reversibili,0.008,0.034,,ii459|ii461|ii458
+4243,II 449,Lanterna semaforica veicolare normale,0.618,0.192,,ii449|ii454|ii452
+4244,II 449,Lanterna semaforica veicolare normale,0.618,0.192,,ii449|ii454|ii452
+4245,II 459,Dimensioni dei simboli delle lanterne semaforiche per corsie reversibili,0.110,0.105,,ii459|ii458|ii453
+4246,II 452,Lanterne semaforiche per i veicoli di trasporto pubblico,1.287,0.040,,ii452|ii454|ii456
+4247,II 449,Lanterna semaforica veicolare normale,0.618,0.192,,ii449|ii454|ii452
+4248,II 459,Dimensioni dei simboli delle lanterne semaforiche per corsie reversibili,0.110,0.105,,ii459|ii458|ii453
+4249,II 458,Lanterne semaforiche per corsie reversibili,0.917,1.003,,ii458|ii455|ii453
+4250,II 454,Lanterne semaforiche pedonali,1.402,0.034,,ii454|ii456|ii452
+4251,II 449,Lanterna semaforica veicolare normale,0.618,0.192,,ii449|ii454|ii452
+4252,II 459,Dimensioni dei simboli delle lanterne semaforiche per corsie reversibili,0.008,0.034,,ii459|ii461|ii458
+4253,II 452,Lanterne semaforiche per i veicoli di trasporto pubblico,1.287,0.040,,ii452|ii454|ii456
+4254,II 454,Lanterne semaforiche pedonali,1.402,0.034,,ii454|ii456|ii452
+4255,II 456,Lanterne semaforiche per velocipedi,1.379,0.028,,ii456|ii454|ii452
+4256,II 460,Lanterne semaforiche gialle lampeggianti,0.427,0.156,,ii460|ii456|ii454
+4257,II 456,Lanterne semaforiche per velocipedi,1.229,0.006,,ii456|ii452|ii454
+4258,II 458,Lanterne semaforiche per corsie reversibili,0.917,1.003,,ii458|ii455|ii453
+4259,II 450,Lanterne semaforiche veicolari di corsia,0.031,0.267,,ii450|ii460|ii459
+4260,II 450,Lanterne semaforiche veicolari di corsia,-0.145,0.093,,ii450|ii460|ii459
+4261,II 450,Lanterne semaforiche veicolari di corsia,-0.118,0.138,,ii450|ii460|ii459
+4262,II 450,Lanterne semaforiche veicolari di corsia,-0.069,0.157,,ii450|ii459|ii460
+4267,II 285,Segnale di conferma autostradale,1.292,0.232,,ii285|ii240|ii245
+4268,II 256,Segnale identificazione itinerario internazionale,1.264,0.341,,ii256|ii259|ii245
+4269,II 258,Segnale identificazione strada statale,1.135,0.141,,ii258|ii245|ii285
+4270,II 260,Segnale identificazione strada comunale,1.262,0.533,,ii260|ii293|ii292
+4271,II 363,Campeggio,1.269,0.264,,ii363|ii360|ii362
+4272,II 378,Polizia Stradale,0.883,0.052,,ii378|ii379|ii381
+4273,II 349,Senso unico frontale,0.819,0.358,,ii349|ii309|ii307
+4274,II 251,Segnali di corsia con funzione di direzione,0.004,0.050,,ii251|ii369|ii295
+4275,II 263,Segnale di progressiva distanziometrica autostradale,1.455,0.460,,ii263|ii140b|ii296
+4276,II 375,Taxi,1.055,0.496,,ii375|ii243|ii234
+4277,II 355,Telefono,1.217,0.189,,ii355|ii357|ii359
+4278,II 356,Rifornimento,1.170,0.078,,ii356|ii357|ii377
+4279,II 185,Università,-0.196,0.041,,ii185|ii336|ii231
+4280,II 233,Segnale di preavviso di intersezione urbana,1.198,0.542,,ii233|ii232|ii251
+4281,II 236,Segnale di preavviso di intersezioni ravvicinate urbane,1.288,0.882,,ii236|ii255|ii295
+4282,II 238,Segnale di preavviso di intersezione urbana rotatoria,1.310,0.673,,ii238|ii249|ii218
+4283,II 239,"Segnale di preavviso di intersezione urbana, con divieto di transito per una categoria di veicoli su un ramo dell'intersezione",1.269,0.939,,ii239|ii219|ii326
+4284,II 240,Segnale di preavviso di intersezione extraurbana con passaggio a livello su un ramo dell'intersezione,1.352,0.235,,ii240|ii245|ii285
+4285,II 243,Segnale di preselezione extraurbano,1.158,0.271,,ii243|ii234|ii343
+4286,II 244,Segnale di preselezione urbano,1.338,0.804,,ii244|ii246|ii247
+4287,II 282,Ospedale,0.818,0.508,,ii282|ii269|ii333
+4288,II 240,Segnale di preavviso di intersezione extraurbana con passaggio a livello su un ramo dell'intersezione,1.069,0.058,,ii240|ii285|ii245
+4289,II 241,Segnale di preselezione urbano,0.396,0.157,,ii241|ii301|ii292
+4290,II 240,Segnale di preavviso di intersezione extraurbana con passaggio a livello su un ramo dell'intersezione,0.910,0.049,,ii240|ii245|ii285
+4291,II 274,Fine centro abitato,0.999,0.612,,ii274|ii248|ii375
+4292,II 320,Area pedonale urbana,1.304,0.566,,ii320|ii322a|ii288
+4293,II 322/a,Zona a traffico limitato,1.064,0.178,,ii322a|ii320|ii288
+4294,II 271,Numero identificazione strada provinciale + freccia con funzione di direzione,0.384,0.087,,ii271|ii330|ii371
+4295,II 330,Transitabilità,0.429,0.159,,ii330|ii371|ii271
+4296,II 345,Inizio autostrada,1.244,0.396,,ii345|ii346|ii172
+4297,II 352,Limiti di velocità generali,1.181,0.607,,ii352|ii286|ii346
+4298,II 257,Segnale identificazione autostrada,0.554,0.571,,ii257|ii317|ii312
+4299,II 273,Inizio centro abitato,1.386,0.699,,ii273|ii141|ii142
+4300,II 277,Pronto soccorso,1.112,0.163,,ii277|ii284|ii280
+4301,II 295,Segnale di localizzazione territoriale,0.959,0.563,,ii295|ii236|ii251
+4302,II 298,Preavviso di informazioni turistico alberghiere,1.319,1.037,,ii298|ii238|ii376
+4303,II 303,Attraversamento pedonale,0.625,0.676,,ii303|ii308|ii306
+4304,II 304,Scuolabus,0.633,0.423,,ii304|ii184|ii375
+4305,II 305,SOS,0.721,0.920,,ii305|ii257|ii192
+4306,II 309,Strada senza uscita,0.828,0.354,,ii309|ii349|ii308
+4307,II 311,Preavviso di strada senza uscita,0.644,0.729,,ii311|ii314|ii192
+4308,II 312,Velocità consigliata,0.778,0.448,,ii312|ii313|ii257
+4309,II 314,Strada riservata ai veicoli a motore,0.693,0.590,,ii314|ii315|ii302
+4310,II 316,Galleria,0.628,0.643,,ii316|ii235|ii341
+4311,II 317,Ponte,0.800,0.580,,ii317|ii257|ii313
+4312,II 324,Attraversamento ciclabile,0.600,0.677,,ii324|ii349|ii308
+4313,II 326,Svolta a sinistra indiretta,0.739,0.231,,ii326|ii325|ii201
+4314,II 327,Inversione di marcia,0.959,0.038,,ii327|ii162|ii161
+4315,II 329,Piazzola + SOS autostradale,1.164,0.163,,ii329|ii328|ii172
+4316,II 337,Uso corsie,0.758,0.439,,ii337|ii342|ii341
+4317,II 338,Uso corsie,1.053,0.089,,ii338|ii344|ii243
+4318,II 340,Uso corsie,1.188,0.850,,ii340|ii293|ii260
+4319,II 342,Variazione corsie disponibili,0.707,0.397,,ii342|ii337|ii341
+4320,II 343,Variazione corsie disponibili,1.175,0.308,,ii343|ii344|ii338
+4321,II 350,Preavviso deviazione consigliata autocarri in transito,1.132,0.715,,ii350|ii351|ii283
+4322,II 358,Fermata autobus,1.248,0.019,,ii358|ii359|ii372
+4323,II 368,Parcheggio di scambio con linee autobus,1.270,0.099,,ii368|ii369|ii370
+4324,II 373,Auto al seguito,1.217,0.027,,ii373|ii358|ii359
+4325,II 377,Area attrezzata con impianti di scarico,1.226,0.299,,ii377|ii357|ii372
+4326,II 354,Assistenza meccanica,1.210,0.272,,ii354|ii362|ii377
+4327,II 316,Galleria,-0.352,0.057,,ii316|ii237|ii314
+4328,II 171,Parchimetro,0.596,0.021,,ii171|ii271|ii172
+4329,II 181,Pneumatici da neve,0.390,0.111,,ii181|ii264|ii269
+4330,II 464,Delineatori per gallerie,0.058,0.122,,ii464|ii399a|ii468
+4331,II 399/a,Presegnale di cantiere mobile,0.297,0.002,,ii399a|ii409a|ii410b
+4332,II 383,Lavori,1.199,0.292,,ii383|ii385|ii384
+4333,II 468,Delineatori modulari di curva,0.000,0.002,,ii468|ii463|ii403
+4334,II 464,Delineatori per gallerie,0.622,0.172,,ii464|ii399a|ii388
+4335,II 398,Passaggio obbligatorio per veicoli operativi,-0.099,0.200,,ii398|ii388|ii409a
+4336,II 399/b,Presegnale di cantiere mobile,0.954,1.063,,ii399b|ii466|ii467
+4337,II 408,Preavviso di deviazione,1.044,1.092,,ii408|ii399a|ii407
+4338,II 411/a,Segnale di corsia chiusa,0.778,0.518,,ii411a|ii413b|ii412a
+4339,II 414,Uso corsie disponibili,1.136,0.916,,ii414|ii413b|ii412a
+4340,II 403,Paletta per transito alternato da movieri,0.011,0.107,,ii403|ii463|ii382
+4341,II 403,Paletta per transito alternato da movieri,0.016,0.100,,ii403|ii463|ii382
+4342,II 464,Delineatori per gallerie,0.719,0.102,,ii464|ii399a|ii468
+4343,II 464,Delineatori per gallerie,0.517,0.303,,ii464|ii399a|ii468
+4344,II 382,ii382,0.487,0.065,,ii382|ii467|ii466
+4345,II 403,Paletta per transito alternato da movieri,0.503,0.645,,ii403|ii467|ii463
+4346,II 468,Delineatori modulari di curva,1.378,1.033,,ii468|ii464|ii399a
+4347,II 404,Semaforo,1.135,0.227,,ii404|ii385|ii386
+4348,II 399/a,Presegnale di cantiere mobile,0.738,0.165,,ii399a|ii464|ii410a
+4349,rm-schema-colonnina-118,Schema colonnina 118,0.357,0.063,,rm-schema-colonnina-118|ii380|ii458
+4350,II 379,Polizia di Stato,0.332,0.040,,ii379|ii378|ii381
+4351,II 79/b,Sosta consentita a particolari categorie,0.583,0.013,,ii79b|ii79c|rm-preferenziale-monodirezionale
+4352,rm-strisce-gialle-e-nere,Strisce Gialle e Nere,0.479,0.024,,rm-strisce-gialle-e-nere|ii142|ii273
+4353,II 273,Inizio centro abitato,0.646,0.100,,ii273|ii142|ii434
+4354,II 39,Preavviso di fermarsi e dare precedenza,0.347,0.008,,ii39|ii36|ii38
+4356,II 79/c,Sosta consentita a particolari categorie,0.867,0.009,,ii79c|ii79b|ii79a
+4357,II 79/c,Sosta consentita a particolari categorie,0.922,0.011,,ii79c|ii79b|ii79a
+4358,rm-passaggio-pedonale,Passaggio pedonale,0.098,0.122,,rm-passaggio-pedonale|ii214|ii309
+4359,II 47,Senso vietato,0.186,0.242,,ii47|ii37|ii46
+4360,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,0.677,0.013,,rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-continua|rm-strisce-gialle-e-nere
+4361,II 292,Segnale di nome-strada combinato col senso unico e numeri civici,0.725,0.010,,ii292|rm-striscia-bianca-longitudianle-continua-a|rm-strisce-gialle-e-nere
+4362,II 434,Attraversamenti pedonali,0.666,0.001,,ii434|ii273|rm-striscia-di-margine-della-carreggiata
+4363,II 229,Funivia,0.200,0.107,,ii229|rm-corsia-preferenziale-monodirezionale-con|ii182
+4364,II 131,Bicicletta,0.486,0.016,,ii131|ii157|ii147
+4365,II 16,Salita ripida,0.626,0.019,,ii16|ii15|ii28
+4366,rm-striscia-bianca-longitudinale-discontinu,Striscia Bianca Longitudinale Discontinua,0.944,0.101,,rm-striscia-bianca-longitudinale-discontinu|ii255|rm-striscia-bianca-longitudianle-continua-a
+4367,II 117,Partenze,0.669,0.008,,ii117|ii118|ii138
+4368,II 142,Autobus extraurbano,0.738,0.005,,ii142|rm-strisce-gialle-e-nere|ii292
+4369,II 11/c,3° pannello distanziometrico,0.364,0.026,,ii11c|ii11b|ii244
+4371,II 110/b,Guardia di Finanza,0.416,0.057,,ii110b|ii159|ii262
+4372,II 219,Piscina,0.210,0.097,,ii219|ii239|ii378
+4373,II 444,Delimitazione degli stalli di sosta,0.764,0.251,,ii444|rm-corsia-ciclabile-per-doppio-senso-ciclab|rm-preferenziale-monodirezionale
+4385,II 239,"Segnale di preavviso di intersezione urbana, con divieto di transito per una categoria di veicoli su un ramo dell'intersezione",0.457,0.511,,ii239|ii461|ii219
+4409,rm-striscia-di-margine-della-carreggiata,Striscia di Margine della Carreggiata,1.331,0.137,,rm-striscia-di-margine-della-carreggiata|rm-doppia-striscia-longitudinale-continua|rm-striscia-bianca-longitudinale-continua
+4413,II 36,Dare precedenza,1.282,1.187,,ii36|ii334|ii39
+4422,rm-striscia-di-margine-della-carreggiata,Striscia di Margine della Carreggiata,1.524,0.228,,rm-striscia-di-margine-della-carreggiata|rm-frecce-direzionali-su-strade-a-doppio-se|rm-striscia-bianca-longitudinale-continua
+4424,rm-striscia-di-margine-della-carreggiata,Striscia di Margine della Carreggiata,0.927,0.035,,rm-striscia-di-margine-della-carreggiata|rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a
+4425,rm-aree-di-sosta,Aree di Sosta,1.352,0.057,,rm-aree-di-sosta|rm-striscia-di-margine-della-carreggiata|ii275
+4426,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,1.531,0.005,,rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-continua|rm-frecce-direzionali-su-strade-a-doppio-se
+4427,rm-frecce-direzionali-su-strade-a-senso-uni,Frecce Direzionali su Strade a Senso Unico,1.423,0.175,,rm-frecce-direzionali-su-strade-a-senso-uni|rm-frecce-direzionali-su-strade-a-doppio-se|rm-striscia-bianca-longitudinale-continua
+4428,rm-striscia-di-margine-della-carreggiata,Striscia di Margine della Carreggiata,0.927,0.035,,rm-striscia-di-margine-della-carreggiata|rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a
+4429,rm-striscia-di-margine-della-carreggiata,Striscia di Margine della Carreggiata,0.927,0.035,,rm-striscia-di-margine-della-carreggiata|rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a
+4430,rm-doppia-striscia-longitudinale-continua,Doppia Striscia Longitudinale Continua,1.361,0.020,,rm-doppia-striscia-longitudinale-continua|rm-aree-di-sosta|rm-striscia-di-margine-della-carreggiata
+4431,II 37,Fermarsi e dare precedenza,1.100,0.759,,ii37|ii47|ii407
+4443,rm-striscia-di-margine-della-carreggiata,Striscia di Margine della Carreggiata,1.331,0.137,,rm-striscia-di-margine-della-carreggiata|rm-doppia-striscia-longitudinale-continua|rm-striscia-bianca-longitudinale-continua
+4514,II 74,Divieto di sosta,0.590,0.253,,ii74|ii75|ii265
+4548,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,0.994,0.025,,rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-continua|ii459
+4549,II 42,Fine del diritto di precedenza,-0.280,0.050,,ii42|ii438b|ii442b
+4550,II 415,Strisce longitudinali,0.926,0.096,,ii415|rm-aree-di-sosta|rm-fig-134a-frecce-direzionali-urbane-1959
+4564,II 42,Fine del diritto di precedenza,-0.280,0.050,,ii42|ii438b|ii442b
+4579,rm-fig-134a-frecce-direzionali-urbane-1959,Fig. 134a - Frecce direzionali urbane - 1959,0.365,0.081,,rm-fig-134a-frecce-direzionali-urbane-1959|ii415|rm-fig-134b-frecce-direzionali-urbane-1959
+4580,rm-fig-134a-frecce-direzionali-urbane-1959,Fig. 134a - Frecce direzionali urbane - 1959,0.089,0.027,,rm-fig-134a-frecce-direzionali-urbane-1959|ii415|rm-fig-134b-frecce-direzionali-urbane-1959
+4581,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,0.796,0.012,,rm-striscia-bianca-longitudianle-continua-a|ii348|rm-striscia-bianca-longitudinale-continua
+4582,II 390,Materiale instabile sulla strada,0.380,0.008,,ii390|ii3|ii1
+4588,II 70,Via libera,0.325,0.045,,ii70|ii110a|ii71
+4589,II 247,Segnali di corsia con funzione di preselezione e di direzione,0.271,0.141,,ii247|ii246|ii250
+4590,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,0.741,0.002,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|rm-frecce-direzionali-su-strade-a-doppio-se
+4591,II 241,Segnale di preselezione urbano,0.282,0.123,,ii241|ii415|rm-frecce-direzionali-su-strade-a-senso-uni
+4592,II 399/a,Presegnale di cantiere mobile,0.656,0.001,,ii399a|rm-passaggio-a-livello|ii460
+5034,II 444,Delimitazione degli stalli di sosta,0.676,0.182,,ii444|rm-corsia-ciclabile-per-doppio-senso-ciclab|rm-preferenziale-monodirezionale
+5035,II 441,Italian traffic signs - iscrizione di corsia riservata su strade tipo A-B-C-D (figura II 441-c),0.359,0.000,,ii441|ii441c|rm-corsia-preferenziale-monodirezionale-con
+5036,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,0.775,0.026,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|ii292
+5040,II 40,Intersezione con precedenza a destra,1.270,0.229,,ii40|ii43b|ii43c
+5041,II 43/a,Intersezione con diritto di precedenza,1.215,0.006,,ii43a|ii43b|ii43c
+5043,II 23,Bambini,0.488,0.051,,ii23|ii24|ii31a
+5044,II 23,Bambini,0.474,0.048,,ii23|ii24|ii14
+5047,II 44,Diritto di precedenza,0.500,0.085,,ii44|ii42|ii43a
+5048,II 79/c,Sosta consentita a particolari categorie,0.912,0.025,,ii79c|ii79b|ii79a
+5049,II 74,Divieto di sosta,0.427,0.242,,ii74|ii75|ii77
+5051,II 74,Divieto di sosta,0.427,0.242,,ii74|ii75|ii77
+5053,II 84,Rotatoria,0.362,0.323,,ii84|ii93b|ii92b
+5054,II 23,Bambini,0.653,0.119,,ii23|ii14|ii4
+5055,II 23,Bambini,0.612,0.088,,ii23|ii9|ii14
+5056,rm-obbligo-destra,Obbligo Destra,1.352,0.112,,rm-obbligo-destra|rm-passaggio-a-livello|rm-obbligo-diritto
+5057,rm-frecce-direzionali-su-strade-a-doppio-se,Frecce Direzionali su Strade a Doppio Senso di Circolazione,1.389,0.079,,rm-frecce-direzionali-su-strade-a-doppio-se|rm-striscia-bianca-longitudinale-continua|rm-striscia-di-margine-della-carreggiata
+5058,rm-preferenziale-monodirezionale,Preferenziale monodirezionale,1.080,0.013,,rm-preferenziale-monodirezionale|rm-corsia-ciclabile-per-doppio-senso-ciclab|rm-italia-segnaletica-orizzontale-autostrad
+5059,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,1.059,0.002,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|rm-frecce-direzionali-su-strade-a-doppio-se
+5060,rm-aree-di-sosta,Aree di Sosta,0.916,0.023,,rm-aree-di-sosta|ii415|rm-fig-134a-frecce-direzionali-urbane-1959
+5061,II 42,Fine del diritto di precedenza,-0.220,0.090,,ii42|ii442b|ii438b
+5063,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,1.527,0.028,,rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-continua|rm-frecce-direzionali-su-strade-a-doppio-se
+5064,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,1.492,0.005,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|rm-frecce-direzionali-su-strade-a-doppio-se
+5067,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,1.480,0.031,,rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-continua|rm-frecce-direzionali-su-strade-a-doppio-se
+5068,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,1.477,0.008,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|rm-frecce-direzionali-su-strade-a-doppio-se
+5070,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,1.252,0.027,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|rm-frecce-direzionali-su-strade-a-doppio-se
+5071,rm-schema-colonnina-118,Schema colonnina 118,0.052,0.029,,rm-schema-colonnina-118|rm-preferenziale-laterale-2|ii427
+5072,rm-striscia-di-margine-della-carreggiata,Striscia di Margine della Carreggiata,0.873,0.032,,rm-striscia-di-margine-della-carreggiata|rm-aree-di-sosta|rm-striscia-bianca-longitudinale-continua
+5073,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,1.276,0.016,,rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudinale-discontinu
+5074,rm-striscia-bianca-longitudinale-discontinu,Striscia Bianca Longitudinale Discontinua,1.215,0.049,,rm-striscia-bianca-longitudinale-discontinu|rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-continua
+5075,rm-striscia-bianca-longitudinale-discontinu,Striscia Bianca Longitudinale Discontinua,0.955,0.158,,rm-striscia-bianca-longitudinale-discontinu|rm-striscia-di-margine-della-carreggiata|rm-striscia-bianca-longitudinale-continua
+5077,II 460,Lanterne semaforiche gialle lampeggianti,0.654,0.146,,ii460|ii456|ii454
+5078,II 388,Mezzi di lavoro in azione,0.622,0.061,,ii388|ii23|ii34
+5079,II 23,Bambini,0.652,0.060,,ii23|ii388|ii4
+5080,II 36,Dare precedenza,0.352,0.095,,ii36|ii39|ii38
+5081,II 244,Segnale di preselezione urbano,0.297,0.153,,ii244|ii380|rm-schema-colonnina-118
+5082,rm-italia-segnaletica-orizzontale-autostrad,Italia segnaletica orizzontale autostrada attuale,0.437,0.000,,rm-italia-segnaletica-orizzontale-autostrad|rm-italia-segnaletica-orizzontale-strada-ex|rm-preferenziale-monodirezionale
+5083,rm-italia-segnaletica-orizzontale-strada-ex,Italia segnaletica orizzontale strada extraurbana principale attuale,0.453,0.001,,rm-italia-segnaletica-orizzontale-strada-ex|rm-italia-segnaletica-orizzontale-autostrad|rm-preferenziale-monodirezionale
+5084,II 282,Ospedale,0.632,0.136,,ii282|rm-preferenziale-monodirezionale|ii79b
+5085,II 282,Ospedale,0.632,0.136,,ii282|rm-preferenziale-monodirezionale|ii79b
+5086,II 79/b,Sosta consentita a particolari categorie,0.686,0.030,,ii79b|ii79c|ii79a
+5087,II 282,Ospedale,0.595,0.089,,ii282|rm-preferenziale-monodirezionale|ii172
+5088,II 36,Dare precedenza,0.337,0.108,,ii36|ii39|ii38
+5089,II 441,Italian traffic signs - iscrizione di corsia riservata su strade tipo A-B-C-D (figura II 441-c),0.402,0.000,,ii441|ii441c|ii444
+5090,rm-italia-segnaletica-orizzontale-strada-ex,Italia segnaletica orizzontale strada extraurbana principale attuale,0.363,0.004,,rm-italia-segnaletica-orizzontale-strada-ex|rm-italia-segnaletica-orizzontale-autostrad|ii441
+5091,II 36,Dare precedenza,0.331,0.109,,ii36|ii39|ii38
+5092,II 79/b,Sosta consentita a particolari categorie,0.688,0.032,,ii79b|ii79c|ii79a
+5093,rm-italia-segnaletica-orizzontale-autostrad,Italia segnaletica orizzontale autostrada attuale,0.356,0.000,,rm-italia-segnaletica-orizzontale-autostrad|rm-italia-segnaletica-orizzontale-strada-ex|rm-preferenziale-monodirezionale
+5094,II 441,Italian traffic signs - iscrizione di corsia riservata su strade tipo A-B-C-D (figura II 441-c),0.406,0.000,,ii441|ii441c|ii444
+5095,rm-preferenziale-monodirezionale,Preferenziale monodirezionale,0.699,0.024,,rm-preferenziale-monodirezionale|rm-corsia-preferenziale-monodirezionale-con|rm-corsia-ciclabile-per-doppio-senso-ciclab
+5096,rm-preferenziale-monodirezionale,Preferenziale monodirezionale,0.658,0.021,,rm-preferenziale-monodirezionale|rm-corsia-preferenziale-monodirezionale-con|rm-corsia-ciclabile-per-doppio-senso-ciclab
+5097,II 296,Segnale di avvio alla zona industriale,0.889,0.065,,ii296|ii136|ii140b
+5098,II 79/c,Sosta consentita a particolari categorie,0.912,0.025,,ii79c|ii79b|ii79a
+5099,II 77,Preavviso di parcheggio,0.561,0.037,,ii77|ii282|rm-preferenziale-monodirezionale
+5100,II 79/c,Sosta consentita a particolari categorie,0.911,0.034,,ii79c|ii79b|ii79a
+5101,II 79/b,Sosta consentita a particolari categorie,0.810,0.002,,ii79b|ii79c|ii79a
+5102,II 271,Numero identificazione strada provinciale + freccia con funzione di direzione,0.402,0.033,,ii271|ii97b|ii172
+5103,II 79/b,Sosta consentita a particolari categorie,0.393,0.003,,ii79b|ii441e|ii282
+5104,II 79/b,Sosta consentita a particolari categorie,0.618,0.000,,ii79b|ii79c|rm-passaggio-a-livello
+5105,II 388,Mezzi di lavoro in azione,0.757,0.154,,ii388|ii23|ii14
+5106,II 79/c,Sosta consentita a particolari categorie,0.876,0.040,,ii79c|ii79b|ii79a
+5107,II 444,Delimitazione degli stalli di sosta,0.400,0.142,,ii444|rm-italia-segnaletica-orizzontale-autostrad|rm-italia-segnaletica-orizzontale-strada-ex
+5108,II 271,Numero identificazione strada provinciale + freccia con funzione di direzione,0.342,0.047,,ii271|ii97b|rm-dare-precedenza
+5109,rm-preferenziale-monodirezionale,Preferenziale monodirezionale,0.568,0.009,,rm-preferenziale-monodirezionale|rm-corsia-preferenziale-monodirezionale-con|rm-corsia-ciclabile-per-doppio-senso-ciclab
+5110,II 78,Passo carrabile,0.600,0.099,,ii78|rm-passaggio-a-livello|ii447
+5111,II 271,Numero identificazione strada provinciale + freccia con funzione di direzione,0.402,0.053,,ii271|ii97b|ii441a
+5112,II 78,Passo carrabile,0.465,0.022,,ii78|rm-passaggio-a-livello|ii443
+5113,II 388,Mezzi di lavoro in azione,0.718,0.111,,ii388|ii23|ii14
+5115,II 72,Fine del divieto di sorpasso,1.297,0.106,,ii72|ii70|ii73
+5116,II 388,Mezzi di lavoro in azione,1.042,0.457,,ii388|ii24|ii25
+5117,II 23,Bambini,0.679,0.046,,ii23|ii388|ii14
+5118,rm-striscia-di-margine-della-carreggiata,Striscia di Margine della Carreggiata,1.136,0.070,,rm-striscia-di-margine-della-carreggiata|ii276|ii275
+5119,rm-passaggio-a-livello,Passaggio a Livello,0.645,0.026,,rm-passaggio-a-livello|ii78|ii447
+5120,II 79/b,Sosta consentita a particolari categorie,0.655,0.028,,ii79b|rm-preferenziale-monodirezionale|rm-corsia-preferenziale-monodirezionale-con
+5121,II 444,Delimitazione degli stalli di sosta,0.798,0.248,,ii444|rm-corsia-ciclabile-per-doppio-senso-ciclab|rm-preferenziale-monodirezionale
+5122,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,0.757,0.018,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|rm-striscia-di-margine-della-carreggiata
+5125,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,1.477,0.008,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|rm-frecce-direzionali-su-strade-a-doppio-se
+5126,rm-aree-di-sosta,Aree di Sosta,1.356,0.289,,rm-aree-di-sosta|rm-striscia-di-margine-della-carreggiata|ii415
+5128,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,0.873,0.002,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-discontinu
+5129,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,0.943,0.017,,rm-striscia-bianca-longitudinale-continua|rm-striscia-di-margine-della-carreggiata|rm-striscia-bianca-longitudianle-continua-a
+5131,rm-aree-di-sosta,Aree di Sosta,1.192,0.067,,rm-aree-di-sosta|rm-doppia-striscia-longitudinale-continua|ii415
+5132,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,1.492,0.005,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|rm-frecce-direzionali-su-strade-a-doppio-se
+5133,rm-doppia-striscia-longitudinale-continua,Doppia Striscia Longitudinale Continua,1.348,0.007,,rm-doppia-striscia-longitudinale-continua|rm-aree-di-sosta|rm-striscia-di-margine-della-carreggiata
+5134,rm-striscia-di-margine-della-carreggiata,Striscia di Margine della Carreggiata,1.440,0.074,,rm-striscia-di-margine-della-carreggiata|rm-striscia-bianca-longitudinale-continua|rm-frecce-direzionali-su-strade-a-doppio-se
+5136,II 273,Inizio centro abitato,1.135,0.391,,ii273|ii141|ii142
+5137,rm-aree-di-sosta,Aree di Sosta,1.297,0.007,,rm-aree-di-sosta|rm-striscia-di-margine-della-carreggiata|ii275
+5138,rm-doppia-striscia-longitudinale-continua,Doppia Striscia Longitudinale Continua,1.318,0.020,,rm-doppia-striscia-longitudinale-continua|rm-aree-di-sosta|rm-striscia-di-margine-della-carreggiata
+5139,II 427/b,Strisce che delimitano piste ciclabili,0.947,0.369,,ii427b|ii427|ii427a
+5142,rm-frecce-direzionali-su-strade-a-senso-uni,Frecce Direzionali su Strade a Senso Unico,1.367,0.133,,rm-frecce-direzionali-su-strade-a-senso-uni|rm-striscia-bianca-longitudinale-continua|rm-frecce-direzionali-su-strade-a-doppio-se
+5143,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,0.942,0.017,,rm-striscia-bianca-longitudinale-continua|rm-striscia-di-margine-della-carreggiata|rm-striscia-bianca-longitudianle-continua-a
+5146,rm-striscia-di-margine-della-carreggiata,Striscia di Margine della Carreggiata,1.453,0.104,,rm-striscia-di-margine-della-carreggiata|rm-striscia-bianca-longitudinale-continua|rm-frecce-direzionali-su-strade-a-doppio-se
+5147,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,1.492,0.005,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|rm-frecce-direzionali-su-strade-a-doppio-se
+5148,rm-doppia-striscia-longitudinale-continua,Doppia Striscia Longitudinale Continua,1.354,0.029,,rm-doppia-striscia-longitudinale-continua|rm-aree-di-sosta|rm-striscia-di-margine-della-carreggiata
+5153,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,0.998,0.044,,rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-continua|ii459
+5154,II 181,Pneumatici da neve,0.035,0.032,,ii181|rm-preferenziale-laterale-2|ii111
+5155,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,1.059,0.002,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|rm-frecce-direzionali-su-strade-a-doppio-se
+5156,rm-striscia-bianca-longitudianle-continua-a,Striscia Bianca Longitudianle Continua Affiancata da Una Discontinua,0.998,0.044,,rm-striscia-bianca-longitudianle-continua-a|rm-striscia-bianca-longitudinale-continua|ii459
+5157,rm-striscia-bianca-longitudinale-continua,Striscia Bianca Longitudinale Continua,1.059,0.002,,rm-striscia-bianca-longitudinale-continua|rm-striscia-bianca-longitudianle-continua-a|rm-frecce-direzionali-su-strade-a-doppio-se
+4139,,(composite: A vs B),0,,,
+4140,,(composite: A vs B),0,,,
+4171,,(composite: A vs B),0,,,
+4207,,(composite: A vs B),0,,,
+4355,,(composite: A vs B),0,,,
+4370,,(composite: A vs B),0,,,
+4448,,(scenario/diagram),0,,,
+4449,,(scenario/diagram),0,,,
+4450,,(scenario/diagram),0,,,
+4451,,(scenario/diagram),0,,,
+4452,,(scenario/diagram),0,,,
+4453,,(scenario/diagram),0,,,
+4454,,(scenario/diagram),0,,,
+4455,,(scenario/diagram),0,,,
+4456,,(scenario/diagram),0,,,
+4457,,(scenario/diagram),0,,,
+4458,,(scenario/diagram),0,,,
+4459,,(scenario/diagram),0,,,
+4460,,(scenario/diagram),0,,,
+4461,,(scenario/diagram),0,,,
+4462,,(scenario/diagram),0,,,
+4463,,(scenario/diagram),0,,,
+4464,,(scenario/diagram),0,,,
+4465,,(scenario/diagram),0,,,
+4466,,(scenario/diagram),0,,,
+4467,,(scenario/diagram),0,,,
+4468,,(scenario/diagram),0,,,
+4469,,(scenario/diagram),0,,,
+4470,,(scenario/diagram),0,,,
+4471,,(scenario/diagram),0,,,
+4472,,(scenario/diagram),0,,,
+4473,,(scenario/diagram),0,,,
+4474,,(scenario/diagram),0,,,
+4475,,(scenario/diagram),0,,,
+4476,,(scenario/diagram),0,,,
+4477,,(scenario/diagram),0,,,
+4478,,(scenario/diagram),0,,,
+4479,,(scenario/diagram),0,,,
+4480,,(scenario/diagram),0,,,
+4481,,(scenario/diagram),0,,,
+4482,,(scenario/diagram),0,,,
+4483,,(scenario/diagram),0,,,
+4484,,(scenario/diagram),0,,,
+4485,,(scenario/diagram),0,,,
+4486,,(scenario/diagram),0,,,
+4487,,(scenario/diagram),0,,,
+4488,,(scenario/diagram),0,,,
+4489,,(scenario/diagram),0,,,
+4490,,(scenario/diagram),0,,,
+4491,,(scenario/diagram),0,,,
+4492,,(scenario/diagram),0,,,
+4493,,(scenario/diagram),0,,,
+4494,,(scenario/diagram),0,,,
+4495,,(scenario/diagram),0,,,
+4496,,(scenario/diagram),0,,,
+5004,,(composite: A vs B),0,,,
+5005,,(composite: A vs B),0,,,
+5006,,(composite: A vs B),0,,,
+5007,,(composite: A vs B),0,,,
+5011,,(composite: A vs B),0,,,
+5012,,(composite: A vs B),0,,,
+5013,,(composite: A vs B),0,,,
+5014,,(composite: A vs B),0,,,
+5015,,(composite: A vs B),0,,,
+5016,,(composite: A vs B),0,,,
+5017,,(composite: A vs B),0,,,
+5021,,(composite: A vs B),0,,,
+5029,,(composite: A vs B),0,,,
+5032,,(composite: A vs B),0,,,
+5042,,(composite: A vs B),0,,,
+5045,,(composite: A vs B),0,,,
+5046,,(composite: A vs B),0,,,
+5050,,(composite: A vs B),0,,,
+5052,,(composite: A vs B),0,,,
+5114,,(composite: A vs B),0,,,
