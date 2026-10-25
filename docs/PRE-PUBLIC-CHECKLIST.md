@@ -25,7 +25,7 @@ confirm `git ls-files | grep -i private/` is empty.
   text from gnu.org/licenses/agpl-3.0.txt is committed at the repo root, which
   GitHub detects for the license badge. Content stays **CC-BY-SA-4.0**.
 
-- [ ] **3. Enable secret scanning + push protection.**
+- [x] **3. Enable secret scanning + push protection.** Done 2026-10-25 on the new repository.
   GitHub repo **Settings → Code security**: turn on secret scanning and push
   protection (free on public repos) so no new secret can ever be pushed.
   *(Optional once public: enable Dependabot and CodeQL.)*
