@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261025r';
+const APP_VERSION     = '20261025s';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -271,6 +271,7 @@ const STATIC_IT = {
   'footer.privacy': '<strong>Privacy:</strong> questa app non usa cookie e non richiede un account, quindi il tuo utilizzo è anonimo. I tuoi progressi sono salvati sul tuo dispositivo. Non vengono mai inviati altrove, a meno che tu non attivi la Sincronizzazione (nel qual caso sono cifrati end-to-end con un codice che possiedi solo tu, quindi non possiamo leggerli) o non esporti tu stesso un backup. Se invii una segnalazione su una domanda (modalità revisore) o una segnalazione di bug, viene inviato allo sviluppatore solo ciò che scrivi, più la versione dell\'app e il browser. Un indirizzo email viene inviato solo se lo scrivi tu nel modulo di segnalazione, e serve soltanto per risponderti. Le uniche altre connessioni esterne sono i link che scegli di aprire.',
   'footer.about': "Informazioni sull'app (in inglese)",
   'footer.credits': 'Crediti delle immagini (in inglese)',
+  'footer.source': 'Codice sorgente su GitHub',
   'footer.copyright': '© 2026 PhysyApps · Strumento di studio indipendente. Le domande del quiz sono l’archivio pubblicato dal ministero italiano.',
   'topics.title': 'Studia per argomento',
   'study.exit': '✕ Esci',
@@ -4274,6 +4275,7 @@ function renderDashboard() {
   try { hideWipBanner(); }         catch (e) { console.error('wip banner:', e); }
   try { ensureAboutLink(); }       catch (e) { console.error('about link:', e); }
   try { ensureCreditsLink(); }     catch (e) { console.error('credits link:', e); }
+  try { ensureSourceLink(); }      catch (e) { console.error('source link:', e); }
   try { maybeShowInstallBanner(); } catch (e) { console.error('install banner:', e); }
   try { renderLevelSelector(); }    catch (e) { console.error('level selector:', e); }
   try { renderSessionSummary(); }   catch (e) { console.error('session summary:', e); }
@@ -4925,6 +4927,18 @@ function ensureCreditsLink() {
   a.href = '/about/credits.html';
   a.dataset.i18n = 'footer.credits';
   a.textContent = uiLang() === 'it' ? STATIC_IT['footer.credits'] : 'Image credits';
+  p.appendChild(a);
+}
+// And the repository (20261025s, maintainer: say that it is open source).
+function ensureSourceLink() {
+  const p = document.querySelector('.app-about');
+  if (!p || p.querySelector('[data-i18n="footer.source"]')) return;
+  p.appendChild(document.createTextNode(' \u00b7 '));
+  const a = document.createElement('a');
+  a.href = 'https://github.com/pjgrandinetti/patente-b-for-americans';
+  a.rel = 'noopener';
+  a.dataset.i18n = 'footer.source';
+  a.textContent = uiLang() === 'it' ? STATIC_IT['footer.source'] : 'Open source on GitHub';
   p.appendChild(a);
 }
 

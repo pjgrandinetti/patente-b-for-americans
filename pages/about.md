@@ -10,7 +10,7 @@ If you are here, you're probably like me, an American who already has a driver's
 
 The Ministry publishes its entire bank of test questions, and the app has all of them, each with an English translation and an explanation of the rule behind it. Those translations and explanations were drafted with AI help, and I'm still checking them topic by topic, so if something looks wrong to you, please let me know with the Report a problem button at the bottom of the app.
 
-I have no intention of selling the app or collecting personal information about you. It is free and has no ads. This is my contribution to the community of Americans living in Italy.
+I have no intention of selling the app or collecting personal information about you. It is free and has no ads, and the code is [open source](https://github.com/pjgrandinetti/patente-b-for-americans) under the AGPL, so anyone may read it, check it or run their own copy. This is my contribution to the community of Americans living in Italy.
 
 In bocca al lupo!
 

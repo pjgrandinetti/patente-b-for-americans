@@ -5415,6 +5415,11 @@ copyright and licensing. What they found and what was done:
   label in STATIC_IT), the topic pages' call to action names it, and the
   landing page's list ends with it. The guide pages have no footer by the
   maintainer's design, which is why the link sits in the call to action.
+- **Open source is said in the app (20261025s, maintainer).** A third
+  footer link, "Open source on GitHub" (`footer.source`, Italian "Codice
+  sorgente su GitHub", `ensureSourceLink` for a stale page), and one
+  sentence on the landing page after "free and has no ads", with the
+  repository link, saying the code is open source under the AGPL.
 - **Numerical Recipes.** `logGamma`, `betacf` and `betaInc` had the shape,
   constants and variable names of NR's `gammln`, `betacf` and `betai`,
   whose licence forbids redistribution. All three and `gammaP` were
