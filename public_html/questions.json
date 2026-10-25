@@ -13485,8 +13485,8 @@
         "italian_text": "Il segnale raffigurato preannuncia un luogo frequentato da bambini",
         "answer": "FALSO",
         "english_translation": "The sign shown warns of a place frequented by children.",
-        "explanation": "False. This triangle shows a single person walking on zebra stripes, and it warns of a crosswalk ahead. A place frequented by children has its own warning, [a triangle showing two children running with their school bags](notes:domandeb_images/4087.svg). That sign stands near schools and play areas. The two are easily confused because both show people on foot, so look for the stripes under the walker.",
-        "explanation_it": "Falso. Questo triangolo mostra una sola persona che cammina sulle strisce zebrate, e preannuncia un attraversamento pedonale. Un luogo frequentato da bambini ha il proprio segnale, [un triangolo con due bambini che corrono con la cartella](notes:domandeb_images/4087.svg). Quel segnale è posto presso scuole e aree di gioco. I due si confondono facilmente perché entrambi mostrano persone a piedi, quindi cerca le strisce sotto la figura."
+        "explanation": "False. This triangle warns of a pedestrian crossing ahead, and it speaks of pedestrians of any age: it does not single out children, even though children may well be among those crossing. A place frequented by children has its own warning, [a triangle showing two children running with their school bags](notes:domandeb_images/4087.svg), which stands near schools and play areas. The two are easily confused because both show people on foot, so look for the stripes under the walker.",
+        "explanation_it": "Falso. Questo triangolo preannuncia un attraversamento pedonale, e parla di pedoni di qualsiasi età: non indica in particolare i bambini, anche se tra chi attraversa possono esserci bambini. Un luogo frequentato da bambini ha il proprio segnale, [un triangolo con due bambini che corrono con la cartella](notes:domandeb_images/4087.svg), posto presso scuole e aree di gioco. I due si confondono facilmente perché entrambi mostrano persone a piedi, quindi cerca le strisce sotto la figura."
       },
       {
         "number": "19151",
@@ -33559,8 +33559,8 @@
         "italian_text": "Nelle aree pedonali possono transitare le biciclette",
         "answer": "VERO",
         "english_translation": "In pedestrian areas bicycles can proceed.",
-        "explanation": "True. Bicycles are vehicles, but because they are human-powered and slow they may proceed through pedestrian areas at walking pace, yielding to people on foot. Other vehicles that may enter include emergency and authorized service vehicles, and electric vehicles where permitted. Mopeds and ordinary cars may not.",
-        "explanation_it": "Vero. Le biciclette sono veicoli, ma poiché sono a propulsione umana e lente possono transitare nelle aree pedonali a passo d'uomo, dando la precedenza ai pedoni. Tra gli altri veicoli ammessi ci sono quelli di emergenza e di servizio autorizzati, e i veicoli elettrici dove consentito. Ciclomotori e automobili comuni no."
+        "explanation": "True. A pedestrian area (*area pedonale*) is a zone closed to vehicles, and the Code's own definition (art. 3) names the few that may still enter: emergency vehicles, bicycles, vehicles serving people with reduced mobility, and, where expressly allowed, small zero-emission vehicles. So a bicycle may ride through, at walking pace and yielding to people on foot. A [pedestrian path](notes:domandeb_images/4176.svg) is different: the blue round sign with a walker reserves that route to pedestrians alone, and a cyclist there must get off and push the bicycle. Mopeds, motorcycles and cars may enter neither.",
+        "explanation_it": "Vero. Un'area pedonale è una zona interdetta ai veicoli, e la definizione del Codice (art. 3) elenca i pochi che possono comunque entrarvi: i veicoli in servizio di emergenza, le biciclette, i veicoli al servizio di persone con ridotte capacità motorie e, dove espressamente consentito, i piccoli veicoli a emissioni zero. Una bicicletta può quindi transitarvi, a passo d'uomo e dando la precedenza ai pedoni. Un [percorso pedonale](notes:domandeb_images/4176.svg) è un'altra cosa: il segnale rotondo blu con il pedone riserva quel percorso ai soli pedoni, e lì il ciclista deve scendere e condurre la bicicletta a mano. Ciclomotori, motocicli e automobili non possono entrare né nell'una né nell'altro."
       },
       {
         "number": "18428",
@@ -34988,8 +34988,8 @@
         "italian_text": "Con la patente di categoria B si possono guidare le macchine operatrici eccezionali",
         "answer": "FALSO",
         "english_translation": "A category B license lets you drive exceptional work machines.",
-        "explanation": "False. An exceptional work machine (*macchina operatrice eccezionale*) is one whose size or mass exceeds the ordinary legal limits for a vehicle. An ordinary work machine, such as a roller or a snowplow, is driven on the category B license. The exceptional one needs the higher category C1.",
-        "explanation_it": "Falso. La macchina operatrice eccezionale è quella la cui sagoma o la cui massa supera i limiti ordinari di legge per un veicolo. Una macchina operatrice ordinaria, come un rullo o uno sgombraneve, si guida con la patente di categoria B. Quella eccezionale richiede la categoria superiore C1."
+        "explanation": "False. A work machine (*macchina operatrice*) is a self-propelled or towed machine, on wheels or tracks, built to work on the road or on a site: road-building and maintenance machines, snowploughs and sand spreaders, and carts for moving materials (art. 58). It may use the road to move itself and its gear, at no more than 40 km/h, and carries at most three people including the driver. Such a machine is driven on a category B license. It becomes *eccezionale* when, for the work it does, its size or mass exceeds the limits that apply to vehicles in general (art. 114), and that one needs category C1 (art. 124). B therefore covers the ordinary work machine and not the exceptional one.",
+        "explanation_it": "Falso. Una macchina operatrice è una macchina semovente o trainata, a ruote o a cingoli, costruita per operare su strada o in cantiere: macchine per la costruzione e la manutenzione delle strade, sgombraneve e spanditrici di sabbia, e carrelli per movimentare cose (art. 58). Può circolare su strada per trasferirsi e spostare la propria attrezzatura, a non più di 40 km/h, e porta al massimo tre persone compreso il conducente. Una macchina così si guida con la patente di categoria B. Diventa eccezionale quando, per il lavoro che svolge, la sua sagoma o la sua massa supera i limiti previsti per i veicoli in generale (art. 114), e quella richiede la categoria C1 (art. 124). La B copre quindi la macchina operatrice ordinaria e non quella eccezionale."
       }
     ]
   },
@@ -37019,8 +37019,8 @@
         "italian_text": "Alla guida di un veicolo, in vicinanza di una piazzola di fermata di autobus per scolari, non si può proseguire nella marcia se le portiere dello scuolabus sono ancora aperte",
         "answer": "FALSO",
         "english_translation": "When driving a vehicle near a school bus stop, one cannot proceed if the doors of the school bus are still open.",
-        "explanation": "False. No rule bars you from proceeding while the bus doors are open, but you must proceed slowly and with great care for children.",
-        "explanation_it": "Falso. Nessuna norma vieta di proseguire mentre le portiere dello scuolabus sono ancora aperte, ma bisogna procedere lentamente e con la massima prudenza verso i bambini."
+        "explanation": "False. No rule in the Code bars you from proceeding while the school bus doors are open; what the Code asks near a school bus stop is to slow down in every case and to be ready to brake, since children may step out or cross hidden by the bus. So you may drive on, slowly and watching the children rather than the bus. This differs from the United States, where a stopped school bus with its red lights flashing and its stop arm out requires traffic in both directions to stop and wait; Italy has no such rule, and an American who answers from habit marks this true.",
+        "explanation_it": "Falso. Nessuna norma del Codice vieta di proseguire mentre le portiere dello scuolabus sono aperte; ciò che il Codice chiede vicino a una fermata dello scuolabus è di rallentare in ogni caso e di essere pronti a frenare, perché i bambini possono scendere o attraversare nascosti dallo scuolabus. Si può quindi proseguire, lentamente e guardando i bambini piuttosto che lo scuolabus."
       },
       {
         "number": "18822",

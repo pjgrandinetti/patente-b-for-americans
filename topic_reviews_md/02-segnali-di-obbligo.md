@@ -92,7 +92,7 @@ A **blue circle with a user symbol** marks a route that is both **mandatory** fo
 
 ![Pedestrian path](domandeb_images/4176.svg)
 
-- A **pedestrian** symbol marks a mandatory **pedestrian path** (*percorso pedonale*). Do not confuse it with a pedestrian **crossing** (crosswalk): the path is a whole route reserved for walking, while the crosswalk is just the striped place where pedestrians cross the roadway, marked by its own blue square sign and zebra stripes.
+- A **pedestrian** symbol marks a mandatory **pedestrian path** (*percorso pedonale*). Do not confuse it with a pedestrian **crossing** (crosswalk): the path is a whole route reserved for walking, while the crosswalk is just the striped place where pedestrians cross the roadway, marked by its own blue square sign and zebra stripes. Bicycles are not admitted on a pedestrian path. A cyclist gets off and pushes the bicycle.
 
 ![Bridle path: riders on horseback](domandeb_images/4184.svg)
 
@@ -240,7 +240,7 @@ Un **cerchio blu con il simbolo di un utente** indica un percorso che è insieme
 
 ![Percorso pedonale](domandeb_images/4176.svg)
 
-- Il simbolo del **pedone** indica un **percorso pedonale** obbligatorio. Da non confondere con l'**attraversamento pedonale** (le strisce): il percorso è un intero itinerario riservato a chi cammina, mentre l'attraversamento è solo il punto a strisce dove i pedoni attraversano la carreggiata, con il suo segnale quadrato blu.
+- Il simbolo del **pedone** indica un **percorso pedonale** obbligatorio. Da non confondere con l'**attraversamento pedonale** (le strisce): il percorso è un intero itinerario riservato a chi cammina, mentre l'attraversamento è solo il punto a strisce dove i pedoni attraversano la carreggiata, con il suo segnale quadrato blu. Le biciclette non sono ammesse su un percorso pedonale. Il ciclista scende e conduce la bicicletta a mano.
 
 ![Percorso per animali da sella](domandeb_images/4184.svg)
 

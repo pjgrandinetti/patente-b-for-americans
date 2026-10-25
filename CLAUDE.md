@@ -5243,6 +5243,19 @@ to areas open to the public, and the two Reference rows whose only source was
   speakers, and the Italian Enroll step is unchanged from before: the
   teenagers sentence was dropped too (20261025n, maintainer: a native
   Italian already knows it).
+  **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
+  through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
+  pedestrian path, the blue round sign, where it is pushed; said in the
+  explanation (linking 4176), topic 16's pedestrian-area bullet and topic
+  02's pedestrian-path bullet. 18593 defines the work machine (art. 58:
+  self-propelled or towed, road or site work, 40 km/h, three people) and
+  the exceptional one (art. 114 c. 3: over the general size or mass
+  limits), B for the first and C1 for the second (art. 124 c. 1). 18821:
+  the Code has no stop-for-school-bus rule (confirmed: the Code's only
+  scuolabus lines are exemptions from bans; the manual's is a sign), so
+  the English explanation and a For US drivers note in topic 16 contrast
+  the American stop-arm rule. 19150 says the crossing sign speaks of
+  pedestrians of any age and does not single out children.
   **An emergency halt is never parking (20261023m, maintainer, 2026-10-23).**
   Topic 21's emergency-lane bullet, 20955 and 23903 now say the three hours
   are the ceiling of a *sosta di emergenza*, not an allowance, as topic 07's
