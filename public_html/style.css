@@ -1980,6 +1980,9 @@ input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; appe
 /* Tall composites (sign-over-panel, multi-sign figures) get more height so their
    parts stay legible; single square signs keep the smaller cap above. */
 #card-image-wrap img.img-tall, .km-figure img.img-tall { max-height: 210px; }
+/* A tall VECTOR figure has no resolution to lose, so it may stand taller
+   (20261026a, flag 21523: the main-road sign rendered 119 px wide). */
+#card-image-wrap img.img-tall.img-vector, .km-figure img.img-tall.img-vector { max-height: 260px; }
 /* Roadway diagrams get an inline width from app.js (up to 2x natural size);
    lift the height cap so the upscale is not squashed. max-width still applies. */
 #card-image-wrap img.img-wide, .km-figure img.img-wide { max-height: none; height: auto; }

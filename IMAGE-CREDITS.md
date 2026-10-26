@@ -193,9 +193,12 @@ and up) reuse the file credited under their base card.
 | 4285 | II 243 | File:Italian traffic signs - segnale di preselezione extraurbano (figura II 243).svg | Original: Ministero dei Lavori Pubblici; vectorization: Arbalete | Public domain |
 | 4286 | II 244 | File:Italian traffic signs - segnale di preselezione urbano (figura II 244).svg | Original: Ministero dei Lavori Pubblici; vectorization: Arbalete | Public domain |
 | 4287 | II 282 | File:Italian traffic signs - ospedale (figura II 282).svg | Original: Ministero dei Lavori Pubblici; vectorization: Arbalete | Public domain |
+| 4288 | II 235 | Drawn for this app after the Ministry's figure, with the question bank's place names; the airport symbol is File:Italian traffic signs - simbolo aeroporto (figura II 116).svg | Gigillo83 (airport symbol) | CC BY-SA 3.0 (airport symbol) |
+| 4289 | II 233 | Drawn for this app after the Ministry's figure, with the question bank's place names | this project | CC BY-SA 4.0 |
 | 4291 | II 274 | File:Italian traffic signs - fine centro abitato (figura II 274).svg | Original: Ministero dei Lavori Pubblici; vectorization: Arbalete | Public domain |
 | 4292 | II 320 | File:Italian traffic signs - area pedonale (figura II 320).svg |  | Public domain |
 | 4293 | II 322/a | File:Italian traffic signs - zona traffico limitato (figura II 322-a).svg | Gigillo83 | CC BY-SA 3.0 |
+| 4296 | II 345 | File:Italian traffic signs - inizio strada extraurbana principale (figura II 345).svg | Gigillo83 | Public domain |
 | 4297 | II 352 | File:Italian traffic signs - limiti generali.svg | Gigillo83 | CC BY-SA 3.0 |
 | 4298 | II 257 | File:Italian traffic signs - segnale identificazione autostrada (figura II 257).svg | Original: Ministero delle Infrastrutture e dei Trasporti / Vectorization: Arbalete | Public domain |
 | 4299 | II 273 | File:Italian traffic signs - inizio centro abitato (figura II 273).svg | Original: Ministero delle Infrastrutture e dei Trasporti; vectorization: Arbalete | Public domain |

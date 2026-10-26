@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Urban advance junction sign (Ministry figure II 233 layout, redrawn with the figure of the Ministry's question bank: Milano straight on, the city center on the right). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 930 590" width="930" height="590">
+  <rect x="8" y="8" width="914" height="574" rx="40" fill="#fff" stroke="#000" stroke-width="16"/>
+  <text x="90" y="150" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="88" font-weight="bold" fill="#000">MILANO</text>
+  <rect x="296" y="300" width="30" height="230" fill="#000"/>
+  <polygon points="311,210 261,302 361,302" fill="#000"/>
+  <path d="M311 500 Q311 420 391 420 L450 420" fill="none" stroke="#000" stroke-width="30"/>
+  <polygon points="445,372 540,420 445,468" fill="#000"/>
+  <text x="580" y="444" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="68" fill="#000">centro</text>
+  <circle cx="835" cy="420" r="30" fill="none" stroke="#000" stroke-width="8"/>
+  <circle cx="835" cy="420" r="12" fill="#000"/>
+</svg>

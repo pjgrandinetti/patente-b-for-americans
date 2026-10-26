@@ -9,7 +9,7 @@
 
 Mandatory signs are **blue circles**. They give a **positive instruction**. They tell you what you **must do**, such as a direction you must take, a minimum speed you must hold, or a path you must use. Understanding the grammar of the round signs resolves most of these questions.
 
-- A **blue circle** is an **obligation**. You **must** do this. <!-- q: 20037 20187 20273 20285 20295 20341 -->
+- A **blue circle** is an **obligation**. You **must** do this. Every mandatory sign is a blue circle, with no exception. The reverse does not hold, since a prohibition sign is round too, white with a red ring. <!-- q: 20037 20187 20273 20285 20295 20341 -->
 - A mandatory sign is addressed to **every road user**. Only a **supplementary panel** narrows it to one category, so an answer exempting a class of vehicle with no panel in the picture is **false**. <!-- q: 20292 -->
 - A **red-bordered circle** is a **prohibition**. You **must not** do this. The three stop signs further down are the exception: they are round with a red border and they order a stop. <!-- q: 20155 20278 -->
 - A **red triangle** is a **danger** warning, not an instruction. <!-- q: 20415 -->
@@ -159,7 +159,7 @@ A **blue circle with a user symbol** marks a route that is both **mandatory** fo
 
 I segnali di obbligo sono **cerchi blu**. Danno un'**istruzione positiva**. Indicano ciò che **devi fare**, come una direzione da prendere, una velocità minima da mantenere o un percorso da usare. Capire la "grammatica" dei segnali rotondi risolve quasi tutte queste domande.
 
-- Un **cerchio blu** è un **obbligo**. **Devi** farlo.
+- Un **cerchio blu** è un **obbligo**. **Devi** farlo. Ogni segnale di obbligo è un cerchio blu, senza eccezioni. Non vale il contrario, perché anche un segnale di divieto è rotondo, bianco con la corona rossa.
 - Il segnale di obbligo è rivolto a **tutti gli utenti della strada**. Solo un **pannello integrativo** lo limita a una categoria, quindi una risposta che esenta una classe di veicoli senza pannello in figura è **falsa**.
 - Un **cerchio con bordo rosso** è un **divieto**. **Non devi** farlo. I tre segnali di arresto più avanti sono l'eccezione: sono rotondi con il bordo rosso e ordinano di fermarsi.
 - Un **triangolo rosso** è un **pericolo**, un avvertimento, non un'istruzione.

@@ -69,7 +69,7 @@ A traffic island is not a **safety island** (*salvagente*), a **median** (*spart
 
 The Code sorts roads into types by how they are built, not by how busy they are, and each type fixes who may use it, its speed limit and the color of its direction signs. The four types, from the most protected down, are the **autostrada**, the **main extra-urban road**, the **secondary extra-urban road** and the **urban road**; each admits different vehicles and carries its own sign color.
 
-![Autostrada symbol on blue = start of a main extra-urban road (the same symbol on green marks an autostrada)](domandeb_images/4296.jpeg)
+![Autostrada symbol on blue = start of a main extra-urban road (the same symbol on green marks an autostrada)](domandeb_images/4296.svg)
 
 - **Autostrada.** Its carriageways are **independent, or separated by a median** (*spartitraffico*), and it has **no same-level junctions**. Every other road joins or leaves it by a ramp, and no road crosses it at the same level. <!-- q: 18446 18448 -->
 - The autostrada has acceleration and deceleration lanes. Vehicles enter by the acceleration lane and leave by the **deceleration lane**. <!-- q: 18447 18452 -->
@@ -351,7 +351,7 @@ L'isola di traffico non è un **salvagente**, uno **spartitraffico**, né una **
 
 Il Codice classifica le strade per come sono costruite, non per quanto sono trafficate, e ogni tipo fissa chi può usarla, il suo limite di velocità e il colore dei suoi segnali di direzione. I quattro tipi, dal più protetto in giù, sono l'**autostrada**, la **strada extraurbana principale**, la **strada extraurbana secondaria** e la **strada urbana**; ciascuno ammette veicoli diversi e ha un proprio colore di segnale.
 
-![Simbolo autostradale su blu = inizio di una strada extraurbana principale (lo stesso simbolo su verde indica un'autostrada)](domandeb_images/4296.jpeg)
+![Simbolo autostradale su blu = inizio di una strada extraurbana principale (lo stesso simbolo su verde indica un'autostrada)](domandeb_images/4296.svg)
 
 - **Autostrada.** Ha carreggiate **indipendenti o separate da spartitraffico** e **nessun incrocio a raso**. Ogni altra strada si immette o esce tramite una rampa e nessuna la attraversa allo stesso livello.
 - L'autostrada ha corsie di accelerazione e decelerazione. I veicoli entrano tramite la corsia di accelerazione ed escono tramite la **corsia di decelerazione**.

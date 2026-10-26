@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261025u';
+const APP_VERSION     = '20261026a';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1461,7 +1461,7 @@ function bindUpdateCheck() {
 // into this file and into sw.js, so a data file is downloaded only when it
 // has changed rather than on every release (see the note above dataUrl in
 // sw.js).
-const DATA_HASH = { 'questions.json': '2379c546610a', 'vocabulary.json': '3e44ab4b1275', 'topic_reviews.json': 'd2191d33fd29' };
+const DATA_HASH = { 'questions.json': '0717c3e05327', 'vocabulary.json': '3e44ab4b1275', 'topic_reviews.json': '8d8bbea77601' };
 const dataUrl = name => `${name}?v=${DATA_HASH[name]}`;
 
 // Fetch one of the three big JSON files, and REPAIR the cache if what comes
@@ -6567,6 +6567,13 @@ function applyCardImageSize(img, q) {
   // default cap. Detect by aspect ratio and let them render taller.
   const r = img.naturalWidth ? img.naturalHeight / img.naturalWidth : 1;
   img.classList.toggle('img-tall', r > 1.2);
+  // A tall VECTOR figure may stand taller than the 210 px the tall cap
+  // allows (20261026a, flag 21523: the main-road sign, a 1700x3000 SVG,
+  // rendered 119 px wide beside 400 px boards). That cap exists for the
+  // low-resolution composites below, which blur past twice their natural
+  // size; a vector scales for nothing, so style.css lets img-tall.img-vector
+  // reach 260 px. Thirty figures qualify and every one grows or stays.
+  img.classList.toggle('img-vector', /\.svg($|\?)/i.test(q.image || ''));
   // Sign-over-panel composites are often tiny originals (e.g. 104x129) whose
   // panel text (hours, the holiday cross) is unreadable at natural size:
   // upscale them to at most 2x natural height, within the img-tall cap.

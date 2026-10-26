@@ -2597,8 +2597,8 @@
         "italian_text": "Il segnale raffigurato si trova all'ingresso di un'autostrada",
         "answer": "FALSO",
         "english_translation": "The sign shown is found at the entrance of an autostrada.",
-        "explanation": "False. The white background shows that the sign stands on an ordinary urban road, before a junction, and the green panel on the left branch only names the branch that leads to the Roma-L'Aquila autostrada. The entrance itself has its own sign, a green rectangle carrying the white autostrada symbol, two carriageways passing under a bridge, and the same sign crossed by a red stripe marks the end of the autostrada. The bank has no picture of that green sign, but [the same symbol on blue](notes:domandeb_images/4296.jpeg) marks the start of a main extra-urban road, so you can see the symbol there. Green stands for the autostrada, blue for the main extra-urban road.",
-        "explanation_it": "Falso. Il fondo bianco indica che il segnale sta su una normale strada urbana, prima di un incrocio, e il riquadro verde sul ramo sinistro indica solo il ramo che porta all'autostrada Roma-L'Aquila. L'ingresso ha un segnale proprio, un rettangolo verde con il simbolo bianco dell'autostrada, due carreggiate che passano sotto un ponte, e lo stesso segnale barrato di rosso indica la fine dell'autostrada. Il listato non ha un'immagine di quel segnale verde, ma [lo stesso simbolo su fondo blu](notes:domandeb_images/4296.jpeg) indica l'inizio di una strada extraurbana principale, e lì il simbolo si può vedere. Il verde è l'autostrada, il blu la strada extraurbana principale."
+        "explanation": "False. The white background shows that the sign stands on an ordinary urban road, before a junction, and the green panel on the left branch only names the branch that leads to the Roma-L'Aquila autostrada. The entrance itself has its own sign, a green rectangle carrying the white autostrada symbol, two carriageways passing under a bridge, and the same sign crossed by a red stripe marks the end of the autostrada. The bank has no picture of that green sign, but [the same symbol on blue](notes:domandeb_images/4296.svg) marks the start of a main extra-urban road, so you can see the symbol there. Green stands for the autostrada, blue for the main extra-urban road.",
+        "explanation_it": "Falso. Il fondo bianco indica che il segnale sta su una normale strada urbana, prima di un incrocio, e il riquadro verde sul ramo sinistro indica solo il ramo che porta all'autostrada Roma-L'Aquila. L'ingresso ha un segnale proprio, un rettangolo verde con il simbolo bianco dell'autostrada, due carreggiate che passano sotto un ponte, e lo stesso segnale barrato di rosso indica la fine dell'autostrada. Il listato non ha un'immagine di quel segnale verde, ma [lo stesso simbolo su fondo blu](notes:domandeb_images/4296.svg) indica l'inizio di una strada extraurbana principale, e lì il simbolo si può vedere. Il verde è l'autostrada, il blu la strada extraurbana principale."
       },
       {
         "number": "21398",
@@ -2858,8 +2858,8 @@
         "italian_text": "Il segnale raffigurato preavvisa un incrocio autostradale",
         "answer": "FALSO",
         "english_translation": "The sign shown announces the upcoming autostrada intersection.",
-        "explanation": "False. The background color tells the type of road. This preselection sign is white, so it stands on an urban road and assigns a lane to each destination. The sign for an autostrada interchange is [green](notes:domandeb_images/4288.jpeg).",
-        "explanation_it": "Falso. Il colore del fondo dice il tipo di strada. Questo segnale di preselezione è bianco, quindi sta su una strada urbana e assegna una corsia a ogni destinazione. Il preavviso di uno svincolo autostradale è [verde](notes:domandeb_images/4288.jpeg)."
+        "explanation": "False. The background color tells the type of road. This preselection sign is white, so it stands on an urban road and assigns a lane to each destination. The sign for an autostrada interchange is [green](notes:domandeb_images/4288.svg).",
+        "explanation_it": "Falso. Il colore del fondo dice il tipo di strada. Questo segnale di preselezione è bianco, quindi sta su una strada urbana e assegna una corsia a ogni destinazione. Il preavviso di uno svincolo autostradale è [verde](notes:domandeb_images/4288.svg)."
       },
       {
         "number": "21428",
@@ -2977,7 +2977,7 @@
   {
     "id": 4288,
     "topic": "Segnali di indicazione",
-    "image": "domandeb_images/4288.jpeg",
+    "image": "domandeb_images/4288.svg",
     "statements": [
       {
         "number": "21441",
@@ -3072,7 +3072,7 @@
   {
     "id": 4289,
     "topic": "Segnali di indicazione",
-    "image": "domandeb_images/4289.jpeg",
+    "image": "domandeb_images/4289.svg",
     "statements": [
       {
         "number": "21452",
@@ -3748,7 +3748,7 @@
   {
     "id": 4296,
     "topic": "Segnali di indicazione",
-    "image": "domandeb_images/4296.jpeg",
+    "image": "domandeb_images/4296.svg",
     "statements": [
       {
         "number": "21520",
@@ -4616,8 +4616,8 @@
         "italian_text": "Il segnale raffigurato può essere abbinato con un pannello che indica la lunghezza del tratto di strada dove si consiglia di non superare la velocità indicata",
         "answer": "VERO",
         "english_translation": "The sign shown may be combined with a panel indicating the length of the road section where it is recommended not to exceed the indicated speed.",
-        "explanation": "True. It can carry a panel showing the length of the stretch it covers.",
-        "explanation_it": "Vero. Può portare un pannello che mostra la lunghezza del tratto che copre."
+        "explanation": "True. The blue square with a number is the advised speed: the speed it is recommended not to exceed in good conditions, posted where the road's layout, such as a curve, makes a lower speed wise. It may carry an extent panel giving the length of the stretch the advice covers, and crossed by a red stripe it ends. It sets neither a maximum nor a minimum: exceeding it within the legal limits is lawful, and so is going slower. The device that recommends a speed to hold, neither faster nor slower, is a different one: [the green-wave lantern](notes:domandeb_images/4257.jpeg) on a street with synchronized traffic lights, which lights the speed that brings you to the next light on green.",
+        "explanation_it": "Vero. Il quadrato blu con il numero è la velocità consigliata: la velocità che si consiglia di non superare in condizioni ottimali, posta dove la geometria della strada, per esempio una curva, rende saggia una velocità più bassa. Può portare un pannello di estesa con la lunghezza del tratto a cui il consiglio si riferisce, e barrato di rosso finisce. Non fissa né un massimo né un minimo: superarlo entro i limiti di legge è lecito, e lo è anche andare più piano. Il dispositivo che consiglia una velocità da tenere, né più alta né più bassa, è un altro: [la lanterna di onda verde](notes:domandeb_images/4257.jpeg) su una strada con semafori sincronizzati, che accende la velocità che ti porta al semaforo successivo con il verde."
       },
       {
         "number": "21627",
@@ -5170,8 +5170,8 @@
         "italian_text": "Il segnale raffigurato indica l'inizio di una strada extraurbana principale",
         "answer": "FALSO",
         "english_translation": "The sign shown indicates the beginning of a main extra-urban road.",
-        "explanation": "False. The sign points to an overpass or an underpass that lets a driver turn back on a road with separate carriageways. The start of a main extra-urban road is marked by [the autostrada symbol on a blue background](notes:domandeb_images/4296.jpeg).",
-        "explanation_it": "Falso. Il segnale indica un cavalcavia o un sottopassaggio che permette al conducente di tornare indietro su una strada a carreggiate separate. L'inizio di una strada extraurbana principale è indicato dal [simbolo dell'autostrada su fondo blu](notes:domandeb_images/4296.jpeg)."
+        "explanation": "False. The sign points to an overpass or an underpass that lets a driver turn back on a road with separate carriageways. The start of a main extra-urban road is marked by [the autostrada symbol on a blue background](notes:domandeb_images/4296.svg).",
+        "explanation_it": "Falso. Il segnale indica un cavalcavia o un sottopassaggio che permette al conducente di tornare indietro su una strada a carreggiate separate. L'inizio di una strada extraurbana principale è indicato dal [simbolo dell'autostrada su fondo blu](notes:domandeb_images/4296.svg)."
       },
       {
         "number": "21691",
@@ -9919,8 +9919,8 @@
         "italian_text": "Quando è accesa la luce verde del semaforo in figura si può svoltare solo se la carreggiata è divisa in corsie",
         "answer": "FALSO",
         "english_translation": "When the green light of the traffic light shown is on, you can turn only if the carriageway is divided into lanes.",
-        "explanation": "False. The trick is 'solo' (only): you may turn whether or not the carriageway is divided into lanes. Read the whole sentence: strike «solo se la carreggiata è divisa in corsie» and what is left is true; the added words are what make the statement false.",
-        "explanation_it": "Falso. Il trucco è 'solo' (soltanto): puoi svoltare indipendentemente dal fatto che la carreggiata sia divisa in corsie. Leggi tutta la frase: togli «solo se la carreggiata è divisa in corsie» e ciò che resta è vero; sono le parole aggiunte a rendere falsa l'affermazione.",
+        "explanation": "False. The statement invents a condition. With the full green light you may turn right, and turn left while yielding to oncoming traffic, on any carriageway: whether lanes are painted on it changes nothing. Lane lines only tell you where to place the vehicle before the turn, to the right for a right turn and near the center for a left turn, and you position yourself the same way on a road with no lines at all. Read the whole sentence: strike «solo se la carreggiata è divisa in corsie» and what is left is true; the added words are what make the statement false.",
+        "explanation_it": "Falso. L'affermazione inventa una condizione. Con la luce verde piena puoi svoltare a destra, e a sinistra dando la precedenza a chi arriva di fronte, su qualsiasi carreggiata: che le corsie siano segnate o no non cambia nulla. Le strisce di corsia dicono solo dove disporre il veicolo prima della svolta, a destra per svoltare a destra e vicino al centro per svoltare a sinistra, e ti disponi allo stesso modo su una strada senza alcuna striscia. Leggi tutta la frase: togli «solo se la carreggiata è divisa in corsie» e ciò che resta è vero; sono le parole aggiunte a rendere falsa l'affermazione.",
         "clause": {
           "text": "solo se la carreggiata è divisa in corsie",
           "kind": "c"
@@ -27131,8 +27131,8 @@
         "italian_text": "Il segnale raffigurato è un segnale di obbligo",
         "answer": "VERO",
         "english_translation": "The sign shown is a mandatory sign.",
-        "explanation": "True. The blue circle gives a positive order, reserving the route for pedestrians and requiring them to use it; that is what mandatory signs do.",
-        "explanation_it": "Vero. Il cerchio blu impartisce un ordine positivo, riservando il percorso ai pedoni e imponendone loro l'uso; è ciò che fanno i segnali di obbligo."
+        "explanation": "True. The blue circle gives a positive order, reserving the route for pedestrians and requiring them to use it; that is what mandatory signs do. Every mandatory sign is a blue circle with a white symbol, with no exception, and the end of an obligation is the same blue circle crossed by a red stripe. The reverse does not hold: a round sign is not always mandatory. Prohibition signs are round too, white with a red ring, and the blue discs with a red ring and one or two red stripes are the parking and stopping bans. Shape alone says round; shape and color together say mandatory.",
+        "explanation_it": "Vero. Il cerchio blu impartisce un ordine positivo, riservando il percorso ai pedoni e imponendone loro l'uso; è ciò che fanno i segnali di obbligo. Ogni segnale di obbligo è un cerchio blu con il simbolo bianco, senza eccezioni, e la fine dell'obbligo è lo stesso cerchio blu barrato da una striscia rossa. Non vale il contrario: un segnale rotondo non è sempre di obbligo. Anche i segnali di divieto sono rotondi, bianchi con la corona rossa, e i dischi blu con la corona rossa e una o due barre rosse sono i divieti di sosta e di fermata. La forma da sola dice rotondo; forma e colore insieme dicono obbligo."
       },
       {
         "number": "20342",
@@ -30743,8 +30743,8 @@
         "italian_text": "La striscia bianca discontinua in figura nelle strade a senso unico è posta nei dossi, per dividere i due sensi di marcia",
         "answer": "FALSO",
         "english_translation": "The broken white line in the figure on one-way roads is placed on crests to divide the two directions of travel.",
-        "explanation": "False. On a one-way road all traffic moves the same way, so there are no two directions to divide. There the broken line only divides lanes going the same way, at a crest as anywhere else. The line that changes at a crest is the center line of a two-way road. It is [continuous on the uphill stretch](notes:domandeb_images/4216.jpeg) and [broken again on the way down](notes:domandeb_images/4217.jpeg).",
-        "explanation_it": "Falso. Su una strada a senso unico tutto il traffico procede nello stesso senso, quindi non ci sono due sensi da dividere. Lì la striscia discontinua divide solo corsie dello stesso senso, su un dosso come altrove. La striscia che cambia su un dosso è la mezzeria di una strada a doppio senso. È [continua nel tratto in salita](notes:domandeb_images/4216.jpeg) e [torna discontinua in discesa](notes:domandeb_images/4217.jpeg)."
+        "explanation": "False. The statement contradicts itself: a one-way road has no second direction of travel, so there are no two directions for any line to divide. On a one-way road the broken white line only separates lanes carrying traffic the same way, at a crest as anywhere else. The line that does change at a crest is the center line of a two-way road. It is [continuous on the uphill stretch](notes:domandeb_images/4216.jpeg) and [broken again on the way down](notes:domandeb_images/4217.jpeg).",
+        "explanation_it": "Falso. L'affermazione si contraddice da sola: una strada a senso unico non ha un secondo senso di marcia, quindi non ci sono due sensi che una striscia possa dividere. Su una strada a senso unico la striscia bianca discontinua separa solo corsie percorse nello stesso senso, su un dosso come altrove. La striscia che cambia davvero su un dosso è la mezzeria di una strada a doppio senso. È [continua nel tratto in salita](notes:domandeb_images/4216.jpeg) e [torna discontinua in discesa](notes:domandeb_images/4217.jpeg)."
       }
     ]
   },
@@ -32933,8 +32933,8 @@
         "italian_text": "Le strade extraurbane principali sono segnalate da cartelli stradali di inizio e fine",
         "answer": "VERO",
         "english_translation": "Main extra-urban roads are marked by road signs indicating their beginning and end.",
-        "explanation": "True. [Start and end signs](notes:domandeb_images/4296.jpeg) are needed because this road type carries special rules: access limits like an autostrada's and a 110 km/h limit. Drivers must be able to tell exactly where those rules begin and end.",
-        "explanation_it": "Vero. I [segnali di inizio e fine](notes:domandeb_images/4296.jpeg) servono perché questo tipo di strada ha regole speciali: limitazioni di accesso come l'autostrada e limite di 110 km/h. Il conducente deve poter capire esattamente dove quelle regole cominciano e finiscono."
+        "explanation": "True. [Start and end signs](notes:domandeb_images/4296.svg) are needed because this road type carries special rules: access limits like an autostrada's and a 110 km/h limit. Drivers must be able to tell exactly where those rules begin and end.",
+        "explanation_it": "Vero. I [segnali di inizio e fine](notes:domandeb_images/4296.svg) servono perché questo tipo di strada ha regole speciali: limitazioni di accesso come l'autostrada e limite di 110 km/h. Il conducente deve poter capire esattamente dove quelle regole cominciano e finiscono."
       },
       {
         "number": "18355",

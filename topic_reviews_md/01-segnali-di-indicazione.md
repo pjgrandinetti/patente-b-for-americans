@@ -97,7 +97,7 @@ A short code names the road. The number identifies the **road itself**, and it i
 
 - The **blue preselection sign** on a two-lane extra-urban road sends each destination to its lane, Bari on the left, Pescara on the right, and it stands where you can **still change lane**. It orders no overtaking on the right, no U-turn, and it warns of no curve, straight, bridge or closed road: it only sorts traffic by destination.
 
-![Autostrada interchange ahead: straight for Bologna, left for Linate airport](domandeb_images/4288.jpeg) ![Urban advance sign: straight for Milano, right for the city center](domandeb_images/4289.jpeg)
+![Autostrada interchange ahead: straight for Bologna, left for Linate airport](domandeb_images/4288.svg) ![Urban advance sign: straight for Milano, right for the city center](domandeb_images/4289.svg)
 
 - The **green board** announces an **autostrada interchange** (*svincolo*): straight on for Bologna, the left branch for Linate airport. It forbids no turn, forces no lane change, and its figure is not a distance in kilometers to Bologna; it is not posted at an airport entrance. The **white board** is the same idea in town: straight for Milano, right for the city center, on an ordinary two-way urban street.
 
@@ -135,7 +135,7 @@ Lane signs (*segnali di corsia*) are blue square or rectangular panels drawn as 
 
 ## "Start of" signs
 
-![Start of a main extra-urban road: the autostrada symbol on BLUE](domandeb_images/4296.jpeg)
+![Start of a main extra-urban road: the autostrada symbol on BLUE](domandeb_images/4296.svg)
 
 - The **autostrada symbol** on green marks the start of an autostrada; the **same symbol on blue** marks the start of a **main extra-urban road**. Crossed by a red stripe, each marks the **end** of that road type. A main extra-urban road, like an autostrada, has **separate carriageways**, one per direction. <!-- q: 18354 21523 -->
 
@@ -366,7 +366,7 @@ Una breve sigla nomina la strada. Il numero identifica la **strada stessa**, e n
 
 - Il **segnale blu di preselezione** su una strada extraurbana a due corsie assegna ogni destinazione alla sua corsia, Bari a sinistra, Pescara a destra, e sta dove si può **ancora cambiare corsia**. Non impone il sorpasso a destra né l'inversione, e non preavvisa curve, rettilinei, cavalcavia o strade interrotte: smista solo il traffico per destinazione.
 
-![Svincolo autostradale in arrivo: diritto per Bologna, a sinistra per l'aeroporto di Linate](domandeb_images/4288.jpeg) ![Preavviso urbano: diritto per Milano, a destra per il centro](domandeb_images/4289.jpeg)
+![Svincolo autostradale in arrivo: diritto per Bologna, a sinistra per l'aeroporto di Linate](domandeb_images/4288.svg) ![Preavviso urbano: diritto per Milano, a destra per il centro](domandeb_images/4289.svg)
 
 - Il **cartello verde** preavvisa uno **svincolo autostradale**: diritto per Bologna, il ramo a sinistra per l'aeroporto di Linate. Non vieta svolte, non obbliga a cambiare corsia, e la sua cifra non è la distanza in chilometri da Bologna; non sta all'ingresso di un aeroporto. Il **cartello bianco** è la stessa idea in città: diritto per Milano, a destra per il centro, su una normale strada urbana a doppio senso.
 
@@ -404,7 +404,7 @@ I segnali di corsia sono pannelli blu quadrati o rettangolari disegnati come una
 
 ## Segnali di "inizio"
 
-![Inizio di strada extraurbana principale: simbolo autostradale su BLU](domandeb_images/4296.jpeg)
+![Inizio di strada extraurbana principale: simbolo autostradale su BLU](domandeb_images/4296.svg)
 
 - Il **simbolo dell'autostrada** su verde segna l'inizio di un'autostrada; lo **stesso simbolo su blu** l'inizio di una **strada extraurbana principale**. Barrato di rosso, ciascuno ne segna la **fine**. Una strada extraurbana principale, come l'autostrada, ha **carreggiate separate**, una per senso di marcia.
 

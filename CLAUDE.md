@@ -5256,6 +5256,36 @@ to areas open to the public, and the two Reference rows whose only source was
   the English explanation and a For US drivers note in topic 16 contrast
   the American stop-arm rule. 19150 says the crossing sign speaks of
   pedestrians of any age and does not single out children.
+  **Flags of 2026-10-26 (20261026a).** 20341: every mandatory sign is a
+  blue circle with a white symbol, without exception (the end-of-obligation
+  signs are the same circle with a red stripe), and the reverse does not
+  hold, since prohibition signs are round too, white with a red ring; said
+  in the explanation and in topic 02's first bullet. 20910 opens on the
+  statement contradicting itself: a one-way road has no second direction
+  to divide. 20989 says what the invented condition is: the green light
+  allows the turn on any carriageway, and lane lines only govern where the
+  vehicle is placed before it. 21626: the advised speed is a ceiling in
+  good conditions (21624 VERO, 21633 FALSO: slower is allowed), so the
+  reviewer's reading, that it also advises against going slower, was
+  defeated; the device that recommends a speed to HOLD is the green-wave
+  lantern (4257, linked). **Three figures replaced by vectors (flags
+  21450, 21461, 21523: "the image is small").** 4288, 4289 and 4296 were
+  186x114, 187x119 and 104x171 jpegs from the PDF, which embeds every
+  figure at 200x200, so no sharper raster exists; at the 2x resolution
+  ceiling they rendered blurred at 372 px or, for the tall 4296, 128 px
+  wide. 4296 is now the Commons II 345 vector (Gigillo83, PD); 4288 and
+  4289 are drawn for this app as SVGs with `<text>` after the Ministry's
+  II 235 and II 233 layouts, carrying the bank's own place names (Bologna
+  and Linate, Milano and centro), which is why the Commons vectorizations
+  of those figures (Napoli and Bari, Sora and Napoli, with lettering as
+  outlines) could not be adopted; the airport glyph is Commons II 116
+  (Gigillo83, CC BY-SA 3.0), credited in IMAGE-CREDITS.md. A tall VECTOR
+  figure now reaches 260 px (`img-vector`, `.img-tall.img-vector` in
+  style.css): the 210 cap serves the low-resolution composites, and 4296
+  rendered 119 px wide under it beside 400 px boards. Thirty tall SVGs
+  grow, none shrinks. Measured with Playwright at 390 and 1280 px: 4288
+  392x240, 4289 378x240, 4296 147x260. A drawn figure is an SVG with text,
+  so a later edit of a name is a text edit, not a redraw.
   **An emergency halt is never parking (20261023m, maintainer, 2026-10-23).**
   Topic 21's emergency-lane bullet, 20955 and 23903 now say the three hours
   are the ceiling of a *sosta di emergenza*, not an allowance, as topic 07's

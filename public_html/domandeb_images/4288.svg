@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Autostrada advance interchange sign (Ministry figure II 235 layout, redrawn with the figure of the Ministry's question bank: A1 Bologna straight on, Linate airport on the left branch). Airport symbol: Wikimedia Commons, "Italian traffic signs - simbolo aeroporto (figura II 116).svg", Gigillo83, CC BY-SA 3.0. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 930 570" width="930" height="570">
+  <rect x="8" y="8" width="914" height="554" rx="40" fill="#08842c" stroke="#fff" stroke-width="16"/>
+  <polygon points="118,70 210,70 236,110 210,150 118,150 92,110" fill="none" stroke="#fff" stroke-width="10"/>
+  <text x="164" y="131" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="56" font-weight="bold" fill="#fff" text-anchor="middle">A1</text>
+  <text x="270" y="140" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="86" font-weight="bold" fill="#fff">BOLOGNA</text>
+  <rect x="690" y="260" width="30" height="240" fill="#fff"/>
+  <polygon points="705,170 655,262 755,262" fill="#fff"/>
+  <path d="M705 440 Q705 360 625 360 L560 360" fill="none" stroke="#fff" stroke-width="30"/>
+  <polygon points="565,312 470,360 565,408" fill="#fff"/>
+  <rect x="70" y="300" width="380" height="110" rx="14" fill="#fff"/>
+  <g transform="translate(90 310) scale(0.46)"><path d="M82.822 136.035l-14.301-27.173-11.823-.57c-18.826-.907-31.758-3.827-33.786-7.629-.63-1.18-.322-1.702 1.76-2.992 5.456-3.378 15.613-5.254 32.656-6.03l11.192-.51 14.296-27.174 14.295-27.174h5.962c3.279 0 5.962.179 5.962.398s-2.939 10.344-6.532 22.5c-5.18 17.528-6.532 23.109-6.532 26.968v4.866h9.462c9.407 0 28.267 1.519 41.813 3.367l7.089.967 7.073-8.72 7.073-8.72h3.705c2.038 0 3.705.224 3.705.498s-2.261 4.448-5.025 9.276-4.839 9.08-4.612 9.448 2.488.911 5.025 1.207 4.612.816 4.612 1.156-2.075.861-4.612 1.156-4.798.838-5.025 1.207 1.849 4.62 4.612 9.448 5.025 9.002 5.025 9.276-1.667.498-3.705.498h-3.705l-7.196-8.872c-4.901-6.042-7.579-8.755-8.398-8.506-3.498 1.064-30.704 3.624-42.89 4.036l-14.024.474v4.747c0 3.71 1.427 9.577 6.532 26.85l6.532 22.5c0 .219-2.68.398-5.955.397h-5.955l-14.301-27.173h0 0z" fill="#000"/></g>
+  <text x="195" y="378" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="64" font-weight="bold" fill="#000">Linate</text>
+</svg>
