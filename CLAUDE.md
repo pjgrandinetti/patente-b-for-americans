@@ -2753,7 +2753,12 @@ behind what shipped:
     count, nothing else: no category or group line, no second language, no
     fine, no wrong value, no Asked count. The `rowContext` line of 20261026b
     is no longer drawn there. A new numbers row with an asked list needs its
-    two short phrases or the build fails.
+    two short phrases or the build fails. **Since 20261026d** the count under
+    the value reads "2 questions missed" (the long form is its tooltip), and
+    a row whose asked list sits inside another listed row's with the same
+    value is dropped as the same figure split finer: the by-vehicle towing
+    rows (car with trailer 70, autotreno 70) against the by-road row that
+    holds both questions. The check mirrors the subset rule.
     `scripts/check_review_extra.js`, 9 checks in each face; the previous
     build fails 6. **The box carries a closed disclosure, "What is waiting in
     the review" (20261023c, maintainer, 2026-10-23: he asked how many of

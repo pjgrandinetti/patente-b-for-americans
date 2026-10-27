@@ -19,7 +19,9 @@ seed(a,0); seed(b,0); seed(c,3);
 // the expected rows: every row whose asked list holds one of the two open questions (a figure can sit in two rows, by road and by vehicle, and one question can turn on two figures)
 // only a row holding BOTH open questions is listed (two or more missed, 20261023r)
 // twin rows with the same value and asked list (the speeds by road and by vehicle) are shown once (20261023t)
-const seenK=new Set(); const expRows=ref.numbers.filter(n=>Array.isArray(n.asked)&&n.asked.includes(a)&&n.asked.includes(b)).filter(n=>{const k=n.value+'|'+[...n.asked].sort().join(','); if(seenK.has(k)) return false; seenK.add(k); return true;});
+const cand=ref.numbers.filter(n=>Array.isArray(n.asked)&&n.asked.includes(a)&&n.asked.includes(b));
+// a row whose questions all sit inside another candidate's with the same value is the same figure split finer, shown once (20261026d)
+const expRows=cand.filter((n,i)=>!cand.some((m,j)=>j!==i&&m.value===n.value&&n.asked.every(x=>m.asked.includes(x))&&(m.asked.length>n.asked.length||j<i)));
 const expN=expRows.length;
 let html=fs.readFileSync(root+'/index.html','utf8').replace(/<script[^>]*src="app\.js[^>]*><\/script>/,'');
 const dom=new JSDOM(html,{url:'https://patente.physyapps.com/',runScripts:'dangerously',pretendToBeVisual:true});

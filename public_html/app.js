@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261026c';
+const APP_VERSION     = '20261026d';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -734,6 +734,8 @@ const T = {
   'review.catMissed': { en: 'Consistently missed', it: 'Sbagliate ripetutamente' },
   'review.missed1': { en: '1 question missed and still open', it: '1 domanda sbagliata e ancora aperta' },
   'review.missedN': { en: '{0} questions missed and still open', it: '{0} domande sbagliate e ancora aperte' },
+  'review.missedShort1': { en: '1 question missed', it: '1 domanda sbagliata' },
+  'review.missedShortN': { en: '{0} questions missed', it: '{0} domande sbagliate' },
   'review.noneMissed': { en: 'No figure has two or more missed questions still open.', it: 'Nessuna cifra ha due o pi\u00f9 domande sbagliate ancora aperte.' },
   'review.untested':    { en: 'number not tested', it: 'cifra non chiesta' },
   'review.wrongValue':  { en: 'Asked in two questions: once with the correct value (true) and once with the incorrect value of {0} (false).', it: 'Chiesta in due domande: una volta con il valore corretto (vera) e una volta con il valore errato di {0} (falsa).' },
@@ -14392,10 +14394,15 @@ function missedFigureRows() {
   });
   // The speeds appear twice on the page, by road and by vehicle, with one
   // merged asked list: on this list a figure is shown once.
-  const seen = new Set();
-  for (const i of [...out.keys()]) {
-    const key = nums[i].value + '|' + [...nums[i].asked].sort().join(',');
-    if (seen.has(key)) out.delete(i); else seen.add(key);
+  // A row whose questions all sit inside another listed row's with the same
+  // value is the same figure split finer (the by-vehicle towing rows against
+  // the by-road row that holds both, 20261026d), so it is dropped too.
+  const keys = [...out.keys()];
+  for (const i of keys) {
+    const a = nums[i].asked;
+    if (keys.some(j => j !== i && out.has(j) && nums[j].value === nums[i].value &&
+        a.every(x => nums[j].asked.includes(x)) &&
+        (nums[j].asked.length > a.length || j < i))) out.delete(i);
   }
   return out;
 }
@@ -14637,7 +14644,7 @@ function renderReviewNumbers() {
                 (reviewHide
                   ? `<button type="button" class="review-value is-hidden" data-value="${val}">${escHtml(vt('review.tapToSee'))}</button>`
                   : `<span class="review-value${vcls}">${val}</span>`) +
-                (k ? `<span class="review-missed">${escHtml(k === 1 ? vt('review.missed1') : vt('review.missedN', k))}</span>` : '') +
+                (k ? `<span class="review-missed" title="${escHtml(k === 1 ? vt('review.missed1') : vt('review.missedN', k))}">${escHtml(k === 1 ? vt('review.missedShort1') : vt('review.missedShortN', k))}</span>` : '') +
                 `</div>` +
                 entryFlagHtml('num: ' + n.en, fset, idx) +
                 `</div>`;
