@@ -76,7 +76,9 @@
     "22408",
     "22465",
     "22468"
-   ]
+   ],
+   "shortEn": "Autostrada, where signed",
+   "shortIt": "Autostrada, dove segnalato"
   },
   {
    "cat": "speed",
@@ -113,7 +115,9 @@
     "22466",
     "22467",
     "22468"
-   ]
+   ],
+   "shortEn": "Autostrada, car",
+   "shortIt": "Autostrada, autovettura"
   },
   {
    "cat": "speed",
@@ -131,7 +135,9 @@
     "22338",
     "22380",
     "22402"
-   ]
+   ],
+   "shortEn": "Autostrada in rain",
+   "shortIt": "Autostrada con pioggia"
   },
   {
    "cat": "speed",
@@ -148,7 +154,9 @@
    "asked": [
     "22357",
     "22364"
-   ]
+   ],
+   "shortEn": "Autostrada, new driver",
+   "shortIt": "Autostrada, neopatentato"
   },
   {
    "cat": "speed",
@@ -169,7 +177,9 @@
     "22376",
     "22379",
     "22458"
-   ]
+   ],
+   "shortEn": "Autostrada, towing a trailer",
+   "shortIt": "Autostrada, con rimorchio"
   },
   {
    "cat": "speed",
@@ -189,7 +199,9 @@
    "asked": [
     "23853",
     "23861"
-   ]
+   ],
+   "shortEn": "Minimum design speed for autostrada or main road",
+   "shortIt": "Velocità minima per costruzione, autostrada o strada principale"
   },
   {
    "cat": "speed",
@@ -208,7 +220,9 @@
    "noWrong": true,
    "asked": [
     "22454"
-   ]
+   ],
+   "shortEn": "Dense fog, autostrada and main road",
+   "shortIt": "Nebbia fitta, autostrada e strada principale"
   },
   {
    "cat": "speed",
@@ -252,7 +266,9 @@
     "22455",
     "22469",
     "22470"
-   ]
+   ],
+   "shortEn": "Main extra-urban road, car",
+   "shortIt": "Extraurbana principale, autovettura"
   },
   {
    "cat": "speed",
@@ -269,7 +285,9 @@
    "asked": [
     "22358",
     "22365"
-   ]
+   ],
+   "shortEn": "Main extra-urban road, new driver",
+   "shortIt": "Extraurbana principale, neopatentato"
   },
   {
    "cat": "speed",
@@ -286,7 +304,9 @@
    "asked": [
     "22339",
     "22403"
-   ]
+   ],
+   "shortEn": "Main extra-urban road in rain",
+   "shortIt": "Extraurbana principale con pioggia"
   },
   {
    "cat": "speed",
@@ -321,7 +341,9 @@
     "22428",
     "22459",
     "22471"
-   ]
+   ],
+   "shortEn": "Extra-urban road, towing a trailer or autotreno",
+   "shortIt": "Strada extraurbana, con rimorchio o autotreno"
   },
   {
    "cat": "speed",
@@ -360,7 +382,9 @@
     "22427",
     "22429",
     "22430"
-   ]
+   ],
+   "shortEn": "Secondary extra-urban road, car",
+   "shortIt": "Extraurbana secondaria, autovettura"
   },
   {
    "cat": "speed",
@@ -379,7 +403,9 @@
     "22345",
     "22346",
     "22404"
-   ]
+   ],
+   "shortEn": "Town road, where signed",
+   "shortIt": "Strada urbana, dove segnalato"
   },
   {
    "cat": "speed",
@@ -409,7 +435,9 @@
     "22399",
     "22406",
     "22456"
-   ]
+   ],
+   "shortEn": "Built-up area, any vehicle",
+   "shortIt": "Centro abitato, ogni veicolo"
   },
   {
    "cat": "speed",
@@ -433,7 +461,9 @@
     "22347",
     "22407",
     "22425"
-   ]
+   ],
+   "shortEn": "Non-light quadricycle outside town",
+   "shortIt": "Quadriciclo non leggero fuori dal centro abitato"
   },
   {
    "cat": "speed",
@@ -467,7 +497,9 @@
     "22400",
     "22424",
     "24515"
-   ]
+   ],
+   "shortEn": "Moped or light quadricycle, top speed",
+   "shortIt": "Ciclomotore o quadriciclo leggero, velocità massima"
   },
   {
    "cat": "speed",
@@ -485,7 +517,9 @@
    "asked": [
     "18557",
     "18561"
-   ]
+   ],
+   "shortEn": "Three-wheeler is a motor tricycle above",
+   "shortIt": "Un tre ruote è un triciclo a motore oltre"
   },
   {
    "cat": "speed",
@@ -514,7 +548,9 @@
     "22356",
     "22401",
     "22472"
-   ]
+   ],
+   "shortEn": "Farm or work machine on tires",
+   "shortIt": "Macchina agricola o operatrice su gomme"
   },
   {
    "cat": "speed",
@@ -530,7 +566,9 @@
    "group": "vehicle",
    "asked": [
     "18587"
-   ]
+   ],
+   "shortEn": "Farm or work machine on tracks",
+   "shortIt": "Macchina agricola o operatrice cingolata"
   },
   {
    "cat": "speedveh",
@@ -567,7 +605,9 @@
     "22466",
     "22467",
     "22468"
-   ]
+   ],
+   "shortEn": "Car on the autostrada",
+   "shortIt": "Autovettura in autostrada"
   },
   {
    "cat": "speedveh",
@@ -589,7 +629,9 @@
     "22408",
     "22465",
     "22468"
-   ]
+   ],
+   "shortEn": "Car, autostrada where signed",
+   "shortIt": "Autovettura, autostrada dove segnalato"
   },
   {
    "cat": "speedveh",
@@ -607,7 +649,9 @@
     "22338",
     "22380",
     "22402"
-   ]
+   ],
+   "shortEn": "Car, autostrada in rain",
+   "shortIt": "Autovettura, autostrada con pioggia"
   },
   {
    "cat": "speedveh",
@@ -651,7 +695,9 @@
     "22455",
     "22469",
     "22470"
-   ]
+   ],
+   "shortEn": "Car, main extra-urban road",
+   "shortIt": "Autovettura, extraurbana principale"
   },
   {
    "cat": "speedveh",
@@ -668,7 +714,9 @@
    "asked": [
     "22339",
     "22403"
-   ]
+   ],
+   "shortEn": "Car, main extra-urban road in rain",
+   "shortIt": "Autovettura, extraurbana principale con pioggia"
   },
   {
    "cat": "speedveh",
@@ -707,7 +755,9 @@
     "22427",
     "22429",
     "22430"
-   ]
+   ],
+   "shortEn": "Car, secondary extra-urban road",
+   "shortIt": "Autovettura, extraurbana secondaria"
   },
   {
    "cat": "speedveh",
@@ -726,7 +776,9 @@
     "22345",
     "22346",
     "22404"
-   ]
+   ],
+   "shortEn": "Car, town road where signed",
+   "shortIt": "Autovettura, strada urbana dove segnalato"
   },
   {
    "cat": "speedveh",
@@ -756,7 +808,9 @@
     "22399",
     "22406",
     "22456"
-   ]
+   ],
+   "shortEn": "Car in a built-up area",
+   "shortIt": "Autovettura nel centro abitato"
   },
   {
    "cat": "speedveh",
@@ -772,7 +826,9 @@
    "noWrong": true,
    "asked": [
     "22454"
-   ]
+   ],
+   "shortEn": "Dense fog, autostrada and main road",
+   "shortIt": "Nebbia fitta, autostrada e strada principale"
   },
   {
    "cat": "speedveh",
@@ -789,7 +845,9 @@
    "asked": [
     "22357",
     "22364"
-   ]
+   ],
+   "shortEn": "New driver on the autostrada",
+   "shortIt": "Neopatentato in autostrada"
   },
   {
    "cat": "speedveh",
@@ -806,7 +864,9 @@
    "asked": [
     "22358",
     "22365"
-   ]
+   ],
+   "shortEn": "New driver, main extra-urban road",
+   "shortIt": "Neopatentato, extraurbana principale"
   },
   {
    "cat": "speedveh",
@@ -827,7 +887,9 @@
     "22376",
     "22379",
     "22458"
-   ]
+   ],
+   "shortEn": "Towing a trailer, autostrada",
+   "shortIt": "Con rimorchio, autostrada"
   },
   {
    "cat": "speedveh",
@@ -855,7 +917,9 @@
     "22428",
     "22459",
     "22471"
-   ]
+   ],
+   "shortEn": "Towing a trailer, extra-urban road",
+   "shortIt": "Con rimorchio, strada extraurbana"
   },
   {
    "cat": "speedveh",
@@ -872,7 +936,9 @@
    "asked": [
     "22412",
     "22423"
-   ]
+   ],
+   "shortEn": "Autotreno, extra-urban road",
+   "shortIt": "Autotreno, strada extraurbana"
   },
   {
    "cat": "speedveh",
@@ -893,7 +959,9 @@
     "22347",
     "22407",
     "22425"
-   ]
+   ],
+   "shortEn": "Non-light quadricycle outside town",
+   "shortIt": "Quadriciclo non leggero fuori dal centro abitato"
   },
   {
    "cat": "speedveh",
@@ -923,7 +991,9 @@
     "22400",
     "22424",
     "24515"
-   ]
+   ],
+   "shortEn": "Moped or light quadricycle, top speed",
+   "shortIt": "Ciclomotore o quadriciclo leggero, velocità massima"
   },
   {
    "cat": "speedveh",
@@ -948,7 +1018,9 @@
     "22356",
     "22401",
     "22472"
-   ]
+   ],
+   "shortEn": "Farm or work machine on tires",
+   "shortIt": "Macchina agricola o operatrice su gomme"
   },
   {
    "cat": "speedveh",
@@ -964,7 +1036,9 @@
    "group": "by_farm",
    "asked": [
     "18587"
-   ]
+   ],
+   "shortEn": "Farm or work machine on tracks",
+   "shortIt": "Macchina agricola o operatrice cingolata"
   },
   {
    "cat": "distance",
@@ -982,7 +1056,9 @@
    "us": "1/3 mi",
    "asked": [
     "23893"
-   ]
+   ],
+   "shortEn": "Emergency lane usable to exit, from the advance exit sign",
+   "shortIt": "Corsia di emergenza per uscire, dal preavviso di uscita"
   },
   {
    "cat": "distance",
@@ -1021,7 +1097,9 @@
     "21054",
     "21586",
     "21986"
-   ]
+   ],
+   "shortEn": "Danger signs and three-bar panel before the hazard, outside town",
+   "shortIt": "Segnali di pericolo e pannello a tre barre, fuori città"
   },
   {
    "cat": "distance",
@@ -1038,7 +1116,9 @@
    "us": "330 ft",
    "asked": [
     "19106"
-   ]
+   ],
+   "shortEn": "Two-bar panel before a railroad crossing",
+   "shortIt": "Pannello a due barre prima del passaggio a livello"
   },
   {
    "cat": "distance",
@@ -1055,7 +1135,9 @@
    "us": "165 ft",
    "asked": [
     "19106"
-   ]
+   ],
+   "shortEn": "One-bar panel before a railroad crossing",
+   "shortIt": "Pannello a una barra prima del passaggio a livello"
   },
   {
    "cat": "distance",
@@ -1076,7 +1158,9 @@
     "22587",
     "22597",
     "22598"
-   ]
+   ],
+   "shortEn": "Safe distance at 150 km/h",
+   "shortIt": "Distanza di sicurezza a 150 km/h"
   },
   {
    "cat": "distance",
@@ -1097,7 +1181,9 @@
     "22586",
     "22596",
     "22601"
-   ]
+   ],
+   "shortEn": "Safe distance at 130 km/h",
+   "shortIt": "Distanza di sicurezza a 130 km/h"
   },
   {
    "cat": "distance",
@@ -1118,7 +1204,9 @@
     "22585",
     "22595",
     "22600"
-   ]
+   ],
+   "shortEn": "Safe distance at 100 km/h",
+   "shortIt": "Distanza di sicurezza a 100 km/h"
   },
   {
    "cat": "distance",
@@ -1139,7 +1227,9 @@
     "22584",
     "22594",
     "22599"
-   ]
+   ],
+   "shortEn": "Safe distance at 50 km/h",
+   "shortIt": "Distanza di sicurezza a 50 km/h"
   },
   {
    "cat": "distance",
@@ -1157,7 +1247,9 @@
    "asked": [
     "22578",
     "22583"
-   ]
+   ],
+   "shortEn": "Safe distance at 30 km/h",
+   "shortIt": "Distanza di sicurezza a 30 km/h"
   },
   {
    "cat": "distance",
@@ -1175,7 +1267,9 @@
    "asked": [
     "22541",
     "22550"
-   ]
+   ],
+   "shortEn": "Gap between trucks over 3.5 t that may not pass each other",
+   "shortIt": "Distanza tra autocarri oltre 3,5 t con divieto di sorpasso"
   },
   {
    "cat": "distance",
@@ -1200,7 +1294,9 @@
     "22537",
     "22548",
     "22549"
-   ]
+   ],
+   "shortEn": "Distance from a working snowplow or salt spreader",
+   "shortIt": "Distanza da spazzaneve o spargisale al lavoro"
   },
   {
    "cat": "distance",
@@ -1220,7 +1316,9 @@
     "23755",
     "23781",
     "23786"
-   ]
+   ],
+   "shortEn": "No parking from a bus stop sign with no marked space",
+   "shortIt": "Divieto di sosta dalla fermata dell'autobus senza spazio segnato"
   },
   {
    "cat": "distance",
@@ -1239,7 +1337,9 @@
    "asked": [
     "23681",
     "23686"
-   ]
+   ],
+   "shortEn": "No stopping or parking near an intersection in town",
+   "shortIt": "Divieto di fermata e sosta vicino a un incrocio in città"
   },
   {
    "cat": "distance",
@@ -1256,7 +1356,9 @@
    "us": "10 ft",
    "asked": [
     "23720"
-   ]
+   ],
+   "shortEn": "Carriageway left free when parking on the left of a one-way street",
+   "shortIt": "Carreggiata libera parcheggiando a sinistra nel senso unico"
   },
   {
    "cat": "distance",
@@ -1275,7 +1377,9 @@
    "asked": [
     "23659",
     "23711"
-   ]
+   ],
+   "shortEn": "Space left for pedestrians where there is no raised sidewalk",
+   "shortIt": "Spazio per i pedoni dove manca il marciapiede rialzato"
   },
   {
    "cat": "distance",
@@ -1300,7 +1404,9 @@
     "23835",
     "23836",
     "23840"
-   ]
+   ],
+   "shortEn": "Warning triangle visible from",
+   "shortIt": "Triangolo visibile da"
   },
   {
    "cat": "distance",
@@ -1318,7 +1424,9 @@
    "asked": [
     "23831",
     "23832"
-   ]
+   ],
+   "shortEn": "Warning triangle placed behind the vehicle",
+   "shortIt": "Triangolo posto dietro il veicolo"
   },
   {
    "cat": "distance",
@@ -1337,7 +1445,9 @@
    "asked": [
     "23842",
     "23844"
-   ]
+   ],
+   "shortEn": "Warning triangle from the outer edge of the road",
+   "shortIt": "Triangolo dal bordo esterno della strada"
   },
   {
    "cat": "distance",
@@ -1354,7 +1464,9 @@
    "us": "330 ft",
    "asked": [
     "22454"
-   ]
+   ],
+   "shortEn": "Visibility that allows temporary fog limits",
+   "shortIt": "Visibilità sotto cui scattano i limiti per nebbia"
   },
   {
    "cat": "distance",
@@ -1372,7 +1484,9 @@
    "us": "165 ft",
    "asked": [
     "24152"
-   ]
+   ],
+   "shortEn": "Visibility that requires the rear fog light",
+   "shortIt": "Visibilità sotto cui serve il retronebbia"
   },
   {
    "cat": "mass",
@@ -1398,7 +1512,9 @@
     "24565",
     "24568",
     "24571"
-   ]
+   ],
+   "shortEn": "Combination mass with code 96 on B",
+   "shortIt": "Massa del complesso con codice 96 sulla B"
   },
   {
    "cat": "mass",
@@ -1420,7 +1536,9 @@
     "24569",
     "24572",
     "24575"
-   ]
+   ],
+   "shortEn": "BE, towing vehicle and trailer each up to",
+   "shortIt": "BE, motrice e rimorchio ciascuno fino a"
   },
   {
    "cat": "mass",
@@ -1441,7 +1559,9 @@
     "24539",
     "24549",
     "24556"
-   ]
+   ],
+   "shortEn": "Vehicle driven with B, maximum mass",
+   "shortIt": "Veicolo guidato con la B, massa massima"
   },
   {
    "cat": "mass",
@@ -1460,7 +1580,9 @@
     "24541",
     "24553",
     "24554"
-   ]
+   ],
+   "shortEn": "B towing a heavy trailer, combination mass",
+   "shortIt": "B con rimorchio pesante, massa del complesso"
   },
   {
    "cat": "mass",
@@ -1492,7 +1614,9 @@
     "22429",
     "22436",
     "22437"
-   ]
+   ],
+   "shortEn": "Light and heavy motor vehicles divide at",
+   "shortIt": "Veicoli leggeri e pesanti si dividono a"
   },
   {
    "cat": "mass",
@@ -1527,7 +1651,9 @@
     "23947",
     "23951",
     "24098"
-   ]
+   ],
+   "shortEn": "Rear panels and reflective stripes required above",
+   "shortIt": "Pannelli e strisce posteriori obbligatori oltre"
   },
   {
    "cat": "mass",
@@ -1550,7 +1676,9 @@
     "24099",
     "24538",
     "24557"
-   ]
+   ],
+   "shortEn": "Light trailer, maximum laden mass",
+   "shortIt": "Rimorchio leggero, massa massima"
   },
   {
    "cat": "mass",
@@ -1566,7 +1694,9 @@
    "valueEn": "3.5 t",
    "asked": [
     "24096"
-   ]
+   ],
+   "shortEn": "Alcohol limit is zero when towing a combination over",
+   "shortIt": "Alcol a zero con un complesso oltre"
   },
   {
    "cat": "mass",
@@ -1583,7 +1713,9 @@
    "valueEn": "1× the vehicle's mass",
    "asked": [
     "24092"
-   ]
+   ],
+   "shortEn": "Braked trailer, maximum mass",
+   "shortIt": "Rimorchio frenato, massa massima"
   },
   {
    "cat": "mass",
@@ -1601,7 +1733,9 @@
    "valueEn": "0.5× the vehicle's mass",
    "asked": [
     "24093"
-   ]
+   ],
+   "shortEn": "Unbraked trailer, maximum mass",
+   "shortIt": "Rimorchio non frenato, massa massima"
   },
   {
    "cat": "power",
@@ -1619,7 +1753,9 @@
     "18449",
     "18455",
     "18457"
-   ]
+   ],
+   "shortEn": "Smallest motorcycle allowed on the autostrada",
+   "shortIt": "Motociclo più piccolo ammesso in autostrada"
   },
   {
    "cat": "power",
@@ -1639,7 +1775,9 @@
     "24488",
     "24495",
     "24532"
-   ]
+   ],
+   "shortEn": "A1 motorcycle, maximum displacement",
+   "shortIt": "Motociclo A1, cilindrata massima"
   },
   {
    "cat": "power",
@@ -1656,7 +1794,9 @@
    "valueEn": "0.25 kW",
    "asked": [
     "18550"
-   ]
+   ],
+   "shortEn": "Pedal-assist bicycle, maximum motor power",
+   "shortIt": "Bicicletta a pedalata assistita, potenza massima"
   },
   {
    "cat": "power",
@@ -1682,7 +1822,9 @@
     "18563",
     "24479",
     "24515"
-   ]
+   ],
+   "shortEn": "Moped or light quadricycle, maximum displacement",
+   "shortIt": "Ciclomotore o quadriciclo leggero, cilindrata massima"
   },
   {
    "cat": "power",
@@ -1705,7 +1847,9 @@
     "18627",
     "18634",
     "18635"
-   ]
+   ],
+   "shortEn": "Motorcycle or motor tricycle from",
+   "shortIt": "Motociclo o triciclo a motore da"
   },
   {
    "cat": "power",
@@ -1724,7 +1868,9 @@
     "18568",
     "24489",
     "24496"
-   ]
+   ],
+   "shortEn": "Non-light quadricycle, maximum power",
+   "shortIt": "Quadriciclo non leggero, potenza massima"
   },
   {
    "cat": "power",
@@ -1742,7 +1888,9 @@
     "24500",
     "24507",
     "24509"
-   ]
+   ],
+   "shortEn": "A2 motorcycle, maximum power",
+   "shortIt": "Motociclo A2, potenza massima"
   },
   {
    "cat": "power",
@@ -1761,7 +1909,9 @@
     "24488",
     "24495",
     "24532"
-   ]
+   ],
+   "shortEn": "A1 motorcycle, maximum power",
+   "shortIt": "Motociclo A1, potenza massima"
   },
   {
    "cat": "power",
@@ -1778,7 +1928,9 @@
    "asked": [
     "24500",
     "24507"
-   ]
+   ],
+   "shortEn": "A2 motorcycle, power to weight",
+   "shortIt": "Motociclo A2, potenza su peso"
   },
   {
    "cat": "power",
@@ -1796,7 +1948,9 @@
    "asked": [
     "24488",
     "24532"
-   ]
+   ],
+   "shortEn": "A1 motorcycle, power to weight",
+   "shortIt": "Motociclo A1, potenza su peso"
   },
   {
    "cat": "size",
@@ -1814,7 +1968,9 @@
    "us": "23 ft",
    "asked": [
     "24097"
-   ]
+   ],
+   "shortEn": "Combinations keep to the two right lanes from",
+   "shortIt": "I complessi tengono le due corsie di destra da"
   },
   {
    "cat": "size",
@@ -1833,7 +1989,9 @@
     "24537",
     "24548",
     "24552"
-   ]
+   ],
+   "shortEn": "Passengers in a category B vehicle",
+   "shortIt": "Passeggeri su un veicolo di categoria B"
   },
   {
    "cat": "size",
@@ -1854,7 +2012,9 @@
     "18650",
     "18657",
     "18660"
-   ]
+   ],
+   "shortEn": "Car, maximum seats including the driver",
+   "shortIt": "Autovettura, posti massimi compreso il conducente"
   },
   {
    "cat": "size",
@@ -1873,7 +2033,9 @@
    "asked": [
     "18716",
     "22691"
-   ]
+   ],
+   "shortEn": "Load on a two-wheeler, sideways overhang",
+   "shortIt": "Carico su un due ruote, sporgenza laterale"
   },
   {
    "cat": "size",
@@ -1889,7 +2051,9 @@
    "us": "13 ft",
    "asked": [
     "22698"
-   ]
+   ],
+   "shortEn": "Motor vehicle with its load, maximum height",
+   "shortIt": "Veicolo a motore con il carico, altezza massima"
   },
   {
    "cat": "size",
@@ -1916,7 +2080,9 @@
     "23939",
     "23943",
     "24112"
-   ]
+   ],
+   "shortEn": "Load, maximum rear overhang",
+   "shortIt": "Carico, sporgenza posteriore massima"
   },
   {
    "cat": "size",
@@ -1934,7 +2100,9 @@
    "asked": [
     "23933",
     "24105"
-   ]
+   ],
+   "shortEn": "Load beyond the position lights, each side",
+   "shortIt": "Carico oltre le luci di posizione, per lato"
   },
   {
    "cat": "size",
@@ -1953,7 +2121,9 @@
    "asked": [
     "24369",
     "24374"
-   ]
+   ],
+   "shortEn": "Child restraint required below",
+   "shortIt": "Seggiolino obbligatorio sotto"
   },
   {
    "cat": "size",
@@ -1969,7 +2139,9 @@
    "valueEn": "1.6 mm",
    "asked": [
     "25240"
-   ]
+   ],
+   "shortEn": "Car tire, minimum tread depth",
+   "shortIt": "Pneumatico auto, battistrada minimo"
   },
   {
    "cat": "size",
@@ -1987,7 +2159,9 @@
    "valueEn": "1.0 mm",
    "asked": [
     "25242"
-   ]
+   ],
+   "shortEn": "Motorcycle tire, minimum tread depth",
+   "shortIt": "Pneumatico moto, battistrada minimo"
   },
   {
    "cat": "size",
@@ -2012,7 +2186,9 @@
    "asked": [
     "24091",
     "24104"
-   ]
+   ],
+   "shortEn": "Mirror projection beyond the vehicle",
+   "shortIt": "Sporgenza dello specchio oltre la sagoma"
   },
   {
    "cat": "time",
@@ -2029,7 +2205,9 @@
    "asked": [
     "23873",
     "23877"
-   ]
+   ],
+   "shortEn": "Parking in an autostrada service area",
+   "shortIt": "Sosta in un'area di servizio autostradale"
   },
   {
    "cat": "time",
@@ -2047,7 +2225,9 @@
    "asked": [
     "23900",
     "23903"
-   ]
+   ],
+   "shortEn": "Emergency stop on the autostrada",
+   "shortIt": "Sosta di emergenza in autostrada"
   },
   {
    "cat": "time",
@@ -2066,7 +2246,9 @@
    "asked": [
     "18548",
     "18630"
-   ]
+   ],
+   "shortEn": "First inspection after registration",
+   "shortIt": "Prima revisione dopo l'immatricolazione"
   },
   {
    "cat": "time",
@@ -2086,7 +2268,9 @@
     "18548",
     "18630",
     "18661"
-   ]
+   ],
+   "shortEn": "Later inspections, every",
+   "shortIt": "Revisioni successive, ogni"
   },
   {
    "cat": "time",
@@ -2111,7 +2295,9 @@
     "24643",
     "24650",
     "24682"
-   ]
+   ],
+   "shortEn": "New-driver rules, and B license from 70 to 80",
+   "shortIt": "Regole del neopatentato, e patente B da 70 a 80 anni"
   },
   {
    "cat": "time",
@@ -2135,7 +2321,9 @@
     "24694",
     "24695",
     "24696"
-   ]
+   ],
+   "shortEn": "A, B or BE license under 50, validity",
+   "shortIt": "Patente A, B o BE sotto i 50 anni, validità"
   },
   {
    "cat": "time",
@@ -2155,7 +2343,9 @@
     "24681",
     "24686",
     "24691"
-   ]
+   ],
+   "shortEn": "B license from 50 to 70, validity",
+   "shortIt": "Patente B da 50 a 70 anni, validità"
   },
   {
    "cat": "time",
@@ -2185,7 +2375,9 @@
     "24653",
     "24683",
     "24693"
-   ]
+   ],
+   "shortEn": "A2 before A, clean years per 2 points, B license over 80",
+   "shortIt": "A2 prima della A, anni senza infrazioni per 2 punti, patente B oltre 80"
   },
   {
    "cat": "time",
@@ -2201,7 +2393,9 @@
    "asked": [
     "24150",
     "24154"
-   ]
+   ],
+   "shortEn": "Low beams compulsory in town",
+   "shortIt": "Anabbaglianti obbligatori in città"
   },
   {
    "cat": "age",
@@ -2222,7 +2416,9 @@
     "24524",
     "24525",
     "24526"
-   ]
+   ],
+   "shortEn": "A license by direct access",
+   "shortIt": "Patente A per accesso diretto"
   },
   {
    "cat": "age",
@@ -2243,7 +2439,9 @@
     "24519",
     "24523",
     "24544"
-   ]
+   ],
+   "shortEn": "Motor tricycle over 15 kW, minimum age",
+   "shortIt": "Triciclo a motore oltre 15 kW, età minima"
   },
   {
    "cat": "age",
@@ -2263,7 +2461,9 @@
     "24508",
     "24517",
     "24522"
-   ]
+   ],
+   "shortEn": "A license by progressive access",
+   "shortIt": "Patente A per accesso graduale"
   },
   {
    "cat": "age",
@@ -2282,7 +2482,9 @@
     "24502",
     "24506",
     "24576"
-   ]
+   ],
+   "shortEn": "B, BE and A2 licenses, minimum age",
+   "shortIt": "Patenti B, BE e A2, età minima"
   },
   {
    "cat": "age",
@@ -2301,7 +2503,9 @@
    "asked": [
     "24491",
     "24527"
-   ]
+   ],
+   "shortEn": "A1 and B1 licenses, minimum age",
+   "shortIt": "Patenti A1 e B1, età minima"
   },
   {
    "cat": "age",
@@ -2320,7 +2524,9 @@
    "asked": [
     "24478",
     "24482"
-   ]
+   ],
+   "shortEn": "AM license, minimum age",
+   "shortIt": "Patente AM, età minima"
   },
   {
    "cat": "age",
@@ -2337,7 +2543,9 @@
    "valueEn": "3 years",
    "asked": [
     "24364"
-   ]
+   ],
+   "shortEn": "Child restraint always required below",
+   "shortIt": "Sistema di ritenuta sempre obbligatorio sotto"
   },
   {
    "cat": "age",
@@ -2355,7 +2563,9 @@
    "asked": [
     "23917",
     "23921"
-   ]
+   ],
+   "shortEn": "Passenger on a motorcycle or moped, minimum age",
+   "shortIt": "Passeggero su moto o ciclomotore, età minima"
   },
   {
    "cat": "age",
@@ -2372,7 +2582,9 @@
    "trap": true,
    "asked": [
     "24498"
-   ]
+   ],
+   "shortEn": "Rider carrying a passenger, minimum age",
+   "shortIt": "Conducente con passeggero, età minima"
   },
   {
    "cat": "alcohol",
@@ -2388,7 +2600,9 @@
    "valueEn": "0.5 g/l",
    "asked": [
     "31060"
-   ]
+   ],
+   "shortEn": "Blood-alcohol limit",
+   "shortIt": "Limite alcolemico"
   },
   {
    "cat": "alcohol",
@@ -2404,7 +2618,9 @@
    "valueEn": "0.0 g/l",
    "asked": [
     "24096"
-   ]
+   ],
+   "shortEn": "Blood-alcohol limit towing a combination over 3.5 t",
+   "shortIt": "Limite alcolemico con un complesso oltre 3,5 t"
   },
   {
    "cat": "penalty",
@@ -2420,7 +2636,9 @@
    "valueEn": "over 40 km/h",
    "asked": [
     "24620"
-   ]
+   ],
+   "shortEn": "Speeding that brings suspension",
+   "shortIt": "Eccesso di velocità che porta alla sospensione"
   },
   {
    "cat": "penalty",
@@ -2440,7 +2658,9 @@
     "24645",
     "24647",
     "24653"
-   ]
+   ],
+   "shortEn": "Starting points",
+   "shortIt": "Punti iniziali"
   },
   {
    "cat": "penalty",
@@ -2458,7 +2678,9 @@
    "asked": [
     "24644",
     "24652"
-   ]
+   ],
+   "shortEn": "Most points lost for violations committed at once",
+   "shortIt": "Punti massimi persi per violazioni contestuali"
   },
   {
    "cat": "penalty",
@@ -2475,7 +2697,9 @@
    "valueEn": "over 10 km/h",
    "asked": [
     "24655"
-   ]
+   ],
+   "shortEn": "Speeding that costs points",
+   "shortIt": "Eccesso di velocità che costa punti"
   },
   {
    "cat": "penalty",
@@ -2492,7 +2716,9 @@
    "trap": true,
    "asked": [
     "24651"
-   ]
+   ],
+   "shortEn": "Points from a recovery course, A or B holder",
+   "shortIt": "Punti da un corso di recupero, patente A o B"
   },
   {
    "cat": "penalty",
@@ -2509,7 +2735,9 @@
    "asked": [
     "24643",
     "24650"
-   ]
+   ],
+   "shortEn": "Points lost in the first three years of B",
+   "shortIt": "Punti persi nei primi tre anni di patente B"
   },
   {
    "cat": "penalty",
@@ -2525,7 +2753,9 @@
    "group": "points",
    "asked": [
     "24598"
-   ]
+   ],
+   "shortEn": "Three losses of this size in a year send you back to the exam",
+   "shortIt": "Tre perdite di questa entità in un anno rimandano all'esame"
   },
   {
    "cat": "penalty",
@@ -2556,7 +2786,9 @@
    "asked": [
     "23956",
     "23960"
-   ]
+   ],
+   "shortEn": "Emergency towing without a solid connection",
+   "shortIt": "Traino di emergenza senza collegamento rigido"
   },
   {
    "cat": "penalty",
@@ -2833,7 +3065,9 @@
    },
    "asked": [
     "24666"
-   ]
+   ],
+   "shortEn": "Parking in front of a driveway",
+   "shortIt": "Sosta davanti a un passo carrabile"
   },
   {
    "cat": "penalty",
@@ -2874,7 +3108,9 @@
    },
    "asked": [
     "24668"
-   ]
+   ],
+   "shortEn": "Driving without the registration document",
+   "shortIt": "Guida senza carta di circolazione"
   },
   {
    "cat": "penalty",
@@ -2891,7 +3127,9 @@
    "tested": true,
    "asked": [
     "24669"
-   ]
+   ],
+   "shortEn": "Driving without the certificate of ownership",
+   "shortIt": "Guida senza certificato di proprietà"
   },
   {
    "cat": "penalty",
@@ -2913,7 +3151,9 @@
    },
    "asked": [
     "24676"
-   ]
+   ],
+   "shortEn": "Driving with the inspection overdue",
+   "shortIt": "Guida con la revisione scaduta"
   },
   {
    "cat": "penalty",
@@ -2930,7 +3170,9 @@
    "tested": true,
    "asked": [
     "24670"
-   ]
+   ],
+   "shortEn": "Driving another owner's vehicle without authorization",
+   "shortIt": "Guida del veicolo altrui senza autorizzazione"
   },
   {
    "cat": "penalty",
@@ -2947,7 +3189,9 @@
    "tested": true,
    "asked": [
     "24674"
-   ]
+   ],
+   "shortEn": "New B holder on the autostrada or a main road",
+   "shortIt": "Neopatentato B in autostrada o su strada principale"
   },
   {
    "cat": "penalty",
@@ -2964,7 +3208,9 @@
    "tested": true,
    "asked": [
     "24673"
-   ]
+   ],
+   "shortEn": "Eight-seat car driven on a C license",
+   "shortIt": "Auto a otto posti guidata con la C"
   },
   {
    "cat": "penalty",
@@ -2981,7 +3227,9 @@
    "tested": true,
    "asked": [
     "24675"
-   ]
+   ],
+   "shortEn": "Laden light truck on a holiday",
+   "shortIt": "Autocarro leggero carico in un giorno festivo"
   },
   {
    "cat": "penalty",
@@ -2998,7 +3246,9 @@
    "tested": true,
    "asked": [
     "24665"
-   ]
+   ],
+   "shortEn": "Racing on a private track with B under 24",
+   "shortIt": "Gara su pista privata con la B sotto i 24 anni"
   },
   {
    "cat": "penalty",
@@ -3016,7 +3266,9 @@
    "asked": [
     "24577",
     "24586"
-   ]
+   ],
+   "shortEn": "Any violation that carries suspension",
+   "shortIt": "Ogni violazione che comporta la sospensione"
   },
   {
    "cat": "penalty",
@@ -3034,7 +3286,9 @@
    "asked": [
     "24578",
     "24611"
-   ]
+   ],
+   "shortEn": "Driving with an expired license",
+   "shortIt": "Guida con patente scaduta"
   },
   {
    "cat": "penalty",
@@ -3051,7 +3305,9 @@
    "measure": true,
    "asked": [
     "24579"
-   ]
+   ],
+   "shortEn": "Driving drunk",
+   "shortIt": "Guida in stato di ebbrezza"
   },
   {
    "cat": "penalty",
@@ -3068,7 +3324,9 @@
    "measure": true,
    "asked": [
     "24580"
-   ]
+   ],
+   "shortEn": "Badly arranged load not fixed after a police request",
+   "shortIt": "Carico mal sistemato non risistemato su richiesta"
   },
   {
    "cat": "penalty",
@@ -3085,7 +3343,9 @@
    "measure": true,
    "asked": [
     "24581"
-   ]
+   ],
+   "shortEn": "Crash causing injury",
+   "shortIt": "Incidente con lesioni"
   },
   {
    "cat": "penalty",
@@ -3102,7 +3362,9 @@
    "measure": true,
    "asked": [
     "24582"
-   ]
+   ],
+   "shortEn": "Required revision not taken in time",
+   "shortIt": "Revisione prescritta non sostenuta in tempo"
   },
   {
    "cat": "penalty",
@@ -3119,7 +3381,9 @@
    "measure": true,
    "asked": [
     "25126"
-   ]
+   ],
+   "shortEn": "Vehicle polluting too much, registration document withdrawn",
+   "shortIt": "Veicolo troppo inquinante, ritiro della carta di circolazione"
   },
   {
    "cat": "penalty",
@@ -3136,7 +3400,9 @@
    "measure": true,
    "asked": [
     "24618"
-   ]
+   ],
+   "shortEn": "New driver ignoring the vehicle and speed limits",
+   "shortIt": "Neopatentato che ignora i limiti di veicolo e velocità"
   },
   {
    "cat": "penalty",
@@ -3153,7 +3419,9 @@
    "measure": true,
    "asked": [
     "24620"
-   ]
+   ],
+   "shortEn": "Speeding by more than 40 km/h",
+   "shortIt": "Eccesso di velocità oltre 40 km/h"
   },
   {
    "cat": "penalty",
@@ -3170,7 +3438,9 @@
    "measure": true,
    "asked": [
     "24621"
-   ]
+   ],
+   "shortEn": "Driving in the emergency lane outside the allowed cases",
+   "shortIt": "Guida in corsia di emergenza fuori dai casi ammessi"
   },
   {
    "cat": "penalty",
@@ -3187,7 +3457,9 @@
    "measure": true,
    "asked": [
     "24623"
-   ]
+   ],
+   "shortEn": "Driving drunk",
+   "shortIt": "Guida in stato di ebbrezza"
   },
   {
    "cat": "penalty",
@@ -3204,7 +3476,9 @@
    "measure": true,
    "asked": [
     "24624"
-   ]
+   ],
+   "shortEn": "Refusing the breath test",
+   "shortIt": "Rifiuto dell'alcoltest"
   },
   {
    "cat": "penalty",
@@ -3221,7 +3495,9 @@
    "measure": true,
    "asked": [
     "24625"
-   ]
+   ],
+   "shortEn": "Fleeing without helping the person struck",
+   "shortIt": "Fuga senza soccorrere l'investito"
   },
   {
    "cat": "penalty",
@@ -3238,7 +3514,9 @@
    "measure": true,
    "asked": [
     "24626"
-   ]
+   ],
+   "shortEn": "Driving a seized vehicle",
+   "shortIt": "Guida di un veicolo sequestrato"
   },
   {
    "cat": "penalty",
@@ -3255,7 +3533,9 @@
    "measure": true,
    "asked": [
     "24627"
-   ]
+   ],
+   "shortEn": "Forging insurance documents",
+   "shortIt": "Falsificazione dei documenti assicurativi"
   },
   {
    "cat": "penalty",
@@ -3273,7 +3553,9 @@
    "asked": [
     "24589",
     "24630"
-   ]
+   ],
+   "shortEn": "Doubts about physical or mental fitness",
+   "shortIt": "Dubbi sui requisiti fisici o psichici"
   },
   {
    "cat": "penalty",
@@ -3290,7 +3572,9 @@
    "measure": true,
    "asked": [
     "24592"
-   ]
+   ],
+   "shortEn": "Doubts about driving ability",
+   "shortIt": "Dubbi sull'idoneità alla guida"
   },
   {
    "cat": "penalty",
@@ -3307,7 +3591,9 @@
    "measure": true,
    "asked": [
     "24591"
-   ]
+   ],
+   "shortEn": "Crash causing serious injury",
+   "shortIt": "Incidente con lesioni gravi"
   },
   {
    "cat": "penalty",
@@ -3328,7 +3614,9 @@
     "24631",
     "24641",
     "24654"
-   ]
+   ],
+   "shortEn": "All points lost",
+   "shortIt": "Tutti i punti persi"
   },
   {
    "cat": "penalty",
@@ -3346,7 +3634,9 @@
    "asked": [
     "24605",
     "24628"
-   ]
+   ],
+   "shortEn": "Driving while the license is suspended",
+   "shortIt": "Guida con patente sospesa"
   },
   {
    "cat": "penalty",
@@ -3363,7 +3653,9 @@
    "measure": true,
    "asked": [
     "24606"
-   ]
+   ],
+   "shortEn": "U-turn or wrong-way driving on the autostrada",
+   "shortIt": "Inversione o contromano in autostrada"
   },
   {
    "cat": "penalty",
@@ -3385,7 +3677,9 @@
     "24608",
     "24613",
     "24629"
-   ]
+   ],
+   "shortEn": "Permanent loss of the physical or mental requirements",
+   "shortIt": "Perdita permanente dei requisiti fisici o psichici"
   },
   {
    "cat": "penalty",
@@ -3402,7 +3696,9 @@
    "measure": true,
    "asked": [
     "24609"
-   ]
+   ],
+   "shortEn": "License replaced by a foreign one",
+   "shortIt": "Patente sostituita da una estera"
   },
   {
    "cat": "penalty",
@@ -3422,7 +3718,9 @@
     "24596",
     "24604",
     "24610"
-   ]
+   ],
+   "shortEn": "Failing the revision",
+   "shortIt": "Revisione non superata"
   }
  ],
  "groups": [

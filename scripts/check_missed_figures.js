@@ -47,8 +47,9 @@ setTimeout(()=>{
   const counts=rows.map(r=>(r.querySelector('.review-missed')?.textContent||'').match(/\d+/)?.[0]).sort().join(',');
   const expCounts=expRows.map(n=>String([a,b].filter(x=>n.asked.includes(x)).length)).sort().join(',');
   ok(counts===expCounts,'each row counts its open misses and not the fixed one: '+counts+' against '+expCounts);
-  ok(rows.every(r=>/^(Speeds by road type|Speeds by vehicle|Velocità per tipo di strada|Velocità per veicolo) · \S.*$/.test(r.querySelector('.review-ctx')?.textContent||'') && !/\(/.test(r.querySelector('.review-ctx').textContent)),'each row names its category and its group above the label, with no parenthetical: '+(rows[0].querySelector('.review-ctx')||{}).textContent);
-  ok(rows.some(r=>/(autostrada|centro abitato|extra-urban|extraurban)/i.test(r.querySelector('.review-ctx').textContent)),'a speed by road names its road type on the context line: '+rows.map(r=>r.querySelector('.review-ctx').textContent).join(' | '));
+  ok(rows.every(r=>r.classList.contains('is-short') && !r.querySelector('.review-ctx, .review-alt, .review-asked, .review-fine') && r.querySelector('.review-label') && r.querySelector('.review-value')),'each row is one short line and its figure, with no category, group, second language or Asked count');
+  const shorts=rows.map(r=>r.querySelector('.review-label').textContent);
+  ok(shorts.every(s=>expRows.some(n=>s===(IT?n.shortIt:n.shortEn)) && !/\(/.test(s) && s.length<=90),'each line is the row\'s own short phrase: '+shorts.join(' | '));
   ok(w.document.querySelectorAll('#review-numbers-body .review-cat-title').length===1 && !w.document.querySelector('#review-numbers-body .review-group-title, #review-numbers-body .review-group-head'),'one flat list, no category or group headings');
   ok(!w.document.querySelector('#review-numbers-body .review-group-note') && !w.document.querySelector('#review-numbers-body .review-foot'),'no group notes or footers on the chip, so the list stays short');
   w.document.querySelector('.review-chip[data-cat=all]').click();

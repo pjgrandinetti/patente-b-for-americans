@@ -2740,7 +2740,20 @@ behind what shipped:
     dropped ("Speeds by road type · On the autostrada"), since the group
     is where the road or the vehicle sits and the parentheticals were what
     made the first line long. `check_missed_figures.js` asserts the group
-    and the absence of a parenthesis.
+    and the absence of a parenthesis. **One short line per figure since
+    20261026c** (maintainer, 2026-10-27: the metadata was put together
+    correctly and the entry was still hard to read, and the list is a quick
+    study list for the last days). Every row with an asked list carries
+    `shortEn` and `shortIt` in reference.json, a phrase of a few words that
+    stands on its own ("Autostrada, new driver", "Safe distance at 130
+    km/h", "Car tire, minimum tread depth"), 149 rows, written by hand in
+    both languages; `validate_data.py` requires both, under 90 characters,
+    with no parenthetical. On the chip the row (`.review-row.is-short`) is
+    that phrase, the value (or the tap-to-see button) and the open-miss
+    count, nothing else: no category or group line, no second language, no
+    fine, no wrong value, no Asked count. The `rowContext` line of 20261026b
+    is no longer drawn there. A new numbers row with an asked list needs its
+    two short phrases or the build fails.
     `scripts/check_review_extra.js`, 9 checks in each face; the previous
     build fails 6. **The box carries a closed disclosure, "What is waiting in
     the review" (20261023c, maintainer, 2026-10-23: he asked how many of

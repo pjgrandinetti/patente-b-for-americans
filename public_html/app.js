@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261026b';
+const APP_VERSION     = '20261026c';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -14619,11 +14619,32 @@ function renderReviewNumbers() {
       // are lost, not a number to hold, so its value is drawn muted and at
       // normal weight; its pill still says the fact is tested.
       const vcls = n.untested ? ' is-untested' : (n.tested && /^0\b/.test(n.value) ? ' is-zero' : '');
+      // The consistently-missed chip is a study list for the last days before
+      // the exam, so a row there is one short line and the figure (20261026c,
+      // maintainer, 2026-10-27: the category, group, label and counts put
+      // the metadata together correctly and were still hard to read). The
+      // line is the row's own `shortEn` / `shortIt`, written for every
+      // figure that carries an asked list; the category and group lines, the
+      // second language, the fine, the wrong value and the Asked count are
+      // left out, and only the open-miss count stays under the value.
+      if (cat === 'missed') {
+        const short = (it ? n.shortIt : n.shortEn) || label;
+        const idx = (reference.numbers || []).indexOf(n);
+        const k = missed && missed.get(idx);
+        html += `<div class="review-row is-short" title="${topic}">` +
+                `<div class="review-fact"><span class="review-label">${escHtml(short)}</span></div>` +
+                `<div class="review-valcol">` +
+                (reviewHide
+                  ? `<button type="button" class="review-value is-hidden" data-value="${val}">${escHtml(vt('review.tapToSee'))}</button>`
+                  : `<span class="review-value${vcls}">${val}</span>`) +
+                (k ? `<span class="review-missed">${escHtml(k === 1 ? vt('review.missed1') : vt('review.missedN', k))}</span>` : '') +
+                `</div>` +
+                entryFlagHtml('num: ' + n.en, fset, idx) +
+                `</div>`;
+        return;
+      }
       html += `<div class="review-row" title="${topic}">` +
               `<div class="review-fact">` +
-              // On the consistently-missed chip the row sits outside its category,
-              // so its category and group are named above the label (20261023u).
-              (cat === 'missed' ? `<span class="review-ctx">${escHtml(rowContext(n, it))}</span>` : '') +
               `<span class="review-label">${escHtml(label)}${mark}</span>` +
               (second ? `<span class="review-alt">${escHtml(second)}</span>` : '') +
               // The fine, from the Code (maintainer, 2026-09-26): never tested,

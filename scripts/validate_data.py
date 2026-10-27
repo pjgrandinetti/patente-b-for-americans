@@ -590,6 +590,17 @@ if isinstance(refdata, dict):
                 err(f"{where}: marked only-ever-true, but does not cite {', '.join(sorted(uncited))}")
         # `asked` lists every question that turns on this figure (20261010z):
         # all live, at least one, none on a row whose number is never tested.
+        # The consistently-missed chip draws the row as one short line
+        # (20261026c): every figure that can reach it carries a short phrase
+        # in both languages, with no parenthetical and no metadata, since the
+        # line is all the learner reads there.
+        if "asked" in n:
+            for k in ("shortEn", "shortIt"):
+                s = n.get(k)
+                if not isinstance(s, str) or not s.strip():
+                    err(f"{where}: a row with an asked list needs {k}")
+                elif "(" in s or len(s) > 90:
+                    err(f"{where}: {k} must be short and carry no parenthetical: {s!r}")
         if "asked" in n:
             if n.get("untested"):
                 err(f"{where}: an untested row carries an asked list")

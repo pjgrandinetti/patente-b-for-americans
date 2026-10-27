@@ -381,6 +381,9 @@ body {
 .exam-date-box .exam-date-today dt { color: var(--muted); }
 .exam-date-box .exam-date-today dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
 .review-ctx { display: block; font-size: .8rem; color: var(--accent); margin-bottom: .1rem; }
+/* The consistently-missed chip: one short line per figure (20261026c). */
+.review-row.is-short { padding: .45rem .8rem; }
+.review-row.is-short .review-label { font-weight: 500; }
 .review-missed { display: block; font-size: .8rem; color: var(--wrong, #c0392b); text-align: right; }
 .exam-date-box .exam-date-pool { flex: 1 1 100%; font-size: .88rem; }
 .exam-date-box .exam-date-pool summary { cursor: pointer; color: var(--accent); }
