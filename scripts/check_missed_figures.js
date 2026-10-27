@@ -47,7 +47,8 @@ setTimeout(()=>{
   const counts=rows.map(r=>(r.querySelector('.review-missed')?.textContent||'').match(/\d+/)?.[0]).sort().join(',');
   const expCounts=expRows.map(n=>String([a,b].filter(x=>n.asked.includes(x)).length)).sort().join(',');
   ok(counts===expCounts,'each row counts its open misses and not the fixed one: '+counts+' against '+expCounts);
-  ok(rows.every(r=>/^(Speeds by road type|Speeds by vehicle|Velocità per tipo di strada|Velocità per veicolo)$/.test(r.querySelector('.review-ctx')?.textContent||'')),'each row names its category alone above the label: '+(rows[0].querySelector('.review-ctx')||{}).textContent);
+  ok(rows.every(r=>/^(Speeds by road type|Speeds by vehicle|Velocità per tipo di strada|Velocità per veicolo) · \S.*$/.test(r.querySelector('.review-ctx')?.textContent||'') && !/\(/.test(r.querySelector('.review-ctx').textContent)),'each row names its category and its group above the label, with no parenthetical: '+(rows[0].querySelector('.review-ctx')||{}).textContent);
+  ok(rows.some(r=>/(autostrada|centro abitato|extra-urban|extraurban)/i.test(r.querySelector('.review-ctx').textContent)),'a speed by road names its road type on the context line: '+rows.map(r=>r.querySelector('.review-ctx').textContent).join(' | '));
   ok(w.document.querySelectorAll('#review-numbers-body .review-cat-title').length===1 && !w.document.querySelector('#review-numbers-body .review-group-title, #review-numbers-body .review-group-head'),'one flat list, no category or group headings');
   ok(!w.document.querySelector('#review-numbers-body .review-group-note') && !w.document.querySelector('#review-numbers-body .review-foot'),'no group notes or footers on the chip, so the list stays short');
   w.document.querySelector('.review-chip[data-cat=all]').click();

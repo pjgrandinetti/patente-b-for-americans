@@ -2733,7 +2733,14 @@ behind what shipped:
     through `rowContext`, on this chip only. **The category alone since
     20261024a** (maintainer: with the groups and the Italian parentheticals
     the line was too long to read the number by): "Speeds by road type",
-    in the accent color, normal case.
+    in the accent color, normal case. **The group is back since 20261026b**
+    (maintainer, 2026-10-27: "Speeds by road type" without the road type,
+    "Speeds by vehicle" without the vehicle): the line reads category, a
+    middle dot, then the row's group name(s), with every parenthetical
+    dropped ("Speeds by road type · On the autostrada"), since the group
+    is where the road or the vehicle sits and the parentheticals were what
+    made the first line long. `check_missed_figures.js` asserts the group
+    and the absence of a parenthesis.
     `scripts/check_review_extra.js`, 9 checks in each face; the previous
     build fails 6. **The box carries a closed disclosure, "What is waiting in
     the review" (20261023c, maintainer, 2026-10-23: he asked how many of

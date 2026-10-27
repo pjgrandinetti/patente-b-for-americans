@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261026a';
+const APP_VERSION     = '20261026b';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -14402,10 +14402,19 @@ function missedFigureRows() {
 // The category and group a row belongs to, for the chip that lists rows
 // outside their categories: "Speeds by road type · On the autostrada".
 function rowContext(n, it) {
-  // The category alone, its parenthetical dropped (20261023v, maintainer: with
-  // the groups and the Italian the line was too long to read the number by).
+  // The category, then the row's group(s), every parenthetical dropped. The
+  // group is where the road type sits for a speed by road and the vehicle
+  // for a speed by vehicle, so without it the label named neither
+  // (20261026b, maintainer, 2026-10-27). The category alone had replaced a
+  // line carrying the groups with their Italian parentheticals, which was
+  // too long to read the number by (20261024a); the parentheticals are what
+  // went, not the group.
+  const plain = s => (s || '').replace(/\s*\([^)]*\)/g, '').trim();
   const c = (reference.categories || []).find(x => x.id === n.cat);
-  return c ? (it ? c.it : c.en).replace(/\s*\([^)]*\)\s*$/, '') : '';
+  const ids = Array.isArray(n.group) ? n.group : (n.group ? [n.group] : []);
+  const gs = ids.map(id => (reference.groups || []).find(g => g.id === id))
+    .filter(Boolean).map(g => plain(it ? g.it : g.en)).filter(Boolean);
+  return [c ? plain(it ? c.it : c.en) : '', ...gs].filter(Boolean).join(' · ');
 }
 // Open the Reference page on the Numbers tab with the consistently-missed chip.
 function openMissedFigures() {
