@@ -1491,6 +1491,19 @@ reach the session on 2026-09-20, which is why it is recorded here.
   signal that the clause is a condition, not a fact). Counts in the live
   bank: perché 63, purché 61, anche se 54, in modo da 48, qualora 32, nel
   caso in cui 21, in quanto 19, mentre 17, ove 14, allorché 12.
+- **A tenth topic, `eggiare`, last in the list (20261026f, maintainer,
+  2026-10-27)**, "Words built on -eggiare: lampeggiante, tratteggiata": a
+  noun or adjective plus *-eggiare* makes a verb, and the bank meets it as
+  the *-eggiante* adjective (lampeggiante 63, pianeggiante 2), the
+  *-eggiato* participle (tratteggiata, fiancheggiati) and the infinitive
+  (gareggiare, danneggiare, fronteggiare). The maintainer's source text
+  also named *ondeggiante*, *serpeggiante*, *verdeggiante*, *galleggiante*
+  and *tondeggiante*; none is in the bank, so none is taught. The intro
+  says *carreggiata* and *parcheggio* are best learned as words of their
+  own, rather than claim an etymology for them. The endings in the intro,
+  prose and recap use a non-breaking hyphen (U+2011), since a plain one
+  broke the ending onto its own line on a phone; the headings keep the
+  plain hyphen, which the search reads.
 - **Every example is a statement QUOTED BY NUMBER**, never written out. The
   app prints the bank's own `italian_text` and `english_translation` and
   marks the run of words named in `hl`; `validate_data.py` FAILS on a number

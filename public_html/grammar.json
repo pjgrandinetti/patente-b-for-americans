@@ -1162,6 +1162,78 @@
      ]
     ]
    }
+  },
+  {
+   "id": "eggiare",
+   "title": "Words built on -eggiare: lampeggiante, tratteggiata",
+   "intro": "<p>Many Italian verbs are made by adding <i>‑eggiare</i> to a noun or an adjective. The new verb means to do the thing again and again, to have its quality, or to act with it:</p><div class=\"gr-enx\"><span class=\"gr-exit\">lampo → lampeggiare</span> <i>a flash → to flash</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">piano → pianeggiare</span> <i>flat → to be flat</i></div><div class=\"gr-enx\"><span class=\"gr-exit\">gara → gareggiare</span> <i>a race → to race</i></div><p>The statements rarely use the verb itself. They use the adjective in <i>‑eggiante</i> or the participle in <i>‑eggiato</i>. When you meet an unfamiliar word with <i>‑eggi-</i> in it, remove that part and look for the noun or adjective left over. Not every such word is built this way: <i>carreggiata</i> and <i>parcheggio</i> are best learned as words of their own.</p>",
+   "sections": [
+    {
+     "h": "-eggiante: lampeggiante, pianeggiante",
+     "p": "<p>An adjective in <i>‑eggiante</i> describes something that is doing the action or has the quality now. <i>Lampeggiante</i> is a light that flashes. <i>Pianeggiante</i> is a road that is flat.</p>",
+     "ex": [
+      {
+       "n": "21037",
+       "hl": "luce gialla lampeggiante"
+      },
+      {
+       "n": "25070",
+       "hl": "strade pianeggianti"
+      }
+     ],
+     "after": "<p><i>Lampeggiante</i> comes from <i>lampo</i>, a flash. <i>Pianeggianti</i> comes from <i>piano</i>, flat, and ends in <i>‑i</i> because <i>strade</i> is plural.</p>"
+    },
+    {
+     "h": "-eggiato: tratteggiata, fiancheggiati",
+     "p": "<p>A participle in <i>‑eggiato</i> describes something the action has been done to. It agrees with its noun like any participle.</p>",
+     "ex": [
+      {
+       "n": "20889",
+       "hl": "tratteggiata"
+      },
+      {
+       "n": "22299",
+       "hl": "fiancheggiati da edifici"
+      }
+     ],
+     "after": "<p><i>Tratteggiata</i> comes from <i>tratto</i>, a short stroke: a line drawn in short strokes is a dashed line. <i>Fiancheggiati</i> comes from <i>fianco</i>, side: road sections with buildings along their sides.</p>"
+    },
+    {
+     "h": "-eggiare: gareggiare, danneggiare, fronteggiare",
+     "p": "<p>The verb itself appears mostly after <i>è vietato</i> or <i>per</i>, in the infinitive.</p>",
+     "ex": [
+      {
+       "n": "18702",
+       "hl": "gareggiare in velocità"
+      },
+      {
+       "n": "25160",
+       "hl": "danneggiare"
+      }
+     ],
+     "after": "<p><i>Gareggiare</i> comes from <i>gara</i>, a race, so <i>gareggiare in velocità</i> is to race. <i>Danneggiare</i> comes from <i>danno</i>, damage. In the same way <i>fronteggiare</i>, from <i>fronte</i>, is to face or counter, as in <i>fronteggiare eventuali colpi di vento</i>.</p>"
+    }
+   ],
+   "recap": {
+    "cols": [
+     "Ending",
+     "What it gives"
+    ],
+    "rows": [
+     [
+      "‑eggiare",
+      "a verb from a noun or adjective: gareggiare, danneggiare"
+     ],
+     [
+      "‑eggiante",
+      "doing it or having the quality now: lampeggiante, pianeggiante"
+     ],
+     [
+      "‑eggiato",
+      "the action done to it: tratteggiata, fiancheggiati"
+     ]
+    ]
+   }
   }
  ]
 }
