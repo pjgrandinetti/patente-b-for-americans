@@ -2758,7 +2758,13 @@ behind what shipped:
     a row whose asked list sits inside another listed row's with the same
     value is dropped as the same figure split finer: the by-vehicle towing
     rows (car with trailer 70, autotreno 70) against the by-road row that
-    holds both questions. The check mirrors the subset rule.
+    holds both questions. The check mirrors the subset rule. **Every phrase names the QUANTITY since 20261026e** (maintainer's
+    screenshot, 2026-10-27: "Extra-urban road, towing a trailer or
+    autotreno" did not say it was a speed limit): "Speed limit on an
+    extra-urban road, towing a trailer or autotreno", "Distance of the
+    two-bar panel from the railroad crossing", "Measure for driving drunk",
+    "Points lost for parking in front of a driveway". A new short phrase
+    opens with what the figure is, then the case.
     `scripts/check_review_extra.js`, 9 checks in each face; the previous
     build fails 6. **The box carries a closed disclosure, "What is waiting in
     the review" (20261023c, maintainer, 2026-10-23: he asked how many of
