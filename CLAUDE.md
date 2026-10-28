@@ -3670,6 +3670,15 @@ behind what shipped:
   the learner's own history must say what they DID, not what it implies. The
   drill notes now open with the fact, in the same words the Final Stretch
   headings use, so the two screens plainly describe one thing.
+- **Empathy for the learner is the test (maintainer, 2026-10-29).** Picture
+  the person reading the line at that moment, usually just after a wrong
+  answer, and write what helps THEM. The *alcun* sentence shows the
+  difference: "Here *alcuni* means some; the singular *alcun* means any"
+  states a rule and reads as a side note, while his "Careful, here *alcuni*
+  means some ..." names the trap in the question in front of them and is
+  what they will remember the next time they meet the word. It also took a
+  day of glosses that grew longer with each attempt before the teaching
+  went where the learner is, the explanation, in one sentence.
 - **Name a level the way the level picker names it.** L1/L2/L3 left the UI, and
   the weak-spot text still said "Italiano", which is not a name the learner sees
   anywhere. Pass `t('lvl.N.name')` in rather than writing a level name into a
