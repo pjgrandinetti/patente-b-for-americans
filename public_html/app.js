@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261029o';
+const APP_VERSION     = '20261029p';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -528,6 +528,10 @@ const T = {
   'km.right':  { en: 'Right.', it: 'Giusto.' },
   'km.wrong':  { en: 'Wrong.', it: 'Sbagliato.' },
   'km.answer': { en: 'Answer: {0}', it: 'Risposta: {0}' },
+  // Two ways through the list (20261029p, maintainer, 2026-10-29): answer
+  // each question, or, for a last review, read each one with its answer.
+  'km.modePractice': { en: 'Answer them', it: 'Rispondi' },
+  'km.modeRead': { en: 'Read with answers', it: 'Leggi con le risposte' },
   'dash.topicConcepts': { en: 'Concepts by topic', it: 'Concetti per argomento' },
   // The number here is the release rule doubled, so the rule travels with it.
   // The line used to print the doubled figure alone, which left the learner
@@ -14459,6 +14463,12 @@ function setMissRun(v) {
   stampSettings();
 }
 let _kmOpen = false, _guessOpen = false;
+// Read with answers (20261029p, maintainer, 2026-10-29: for a last-minute
+// review the learner needs each question in Italian and English with its
+// answer, not to answer it first). Kept for the session, since it is how the
+// learner is using the list now and not a preference; the list opens on
+// Answer them. Nothing is recorded in this mode.
+let _kmRead = false;
 function keepMissingRows(min, filter = 'it', run = '3') {
   const it = uiLang() === 'it';
   const levels = it ? [EXAM_LEVEL] : [1, 2, 3];
@@ -14518,6 +14528,8 @@ function renderMissBreakdown() {
       renderMissBreakdown();
     });
     el.addEventListener('click', ev => {
+      const mode = ev.target.closest('.km-mode-btn');
+      if (mode) { _kmRead = mode.dataset.mode === 'read'; renderMissBreakdown(); return; }
       const vf = ev.target.closest('.km-vf');
       if (vf) { answerFromList(vf); return; }
       const book = ev.target.closest('.km-book');
@@ -14551,8 +14563,22 @@ function renderMissBreakdown() {
       ? (rows.length === 1 ? t('km.count1', min) : t('km.count', rows.length.toLocaleString(), min))
       : t('km.none', min))}` +
     (fixed ? ' ' + escHtml(fixed === 1 ? t('km.fixed1') : t('km.fixed', fixed.toLocaleString())) : '') +
-    (it ? '' : ' ' + escHtml(t('km.note', t('lvl.' + EXAM_LEVEL + '.name')))) + '</p>';
+    (it ? '' : ' ' + escHtml(t('km.note', t('lvl.' + EXAM_LEVEL + '.name')))) + '</p>' +
+    (rows.length ? `<div class="km-modes" role="group">` +
+      ['practice', 'read'].map(m => `<button type="button" class="km-mode-btn${(m === 'read') === _kmRead ? ' active' : ''}" data-mode="${m}" aria-pressed="${(m === 'read') === _kmRead}">${escHtml(t(m === 'read' ? 'km.modeRead' : 'km.modePractice'))}</button>`).join('') +
+      `</div>` : '');
   for (const r of rows) {
+    if (_kmRead) {
+      const { q, st } = r;
+      html += `<div class="km-row km-read">` +
+        (q.image ? `<img class="km-img" src="${escHtml(q.image)}" alt="" loading="lazy">` : '') +
+        `<div class="km-main"><span class="km-it">${escHtml(st.italian_text)}</span>` +
+        (!it && st.english_translation ? `<span class="km-en">${escHtml(st.english_translation)}</span>` : '') +
+        `<span class="km-key km-key-${st.answer === 'VERO' ? 'v' : 'f'}">${escHtml(st.answer)}</span>` +
+        (reviewFor(q.topic) ? ` <button type="button" class="stmt-it-btn km-book" data-qid="${escHtml(String(q.id))}" data-num="${escHtml(String(st.number))}">${escHtml(t('review.notes'))}</button>` : '') +
+        `</div></div>`;
+      continue;
+    }
     const { q, st } = r;
     const misses = r.levels.map((lvl, i) =>
       `<span class="km-lvl${r.by[i] ? ' has-miss' : ''}">${escHtml(t('lvl.' + lvl + '.name'))} ${r.by[i]}</span>`).join(' · ');

@@ -102,5 +102,17 @@ setTimeout(()=>{
   const m0=rec3().miss;
   rr.querySelector(`.km-vf[data-choice="${a.answer==='VERO'?'FALSO':'VERO'}"]`).click();
   ok(rec3().streak===0 && rec3().miss===m0+1 && /Wrong|Sbagliato/.test(rr.querySelector('.km-answer').textContent),'a wrong answer counts a miss and resets the run');
+  // Read with answers (20261029p): each question in Italian (and English) with its answer, nothing to answer, nothing recorded.
+  const n0=rows().length; const rec0=JSON.stringify(rec3());
+  ok(!!box.querySelector('.km-mode-btn[data-mode=practice].active') && box.querySelector('.km-mode-btn[data-mode=read]'),'the list opens on Answer them, with Read with answers beside it');
+  box.querySelector('.km-mode-btn[data-mode=read]').click();
+  const reads=[...box.querySelectorAll('.km-row.km-read')];
+  ok(reads.length===n0 && !box.querySelector('details.km-row') && !box.querySelector('.km-vf'),'read mode lists the same questions with no V/F to press: '+reads.length);
+  const rd0=reads.find(r=>r.querySelector('.km-it').textContent===a.italian_text);
+  ok(rd0 && rd0.querySelector('.km-key').textContent===a.answer,'each question shows its answer');
+  ok(IT ? !rd0.querySelector('.km-en') : rd0.querySelector('.km-en').textContent===a.english_translation,IT?'an Italian browser gets no English':'and its English');
+  ok(JSON.stringify(rec3())===rec0,'reading records nothing');
+  box.querySelector('.km-mode-btn[data-mode=practice]').click();
+  ok(rows().length===n0 && !!box.querySelector('.km-vf'),'Answer them brings back the practice rows');
   console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);
 },2500);
