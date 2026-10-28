@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261029m';
+const APP_VERSION     = '20261029n';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1489,7 +1489,7 @@ function bindUpdateCheck() {
 // into this file and into sw.js, so a data file is downloaded only when it
 // has changed rather than on every release (see the note above dataUrl in
 // sw.js).
-const DATA_HASH = { 'questions.json': 'ff07a49fdd5b', 'vocabulary.json': '543bc915da5d', 'topic_reviews.json': 'fec3dcb00827' };
+const DATA_HASH = { 'questions.json': 'ff07a49fdd5b', 'vocabulary.json': '543bc915da5d', 'topic_reviews.json': '46cca57fea18' };
 const dataUrl = name => `${name}?v=${DATA_HASH[name]}`;
 
 // Fetch one of the three big JSON files, and REPAIR the cache if what comes
@@ -1589,45 +1589,74 @@ let reviewClaims = {};       // { [statement number]: { topic, hash of the EN bl
 // topicReviews, so nothing that walks the topics meets it.
 const KEY_POINTS = '__keypoints__';
 let _keyPoints = null;
+// A bold run in an English point is a key word, and the Italian word is what
+// the learner has to remember (maintainer, 2026-10-29), so on the English
+// page each bold run is followed by the bold run in the same position of the
+// Italian twin, in parentheses: **priority road** (*strada con diritto di
+// precedenza*). Only when the two blocks carry the same number of bold runs,
+// never when the English already carries a parenthetical, and never when the
+// two runs are the same word (STOP, 112).
+const BOLD_RE = /\*\*([^*]+?)\*\*/g;
+function keyPointsEnrich(en, it) {
+  const bi = [...it.matchAll(BOLD_RE)].map(m => m[1].trim().replace(/[.:;,]$/, ''));
+  const be = [...en.matchAll(BOLD_RE)];
+  if (!bi.length || bi.length !== be.length) return en;
+  let k = 0;
+  return en.replace(BOLD_RE, (whole, word, at, str) => {
+    const twin = bi[k++];
+    const rest = str.slice(at + whole.length);
+    if (!twin || /^[.,;:]?\s*\(\*/.test(rest) || twin.toLowerCase() === word.trim().toLowerCase().replace(/[.:;,]$/, '')) return whole;
+    return whole + ' (*' + twin + '*)';
+  });
+}
 function keyPointsEntry() {
   if (_keyPoints) return _keyPoints;
   const section = (md, lang) => {
     const lines = (md || '').replace(/\r\n/g, '\n').split('\n');
     const re = lang === 'it' ? /^## Riepilogo/ : /^## Summary/;
     let i = lines.findIndex(l => re.test(l));
-    if (i < 0) return '';
+    if (i < 0) return [];
     const out = [];
-    for (i++; i < lines.length && !/^## /.test(lines[i]); i++) out.push(lines[i]);
-    return out.join('\n').trim();
+    for (i++; i < lines.length && !/^## /.test(lines[i]); i++) out.push(lines[i].trimEnd());
+    return out;
   };
-  const en = [], it = [], order = [];
+  const en = [], it = [], order = [], twins = [];
   for (const topic of topicsInStudyOrder()) {
     const entry = topicReviews[topic];
     if (!entry) continue;
-    const e = section(entry.en, 'en'), i = section(entry.it, 'it');
-    if (!e || !i) continue;
+    const eLines = section(entry.en, 'en'), iLines = section(entry.it, 'it');
+    if (!eLines.some(l => l.trim()) || !iLines.some(l => l.trim())) continue;
+    const pairs = entry.pairs || {};
+    const itBlocks = reviewItBlocks(topic);
+    // Each English line is one block (the summaries are numbered points):
+    // find its Italian twin through the topic's own pairs map, enrich the
+    // line, and remember the twin for the page's own pairs map.
+    const eOut = eLines.map(line => {
+      let m, src, head = '', tail = line.trim();
+      if ((m = line.match(/^(\s*(?:[-*]|\d+\.)\s+)(.*)$/))) { head = m[1]; tail = m[2].trim(); }
+      else if (line.startsWith('>')) { head = '> '; tail = line.slice(1).trim(); }
+      if (!tail) return line;
+      src = tail;
+      const idx = pairs[reviewBlockHash(src)];
+      const twin = idx === undefined ? null : itBlocks[idx];
+      twins.push(twin || null);
+      return twin ? head + keyPointsEnrich(tail, twin) : line;
+    });
     const sh = TOPIC_SHORT[topic] || {};
-    en.push('## ' + (sh.en || topicFull(topic)) + '\n\n' + e);
-    it.push('## ' + (sh.it || topicFull(topic)) + '\n\n' + i);
+    en.push('## ' + (sh.en || topicFull(topic)) + '\n\n' + eOut.join('\n').trim());
+    it.push('## ' + (sh.it || topicFull(topic)) + '\n\n' + iLines.join('\n').trim());
     order.push(topic);
   }
   const out = { en: en.join('\n\n'), it: it.join('\n\n'), order, pairs: {} };
   _keyPoints = out;
-  // Pairs: each EN block of the page maps, through its topic's own pairs
-  // map, to the Italian source, found again by hash among the page's own
-  // Italian blocks.
   const itIndex = new Map();
   reviewBlocks(KEY_POINTS, 'it').forEach((b, idx) => { if (!itIndex.has(b.hash)) itIndex.set(b.hash, idx); });
-  for (const topic of order) {
-    const pairs = (topicReviews[topic] || {}).pairs || {};
-    const itBlocks = reviewItBlocks(topic);
-    for (const b of reviewBlocks(topic, 'en')) {
-      const idx = pairs[b.hash];
-      const src = idx === undefined ? null : itBlocks[idx];
-      if (src == null) continue;
-      const at = itIndex.get(reviewBlockHash(src));
+  const enBlocks = reviewBlocks(KEY_POINTS, 'en');
+  if (enBlocks.length === twins.length) {
+    enBlocks.forEach((b, i) => {
+      const at = twins[i] == null ? undefined : itIndex.get(reviewBlockHash(twins[i]));
       if (at !== undefined) out.pairs[b.hash] = at;
-    }
+    });
   }
   return out;
 }

@@ -2759,7 +2759,22 @@ behind what shipped:
   The summaries are the SOURCE: a summary that does not stand on its own is
   rewritten in its topic's Markdown, never in a second text, so the page and
   the topic cannot drift apart. The renderer emits `##` as `h3`.
-  `scripts/check_key_points.js`, 18 checks in English, 15 in Italian.
+  **The English page gives the Italian key words in parentheses
+  (20261029n, maintainer, 2026-10-29: those are the words the learner has
+  to remember).** A bold run in a point is a key word, and `keyPointsEnrich`
+  follows each one with the bold run in the same position of the Italian
+  twin, as "**priority road** (*strada con diritto di precedenza*)", only
+  when the two blocks carry the same number of bold runs, never where the
+  English already carries a parenthetical, and never when the runs are the
+  same word (STOP, 112). The twin is found through the topic's own pairs
+  map, so an en-only line gets nothing. Measured: 165 of 170 paired summary
+  blocks matched by count before two were aligned by hand (topic 09's first
+  point, topic 17's 112), and 159 of 171 points now carry parentheticals.
+  So the bold runs of a summary and its Italian twin must correspond one to
+  one, in order; a bold run added to one half needs its twin in the other,
+  or that point loses its parentheticals in silence. The page's pairs map
+  is built from the ENRICHED blocks, so the pills still work.
+  `scripts/check_key_points.js`, 20 checks in English, 15 in Italian.
   **The day before and the day itself say *In bocca al lupo!*
   (20261028b, maintainer)**, a line of its own under the advice
   (`examdate.wish`, `.exam-date-wish`), in Italian for every browser and

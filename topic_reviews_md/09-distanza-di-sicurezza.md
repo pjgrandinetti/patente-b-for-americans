@@ -148,7 +148,7 @@ This chapter's distances are hard to feel from a page. A companion driving simul
 
 ## Summary of key points
 
-1. Safe distance exists to keep **you** from **rear-ending the vehicle ahead**. It is **not fixed** and applies at **every** speed.
+1. Safe distance exists to keep you from **rear-ending the vehicle ahead**. It is **not fixed** and applies at **every** speed.
 2. It depends on **speed, reaction time, condition, weather, gradient, load, brakes, and tires**. It does **not** depend on engine size or power, road or vehicle width, lanes, or gear.
 3. There are three separate distances: the **reaction** distance (about one second), the **braking** distance, and the **total stopping** distance, which is reaction plus braking. Total stopping is *neither* part on its own.
 4. Braking distance grows with the **square of speed**, so doubling the speed gives four times the distance. Reflexes shorten reaction, not braking.
@@ -302,7 +302,7 @@ Le distanze di questo capitolo sono difficili da percepire sulla carta. Un simul
 
 ## Riepilogo dei punti chiave
 
-1. La distanza di sicurezza serve a evitare che **tu tamponi il veicolo che precede**. **Non è fissa** e vale a **ogni** velocità.
+1. La distanza di sicurezza serve a evitare di **tamponare il veicolo che precede**. **Non è fissa** e vale a **ogni** velocità.
 2. Dipende da **velocità, tempo di reazione, condizioni, meteo, pendenza, carico, freni e pneumatici**. **Non** dipende da cilindrata o potenza, larghezza di strada o veicolo, corsie o marcia.
 3. Ci sono tre spazi distinti: lo spazio di **reazione** (circa un secondo), lo spazio di **frenata** e lo spazio di **arresto totale**, che è reazione più frenata. L'arresto totale *non* è nessuna delle due parti da sola.
 4. Lo spazio di frenata cresce con il **quadrato della velocità**, quindi a velocità doppia lo spazio è quadruplo. I riflessi accorciano la reazione, non la frenata.

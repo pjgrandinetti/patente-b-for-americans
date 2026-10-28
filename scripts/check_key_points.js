@@ -47,6 +47,11 @@ setTimeout(()=>{
     w.document.querySelector('#review-lang [data-lang=en]').click();
     const en=$('review-body'); const enLis=en.querySelectorAll('li').length, enPills=en.querySelectorAll('.rb-it').length;
     ok(w.eval('reviewLang')==='en' && en.querySelectorAll('h3').length===25 && enPills>=enLis-5,'the English face has IT pills on nearly every point: '+enPills+' of '+enLis);
+    // The Italian key words in parentheses (20261029n): nearly every point with a bold run carries one
+    const items=[...en.querySelectorAll('li')]; const bold=items.filter(l=>l.querySelector('strong')); const withIt=bold.filter(l=>/\(\s*$/.test('') || /\(/.test(l.textContent) && l.querySelector('strong + em, strong ~ em'));
+    const first=en.querySelector('li strong'); const par=first && first.nextSibling && first.nextSibling.textContent;
+    ok(bold.length>=150 && withIt.length>=bold.length-8,'the English points carry the Italian key words in parentheses: '+withIt.length+' of '+bold.length);
+    ok(/^ \($/.test(par||'') && first.nextElementSibling && first.nextElementSibling.tagName==='EM' && /[a-zà-ù]/.test(first.nextElementSibling.textContent),'a bold key word is followed by its Italian in italics: '+first.textContent+' ('+(first.nextElementSibling&&first.nextElementSibling.textContent)+')');
     const li=en.querySelector('li .rb-it'); const twin=li.nextElementSibling;
     ok(twin && twin.classList.contains('rb-itxt') && /[àèìòù]/.test(twin.textContent),'a pill reveals Italian');
   }
