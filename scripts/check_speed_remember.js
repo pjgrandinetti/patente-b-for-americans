@@ -45,15 +45,9 @@ setTimeout(()=>{
   chip('speedveh'); r=rem();
   ok(r.length===1 && r[0].open,'the by-vehicle chip alone still shows it, and it stays open once opened');
   chip('size'); ok(rem().length===0,'not under another category');
-  // The distances carry their own box (20261028q), text only since 20261028r.
-  chip('distance'); r=rem();
-  ok(r.length===1 && r[0].dataset.rem==='distance' && /(How to remember the distances|Come ricordare le distanze)/.test(r[0].querySelector('summary').textContent) && r[0].querySelectorAll('li').length===8,'the distances have their own box, eight lines');
-  ok(!r[0].querySelector('img'),'text only, with no figure (removed in 20261028r)');
-  const dvals=new Set(ref.numbers.filter(n=>n.cat==='distance').map(n=>(String(n.value).match(/\d+/)||[])[0]));
-  const kmh=new Set(['30','50','100','130','150']);
-  const dnamed=(r[0].textContent.match(/\b\d+(?:[.,]\d+)?\b/g)||[]).filter(x=>!['3,5','3.5','10','3'].includes(x)||dvals.has(x));
-  ok(dnamed.every(x=>dvals.has(x)||kmh.has(x)),'every distance it names is a distance on the page: '+[...new Set(dnamed)].join(' '));
-  chip('all'); ok(rem().length===2,'all categories: the speeds\' box and the distances\' box');
+  // The distances' box was removed in 20261028s at the maintainer's word.
+  chip('distance'); ok(rem().length===0,'the distances have no box');
+  chip('all'); ok(rem().length===1,'all categories: only the speeds\' box');
   const box=$('review-search')||w.document.querySelector('input[type=search]');
   if (box){ box.value='130'; box.dispatchEvent(new w.Event('input',{bubbles:true})); }
   ok(rem().length===0,'not while searching');

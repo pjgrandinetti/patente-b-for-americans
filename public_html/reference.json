@@ -44,30 +44,6 @@
    "id": "distance",
    "en": "Distances (distanze)",
    "it": "Distanze",
-   "remember": {
-    "en": "How to remember the distances",
-    "it": "Come ricordare le distanze",
-    "linesEn": [
-     "Most of the longer distances are multiples of 50 m, namely 50, 100 and 150.",
-     "The railroad crossing counts them down. Its countdown panels carry three, two and one red bars at 150, 100 and 50 m, one bar for each 50 m.",
-     "Outside built-up areas a danger sign stands 150 m before the hazard.",
-     "100 m is how far away the warning triangle must be visible, the gap between trucks over 3.5 t that may not pass each other, and the visibility below which a fog speed cap may be posted.",
-     "50 m is how far behind the vehicle the warning triangle goes, and the visibility below which the rear fog light must be on. The triangle also stands at least 1 m from the outer edge of the carriageway.",
-     "The safe following distance in meters is roughly (speed ÷ 10) × 3. The figures to learn are 9 m at 30 km/h, 14 at 50, 28 at 100, 36 at 130 and 42 at 150.",
-     "The short distances belong to stopping and parking. Leave 1 m for pedestrians where there is no raised sidewalk, and 3 m of carriageway free when parking on the left of a one-way street. Do not stop within 5 m of an intersection in town, or park within 15 m of a bus stop sign where no space is marked.",
-     "Two figures stand alone. Keep 20 m behind a working snowplow, and use the emergency lane to reach an exit only from its advance sign, 500 m before it."
-    ],
-    "linesIt": [
-     "Quasi tutte le distanze più lunghe sono multipli di 50 m, cioè 50, 100 e 150.",
-     "Il passaggio a livello le conta a ritroso. I suoi pannelli distanziometrici portano tre, due e una barra rossa a 150, 100 e 50 m, una barra ogni 50 m.",
-     "Fuori dai centri abitati un segnale di pericolo sta 150 m prima del pericolo.",
-     "100 m è la distanza da cui il triangolo deve essere visibile, lo spazio tra autocarri oltre 3,5 t che non possono sorpassarsi, e la visibilità sotto la quale si può imporre un limite di velocità per nebbia.",
-     "50 m è la distanza del triangolo dietro il veicolo, e la visibilità sotto la quale va acceso il retronebbia. Il triangolo sta anche ad almeno 1 m dal bordo esterno della carreggiata.",
-     "La distanza di sicurezza in metri è circa (velocità ÷ 10) × 3. Le cifre da imparare sono 9 m a 30 km/h, 14 a 50, 28 a 100, 36 a 130 e 42 a 150.",
-     "Le distanze brevi riguardano fermata e sosta. Lascia 1 m ai pedoni dove non c'è marciapiede rialzato, e 3 m di carreggiata liberi quando sosti a sinistra in una strada a senso unico. Non fermarti entro 5 m da un incrocio in città, né sostare entro 15 m dal segnale di fermata bus dove non c'è stallo delimitato.",
-     "Due cifre restano a sé. Stai a 20 m dietro uno sgombraneve in azione, e usa la corsia di emergenza per raggiungere un'uscita solo dal suo preavviso, 500 m prima."
-    ]
-   },
    "noteEn": "US equivalents are in parentheses, rounded. An inch is 2.54 cm, so divide centimeters by 2.5 to get inches. A meter is about 3.3 feet, so multiply meters by 3.3 to get feet."
   },
   {

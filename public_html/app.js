@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261028r';
+const APP_VERSION     = '20261028s';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -14646,9 +14646,8 @@ function renderReviewCats() {
 // be hidden for a self-test.
 // The distances have the same kind of box since 20261028q: any category may
 // carry `remember`, and its optional `fig` names a pair of review_media
-// figures. The distances' figure was removed in 20261028r at the maintainer's
-// word (the formula serves the safe distances better than bars, and the rest
-// gained nothing from a drawing); their box is text only.
+// figures. The distances' figure was removed in 20261028r and their box in
+// 20261028s, at the maintainer's word; only the speeds carry one today.
 const _refRememberOpen = new Set();
 function refRememberHtml(r, it, id) {
   return `<details class="rules-note ref-remember" data-rem="${escHtml(id)}"${_refRememberOpen.has(id) ? ' open' : ''}><summary>${escHtml(it ? r.it : r.en)}</summary>` +
