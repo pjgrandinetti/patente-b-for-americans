@@ -5405,8 +5405,10 @@ to areas open to the public, and the two Reference rows whose only source was
   "unloaded". 23089: *alcun* after *non* or *senza* means any, one
   negation, while the plural *alcuni* means some. **Settled in 20261029d
   after a day of fiddling (maintainer: concise, clear, pedagogical).** The
-  rule is one line, "Singular *alcun* means any; plural *alcuni* means
-  some", and the singular appears in the bank only after *non* or *senza*,
+  rule is one line, written from the word in the statement (20261029e,
+  maintainer: the bare rule needed its context): "Here *alcuni* means some;
+  the singular *alcun* means any. Confusing the two changes the meaning of
+  the statement." (and the mirror for the singular), and the singular appears in the bank only after *non* or *senza*,
   so "any" always translates correctly; the learner's only error is reading
   one number as the other. Three places and nothing else: the glosses are
   plain translations (*alcuni*, *alcune* "some"; *alcun*, *alcuna* "any"),

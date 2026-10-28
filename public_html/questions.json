@@ -626,7 +626,7 @@
         "italian_text": "Il pannello integrativo in figura, posto sotto il segnale DIVIETO DI SOSTA, indica che la sosta è vietata solo in alcune ore dei giorni indicati",
         "answer": "VERO",
         "english_translation": "The supplementary panel shown, placed under the NO PARKING sign, indicates that parking is prohibited only at certain times of the indicated days.",
-        "explanation": "True. The panel narrows the no-parking rule to the cleaning windows: certain hours on the days shown. During those windows the ban applies to every vehicle, and outside them it does not apply. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. The panel narrows the no-parking rule to the cleaning windows: certain hours on the days shown. During those windows the ban applies to every vehicle, and outside them it does not apply. Here *alcune* means some; the singular *alcuna* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Il pannello restringe il divieto di sosta alle finestre di pulizia: determinate ore dei giorni indicati. In quelle finestre il divieto vale per tutti i veicoli, e fuori da esse non si applica."
       },
       {
@@ -1595,7 +1595,7 @@
         "italian_text": "Il segnale raffigurato riporta alcuni dati (località, via, telefoni) del più vicino comando di polizia stradale",
         "answer": "VERO",
         "english_translation": "The sign shown shows some data (location, street, telephone numbers) of the nearest traffic police headquarters.",
-        "explanation": "True. It reports the contact details (place, street, and phone numbers) of the nearest traffic-police command. Like every indication sign it only informs; it does not signal police on the spot. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. It reports the contact details (place, street, and phone numbers) of the nearest traffic-police command. Like every indication sign it only informs; it does not signal police on the spot. Here *alcuni* means some; the singular *alcun* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Riporta i dati di contatto (località, via e numeri di telefono) del più vicino comando della polizia stradale. Come ogni segnale di indicazione si limita a informare; non segnala la presenza della polizia sul posto."
       },
       {
@@ -3190,7 +3190,7 @@
         "italian_text": "Il segnale raffigurato può essere posto su alcuni veicoli per lavori stradali, che procedono a bassa velocità",
         "answer": "VERO",
         "english_translation": "The sign shown can be placed on some vehicles for road works proceeding at low speed.",
-        "explanation": "True. The panel covers work vehicles both stopped and moving slowly: either way the vehicle occupies the carriageway, and the arrow tells approaching drivers which side to pass on. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. The panel covers work vehicles both stopped and moving slowly: either way the vehicle occupies the carriageway, and the arrow tells approaching drivers which side to pass on. Here *alcuni* means some; the singular *alcun* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Il pannello riguarda i veicoli di lavoro sia fermi sia in lento movimento: in entrambi i casi il veicolo occupa la carreggiata, e la freccia dice a chi sopraggiunge da quale lato passare."
       },
       {
@@ -3514,7 +3514,7 @@
         "italian_text": "Il segnale raffigurato indica l'inizio dell'area dove il traffico è consentito solo ad alcune categorie di veicoli",
         "answer": "VERO",
         "english_translation": "The sign shown indicates the beginning of an area where traffic is permitted only to certain categories of vehicles.",
-        "explanation": "True. It marks where traffic is allowed only to certain categories of vehicle. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. It marks where traffic is allowed only to certain categories of vehicle. Here *alcune* means some; the singular *alcuna* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Contrassegna dove il traffico è consentito solo a determinate categorie di veicoli."
       },
       {
@@ -6557,7 +6557,7 @@
         "italian_text": "Nell'incrocio rappresentato in figura il veicolo A non deve dare la precedenza ad alcun veicolo",
         "answer": "VERO",
         "english_translation": "In the intersection depicted in the figure, vehicle A does not have to yield to any vehicle.",
-        "explanation": "True. No vehicle arrives from A's right with a path that crosses its own, so the right-hand rule imposes nothing on A and it opens the order A, E, B. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. No vehicle arrives from A's right with a path that crosses its own, so the right-hand rule imposes nothing on A and it opens the order A, E, B. Here *alcun* means any; the plural *alcuni* means some. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Nessun veicolo arriva dalla destra di A con una traiettoria che incrocia la sua, quindi la regola della destra non impone nulla ad A, che apre l'ordine A, E, B."
       },
       {
@@ -6589,7 +6589,7 @@
         "italian_text": "Nell'incrocio rappresentato in figura il veicolo B non deve dare la precedenza ad alcun veicolo",
         "answer": "FALSO",
         "english_translation": "In the intersection shown in the figure, vehicle B does not have to yield to any vehicle.",
-        "explanation": "False. E comes from B's right, so the right-hand rule obliges B to let E through. E in turn waits for A, so B moves only after both and passes last. The vehicle that yields to no one is A, which has nobody on its right. The order is A, E, B. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "False. E comes from B's right, so the right-hand rule obliges B to let E through. E in turn waits for A, so B moves only after both and passes last. The vehicle that yields to no one is A, which has nobody on its right. The order is A, E, B. Here *alcun* means any; the plural *alcuni* means some. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Falso. E proviene dalla destra di B, quindi la regola della precedenza a destra obbliga B a lasciarlo passare. E a sua volta attende A, quindi B si muove solo dopo entrambi e passa per ultimo. Il veicolo che non deve la precedenza a nessuno è A, che non ha nessuno alla propria destra. L'ordine è A, E, B."
       },
       {
@@ -6652,7 +6652,7 @@
         "italian_text": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R non deve dare la precedenza ad alcun veicolo",
         "answer": "VERO",
         "english_translation": "According to right-of-way rules in the intersection shown in the figure, vehicle R does not have to yield to any vehicle.",
-        "explanation": "True. No vehicle arrives from R's right, so the right-hand rule imposes nothing on R: it opens the sequence R, A, C. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. No vehicle arrives from R's right, so the right-hand rule imposes nothing on R: it opens the sequence R, A, C. Here *alcun* means any; the plural *alcuni* means some. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Nessun veicolo arriva dalla destra di R, quindi la regola della destra non gli impone nulla: apre la sequenza R, A, C."
       },
       {
@@ -6668,7 +6668,7 @@
         "italian_text": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo C non deve dare la precedenza ad alcun veicolo",
         "answer": "FALSO",
         "english_translation": "According to right-of-way rules in the intersection shown in the figure, vehicle C does not have to yield to any vehicle.",
-        "explanation": "False. C must yield: A comes from its right, and A in turn waits for R, so C clears the intersection last. It is R that owes the way to no one. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "False. C must yield: A comes from its right, and A in turn waits for R, so C clears the intersection last. It is R that owes the way to no one. Here *alcun* means any; the plural *alcuni* means some. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Falso. C deve dare la precedenza: A proviene dalla sua destra, e A a sua volta attende R, quindi C libera l'incrocio per ultimo. È R a non dover la precedenza a nessuno."
       },
       {
@@ -6723,7 +6723,7 @@
         "italian_text": "Secondo le norme di precedenza possono impegnare l'incrocio rappresentato in figura il veicolo R senza dare la precedenza ad alcun veicolo",
         "answer": "VERO",
         "english_translation": "According to right-of-way rules, vehicle R can enter the intersection shown in the figure without yielding to any vehicle.",
-        "explanation": "True. R's right is free: no vehicle arrives from the arm on its right, so R crosses first without yielding to anyone. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. R's right is free: no vehicle arrives from the arm on its right, so R crosses first without yielding to anyone. Here *alcun* means any; the plural *alcuni* means some. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. R ha la destra libera: nessun veicolo arriva dal braccio alla sua destra, quindi R attraversa per primo senza dare precedenza a nessuno."
       },
       {
@@ -7202,7 +7202,7 @@
         "italian_text": "Giungendo all'incrocio rappresentato in figura il veicolo B, dato che svolta a sinistra, non ha diritto di precedenza su alcun veicolo",
         "answer": "FALSO",
         "english_translation": "Arriving at the intersection shown in the figure, vehicle B, since it turns left, has no right of way over any vehicle.",
-        "explanation": "False. Turning left does not by itself strip a vehicle of its right of way: B still comes from L's right, so B holds precedence over L and passes third, ahead of it. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "False. Turning left does not by itself strip a vehicle of its right of way: B still comes from L's right, so B holds precedence over L and passes third, ahead of it. Here *alcun* means any; the plural *alcuni* means some. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Falso. La svolta a sinistra non toglie di per sé la precedenza: B proviene comunque dalla destra di L, quindi ha la precedenza su L e passa terzo, prima di lui."
       },
       {
@@ -8670,7 +8670,7 @@
         "italian_text": "Nell'incrocio rappresentato nella figura il conducente del veicolo D non ha l'obbligo di dare la precedenza ad alcun veicolo",
         "answer": "VERO",
         "english_translation": "At the intersection shown in the figure, the driver of vehicle D has no obligation to yield to any vehicle.",
-        "explanation": "True. D finds no vehicle coming from its right, so it owes precedence to no one, neither A nor E. E gains nothing from going straight: the right-hand rule, not the maneuver, decides. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. D finds no vehicle coming from its right, so it owes precedence to no one, neither A nor E. E gains nothing from going straight: the right-hand rule, not the maneuver, decides. Here *alcun* means any; the plural *alcuni* means some. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. D non ha alcun veicolo proveniente dalla propria destra, quindi non deve la precedenza a nessuno, né ad A né a E. E non guadagna nulla dal procedere dritto: decide la regola della destra, non la manovra."
       },
       {
@@ -9346,7 +9346,7 @@
         "italian_text": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R non deve dare la precedenza ad alcun veicolo",
         "answer": "VERO",
         "english_translation": "According to right-of-way rules at the intersection shown in the figure, vehicle R must not yield to any vehicle.",
-        "explanation": "True. No vehicle arrives from R's right, so the right-hand rule imposes nothing on it: R opens the order R, A, C. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. No vehicle arrives from R's right, so the right-hand rule imposes nothing on it: R opens the order R, A, C. Here *alcun* means any; the plural *alcuni* means some. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Nessun veicolo arriva dalla destra di R, quindi la regola della destra non gli impone nulla: R apre l'ordine R, A, C."
       },
       {
@@ -9370,7 +9370,7 @@
         "italian_text": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo C non deve dare la precedenza ad alcun veicolo",
         "answer": "FALSO",
         "english_translation": "According to right-of-way rules at the intersection shown in the figure, vehicle C must not yield to any vehicle.",
-        "explanation": "False. C must yield: A comes from its right, and A in turn waits for R, so C clears last. It is R that owes the way to no one. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "False. C must yield: A comes from its right, and A in turn waits for R, so C clears last. It is R that owes the way to no one. Here *alcun* means any; the plural *alcuni* means some. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Falso. C deve dare la precedenza: A proviene dalla sua destra, e A a sua volta attende R, quindi C libera per ultimo. È R a non dover la precedenza a nessuno."
       },
       {
@@ -9425,7 +9425,7 @@
         "italian_text": "Nell'incrocio rappresentato in figura il veicolo H non deve dare la precedenza ad alcun veicolo",
         "answer": "VERO",
         "english_translation": "At the intersection shown in the figure, vehicle H must not yield to any vehicle.",
-        "explanation": "True. B does stand in the arm on H's right, but B turns left into the arm H is leaving while H turns right into B's, so the two paths never meet and the right-hand rule imposes nothing on H. H therefore opens the order H, D, B. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. B does stand in the arm on H's right, but B turns left into the arm H is leaving while H turns right into B's, so the two paths never meet and the right-hand rule imposes nothing on H. H therefore opens the order H, D, B. Here *alcun* means any; the plural *alcuni* means some. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. B si trova effettivamente nel braccio alla destra di H, ma B svolta a sinistra verso il braccio da cui H proviene mentre H svolta a destra verso quello di B, quindi le due traiettorie non si incontrano mai e la regola della precedenza a destra non impone nulla ad H. H apre perciò l'ordine H, D, B."
       },
       {
@@ -9685,7 +9685,7 @@
         "italian_text": "Nell'incrocio rappresentato in figura il veicolo E non deve dare la precedenza ad alcun veicolo",
         "answer": "VERO",
         "english_translation": "At the intersection shown in the figure, vehicle E must not yield to any vehicle.",
-        "explanation": "True. Nothing arrives from E's right, so the right-hand rule imposes no duty on E: it opens the order E, C, L. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. Nothing arrives from E's right, so the right-hand rule imposes no duty on E: it opens the order E, C, L. Here *alcun* means any; the plural *alcuni* means some. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Nulla arriva dalla destra di E, quindi la regola della destra non impone alcun obbligo a E: apre l'ordine E, C, L."
       },
       {
@@ -10615,7 +10615,7 @@
         "italian_text": "Il semaforo di onda verde in figura indica le velocità che devono obbligatoriamente rispettare alcuni veicoli",
         "answer": "FALSO",
         "english_translation": "The green wave traffic light shown indicates speeds that certain vehicles must obligatorily observe.",
-        "explanation": "False. The speed is advised to all drivers to catch the green wave; it is not a speed that particular vehicles are obliged to keep. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "False. The speed is advised to all drivers to catch the green wave; it is not a speed that particular vehicles are obliged to keep. Here *alcuni* means some; the singular *alcun* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Falso. La velocità è consigliata a tutti per trovare l'onda verde; non è una velocità che determinati veicoli sono obbligati a mantenere."
       },
       {
@@ -23099,7 +23099,7 @@
         "italian_text": "Il segnale raffigurato consente la sosta in alcune ore e la vieta in altre",
         "answer": "VERO",
         "english_translation": "With this sign, you may park during certain hours, and parking is prohibited during others.",
-        "explanation": "True. The panel has two rows. Beside the no-parking disc it lists the hours in which parking is banned, 7:00 to 9:00 and 17:00 to 20:00. Beside the blue P it lists the hours in which parking is allowed, 9:00 to 17:00 and 20:00 to 7:00. That is why the sign is called hours-regulated parking (*regolazione flessibile della sosta*). Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. The panel has two rows. Beside the no-parking disc it lists the hours in which parking is banned, 7:00 to 9:00 and 17:00 to 20:00. Beside the blue P it lists the hours in which parking is allowed, 9:00 to 17:00 and 20:00 to 7:00. That is why the sign is called hours-regulated parking (*regolazione flessibile della sosta*). Here *alcune* means some; the singular *alcuna* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Il pannello ha due righe. Accanto al disco del divieto di sosta riporta le ore in cui la sosta è vietata, dalle 7.00 alle 9.00 e dalle 17.00 alle 20.00. Accanto alla P blu riporta le ore in cui la sosta è consentita, dalle 9.00 alle 17.00 e dalle 20.00 alle 7.00. Per questo il segnale si chiama regolazione flessibile della sosta."
       },
       {
@@ -24039,7 +24039,7 @@
         "italian_text": "Il segnale raffigurato consente di marciare ad una velocità superiore a 30 km/h, senza alcun limite",
         "answer": "FALSO",
         "english_translation": "With this sign, you may travel at a speed greater than 30 km/h, without any limit.",
-        "explanation": "False. A minimum-speed sign sets a floor, not a ceiling, and it never suspends the general rules: the road's maximum limit (50 in town, 90, 110 or 130 outside, unless signed otherwise) still applies above the 30. 'Without any limit' is the trap. Singular *alcun* means any; plural *alcuni* means some. Read the whole sentence: strike «senza alcun limite» and what is left is true; the added words are what make the statement false.",
+        "explanation": "False. A minimum-speed sign sets a floor, not a ceiling, and it never suspends the general rules: the road's maximum limit (50 in town, 90, 110 or 130 outside, unless signed otherwise) still applies above the 30. 'Without any limit' is the trap. Here *alcun* means any; the plural *alcuni* means some. Confusing the two changes the meaning of the statement. Read the whole sentence: strike «senza alcun limite» and what is left is true; the added words are what make the statement false.",
         "explanation_it": "Falso. Un limite minimo fissa un pavimento, non un tetto, e non sospende mai le norme generali: sopra i 30 vale ancora il limite massimo della strada (50 in città, 90, 110 o 130 fuori, salvo diversa segnalazione). «Senza alcun limite» è il tranello. Leggi tutta la frase: togli «senza alcun limite» e ciò che resta è vero; sono le parole aggiunte a rendere falsa l'affermazione.",
         "clause": {
           "text": "senza alcun limite",
@@ -27646,7 +27646,7 @@
         "italian_text": "Il segnale raffigurato è posto in corrispondenza di una pista riservata in alcuni giorni ai pedoni e in altri alle biciclette",
         "answer": "FALSO",
         "english_translation": "The sign shown is placed at a path reserved on certain days for pedestrians and on others for bicycles.",
-        "explanation": "False. The vertical bar divides space, not days: the two users each had their own half side by side, and the red bar simply ends that arrangement. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "False. The vertical bar divides space, not days: the two users each had their own half side by side, and the red bar simply ends that arrangement. Here *alcuni* means some; the singular *alcun* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Falso. La barra verticale divide lo spazio, non i giorni: i due utenti avevano ciascuno la propria metà affiancata, e la banda rossa fa semplicemente cessare quell'assetto."
       },
       {
@@ -29660,7 +29660,7 @@
         "italian_text": "Avvicinandosi ad un passaggio a livello con luci rosse lampeggianti alternativamente e semibarriera ancora alzata, si può passare velocemente, se non si vede sopraggiungere alcun treno",
         "answer": "FALSO",
         "english_translation": "Approaching a railroad crossing with alternately flashing red lights and half-barrier still raised, you can proceed quickly if you do not see a train approaching.",
-        "explanation": "False. The lights come on precisely before the half-barriers lower, so this is the very moment the crossing is closing: you prepare to stop at the line. Seeing no train changes nothing, because the lights themselves already forbid passage. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "False. The lights come on precisely before the half-barriers lower, so this is the very moment the crossing is closing: you prepare to stop at the line. Seeing no train changes nothing, because the lights themselves already forbid passage. Here *alcun* means any; the plural *alcuni* means some. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Falso. Le luci si accendono proprio prima che le semibarriere si abbassino, quindi è esattamente il momento in cui il passaggio si sta chiudendo: ci si predispone all'arresto alla linea. Non vedere il treno non cambia nulla, perché già le luci vietano il transito."
       },
       {
@@ -32941,7 +32941,7 @@
         "italian_text": "Nelle strade extraurbane principali possono circolare solo alcune categorie di veicoli a motore",
         "answer": "VERO",
         "english_translation": "On main extra-urban roads only certain categories of motor vehicles may travel.",
-        "explanation": "True. It carries the same access restrictions as an autostrada: pedestrians, bicycles, mopeds, motorcycles under 150 cm3, light quadricycles, and farm or work vehicles are barred. Only vehicles fast enough for this road type may use it. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. It carries the same access restrictions as an autostrada: pedestrians, bicycles, mopeds, motorcycles under 150 cm3, light quadricycles, and farm or work vehicles are barred. Only vehicles fast enough for this road type may use it. Here *alcune* means some; the singular *alcuna* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Valgono le stesse limitazioni di accesso dell'autostrada: sono esclusi pedoni, biciclette, ciclomotori, motocicli sotto i 150 cm³, quadricicli leggeri e macchine agricole o operatrici. Possono usarla solo i veicoli abbastanza veloci per questo tipo di strada."
       },
       {
@@ -33361,7 +33361,7 @@
         "italian_text": "Una zona a traffico limitato è un'area in cui può essere limitata la circolazione dei veicoli solo in alcune ore",
         "answer": "VERO",
         "english_translation": "A limited traffic zone is an area where vehicle traffic can be restricted only during certain hours.",
-        "explanation": "True. A limited traffic zone is a restriction, not a total closure: access can be limited only during certain hours, or only for certain categories of vehicles or users, while remaining free at other times. It is therefore not an area permanently closed to motor vehicles. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. A limited traffic zone is a restriction, not a total closure: access can be limited only during certain hours, or only for certain categories of vehicles or users, while remaining free at other times. It is therefore not an area permanently closed to motor vehicles. Here *alcune* means some; the singular *alcuna* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. La zona a traffico limitato è una restrizione, non una chiusura totale: l'accesso può essere limitato solo in certe ore, o solo per certe categorie di veicoli o di utenti, restando libero negli altri momenti. Non è quindi un'area chiusa in permanenza ai veicoli a motore."
       },
       {
@@ -34054,7 +34054,7 @@
         "italian_text": "La corsia può essere riservata alla circolazione di alcune categorie di veicoli (taxi, autobus, ecc.)",
         "answer": "VERO",
         "english_translation": "The lane can be reserved for certain vehicle categories (taxis, buses, etc.).",
-        "explanation": "True. A lane can be set aside for particular categories such as buses and taxis: reserved lanes are one of the specialized types, alongside acceleration, deceleration, turning, and emergency lanes. Other vehicles must keep out of them. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. A lane can be set aside for particular categories such as buses and taxis: reserved lanes are one of the specialized types, alongside acceleration, deceleration, turning, and emergency lanes. Other vehicles must keep out of them. Here *alcune* means some; the singular *alcuna* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Una corsia può essere riservata a categorie particolari come autobus e taxi: le corsie riservate sono uno dei tipi specializzati, accanto a quelle di accelerazione, decelerazione, svolta ed emergenza. Gli altri veicoli devono starne fuori."
       },
       {
@@ -35241,7 +35241,7 @@
         "italian_text": "Le strisce retroriflettenti applicate lateralmente ad alcuni veicoli possono essere di colore bianco o giallo",
         "answer": "VERO",
         "english_translation": "Retroreflective stripes applied laterally to some vehicles may be white or yellow in color.",
-        "explanation": "True. Goods trucks, trailers and semi-trailers over 3.5 t must carry retroreflective stripes, and the color depends on where the stripe sits. On the sides the stripes are white or yellow. At the rear they are red or yellow. Tie each pair of colors to its place on the vehicle. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. Goods trucks, trailers and semi-trailers over 3.5 t must carry retroreflective stripes, and the color depends on where the stripe sits. On the sides the stripes are white or yellow. At the rear they are red or yellow. Tie each pair of colors to its place on the vehicle. Here *alcuni* means some; the singular *alcun* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Autocarri, rimorchi e semirimorchi per merci oltre 3,5 t devono portare strisce retroriflettenti, e il colore dipende da dove la striscia si trova. Ai lati le strisce sono bianche o gialle. Dietro sono rosse o gialle. Lega ogni coppia di colori al suo punto del veicolo."
       },
       {
@@ -35249,7 +35249,7 @@
         "italian_text": "Le strisce retroriflettenti applicate dietro ad alcuni veicoli possono essere di colore rosso o giallo",
         "answer": "VERO",
         "english_translation": "Retroreflective stripes applied at the rear of some vehicles may be red or yellow in color.",
-        "explanation": "True. Goods trucks, trailers and semi-trailers over 3.5 t must carry retroreflective stripes, and the color depends on where the stripe sits. At the rear the stripes are red or yellow. On the sides they are white or yellow. Tie each pair of colors to its place on the vehicle. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. Goods trucks, trailers and semi-trailers over 3.5 t must carry retroreflective stripes, and the color depends on where the stripe sits. At the rear the stripes are red or yellow. On the sides they are white or yellow. Tie each pair of colors to its place on the vehicle. Here *alcuni* means some; the singular *alcun* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Autocarri, rimorchi e semirimorchi per merci oltre 3,5 t devono portare strisce retroriflettenti, e il colore dipende da dove la striscia si trova. Dietro le strisce sono rosse o gialle. Ai lati sono bianche o gialle. Lega ogni coppia di colori al suo punto del veicolo."
       },
       {
@@ -37335,7 +37335,7 @@
         "italian_text": "La striscia discontinua in figura può essere sostituita con alcuni \"chiodi\" o catadiottri, messi a distanza di 50 centimetri",
         "answer": "FALSO",
         "english_translation": "The dashed line in the figure may be replaced with some 'studs' or reflectors, placed at 50 centimeter intervals.",
-        "explanation": "False. Studs and reflectors may only supplement painted lines, never substitute for them, so a dashed line cannot be replaced by studs at any spacing. The 50-centimeter detail is invented. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "False. Studs and reflectors may only supplement painted lines, never substitute for them, so a dashed line cannot be replaced by studs at any spacing. The 50-centimeter detail is invented. Here *alcuni* means some; the singular *alcun* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Falso. I chiodi e i catadiottri possono solo integrare le strisce dipinte, mai sostituirle, quindi una striscia discontinua non può essere rimpiazzata da chiodi a nessun intervallo. Il dettaglio dei 50 centimetri è inventato."
       }
     ]
@@ -41472,7 +41472,7 @@
         "italian_text": "I contrassegni rappresentati in figura sono applicati sulla parte posteriore di alcune categorie di veicoli",
         "answer": "VERO",
         "english_translation": "The markings shown in the figure are applied to the rear of certain categories of vehicles.",
-        "explanation": "True. These discs go on the rear of vehicles bound by lower speed limits than the general ones: some buses, and heavy categories such as trucks over 3.5 t. They show the maximum speeds allowed for that particular vehicle. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. These discs go on the rear of vehicles bound by lower speed limits than the general ones: some buses, and heavy categories such as trucks over 3.5 t. They show the maximum speeds allowed for that particular vehicle. Here *alcune* means some; the singular *alcuna* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Questi dischi si applicano sulla parte posteriore dei veicoli soggetti a limiti di velocità inferiori a quelli generali: alcuni autobus e categorie pesanti come gli autocarri di massa superiore a 3,5 t. Indicano le velocità massime consentite a quel veicolo."
       },
       {
@@ -41488,7 +41488,7 @@
         "italian_text": "I contrassegni rappresentati in figura sono applicati ad alcuni autobus",
         "answer": "VERO",
         "english_translation": "The markings shown in the figure are applied to some buses.",
-        "explanation": "True. Some buses are among the vehicle categories bound by lower speed limits than the general ones, and the discs mark exactly those vehicles, showing their maximum permitted speeds. Heavy trucks over 3.5 t carry them too; trucks and motorhomes up to 3.5 t do not. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. Some buses are among the vehicle categories bound by lower speed limits than the general ones, and the discs mark exactly those vehicles, showing their maximum permitted speeds. Heavy trucks over 3.5 t carry them too; trucks and motorhomes up to 3.5 t do not. Here *alcuni* means some; the singular *alcun* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Alcuni autobus rientrano tra le categorie soggette a limiti di velocità inferiori a quelli generali, e i dischi contrassegnano proprio quei veicoli, indicandone le velocità massime consentite. Li portano anche gli autocarri pesanti oltre 3,5 t; autocarri e autocaravan fino a 3,5 t no."
       },
       {
@@ -41882,7 +41882,7 @@
         "italian_text": "Se si attraversa un incrocio con diritto di precedenza, non si ha alcun obbligo di rallentare",
         "answer": "FALSO",
         "english_translation": "If you cross an intersection with the right of way, you have no obligation to slow down.",
-        "explanation": "False. Even with the right of way, you must reduce speed at intersections to allow safe intervention in case of unforeseen events and to ensure traffic safety. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "False. Even with the right of way, you must reduce speed at intersections to allow safe intervention in case of unforeseen events and to ensure traffic safety. Here *alcun* means any; the plural *alcuni* means some. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Falso. Anche con il diritto di precedenza, devi ridurre la velocità agli incroci per consentire un intervento sicuro in caso di eventi imprevisti e per garantire la sicurezza del traffico."
       },
       {
@@ -42302,7 +42302,7 @@
         "italian_text": "Passare molto vicino ad un'auto parcheggiata, a bordo della quale si trovano ancora persone, è pericoloso solo se il conducente ed alcuni passeggeri sono già scesi",
         "answer": "FALSO",
         "english_translation": "Passing very close to a parked car with people still on board is dangerous only if the driver and some passengers have already gotten out.",
-        "explanation": "False. The trick is 'solo' (only). It is dangerous even if some occupants have already exited, because others still inside may open a door. Singular *alcun* means any; plural *alcuni* means some. Read the whole sentence: strike «solo se il conducente ed alcuni passeggeri sono già scesi» and what is left is true; the added words are what make the statement false.",
+        "explanation": "False. The trick is 'solo' (only). It is dangerous even if some occupants have already exited, because others still inside may open a door. Here *alcuni* means some; the singular *alcun* means any. Confusing the two changes the meaning of the statement. Read the whole sentence: strike «solo se il conducente ed alcuni passeggeri sono già scesi» and what is left is true; the added words are what make the statement false.",
         "explanation_it": "Falso. Il trucco è 'solo'. È pericoloso anche se alcuni occupanti sono già scesi, perché altri ancora a bordo possono aprire una portiera. Leggi tutta la frase: togli «solo se il conducente ed alcuni passeggeri sono già scesi» e ciò che resta è vero; sono le parole aggiunte a rendere falsa l'affermazione.",
         "clause": {
           "text": "solo se il conducente ed alcuni passeggeri sono già scesi",
@@ -45232,7 +45232,7 @@
         "italian_text": "Quando si vuole cambiare corsia, per immettersi nella corsia di destra, non occorre alcuna particolare attenzione",
         "answer": "FALSO",
         "english_translation": "When wishing to change lanes to move into the right lane no particular care is needed.",
-        "explanation": "False. Every lane change, toward the right included, requires the same care: signal in advance, check the lane is clear ahead and behind, and mind the blind spot. The right lane may hold slower vehicles and two-wheelers. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "False. Every lane change, toward the right included, requires the same care: signal in advance, check the lane is clear ahead and behind, and mind the blind spot. The right lane may hold slower vehicles and two-wheelers. Here *alcuna* means any; the plural *alcune* means some. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Falso. Ogni cambio di corsia, anche verso destra, richiede la stessa attenzione: segnalare in anticipo, verificare che la corsia sia libera davanti e dietro e controllare l'angolo cieco. Nella corsia di destra possono esserci veicoli più lenti e mezzi a due ruote."
       },
       {
@@ -55695,7 +55695,7 @@
         "italian_text": "La patente di categoria A2 non consente di condurre alcun tipo di triciclo a motore",
         "answer": "FALSO",
         "english_translation": "Category A2 license does not allow driving any type of motor tricycle.",
-        "explanation": "False. Non ... alcun tipo di means 'no type at all', so the statement claims that A2 covers no motor tricycle whatsoever. That is too strong. A2 includes everything A1 covers, and A1 covers motor tricycles up to 15 kW, so an A2 holder may drive those. What A2 does not cover is a tricycle over 15 kW, which needs license A and a driver of at least 21. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "False. Non ... alcun tipo di means 'no type at all', so the statement claims that A2 covers no motor tricycle whatsoever. That is too strong. A2 includes everything A1 covers, and A1 covers motor tricycles up to 15 kW, so an A2 holder may drive those. What A2 does not cover is a tricycle over 15 kW, which needs license A and a driver of at least 21. Here *alcun* means any; the plural *alcuni* means some. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Falso. Non ... alcun tipo di significa 'nessun tipo', quindi l'affermazione sostiene che la A2 non abilita a nessun triciclo a motore. È troppo. La A2 comprende tutto ciò che copre la A1, e la A1 copre i tricicli a motore fino a 15 kW, quindi il titolare della A2 può condurli. Ciò che la A2 non copre è il triciclo oltre 15 kW, che richiede la patente A e un conducente di almeno 21 anni."
       }
     ]
@@ -55853,7 +55853,7 @@
         "italian_text": "La patente di categoria B1 abilita a condurre alcuni tipi di quadricicli non leggeri",
         "answer": "VERO",
         "english_translation": "Category B1 license enables driving some types of non-light quadricycles.",
-        "explanation": "True. Non-light quadricycles are exactly B1's domain: it covers them up to 15 kW and 400 kg empty, and it includes nothing on two wheels. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. Non-light quadricycles are exactly B1's domain: it covers them up to 15 kW and 400 kg empty, and it includes nothing on two wheels. Here *alcuni* means some; the singular *alcun* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. I quadricicli non leggeri sono esattamente il dominio della B1: li copre fino a 15 kW e 400 kg a vuoto, e non include nulla a due ruote."
       },
       {
@@ -56613,7 +56613,7 @@
         "italian_text": "La sospensione della patente è una sanzione accessoria che deriva dalla violazione di alcuni articoli del codice della strada",
         "answer": "VERO",
         "english_translation": "Driving license suspension is an accessory sanction resulting from violation of certain articles of the road code.",
-        "explanation": "True. Suspension is an accessory sanction: it is added on top of the ordinary fine when specific road code articles are violated, the serious ones such as drink or drug driving, exceeding limits by over 40 km/h, or fleeing without aiding the injured. The four measures on a license, in the order in which one can lead to the next, are withdrawal, *ritiro* (the police take the license on the spot), suspension, *sospensione* (the Prefect bars you from driving for a set time), revision, *revisione* (you must prove again that you are fit and able to drive) and revocation, *revoca* (the license is cancelled, the gravest of the four). Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. Suspension is an accessory sanction: it is added on top of the ordinary fine when specific road code articles are violated, the serious ones such as drink or drug driving, exceeding limits by over 40 km/h, or fleeing without aiding the injured. The four measures on a license, in the order in which one can lead to the next, are withdrawal, *ritiro* (the police take the license on the spot), suspension, *sospensione* (the Prefect bars you from driving for a set time), revision, *revisione* (you must prove again that you are fit and able to drive) and revocation, *revoca* (the license is cancelled, the gravest of the four). Here *alcuni* means some; the singular *alcun* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. La sospensione è una sanzione accessoria: si aggiunge alla sanzione ordinaria quando si violano specifici articoli del codice della strada, quelli gravi come la guida in stato di ebbrezza o sotto droghe, il superamento dei limiti di oltre 40 km/h o la fuga senza soccorrere i feriti. I quattro provvedimenti sulla patente, nell'ordine in cui uno può portare al successivo, sono il ritiro (la polizia prende la patente sul posto), la sospensione (il Prefetto vieta di guidare per un periodo stabilito), la revisione (bisogna dimostrare di nuovo l'idoneità alla guida) e la revoca (la patente viene annullata, il più grave dei quattro)."
       },
       {
@@ -56925,7 +56925,7 @@
         "italian_text": "Il mancato rispetto di alcune norme relative alla manovra di sorpasso comporta una perdita di punti sulla patente",
         "answer": "VERO",
         "english_translation": "Failure to comply with certain rules relating to overtaking maneuvers results in loss of license points.",
-        "explanation": "True. Passing breaches are on the point-deduction list: the system targets moving violations that endanger safety, and improper overtaking is a classic one. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. Passing breaches are on the point-deduction list: the system targets moving violations that endanger safety, and improper overtaking is a classic one. Here *alcune* means some; the singular *alcuna* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Le infrazioni di sorpasso sono nella lista delle decurtazioni: il sistema colpisce le violazioni di guida che mettono in pericolo la sicurezza, e il sorpasso irregolare è un caso classico."
       },
       {
@@ -58402,7 +58402,7 @@
         "italian_text": "E' necessario che trascorrano alcune ore affinché un conducente che abbia assunto una quantità eccessiva di bevande alcoliche recuperi l'idoneità alla guida",
         "answer": "VERO",
         "english_translation": "It is necessary that several hours pass before a driver who has consumed an excessive amount of alcoholic beverages recovers fitness to drive.",
-        "explanation": "True. Nothing speeds up the elimination of alcohol, not coffee, salty food, or fresh air, so fitness to drive returns only after several hours. It takes even longer if medicines were also taken. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. Nothing speeds up the elimination of alcohol, not coffee, salty food, or fresh air, so fitness to drive returns only after several hours. It takes even longer if medicines were also taken. Here *alcune* means some; the singular *alcuna* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Nulla accelera lo smaltimento dell'alcol, né caffè, né cibi salati, né aria fresca, quindi l'idoneità alla guida torna solo dopo diverse ore. Ci vuole ancora più tempo se sono stati assunti anche farmaci."
       },
       {
@@ -58441,7 +58441,7 @@
         "italian_text": "L'idoneità alla guida può essere compromessa se si fa uso di alcuni farmaci sedativi",
         "answer": "VERO",
         "english_translation": "Fitness to drive can be compromised by the use of some sedative medications.",
-        "explanation": "True. Some sedatives contain substances that act on the nervous system, so they can dull attention and reflexes just when driving needs them. Read the leaflet, and never combine such medicines with alcohol. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. Some sedatives contain substances that act on the nervous system, so they can dull attention and reflexes just when driving needs them. Read the leaflet, and never combine such medicines with alcohol. Here *alcuni* means some; the singular *alcun* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Alcuni sedativi contengono sostanze che agiscono sul sistema nervoso, quindi possono ridurre attenzione e riflessi proprio quando la guida li richiede. Leggi il foglietto illustrativo e non combinare mai questi farmaci con l'alcol."
       },
       {
@@ -58528,7 +58528,7 @@
         "italian_text": "Nei farmaci sedativi sono presenti alcune sostanze che possono compromettere la facoltà di guida",
         "answer": "VERO",
         "english_translation": "Sedative medications contain some substances that can compromise driving ability.",
-        "explanation": "True. Sedatives are legal medicines, yet they contain substances that act on the nervous system and can compromise driving. That is why the leaflet must be read and why they must never be combined with alcohol. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. Sedatives are legal medicines, yet they contain substances that act on the nervous system and can compromise driving. That is why the leaflet must be read and why they must never be combined with alcohol. Here *alcune* means some; the singular *alcuna* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. I sedativi sono farmaci legali, eppure contengono sostanze che agiscono sul sistema nervoso e possono compromettere la guida. Per questo va letto il foglietto illustrativo e per questo non vanno mai combinati con l'alcol."
       },
       {
@@ -58614,7 +58614,7 @@
         "italian_text": "Chi guida un veicolo senza motore, con una concentrazione di alcool nel sangue superiore al limite stabilito, non è soggetto ad alcuna sanzione",
         "answer": "FALSO",
         "english_translation": "Those who drive a vehicle without a motor with a blood alcohol concentration above the established limit are not subject to any penalty.",
-        "explanation": "False. The alcohol limit applies to whoever drives a vehicle, including non-motorized ones such as bicycles. Riding a bike over the limit is therefore punishable too. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "False. The alcohol limit applies to whoever drives a vehicle, including non-motorized ones such as bicycles. Riding a bike over the limit is therefore punishable too. Here *alcuna* means any; the plural *alcune* means some. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Falso. Il limite alcolemico si applica a chiunque conduca un veicolo, compresi quelli non a motore come le biciclette. Anche andare in bicicletta oltre il limite è quindi punibile."
       },
       {
@@ -62102,7 +62102,7 @@
         "italian_text": "La pressione di gonfiaggio degli pneumatici va controllata dopo aver percorso alcuni chilometri, appena la gomma si è surriscaldata",
         "answer": "FALSO",
         "english_translation": "Tire pressure should be checked after traveling some kilometers, once the tire has heated up.",
-        "explanation": "False. Kilometers of driving heat the tire, and the warmed air inside reads higher, so a hot check hides underinflation. Pressure is checked with the tire cold, spare wheel included. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "False. Kilometers of driving heat the tire, and the warmed air inside reads higher, so a hot check hides underinflation. Pressure is checked with the tire cold, spare wheel included. Here *alcuni* means some; the singular *alcun* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Falso. I chilometri di marcia scaldano il pneumatico, e l'aria riscaldata all'interno dà una lettura più alta, quindi un controllo a caldo nasconde il gonfiaggio insufficiente. La pressione si controlla a pneumatico freddo, ruota di scorta compresa."
       },
       {
@@ -62149,7 +62149,7 @@
         "italian_text": "E' consigliabile sostituire gli pneumatici dopo alcuni anni, anche se non sono consumati",
         "answer": "VERO",
         "english_translation": "It is advisable to replace tires after a few years, even if not worn.",
-        "explanation": "True. Rubber ages even when the vehicle barely moves: it hardens and loses grip with time, so a tire can be due for replacement before its tread reaches the legal minimum. Age and wear are two independent reasons to change tires. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. Rubber ages even when the vehicle barely moves: it hardens and loses grip with time, so a tire can be due for replacement before its tread reaches the legal minimum. Age and wear are two independent reasons to change tires. Here *alcuni* means some; the singular *alcun* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. La gomma invecchia anche se il veicolo si muove poco: con il tempo indurisce e perde aderenza, quindi un pneumatico può essere da sostituire prima che il battistrada raggiunga il minimo di legge. Età e usura sono due ragioni indipendenti per cambiare le gomme."
       },
       {
@@ -62552,7 +62552,7 @@
         "italian_text": "I sistemi di navigazione satellitare presenti su alcuni veicoli devono essere programmati mentre il veicolo è in movimento",
         "answer": "FALSO",
         "english_translation": "Satellite navigation systems present in some vehicles must be programmed while the vehicle is moving.",
-        "explanation": "False. Programming the navigator takes eyes and attention away from the road, so the route is set before moving off; while driving, the device may only guide, not be programmed. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "False. Programming the navigator takes eyes and attention away from the road, so the route is set before moving off; while driving, the device may only guide, not be programmed. Here *alcuni* means some; the singular *alcun* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Falso. Programmare il navigatore toglie occhi e attenzione alla strada, quindi il percorso si imposta prima di partire; durante la guida il dispositivo può solo guidare, non essere programmato."
       },
       {
@@ -63650,7 +63650,7 @@
         "italian_text": "La manomissione dell'impianto di scarico non comporta alcuna sanzione, purché si circoli solo nei centri urbani",
         "answer": "FALSO",
         "english_translation": "Tampering with the exhaust system does not result in any penalty, provided you drive only in town.",
-        "explanation": "False. Tampering with the exhaust system is punishable wherever the vehicle is driven, in town and outside it alike. The muffler is what holds the exhaust noise down, and the system also reduces the toxicity of the gases, so a tampered exhaust pollutes and makes noise most of all where people live. A vehicle is driven only with a working, approved exhaust. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "False. Tampering with the exhaust system is punishable wherever the vehicle is driven, in town and outside it alike. The muffler is what holds the exhaust noise down, and the system also reduces the toxicity of the gases, so a tampered exhaust pollutes and makes noise most of all where people live. A vehicle is driven only with a working, approved exhaust. Here *alcuna* means any; the plural *alcune* means some. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Falso. La manomissione dell'impianto di scarico è sanzionata ovunque il veicolo circoli, in città come fuori. Il silenziatore è ciò che contiene il rumore dello scarico, e l'impianto riduce anche la tossicità dei gas, quindi uno scarico manomesso inquina e fa rumore soprattutto dove vive la gente. Un veicolo circola solo con uno scarico funzionante e omologato."
       }
     ]
@@ -63919,7 +63919,7 @@
         "italian_text": "In alcuni motori di motocicli, il livello dell'olio motore può essere controllato da un'apposita finestrella posta sulla coppa motore",
         "answer": "VERO",
         "english_translation": "In some motorcycle engines, the engine oil level can be checked through a small window located on the engine sump.",
-        "explanation": "True. The sump is the pan at the bottom of the engine where the oil collects, the *coppa*. On some motorcycles it carries a small glass window, and the oil level is read against marks beside it, with no dipstick to pull. The reading is taken with the motorcycle upright on its wheels, on level ground, a few minutes after the engine has been switched off. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. The sump is the pan at the bottom of the engine where the oil collects, the *coppa*. On some motorcycles it carries a small glass window, and the oil level is read against marks beside it, with no dipstick to pull. The reading is taken with the motorcycle upright on its wheels, on level ground, a few minutes after the engine has been switched off. Here *alcuni* means some; the singular *alcun* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. La coppa è la vaschetta alla base del motore in cui si raccoglie l'olio. Su alcuni motocicli porta una piccola finestrella di vetro, e il livello dell'olio si legge rispetto ai segni accanto a essa, senza alcuna asticella da estrarre. La lettura si fa con la moto in verticale sulle ruote, in piano, alcuni minuti dopo aver spento il motore."
       },
       {
@@ -63927,7 +63927,7 @@
         "italian_text": "Sui motocicli, il livello del lubrificante va controllato con il veicolo in piano e dopo aver spento il motore da alcuni minuti",
         "answer": "VERO",
         "english_translation": "On motorcycles, the level of lubricant must be checked with the vehicle on level ground and after the engine has been off for a few minutes.",
-        "explanation": "True. A few minutes with the engine off let the oil settle back down so the level reads true, and level ground avoids the false reading a tilted machine would give; checking while running or on the stand distorts the measurement. Singular *alcun* means any; plural *alcuni* means some.",
+        "explanation": "True. A few minutes with the engine off let the oil settle back down so the level reads true, and level ground avoids the false reading a tilted machine would give; checking while running or on the stand distorts the measurement. Here *alcuni* means some; the singular *alcun* means any. Confusing the two changes the meaning of the statement.",
         "explanation_it": "Vero. Qualche minuto a motore spento lascia all'olio il tempo di ridepositarsi così che il livello sia veritiero, e il piano evita la lettura falsata che darebbe una moto inclinata; controllare col motore acceso o sul cavalletto altera la misura."
       },
       {
