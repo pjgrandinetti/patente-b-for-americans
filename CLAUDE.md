@@ -5440,6 +5440,20 @@ to areas open to the public, and the two Reference rows whose only source was
   are not included. A "Tap to enlarge" tooltip marks the figures.
   `check_speed_remember.js` covers open, Esc and tap to close; measured in
   Chromium at 390 px (image 680 px, pans) and 1280 px (1100 px).
+  **It zooms by its own gestures since 20261028p** (maintainer's iPhone
+  screenshot: it opened larger than the screen, he had to slide it around,
+  and could not pinch it smaller). The figure now opens FITTED to the
+  screen, and the overlay (`touch-action: none`) handles pointer events
+  itself: pinch or the wheel zooms between 1x and `FIG_MAX_ZOOM` (4x)
+  around the fingers, a drag pans a zoomed figure (clamped to its edges),
+  a double tap toggles 2.5x at that point, and a single tap on the backdrop
+  closes after the double-tap window. Safari's `gesturestart` is cancelled
+  so the page beneath does not zoom. A hint line says "Pinch or double-tap
+  to zoom". Do not rely on the browser's page zoom for a fixed overlay; an
+  installed iOS app does not give it. Measured in Chromium with CDP touch
+  events at 390 px: fitted 366 px wide, pinch out to 2.8x, pinch back to
+  1x, double tap 2.5x and back, backdrop tap closes with the notes still
+  open.
   **An emergency halt is never parking (20261023m, maintainer, 2026-10-23).**
   Topic 21's emergency-lane bullet, 20955 and 23903 now say the three hours
   are the ceiling of a *sosta di emergenza*, not an allowance, as topic 07's

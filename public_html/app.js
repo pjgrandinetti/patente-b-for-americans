@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261028o';
+const APP_VERSION     = '20261028p';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -337,6 +337,7 @@ const STATIC_IT = {
 const T = {
   'viewer.close': { en: 'Close', it: 'Chiudi' },
   'viewer.open': { en: 'Tap to enlarge', it: 'Tocca per ingrandire' },
+  'viewer.hint': { en: 'Pinch or double-tap to zoom', it: 'Avvicina due dita o tocca due volte per ingrandire' },
   'lvl.1.name': { en: 'English',          it: 'Inglese' },
   'lvl.2.name': { en: 'Italian + hints',  it: 'Italiano + aiuti' },
   'lvl.3.name': { en: 'Italian only',     it: 'Solo italiano' },
@@ -2703,27 +2704,110 @@ document.addEventListener('keydown', e => {
 // The full-screen figure viewer (20261028o, maintainer, 2026-10-28: the
 // speed grid's labels are small on a phone). A tap on a concept figure
 // (review_media/, in the notes or the Reference box) opens it over the whole
-// screen at no less than 680 px wide, so on a phone it is larger than the
-// screen and pans; on a desktop it fills the window up to 1100 px. Any tap,
-// the ✕ or Esc closes it. The sign drawings keep their own tap behavior.
+// screen, fitted to the screen. It zooms by its own gestures, since a fixed
+// overlay cannot rely on the browser's page zoom (20261028p, maintainer: on an
+// iPhone it opened larger than the screen and could not be pinched smaller):
+// pinch or the wheel zooms between the fitted size and four times it,
+// a drag pans a zoomed figure, a double tap toggles 2.5x at that point. The
+// ✕, a tap on the dark backdrop or Esc closes it. Sign drawings are excluded.
 const FIG_ZOOM_SEL = '.review-fig-img[src^="review_media/"], .ref-remember-fig';
+const FIG_MAX_ZOOM = 4;
+const _fv = { s: 1, tx: 0, ty: 0, pts: new Map(), pinch: null, lastTap: 0, moved: false };
+function figViewerApply() {
+  const v = document.getElementById('fig-viewer'); if (!v) return;
+  const img = v.querySelector('img'), w = img.offsetWidth * _fv.s, h = img.offsetHeight * _fv.s;
+  const mx = Math.max(0, (w - v.clientWidth) / 2), my = Math.max(0, (h - v.clientHeight) / 2);
+  _fv.tx = Math.min(mx, Math.max(-mx, _fv.tx)); _fv.ty = Math.min(my, Math.max(-my, _fv.ty));
+  img.style.transform = `translate(${_fv.tx}px, ${_fv.ty}px) scale(${_fv.s})`;
+}
+// Zoom to `s` keeping the screen point (cx, cy), measured from the screen's
+// center, fixed under the finger.
+function figViewerZoom(s, cx, cy) {
+  const s2 = Math.min(FIG_MAX_ZOOM, Math.max(1, s));
+  _fv.tx = cx - (cx - _fv.tx) * (s2 / _fv.s); _fv.ty = cy - (cy - _fv.ty) * (s2 / _fv.s);
+  _fv.s = s2; figViewerApply();
+}
+function figViewerFit() {
+  const v = document.getElementById('fig-viewer'); if (!v) return;
+  const img = v.querySelector('img');
+  const r = (img.naturalWidth && img.naturalHeight) ? img.naturalWidth / img.naturalHeight : 4 / 3;
+  const W = Math.min(v.clientWidth - 24, 1100), H = v.clientHeight - 130;
+  const w = Math.max(100, Math.min(W, H * r));
+  img.style.width = w + 'px'; img.style.height = (w / r) + 'px';
+  figViewerApply();
+}
 function openFigureViewer(img) {
   let v = document.getElementById('fig-viewer');
   if (!v) {
     v = document.createElement('div');
     v.id = 'fig-viewer'; v.className = 'hidden';
     v.setAttribute('role', 'dialog'); v.setAttribute('aria-modal', 'true');
-    v.innerHTML = '<button type="button" class="fig-viewer-close"></button><div class="fig-viewer-scroll"><img alt=""></div>';
-    v.addEventListener('click', closeFigureViewer);
+    v.innerHTML = '<button type="button" class="fig-viewer-close"></button><img alt=""><p class="fig-viewer-hint"></p>';
     document.body.appendChild(v);
+    const big = v.querySelector('img');
+    big.addEventListener('load', figViewerFit);
+    v.querySelector('.fig-viewer-close').addEventListener('click', e => { e.stopPropagation(); closeFigureViewer(); });
+    const center = e => { const b = v.getBoundingClientRect(); return [e.clientX - b.left - b.width / 2, e.clientY - b.top - b.height / 2]; };
+    v.addEventListener('pointerdown', e => {
+      if (e.target.closest('.fig-viewer-close')) return;
+      v.setPointerCapture?.(e.pointerId);
+      _fv.pts.set(e.pointerId, { x: e.clientX, y: e.clientY, x0: e.clientX, y0: e.clientY });
+      _fv.moved = false;
+      if (_fv.pts.size === 2) {
+        const [a, b] = [..._fv.pts.values()];
+        _fv.pinch = { d: Math.hypot(a.x - b.x, a.y - b.y) || 1, s: _fv.s };
+      }
+    });
+    v.addEventListener('pointermove', e => {
+      const p = _fv.pts.get(e.pointerId); if (!p) return;
+      const dx = e.clientX - p.x, dy = e.clientY - p.y;
+      p.x = e.clientX; p.y = e.clientY;
+      if (Math.hypot(p.x - p.x0, p.y - p.y0) > 6) _fv.moved = true;
+      if (_fv.pts.size >= 2 && _fv.pinch) {
+        const [a, b] = [..._fv.pts.values()];
+        const [cx, cy] = center({ clientX: (a.x + b.x) / 2, clientY: (a.y + b.y) / 2 });
+        figViewerZoom(_fv.pinch.s * Math.hypot(a.x - b.x, a.y - b.y) / _fv.pinch.d, cx, cy);
+      } else if (_fv.s > 1) { _fv.tx += dx; _fv.ty += dy; figViewerApply(); }
+    });
+    const up = e => {
+      if (!_fv.pts.has(e.pointerId)) return;
+      const wasPinch = _fv.pts.size >= 2 || _fv.pinch;
+      _fv.pts.delete(e.pointerId);
+      if (_fv.pts.size < 2) _fv.pinch = null;
+      if (wasPinch || _fv.moved || e.type === 'pointercancel') return;
+      const now = Date.now();
+      if (now - _fv.lastTap < 300) {            // a double tap toggles the zoom
+        _fv.lastTap = 0;
+        const [cx, cy] = center(e);
+        if (_fv.s > 1) { _fv.s = 1; _fv.tx = 0; _fv.ty = 0; figViewerApply(); } else figViewerZoom(2.5, cx, cy);
+        return;
+      }
+      _fv.lastTap = now;
+      // A single tap on the backdrop, off the figure, closes the viewer.
+      if (!e.target.closest('img')) setTimeout(() => { if (_fv.lastTap === now) closeFigureViewer(); }, 300);
+    };
+    v.addEventListener('pointerup', up); v.addEventListener('pointercancel', up);
+    v.addEventListener('wheel', e => {
+      e.preventDefault();
+      const [cx, cy] = center(e);
+      figViewerZoom(_fv.s * Math.exp(-e.deltaY / 300), cx, cy);
+    }, { passive: false });
+    // Safari's own pinch gesture would zoom the page under the overlay.
+    ['gesturestart', 'gesturechange'].forEach(ev => v.addEventListener(ev, e => e.preventDefault()));
+    window.addEventListener('resize', () => { if (!v.classList.contains('hidden')) figViewerFit(); });
   }
   const close = v.querySelector('.fig-viewer-close');
   close.textContent = '\u2715'; close.setAttribute('aria-label', t('viewer.close'));
+  v.querySelector('.fig-viewer-hint').textContent = t('viewer.hint');
+  Object.assign(_fv, { s: 1, tx: 0, ty: 0, lastTap: 0 }); _fv.pts.clear(); _fv.pinch = null;
   const big = v.querySelector('img');
-  big.src = img.getAttribute('src'); big.alt = img.alt || '';
+  big.style.transform = '';
+  big.alt = img.alt || '';
   v.setAttribute('aria-label', img.alt || '');
-  v.classList.remove('hidden'); v.scrollTop = 0; v.scrollLeft = 0;
+  v.classList.remove('hidden');
   document.body.classList.add('fig-viewing');
+  if (big.getAttribute('src') !== img.getAttribute('src')) big.src = img.getAttribute('src');
+  else figViewerFit();
   close.focus({ preventScroll: true });
 }
 function closeFigureViewer() {

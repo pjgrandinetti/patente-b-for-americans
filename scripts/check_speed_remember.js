@@ -35,7 +35,8 @@ setTimeout(()=>{
   ok(v && !v.classList.contains('hidden') && v.querySelector('img').getAttribute('src')===fig.getAttribute('src') && w.document.body.classList.contains('fig-viewing'),'a tap opens the figure full screen');
   w.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
   ok(v.classList.contains('hidden') && !w.document.body.classList.contains('fig-viewing') && !$('screen-vocab').classList.contains('hidden'),'Esc closes it and the Reference page stays');
-  fig.click(); v.click(); ok(v.classList.contains('hidden'),'a tap on the viewer closes it');
+  fig.click(); v.querySelector('.fig-viewer-close').click(); ok(v.classList.contains('hidden'),'the close button closes it');
+  fig.click(); ok(/(Pinch|Avvicina)/.test(v.querySelector('.fig-viewer-hint').textContent),'it says how to zoom: '+v.querySelector('.fig-viewer-hint').textContent); w.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
   const ref=JSON.parse(fs.readFileSync(root+'/reference.json','utf8'));
   const speeds=new Set(ref.numbers.filter(n=>n.cat==='speed'||n.cat==='speedveh').map(n=>(String(n.value).match(/\d+/)||[])[0]));
   const named=new Set((r[0].textContent.match(/\b\d+\b/g)||[]).filter(x=>!['3','10','20'].includes(x)));
