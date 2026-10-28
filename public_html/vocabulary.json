@@ -3355,7 +3355,8 @@
   },
   {
    "term": "alcuni",
-   "en": "some",
+   "en": "some (plural, not any)",
+   "always": true,
    "note": null,
    "f": 16
   },
@@ -9323,6 +9324,7 @@
   {
    "term": "alcun",
    "en": "any (after non or senza: no ... at all)",
+   "always": true,
    "f": 3
   },
   {
@@ -16492,6 +16494,7 @@
   {
    "term": "dare la precedenza ad alcun veicolo",
    "en": "to yield to any vehicle (used with 'non': to no vehicle at all) (literally: dare la precedenza = to give precedence)",
+   "always": true,
    "f": 10
   },
   {
@@ -19469,7 +19472,8 @@
   },
   {
    "term": "alcun veicolo",
-   "en": "any vehicle (at all)",
+   "en": "any vehicle (after non: no vehicle at all)",
+   "always": true,
    "f": 1
   },
   {
@@ -21655,6 +21659,7 @@
   {
    "term": "senza alcun limite",
    "en": "without any limit",
+   "always": true,
    "f": 1
   },
   {
@@ -33673,12 +33678,14 @@
   {
    "term": "alcuna",
    "en": "any (in a negative: no, none at all)",
+   "always": true,
    "note": null,
    "f": 3
   },
   {
    "term": "alcune",
-   "en": "some (feminine plural)",
+   "en": "some (feminine plural, not any)",
+   "always": true,
    "note": null,
    "f": 10
   },
@@ -33925,6 +33932,7 @@
   {
    "term": "alcuni dati",
    "en": "some details (data)",
+   "always": true,
    "note": null,
    "f": 1
   },
@@ -34856,6 +34864,7 @@
   {
    "term": "alcun tipo di",
    "en": "any type of (after non: no type at all)",
+   "always": true,
    "note": null,
    "gram": null,
    "f": 1

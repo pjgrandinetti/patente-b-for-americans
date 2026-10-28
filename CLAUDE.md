@@ -5407,7 +5407,15 @@ to areas open to the public, and the two Reference rows whose only source was
   *alcuni* or *alcune* carry "The plural *alcuni* means some. Only the
   singular *alcun*, after *non*, means any." (20261028y, maintainer: not
   verbose, and for American learners; the Italian halves carry nothing,
-  since a native reader needs no note on it), the
+  since a native reader needs no note on it), and "Words in this question" now lists
+  every alcun entry even unlooked-up and common: a vocabulary entry may
+  carry `"always": true` (20261028z, maintainer: *alcuni* was missing under
+  a statement that turns on it). The nine entries built on alcun carry it,
+  including the phrases *dare la precedenza ad alcun veicolo* and *senza
+  alcun limite*, which the highlighter matches in place of the single word;
+  the plural glosses read "some (plural, not any)". `validate_data.py`
+  fails an alcun entry without the flag (proved by sabotage);
+  `scripts/check_always_words.js`, 3 checks, the
   `parse` grammar point "Two negative words, one negation" gained *non ...
   alcun*, and the vocabulary gloss of *alcun* says so. 23344: *impegnare
   l'incrocio* is entering, not getting through; its explanation says so,

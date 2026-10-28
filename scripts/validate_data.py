@@ -842,6 +842,14 @@ if isinstance(questions_all, list):
 # `f` (statements the entry fires in) is stamped by consolidate_vocab.py
 # --apply, and the Vocabulary screen sorts and bands by it. A hand-added entry
 # ships with f = 0 until that script runs, and then sorts to the bottom under
+# "Words in this question" lists an entry marked `always` even when it is
+# common and never looked up (20261028z). Every entry built on alcun, alcuna,
+# alcuni or alcune must carry it, since mixing the plural (some) with the
+# singular after a negative (any) flips a statement's meaning.
+for _e in vocab.get("common", []):
+    if re.search(r"\balcun[aie]?\b", _e.get("term", "")) and _e.get("always") is not True:
+        err(f"vocabulary {_e['term']!r}: an alcun entry must carry \"always\": true")
+
 # a frequency of 0 that is plainly false (2026-09-11: five phrases added for a
 # flag went out that way). An entry the script keeps always fires at least
 # once, since it drops the ones that never do, so 0 can only mean unstamped.
