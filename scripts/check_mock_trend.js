@@ -111,10 +111,22 @@ setTimeout(()=>{
   { const good=[1,0,1,1,0,2,1,0,1,1,0,1,1,0,1]; set(good.map((x,i)=>sheet(i,x,x,540)));
     const r=w.mockTrendData()[14]; ok(w.mockRecentForm(15,15).chance>=0.95 && 30-r.next.hi>=26.5 && /(whole band is above|Tutta la fascia)/.test($('exam-trend').querySelector('.trend-band-note').textContent) && !$('exam-trend').querySelector('.trend-verdict'),'at the banner\'s bar the whole band clears the pass line, and the note says so'); }
   { const band=()=>(($('exam-trend').querySelector('.trend-swatch.is-band')||{}).parentElement||{}).textContent||'';
+    const num=x=>Number(String(x).replace(',','.'));
+    const parse=()=>{ const m=band().match(/(\d+(?:[.,]\d+)?) (?:chances in 100|probabilità su 100): (\d+)–(\d+)$/); return m&&{pct:num(m[1]),lo:+m[2],hi:+m[3]}; };
+    // the share of a whole-score range, straight from the t, as a check on the app's arithmetic
+    const shareOf=(nx,lo,hi)=>{ const at=x=>w.studentT((x-(30-nx.mean))/nx.se,nx.df); return (hi>=30?1:at(hi+0.5))-at(lo-0.5); };
+    // (1) A learner at the bar whose range is 27 to 30: the share is the chance of passing, and the two figures add to 100.
+    set([1,1,1,2,1,1,1,1,2,1,1,1,1,1,1].map((x,i)=>sheet(i,x,x,540)));
+    let b=parse(), f=w.mockRecentForm();
+    ok(b && b.lo===27 && b.hi===30 && Math.abs(b.pct+num(w.failPctText(f.chance))-100)<1e-9,'27 to 30 quotes the chance of passing, adding to 100 with the chance of failing ('+w.failPctText(f.chance)+'%): '+band());
+    // (2) A range ending at 30 from a higher score: its share comes from the same t.
     set([1,0,1,1,0,2,1,0,1,1,0,1,1,0,1].map((x,i)=>sheet(i,x,x,540)));
-    ok(30-w.mockTrendData()[14].next.lo>30 && /(95 chances in 100|95 probabilità su 100)/.test(band()) && new RegExp(': '+Math.round(30-w.mockTrendData()[14].next.hi)+'–30$').test(band()),'a band reaching 30 holds 95 chances in 100: '+band());
+    b=parse(); let nx=w.mockTrendData()[14].next;
+    ok(b && b.hi===30 && b.lo===Math.round(30-nx.hi) && Math.abs(b.pct-(100-num(w.failPctText(shareOf(nx,b.lo,30)))))<1e-9,'a range ending at 30 quotes its own chance: '+band());
+    // (3) A range ending below 30: both edges priced.
     set([5,6,4,5,6,5,4,5,6,5].map((x,i)=>sheet(i,x,x,540)));
-    ok(30-w.mockTrendData()[9].next.lo<30 && /(90 chances in 100|90 probabilità su 100): 21–29$/.test(band()),'a band ending below 30 holds 90 chances in 100: '+band()); }
+    b=parse(); nx=w.mockTrendData()[9].next;
+    ok(b && b.hi<30 && Math.abs(b.pct-(100-num(w.failPctText(shareOf(nx,b.lo,b.hi)))))<1e-9 && b.pct>85 && b.pct<97,'a range ending below 30 quotes its own chance, near the band\'s 90: '+band()); }
   set([1,0,2].map((x,i)=>sheet(i,x,x,540))); ok($('exam-trend').classList.contains('hidden'),'three mocks: no trend box');
   set([1,0,2,1].map((x,i)=>sheet(i,x,x,540))); ok(!$('exam-trend').classList.contains('hidden'),'four mocks: the box appears');
   console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);

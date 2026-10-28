@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261028d';
+const APP_VERSION     = '20261028e';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -454,8 +454,7 @@ const T = {
   'trend.tipN': { en: 'Mock exam {0}', it: 'Simulazione {0}' },
   'trend.tipWrong': { en: 'Correct: {0}', it: 'Esatte: {0}' },
   'trend.tipAvg': { en: 'Average: {0}', it: 'Media: {0}' },
-  'trend.avgRange': { en: 'Where your next score should fall, 90 chances in 100', it: 'Dove dovrebbe cadere il prossimo punteggio, 90 probabilit\u00e0 su 100' },
-  'trend.avgRange30': { en: 'Where your next score should fall, 95 chances in 100', it: 'Dove dovrebbe cadere il prossimo punteggio, 95 probabilit\u00e0 su 100' },
+  'trend.avgRange': { en: 'Where your next score should fall, {0} chances in 100', it: 'Dove dovrebbe cadere il prossimo punteggio, {0} probabilit\u00e0 su 100' },
   'trend.tipNext': { en: 'Next score: {0} to {1}', it: 'Prossimo punteggio: da {0} a {1}' },
   'trend.tipOpen': { en: 'Tap or click to see this exam below.', it: 'Tocca o fai clic per vedere questa simulazione qui sotto.' },
   'trend.bandShort': { en: 'You are ready when the whole band is above the pass line. Its lower edge is at {0}.', it: 'Sei pronto quando tutta la fascia \u00e8 sopra la soglia. Il suo bordo inferiore \u00e8 a {0}.' },
@@ -4101,8 +4100,9 @@ function tQuantile(p, df) {
 const NEXT_RANGE_P = 0.90;
 function nextRange(mean, s, n, prob = NEXT_RANGE_P) {
   if (!(n > 2)) return null;
-  const h = tQuantile(1 - (1 - prob) / 2, n - 1) * s * Math.sqrt(1 + 1 / n);
-  return { lo: mean - h, hi: mean + h };
+  const se = s * Math.sqrt(1 + 1 / n);
+  const h = tQuantile(1 - (1 - prob) / 2, n - 1) * se;
+  return { lo: mean - h, hi: mean + h, mean, se, df: n - 1 };
 }
 // P(T ≤ t) for Student's t on `df` degrees of freedom. Agrees with mpmath
 // and scipy to twelve decimal places (scripts/check_special_functions.js).
@@ -10638,24 +10638,34 @@ function drawMockTrend() {
     lines: [{ cls: 'is-main', end: true, pts: shown.map(r => ({ x: r.i, y: Q - r.mean })) }],
   };
   const edge = last.next ? Q - last.next.hi : null;
-  // The band is mean ± h, one chance in 20 beyond each edge. When its upper
-  // edge passes 30 the chart stops it at 30, and the chance that lay above
-  // the edge, on scores that cannot happen, falls inside: the range shown
-  // then holds 95 chances in 100, not 90 (20261028c, maintainer).
   // The legend and the tooltip give the range in WHOLE scores (20261028d,
   // maintainer: "26.8 to 30" read as though 26.8 were a score, and 26 fails).
-  // Each edge is rounded to the nearest score, the continuity correction the
-  // prediction itself uses: score k stands for 26.5 to 27.5 on the band's
-  // scale, so a lower edge at or above 26.5 shows as 27, which is exactly the
-  // banner's test. A range shown ending at 30 holds everything above its
-  // lower score, so 95 chances in 100 at least.
-  const scoreRange = nx => ({ lo: Math.round(Q - nx.hi), hi: Math.min(Q, Math.round(Q - nx.lo)) });
+  // Each edge of the band is rounded to the nearest score, the continuity
+  // correction the prediction itself uses: score k stands for k - 0.5 to
+  // k + 0.5 on the band's scale, so a lower edge at or above 26.5 shows as
+  // 27, which is exactly the banner's test.
+  // The chance quoted is the chance of THAT range of whole scores, from the
+  // same t, never the band's nominal 90 (20261028e, maintainer: "27 to 30,
+  // 95 chances in 100" beside "3.1% chance of failing" did not add up). A
+  // range ending at 30 has nothing above it, since no higher score exists,
+  // so a range of 27 to 30 holds exactly the chance of passing and reads
+  // 96.9 beside a 3.1% chance of failing.
+  const scoreRange = nx => {
+    const lo = Math.round(Q - nx.hi), hi = Math.min(Q, Math.round(Q - nx.lo));
+    const at = x => studentT((x - (Q - nx.mean)) / nx.se, nx.df);
+    const share = (hi >= Q ? 1 : at(hi + 0.5)) - at(lo - 0.5);
+    // Its complement is rounded the way the chance of failing is shown, so
+    // the two always add to 100 on screen.
+    const comp = Number(failPctText(share).replace(',', '.'));
+    const dp = comp === 0 ? 0 : comp < 1 ? 2 : comp < 10 ? 1 : 0;
+    const pct = (100 - comp).toLocaleString(uiLang() === 'it' ? 'it-IT' : 'en-US', { minimumFractionDigits: dp, maximumFractionDigits: dp });
+    return { lo, hi, pct };
+  };
   const shownNext = last.next ? scoreRange(last.next) : null;
-  const atTop = shownNext && shownNext.hi === Q;
   body.innerHTML =
     `<div class="trend-chart" data-chart="wrong"><p class="guess-head">${escHtml(c1.title)}</p>` +
       `<div class="trend-legend">${key('is-dot is-pass', t('trend.dotPass'))}${key('is-dot is-edge', t('trend.dotEdge', Q - EXAM_MAX_WRONG))}${key('is-dot is-fail', t('trend.dotFail'))}${key('is-main', t('trend.avg', win) + ': ' + f1(Q - last.mean))}` +
-        `${last.next ? key('is-band', t(atTop ? 'trend.avgRange30' : 'trend.avgRange') + ': ' + shownNext.lo + '\u2013' + shownNext.hi) : ''}` +
+        `${last.next ? key('is-band', t('trend.avgRange', shownNext.pct) + ': ' + shownNext.lo + '\u2013' + shownNext.hi) : ''}` +
         `${key('is-level', t('trend.pass', passMark))}</div>` +
       `<div class="trend-plot">${trendChartSvg(W, c1)}<div class="trend-tip hidden"></div></div>` +
       (edge != null ? `<p class="weak-note trend-band-note">${escHtml(edge >= passMark - 0.5 ? t('trend.bandReady') : t('trend.bandShort', f1(edge)))}</p>` : '') +
