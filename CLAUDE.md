@@ -3901,14 +3901,16 @@ behind what shipped:
   `_kmRead`, kept for the session, the list opening on Answer them). Read
   mode draws each row flat (`.km-row.km-read`): the figure, the Italian,
   the English for a non-Italian browser, the answer as a VERO or FALSO
-  chip, the explanation in Italian and, for a non-Italian browser, in
-  English (20261029q, maintainer: it had been left out), folded under
-  "Why?" (`details.km-why`, closed, 20261029r), and the 📖; no
+  chip, the explanation (20261029q, maintainer: it had been left out),
+  folded under "Why?" (`details.km-why`, closed, 20261029r), and the 📖.
+  The explanation is the English one for a non-Italian browser, with the
+  Italian behind an IT pill (`.rb-it`, 20261029s, maintainer), and the
+  Italian one for an Italian browser. No
   V/F to press and nothing recorded. This is the list
   with answers in front that 20260930l reverted as a list to memorize, now
   asked for by the maintainer as an OPTION for the last days, behind the
   practice mode that stays the default.
-  `scripts/check_keep_missing.js`, 45 checks in the English face, 39 in the
+  `scripts/check_keep_missing.js`, 47 checks in the English face, 40 in the
   Italian.
 - **A mock exam is a full simulation of the exam room (20261006o,
   maintainer, 2026-10-01).** Start a mock exam opens the sheet BLANK

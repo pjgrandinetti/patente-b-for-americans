@@ -112,7 +112,14 @@ setTimeout(()=>{
   ok(rd0 && rd0.querySelector('.km-key').textContent===a.answer,'each question shows its answer');
   ok(IT ? !rd0.querySelector('.km-en') : rd0.querySelector('.km-en').textContent===a.english_translation,IT?'an Italian browser gets no English':'and its English');
   const why=rd0.querySelector('details.km-why');
-  ok(why && !why.open && why.querySelector('.km-expl') && (IT ? !why.querySelector('.km-expl-en') : !!why.querySelector('.km-expl-en')),'with its explanation'+(IT?' in Italian':', Italian and English')+', folded under Why?');
+  ok(why && !why.open && why.querySelector('.km-expl'),'with its explanation, folded under Why?');
+  if (IT) ok(!why.querySelector('.km-expl-en') && !why.querySelector('.rb-it'),'an Italian browser: the Italian explanation, no English, no pill');
+  else {
+    const pill=why.querySelector('.km-expl-en .rb-it'), itx=why.querySelector('.km-expl-en .rb-itxt');
+    ok(why.querySelectorAll('.km-expl').length===1 && why.querySelector('.km-expl-en') && pill && itx && itx.classList.contains('hidden'),'a non-Italian browser: the English explanation only, the Italian behind an IT pill');
+    pill.click();
+    ok(!itx.classList.contains('hidden') && pill.getAttribute('aria-expanded')==='true','the IT pill reveals the Italian explanation');
+  }
   ok(JSON.stringify(rec3())===rec0,'reading records nothing');
   box.querySelector('.km-mode-btn[data-mode=practice]').click();
   ok(rows().length===n0 && !!box.querySelector('.km-vf'),'Answer them brings back the practice rows');

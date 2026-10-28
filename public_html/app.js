@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261029r';
+const APP_VERSION     = '20261029s';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -14528,6 +14528,8 @@ function renderMissBreakdown() {
       renderMissBreakdown();
     });
     el.addEventListener('click', ev => {
+      const pill = ev.target.closest('.km-read .rb-it');
+      if (pill) { ev.preventDefault(); toggleItBlock(pill); return; }
       const mode = ev.target.closest('.km-mode-btn');
       if (mode) { _kmRead = mode.dataset.mode === 'read'; renderMissBreakdown(); return; }
       const vf = ev.target.closest('.km-vf');
@@ -14575,13 +14577,15 @@ function renderMissBreakdown() {
         `<div class="km-main"><span class="km-it">${escHtml(st.italian_text)}</span>` +
         (!it && st.english_translation ? `<span class="km-en">${escHtml(st.english_translation)}</span>` : '') +
         `<span class="km-key km-key-${st.answer === 'VERO' ? 'v' : 'f'}">${escHtml(st.answer)}</span>` +
-        // The explanation (20261029q, maintainer): Italian, then the English
-        // for a non-Italian browser, as an opened practice row shows them,
-        // folded under "Why?" (20261029r, maintainer) so the list reads fast.
-        (st.explanation_it || (!it && st.explanation) ? `<details class="km-why"><summary title="${escHtml(t('stmt.whyTitle'))}">${escHtml(t('stmt.why'))}</summary>` +
-          (st.explanation_it ? `<div class="km-expl">${explHtml(st.explanation_it)}</div>` : '') +
-          (!it && st.explanation ? `<div class="km-expl km-expl-en">${explHtml(st.explanation)}${readingHtml(st)}</div>` : '') +
-          `</details>` : '') +
+        // The explanation (20261029q, maintainer), folded under "Why?"
+        // (20261029r) so the list reads fast. A non-Italian browser gets the
+        // English, with the Italian behind an IT pill (20261029s, maintainer);
+        // an Italian browser gets the Italian.
+        (it ? (st.explanation_it ? `<details class="km-why"><summary title="${escHtml(t('stmt.whyTitle'))}">${escHtml(t('stmt.why'))}</summary><div class="km-expl">${explHtml(st.explanation_it)}</div></details>` : '')
+            : (st.explanation ? `<details class="km-why"><summary title="${escHtml(t('stmt.whyTitle'))}">${escHtml(t('stmt.why'))}</summary>` +
+              `<div class="km-expl km-expl-en">${explHtml(st.explanation)}` +
+              (st.explanation_it ? ` <button type="button" class="rb-it" aria-expanded="false" title="${escHtml(t('review.itPillTip'))}">IT</button><span class="rb-itxt hidden" lang="it">${explHtml(st.explanation_it)}</span>` : '') +
+              `${readingHtml(st)}</div></details>` : '')) +
         (reviewFor(q.topic) ? ` <button type="button" class="stmt-it-btn km-book" data-qid="${escHtml(String(q.id))}" data-num="${escHtml(String(st.number))}">${escHtml(t('review.notes'))}</button>` : '') +
         `</div></div>`;
       continue;
