@@ -2632,6 +2632,16 @@ behind what shipped:
   weeks, not a ceiling; spacing wants gaps of a fraction of the time to the
   test, which a day already gives. `check_exam_date.js` asserts seven days
   against eight.
+  **The day before the exam has its own advice (20261028a, maintainer,
+  2026-10-28: "today is the day before my exam, but the app doesn't seem
+  to know that").** It had shown the near-exam advice, which asks for as
+  much review as possible, with the Still waiting count and the table of
+  questions needing correct answers on days that no longer come. At one
+  day out `examdate.paceLast` reads: go lightly today, do the day's review
+  once, look over the figures you keep missing, sleep a full night, a mock
+  today is optional. The Still waiting row, Continue the review and the
+  pool table are left out; the figures link stays, outside the table
+  (`examFiguresLinkHtml`).
   **The box is three parts since 20261023h** (maintainer, 2026-10-23: one
   paragraph had grown, with numbers scattered through it): the date as a
   line of its own, the advice paragraph (`examdate.pace` or `paceNear`,

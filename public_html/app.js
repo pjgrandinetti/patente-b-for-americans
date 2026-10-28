@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261026f';
+const APP_VERSION     = '20261028a';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -395,6 +395,7 @@ const T = {
   'examdate.vTakenN': { en: '{0} taken', it: '{0} svolte' },
   'examdate.pace': { en: 'To stay prepared, plan on about an hour a day: the questions set for review, then one mock exam. Time left over is best spent continuing the review.', it: 'Per restare preparato, prevedi circa un\u2019ora al giorno: le domande da ripassare, poi una simulazione. Il tempo che avanza \u00e8 meglio spenderlo continuando il ripasso.' },
   'examdate.paceNear': { en: 'With the exam this close, do as much of the review as you can, in two or three sittings a day, and one mock exam a day. Go lightly on the day before.', it: 'Con l\u2019esame cos\u00ec vicino, fai quanto pi\u00f9 ripasso riesci, in due o tre sedute al giorno, e una simulazione al giorno. Il giorno prima vai leggero.' },
+  'examdate.paceLast': { en: 'Go lightly today. Do the day\u2019s review once, look over the figures you keep missing, and get a full night\u2019s sleep. A mock exam today is optional.', it: 'Oggi vai leggero. Fai una volta il ripasso di oggi, rivedi le cifre che continui a sbagliare e dormi una notte piena. La simulazione di oggi \u00e8 facoltativa.' },
   'examdate.reviewStart': { en: 'Start the review', it: 'Inizia il ripasso' },
   'examdate.reviewContinue': { en: 'Continue the review', it: 'Continua il ripasso' },
   'examdate.poolRule': { en: 'A question leaves the review once you answer it correctly on {0} different days.', it: 'Una domanda esce dal ripasso quando rispondi correttamente in {0} giorni diversi.' },
@@ -7710,9 +7711,12 @@ function examPoolHtml() {
     `<p>${escHtml(t('examdate.poolRule', s.need))}</p>` +
     `<table><thead><tr><th>${escHtml(t('examdate.poolHead'))}</th><th class="num">${escHtml(t('examdate.poolQ'))}</th></tr></thead><tbody>${rows.join('')}</tbody></table>` +
     `<p>${escHtml(t('examdate.poolTotal', s.answers.toLocaleString(uiLang() === 'it' ? 'it-IT' : 'en-US'), s.need))}</p>` +
-    (() => { let m = 0; try { m = missedFigureRows().size; } catch (e) { console.error('missed figures:', e); }
-      return m ? `<p><button type="button" class="link-btn" data-ed="figures">${escHtml(t('examdate.missedFigures', m))}</button></p>` : ''; })() +
+    examFiguresLinkHtml() +
     `</details>`;
+}
+function examFiguresLinkHtml() {
+  let m = 0; try { m = missedFigureRows().size; } catch (e) { console.error('missed figures:', e); }
+  return m ? `<p><button type="button" class="link-btn" data-ed="figures">${escHtml(t('examdate.missedFigures', m))}</button></p>` : '';
 }
 function renderExamDate(atBar) {
   const banner = document.getElementById('exam-ready-banner');
@@ -7765,18 +7769,25 @@ function renderExamDate(atBar) {
   // had grown, with numbers scattered through it): the date, the advice,
   // then today's figures as rows with the numbers at the right edge.
   const row = (k, lab, val) => `<div class="exam-date-row" data-row="${k}"><dt>${escHtml(t(lab))}</dt><dd>${escHtml(val)}</dd></div>`;
-  const waiting = Math.max(0, pool - left);
+  // The day before the exam (20261028a, maintainer, 2026-10-28) gets its
+  // own advice: go lightly. Nothing that asks for more work is shown, so no
+  // Still waiting row, no Continue the review, and no table of questions
+  // needing correct answers on days that no longer come before the exam;
+  // the link to the figures missed stays, since it is the one list worth a
+  // last look.
+  const last = n === 1;
+  const waiting = last ? 0 : Math.max(0, pool - left);
   const today = n > 0 ? `<dl class="exam-date-today">` +
     row('review', 'examdate.rowReview', left > 0 ? t('examdate.vLeft', left) : pool > 0 || reviewDoneToday() > 0 ? t('examdate.vDone') : t('examdate.vNone')) +
     (waiting > 0 ? row('waiting', 'examdate.rowWaiting', String(waiting)) : '') +
     row('mock', 'examdate.rowMock', todayN > 1 ? t('examdate.vTakenN', todayN) : todayN ? t('examdate.vTaken') : t('examdate.vNotYet')) +
     `</dl>` : '';
   box.innerHTML = `<div class="exam-date-text"><strong>${escHtml(head)}</strong>` +
-    (n > 0 ? `<p class="exam-date-advice">${escHtml(t(n <= EXAM_NEAR_DAYS ? 'examdate.paceNear' : 'examdate.pace'))}</p>` : '') + today + `</div>` +
+    (n > 0 ? `<p class="exam-date-advice">${escHtml(t(last ? 'examdate.paceLast' : n <= EXAM_NEAR_DAYS ? 'examdate.paceNear' : 'examdate.pace'))}</p>` : '') + today + `</div>` +
     (n > 0 && left > 0 ? `<button type="button" class="btn-primary" data-ed="review">${escHtml(t('examdate.reviewStart'))}</button>` : '') +
-    (n > 0 && left === 0 && pool > 0 ? `<button type="button" class="btn-secondary" data-ed="more">${escHtml(t('examdate.reviewContinue'))}</button>` : '') +
+    (n > 0 && !last && left === 0 && pool > 0 ? `<button type="button" class="btn-secondary" data-ed="more">${escHtml(t('examdate.reviewContinue'))}</button>` : '') +
     `<button type="button" class="link-btn" data-ed="change">${escHtml(t('examdate.change'))}</button>` +
-    (n > 0 && pool > 0 ? examPoolHtml() : '');
+    (n > 0 && pool > 0 ? (last ? examFiguresLinkHtml() : examPoolHtml()) : '');
   const det = box.querySelector('details.exam-date-pool');
   if (det) det.addEventListener('toggle', () => { _examPoolOpen = det.open; });
 }

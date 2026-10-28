@@ -44,6 +44,7 @@ setTimeout(()=>{
   ok(!box().classList.contains('hidden') && /(9 days|9 giorni)/.test(box().textContent),'a date once set stays on screen when the mocks slip below the bar');
   ok(!$('exam-ready-banner').classList.contains('hidden') && $('exam-ready-banner').classList.contains('banner-warn'),'and the warning banner still shows above it');
   w.localStorage.setItem('patente_exam_date',key(1)); draw(sheets(good)); ok(/(tomorrow|domani)/.test(box().textContent),'one day out: tomorrow');
+  ok(/(Go lightly today|Oggi vai leggero)/.test(box().textContent) && !/(With the exam this close|Con l\u2019esame cos\u00ec vicino)/.test(box().textContent) && !box().querySelector('details.exam-date-pool, [data-row=waiting], [data-ed=more]'),'the day before: go lightly, with no waiting count, no extra review and no table of days (20261028a)');
   w.localStorage.setItem('patente_exam_date',key(0)); draw(sheets(good)); ok(/(is today|è oggi)/.test(box().textContent) && !/(a day|al giorno)/.test(box().textContent),'the day itself: today, no pacing');
   w.localStorage.setItem('patente_exam_date',key(-1)); draw(sheets(good)); ok(w.examDate()===null && box().querySelector('input'),'a date that has passed is dropped and asked for again');
   w.localStorage.setItem('patente_exam_date',key(5)); draw(sheets(good)); box().querySelector('[data-ed=change]').click();
