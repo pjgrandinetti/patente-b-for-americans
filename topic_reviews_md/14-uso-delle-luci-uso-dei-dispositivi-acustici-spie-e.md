@@ -152,13 +152,13 @@ Those are the only cases. In ordinary **heavy traffic** you keep a steady speed 
 
 ## Summary of key points
 
-1. **Low beams** are compulsory **outside towns and on autostrade day and night** (DRL allowed by day), in **tunnels** even if lit, in **poor weather**, and in town from **½ h after sunset to ½ h before sunrise**.
+1. **Low beams** are compulsory **outside towns and on autostrade day and night** (**DRL** allowed by day), in **tunnels** even if lit, in **poor weather**, and in town from **½ h after sunset to ½ h before sunrise**.
 2. **Position lights alone never replace low beams** in motion.
-3. **High beams** are only for outside towns with no lighting and no oncoming traffic. **Flashing** them to warn or to signal a pass is allowed anywhere.
-4. Use the **rear fog light** when visibility is **under 50 m** or in heavy rain or snow. The **plate** is lit **white**.
-5. **Signal** for every lane change, turn, and the **start and end** of a pass, when moving off or leaving the road, and when reversing. Do **not** signal for stopping at a red light. The **horn** is brief, and only for real danger. At night flash the high beams instead.
-6. **Dashboard-light colors.** **Red** is serious (oil, coolant, brakes, belts, hazard). **Green** is on (low beams, turn signal). **Blue** is high beams.
-7. **Symbol meanings.** The battery means not charging, the oil can means low pressure and stop the engine, the thermometer means coolant too hot, and the circled ! means a brake fault. Horizontal beam lines mean high beams, and slanted lines mean low beams.
+3. **High beams** are only for outside towns with no lighting and no oncoming traffic. **Flashing** them to warn or to signal a **pass** is allowed anywhere.
+4. Use the **rear fog light** when **visibility** is **under 50 m** or in heavy rain or snow. The **plate** is lit **white**.
+5. **Signal** for every **lane change**, **turn**, and the **start and end** of a **pass**, when moving off or leaving the road, and when **reversing**. Do **not** signal for stopping at a red light. The **horn** is brief, and only for real danger. At night flash the **high beams** instead.
+6. **Dashboard-light colors.** **Red** is serious (oil, coolant, **brakes**, **belts**, hazard). **Green** is on (**low beams**, **turn signal**). **Blue** is **high beams**.
+7. **Symbol meanings.** The battery means not charging, the **oil can** means low pressure and stop the engine, the thermometer means coolant too hot, and the circled ! means a **brake fault**. Horizontal beam lines mean **high beams**, and slanted lines mean **low beams**.
 
 <!-- LANG: it -->
 ## La mappa dell'argomento
@@ -305,10 +305,10 @@ Sono gli unici casi. Nel **traffico intenso** ordinario mantieni una velocità c
 
 ## Riepilogo dei punti chiave
 
-1. Gli **anabbaglianti** sono obbligatori **fuori città e in autostrada di giorno e di notte** (di giorno sono ammesse le luci diurne), nelle **gallerie** anche se illuminate, in **maltempo** e in città da **mezz'ora dopo il tramonto a mezz'ora prima dell'alba**.
+1. Gli **anabbaglianti** sono obbligatori **fuori città e in autostrada di giorno e di notte** (di giorno sono ammesse le **luci diurne**), nelle **gallerie** anche se illuminate, in **maltempo** e in città da **mezz'ora dopo il tramonto a mezz'ora prima dell'alba**.
 2. Le **sole luci di posizione non sostituiscono mai gli anabbaglianti** in marcia.
-3. Gli **abbaglianti** sono solo per fuori città senza illuminazione né traffico opposto. **Lampeggiarli** per avvisare o per segnalare un sorpasso è ammesso ovunque.
-4. Usa il **retronebbia** quando la visibilità è **sotto i 50 m** o con pioggia o neve intense. La **targa** è illuminata di **bianco**.
-5. **Segnala** per ogni cambio di corsia, svolta e per l'**inizio e la fine** di un sorpasso, quando riparti o lasci la strada e in retromarcia. **Non** segnalare per fermarti a un rosso. Il **clacson** è breve e solo per pericolo reale. Di notte lampeggia gli abbaglianti.
-6. **Colori delle spie.** Il **rosso** è grave (olio, liquido, freni, cinture, emergenza). Il **verde** è acceso (anabbaglianti, indicatori). Il **blu** è abbaglianti.
-7. **Significato dei simboli.** La batteria significa che non carica, l'oliera significa pressione bassa e ferma il motore, il termometro significa liquido troppo caldo, e il ! nel cerchio significa avaria dei freni. Le lineette orizzontali significano abbaglianti, e quelle inclinate anabbaglianti.
+3. Gli **abbaglianti** sono solo per fuori città senza illuminazione né traffico opposto. **Lampeggiarli** per avvisare o per segnalare un **sorpasso** è ammesso ovunque.
+4. Usa il **retronebbia** quando la **visibilità** è **sotto i 50 m** o con pioggia o neve intense. La **targa** è illuminata di **bianco**.
+5. **Segnala** per ogni **cambio di corsia**, **svolta** e per l'**inizio e la fine** di un **sorpasso**, quando riparti o lasci la strada e in **retromarcia**. **Non** segnalare per fermarti a un rosso. Il **clacson** è breve e solo per pericolo reale. Di notte lampeggia gli **abbaglianti**.
+6. **Colori delle spie.** Il **rosso** è grave (olio, liquido, **freni**, **cinture**, emergenza). Il **verde** è acceso (**anabbaglianti**, **indicatori**). Il **blu** è **abbaglianti**.
+7. **Significato dei simboli.** La batteria significa che non carica, l'**oliera** significa pressione bassa e ferma il motore, il termometro significa liquido troppo caldo, e il ! nel cerchio significa **avaria dei freni**. Le lineette orizzontali significano **abbaglianti**, e quelle inclinate **anabbaglianti**.

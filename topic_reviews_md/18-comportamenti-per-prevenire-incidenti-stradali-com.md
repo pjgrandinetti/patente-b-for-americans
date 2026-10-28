@@ -110,10 +110,10 @@ Certain road features are **slippery and dangerous** for two-wheelers, **especia
 
 1. Adjust to conditions. Most **rear-end collisions** come from **speed, inattention, and too little distance**.
 2. In **rain**, go slow, leave more distance, and use gentle inputs. **Hydroplaning** worsens with **speed, worn tires, and light vehicles**.
-3. On **snow**, use winter tires or chains and smooth inputs. On **ice**, use a low gear downhill and watch shaded patches. **Snow grips better than ice.**
-4. In **fog**, match your speed to visibility, use fog or low beams plus the rear fog light, and do not tailgate. In a **tunnel fire**, leave the vehicle and follow the signage and staff.
+3. On **snow**, use **winter tires** or **chains** and smooth inputs. On **ice**, use a **low gear** downhill and watch shaded patches. **Snow grips better than ice.**
+4. In **fog**, match your speed to visibility, use **fog or low beams** plus the **rear fog light**, and do not tailgate. In a **tunnel fire**, leave the vehicle and follow the **signage** and staff.
 5. **At a crash**, stop, assist the injured, exchange details, and protect the scene. The **triangle is not required in built-up areas**.
-6. **Two-wheelers** are hard to see, so riders use a low beam by day and bright clothing. **Tram rails, manholes, and painted crossings** are slippery when wet, so cross them straight and steady.
+6. **Two-wheelers** are hard to see, so riders use a **low beam** by day and bright clothing. **Tram rails, manholes, and painted crossings** are slippery when wet, so cross them straight and steady.
 
 <!-- LANG: it -->
 ## La mappa dell'argomento
@@ -222,7 +222,7 @@ Certi elementi della strada sono **scivolosi e pericolosi** per i due ruote, **s
 
 1. Adeguati alle condizioni. La maggior parte dei **tamponamenti** nasce da **velocità, disattenzione e distanza insufficiente**.
 2. Con la **pioggia**, vai piano, lascia più distanza e usa comandi dolci. L'**aquaplaning** peggiora con **velocità, pneumatici usurati e veicoli leggeri**.
-3. Sulla **neve**, usa pneumatici invernali o catene e comandi dolci. Sul **ghiaccio**, usa la marcia bassa in discesa e attento alle zone in ombra. **La neve dà più aderenza del ghiaccio.**
-4. Con la **nebbia**, adegua la velocità alla visibilità, usa fendinebbia o anabbaglianti più il retronebbia, e non incollarti. In un **incendio in galleria**, abbandona il veicolo e segui segnaletica e personale.
+3. Sulla **neve**, usa **pneumatici invernali** o **catene** e comandi dolci. Sul **ghiaccio**, usa la **marcia bassa** in discesa e attento alle zone in ombra. **La neve dà più aderenza del ghiaccio.**
+4. Con la **nebbia**, adegua la velocità alla visibilità, usa **fendinebbia o anabbaglianti** più il **retronebbia**, e non incollarti. In un **incendio in galleria**, abbandona il veicolo e segui **segnaletica** e personale.
 5. **A un incidente**, fermati, soccorri i feriti, scambia i dati e proteggi il luogo. Il **triangolo non è obbligatorio nei centri abitati**.
-6. I **due ruote** sono difficili da vedere, perciò chi guida usa l'anabbagliante di giorno e abbigliamento visibile. **Rotaie del tram, tombini e attraversamenti dipinti** sono scivolosi con il bagnato, perciò attraversali diritto e a velocità costante.
+6. I **due ruote** sono difficili da vedere, perciò chi guida usa l'**anabbagliante** di giorno e abbigliamento visibile. **Rotaie del tram, tombini e attraversamenti dipinti** sono scivolosi con il bagnato, perciò attraversali diritto e a velocità costante.

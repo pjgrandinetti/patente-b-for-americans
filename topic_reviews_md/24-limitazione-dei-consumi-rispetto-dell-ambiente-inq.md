@@ -69,11 +69,11 @@ The same exhaust gases act on a larger scale as well, and they increase **smog, 
 
 ## Summary of key points
 
-1. Pressing the accelerator on a **cold or stationary** engine, or in neutral or with the clutch down, only revs it. It **wastes fuel and adds pollution and noise**, and it never saves fuel or warms the engine faster.
-2. **Save fuel** with a steady moderate speed, smooth driving, less weight and roof load, correct tire pressure, closed windows at speed, and sparing AC use.
-3. **Cut air pollution** with smooth driving, a well-maintained engine (filter, injectors, catalytic converter), cleaner fuels, and the engine off during long stops. A **higher Euro number is cleaner**, and over-polluting brings fines.
-4. **Cut noise** with an efficient **approved muffler**, never drilled or cut, minimal horn use, no revving when stopped, and good brakes.
-5. **Dispose properly.** Do not dump oil, antifreeze, or batteries, return used batteries to the dealer, scrap at an authorized center, and empty motorhome waste at sanitary points.
+1. Pressing the **accelerator** on a **cold or stationary** engine, or in **neutral** or with the **clutch** down, only revs it. It **wastes fuel and adds pollution and noise**, and it never saves fuel or warms the engine faster.
+2. **Save fuel** with a steady moderate speed, smooth driving, less weight and **roof load**, correct **tire pressure**, closed windows at speed, and sparing **AC** use.
+3. **Cut air pollution** with smooth driving, a well-maintained engine (**filter**, **injectors**, **catalytic converter**), cleaner **fuels**, and the engine off during long **stops**. A **higher Euro number is cleaner**, and over-polluting brings **fines**.
+4. **Cut noise** with an efficient **approved muffler**, never drilled or cut, minimal **horn** use, no revving when stopped, and good **brakes**.
+5. **Dispose properly.** Do not dump oil, antifreeze, or **batteries**, return used batteries to the **dealer**, scrap at an **authorized center**, and empty **motorhome** waste at sanitary points.
 6. Do not **litter** or throw objects from the vehicle.
 
 <!-- LANG: it -->
@@ -141,9 +141,9 @@ Gli stessi gas di scarico agiscono anche su scala più ampia, e fanno aumentare 
 
 ## Riepilogo dei punti chiave
 
-1. Premere l'acceleratore con il motore **freddo o fermo**, o in folle o a frizione premuta, lo fa solo salire di giri. **Spreca carburante e aggiunge inquinamento e rumore**, e non serve mai a risparmiare né a scaldare prima il motore.
-2. **Risparmia carburante** con velocità costante e moderata, guida fluida, meno peso e carico sul tetto, pressione corretta, finestrini chiusi a velocità e uso parco del climatizzatore.
-3. **Riduci l'inquinamento dell'aria** con guida fluida, motore ben mantenuto (filtro, iniettori, catalizzatore), carburanti più puliti e motore spento nelle soste lunghe. Un **numero Euro più alto è più pulito**, e inquinare troppo comporta multe.
-4. **Riduci il rumore** con una **marmitta omologata** efficiente, mai forata o tagliata, uso minimo del clacson, niente gas da fermo e freni in buono stato.
-5. **Smaltisci correttamente.** Niente abbandono di olio, antigelo o batterie, restituisci le batterie usate al rivenditore, rottama in un centro autorizzato e svuota i reflui del camper negli appositi punti.
+1. Premere l'**acceleratore** con il motore **freddo o fermo**, o in **folle** o a **frizione** premuta, lo fa solo salire di giri. **Spreca carburante e aggiunge inquinamento e rumore**, e non serve mai a risparmiare né a scaldare prima il motore.
+2. **Risparmia carburante** con velocità costante e moderata, guida fluida, meno peso e **carico sul tetto**, **pressione** corretta, finestrini chiusi a velocità e uso parco del **climatizzatore**.
+3. **Riduci l'inquinamento dell'aria** con guida fluida, motore ben mantenuto (**filtro**, **iniettori**, **catalizzatore**), **carburanti** più puliti e motore spento nelle **soste** lunghe. Un **numero Euro più alto è più pulito**, e inquinare troppo comporta **multe**.
+4. **Riduci il rumore** con una **marmitta omologata** efficiente, mai forata o tagliata, uso minimo del **clacson**, niente gas da fermo e **freni** in buono stato.
+5. **Smaltisci correttamente.** Niente abbandono di olio, antigelo o **batterie**, restituisci le batterie usate al **rivenditore**, rottama in un **centro autorizzato** e svuota i reflui del **camper** negli appositi punti.
 6. Non **gettare rifiuti** né lanciare oggetti dal veicolo.

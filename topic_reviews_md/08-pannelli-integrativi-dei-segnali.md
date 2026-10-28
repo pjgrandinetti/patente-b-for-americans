@@ -134,13 +134,13 @@ The following panels appear under it.
 
 ## Summary of key points
 
-1. A supplementary panel is a **rectangular plate under a sign**. It **refines** the sign and **cannot stand alone**.
+1. A **supplementary panel** is a **rectangular plate under a sign**. It **refines** the sign and **cannot stand alone**.
 2. A **plain number** gives the **distance to** the start, and **arrows at both ends** give the **length** of the stretch.
-3. The **† means holidays** and the **⚒ means working days**. Hours panels limit the sign to set times, and a ban during stated hours never *authorizes* anything.
+3. The **† means holidays** and the **⚒ means working days**. **Hours panels** limit the sign to set times, and a ban during stated hours never *authorizes* anything.
 4. A **vehicle silhouette** limits the sign to that category; ***eccetto*** **exempts** the vehicles shown.
 5. An arrow pointing **up or left** marks the **start**, a **double** arrow marks the **continuation**, and an arrow pointing **down or right** marks the **end**. The overhead **down arrow** is different: it ties the sign to **one lane**.
-6. Under **"other dangers"** the panel names the hazard, so a snowplow panel asks for at least 20 m of distance, and a queue panel asks for more following distance, never less.
-7. The **tow-away** panel means impound or clamps, and placard holders are exempt. **Course panels** draw the priority road at a junction and never appear on autostrade.
+6. Under **"other dangers"** the panel names the hazard, so a **snowplow** panel asks for at least 20 m of distance, and a **queue** panel asks for more following distance, never less.
+7. The **tow-away** panel means **impound** or **clamps**, and **placard** holders are exempt. **Course panels** draw the **priority road** at a **junction** and never appear on **autostrade**.
 
 <!-- LANG: it -->
 ## Cosa fanno questi pannelli
@@ -273,10 +273,10 @@ Sotto di esso compaiono i pannelli che seguono.
 
 ## Riepilogo dei punti chiave
 
-1. Un pannello integrativo è una **targa rettangolare sotto un segnale**. **Precisa** il segnale e **non può stare da solo**.
+1. Un **pannello integrativo** è una **targa rettangolare sotto un segnale**. **Precisa** il segnale e **non può stare da solo**.
 2. Una **cifra semplice** dà la **distanza fino** all'inizio, e le **frecce alle due estremità** danno la **lunghezza** del tratto.
-3. La **† significa giorni festivi** e i **⚒ significano giorni lavorativi**. I pannelli orari limitano il segnale a fasce stabilite, e un divieto nelle ore indicate non *autorizza* mai nulla.
+3. La **† significa giorni festivi** e i **⚒ significano giorni lavorativi**. I **pannelli orari** limitano il segnale a fasce stabilite, e un divieto nelle ore indicate non *autorizza* mai nulla.
 4. Una **sagoma di veicolo** limita il segnale a quella categoria; ***eccetto*** **esenta** i veicoli mostrati.
 5. Una freccia verso **l'alto o a sinistra** segna l'**inizio**, una freccia **doppia** segna la **continuazione**, e una freccia verso **il basso o a destra** segna la **fine**. La **freccia in giù in alto** è diversa: lega il segnale a **una corsia**.
-6. Sotto **"altri pericoli"** il pannello nomina il pericolo, quindi il pannello dello sgombraneve chiede almeno 20 m di distanza, e quello delle code chiede più distanza, mai meno.
-7. Il pannello di **rimozione** significa depositeria o ganasce, e i contrassegni disabili sono esenti. I **pannelli di andamento** disegnano la strada principale all'incrocio e non compaiono mai in autostrada.
+6. Sotto **"altri pericoli"** il pannello nomina il pericolo, quindi il pannello dello **sgombraneve** chiede almeno 20 m di distanza, e quello delle **code** chiede più distanza, mai meno.
+7. Il pannello di **rimozione** significa **depositeria** o **ganasce**, e i **contrassegni** disabili sono esenti. I **pannelli di andamento** disegnano la **strada principale** all'**incrocio** e non compaiono mai in **autostrada**.

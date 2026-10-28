@@ -191,12 +191,12 @@ When a prohibition ends, the sign is shown in **gray with a diagonal band** and 
 
 ## Summary of key points
 
-1. A prohibition sign means **must not**. It never warns of danger or grants precedence.
+1. A **prohibition sign** means **must not**. It never warns of danger or grants **precedence**.
 2. Most are a **red-bordered white circle**, and the symbol or number says what is banned.
 3. **No through traffic** (empty red ring) differs from **no entry** (red disc with white bar).
-4. **No parking** (blue circle, one red diagonal) still allows a brief stop. **No stopping** (blue circle, red cross) forbids even that.
+4. **No parking** (blue circle, one red diagonal) still allows a brief **stop**. **No stopping** (blue circle, red cross) forbids even that.
 5. A **gray sign with a diagonal and no red** marks the **end** of a restriction. A single diagonal ends all of them, and the repeated symbol ends just one.
-6. The ban runs **from the sign** until an end sign, the next intersection, or the limit on a panel.
+6. The ban runs **from the sign** until an **end sign**, the next **intersection**, or the limit on a **panel**.
 
 <!-- LANG: it -->
 ## Cosa fanno questi segnali
@@ -385,9 +385,9 @@ Quando un divieto termina, il segnale è in **grigio con una banda diagonale** e
 
 ## Riepilogo dei punti chiave
 
-1. Un segnale di divieto significa **non devi**. Non avverte mai di un pericolo né concede la precedenza.
+1. Un **segnale di divieto** significa **non devi**. Non avverte mai di un pericolo né concede la **precedenza**.
 2. La maggior parte è un **cerchio bianco con bordo rosso**, e il simbolo o il numero dice cosa è vietato.
 3. **Transito vietato** (cerchio rosso vuoto) è diverso da **senso vietato** (disco rosso con barra bianca).
-4. **Divieto di sosta** (cerchio blu, una diagonale rossa) consente ancora una breve fermata. **Divieto di fermata** (cerchio blu, croce rossa) vieta anche quella.
+4. **Divieto di sosta** (cerchio blu, una diagonale rossa) consente ancora una breve **fermata**. **Divieto di fermata** (cerchio blu, croce rossa) vieta anche quella.
 5. Un **segnale grigio con diagonale e senza rosso** segna la **fine** di un divieto. Una sola diagonale li fa cessare tutti, il simbolo ripetuto solo uno.
-6. Il divieto vale **dal segnale** fino a un segnale di fine, al successivo incrocio o al limite su un pannello.
+6. Il divieto vale **dal segnale** fino a un **segnale di fine**, al successivo **incrocio** o al limite su un **pannello**.

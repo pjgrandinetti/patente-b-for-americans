@@ -193,14 +193,14 @@ Driving in parallel lines (*file parallele*), meaning lines of vehicles side by 
 
 ## Summary of key points
 
-1. Keep **right**. The **left lane, and the center of a 3-lane two-way road, is for passing only**. Roads with two carriageways have no "overtaking carriageway."
-2. **Signal early** and **check ahead, behind, and the blind spot** before any lane change, always, even on an empty road. The dividing line must be **broken**.
-3. On a **right turn**, hug the right edge. On a **left turn**, go to the center and leave the junction's center **on your right**, yielding to oncoming and right-hand traffic.
-4. In the **wrong preselection lane**, go where the lane goes: no lane change, no stopping, no reversing.
-5. **Yield to the right** by default. Rails have priority. **Yield to bikes in a bike lane** marked by a broken line. **Yield to all** when joining, reversing, doing a U-turn, or leaving a driveway. Roundabouts follow the **signs**. Flashing yellow means caution plus the normal rules.
-6. **No U-turns** near curves, crests, intersections, in poor visibility, or ever on the autostrada.
-7. In **special cases**, stop for processions, switch to low beam against oncoming high beams, stay back from a right-turning autotreno, yield downhill on a steep narrow road, and obey **police display messages**.
-8. The **load** stays within capacity with no 10% tolerance, may overhang the rear by at most three-tenths of the vehicle's length, marked with the red-and-white panel, and may project sideways by at most 50 cm on a motorcycle.
+1. Keep **right**. The **left lane, and the center of a 3-lane two-way road, is for passing only**. Roads with two **carriageways** have no "overtaking carriageway."
+2. **Signal early** and **check ahead, behind, and the blind spot** before any **lane change**, always, even on an empty road. The **dividing line** must be **broken**.
+3. On a **right turn**, hug the **right edge**. On a **left turn**, go to the center and leave the **junction**'s center **on your right**, **yielding** to oncoming and right-hand traffic.
+4. In the **wrong preselection lane**, go where the lane goes: no lane change, no **stopping**, no **reversing**.
+5. **Yield to the right** by default. Rails have priority. **Yield to bikes in a bike lane** marked by a **broken line**. **Yield to all** when joining, **reversing**, doing a **U-turn**, or leaving a **driveway**. **Roundabouts** follow the **signs**. Flashing yellow means caution plus the normal rules.
+6. **No U-turns** near curves, **crests**, **intersections**, in poor **visibility**, or ever on the **autostrada**.
+7. In **special cases**, stop for processions, switch to **low beam** against oncoming **high beams**, stay back from a right-turning **autotreno**, yield downhill on a steep narrow road, and obey **police display messages**.
+8. The **load** stays within **capacity** with no 10% tolerance, may overhang the rear by at most three-tenths of the vehicle's length, marked with the **red-and-white panel**, and may project sideways by at most 50 cm on a **motorcycle**.
 9. Use **mirrors plus a direct glance**, adjusted stationary after the seat. The **left mirror distorts distance and has a wide blind spot**.
 
 <!-- LANG: it -->
@@ -392,12 +392,12 @@ La marcia per file parallele, cioè file di veicoli affiancati, è ammessa nel *
 
 ## Riepilogo dei punti chiave
 
-1. Tieni la **destra**. La **corsia di sinistra, e quella centrale di una strada a 3 corsie a doppio senso, è solo per il sorpasso**. Sulle strade a carreggiate separate non esiste la "carreggiata di sorpasso".
-2. **Segnala in anticipo** e **controlla davanti, dietro e l'angolo cieco** prima di ogni cambio di corsia, sempre, anche a strada libera. La linea di separazione deve essere **discontinua**.
-3. In **svolta a destra**, rasenta il margine destro. In **svolta a sinistra**, vai al centro e lascia il centro dell'incrocio **alla tua destra**, dando precedenza al traffico opposto e a quello da destra.
-4. Nella **corsia di preselezione sbagliata**, vai dove va la corsia: niente cambi, niente fermate, niente retromarcia.
-5. **Dai precedenza a destra** per impostazione predefinita. Le rotaie hanno la precedenza. **Dai precedenza alle biciclette in corsia ciclabile** delimitata da striscia discontinua. **Dai precedenza a tutti** quando ti immetti, fai retromarcia, inverti o esci da un passo carrabile. Le rotatorie seguono i **segnali**. Il giallo lampeggiante significa cautela più le regole normali.
-6. **Niente inversione** vicino a curve, dossi, incroci, in scarsa visibilità, e mai in autostrada.
-7. Nei **casi particolari**, fermati per i cortei, passa agli anabbaglianti con gli abbaglianti in arrivo, resta dietro a un autotreno che svolta a destra, in discesa cedi su una strada stretta e ripida, e obbedisci ai **messaggi luminosi della polizia**.
-8. Il **carico** resta entro la portata senza alcuna tolleranza del 10%, può sporgere dietro al massimo di tre decimi della lunghezza del veicolo, segnalato con il pannello bianco-rosso, e lateralmente al massimo di 50 cm su un motociclo.
+1. Tieni la **destra**. La **corsia di sinistra, e quella centrale di una strada a 3 corsie a doppio senso, è solo per il sorpasso**. Sulle strade a **carreggiate** separate non esiste la "carreggiata di sorpasso".
+2. **Segnala in anticipo** e **controlla davanti, dietro e l'angolo cieco** prima di ogni **cambio di corsia**, sempre, anche a strada libera. La **linea di separazione** deve essere **discontinua**.
+3. In **svolta a destra**, rasenta il **margine destro**. In **svolta a sinistra**, vai al centro e lascia il centro dell'**incrocio** **alla tua destra**, **dando precedenza** al traffico opposto e a quello da destra.
+4. Nella **corsia di preselezione sbagliata**, vai dove va la corsia: niente cambi, niente **fermate**, niente **retromarcia**.
+5. **Dai precedenza a destra** per impostazione predefinita. Le rotaie hanno la precedenza. **Dai precedenza alle biciclette in corsia ciclabile** delimitata da **striscia discontinua**. **Dai precedenza a tutti** quando ti immetti, fai **retromarcia**, **inverti** o esci da un **passo carrabile**. Le **rotatorie** seguono i **segnali**. Il giallo lampeggiante significa cautela più le regole normali.
+6. **Niente inversione** vicino a curve, **dossi**, **incroci**, in scarsa **visibilità**, e mai in **autostrada**.
+7. Nei **casi particolari**, fermati per i cortei, passa agli **anabbaglianti** con gli **abbaglianti** in arrivo, resta dietro a un **autotreno** che svolta a destra, in discesa cedi su una strada stretta e ripida, e obbedisci ai **messaggi luminosi della polizia**.
+8. Il **carico** resta entro la **portata** senza alcuna tolleranza del 10%, può sporgere dietro al massimo di tre decimi della lunghezza del veicolo, segnalato con il **pannello bianco-rosso**, e lateralmente al massimo di 50 cm su un **motociclo**.
 9. Usa **specchietti più sguardo diretto**, regolati da fermo dopo il sedile. Lo **specchietto sinistro distorce le distanze e ha un ampio angolo cieco**.

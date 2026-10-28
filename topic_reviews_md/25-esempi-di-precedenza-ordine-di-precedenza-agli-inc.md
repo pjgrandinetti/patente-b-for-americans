@@ -118,14 +118,14 @@ The lesson is that nothing overrode rule 7. It simply did not apply where the pa
 
 ## Summary
 
-1. Decide precedence at **every crossing point**: you may have the right to enter but, if your path crosses more than one other vehicle's, not the right to exit.
-2. Apply the rules in order: an officer, then emergency vehicles, then lights, then signs, then rail vehicles; where none of those decides it, work each crossing with yield to your right, then straight and right before left.
-3. Yield to a vehicle on your right **whose path would cross yours** (read the arrows).
-4. A left-turner yields to oncoming traffic and waits at the center, so it often enters first and finishes last. <!-- q: -->
-5. Two vehicles go together only if their paths never cross: facing straights, side-by-side lane-mates, or facing left-turners.
+1. Decide **precedence** at **every crossing point**: you may have the right to enter but, if your **path** crosses more than one other vehicle's, not the right to exit.
+2. Apply the rules in order: an **officer**, then **emergency vehicles**, then **lights**, then **signs**, then **rail vehicles**; where none of those decides it, work each **crossing** with **yield to your right**, then straight and right before left.
+3. **Yield** to a vehicle on your right **whose path would cross yours** (read the arrows).
+4. A **left-turner** **yields** to oncoming traffic and waits at the **center**, so it often **enters** first and **finishes** last. <!-- q: -->
+5. Two vehicles go together only if their **paths** never cross: facing straights, **side-by-side** lane-mates, or facing **left-turners**.
 6. Build the order by repeatedly taking the vehicle that owes nothing at that crossing.
-7. Type, size and speed never matter; only rails and emergency vehicles jump the queue.
-8. Precedence is a right, not a guarantee: even when the order says you go, make sure the others are actually yielding, and if they are not, slow down and give it up, stopping if necessary. Failing to yield costs 5 or 6 license points.
+7. Type, size and speed never matter; only **rails** and **emergency vehicles** jump the queue.
+8. **Precedence** is a right, not a guarantee: even when the order says you go, make sure the others are actually **yielding**, and if they are not, slow down and give it up, stopping if necessary. **Failing to yield** costs 5 or 6 **license points**.
 
 <!-- LANG: it -->
 ## Di cosa tratta questo argomento
@@ -242,11 +242,11 @@ La lezione è che nulla ha scavalcato la regola 7. Semplicemente non si applicav
 
 ## Riepilogo
 
-1. Decidi la precedenza in **ogni punto di incrocio**: puoi avere il diritto di entrare ma, se la tua traiettoria incrocia quella di più veicoli, non quello di uscire.
-2. Applica le regole nell'ordine: agente, poi veicoli di emergenza, poi semaforo, poi segnali, poi veicoli su rotaia; se nessuna di queste decide, risolvi ogni incrocio con la precedenza a destra, poi dritto e destra prima di sinistra.
-3. Dai la precedenza al veicolo alla tua destra **la cui traiettoria incrocerebbe la tua** (leggi le frecce).
-4. Chi svolta a sinistra cede a chi arriva in senso opposto e attende al centro, quindi spesso impegna per primo e conclude per ultimo.
-5. Due veicoli passano insieme solo se le traiettorie non si incrociano mai: opposti dritti, affiancati, opposti in svolta a sinistra.
+1. Decidi la **precedenza** in **ogni punto di incrocio**: puoi avere il diritto di entrare ma, se la tua **traiettoria** incrocia quella di più veicoli, non quello di uscire.
+2. Applica le regole nell'ordine: **agente**, poi **veicoli di emergenza**, poi **semaforo**, poi **segnali**, poi **veicoli su rotaia**; se nessuna di queste decide, risolvi ogni **incrocio** con la **precedenza a destra**, poi dritto e destra prima di sinistra.
+3. **Dai la precedenza** al veicolo alla tua destra **la cui traiettoria incrocerebbe la tua** (leggi le frecce).
+4. Chi **svolta a sinistra** **cede** a chi arriva in senso opposto e attende al **centro**, quindi spesso **impegna** per primo e **conclude** per ultimo.
+5. Due veicoli passano insieme solo se le **traiettorie** non si incrociano mai: opposti dritti, **affiancati**, opposti in **svolta a sinistra**.
 6. Costruisci l'ordine prendendo ogni volta il veicolo che non deve nulla in quel punto.
-7. Tipo, dimensioni e velocità non contano mai; solo rotaie ed emergenza saltano la fila.
-8. La precedenza è un diritto, non una garanzia: anche quando l'ordine dice che passi tu, assicurati che gli altri stiano davvero cedendo, e se non lo fanno rallenta e rinuncia, fermandoti se necessario. Non rispettare la precedenza costa 5 o 6 punti della patente.
+7. Tipo, dimensioni e velocità non contano mai; solo **rotaie** ed **emergenza** saltano la fila.
+8. La **precedenza** è un diritto, non una garanzia: anche quando l'ordine dice che passi tu, assicurati che gli altri stiano davvero **cedendo**, e se non lo fanno rallenta e rinuncia, fermandoti se necessario. **Non rispettare la precedenza** costa 5 o 6 **punti della patente**.

@@ -178,12 +178,12 @@ Several signs work together here, in sequence as you approach, and they are a fr
 
 ## Summary of key points
 
-1. This family uses **three shapes**: the **triangle** (warn only), the **St. Andrew's cross** (an X, at a railroad crossing, yield), and the **countdown panels** (rectangles before a crossing).
-2. A red-bordered **triangle** warns of a hazard ahead and never forbids, orders, or grants precedence.
-3. A **yellow** background means the same triangle warning, used temporarily at road work sites. Italy's yellow is the US's orange (temporary / construction).
-4. The triangle marks a danger **ahead** (about 150 m outside towns). The **cross** marks the crossing itself.
+1. This family uses **three shapes**: the **triangle** (warn only), the **St. Andrew's cross** (an X, at a **railroad crossing**, **yield**), and the **countdown panels** (rectangles before a crossing).
+2. A red-bordered **triangle** warns of a hazard ahead and never forbids, orders, or grants **precedence**.
+3. A **yellow** background means the same triangle warning, used temporarily at **road work sites**. Italy's yellow is the US's orange (temporary / construction).
+4. The triangle marks a danger **ahead** (about 150 m outside towns). The **cross** marks the **crossing** itself.
 5. Resolve the look-alikes by contrast: **crest vs dip**, **uphill vs downhill**, **bend direction**, **narrowing on one side vs both**, **crossing with vs without barriers**, **single vs double track cross**.
-6. The **exclamation-mark** sign means "other danger," with a panel naming it.
+6. The **exclamation-mark** sign means "other danger," with a **panel** naming it.
 
 <!-- LANG: it -->
 ## Cosa fanno questi segnali
@@ -360,9 +360,9 @@ Diversi segnali lavorano insieme, in sequenza mentre ti avvicini, e sono una fre
 
 ## Riepilogo dei punti chiave
 
-1. Questa famiglia usa **tre forme**: il **triangolo** (solo avvertimento), la **croce di Sant'Andrea** (una X, al passaggio a livello, dare precedenza) e i **pannelli distanziometrici** (rettangoli prima del passaggio).
-2. Un **triangolo** con bordo rosso avverte di un pericolo più avanti e non vieta, ordina né concede la precedenza.
-3. Un **fondo giallo** indica lo stesso avvertimento, usato temporaneamente nei cantieri.
-4. Il triangolo segna un pericolo **più avanti** (circa 150 m fuori città). La **croce** segna il passaggio a livello stesso.
+1. Questa famiglia usa **tre forme**: il **triangolo** (solo avvertimento), la **croce di Sant'Andrea** (una X, al **passaggio a livello**, **dare precedenza**) e i **pannelli distanziometrici** (rettangoli prima del passaggio).
+2. Un **triangolo** con bordo rosso avverte di un pericolo più avanti e non vieta, ordina né concede la **precedenza**.
+3. Un **fondo giallo** indica lo stesso avvertimento, usato temporaneamente nei **cantieri**.
+4. Il triangolo segna un pericolo **più avanti** (circa 150 m fuori città). La **croce** segna il **passaggio a livello** stesso.
 5. Risolvi i segnali simili per contrasto: **dosso/cunetta**, **salita/discesa**, **direzione della curva**, **strettoia su uno o entrambi i lati**, **passaggio con/senza barriere**, **croce a binario singolo/doppio**.
-6. Il segnale con il **punto esclamativo** significa "altri pericoli", con un pannello che lo nomina.
+6. Il segnale con il **punto esclamativo** significa "altri pericoli", con un **pannello** che lo nomina.

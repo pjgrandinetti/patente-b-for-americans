@@ -154,13 +154,13 @@ Five regulation inscriptions appear in this topic. **STOP** completes the STOP s
 
 ## Summary of key points
 
-1. Markings divide, guide, and regulate. A **traffic officer** and **temporary yellow work-zone lines** override the normal markings; studs may supplement but never replace them.
-2. **Italy's center line is white even between opposing directions**. The US yellow-means-oncoming rule does not transfer. Yellow marks something special (bus, taxi, disability, no-parking curb, temporary lines), and blue marks paid parking.
-3. **Broken** lines may be crossed; **continuous** and **double continuous** may not, not even with one wheel; straddling any line is banned. A continuous line appears **before** curves and junctions and on the way up to a crest, and a broken line returns after them.
-4. On a **one-way** road the center line only separates lanes (the left lane is for overtaking, crossing is free, and a U-turn is still banned). On a **two-way** road it separates the directions.
-5. The **stop line** marks the stop point for STOP, red light, or officer. It says where, not when, and exists only where the junction is regulated; the **broken or triangle yield line** marks the yield point; **progressive transverse bars** order you to slow down. Broken **side** lines set off pull-offs, driveways, and acceleration lanes; the **continuous** edge line sets off the shoulder and the autostrada **emergency lane** (for breakdowns only, and for at most three hours).
-6. **Arrows are always white** and bind once the lane lines turn continuous. **Guide lines** lead and may be crossed; a **hatched traffic island** forbids driving, stopping, and parking.
-7. Obstacles such as no-parking curbs and speed bumps wear **yellow-and-black** stripes. A yellow zigzag marks a bus stop, where parking is banned and stopping is allowed. A "50" painted on the road is a recommended speed.
+1. **Markings** divide, guide, and regulate. A **traffic officer** and **temporary yellow work-zone lines** override the normal markings; **studs** may supplement but never replace them.
+2. **Italy's center line is white even between opposing directions**. The US yellow-means-oncoming rule does not transfer. Yellow marks something special (bus, taxi, disability, no-parking **curb**, temporary lines), and blue marks **paid parking**.
+3. **Broken** lines may be crossed; **continuous** and **double continuous** may not, not even with one wheel; **straddling** any line is banned. A continuous line appears **before** **curves** and **junctions** and on the way up to a **crest**, and a broken line returns after them.
+4. On a **one-way** road the **center line** only separates **lanes** (the left lane is for **overtaking**, crossing is free, and a **U-turn** is still banned). On a **two-way** road it separates the directions.
+5. The **stop line** marks the stop point for STOP, red light, or **officer**. It says where, not when, and exists only where the **junction** is regulated; the **broken or triangle yield line** marks the yield point; **progressive transverse bars** order you to slow down. Broken **side** lines set off **pull-offs**, **driveways**, and **acceleration lanes**; the **continuous** edge line sets off the **shoulder** and the autostrada **emergency lane** (for breakdowns only, and for at most three hours).
+6. **Arrows are always white** and bind once the lane lines turn continuous. **Guide lines** lead and may be crossed; a **hatched traffic island** forbids **driving**, **stopping**, and **parking**.
+7. Obstacles such as **no-parking curbs** and **speed bumps** wear **yellow-and-black** stripes. A yellow zigzag marks a **bus stop**, where parking is banned and stopping is allowed. A "50" painted on the road is a recommended speed.
 
 <!-- LANG: it -->
 ## Cosa fa la segnaletica orizzontale
@@ -313,10 +313,10 @@ In questo argomento compaiono cinque iscrizioni regolamentari. **STOP** completa
 
 ## Riepilogo dei punti chiave
 
-1. La segnaletica divide, guida e regola. L'**agente** e le **linee gialle temporanee di cantiere** prevalgono su quella normale; i chiodi possono integrarla, mai sostituirla.
-2. **La mezzeria è bianca anche tra i sensi opposti**. Il giallo segna qualcosa di speciale (bus, taxi, disabili, cordolo, strisce temporanee), e il blu segna la sosta a pagamento.
-3. Le strisce **discontinue** si attraversano; **continua** e **doppia continua** no, nemmeno con una ruota; cavalcare qualsiasi striscia è vietato. La striscia continua sta **prima** di curve e incroci e in salita sul dosso, e la discontinua torna dopo.
-4. Su **senso unico** la mezzeria separa solo corsie (la corsia di sinistra serve al sorpasso, l'attraversamento è libero e l'inversione resta vietata). Su **doppio senso** separa le direzioni.
-5. La **linea di arresto** segna il punto di fermata per STOP, rosso o agente. Dice dove, non quando, ed esiste solo dove l'incrocio è regolato; la **linea discontinua o a triangoli** segna il punto della precedenza; le **strisce trasversali di rallentamento** impongono di moderare la velocità. Le strisce **laterali discontinue** delimitano piazzole, passi carrabili e corsie di accelerazione; la **striscia di margine continua** delimita banchina e **corsia di emergenza** autostradale (solo per i guasti, e per non più di tre ore).
-6. Le **frecce sono sempre bianche** e vincolano quando le linee diventano continue. Le **strisce di guida** accompagnano e si possono attraversare; l'**isola zebrata** vieta transito, fermata e sosta.
-7. Gli ostacoli come i cordoli con divieto di sosta e i dossi artificiali vestono strisce **gialle e nere**. Uno zig-zag giallo segna una fermata bus, dove la sosta è vietata e la fermata consentita. Un "50" dipinto sulla strada è una velocità consigliata.
+1. La **segnaletica** divide, guida e regola. L'**agente** e le **linee gialle temporanee di cantiere** prevalgono su quella normale; i **chiodi** possono integrarla, mai sostituirla.
+2. **La mezzeria è bianca anche tra i sensi opposti**. Il giallo segna qualcosa di speciale (bus, taxi, disabili, **cordolo**, strisce temporanee), e il blu segna la **sosta a pagamento**.
+3. Le strisce **discontinue** si attraversano; **continua** e **doppia continua** no, nemmeno con una ruota; **cavalcare** qualsiasi striscia è vietato. La striscia continua sta **prima** di **curve** e **incroci** e in salita sul **dosso**, e la discontinua torna dopo.
+4. Su **senso unico** la **mezzeria** separa solo **corsie** (la corsia di sinistra serve al **sorpasso**, l'attraversamento è libero e l'**inversione** resta vietata). Su **doppio senso** separa le direzioni.
+5. La **linea di arresto** segna il punto di fermata per STOP, rosso o **agente**. Dice dove, non quando, ed esiste solo dove l'**incrocio** è regolato; la **linea discontinua o a triangoli** segna il punto della precedenza; le **strisce trasversali di rallentamento** impongono di moderare la velocità. Le strisce **laterali discontinue** delimitano **piazzole**, **passi carrabili** e **corsie di accelerazione**; la **striscia di margine continua** delimita **banchina** e **corsia di emergenza** autostradale (solo per i guasti, e per non più di tre ore).
+6. Le **frecce sono sempre bianche** e vincolano quando le linee diventano continue. Le **strisce di guida** accompagnano e si possono attraversare; l'**isola zebrata** vieta **transito**, **fermata** e **sosta**.
+7. Gli ostacoli come i **cordoli con divieto di sosta** e i **dossi artificiali** vestono strisce **gialle e nere**. Uno zig-zag giallo segna una **fermata bus**, dove la sosta è vietata e la fermata consentita. Un "50" dipinto sulla strada è una velocità consigliata.

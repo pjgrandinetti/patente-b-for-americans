@@ -93,12 +93,12 @@ Distraction is **one of the main causes of crashes**. The road and the other use
 
 ## Summary of key points
 
-1. **Civil liability** means compensating the damage, falling on driver **and** owner. **Criminal liability** is personal to the **driver**, for crimes like injury or homicide. **Administrative liability** is Road Code fines, points, and suspension.
-2. **Criminal liability is not erased** by paying, helping the victim, or insurance. It is excluded for **property-only** damage, **force majeure**, or when the act is **not a crime**.
-3. **RCA is compulsory**, covers **third-party** damage to persons and property, is **EU-valid**, and the **certificate stays in the vehicle**. It does **not** cover fines, criminal liability, or damage **over the limit**.
-4. **Limits** have a legal minimum and can be raised with a higher premium, and **bonus-malus** ties the premium to your accident record.
-5. With **expired RCA** you may not **drive or park** on public roads, with a confiscation risk. **Kasko, theft, and fire** policies are optional, and the **guarantee fund** pays victims of **uninsured or unidentified** vehicles.
-6. **Distraction is a leading crash cause**, and the attention you can give the road is limited. Phones even with hands-free, the navigator, tuning the radio by hand, loud music, and arguments all impair attention. Never look away, never overrate your ability, and watch the other users as well as the road ahead.
+1. **Civil liability** means **compensating** the damage, falling on driver **and** **owner**. **Criminal liability** is personal to the **driver**, for **crimes** like **injury** or **homicide**. **Administrative liability** is Road Code **fines**, **points**, and **suspension**.
+2. **Criminal liability is not erased** by paying, helping the **victim**, or **insurance**. It is excluded for **property-only** damage, **force majeure**, or when the act is **not a crime**.
+3. **RCA is compulsory**, covers **third-party** damage to persons and property, is **EU-valid**, and the **certificate stays in the vehicle**. It does **not** cover **fines**, **criminal liability**, or damage **over the limit**.
+4. **Limits** have a legal minimum and can be raised with a higher **premium**, and **bonus-malus** ties the premium to your **accident record**.
+5. With **expired RCA** you may not **drive or park** on public roads, with a **confiscation** risk. **Kasko, theft, and fire** policies are optional, and the **guarantee fund** pays victims of **uninsured or unidentified** vehicles.
+6. **Distraction is a leading crash cause**, and the attention you can give the road is limited. Phones even with **hands-free**, the **navigator**, tuning the radio by hand, loud music, and arguments all impair attention. Never look away, never overrate your ability, and watch the other **users** as well as the road ahead.
 
 <!-- LANG: it -->
 ## Cosa copre questo argomento
@@ -190,9 +190,9 @@ La distrazione è **una delle principali cause di incidente**. La strada e gli a
 
 ## Riepilogo dei punti chiave
 
-1. La **responsabilità civile** significa risarcire il danno, e grava su conducente **e** proprietario. La **penale** è personale del **conducente**, per reati come lesioni o omicidio. L'**amministrativa** è sanzioni, punti e sospensione del Codice della Strada.
-2. La **responsabilità penale non si estingue** pagando, soccorrendo la vittima o con l'assicurazione. È esclusa per **danno alle sole cose**, **forza maggiore** o quando l'atto **non è un reato**.
-3. L'**RC auto è obbligatoria**, copre il danno a **terzi**, persone e cose, è **valida in UE** e il **certificato sta nel veicolo**. **Non** copre sanzioni, responsabilità penale né danni **oltre il massimale**.
-4. I **massimali** hanno un minimo di legge e si alzano con un premio più alto, e il **bonus-malus** lega il premio al tuo storico di sinistri.
-5. Con **RC scaduta** non puoi né **circolare né sostare** su strada pubblica, con rischio di confisca. Le polizze **kasko, furto e incendio** sono facoltative, e il **fondo di garanzia** risarcisce le vittime di veicoli **non assicurati o non identificati**.
-6. La **distrazione è una causa principale di incidente**, e l'attenzione che si può dedicare alla strada è limitata. Telefono anche con vivavoce, navigatore, sintonizzazione manuale dell'autoradio, musica alta e discussioni riducono l'attenzione. Non distogliere lo sguardo, non sopravvalutarti e osserva gli altri utenti oltre alla strada davanti a te.
+1. La **responsabilità civile** significa **risarcire** il danno, e grava su conducente **e** **proprietario**. La **penale** è personale del **conducente**, per **reati** come **lesioni** o **omicidio**. L'**amministrativa** è **sanzioni**, **punti** e **sospensione** del Codice della Strada.
+2. La **responsabilità penale non si estingue** pagando, soccorrendo la **vittima** o con l'**assicurazione**. È esclusa per **danno alle sole cose**, **forza maggiore** o quando l'atto **non è un reato**.
+3. L'**RC auto è obbligatoria**, copre il danno a **terzi**, persone e cose, è **valida in UE** e il **certificato sta nel veicolo**. **Non** copre **sanzioni**, **responsabilità penale** né danni **oltre il massimale**.
+4. I **massimali** hanno un minimo di legge e si alzano con un **premio** più alto, e il **bonus-malus** lega il premio al tuo **storico di sinistri**.
+5. Con **RC scaduta** non puoi né **circolare né sostare** su strada pubblica, con rischio di **confisca**. Le polizze **kasko, furto e incendio** sono facoltative, e il **fondo di garanzia** risarcisce le vittime di veicoli **non assicurati o non identificati**.
+6. La **distrazione è una causa principale di incidente**, e l'attenzione che si può dedicare alla strada è limitata. Telefono anche con **vivavoce**, **navigatore**, sintonizzazione manuale dell'autoradio, musica alta e discussioni riducono l'attenzione. Non distogliere lo sguardo, non sopravvalutarti e osserva gli altri **utenti** oltre alla strada davanti a te.

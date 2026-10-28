@@ -105,11 +105,11 @@ Delineators mark the **edge and course of the road**, especially where visibilit
 ## Summary of key points
 
 1. A **yellow background means a temporary, work-zone sign**. Italy's yellow is the US's orange. Shape and meaning stay the same, and the temporary sign **overrides** its permanent counterpart.
-2. Work-zone **advisory** signs (truck routes) recommend; the **detour board's 7 t** is an actual-mass limit. Lighter vehicles may go straight.
-3. Among the lane panels, the red merging arrow means a **lane is closed**, the category panels assign lanes, with trucks on the right, and the composite version rides on a **work vehicle**.
-4. **Barriers** (also for broken crossing gates, with a steady red lamp in fog) and **cones** (short jobs only) mark the zone; the chevron panel on a work vehicle says **which side to pass**.
-5. **Delineators** mark the edge and the course of the road; they are reflective, never self-lit and never lane dividers, and they come in versions for one-way roads, two-way roads, one-way tunnels, and snowy mountain roads.
-6. **Chevrons** sit in the bend itself and point its way, and in white and red they are temporary; the double version marks a **T-junction**; the obstacle bollard stands **on** the carriageway and shows the passing side; the hairpin panel is a **counter**.
+2. Work-zone **advisory** signs (**truck** routes) recommend; the **detour board's 7 t** is an **actual-mass limit**. Lighter vehicles may go straight.
+3. Among the **lane panels**, the red merging arrow means a **lane is closed**, the category panels assign lanes, with **trucks** on the right, and the composite version rides on a **work vehicle**.
+4. **Barriers** (also for broken **crossing** gates, with a steady red lamp in fog) and **cones** (short jobs only) mark the zone; the chevron panel on a **work vehicle** says **which side to pass**.
+5. **Delineators** mark the edge and the course of the road; they are **reflective**, never self-lit and never **lane dividers**, and they come in versions for **one-way** roads, **two-way** roads, one-way **tunnels**, and snowy mountain roads.
+6. **Chevrons** sit in the **bend** itself and point its way, and in white and red they are temporary; the double version marks a **T-junction**; the **obstacle bollard** stands **on** the **carriageway** and shows the passing side; the **hairpin** panel is a **counter**.
 
 <!-- LANG: it -->
 ## Cosa copre questo argomento
@@ -213,8 +213,8 @@ I delineatori segnano il **bordo e l'andamento della strada**, soprattutto dove 
 ## Riepilogo dei punti chiave
 
 1. Il **fondo giallo significa segnale temporaneo, di cantiere**. Forma e significato restano, e il segnale temporaneo **prevale** sul permanente corrispondente.
-2. I segnali **consigliati** da cantiere (percorsi per autocarri) raccomandano; il **7 t del pannello di deviazione** è un limite di massa effettiva. I più leggeri possono proseguire diritto.
-3. Tra i pannelli di corsia, la freccia rossa di rientro significa **corsia chiusa**, i pannelli per categoria assegnano le corsie, con gli autocarri a destra, e la versione composita viaggia su un **veicolo di lavoro**.
-4. **Transenne** (anche per sbarre guaste dei passaggi a livello, con luce rossa fissa nella nebbia) e **coni** (solo lavori brevi) delimitano la zona; il pannello sui mezzi d'opera dice **da che lato sorpassare**.
-5. I **delineatori** segnano il bordo e l'andamento della strada; sono rifrangenti, mai a luce propria e mai divisori di corsie, e hanno versioni per senso unico, doppio senso, gallerie a senso unico e strade da neve.
-6. I **chevron** stanno nella curva e ne indicano il verso, e in bianco e rosso sono provvisori; la versione doppia segna un **incrocio a T**; la colonnina d'ostacolo sta **sulla** carreggiata e indica il lato di passaggio; il pannello dei tornanti è un **contatore**.
+2. I segnali **consigliati** da cantiere (percorsi per **autocarri**) raccomandano; il **7 t del pannello di deviazione** è un **limite di massa effettiva**. I più leggeri possono proseguire diritto.
+3. Tra i **pannelli di corsia**, la freccia rossa di rientro significa **corsia chiusa**, i pannelli per categoria assegnano le corsie, con gli **autocarri** a destra, e la versione composita viaggia su un **veicolo di lavoro**.
+4. **Transenne** (anche per sbarre guaste dei **passaggi a livello**, con luce rossa fissa nella nebbia) e **coni** (solo lavori brevi) delimitano la zona; il pannello sui **mezzi d'opera** dice **da che lato sorpassare**.
+5. I **delineatori** segnano il bordo e l'andamento della strada; sono **rifrangenti**, mai a luce propria e mai **divisori di corsie**, e hanno versioni per **senso unico**, **doppio senso**, **gallerie** a senso unico e strade da neve.
+6. I **chevron** stanno nella **curva** e ne indicano il verso, e in bianco e rosso sono provvisori; la versione doppia segna un **incrocio a T**; la **colonnina d'ostacolo** sta **sulla** **carreggiata** e indica il lato di passaggio; il pannello dei **tornanti** è un **contatore**.

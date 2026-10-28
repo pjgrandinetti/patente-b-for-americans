@@ -105,7 +105,7 @@ Never give an injured person **alcohol**. Never **move** them unnecessarily or w
 2. **Alcohol** slows reflexes, causes drowsiness and false confidence, and **takes hours to wear off**. Coffee and food do not help. The limit is **0.5 g/l**, and **0.0** for under-21, first-3-years, and professional drivers, and it covers bicycles too.
 3. **Illegal drugs and some medicines** such as sedatives and antidepressants impair driving. Never mix them with alcohol.
 4. Wear **glasses or contacts whenever code "01"** is on the license, not just at night or on certain roads.
-5. **First aid is a legal duty for everyone.** Keep the person alive with simple measures, prevent further harm, call **112**, and do not move them if a spine injury is possible.
+5. **First aid is a legal duty for everyone.** Keep the person alive with simple measures, prevent further harm, call **112**, and do not move them if a **spine injury** is possible.
 6. By injury, **press bleeding** without removing embedded objects, **bandage an injured eye**, treat **shock** by lying the person down with legs up and keeping them warm, **immobilize fractures**, and for **burns** smother and cool without peeling stuck clothing. And **never give alcohol**.
 
 <!-- LANG: it -->
@@ -208,5 +208,5 @@ Non dare mai alcol a un ferito. Non **spostarlo** inutilmente o con possibile le
 2. L'**alcol** rallenta i riflessi, dà sonnolenza e falsa sicurezza e **impiega ore a smaltirsi**. Caffè e cibo non aiutano. Il limite è **0,5 g/l**, e **0,0** per under 21, primi 3 anni e conducenti professionali, e vale anche per le biciclette.
 3. **Droghe illegali e alcuni farmaci** come sedativi e antidepressivi compromettono la guida. Non mescolarli mai con l'alcol.
 4. Indossa **occhiali o lenti ogni volta che sulla patente c'è il codice "01"**, non solo di notte o su certe strade.
-5. Il **primo soccorso è un dovere di legge per tutti.** Tieni in vita la persona con misure semplici, previeni danni ulteriori, chiama il **112** e non spostarla se è possibile una lesione spinale.
+5. Il **primo soccorso è un dovere di legge per tutti.** Tieni in vita la persona con misure semplici, previeni danni ulteriori, chiama il **112** e non spostarla se è possibile una **lesione spinale**.
 6. Per tipo di lesione, **comprimi le emorragie** senza rimuovere oggetti conficcati, **benda un occhio ferito**, tratta lo **shock** distendendo la persona con le gambe sollevate e tenendola al caldo, **immobilizza le fratture**, e per le **ustioni** soffoca e raffredda senza staccare i vestiti attaccati. E **mai dare alcol**.

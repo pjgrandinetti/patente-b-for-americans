@@ -147,11 +147,11 @@ A **blue circle with a user symbol** marks a route that is both **mandatory** fo
 ## Summary of key points
 
 1. A **blue circle means you must**. A **red-bordered circle means you must not**. A **red triangle means danger**.
-2. Mandatory signs are one family of **regulatory signs** (*prescrizione*), together with prohibition and right-of-way signs. "Is a regulatory sign" is **true** of a blue circle.
+2. **Mandatory signs** are one family of **regulatory signs** (*prescrizione*), together with **prohibition** and **right-of-way signs**. "Is a regulatory sign" is **true** of a blue circle.
 3. The US has **no blue circles**: a blue circle does the job of a white US regulatory rectangle, and a blue number is **MINIMUM SPEED**, not a limit. <!-- en-only -->
 4. A **blue number is a minimum** speed. A **red number is a maximum** speed.
 5. A **mandatory path** is at the same time **prohibited to everyone else**. A **vertical bar** in the symbol means separated halves; **stacked** symbols mean one shared path.
-6. A **straight blue arrow orders here**; a **curved arrow announces** the obligation before the junction; a rectangular **arrow only informs**.
+6. A **straight blue arrow orders here**; a **curved arrow announces** the obligation before the **junction**; a rectangular **arrow only informs**.
 7. A blue sign crossed by a **red diagonal bar** marks the **end** of the obligation.
 
 <!-- LANG: it -->
@@ -295,8 +295,8 @@ Un **cerchio blu con il simbolo di un utente** indica un percorso che è insieme
 ## Riepilogo dei punti chiave
 
 1. **Un cerchio blu significa che devi.** **Un cerchio con bordo rosso significa che non devi.** **Un triangolo rosso significa pericolo.**
-2. I segnali di obbligo sono una famiglia dei **segnali di prescrizione**, insieme a divieti e precedenze. "È un segnale di prescrizione" è **vero** per un cerchio blu.
+2. I **segnali di obbligo** sono una famiglia dei **segnali di prescrizione**, insieme a **divieti** e **precedenze**. "È un segnale di prescrizione" è **vero** per un cerchio blu.
 3. **Un numero blu è una velocità minima.** **Un numero rosso è una velocità massima.**
 4. Un **percorso obbligatorio** è allo stesso tempo **vietato a tutti gli altri**. La **barra verticale** nel simbolo indica metà separate; i simboli **sovrapposti** un unico percorso pedonale e ciclabile.
-5. Una **freccia blu dritta ordina qui**; una **freccia curva preannuncia** l'obbligo prima dell'incrocio; una freccia **rettangolare solo informa**.
+5. Una **freccia blu dritta ordina qui**; una **freccia curva preannuncia** l'obbligo prima dell'**incrocio**; una freccia **rettangolare solo informa**.
 6. Un segnale blu barrato da una **banda diagonale rossa** segna la **fine** dell'obbligo.

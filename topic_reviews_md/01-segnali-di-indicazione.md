@@ -265,14 +265,14 @@ A **yellow advance-detour sign** announces that the road is cut ahead by road wo
 
 ## Summary of key points
 
-1. The sign **informs**. It does not warn, forbid, oblige, or assign right of way. And advisory signs (advised speed, advised routes) stay advisory.
-2. **Color tells the road type**: white urban, blue extra-urban, green autostrada, brown tourist, yellow temporary. In the US green means "guide"; in Italy it means **autostrada**.
-3. **Numbers**: road number (A25, SS 2, E 55), distance in km, or bus line, never a speed, weight, time, or count. On the autostrada distance sign the left figure is the progressive kilometer and the right figure is the distance to the exit.
-4. A town name means you are **entering**; with the red stripe you are **leaving**. And the urban rules switch on and off with it.
-5. On junction diagrams an **inserted symbol qualifies its branch**: no-entry bars a branch, a triangle warns down a branch, a brown patch is a tourist destination, a green patch is the autostrada. Preselection signs assign lanes while the lines are still broken.
-6. **One-way** comes in two forms (parallel and head-on); U-turns are banned on one-way streets. Lane-use signs can bar heavy trucks from a lane, set rising autostrada minimums, or reserve a bus lane.
-7. **EU borders**: no stop required. The **ITALIA board** at the border lists the national limits (50/90/110/130). Pass boards: open-with-chains is a condition; closed-with-chains is a recommendation for the reachable stretch.
-8. The detour panel figure is the **length of the detour**. The park-and-ride numbers are **bus lines**. The pharmacy cross is **green**; first aid is red.
+1. The sign **informs**. It does not warn, forbid, oblige, or assign **right of way**. And advisory signs (advised speed, advised routes) stay advisory.
+2. **Color tells the road type**: white **urban**, blue **extra-urban**, green autostrada, brown tourist, yellow temporary. In the US green means "guide"; in Italy it means **autostrada**.
+3. **Numbers**: road number (A25, SS 2, E 55), distance in km, or bus line, never a speed, weight, time, or count. On the **autostrada distance sign** the left figure is the progressive kilometer and the right figure is the distance to the **exit**.
+4. A town name means you are **entering**; with the **red stripe** you are **leaving**. And the urban rules switch on and off with it.
+5. On **junction diagrams** an **inserted symbol qualifies its branch**: **no-entry** bars a branch, a triangle warns down a branch, a brown patch is a tourist destination, a green patch is the autostrada. **Preselection signs** assign **lanes** while the lines are still **broken**.
+6. **One-way** comes in two forms (parallel and head-on); **U-turns** are banned on one-way streets. **Lane-use signs** can bar **heavy trucks** from a lane, set rising autostrada minimums, or reserve a **bus lane**.
+7. **EU borders**: no **stop** required. The **ITALIA board** at the border lists the national limits (50/90/110/130). **Pass boards**: open-with-chains is a condition; closed-with-chains is a recommendation for the reachable stretch.
+8. The **detour panel** figure is the **length of the detour**. The **park-and-ride** numbers are **bus lines**. The **pharmacy** cross is **green**; **first aid** is red.
 
 <!-- LANG: it -->
 ## Cosa fanno questi segnali
@@ -534,11 +534,11 @@ Un **preavviso giallo di deviazione** annuncia che più avanti la strada è inte
 
 ## Riepilogo dei punti chiave
 
-1. Il segnale **informa**. Non avverte, vieta, obbliga né assegna la precedenza. E i segnali consigliati (velocità e percorsi consigliati) restano consigli.
-2. **Il colore dice il tipo di strada**: bianco urbano, blu extraurbano, verde autostrada, marrone turistico, giallo temporaneo. Leggi sempre lo sfondo prima delle parole: il verde significa specificamente **autostrada**.
-3. **Numeri**: numero di strada (A25, SS 2, E 55), distanza in km o linea di autobus, mai velocità, massa, orario o conteggio. Sulla progressiva autostradale la cifra a sinistra è il km dall'origine e quella a destra la distanza all'uscita.
-4. Il nome di un paese indica che si **entra**; con la striscia rossa si **esce**. E con esso si accendono e si spengono le regole urbane.
-5. Nei preavvisi di incrocio un **simbolo inserito qualifica il suo ramo**: il senso vietato esclude un ramo, il triangolo avverte lungo un ramo, la tessera marrone è una meta turistica, quella verde è l'autostrada. La preselezione assegna le corsie finché le strisce sono discontinue.
-6. Il **senso unico** ha due forme (parallelo e frontale); sull'unico senso l'inversione è vietata. I segnali di corsia possono escludere i mezzi pesanti da una corsia, fissare minimi crescenti in autostrada o riservare una corsia bus.
-7. **Confini UE**: nessun obbligo di arresto. Il **pannello ITALIA** al confine elenca i limiti nazionali (50/90/110/130). Valichi: aperto+catene è una condizione; chiuso+catene una raccomandazione per il tratto percorribile.
-8. La cifra della deviazione è la **lunghezza della deviazione**. I numeri del parcheggio di scambio sono **linee di autobus**. La croce della farmacia è **verde**; il pronto soccorso è rosso.
+1. Il segnale **informa**. Non avverte, vieta, obbliga né assegna la **precedenza**. E i segnali consigliati (velocità e percorsi consigliati) restano consigli.
+2. **Il colore dice il tipo di strada**: bianco **urbano**, blu **extraurbano**, verde autostrada, marrone turistico, giallo temporaneo. Leggi sempre lo sfondo prima delle parole: il verde significa specificamente **autostrada**.
+3. **Numeri**: numero di strada (A25, SS 2, E 55), distanza in km o linea di autobus, mai velocità, massa, orario o conteggio. Sulla **progressiva autostradale** la cifra a sinistra è il km dall'origine e quella a destra la distanza all'**uscita**.
+4. Il nome di un paese indica che si **entra**; con la **striscia rossa** si **esce**. E con esso si accendono e si spengono le regole urbane.
+5. Nei **preavvisi di incrocio** un **simbolo inserito qualifica il suo ramo**: il **senso vietato** esclude un ramo, il triangolo avverte lungo un ramo, la tessera marrone è una meta turistica, quella verde è l'autostrada. La **preselezione** assegna le **corsie** finché le strisce sono **discontinue**.
+6. Il **senso unico** ha due forme (parallelo e frontale); sull'unico senso l'**inversione** è vietata. I **segnali di corsia** possono escludere i **mezzi pesanti** da una corsia, fissare minimi crescenti in autostrada o riservare una **corsia bus**.
+7. **Confini UE**: nessun obbligo di **arresto**. Il **pannello ITALIA** al confine elenca i limiti nazionali (50/90/110/130). **Valichi**: aperto+catene è una condizione; chiuso+catene una raccomandazione per il tratto percorribile.
+8. La cifra della **deviazione** è la **lunghezza della deviazione**. I numeri del **parcheggio di scambio** sono **linee di autobus**. La croce della **farmacia** è **verde**; il **pronto soccorso** è rosso.

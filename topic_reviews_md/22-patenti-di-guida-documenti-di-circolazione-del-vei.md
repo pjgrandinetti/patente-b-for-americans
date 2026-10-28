@@ -214,12 +214,12 @@ A license is renewed only after a **medical fitness check**. <!-- q: 24677 -->
 
 ## Summary of key points
 
-1. **AM** is at 14 for mopeds and light quads, **A1** at 16, **A2** at 18, and full **A** at 24 by direct access or 20 after 2 years of A2. **B** and **BE** are at 18, B for vehicles up to 3.5 t and a maximum of nine seats.
-2. For trailers, **B** allows a light trailer or a combination up to 3.5 t, **B96** allows a combination up to 4,250 kg, and **BE** allows a trailer up to 3,500 kg.
-3. Drive only with **registration, insurance, and legible plates**, plus the triangle and vest. Use **'P' panels** for learners, and show documents to officers.
-4. Points start at **20**, **double in the first 3 years**, and at most **15** are lost at once. **2 clean years restore 20**, and **zero points means a revision**. For the **first 3 years**, a new B driver may not drive cars over **75 kW/t**, and M1 cars must also be **105 kW or less**.
-5. **Withdrawal, suspension, revision, and revocation** apply to escalating offenses. Wrong-way driving and driving while suspended bring **revocation**.
-6. Validity is **10, 5, 3, or 2 years** for ages **under 50, 50 to 70, 70 to 80, and over 80**, renewed after a medical check.
+1. **AM** is at 14 for **mopeds** and **light quads**, **A1** at 16, **A2** at 18, and full **A** at 24 by **direct access** or 20 after 2 years of A2. **B** and **BE** are at 18, B for vehicles up to 3.5 t and a maximum of nine seats.
+2. For **trailers**, **B** allows a **light trailer** or a **combination** up to 3.5 t, **B96** allows a combination up to 4,250 kg, and **BE** allows a trailer up to 3,500 kg.
+3. Drive only with **registration, insurance, and legible plates**, plus the **triangle** and **vest**. Use **'P' panels** for learners, and show **documents** to **officers**.
+4. **Points** start at **20**, **double in the first 3 years**, and at most **15** are lost at once. **2 clean years restore 20**, and **zero points means a revision**. For the **first 3 years**, a **new B driver** may not drive cars over **75 kW/t**, and M1 cars must also be **105 kW or less**.
+5. **Withdrawal, suspension, revision, and revocation** apply to escalating **offenses**. **Wrong-way driving** and driving while suspended bring **revocation**.
+6. **Validity** is **10, 5, 3, or 2 years** for ages **under 50, 50 to 70, 70 to 80, and over 80**, renewed after a **medical check**.
 
 <!-- LANG: it -->
 ## Cosa copre questo argomento
@@ -429,9 +429,9 @@ La patente si rinnova solo dopo un **accertamento medico di idoneità**.
 
 ## Riepilogo dei punti chiave
 
-1. **AM** è a 14 per ciclomotori e quadricicli leggeri, **A1** a 16, **A2** a 18, e **A** piena a 24 per accesso diretto o 20 dopo 2 anni di A2. **B** e **BE** sono a 18, la B per veicoli fino a 3,5 t e un massimo di nove posti.
-2. Per i rimorchi, **B** consente un rimorchio leggero o un complesso fino a 3,5 t, **B96** consente un complesso fino a 4.250 kg, e **BE** consente un rimorchio fino a 3.500 kg.
-3. Circola solo con **carta di circolazione, assicurazione e targhe leggibili**, più triangolo e giubbotto. Usa i **contrassegni 'P'** per le esercitazioni, e mostra i documenti agli agenti.
-4. I punti partono da **20**, **raddoppiano nei primi 3 anni**, e al massimo **15** si perdono in una volta. **2 anni puliti ripristinano i 20**, e **zero punti significa una revisione**. Nei **primi 3 anni**, un neopatentato B non può guidare auto oltre **75 kW/t**, e le M1 devono essere anche **105 kW o meno**.
-5. **Ritiro, sospensione, revisione e revoca** si applicano a infrazioni crescenti. Contromano in autostrada e guida durante la sospensione comportano la **revoca**.
-6. La validità è di **10, 5, 3 o 2 anni** per le età **sotto 50, 50-70, 70-80 e oltre 80**, con rinnovo dopo accertamento medico.
+1. **AM** è a 14 per **ciclomotori** e **quadricicli leggeri**, **A1** a 16, **A2** a 18, e **A** piena a 24 per **accesso diretto** o 20 dopo 2 anni di A2. **B** e **BE** sono a 18, la B per veicoli fino a 3,5 t e un massimo di nove posti.
+2. Per i **rimorchi**, **B** consente un **rimorchio leggero** o un **complesso** fino a 3,5 t, **B96** consente un complesso fino a 4.250 kg, e **BE** consente un rimorchio fino a 3.500 kg.
+3. Circola solo con **carta di circolazione, assicurazione e targhe leggibili**, più **triangolo** e **giubbotto**. Usa i **contrassegni 'P'** per le esercitazioni, e mostra i **documenti** agli **agenti**.
+4. I **punti** partono da **20**, **raddoppiano nei primi 3 anni**, e al massimo **15** si perdono in una volta. **2 anni puliti ripristinano i 20**, e **zero punti significa una revisione**. Nei **primi 3 anni**, un **neopatentato B** non può guidare auto oltre **75 kW/t**, e le M1 devono essere anche **105 kW o meno**.
+5. **Ritiro, sospensione, revisione e revoca** si applicano a **infrazioni** crescenti. **Contromano** in autostrada e guida durante la sospensione comportano la **revoca**.
+6. La **validità** è di **10, 5, 3 o 2 anni** per le età **sotto 50, 50-70, 70-80 e oltre 80**, con rinnovo dopo **accertamento medico**.

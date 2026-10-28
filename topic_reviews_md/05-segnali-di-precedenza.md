@@ -95,12 +95,12 @@ And above both stands the **traffic officer**: an officer's order **overrides th
 
 ## Summary of key points
 
-1. Right-of-way signs decide **who goes first**; they are **regulatory** signs.
-2. The **inverted triangle** (yield) and **octagon** (stop) are unique shapes, recognizable even when obscured, and identical to their US counterparts.
-3. **Yield** means stop only if needed. **Stop** means a complete halt every time. A distance panel makes either an **advance notice**.
+1. **Right-of-way signs** decide **who goes first**; they are **regulatory** signs.
+2. The **inverted triangle** (**yield**) and **octagon** (**stop**) are unique shapes, recognizable even when obscured, and identical to their US counterparts.
+3. **Yield** means stop only if needed. **Stop** means a complete halt every time. A **distance panel** makes either an **advance notice**.
 4. The **yellow diamond** is Italy's big false friend: not a warning but a **priority road**. Cross streets get YIELD or STOP. With a **black band** it marks where priority ends and the **yield-to-the-right** rule returns.
 5. In a **narrow section**, the **round red-bordered** sign means **you yield**; the **blue square** means **you have priority**, used with caution, after checking that oncoming traffic yields.
-6. **Triangular** junction signs **announce ahead**; the thick bar is your road. Merge versions stand on priority roads, and the entering ramp carries the YIELD sign.
+6. **Triangular** **junction** signs **announce ahead**; the thick bar is your road. **Merge** versions stand on **priority roads**, and the entering **ramp** carries the **YIELD** sign.
 7. A **working traffic light overrides** the sign; the sign applies when the light is **off or flashing yellow**. Priority never excuses carelessness.
 
 <!-- LANG: it -->
@@ -195,10 +195,10 @@ E sopra entrambi sta l'**agente del traffico**: il suo ordine **prevale sia sul 
 
 ## Riepilogo dei punti chiave
 
-1. I segnali di precedenza decidono **chi passa per primo**; sono segnali di **prescrizione**.
-2. Il **triangolo rovesciato** (dare precedenza) e l'**ottagono** (STOP) hanno forme uniche, riconoscibili anche se coperte.
-3. **Dare precedenza** significa fermarsi solo se necessario. **Stop** significa arresto completo ogni volta. Un pannello di distanza rende entrambi un **preavviso**.
+1. I **segnali di precedenza** decidono **chi passa per primo**; sono segnali di **prescrizione**.
+2. Il **triangolo rovesciato** (**dare precedenza**) e l'**ottagono** (**STOP**) hanno forme uniche, riconoscibili anche se coperte.
+3. **Dare precedenza** significa fermarsi solo se necessario. **Stop** significa arresto completo ogni volta. Un **pannello di distanza** rende entrambi un **preavviso**.
 4. Il **rombo giallo** non segnala un pericolo: indica una **strada con diritto di precedenza**. Le strade che la incrociano hanno DARE PRECEDENZA o STOP. Con la **banda nera** segna la fine della precedenza e il ritorno della **precedenza a destra**.
 5. In una **strettoia**, il segnale **rotondo a bordo rosso** significa che **dai la precedenza**; il **quadrato blu** che **ce l'hai tu**, da usare con cautela, verificando che chi arriva ceda davvero.
-6. I segnali **triangolari** di incrocio **preannunciano**; la barra spessa è la tua strada. Le confluenze stanno sulle strade con precedenza, e la rampa porta il DARE PRECEDENZA.
+6. I segnali **triangolari** di **incrocio** **preannunciano**; la barra spessa è la tua strada. Le **confluenze** stanno sulle **strade con precedenza**, e la **rampa** porta il **DARE PRECEDENZA**.
 7. Un **semaforo funzionante prevale** sul segnale; il segnale vale quando il semaforo è **spento o a giallo lampeggiante**. La precedenza non giustifica mai l'imprudenza.

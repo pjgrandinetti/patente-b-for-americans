@@ -139,13 +139,13 @@ Where traffic moves in **parallel lines** or in channelized lanes, it is normal,
 ## Summary of key points
 
 1. The posted limit is a **ceiling**. You must always be able to **stop within the distance you can see**, adjusting to vehicle, road, traffic, and weather.
-2. Car limits are **50** built-up (70 if signed), **90** secondary extra-urban, **110** main extra-urban, and **130** autostrada. The two highest drop in rain or hail, to **110** and **90**, **150** applies only where specially signed, and fog can bring temporary limits down to **50**.
-3. When **towing a trailer or caravan**, the limit is 80 on the autostrada and 70 on extra-urban roads. A **small utility trailer** (carrello appendice) leaves the normal car limits unchanged; **autotreni** are capped at 70 on extra-urban roads.
+2. Car limits are **50** **built-up** (70 if signed), **90** **secondary extra-urban**, **110** **main extra-urban**, and **130** **autostrada**. The two highest drop in rain or hail, to **110** and **90**, **150** applies only where specially signed, and fog can bring temporary limits down to **50**.
+3. When **towing a trailer or caravan**, the limit is 80 on the **autostrada** and 70 on **extra-urban roads**. A **small utility trailer** (carrello appendice) leaves the normal car limits unchanged; **autotreni** are capped at 70 on extra-urban roads.
 4. **Mopeds** are capped at 45, **non-light quadricycles** at 80 outside towns, and **agricultural or work machines** at 40.
-5. For the **first 3 years**, the cap is **100** on autostrade and **90** on main extra-urban roads.
-6. Even with the **right of way**, slow at intersections. A high-speed crash can leave you **partly at fault**.
-7. Never coast downhill in **neutral with the engine off**: steering and brakes lose their assist. Never pull the ignition key while moving.
-8. At a **railroad crossing**, approach slowly. If stuck, get people out, clear the vehicle, and warn the train. Break through the barriers if trapped rather than abandon the vehicle.
+5. For the **first 3 years**, the cap is **100** on **autostrade** and **90** on **main extra-urban roads**.
+6. Even with the **right of way**, slow at **intersections**. A high-speed crash can leave you **partly at fault**.
+7. Never coast downhill in **neutral with the engine off**: **steering** and **brakes** lose their assist. Never pull the ignition key while moving.
+8. At a **railroad crossing**, approach slowly. If stuck, get people out, clear the vehicle, and warn the train. Break through the **barriers** if trapped rather than abandon the vehicle.
 
 <!-- LANG: it -->
 ## La mappa dell'argomento
@@ -279,10 +279,10 @@ Quando il traffico procede per **file parallele** o in corsie canalizzate, è no
 ## Riepilogo dei punti chiave
 
 1. Il limite indicato è un **tetto**. Devi sempre poterti **fermare entro lo spazio che vedi**, adeguandoti a veicolo, strada, traffico e meteo.
-2. Limiti auto: **50** centro abitato (70 se segnalato), **90** extraurbana secondaria, **110** extraurbana principale, **130** autostrada. I due più alti scendono con pioggia o grandine, a **110** e **90**, **150** vale solo dove appositamente segnalato, e la nebbia può portare limiti temporanei fino a **50**.
-3. Al traino di un **rimorchio o caravan**, il limite è 80 in autostrada e 70 sulle strade extraurbane. Il **carrello appendice** lascia invariati i normali limiti dell'auto; gli **autotreni** sono limitati a 70 sulle extraurbane.
+2. Limiti auto: **50** **centro abitato** (70 se segnalato), **90** **extraurbana secondaria**, **110** **extraurbana principale**, **130** **autostrada**. I due più alti scendono con pioggia o grandine, a **110** e **90**, **150** vale solo dove appositamente segnalato, e la nebbia può portare limiti temporanei fino a **50**.
+3. Al traino di un **rimorchio o caravan**, il limite è 80 in **autostrada** e 70 sulle **strade extraurbane**. Il **carrello appendice** lascia invariati i normali limiti dell'auto; gli **autotreni** sono limitati a 70 sulle extraurbane.
 4. **Ciclomotori** a 45, **quadricicli non leggeri** a 80 fuori città, **macchine agricole o operatrici** a 40.
-5. Per i **primi 3 anni**, il limite è **100** in autostrada e **90** sulle extraurbane principali.
-6. Anche con la **precedenza**, rallenta agli incroci. Un incidente ad alta velocità può comportare un **concorso di colpa**.
-7. Mai in discesa in **folle a motore spento**: sterzo e freni perdono l'assistenza. Mai togliere la chiave in marcia.
-8. A un **passaggio a livello**, avvicinati lentamente. Se sei bloccato, fai scendere le persone, libera il veicolo e avvisa il treno. Sfonda le barriere se sei intrappolato anziché abbandonare il veicolo.
+5. Per i **primi 3 anni**, il limite è **100** in **autostrada** e **90** sulle **extraurbane principali**.
+6. Anche con la **precedenza**, rallenta agli **incroci**. Un incidente ad alta velocità può comportare un **concorso di colpa**.
+7. Mai in discesa in **folle a motore spento**: **sterzo** e **freni** perdono l'assistenza. Mai togliere la chiave in marcia.
+8. A un **passaggio a livello**, avvicinati lentamente. Se sei bloccato, fai scendere le persone, libera il veicolo e avvisa il treno. Sfonda le **barriere** se sei intrappolato anziché abbandonare il veicolo.

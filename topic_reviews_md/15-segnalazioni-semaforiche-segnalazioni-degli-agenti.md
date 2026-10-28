@@ -122,11 +122,11 @@ What an officer may **not** demand at a stop is its own little trap family: no *
 ## Summary of key points
 
 1. An **officer overrides the lights and signs**, so obey the officer first.
-2. **Red** means stop before the line. **Green** means go, but still **yield when turning left**, and enter only if you can clear the junction. **Steady yellow** means stop if safe, otherwise clear.
-3. A **green arrow** means go, and a **red arrow or red X** means stop. A **flashing yellow arrow** means caution, or change lane on a reversible-lane signal.
+2. **Red** means stop before the line. **Green** means go, but still **yield when turning left**, and **enter** only if you can clear the **junction**. **Steady yellow** means stop if safe, otherwise clear.
+3. A **green arrow** means go, and a **red arrow or red X** means stop. A **flashing yellow arrow** means caution, or change lane on a **reversible-lane signal**.
 4. Special lights include **pedestrian and bicycle** signals, public-transport **white bars** (top stop, bottom go), **flashing yellow B or C** to yield to pedestrians or bikes when turning, and the **green-wave** advised speed.
-5. **Two alternately flashing reds** mean stop, at a railroad crossing, movable bridge, or ferry. A lone **flashing yellow** means caution.
-6. With an officer, **chest or back toward you means red**, **his side toward you means green**, **one arm up means yellow**, and **arms at a right angle open only the flow from his left**. A **long whistle** means stop or clear the way. Carry your **license, registration, and insurance**, plus a **warning triangle and hi-vis vest**, and show them on request. An officer cannot demand the first-aid kit, ownership certificate, codice fiscale, or bollo receipt.
+5. **Two alternately flashing reds** mean stop, at a **railroad crossing**, **movable bridge**, or ferry. A lone **flashing yellow** means caution.
+6. With an officer, **chest or back toward you means red**, **his side toward you means green**, **one arm up means yellow**, and **arms at a right angle open only the flow from his left**. A **long whistle** means stop or clear the way. Carry your **license, registration, and insurance**, plus a **warning triangle and hi-vis vest**, and show them on request. An officer cannot demand the **first-aid kit**, **ownership certificate**, codice fiscale, or **bollo receipt**.
 7. **No right turn on red**, ever, and remember the color grammar: two alternating **reds** mean an absolute stop, and a lone **flashing yellow** means caution, never a stop.
 
 <!-- LANG: it -->
@@ -248,9 +248,9 @@ Ciò che un agente **non** può pretendere a un controllo è una piccola famigli
 ## Riepilogo dei punti chiave
 
 1. Un **agente prevale su semaforo e segnali**, quindi obbedisci prima all'agente.
-2. **Rosso** significa fermati prima della linea. **Verde** significa procedi, ma **dai precedenza svoltando a sinistra**, e impegna solo se puoi liberare l'incrocio. **Giallo fisso** significa fermati se in sicurezza, altrimenti libera.
-3. Una **freccia verde** significa avanti, e una **freccia rossa o X rossa** significa alt. Una **freccia gialla lampeggiante** significa prudenza, o cambia corsia su una lanterna reversibile.
+2. **Rosso** significa fermati prima della linea. **Verde** significa procedi, ma **dai precedenza svoltando a sinistra**, e **impegna** solo se puoi liberare l'**incrocio**. **Giallo fisso** significa fermati se in sicurezza, altrimenti libera.
+3. Una **freccia verde** significa avanti, e una **freccia rossa o X rossa** significa alt. Una **freccia gialla lampeggiante** significa prudenza, o cambia corsia su una **lanterna reversibile**.
 4. Le luci speciali includono lanterne **pedonali e ciclabili**, mezzi pubblici a **barre bianche** (alto alt, basso avanti), **giallo lampeggiante B o C** per dare precedenza a pedoni o biciclette nella svolta, e l'**onda verde** con velocità consigliata.
-5. **Due rossi lampeggianti alternati** significano alt, a un passaggio a livello, ponte mobile o traghetto. Un solo **giallo lampeggiante** significa prudenza.
-6. Con un agente, **petto o schiena verso di te significa rosso**, **il fianco verso di te significa verde**, **un braccio alzato significa giallo**, e **le braccia ad angolo retto aprono solo il flusso dalla sua sinistra**. Un **fischio lungo** significa alt o libera la via. Tieni **patente, carta di circolazione e assicurazione**, più **triangolo e gilet ad alta visibilità**, ed esibiscili su richiesta. L'agente non può pretendere valigetta di pronto soccorso, certificato di proprietà, codice fiscale o bollo.
+5. **Due rossi lampeggianti alternati** significano alt, a un **passaggio a livello**, **ponte mobile** o traghetto. Un solo **giallo lampeggiante** significa prudenza.
+6. Con un agente, **petto o schiena verso di te significa rosso**, **il fianco verso di te significa verde**, **un braccio alzato significa giallo**, e **le braccia ad angolo retto aprono solo il flusso dalla sua sinistra**. Un **fischio lungo** significa alt o libera la via. Tieni **patente, carta di circolazione e assicurazione**, più **triangolo e gilet ad alta visibilità**, ed esibiscili su richiesta. L'agente non può pretendere **valigetta di pronto soccorso**, **certificato di proprietà**, codice fiscale o **bollo**.
 7. **Niente svolta a destra col rosso**, mai, e ricorda la grammatica dei colori: due **rossi** alternati significano arresto assoluto, e un solo **giallo lampeggiante** significa prudenza, mai un arresto.

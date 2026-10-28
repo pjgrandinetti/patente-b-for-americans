@@ -2774,6 +2774,17 @@ behind what shipped:
   one, in order; a bold run added to one half needs its twin in the other,
   or that point loses its parentheticals in silence. The page's pairs map
   is built from the ENRICHED blocks, so the pills still work.
+  **The summaries were re-bolded for it (20261029o, maintainer: important
+  words not in bold also need their Italian).** Five readers bolded, in
+  both halves, every term the learner must know in Italian (road parts,
+  sign and marking names, vehicle classes and parts, manoeuvres, documents
+  and measures, Glossario headwords), one to one and in order, rewording
+  nothing: 130 of 170 rows changed, 364 bold runs added, verified by
+  script before applying (equal counts, no nesting, text identical once
+  the asterisks are stripped). 169 of 170 points now carry parentheticals.
+  The rubric is the rule for a new summary point: bold the term alone, not
+  its article, and bold nothing that is a figure, a unit, a colour alone or
+  an ordinary word.
   `scripts/check_key_points.js`, 20 checks in English, 15 in Italian.
   **The day before and the day itself say *In bocca al lupo!*
   (20261028b, maintainer)**, a line of its own under the advice

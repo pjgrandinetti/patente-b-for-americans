@@ -281,11 +281,11 @@ On a two-wheeler you may carry a **pet only in a suitable cage** protruding no m
 ## Summary of key points
 
 1. Know the road parts. The **carriageway** is for vehicles and is split into **lanes**. The **shoulder** is outside it and not for driving. The **sidewalk** is for pedestrians. Count **carriageways by the medians**.
-2. A **traffic island** is a non-drivable striped area that **channels traffic**. No vehicle may drive, stop, or park on it.
-3. An **autostrada** has separate carriageways and no same-level junctions. It bars pedestrians, bicycles, mopeds, and motorcycles under 150 cm³, and a main extra-urban road has the same restrictions. Direction signs are **green** on an autostrada, **blue** on extra-urban roads, and **white** in town. The autostrada limit is 130 km/h.
+2. A **traffic island** is a non-drivable striped area that **channels traffic**. No vehicle may drive, **stop**, or **park** on it.
+3. An **autostrada** has separate **carriageways** and no **same-level junctions**. It bars pedestrians, bicycles, **mopeds**, and **motorcycles** under 150 cm³, and a **main extra-urban road** has the same restrictions. **Direction signs** are **green** on an autostrada, **blue** on extra-urban roads, and **white** in town. The autostrada limit is 130 km/h.
 4. A **moped** is up to 50 cm³ (or 4 kW) and 45 km/h (28 mph). A **motorcycle** is over 50 cm³ (or over 4 kW). A **light quadricycle** is like a moped. A **car** seats at most 9 including the driver. A **light trailer** is up to 750 kg. Electric vehicles are rated in **kW**, not cm³.
-5. Inspection is after 4 years, then every 2 years, not every 5.
-6. Be courteous and anticipate others. **Right of way never excuses carelessness.** **Stop and yield** to a pedestrian with a **white** (blind) or **white-and-red** (deaf-blind) cane, even off a crosswalk.
+5. **Inspection** is after 4 years, then every 2 years, not every 5.
+6. Be courteous and anticipate others. **Right of way never excuses carelessness.** **Stop and yield** to a pedestrian with a **white** (blind) or **white-and-red** (deaf-blind) cane, even off a **crosswalk**.
 
 <!-- LANG: it -->
 ## Cosa copre questo argomento
@@ -555,8 +555,8 @@ Le **gare di velocità** su strada pubblica sono vietate: partecipare a una gara
 ## Riepilogo dei punti chiave
 
 1. Conosci le parti della strada. La **carreggiata** è per i veicoli ed è divisa in **corsie**. La **banchina** è fuori e non è per la marcia. Il **marciapiede** è per i pedoni. Conta le **carreggiate dagli spartitraffico**.
-2. Un'**isola di traffico** è un'area zebrata non transitabile che **incanala il traffico**. Nessun veicolo può transitarvi, fermarsi o sostare.
-3. Un'**autostrada** ha carreggiate separate e nessun incrocio a raso. Esclude pedoni, biciclette, ciclomotori e motocicli sotto i 150 cm³, e la strada extraurbana principale ha le stesse limitazioni. I segnali di direzione sono **verdi** in autostrada, **blu** sulle extraurbane e **bianchi** in città. Il limite in autostrada è 130 km/h.
+2. Un'**isola di traffico** è un'area zebrata non transitabile che **incanala il traffico**. Nessun veicolo può transitarvi, **fermarsi** o **sostare**.
+3. Un'**autostrada** ha **carreggiate** separate e nessun **incrocio a raso**. Esclude pedoni, biciclette, **ciclomotori** e **motocicli** sotto i 150 cm³, e la **strada extraurbana principale** ha le stesse limitazioni. I **segnali di direzione** sono **verdi** in autostrada, **blu** sulle extraurbane e **bianchi** in città. Il limite in autostrada è 130 km/h.
 4. Un **ciclomotore** è fino a 50 cm³ (o 4 kW) e 45 km/h. Un **motociclo** è oltre 50 cm³ (o oltre 4 kW). Un **quadriciclo leggero** è come un ciclomotore. Un'**autovettura** ha al massimo 9 posti compreso il conducente. Un **rimorchio leggero** è fino a 750 kg. I veicoli elettrici si misurano in **kW**, non in cm³.
-5. La revisione è dopo 4 anni, poi ogni 2 anni, non ogni 5.
-6. Sii cortese e prevedi gli altri. **La precedenza non giustifica mai l'imprudenza.** **Fermati e dai la precedenza** a un pedone con bastone **bianco** (non vedente) o **bianco e rosso** (sordocieco), anche lontano da un attraversamento.
+5. La **revisione** è dopo 4 anni, poi ogni 2 anni, non ogni 5.
+6. Sii cortese e prevedi gli altri. **La precedenza non giustifica mai l'imprudenza.** **Fermati e dai la precedenza** a un pedone con bastone **bianco** (non vedente) o **bianco e rosso** (sordocieco), anche lontano da un **attraversamento**.

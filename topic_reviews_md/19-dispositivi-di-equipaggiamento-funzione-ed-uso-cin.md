@@ -182,11 +182,11 @@ The 2024 reform added requirements for electric **e-scooters**.
 
 ## Summary of key points
 
-1. Wear **seatbelts always, in all seats, with no exceptions** for short trips, low speed, or having an airbag. Keep them approved and efficient, and do not disable them. Exemptions are only certified medical or pregnancy cases, driving instructors, refuse collectors on their rounds and emergency crews on duty.
-2. **Children under 1.50 m** need an approved restraint, and under 3 cannot travel without one. A child **under 4** in a seat needs an **anti-abandonment alarm**. A **rear-facing seat goes up front only with the airbag off**, and never carry a child in someone's arms.
+1. Wear **seatbelts always, in all seats, with no exceptions** for short trips, low speed, or having an **airbag**. Keep them approved and efficient, and do not disable them. Exemptions are only certified medical or pregnancy cases, driving instructors, refuse collectors on their rounds and emergency crews on duty.
+2. **Children under 1.50 m** need an **approved restraint**, and under 3 cannot travel without one. A child **under 4** in a seat needs an **anti-abandonment alarm**. A **rear-facing seat goes up front only with the airbag off**, and never carry a child in someone's arms.
 3. The **airbag supplements the belt**, fires in milliseconds, can be **dangerous without the belt**, and can sometimes be **deactivated**.
 4. The **headrest prevents whiplash** when adjusted for height and angle.
-5. The **helmet is mandatory** for moped and motorcycle riders and passengers, and open quads, at any age, speed, or trip length. **Replace it after an impact**, clean it without solvents, and keep it type-approved and fastened.
+5. The **helmet is mandatory** for **moped** and **motorcycle** riders and passengers, and **open quads**, at any age, speed, or trip length. **Replace it after an impact**, clean it without solvents, and keep it **type-approved** and fastened.
 6. **Approved boots, gloves, and jackets** give real protection and cannot be improvised. Wear gloves even in summer.
 
 <!-- LANG: it -->
@@ -366,9 +366,9 @@ La riforma del 2024 ha aggiunto requisiti per i **monopattini elettrici**.
 
 ## Riepilogo dei punti chiave
 
-1. Indossa le **cinture sempre, su tutti i sedili, senza eccezioni** per tragitti brevi, bassa velocità o presenza di airbag. Tienile omologate ed efficienti, e non disattivarle. Le esenzioni sono solo casi medici o gravidanza certificati, gli istruttori di guida, gli addetti alla raccolta dei rifiuti sui loro mezzi e gli equipaggi di emergenza in servizio.
-2. **Bambini sotto 1,50 m** necessitano di un sistema di ritenuta omologato, e sotto i 3 anni non possono viaggiare senza. Un bambino **sotto i 4 anni** in seggiolino richiede un **allarme anti-abbandono**. Un **seggiolino rivolto all'indietro va davanti solo con l'airbag disattivato**, e mai portare un bambino in braccio.
+1. Indossa le **cinture sempre, su tutti i sedili, senza eccezioni** per tragitti brevi, bassa velocità o presenza di **airbag**. Tienile omologate ed efficienti, e non disattivarle. Le esenzioni sono solo casi medici o gravidanza certificati, gli istruttori di guida, gli addetti alla raccolta dei rifiuti sui loro mezzi e gli equipaggi di emergenza in servizio.
+2. **Bambini sotto 1,50 m** necessitano di un **sistema di ritenuta omologato**, e sotto i 3 anni non possono viaggiare senza. Un bambino **sotto i 4 anni** in seggiolino richiede un **allarme anti-abbandono**. Un **seggiolino rivolto all'indietro va davanti solo con l'airbag disattivato**, e mai portare un bambino in braccio.
 3. L'**airbag integra la cintura**, scatta in millisecondi, può essere **pericoloso senza cintura** e a volte può essere **disattivato**.
 4. Il **poggiatesta previene il colpo di frusta** se regolato in altezza e inclinazione.
-5. Il **casco è obbligatorio** per conducente e passeggero di ciclomotori e motocicli, e quadricicli aperti, a qualsiasi età, velocità o tragitto. **Sostituiscilo dopo un urto**, puliscilo senza solventi, e tienilo omologato e allacciato.
+5. Il **casco è obbligatorio** per conducente e passeggero di **ciclomotori** e **motocicli**, e **quadricicli aperti**, a qualsiasi età, velocità o tragitto. **Sostituiscilo dopo un urto**, puliscilo senza solventi, e tienilo **omologato** e allacciato.
 6. **Stivali, guanti e giacche omologati** danno una protezione reale e non si possono improvvisare. Indossa i guanti anche d'estate.

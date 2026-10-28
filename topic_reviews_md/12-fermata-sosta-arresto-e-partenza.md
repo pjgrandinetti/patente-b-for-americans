@@ -126,13 +126,13 @@ A **parking disc** (*disco orario*) has no US equivalent. It is a small cardboar
 
 ## Summary of key points
 
-1. ***Arresto*** is a traffic-imposed stop. ***Fermata*** is a brief halt with the **driver present**. ***Sosta*** is parking, where the driver **may leave**. No fixed time separates them. A ***sosta di emergenza*** is a halt for a breakdown or a sudden illness.
-2. During a **fermata**, do not obstruct traffic, leave **1 m** for pedestrians, and outside towns get **off the carriageway** if you can (never onto a bike path or the shoulder).
-3. Stopping and parking are **forbidden** at railroad crossings, on tracks, in tunnels and underpasses, on or near crests and curves, where it hides signs, and at or near intersections (**5 m** in towns).
-4. They are **always forbidden** on pedestrian crossings, bike paths and their outlets, and sidewalks unless signed.
-5. The **sosta-only bans**, where a fermata is still allowed, cover driveways, waste bins, fuel stations in hours, market and loading areas in hours, emergency-service spaces, double parking (two-wheelers excepted), taxi stands, bus stops (15 m), disabled spaces and ramps, and reserved lanes. Several also cost **points**, and code bans need **no sign**.
-6. When **parking**, switch off, secure against movement with the brake and lowest gear and the wheels to the curb on a slope, and prevent unauthorized use.
-7. Use the **ticket or arrival disc** correctly, and remember that disabled vehicles are exempt from time limits. Before opening a door or moving off, **check around** and set up the car.
+1. ***Arresto*** is a traffic-imposed stop. ***Fermata*** is a brief halt with the **driver present**. ***Sosta*** is parking, where the driver **may leave**. No fixed time separates them. A ***sosta di emergenza*** is a halt for a **breakdown** or a sudden illness.
+2. During a **fermata**, do not obstruct traffic, leave **1 m** for pedestrians, and outside towns get **off the carriageway** if you can (never onto a **bike path** or the **shoulder**).
+3. **Stopping and parking** are **forbidden** at **railroad crossings**, on **tracks**, in **tunnels** and **underpasses**, on or near **crests** and curves, where it hides signs, and at or near **intersections** (**5 m** in towns).
+4. They are **always forbidden** on **pedestrian crossings**, **bike paths** and their outlets, and **sidewalks** unless signed.
+5. The **sosta-only bans**, where a fermata is still allowed, cover **driveways**, waste bins, fuel stations in hours, market and loading areas in hours, emergency-service spaces, **double parking** (two-wheelers excepted), taxi stands, **bus stops** (15 m), disabled spaces and ramps, and **reserved lanes**. Several also cost **points**, and code bans need **no sign**.
+6. When **parking**, switch off, secure against movement with the **brake** and **lowest gear** and the wheels to the curb on a slope, and prevent unauthorized use.
+7. Use the **ticket or arrival disc** correctly, and remember that disabled vehicles are exempt from time limits. Before opening a **door** or moving off, **check around** and set up the car.
 
 <!-- LANG: it -->
 ## Di cosa tratta questo argomento
@@ -253,10 +253,10 @@ Il **disco orario** è una tessera di cartone o plastica con un quadrante girevo
 
 ## Riepilogo dei punti chiave
 
-1. ***Arresto*** è una sosta imposta dalla circolazione. ***Fermata*** è breve, con il **conducente presente**. ***Sosta*** è prolungata, e il conducente **può allontanarsi**. Nessun tempo fisso li separa. Una ***sosta di emergenza*** è una fermata per avaria o malessere improvviso.
-2. Durante la **fermata**, non intralciare il traffico, lascia **1 m** per i pedoni e fuori città mettiti **fuori della carreggiata** se puoi (mai su una pista ciclabile o sulla banchina).
-3. Fermata e sosta sono **vietate** ai passaggi a livello, sui binari, in galleria e sottovia, su o presso dossi e curve, dove nascondono i segnali e in corrispondenza o prossimità degli incroci (**5 m** in città).
-4. Sono **sempre vietate** su attraversamenti pedonali, piste ciclabili e loro sbocchi, e marciapiedi, salvo segnalazione.
-5. I **divieti di sola sosta**, dove la fermata resta consentita, riguardano passi carrabili, cassonetti, distributori nelle ore di esercizio, aree di mercato e di carico nelle ore stabilite, spazi dei servizi di emergenza, seconda fila (eccetto due ruote), taxi, fermate bus (15 m), spazi e scivoli disabili e corsie riservate. Diversi costano anche **punti**, e i divieti del codice valgono **senza segnale**.
-6. In **sosta**, spegni, blocca il veicolo con freno e marcia più bassa e ruote verso il bordo in pendenza, e impedisci l'uso non autorizzato.
-7. Usa correttamente **biglietto o disco orario**, e ricorda che i veicoli dei disabili sono esenti dai limiti di tempo. Prima di aprire una portiera o ripartire, **controlla intorno** e prepara l'auto.
+1. ***Arresto*** è una sosta imposta dalla circolazione. ***Fermata*** è breve, con il **conducente presente**. ***Sosta*** è prolungata, e il conducente **può allontanarsi**. Nessun tempo fisso li separa. Una ***sosta di emergenza*** è una fermata per **avaria** o malessere improvviso.
+2. Durante la **fermata**, non intralciare il traffico, lascia **1 m** per i pedoni e fuori città mettiti **fuori della carreggiata** se puoi (mai su una **pista ciclabile** o sulla **banchina**).
+3. **Fermata e sosta** sono **vietate** ai **passaggi a livello**, sui **binari**, in **galleria** e **sottovia**, su o presso **dossi** e curve, dove nascondono i segnali e in corrispondenza o prossimità degli **incroci** (**5 m** in città).
+4. Sono **sempre vietate** su **attraversamenti pedonali**, **piste ciclabili** e loro sbocchi, e **marciapiedi**, salvo segnalazione.
+5. I **divieti di sola sosta**, dove la fermata resta consentita, riguardano **passi carrabili**, cassonetti, distributori nelle ore di esercizio, aree di mercato e di carico nelle ore stabilite, spazi dei servizi di emergenza, **seconda fila** (eccetto due ruote), taxi, **fermate bus** (15 m), spazi e scivoli disabili e **corsie riservate**. Diversi costano anche **punti**, e i divieti del codice valgono **senza segnale**.
+6. In **sosta**, spegni, blocca il veicolo con **freno** e **marcia più bassa** e ruote verso il bordo in pendenza, e impedisci l'uso non autorizzato.
+7. Usa correttamente **biglietto o disco orario**, e ricorda che i veicoli dei disabili sono esenti dai limiti di tempo. Prima di aprire una **portiera** o ripartire, **controlla intorno** e prepara l'auto.

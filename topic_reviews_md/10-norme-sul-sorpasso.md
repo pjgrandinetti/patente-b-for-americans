@@ -109,14 +109,14 @@ A grammar note for reading the Italian. These statements read *la pericolosità 
 
 ## Summary of key points
 
-1. Pass **on the left** by default. First confirm visibility, width, a clear road to finish, no prohibiting sign, and that no one ahead or behind is already maneuvering.
-2. **Signal left.** Flashing headlights is allowed, and the horn is not required.
-3. Pass on the **right** when the vehicle ahead is turning or pulling left, and for trams (on the right, and only with a safety island when the tram is stopped).
-4. Passing is **forbidden** near curves and crests and in poor visibility on two-lane two-way roads, **at and near intersections**, across a **continuous line**, on acceleration or deceleration lanes, and when passing stopped or slow vehicles at crossings, lights, or congestion, or for pedestrians, if it needs the oncoming lane.
-5. Passing is **allowed** in curves and crests on separated multi-lane roads. At a junction it is allowed under **lights** or an **officer**, on a **priority road** that also has separate carriageways or two marked lanes your way, behind a vehicle **turning left**, or for a **bicycle** if you stay in your own half. Whatever the case, vehicles **stopped or crawling** at a light or in a queue may never be passed by crossing into the oncoming half.
-6. The vehicle being passed must **not accelerate** and should **keep right**; a very slow one stops when it can. When you are being passed as oncoming traffic appears, slow down and keep right, or you risk **shared liability**.
-7. The **descending side of a crest** is passable even on a two-lane two-way road; speed limits apply throughout the pass.
-8. When you pass a **bicycle**, leave **at least 1.5 meters (1.6 yd)** of lateral clearance where the road allows.
+1. **Pass** **on the left** by default. First confirm **visibility**, width, a clear road to finish, no **prohibiting sign**, and that no one ahead or behind is already maneuvering.
+2. **Signal left.** **Flashing** **headlights** is allowed, and the **horn** is not required.
+3. Pass on the **right** when the vehicle ahead is **turning** or **pulling left**, and for **trams** (on the right, and only with a **safety island** when the tram is stopped).
+4. **Passing** is **forbidden** near **curves** and **crests** and in poor **visibility** on two-lane **two-way** roads, **at and near intersections**, across a **continuous line**, on **acceleration or deceleration lanes**, and when passing stopped or slow vehicles at **crossings**, **lights**, or **congestion**, or for **pedestrians**, if it needs the **oncoming lane**.
+5. **Passing** is **allowed** in **curves** and **crests** on separated multi-lane roads. At a **junction** it is allowed under **lights** or an **officer**, on a **priority road** that also has separate **carriageways** or two marked lanes your way, behind a vehicle **turning left**, or for a **bicycle** if you stay in your own half. Whatever the case, vehicles **stopped or crawling** at a light or in a **queue** may never be passed by crossing into the oncoming half.
+6. The vehicle being passed must **not accelerate** and should **keep right**; a very slow one stops when it can. When you are being passed as **oncoming traffic** appears, slow down and keep right, or you risk **shared liability**.
+7. The **descending side of a crest** is passable even on a two-lane **two-way** road; **speed limits** apply throughout the pass.
+8. When you pass a **bicycle**, leave **at least 1.5 meters (1.6 yd)** of **lateral clearance** where the road allows.
 
 <!-- LANG: it -->
 ## Di cosa tratta questo argomento
@@ -221,11 +221,11 @@ Una nota di grammatica per chi arriva dall'inglese. In italiano l'articolo deter
 
 ## Riepilogo dei punti chiave
 
-1. Sorpassa **a sinistra** per impostazione predefinita. Prima verifica visibilità, larghezza, strada libera per concludere, nessun segnale di divieto e che nessuno davanti o dietro stia già manovrando.
-2. **Segnala a sinistra.** Lampeggiare i fari è ammesso, il clacson non è obbligatorio.
-3. Sorpassa a **destra** quando il veicolo davanti svolta o accosta a sinistra, e per i tram (a destra, e solo con salvagente quando sono fermi).
-4. Il sorpasso è **vietato** in prossimità di curve e dossi e in scarsa visibilità su strade a due corsie a doppio senso, **in corrispondenza o in prossimità delle intersezioni**, attraverso una **linea continua**, sulle corsie di accelerazione o decelerazione, e superando veicoli fermi o lenti a passaggi a livello, semafori o code, o per i pedoni, se serve la corsia opposta.
-5. Il sorpasso è **consentito** in curve e dossi su strade a più corsie separate. All'incrocio è consentito sotto **semaforo** o **agente**, su una **strada a precedenza** che abbia anche carreggiate separate o due corsie nel tuo senso, dietro un veicolo che **svolta a sinistra**, o per una **bicicletta** se resti nella tua metà. In ogni caso, i veicoli **fermi o lenti** al semaforo o in coda non si superano mai passando nella metà opposta.
-6. Il veicolo superato **non deve accelerare** e deve **tenersi a destra**; uno molto lento si ferma appena può. Se vieni sorpassato mentre sopraggiunge traffico opposto, rallenta e tieni la destra, o rischi il **concorso di responsabilità**.
-7. Il **tratto discendente di un dosso** è sorpassabile anche su strada a due corsie a doppio senso; i limiti di velocità valgono per tutta la manovra.
-8. Quando superi una **bicicletta**, lascia **almeno 1,5 metri** di distanza laterale dove la strada lo consente.
+1. **Sorpassa** **a sinistra** per impostazione predefinita. Prima verifica **visibilità**, larghezza, strada libera per concludere, nessun **segnale di divieto** e che nessuno davanti o dietro stia già manovrando.
+2. **Segnala a sinistra.** **Lampeggiare** i **fari** è ammesso, il **clacson** non è obbligatorio.
+3. Sorpassa a **destra** quando il veicolo davanti **svolta** o **accosta a sinistra**, e per i **tram** (a destra, e solo con **salvagente** quando sono fermi).
+4. Il **sorpasso** è **vietato** in prossimità di **curve** e **dossi** e in scarsa **visibilità** su strade a due corsie a **doppio senso**, **in corrispondenza o in prossimità delle intersezioni**, attraverso una **linea continua**, sulle **corsie di accelerazione o decelerazione**, e superando veicoli fermi o lenti a **passaggi a livello**, **semafori** o **code**, o per i **pedoni**, se serve la **corsia opposta**.
+5. Il **sorpasso** è **consentito** in **curve** e **dossi** su strade a più corsie separate. All'**incrocio** è consentito sotto **semaforo** o **agente**, su una **strada a precedenza** che abbia anche **carreggiate** separate o due corsie nel tuo senso, dietro un veicolo che **svolta a sinistra**, o per una **bicicletta** se resti nella tua metà. In ogni caso, i veicoli **fermi o lenti** al semaforo o in **coda** non si superano mai passando nella metà opposta.
+6. Il veicolo superato **non deve accelerare** e deve **tenersi a destra**; uno molto lento si ferma appena può. Se vieni sorpassato mentre sopraggiunge **traffico opposto**, rallenta e tieni la destra, o rischi il **concorso di responsabilità**.
+7. Il **tratto discendente di un dosso** è sorpassabile anche su strada a due corsie a **doppio senso**; i **limiti di velocità** valgono per tutta la manovra.
+8. Quando superi una **bicicletta**, lascia **almeno 1,5 metri** di **distanza laterale** dove la strada lo consente.

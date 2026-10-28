@@ -179,13 +179,13 @@ Italian law distinguishes **three brakes**. They are three braking functions, no
 
 ## Summary of key points
 
-1. **Grip** is higher on rough, dry surfaces and lower when wet or oily, or on rails, markings, and manholes. Low grip means **longer braking** and skids.
+1. **Grip** is higher on rough, dry surfaces and lower when wet or oily, or on **rails, markings, and manholes**. Low grip means **longer braking** and skids.
 2. In a curve, the outward force **grows with speed**. **High or unsecured loads, a narrow track, and a tight radius** favor rollover.
-3. Use a **low gear on long descents** to avoid brake fade. With **ABS, keep the pedal pressed**. **Power brakes need the engine**, and the parking brake is **not** for normal braking.
-4. For tires, check them **cold**, including the spare, with tread of **1.6 mm for a car and 1.0 mm for a motorcycle**, identical tires on the same axle, winter tires on all wheels, and approved chains.
-5. **Worn suspension or shock absorbers** ruin road-holding and wear tires unevenly. **Power steering needs the engine**, and a puncture **pulls** toward the flat tire.
+3. Use a **low gear on long descents** to avoid **brake fade**. With **ABS, keep the pedal pressed**. **Power brakes need the engine**, and the **parking brake** is **not** for normal braking.
+4. For **tires**, check them **cold**, including the **spare**, with **tread** of **1.6 mm for a car and 1.0 mm for a motorcycle**, identical tires on the same **axle**, winter tires on all wheels, and **approved chains**.
+5. **Worn suspension or shock absorbers** ruin **road-holding** and wear tires unevenly. **Power steering needs the engine**, and a **puncture** **pulls** toward the **flat tire**.
 6. The **exhaust** cuts toxicity, pressure, temperature, and noise. On a motorcycle, check the **kill switch, chain, oil (upright), and brake fluid**.
-7. In a **fire**, turn the key off and smother the flames with sand, earth, or a wet blanket. Never touch the fuel tank. Keep the **glass clean**, replace a **cracked windshield**, set the **navigator before moving**, and use the **phone only hands-free**.
+7. In a **fire**, turn the key off and smother the flames with sand, earth, or a wet blanket. Never touch the **fuel tank**. Keep the **glass clean**, replace a **cracked windshield**, set the **navigator before moving**, and use the **phone only hands-free**.
 
 <!-- LANG: it -->
 ## Cosa copre questo argomento
@@ -361,10 +361,10 @@ La legge italiana distingue **tre freni**. Sono tre funzioni frenanti, non tre c
 
 ## Riepilogo dei punti chiave
 
-1. L'**aderenza** è maggiore su superfici ruvide e asciutte e minore con il bagnato o l'unto, o su rotaie, segnaletica e tombini. Poca aderenza significa **frenata più lunga** e slittamenti.
+1. L'**aderenza** è maggiore su superfici ruvide e asciutte e minore con il bagnato o l'unto, o su **rotaie, segnaletica e tombini**. Poca aderenza significa **frenata più lunga** e slittamenti.
 2. In curva la forza verso l'esterno **cresce con la velocità**. **Carichi alti o non assicurati, carreggiata stretta e raggio stretto** favoriscono il ribaltamento.
-3. Usa una **marcia bassa nelle discese lunghe** per evitare la perdita di efficacia dei freni. Con l'**ABS, tieni premuto il pedale**. Il **servofreno richiede il motore**, e il freno di stazionamento **non** serve alla frenata di servizio.
-4. Per gli pneumatici, controllali **a freddo**, compresa la scorta, con battistrada di **1,6 mm per l'auto e 1,0 mm per la moto**, pneumatici identici sullo stesso asse, invernali su tutte le ruote e catene omologate.
-5. **Sospensioni o ammortizzatori usurati** rovinano la tenuta di strada e usurano gli pneumatici in modo irregolare. Il **servosterzo richiede il motore**, e una foratura **fa tirare** verso la ruota sgonfia.
+3. Usa una **marcia bassa nelle discese lunghe** per evitare la **perdita di efficacia dei freni**. Con l'**ABS, tieni premuto il pedale**. Il **servofreno richiede il motore**, e il **freno di stazionamento** **non** serve alla frenata di servizio.
+4. Per gli **pneumatici**, controllali **a freddo**, compresa la **scorta**, con **battistrada** di **1,6 mm per l'auto e 1,0 mm per la moto**, pneumatici identici sullo stesso **asse**, invernali su tutte le ruote e **catene omologate**.
+5. **Sospensioni o ammortizzatori usurati** rovinano la **tenuta di strada** e usurano gli pneumatici in modo irregolare. Il **servosterzo richiede il motore**, e una **foratura** **fa tirare** verso la **ruota sgonfia**.
 6. Lo **scarico** riduce tossicità, pressione, temperatura e rumore. Sulla moto, controlla **kill switch, catena, olio (in verticale) e liquido dei freni**.
-7. In caso di **incendio**, chiave su off e fiamme soffocate con sabbia, terra o una coperta bagnata. Mai toccare il serbatoio. Tieni i **vetri puliti**, sostituisci un **parabrezza incrinato**, imposta il **navigatore prima di partire** e usa il **telefono solo con vivavoce**.
+7. In caso di **incendio**, chiave su off e fiamme soffocate con sabbia, terra o una coperta bagnata. Mai toccare il **serbatoio**. Tieni i **vetri puliti**, sostituisci un **parabrezza incrinato**, imposta il **navigatore prima di partire** e usa il **telefono solo con vivavoce**.
