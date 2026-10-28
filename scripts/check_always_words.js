@@ -16,6 +16,11 @@ setTimeout(()=>{
   ok(a.some(x=>/^alcuni = some/.test(x)),'the plural alcuni is listed with no look-up: '+a.join(' | '));
   const b=words('Nell\'incrocio rappresentato in figura il veicolo B non deve dare la precedenza ad alcun veicolo');
   ok(b.some(x=>/alcun/.test(x.split(' = ')[0]) && /\bany\b/.test(x)),'the singular after non is listed: '+b.join(' | '));
+  // A removed alcuni is still listed (20261029a): the maintainer had removed it from his study list.
+  w.localStorage.setItem('patente-lookups', JSON.stringify({alcuni:{term:'alcuni',en:'some',t:1,d:2}}));
+  const lk=w.lookupsLog ? w.lookupsLog() : {}; const removedSeen=lk.alcuni && lk.alcuni.d>lk.alcuni.t;
+  const a2=words('I contrassegni rappresentati in figura sono applicati ad alcuni autobus');
+  ok(removedSeen && a2.some(x=>/^alcuni = some \(plural/.test(x)),'listed even when removed from the study list, with the dictionary gloss: '+a2.join(' | '));
   const c=words('Il veicolo deve essere fermato sulla strada');
   ok(!c.some(x=>/^(veicolo|strada) =/.test(x)),'a common word not marked always is still left out: '+c.join(' | '));
   console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);

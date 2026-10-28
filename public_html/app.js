@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261028z';
+const APP_VERSION     = '20261029a';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -15023,15 +15023,17 @@ function lookedUpWordsIn(italian) {
       const key = term.toLowerCase();
       if (seen.has(key)) continue;
       const e = log[key];
-      const removed = !!e && !((e.t || 0) > (e.d || 0));
-      if (removed) continue;
       const entry = dict.get(key);
-      const rare = !!entry && (entry.f || 0) <= RARE_WORD_MAX;
       // An entry marked `always` is listed whether or not it was looked up
       // or is rare: a word whose misreading flips the statement, such as
       // the plural alcuni (some) against alcun after non (any) (20261028z,
-      // maintainer, 2026-10-28).
+      // maintainer, 2026-10-28). It is listed even when the learner removed
+      // it from the study list (20261029a: the maintainer had removed
+      // alcuni, and it stayed missing after 20261028z).
       const always = !!entry && entry.always === true;
+      const removed = !!e && !((e.t || 0) > (e.d || 0));
+      if (removed && !always) continue;
+      const rare = !!entry && (entry.f || 0) <= RARE_WORD_MAX;
       if (!e && !rare && !always) continue;
       seen.add(key);
       const en = e ? lookupGloss(e.en, term) : lookupGloss(entry.en, term);

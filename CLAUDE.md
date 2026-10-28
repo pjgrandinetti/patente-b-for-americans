@@ -5415,7 +5415,11 @@ to areas open to the public, and the two Reference rows whose only source was
   alcun limite*, which the highlighter matches in place of the single word;
   the plural glosses read "some (plural, not any)". `validate_data.py`
   fails an alcun entry without the flag (proved by sabotage);
-  `scripts/check_always_words.js`, 3 checks, the
+  `scripts/check_always_words.js`, 4 checks (the previous release fails
+  one), and since 20261029a an `always` entry is listed even when the
+  learner REMOVED it from the study list, with the dictionary's gloss: the
+  maintainer had removed *alcuni* long before, which is why it stayed
+  missing after 20261028z, the
   `parse` grammar point "Two negative words, one negation" gained *non ...
   alcun*, and the vocabulary gloss of *alcun* says so. 23344: *impegnare
   l'incrocio* is entering, not getting through; its explanation says so,
