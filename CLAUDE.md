@@ -5403,24 +5403,22 @@ to areas open to the public, and the two Reference rows whose only source was
   rule (a blue circle with a white symbol is mandatory; round alone is not,
   since prohibition signs are round too). 22314 reads "empty", not
   "unloaded". 23089: *alcun* after *non* or *senza* means any, one
-  negation, while the plural *alcuni* means some; all 18 live statements
-  with *alcun* or *alcuna* now carry ONE English sentence, "After *non*,
-  *alcun* means any, so *non ... ad alcun veicolo* means to no vehicle at
-  all" (before the clause-trap pair on 20302), and the 27 with the plural
-  *alcuni* or *alcune* carry "The plural *alcuni* means some. Only the
-  singular *alcun*, after *non*, means any." (20261028y, maintainer: not
-  verbose, and for American learners; the Italian halves carry nothing,
-  since a native reader needs no note on it), and "Words in this question" now lists
-  every alcun entry even unlooked-up and common: a vocabulary entry may
-  carry `"always": true` (20261028z, maintainer: *alcuni* was missing under
-  a statement that turns on it). The nine entries built on alcun carry it,
-  including the phrases *dare la precedenza ad alcun veicolo* and *senza
-  alcun limite*, which the highlighter matches in place of the single word;
-  each of the four single-word glosses names the other case (20261029c,
-  maintainer: "some (plural, not any)" did not say when it means any), so
-  *alcuni* reads "some (plural). Only the singular alcun, after non or
-  senza, means any" and *alcun* reads "any, after non or senza (so: no ...
-  at all). The plural alcuni means some". `validate_data.py`
+  negation, while the plural *alcuni* means some. **Settled in 20261029d
+  after a day of fiddling (maintainer: concise, clear, pedagogical).** The
+  rule is one line, "Singular *alcun* means any; plural *alcuni* means
+  some", and the singular appears in the bank only after *non* or *senza*,
+  so "any" always translates correctly; the learner's only error is reading
+  one number as the other. Three places and nothing else: the glosses are
+  plain translations (*alcuni*, *alcune* "some"; *alcun*, *alcuna* "any"),
+  since a gloss translates and cannot teach, and every attempt to put the
+  rule in it made it longer and worse; the 45 live statements with either
+  form end their ENGLISH explanation with that one sentence (before the
+  clause-trap pair on 20302; the Italian halves carry nothing, a native
+  reader needing none); and the `parse` grammar point "Two negative words,
+  one negation" lists *non ... alcun*. The nine alcun entries carry
+  `"always": true` so "Words in this question" lists them even when common,
+  never looked up or removed from the study list (`validate_data.py` fails
+  an alcun entry without it; `scripts/check_always_words.js`). `validate_data.py`
   fails an alcun entry without the flag (proved by sabotage);
   `scripts/check_always_words.js`, 4 checks (the previous release fails
   one), and since 20261029a an `always` entry is listed even when the
