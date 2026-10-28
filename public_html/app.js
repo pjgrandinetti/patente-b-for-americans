@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261029v';
+const APP_VERSION     = '20261029w';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -509,6 +509,7 @@ const T = {
   'km.title':  { en: 'Questions you keep missing', it: 'Domande che continui a sbagliare' },
   'km.lead':   { en: 'The {0} questions you are most likely to miss, from your answers in Italian.', it: 'Le {0} domande che hai pi\u00f9 probabilit\u00e0 di sbagliare, in base alle tue risposte in italiano.' },
   'km.lead1':  { en: 'The one question you are most likely to miss, from your answers in Italian.', it: 'La domanda che hai pi\u00f9 probabilit\u00e0 di sbagliare, in base alle tue risposte in italiano.' },
+  'km.more':   { en: 'Show {0} more', it: 'Mostra altre {0}' },
   'km.leave':  { en: 'A question leaves the list once you answer it correctly on {0} different days.', it: 'Una domanda esce dall\u2019elenco quando rispondi correttamente in {0} giorni diversi.' },
   'km.none':   { en: 'Every question you missed in Italian has since been answered correctly on enough different days.', it: 'Ogni domanda che hai sbagliato in italiano \u00e8 stata poi risposta correttamente in abbastanza giorni diversi.' },
   'km.right':  { en: 'Right.', it: 'Giusto.' },
@@ -14422,6 +14423,9 @@ const MISS_RUN_KEY = 'patente_miss_run';
 // not part of it: the maintainer asked for the ones missed "if they appear".
 // 20 is a choice: about ten minutes in Read with answers.
 const KM_MAX = 20;
+// "Show more" at the end of the list (20261029w, maintainer) adds KM_MAX at
+// a time, for the session; the list opens on the first KM_MAX again.
+let _kmShown = KM_MAX;
 let _kmOpen = false, _guessOpen = false;
 // Read with answers (20261029p, maintainer, 2026-10-29: for a last-minute
 // review the learner needs each question in Italian and English with its
@@ -14460,7 +14464,7 @@ function keepMissingRows() {
   }
   cands.sort((a, b) => b.p - a.p || b.misses - a.misses || compareTopics(a.q.topic, b.q.topic, minId) ||
                        Number(a.st.number) - Number(b.st.number));
-  return { rows: cands.slice(0, KM_MAX), open: cands.length, any };
+  return { rows: cands.slice(0, _kmShown), open: cands.length, any };
 }
 
 function renderMissBreakdown() {
@@ -14476,13 +14480,14 @@ function renderMissBreakdown() {
     el.addEventListener('click', ev => {
       const pill = ev.target.closest('.km-read .rb-it');
       if (pill) { ev.preventDefault(); toggleItBlock(pill); return; }
+      if (ev.target.closest('.km-more')) { _kmShown += KM_MAX; renderMissBreakdown(); return; }
       const mode = ev.target.closest('.km-mode-btn');
       if (mode) { _kmRead = mode.dataset.mode === 'read'; renderMissBreakdown(); return; }
       const vf = ev.target.closest('.km-vf');
       if (vf) { answerFromList(vf); return; }
     });
   }
-  const { rows, any } = keepMissingRows();
+  const { rows, any, open } = keepMissingRows();
   if (!any) { el.classList.add('hidden'); return; }
   el.classList.remove('hidden');
   const it = uiLang() === 'it';
@@ -14535,6 +14540,7 @@ function renderMissBreakdown() {
       `<div class="km-ans hidden"><div class="km-answer"></div>${en}${explIt}${explEn}` +
       `</div></div></details>`;
   }
+  if (open > rows.length) html += `<p class="km-more-wrap"><button type="button" class="btn-secondary km-more">${escHtml(t('km.more', Math.min(KM_MAX, open - rows.length)))}</button></p>`;
   el.innerHTML = html + '</div></details>';
   el.querySelector('details.stats-box')?.addEventListener('toggle', e => { if (e.target.classList.contains('stats-box')) _kmOpen = e.target.open; });
   // On first opening: the figure at the study card's own size (it is part of

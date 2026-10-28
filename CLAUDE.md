@@ -3914,7 +3914,10 @@ behind what shipped:
   of it: the maintainer's words were "if they appear". One line replaces
   the menus and the notes: "The 20 questions you are most likely to miss,
   from your answers in Italian. A question leaves the list once you answer
-  it correctly on 3 different days." No rate is shown.
+  it correctly on 3 different days." No rate is shown. **"Show N more"**
+  closes the list when more qualify (20261029w, maintainer): each tap adds
+  KM_MAX (`_kmShown`, kept for the session), the line's count follows, and
+  the button goes once every candidate is shown.
   **Read with answers (20261029p, maintainer, 2026-10-29: for a
   last-minute review the learner needs each question in Italian and
   English with its answer, not to answer it first).** Two buttons above the
@@ -3932,7 +3935,7 @@ behind what shipped:
   with answers in front that 20260930l reverted as a list to memorize, now
   asked for by the maintainer as an OPTION for the last days, behind the
   practice mode that stays the default.
-  `scripts/check_keep_missing.js`, 34 checks in the English face, 33 in the
+  `scripts/check_keep_missing.js`, 37 checks in the English face, 36 in the
   Italian.
 - **A mock exam is a full simulation of the exam room (20261006o,
   maintainer, 2026-10-01).** Start a mock exam opens the sheet BLANK

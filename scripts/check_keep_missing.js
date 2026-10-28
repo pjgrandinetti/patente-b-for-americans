@@ -71,7 +71,14 @@ setTimeout(()=>{
   w.eval(`(()=>{const p=loadProgressForLevel(3); let k=0; for (const q of questions.slice(40,80)) { const st=(q.statements||[])[0]; if(!st||st.retired) continue; (p[q.id] ||= {lastSeen:null, st:{}}).st ||= {}; p[q.id].st[st.number]={seen:2,correct:1,streak:0,miss:1}; if(++k>=25) break; } saveProgressForLevel(3,p);})()`);
   if (w.eval('currentLevel')===3) w.eval('progress = loadProgressForLevel(3)');
   w.renderMissBreakdown();
-  ok(rows().length===20 && /\b20\b/.test(box.querySelector('.weak-note').textContent),'never more than twenty: '+rows().length);
+  ok(rows().length===20 && /\b20\b/.test(box.querySelector('.weak-note').textContent),'never more than twenty at first: '+rows().length);
+  const more=box.querySelector('.km-more');
+  ok(more && /\b9\b/.test(more.textContent),'Show more names how many follow: '+(more&&more.textContent));
+  more.click();
+  ok(rows().length===29 && /\b29\b/.test(box.querySelector('.weak-note').textContent) && !box.querySelector('.km-more'),'Show more adds the rest, the line follows, and the button goes: '+rows().length);
+  box.querySelector('.km-mode-btn[data-mode=read]').click();
+  ok(box.querySelectorAll('.km-row.km-read').length===29,'Read with answers shows the same longer list');
+  box.querySelector('.km-mode-btn[data-mode=practice]').click();
   // A wrong answer in the list counts a miss and resets the run.
   const rr=rows().find(r=>r.querySelector('.km-it').textContent===a.italian_text);
   rr.open=true; rr.dispatchEvent(new w.Event('toggle'));
