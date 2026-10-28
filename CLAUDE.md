@@ -3902,7 +3902,8 @@ behind what shipped:
   mode draws each row flat (`.km-row.km-read`): the figure, the Italian,
   the English for a non-Italian browser, the answer as a VERO or FALSO
   chip, the explanation in Italian and, for a non-Italian browser, in
-  English (20261029q, maintainer: it had been left out), and the 📖; no
+  English (20261029q, maintainer: it had been left out), folded under
+  "Why?" (`details.km-why`, closed, 20261029r), and the 📖; no
   V/F to press and nothing recorded. This is the list
   with answers in front that 20260930l reverted as a list to memorize, now
   asked for by the maintainer as an OPTION for the last days, behind the
