@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261029s';
+const APP_VERSION     = '20261029t';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -14586,7 +14586,8 @@ function renderMissBreakdown() {
               `<div class="km-expl km-expl-en">${explHtml(st.explanation)}` +
               (st.explanation_it ? ` <button type="button" class="rb-it" aria-expanded="false" title="${escHtml(t('review.itPillTip'))}">IT</button><span class="rb-itxt hidden" lang="it">${explHtml(st.explanation_it)}</span>` : '') +
               `${readingHtml(st)}</div></details>` : '')) +
-        (reviewFor(q.topic) ? ` <button type="button" class="stmt-it-btn km-book" data-qid="${escHtml(String(q.id))}" data-num="${escHtml(String(st.number))}">${escHtml(t('review.notes'))}</button>` : '') +
+        // No Concepts button here (20261029t, maintainer): the list is for
+        // reading the answers, and the explanation is under Why?.
         `</div></div>`;
       continue;
     }

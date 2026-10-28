@@ -3902,7 +3902,8 @@ behind what shipped:
   mode draws each row flat (`.km-row.km-read`): the figure, the Italian,
   the English for a non-Italian browser, the answer as a VERO or FALSO
   chip, the explanation (20261029q, maintainer: it had been left out),
-  folded under "Why?" (`details.km-why`, closed, 20261029r), and the 📖.
+  folded under "Why?" (`details.km-why`, closed, 20261029r), and no
+  Concepts button (removed in 20261029t, maintainer).
   The explanation is the English one for a non-Italian browser, with the
   Italian behind an IT pill (`.rb-it`, 20261029s, maintainer), and the
   Italian one for an Italian browser. No
@@ -3910,7 +3911,7 @@ behind what shipped:
   with answers in front that 20260930l reverted as a list to memorize, now
   asked for by the maintainer as an OPTION for the last days, behind the
   practice mode that stays the default.
-  `scripts/check_keep_missing.js`, 47 checks in the English face, 40 in the
+  `scripts/check_keep_missing.js`, 48 checks in the English face, 41 in the
   Italian.
 - **A mock exam is a full simulation of the exam room (20261006o,
   maintainer, 2026-10-01).** Start a mock exam opens the sheet BLANK

@@ -111,6 +111,7 @@ setTimeout(()=>{
   const rd0=reads.find(r=>r.querySelector('.km-it').textContent===a.italian_text);
   ok(rd0 && rd0.querySelector('.km-key').textContent===a.answer,'each question shows its answer');
   ok(IT ? !rd0.querySelector('.km-en') : rd0.querySelector('.km-en').textContent===a.english_translation,IT?'an Italian browser gets no English':'and its English');
+  ok(!box.querySelector('.km-read .km-book'),'no Concepts button in read mode (20261029t)');
   const why=rd0.querySelector('details.km-why');
   ok(why && !why.open && why.querySelector('.km-expl'),'with its explanation, folded under Why?');
   if (IT) ok(!why.querySelector('.km-expl-en') && !why.querySelector('.rb-it'),'an Italian browser: the Italian explanation, no English, no pill');
