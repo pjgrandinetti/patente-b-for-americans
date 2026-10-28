@@ -5408,7 +5408,7 @@ to areas open to the public, and the two Reference rows whose only source was
   rule is one line, written from the word in the statement (20261029e,
   maintainer: the bare rule needed its context): "Here *alcuni* means some;
   the singular *alcun* means any. Confusing the two changes the meaning of
-  the statement." (and the mirror for the singular), and the singular appears in the bank only after *non* or *senza*,
+  the statement." (opening "Careful, here", his wording, 20261029f; the mirror for the singular), and the singular appears in the bank only after *non* or *senza*,
   so "any" always translates correctly; the learner's only error is reading
   one number as the other. Three places and nothing else: the glosses are
   plain translations (*alcuni*, *alcune* "some"; *alcun*, *alcuna* "any"),
