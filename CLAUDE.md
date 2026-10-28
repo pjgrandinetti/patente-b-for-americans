@@ -631,7 +631,14 @@ reach the session on 2026-09-20, which is why it is recorded here.
   meters by 1.1 and divide centimeters by 2.5. `validate_data.py` refuses
   a `us` that breaks it, and `check_us_units.js` sweeps every English note
   and explanation for a meter given in feet or miles (the previous release
-  fails three of its checks). The explanations of 24104 and 24105 give the
+  fails three of its checks). **Heights keep feet and inches (20261028x,
+  maintainer)**: the vehicle height limit 4 m (13 ft), the child-restraint
+  1.50 m (4 ft 11 in) and the mirror's 1 meter (3 ft) mounting height. The
+  validator allows feet on a Reference row whose English label says
+  "height"; the check allows them where "height", "high", "higher" or
+  "tall" sits near the figure. The same pass caught spelled-out forms the
+  first one missed: the cyclist gap 1.5 meters (1.6 yd) in topic 10 and
+  23472, and 5 meters (5.5 yd) in topic 12 and 23686. The explanations of 24104 and 24105 give the
   inches in English only, and topic 21's English half writes 30 cm as
   "30 cm (12 in)", the way it already wrote 50 cm and 20 cm. The mirror row
   names 24104's 50 cm through `wrong`, and the 30 cm row now names the

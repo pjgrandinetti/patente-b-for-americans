@@ -35,11 +35,12 @@ setTimeout(()=>{
   w.document.getElementById('review-hide').click();
   // The same rule in the notes and the explanations: no length in meters converted to feet or miles,
   // and none in centimeters converted to anything but inches.
-  { const bad=/\d(?:[.,]\d+)? m \([^)]*\b(ft|feet|mi|miles?|in|inch(?:es)?)\b[^)]*\)|\d cm \([^)]*\b(ft|feet|yd|yards?)\b[^)]*\)/;
+  // A height keeps feet and inches (maintainer, 2026-10-28), recognized by "height", "high" or "tall" shortly before or after it.
+  { const bad=/\d(?:[.,]\d+)? (?:m|meters?) \([^)]*\b(ft|feet|mi|miles?|in|inch(?:es)?)\b[^)]*\)|\d cm \([^)]*\b(ft|feet|yd|yards?)\b[^)]*\)/g;
     const revs=JSON.parse(fs.readFileSync(root+'/topic_reviews.json','utf8'));
     const texts=[]; (Array.isArray(revs)?revs:Object.values(revs.reviews||revs)).forEach(r=>{ if(r&&r.en) texts.push(r.en); });
     JSON.parse(fs.readFileSync(root+'/questions.json','utf8')).forEach(q=>q.statements.forEach(s=>texts.push(s.explanation||'')));
-    const hits=texts.filter(x=>bad.test(x)).map(x=>x.match(bad)[0]);
-    ok(texts.length>7000 && hits.length===0,'notes and explanations: meters in yards, centimeters in inches ('+hits.slice(0,3).join(' | ')+')'); }
+    const hits=[]; texts.forEach(x=>{ for (const m of x.matchAll(bad)) { if (!/\b(height|high|higher|tall)\b/i.test(x.slice(Math.max(0,m.index-120),m.index+m[0].length+90))) hits.push(m[0]); } });
+    ok(texts.length>7000 && hits.length===0,'notes and explanations: meters in yards except heights, centimeters in inches ('+hits.slice(0,3).join(' | ')+')'); }
   console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);
 },2500);

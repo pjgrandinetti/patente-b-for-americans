@@ -47141,7 +47141,7 @@
         "italian_text": "Il sorpasso si effettua tenendo una adeguata distanza laterale dal veicolo che si sorpassa",
         "answer": "VERO",
         "english_translation": "The overtake is performed by maintaining an adequate lateral distance from the vehicle being overtaken.",
-        "explanation": "True. An adequate lateral gap protects against small shifts by the overtaken vehicle; when that vehicle is a bicycle the law requires at least 1.5 meters (5 feet) where conditions allow, because cyclists are less stable.",
+        "explanation": "True. An adequate lateral gap protects against small shifts by the overtaken vehicle; when that vehicle is a bicycle the law requires at least 1.5 meters (1.6 yd) where conditions allow, because cyclists are less stable.",
         "explanation_it": "Vero. Un'adeguata distanza laterale protegge dai piccoli spostamenti del veicolo superato; quando si tratta di una bicicletta la legge richiede almeno 1,5 metri ove le condizioni lo consentono, perché i ciclisti sono meno stabili."
       },
       {
@@ -49011,7 +49011,7 @@
         "italian_text": "Nei centri abitati la fermata è vietata in prossimità delle aree di intersezione, a più di 5 metri",
         "answer": "FALSO",
         "english_translation": "In built-up areas stopping is prohibited near intersection areas, more than 5 meters away.",
-        "explanation": "False. In built-up areas the *fermata* and the *sosta* are banned on the intersection and near it at less than 5 meters (16 ft), unless signs provide otherwise. The statement turns the distance around. Beyond 5 meters from the intersection this ban no longer applies.",
+        "explanation": "False. In built-up areas the *fermata* and the *sosta* are banned on the intersection and near it at less than 5 meters (5.5 yd), unless signs provide otherwise. The statement turns the distance around. Beyond 5 meters from the intersection this ban no longer applies.",
         "explanation_it": "Falso. Nei centri abitati la fermata e la sosta sono vietate sull'incrocio e in sua prossimità a meno di 5 metri, salvo diversa segnalazione. L'affermazione rovescia la distanza. Oltre i 5 metri dall'incrocio questo divieto non vale più."
       },
       {

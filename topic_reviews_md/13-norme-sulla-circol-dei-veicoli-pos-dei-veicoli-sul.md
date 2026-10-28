@@ -185,7 +185,7 @@ Driving in parallel lines (*file parallele*), meaning lines of vehicles side by 
 - Do not drive **too slowly without reason**, race, zigzag, or park on **tram rails**. <!-- q: 22673 22675 22676 -->
 - Observing the traffic rules is not enough to avoid being a danger or an obstruction: you must also follow the precautions that common sense dictates. The fundamental rules must be joined to a strong **civic sense**, which means consideration for everyone sharing the road. <!-- q: 22767 22768 -->
 - Arrange any **load** so it does not reduce your visibility or freedom of movement and cannot fall. <!-- q: 22692 22693 22694 22704 -->
-- The load must stay **within the capacity shown on the registration document**. There is **no 10% tolerance**, neither on the payload nor on the 4 m (4.4 yd) height limit. <!-- q: 22696 22698 22699 -->
+- The load must stay **within the capacity shown on the registration document**. There is **no 10% tolerance**, neither on the payload nor on the 4 m (13 ft) height limit. <!-- q: 22696 22698 22699 -->
 - On a motorcycle the load must not project **more than 50 cm (20 in) sideways**. Animals ride only in a proper cage. <!-- q: 22690 22691 22703 -->
 - On a car the load must not project more than **30 cm (12 in) beyond the position lights** sideways. <!-- q: 22697 -->
 - The load must not project **more than three-tenths of the vehicle's length at the rear**, and never at the front. <!-- q: 22695 22700 -->

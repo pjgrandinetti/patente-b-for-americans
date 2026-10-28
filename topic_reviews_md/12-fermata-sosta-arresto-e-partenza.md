@@ -42,7 +42,7 @@ A *fermata*, and therefore a *sosta*, is prohibited in these places.
 - It is prohibited where it would **hide a sign or traffic light**. Near a sign that stays visible, a halt is fine. <!-- q: 23677 23678 23684 23739 23740 23744 -->
 - It is prohibited on preselection arrows and along channelizing lanes. <!-- q: 23679 23741 23745 -->
 - It is prohibited on **acceleration lanes**, however brief the halt. <!-- q: 23687 -->
-- It is prohibited at and near **intersections**. Outside towns this means the junction area and its approaches. In towns it means **within 5 meters (16 ft)**, unless signed. <!-- q: 18693 23680 23681 23686 23742 23746 -->
+- It is prohibited at and near **intersections**. Outside towns this means the junction area and its approaches. In towns it means **within 5 meters (5.5 yd)**, unless signed. <!-- q: 18693 23680 23681 23686 23742 23746 -->
 
 Some places forbid parking and stopping alike, always.
 

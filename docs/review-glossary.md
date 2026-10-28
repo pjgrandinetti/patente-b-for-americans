@@ -949,7 +949,8 @@ docs/answer-flags-09.md — **none** (all 134 answers consistent with the CdS).
   100 m (110 yd), 150 m (165 yd), 320 m (about 350 yd)).
 - **SUPERSEDED 2026-10-28 (maintainer): every length in meters is given in YARDS,
   short ones with one decimal (1 m (1.1 yd), 5 m (5.5 yd)), and every length in
-  centimeters in INCHES. Never feet or miles.** The line below is the old rule.
+  centimeters in INCHES. Never feet or miles, except that a HEIGHT keeps feet and
+  inches (4 m (13 ft), 1.50 m (4 ft 11 in)).** The line below is the old rule.
 - **Feet for small dimensions** where fractional yards would be useless: 1 m (3 ft),
   1.5 m (5 ft), 2 m (6.5 ft), 2.30 m (7.5 ft), 5 m (16 ft), 10 m vehicle length (33 ft);
   child-seat height threshold 1.50 m (4 ft 11 in) — the exact US booster-rule phrasing.

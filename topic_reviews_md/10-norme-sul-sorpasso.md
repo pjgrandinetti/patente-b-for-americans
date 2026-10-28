@@ -31,7 +31,7 @@ Passing is never just "nothing is coming the other way." Before pulling out you 
 
 - Pass **on the left**, and keep an **adequate lateral gap** from the vehicle you pass. <!-- q: 23471 23472 23492 -->
 - Adjust your speed to that of the vehicle you are passing, so as to clear it promptly: you do accelerate, within the limits, and no rule sets a speed twice the other's. Keeping strictly right is for the vehicle being passed, not for you. <!-- q: 23545 23547 23548 23578 -->
-- When the vehicle you are passing is a **bicycle**, the gap must be wide. Since the 2024 reform the Code asks for a **lateral clearance of at least 1.5 meters (5 ft)** wherever road conditions allow, because cyclists are less stable; the Ministry's bank predates that figure and marks only a quoted "at least 2 m" false. <!-- q: 18319 -->
+- When the vehicle you are passing is a **bicycle**, the gap must be wide. Since the 2024 reform the Code asks for a **lateral clearance of at least 1.5 meters (1.6 yd)** wherever road conditions allow, because cyclists are less stable; the Ministry's bank predates that figure and marks only a quoted "at least 2 m" false. <!-- q: 18319 -->
 - Afterward, **return to the right as soon as you safely can**, but never cut in so sharply that the vehicle you passed must brake, and never by slowing down. No fixed distance, such as 100 m, governs the return, and no horn announces it. <!-- q: 23473 23480 23523 23549 23570 23576 23583 23584 -->
 - **Check your mirrors** before moving back. <!-- q: 23524 -->
 - On a road with **at least two lanes in your direction**, you may make a second pass without first returning right, provided you obstruct no one. <!-- q: 23483 23493 -->
@@ -116,7 +116,7 @@ A grammar note for reading the Italian. These statements read *la pericolosità 
 5. Passing is **allowed** in curves and crests on separated multi-lane roads. At a junction it is allowed under **lights** or an **officer**, on a **priority road** that also has separate carriageways or two marked lanes your way, behind a vehicle **turning left**, or for a **bicycle** if you stay in your own half. Whatever the case, vehicles **stopped or crawling** at a light or in a queue may never be passed by crossing into the oncoming half.
 6. The vehicle being passed must **not accelerate** and should **keep right**; a very slow one stops when it can. When you are being passed as oncoming traffic appears, slow down and keep right, or you risk **shared liability**.
 7. The **descending side of a crest** is passable even on a two-lane two-way road; speed limits apply throughout the pass.
-8. When you pass a **bicycle**, leave **at least 1.5 meters (5 ft)** of lateral clearance where the road allows.
+8. When you pass a **bicycle**, leave **at least 1.5 meters (1.6 yd)** of lateral clearance where the road allows.
 
 <!-- LANG: it -->
 ## Di cosa tratta questo argomento
