@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261029u';
+const APP_VERSION     = '20261029v';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -507,24 +507,10 @@ const T = {
   'guess.colTrue': { en: 'True', it: 'Vere' },
   'guess.colWhy': { en: 'Why', it: 'Perché' },
   'km.title':  { en: 'Questions you keep missing', it: 'Domande che continui a sbagliare' },
-  'km.before': { en: 'Missed at least', it: 'Sbagliate almeno' },
-  'km.after':  { en: 'times', it: 'volte' },
-  'km.count':  { en: '{0} questions missed {1} or more times.', it: '{0} domande sbagliate {1} o più volte.' },
-  'km.count1': { en: '1 question missed {0} or more times.', it: '1 domanda sbagliata {0} o più volte.' },
-  'km.none':   { en: 'No question missed {0} or more times still needs work.', it: 'Nessuna domanda sbagliata {0} o più volte ha ancora bisogno di lavoro.' },
-  'km.fixed':  { en: '{0} others have since been answered correctly and are not listed.', it: 'Altre {0} sono state poi risposte correttamente e non sono elencate.' },
-  'km.fixed1': { en: 'One other has since been answered correctly and is not listed.', it: 'Un\u2019altra è stata poi risposta correttamente e non è elencata.' },
-  'km.note':   { en: 'Misses in mock exams count under {0}. Answer a question here and it counts as an answer at {0}. Any wrong answer, in a mock exam too, puts a question back on the list.', it: 'Gli errori nelle simulazioni contano in {0}. Una risposta data qui conta come risposta in {0}. Qualsiasi risposta sbagliata, anche in una simulazione, rimette la domanda nell\u2019elenco.' },
-  'km.run':    { en: 'Leave the list after', it: 'Esce dall\u2019elenco dopo' },
-  'km.runN':   { en: '{0} correct answers on different days at {1}', it: '{0} risposte giuste in giorni diversi in {1}' },
-  'km.runWs':  { en: 'the weak spots\u2019 rule', it: 'la regola dei punti deboli' },
-  'km.filter': { en: 'Show', it: 'Mostra' },
-  'km.f.it':   { en: 'missed in Italian', it: 'sbagliate in italiano' },
-  'km.f.lang': { en: 'right in English, missed in Italian', it: 'giuste in inglese, sbagliate in italiano' },
-  'km.f.rule': { en: 'missed in English and Italian', it: 'sbagliate in inglese e in italiano' },
-  'km.h.it':   { en: 'Every question you have missed in Italian, the language of the exam, mock exams included.', it: 'Tutte le domande che hai sbagliato in italiano, la lingua dell\u2019esame, simulazioni comprese.' },
-  'km.h.lang': { en: 'You answered these correctly in English, so the Italian wording is the likely problem. Compare the Italian with the English and check the words.', it: 'Queste le hai risposte correttamente in inglese, quindi il problema è probabilmente la formulazione italiana. Confronta l\u2019italiano con l\u2019inglese e controlla le parole.' },
-  'km.h.rule': { en: 'You missed these in English too, so the rule is the likely problem. Open the notes with 📖 Concepts.', it: 'Le hai sbagliate anche in inglese, quindi il problema è probabilmente la regola. Apri gli appunti con 📖 Concetti.' },
+  'km.lead':   { en: 'The {0} questions you are most likely to miss, from your answers in Italian.', it: 'Le {0} domande che hai pi\u00f9 probabilit\u00e0 di sbagliare, in base alle tue risposte in italiano.' },
+  'km.lead1':  { en: 'The one question you are most likely to miss, from your answers in Italian.', it: 'La domanda che hai pi\u00f9 probabilit\u00e0 di sbagliare, in base alle tue risposte in italiano.' },
+  'km.leave':  { en: 'A question leaves the list once you answer it correctly on {0} different days.', it: 'Una domanda esce dall\u2019elenco quando rispondi correttamente in {0} giorni diversi.' },
+  'km.none':   { en: 'Every question you missed in Italian has since been answered correctly on enough different days.', it: 'Ogni domanda che hai sbagliato in italiano \u00e8 stata poi risposta correttamente in abbastanza giorni diversi.' },
   'km.right':  { en: 'Right.', it: 'Giusto.' },
   'km.wrong':  { en: 'Wrong.', it: 'Sbagliato.' },
   'km.answer': { en: 'Answer: {0}', it: 'Risposta: {0}' },
@@ -14417,51 +14403,25 @@ function statementByNumber(num) {
 // front was built and reverted on 2026-09-30 as a list to memorize). The 📖
 // that opened the notes at that question was removed in 20261029u.
 const MISS_MIN_KEY = 'patente_miss_min';
-function missMin() {
-  try { const v = Number(localStorage.getItem(MISS_MIN_KEY)); return v >= 1 && v <= 9 ? v : 3; } catch { return 3; }
-}
-function setMissMin(v) {
-  try { localStorage.setItem(MISS_MIN_KEY, String(v)); } catch { }
-  stampSettings();
-}
-// Which misses to list (20261006s, maintainer, 2026-10-01: offer only what
-// helps a learner who must pass in Italian). Every choice is a question
-// missed in ITALIAN, either Italian level, mock exams included, since only
-// those can cost points at the exam; a question missed only in English has
-// since been answered right in Italian. The default lists them all; the other
-// two split them by remedy: right in English (answered there, never missed),
-// so the Italian wording is the likely problem; or missed in English too, so
-// the rule is. Applied after the threshold. An Italian browser has only
-// Italiano and sees no control. Synced. Values stored by 20261006q/r ('all',
-// 'en', 'both') map onto these.
+// The three menus that used to set this list (the threshold, the
+// English/Italian filter and the release run) were removed in 20261029v
+// (maintainer, 2026-10-29: too many options for a learner to use well). Their
+// keys stay in the sync bundle, so a device on an older build keeps them.
 const MISS_FILTER_KEY = 'patente_miss_filter';
-const MISS_FILTERS = ['it', 'lang', 'rule'];
-function missFilter() {
-  try {
-    const v = localStorage.getItem(MISS_FILTER_KEY);
-    return MISS_FILTERS.includes(v) ? v : v === 'both' ? 'rule' : 'it';
-  } catch { return 'it'; }
-}
-function setMissFilter(v) {
-  try { localStorage.setItem(MISS_FILTER_KEY, v); } catch { }
-  stampSettings();
-}
-// When a question leaves the list (20261006u, maintainer, 2026-10-01): the
-// learner chooses. A number N means N correct answers in a row at Italiano
-// since the last miss there (the Italiano streak, which any wrong answer,
-// a mock miss included, resets); 'ws' means the weak spots' own release test,
-// which also lets one Italiano answer release a question missed only lower.
-// Default 3, stricter than the weak spots, so the list shows more than the
-// drill does. Synced.
 const MISS_RUN_KEY = 'patente_miss_run';
-const MISS_RUNS = ['2', '3', '4', '5', 'ws'];
-function missRun() {
-  try { const v = localStorage.getItem(MISS_RUN_KEY); return MISS_RUNS.includes(v) ? v : '3'; } catch { return '3'; }
-}
-function setMissRun(v) {
-  try { localStorage.setItem(MISS_RUN_KEY, v); } catch { }
-  stampSettings();
-}
+// The list holds the KM_MAX questions the learner is most likely to miss
+// the next time they appear (20261029v, maintainer, 2026-10-29: do not
+// overwhelm the learner; focus on the ones most likely missed). The chance
+// is estimated from the answers given in Italian (both Italian levels, mock
+// exams included, credit-only records left out) as (misses + 1) ÷ (answers
+// + 2), the miss rate with one imagined miss and one imagined right answer
+// added, so a single answer never reads as certainty. Only questions missed
+// in Italian at least once and not yet answered right on REVIEW_DAYS
+// different days since the last miss are candidates, the daily review's own
+// test. Whether a question is likely to APPEAR on the exam is deliberately
+// not part of it: the maintainer asked for the ones missed "if they appear".
+// 20 is a choice: about ten minutes in Read with answers.
+const KM_MAX = 20;
 let _kmOpen = false, _guessOpen = false;
 // Read with answers (20261029p, maintainer, 2026-10-29: for a last-minute
 // review the learner needs each question in Italian and English with its
@@ -14469,45 +14429,38 @@ let _kmOpen = false, _guessOpen = false;
 // learner is using the list now and not a preference; the list opens on
 // Answer them. Nothing is recorded in this mode.
 let _kmRead = false;
-function keepMissingRows(min, filter = 'it', run = '3') {
+function keepMissingRows() {
   const it = uiLang() === 'it';
   const levels = it ? [EXAM_LEVEL] : [1, 2, 3];
+  const itLevels = it ? [EXAM_LEVEL] : [2, EXAM_LEVEL];
   const perLevel = {};
   for (const lvl of [1, 2, 3]) perLevel[lvl] = lvl === currentLevel ? progress : loadProgressForLevel(lvl);
-  const ladder = [perLevel[1], perLevel[2], perLevel[3]];
   const minId = topicMinIds();
-  const rows = [];
-  let any = 0, fixed = 0;
+  const need = reviewDaysNeeded();
+  const cands = [];
+  let any = 0;
   for (const q of questions) {
     for (const st of q.statements || []) {
+      let misses = 0, answers = 0;
+      for (const lvl of itLevels) {
+        const r = perLevel[lvl]?.[q.id]?.st?.[st.number];
+        if (!r || r.lft) continue;
+        misses += missCount(r);
+        answers += Math.max(r.seen || 0, missCount(r));
+      }
+      if (!misses) continue;
+      any++;
+      if (dayRunDone(perLevel[EXAM_LEVEL]?.[q.id]?.st?.[st.number], need)) continue;
       const by = levels.map(lvl => {
         const r = perLevel[lvl]?.[q.id]?.st?.[st.number];
         return r && !r.lft ? missCount(r) : 0;
       });
-      const total = by.reduce((a, b) => a + b, 0);
-      if (total > 0) any++;
-      if (total < min) continue;
-      if (!it) {
-        const en = by[0] > 0, itm = by[1] + by[2] > 0;
-        if (!itm) continue;
-        if (filter === 'lang') {
-          const r1 = perLevel[1]?.[q.id]?.st?.[st.number];
-          if (en || !r1 || r1.lft || !((r1.seen || 0) > 0)) continue;   // answered in English, never missed
-        }
-        if (filter === 'rule' && !en) continue;
-      }
-      // Fixed since the last miss: a RUN of correct answers, never a rate
-      // (maintainer, 2026-10-01), long enough by the learner's own choice.
-      const r3 = perLevel[EXAM_LEVEL]?.[q.id]?.st?.[st.number];
-      const done = run === 'ws' ? drillNeed(q.id, st.number, ladder) === 0
-                                : dayRunDone(r3, Number(run));
-      if (done) { fixed++; continue; }
-      rows.push({ q, st, by, levels, total });
+      cands.push({ q, st, by, levels, misses, p: (misses + 1) / (answers + 2) });
     }
   }
-  rows.sort((a, b) => b.total - a.total || compareTopics(a.q.topic, b.q.topic, minId) ||
-                      Number(a.st.number) - Number(b.st.number));
-  return { rows, any, fixed };
+  cands.sort((a, b) => b.p - a.p || b.misses - a.misses || compareTopics(a.q.topic, b.q.topic, minId) ||
+                       Number(a.st.number) - Number(b.st.number));
+  return { rows: cands.slice(0, KM_MAX), open: cands.length, any };
 }
 
 function renderMissBreakdown() {
@@ -14520,13 +14473,6 @@ function renderMissBreakdown() {
     const status = document.getElementById('exam-status');
     if (status) status.insertAdjacentElement('afterend', el); else host.appendChild(el);
     // Delegated and bound ONCE: the contents are rewritten on every render.
-    el.addEventListener('change', ev => {
-      if (ev.target.id === 'km-filter') { setMissFilter(ev.target.value); renderMissBreakdown(); return; }
-      if (ev.target.id === 'km-run')    { setMissRun(ev.target.value);    renderMissBreakdown(); return; }
-      if (ev.target.id !== 'km-min') return;
-      setMissMin(Number(ev.target.value));
-      renderMissBreakdown();
-    });
     el.addEventListener('click', ev => {
       const pill = ev.target.closest('.km-read .rb-it');
       if (pill) { ev.preventDefault(); toggleItBlock(pill); return; }
@@ -14536,30 +14482,16 @@ function renderMissBreakdown() {
       if (vf) { answerFromList(vf); return; }
     });
   }
-  const min = missMin();
-  const filter = missFilter();
-  const run = missRun();
-  const { rows, any, fixed } = keepMissingRows(min, filter, run);
+  const { rows, any } = keepMissingRows();
   if (!any) { el.classList.add('hidden'); return; }
   el.classList.remove('hidden');
   const it = uiLang() === 'it';
-  const opts = [1, 2, 3, 4, 5, 6].map(v => `<option value="${v}"${v === min ? ' selected' : ''}>${v}</option>`).join('');
   // In a closed disclosure (20261007q, maintainer's request); the open state
   // lasts the session, since every change of a control redraws the section.
   let html = `<details class="rules-note stats-box"${_kmOpen ? ' open' : ''}><summary>${escHtml(t('km.title'))}</summary><div class="stats-box-body">` +
-    `<div class="km-controls"><label class="km-min">${escHtml(t('km.before'))} <select id="km-min">${opts}</select> ${escHtml(t('km.after'))}</label>` +
-    (it ? '' : `<label class="km-min">${escHtml(t('km.filter'))} <select id="km-filter">` +
-      MISS_FILTERS.map(f => `<option value="${f}"${f === filter ? ' selected' : ''}>${escHtml(t('km.f.' + f))}</option>`).join('') +
-      `</select></label>`) +
-    `<label class="km-min">${escHtml(t('km.run'))} <select id="km-run">` +
-      MISS_RUNS.map(v => `<option value="${v}"${v === run ? ' selected' : ''}>${escHtml(v === 'ws' ? t('km.runWs') : t('km.runN', v, t('lvl.' + EXAM_LEVEL + '.name')))}</option>`).join('') +
-      `</select></label></div>` +
-    (it ? '' : `<p class="km-hint">${escHtml(t('km.h.' + filter))}</p>`) +
     `<p class="weak-note">${escHtml(rows.length
-      ? (rows.length === 1 ? t('km.count1', min) : t('km.count', rows.length.toLocaleString(), min))
-      : t('km.none', min))}` +
-    (fixed ? ' ' + escHtml(fixed === 1 ? t('km.fixed1') : t('km.fixed', fixed.toLocaleString())) : '') +
-    (it ? '' : ' ' + escHtml(t('km.note', t('lvl.' + EXAM_LEVEL + '.name')))) + '</p>' +
+      ? (rows.length === 1 ? t('km.lead1') : t('km.lead', rows.length)) + ' ' + t('km.leave', reviewDaysNeeded())
+      : t('km.none'))}</p>` +
     (rows.length ? `<div class="km-modes" role="group">` +
       ['practice', 'read'].map(m => `<button type="button" class="km-mode-btn${(m === 'read') === _kmRead ? ' active' : ''}" data-mode="${m}" aria-pressed="${(m === 'read') === _kmRead}">${escHtml(t(m === 'read' ? 'km.modeRead' : 'km.modePractice'))}</button>`).join('') +
       `</div>` : '');

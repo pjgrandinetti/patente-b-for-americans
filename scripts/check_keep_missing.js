@@ -1,4 +1,4 @@
-// "Questions you keep missing" on the Statistics page (maintainer, 2026-10-01): one list of every question missed at least N times across the levels (N on the page, default 3, synced), most misses first, each row with its figure and misses by level; opened, the English, the answer behind a button and the 📖. The old 25-topic breakdown and the language-miss group are gone. Run: node scripts/check_keep_missing.js (UILANG=it-IT).
+// "Questions you keep missing" on the Statistics page. Since 20261029v (maintainer, 2026-10-29): no menus; the KM_MAX (20) questions the learner is most likely to miss next time, ranked by (misses + 1) / (answers + 2) over the answers in Italian, among those missed in Italian and not yet right on 3 different days; Answer them or Read with answers. Run: node scripts/check_keep_missing.js (UILANG=it-IT).
 const {JSDOM}=require(process.env.JSDOM||'/tmp/node_modules/jsdom'); const fs=require('fs');
 const root=process.env.SRC||require('path').resolve(__dirname,'../public_html');
 const LANG=process.env.UILANG||'en-US'; const IT=LANG.startsWith('it');
@@ -12,6 +12,9 @@ const L={1:{},2:{},3:{}};
 const put=(lvl,card,num,m)=>{ if(!m) return; (L[lvl][card.id] ||= {st:{}}).st[num]=rec(m); };
 put(1,A,a.number,2); put(3,A,a.number,3); put(1,B,b.number,1); put(2,B,b.number,1); put(3,B,b.number,1); put(3,C,c.number,2); put(1,D,d.number,3);   // d: English only, 3
 (L[1][C.id] ||= {st:{}}).st[c.number]={seen:1,correct:1,streak:1};   // c answered right in English
+// e: six misses in twenty answers at Italiano, a low rate despite the count
+const E=Q[17], e=live(E)[0]; (L[3][E.id] ||= {st:{}}).st[e.number]={seen:20,correct:14,streak:0,miss:6};
+// Chances in both faces: a (3+1)/(4+2) .67, c (2+1)/(3+2) .60, b .50 (English face: L2 and L3, 2 of 4; Italian face: L3, 1 of 2), e (6+1)/(20+2) .32.
 let html=fs.readFileSync(root+'/index.html','utf8').replace(/<script[^>]*src="app\.js[^>]*><\/script>/,'');
 const dom=new JSDOM(html,{url:'https://patente.physyapps.com/',runScripts:'dangerously',pretendToBeVisual:true});
 const w=dom.window; Object.defineProperty(w.navigator,'language',{value:LANG}); Object.defineProperty(w.navigator,'languages',{value:[LANG]});
@@ -31,10 +34,12 @@ setTimeout(()=>{
   ok(!disc().open,'closed by default');
   disc().open=true; disc().dispatchEvent(new w.Event('toggle'));
   ok(!/Right in English|Corrette in inglese|Missed in English and|weak-topic/.test(box.innerHTML),'the old diagnosis and topic breakdown are gone');
-  ok($('km-min').value==='3','threshold defaults to 3');
+  ok(!$('km-min') && !$('km-filter') && !$('km-run') && !box.querySelector('select'),'no menus (20261029v)');
   const r0=rows();
-  ok(IT ? r0.length===1 : r0.length===2,'rows at 3, Italian misses only (d, missed only in English, is not listed): '+r0.length);
-  ok(r0[0].querySelector('.km-it').textContent===a.italian_text,'most misses first');
+  const order=r0.map(r=>r.querySelector('.km-it').textContent);
+  ok(r0.length===4 && order[0]===a.italian_text && order[1]===c.italian_text && order[2]===b.italian_text && order[3]===e.italian_text,'ranked by the chance of a miss, not by the count: a, c, b, then e with six misses');
+  ok(!order.includes(d.italian_text),'a question missed only in English is not listed');
+  ok(/(most likely to miss|più probabilità di sbagliare)/.test(box.querySelector('.weak-note').textContent) && /\b3\b/.test(box.querySelector('.weak-note').textContent),'one line says what the list is and when a question leaves it: '+box.querySelector('.weak-note').textContent);
   ok(!A.image || !!r0[0].querySelector('img.km-img'),'the figure is in the row');
   const lv=[...r0[0].querySelectorAll('.km-lvl')].map(x=>x.textContent);
   ok(IT ? lv.length===1 && / 3$/.test(lv[0]) : lv.length===3 && / 2$/.test(lv[0]) && / 0$/.test(lv[1]) && / 3$/.test(lv[2]),'misses by level: '+lv.join(' | '));
@@ -48,53 +53,26 @@ setTimeout(()=>{
   r0[0].querySelector(`.km-vf[data-choice="${a.answer}"]`).click();
   ok(!r0[0].querySelector('.km-ans').classList.contains('hidden') && /Right|Giusto/.test(r0[0].querySelector('.km-answer').textContent) && r0[0].querySelector('.km-answer').textContent.includes(a.answer),'a right answer shows the result: '+r0[0].querySelector('.km-answer').textContent);
   ok(rec3().streak===s0+1 && rec3().seen===seen0+1,'and counts at Italiano: the run grows');
-  ok([...r0[0].querySelectorAll('.km-vf')].every(b=>b.disabled),'one answer per opening');
+  ok([...r0[0].querySelectorAll('.km-vf')].every(bt=>bt.disabled),'one answer per opening');
   ok(!r0[0].querySelector('.km-book'),'no Concepts button on a practice row (20261029u)');
-  const sel=$('km-min'); sel.value='2'; sel.dispatchEvent(new w.Event('change',{bubbles:true}));
-  ok(disc().open,'it stays open when a control redraws the list');
-  ok(rows().length===(IT?2:3) && w.localStorage.getItem('patente_miss_min')==='2' && w.buildProgressBundle().settings.missMin==='2','threshold 2: more rows, stored and synced');
-  if (IT) ok(!$('km-filter'),'no English/Italian filter for an Italian browser');
-  else {
-    ok($('km-filter').value==='it' && $('km-filter').options.length===3,'three choices, default missed in Italian');
-    ok(/language of the exam|lingua dell/.test(box.querySelector('.km-hint').textContent),'a line says what the list is for');
-    const want={lang:1,rule:2,it:3};   // c right in English; a and b missed in both
-    for (const f of ['lang','rule','it']) {
-      const fs_=$('km-filter'); fs_.value=f; fs_.dispatchEvent(new w.Event('change',{bubbles:true}));
-      ok(rows().length===want[f],'filter '+f+': '+rows().length+' rows');
-    }
-    const fs2=$('km-filter'); fs2.value='rule'; fs2.dispatchEvent(new w.Event('change',{bubbles:true}));
-    ok(w.localStorage.getItem('patente_miss_filter')==='rule' && w.buildProgressBundle().settings.missFilter==='rule' && /rule|regola/.test(box.querySelector('.km-hint').textContent),'the filter is stored and synced, and its line changes');
-    w.localStorage.setItem('patente_miss_filter','both'); ok(w.missFilter()==='rule','a value stored by the previous build maps across');
-    const fs3=$('km-filter'); fs3.value='it'; fs3.dispatchEvent(new w.Event('change',{bubbles:true}));
-  }
-  // The run that takes a question off the list is the learner's choice, default 3 in a row at Italiano.
-  const before=rows().length;
-  const setStreak=n=>{ w.eval(`(()=>{const p=loadProgressForLevel(3); p[${JSON.stringify(String(A.id))}].st[${JSON.stringify(String(a.number))}].streak=${n}; p[${JSON.stringify(String(A.id))}].st[${JSON.stringify(String(a.number))}].dr=${n};})()`); w.renderMissBreakdown(); };  // the run counts DAYS since 20261010c
-  const listed=()=>rows().some(r=>r.querySelector('.km-it').textContent===a.italian_text);
-  ok($('km-run').value==='3' && $('km-run').options.length===5,'run choice: five options, default 3 in a row');
-  setStreak(2); ok(listed(),'default 3: two in a row is not enough');
-  setStreak(3); ok(!listed() && rows().length===before-1,'default 3: three in a row takes it off');
-  ok(/answered correctly|risposte correttamente|risposta correttamente/.test(box.querySelector('.weak-note').textContent),'the line says how many are fixed and not listed');
-  const pick=v=>{ const el=$('km-run'); el.value=v; el.dispatchEvent(new w.Event('change',{bubbles:true})); };
-  pick('2'); setStreak(2); ok(!listed(),'choice 2: two in a row takes it off');
-  pick('ws'); setStreak(1); ok(listed(),'weak spots rule: one answer after an Italiano miss is not enough');
-  setStreak(2); ok(!listed(),'weak spots rule: two takes it off');
-  { pick('3'); w.eval(`(()=>{const r=loadProgressForLevel(3)[${JSON.stringify(String(A.id))}].st[${JSON.stringify(String(a.number))}]; r.streak=3; r.dr=1;})()`); w.renderMissBreakdown(); ok(listed(),'three in a row given on one day do not take it off (20261010c)'); pick('ws'); }
-  ok(w.localStorage.getItem('patente_miss_run')==='ws' && w.buildProgressBundle().settings.missRun==='ws','the run choice is stored and synced');
-  pick('3');
-  // Fixed again, then a mock miss: back on the list.
-  w.eval(`(()=>{const p=loadProgressForLevel(3); p[${JSON.stringify(String(A.id))}].st[${JSON.stringify(String(a.number))}].streak=3; p[${JSON.stringify(String(A.id))}].st[${JSON.stringify(String(a.number))}].dr=3;})()`);
   w.renderMissBreakdown();
-  ok(rows().length===before-1,'a run of three days: off the list');
+  ok(disc().open,'it stays open when the list is redrawn');
+  // Leaves after correct answers on 3 different days, the daily review's test.
+  const setRun=n=>{ w.eval(`(()=>{const r=loadProgressForLevel(3)[${JSON.stringify(String(A.id))}].st[${JSON.stringify(String(a.number))}]; r.streak=${n}; r.dr=${n};})()`); w.renderMissBreakdown(); };
+  const listed=()=>rows().some(r=>r.querySelector('.km-it').textContent===a.italian_text);
+  setRun(2); ok(listed(),'right on two different days: still listed');
+  setRun(3); ok(!listed() && rows().length===3,'right on three different days: off the list');
+  { w.eval(`(()=>{const r=loadProgressForLevel(3)[${JSON.stringify(String(A.id))}].st[${JSON.stringify(String(a.number))}]; r.streak=3; r.dr=1;})()`); w.renderMissBreakdown(); ok(listed(),'three right on one day do not take it off'); setRun(3); }
   w.eval(`(()=>{const q=questions.find(x=>String(x.id)===${JSON.stringify(String(A.id))}); const st=q.statements.find(x=>String(x.number)===${JSON.stringify(String(a.number))});
     examState.items=[{q,stmt:st}]; examState.answers=[{chosen: st.answer==='VERO'?'FALSO':'VERO', correct: st.answer}]; recordExamMisses();})()`);
   w.renderMissBreakdown();
-  ok(rows().length===before && rows()[0].querySelector('.km-it').textContent===a.italian_text,'one wrong answer in a mock exam: back on the list, at the top');
-  const sel6=$('km-min'); sel6.value='6'; sel6.dispatchEvent(new w.Event('change',{bubbles:true}));
-  // After the mock miss the first question has 6 misses in the English face (2+0+4) and 4 at Italiano.
-  ok(rows().length===(IT?0:1) && /6/.test(box.querySelector('.weak-note').textContent),'threshold 6: '+(IT?'none, and it says so':'only the question missed six times'));
+  ok(listed(),'one wrong answer in a mock exam: back on the list');
+  // At most twenty.
+  w.eval(`(()=>{const p=loadProgressForLevel(3); let k=0; for (const q of questions.slice(40,80)) { const st=(q.statements||[])[0]; if(!st||st.retired) continue; (p[q.id] ||= {lastSeen:null, st:{}}).st ||= {}; p[q.id].st[st.number]={seen:2,correct:1,streak:0,miss:1}; if(++k>=25) break; } saveProgressForLevel(3,p);})()`);
+  if (w.eval('currentLevel')===3) w.eval('progress = loadProgressForLevel(3)');
+  w.renderMissBreakdown();
+  ok(rows().length===20 && /\b20\b/.test(box.querySelector('.weak-note').textContent),'never more than twenty: '+rows().length);
   // A wrong answer in the list counts a miss and resets the run.
-  w.localStorage.setItem('patente_miss_min','1'); w.localStorage.setItem('patente_miss_run','5'); w.renderMissBreakdown();
   const rr=rows().find(r=>r.querySelector('.km-it').textContent===a.italian_text);
   rr.open=true; rr.dispatchEvent(new w.Event('toggle'));
   const m0=rec3().miss;

@@ -3894,6 +3894,27 @@ behind what shipped:
   shows the result in place and the list is redrawn on the next visit.
   `MISS_FILTER_KEY`, synced, hidden for an Italian browser; values from
   20261006q/r map across (`both` to `rule`, the rest to the default).
+  **The menus are GONE and the list is the 20 questions most likely
+  missed (20261029v, maintainer, 2026-10-29: "there are too many options
+  and the learner probably won't know how to use them", then "we don't
+  want to overwhelm them ... focus them on the ones they will most likely
+  miss if they appear on the actual exam").** Everything above about the
+  threshold, the English/Italian filter and the release-run select
+  describes code that no longer exists; their keys stay in the sync
+  bundle for older builds. `keepMissingRows()` takes the questions missed
+  in Italian at least once (both Italian levels for a non-Italian browser,
+  Italiano for an Italian one, mock misses included, `lft` records left
+  out) and not yet right on `reviewDaysNeeded()` (3) different days, the
+  daily review's test; ranks them by (misses + 1) ÷ (answers + 2) over the
+  Italian answers, the miss rate with one imagined miss and one imagined
+  right answer, so a single answer never reads as certainty and a
+  question missed six times in twenty ranks below one missed three times
+  in four; and keeps `KM_MAX` (20), a choice for about ten minutes of
+  Read with answers. Whether a question is likely to APPEAR is not part
+  of it: the maintainer's words were "if they appear". One line replaces
+  the menus and the notes: "The 20 questions you are most likely to miss,
+  from your answers in Italian. A question leaves the list once you answer
+  it correctly on 3 different days." No rate is shown.
   **Read with answers (20261029p, maintainer, 2026-10-29: for a
   last-minute review the learner needs each question in Italian and
   English with its answer, not to answer it first).** Two buttons above the
@@ -3911,7 +3932,7 @@ behind what shipped:
   with answers in front that 20260930l reverted as a list to memorize, now
   asked for by the maintainer as an OPTION for the last days, behind the
   practice mode that stays the default.
-  `scripts/check_keep_missing.js`, 48 checks in the English face, 41 in the
+  `scripts/check_keep_missing.js`, 34 checks in the English face, 33 in the
   Italian.
 - **A mock exam is a full simulation of the exam room (20261006o,
   maintainer, 2026-10-01).** Start a mock exam opens the sheet BLANK
