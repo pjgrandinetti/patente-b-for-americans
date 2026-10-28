@@ -5395,6 +5395,15 @@ to areas open to the public, and the two Reference rows whose only source was
   non-light quadricycle, and the vehicle limits 45, 40 and 15. Both halves.
   The words "ladder" and "learn by heart" were tried first and are banned by
   `check_review_english.py`; the section says "series" and "step".
+  **The same summary is on the Reference page (20261028l, maintainer)**:
+  `remember` on the `speed` category in reference.json (`en`, `it`,
+  `linesEn`, `linesIt`), drawn by `refRememberHtml` as a CLOSED disclosure
+  "How to remember the speeds" under the first speed category on screen,
+  so the by-vehicle chip alone still shows it; never while searching or on
+  the missed-figures chip. Closed because it names every figure and the
+  values may be hidden for a self-test. A change to the rule is two edits,
+  topic 11 and reference.json. `scripts/check_speed_remember.js`, 9 checks
+  in each face, including that every figure it names is a speed row.
   **An emergency halt is never parking (20261023m, maintainer, 2026-10-23).**
   Topic 21's emergency-lane bullet, 20955 and 23903 now say the three hours
   are the ceiling of a *sosta di emergenza*, not an allowance, as topic 07's

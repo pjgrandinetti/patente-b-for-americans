@@ -3443,3 +3443,8 @@ a.expl-notes { color: var(--accent); text-decoration: underline; text-underline-
 
 /* The wish on the day before and the day of the exam (20261028b). */
 .exam-date-wish { margin: .4rem 0 0; font-weight: 600; font-style: italic; color: var(--accent); }
+
+/* How to remember the speeds, at the head of the speed categories (20261028l). */
+.ref-remember { margin: .5rem 0 1rem; }
+.ref-remember .rules-body ul { margin: 0; padding-left: 1.2rem; }
+.ref-remember .rules-body li + li { margin-top: .45rem; }

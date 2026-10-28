@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261028k';
+const APP_VERSION     = '20261028l';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -14500,6 +14500,19 @@ function renderReviewCats() {
 // With "Hide values" on, the value cell is a button that reveals just that one,
 // so the page doubles as a self-test.
 // Returns how many rows it rendered, which is what the search headings count.
+// How to remember the speeds (20261028l, maintainer, 2026-10-28): the rule
+// topic 11 teaches, the series of odd tens with one-step rules and the few
+// figures outside it, as a closed disclosure at the head of the speeds. It is
+// stored on the `speed` category and shown once, under whichever speed
+// category comes first on screen, so a reader who picks the by-vehicle chip
+// still finds it. Never while searching, nor on the missed-figures chip. It
+// stays closed until opened, since it names every figure and the values may
+// be hidden for a self-test.
+let _refRememberOpen = false;
+function refRememberHtml(r, it) {
+  return `<details class="rules-note ref-remember"${_refRememberOpen ? ' open' : ''}><summary>${escHtml(it ? r.it : r.en)}</summary>` +
+    `<div class="rules-body"><ul>${(it ? r.linesIt : r.linesEn).map(l => `<li>${escHtml(l)}</li>`).join('')}</ul></div></details>`;
+}
 function renderReviewNumbers() {
   const box = document.getElementById('review-numbers-body');
   if (!box) return 0;
@@ -14546,6 +14559,8 @@ function renderReviewNumbers() {
   const fset = entryFlagSet();   // reviewer mode: entries with an unsent comment
   const foldKeys = [];            // every group that can fold, in the order shown
   const groups = reference.groups || [];
+  const speedRemember = ((reference.categories || []).find(x => x.id === 'speed') || {}).remember;
+  let rememberDone = !!q || cat === 'missed' || !speedRemember;
   cats.forEach(c => {
     const rows = c.id === 'missed'
       ? nums.slice().sort((x, y) => missed.get((reference.numbers || []).indexOf(y)) - missed.get((reference.numbers || []).indexOf(x)))
@@ -14556,6 +14571,7 @@ function renderReviewNumbers() {
     // 24104, 2026-09-30), and the category says once how to convert. An
     // Italian reader thinks in meters and gets neither.
     if (!it && c.noteEn && cat !== 'missed') html += `<p class="review-group-note">${escHtml(c.noteEn)}</p>`;
+    if (!rememberDone && (c.id === 'speed' || c.id === 'speedveh')) { html += refRememberHtml(speedRemember, it); rememberDone = true; }
     // Inside a category the rows may carry a group (the speeds are grouped by
     // road type, so every autostrada limit sits together). Rows without one
     // are listed first, under no subheading.
@@ -14738,6 +14754,7 @@ function renderReviewNumbers() {
     });
   });
   box.innerHTML = html;
+  box.querySelector('.ref-remember')?.addEventListener('toggle', e => { _refRememberOpen = e.target.open; });
   paintReviewFold(foldKeys, !!q);
   bindEntryFlags(box);
   return nums.length;
