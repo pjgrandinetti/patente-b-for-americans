@@ -30,13 +30,13 @@ American instincts about speed numbers mislead until you match the **road types*
 
 ### How to remember the numbers
 
-![!xl Green figures follow from the standard row by one step of 20 km/h, gray ones are unchanged, and orange ones fall outside the series and must be memorized](review_media/speed-limits-en.svg)
+![!xl Green figures follow from the standard row by one step of 20 km/h, gray ones are unchanged, orange ones fall outside the series and must be memorized, and purple is the fog cap that may be posted on the two fastest roads](review_media/speed-limits-en.svg)
 
 - The limits form a series of odd tens, 20 km/h apart, from **150** down through **130, 110, 90 and 70** to **50**. Divide any of them by 10 and the result is an odd number.
 - The four standard limits are **130, 110, 90 and 50** (autostrada, principale, secondaria, town). Seventy is in the series but is not among them, since no road type carries it as a standard limit.
 - A sign can raise a limit one step. The autostrada goes up to **150** and a suitable urban road to **70**, but only where signed.
 - **Rain, any precipitation, lowers a limit one step on the two fastest roads**, from 130 to 110 on the autostrada and from 110 to 90 on the principale. The secondaria stays at 90 and town at 50.
-- In dense fog the autostrada and the principale can be held to the lowest figure of the series, **50**.
+- Fog obliges you on every road to slow to what you can see. Only on the autostrada and the principale may a figure be posted for it, a temporary cap of **50** when visibility is under 100 m.
 - Towing a trailer or caravan means **70** on every extra-urban road, main or secondary. It is a figure of the series, but the same figure for both roads.
 - Only a few figures fall outside the series, and they are the ones to memorize. A driver licensed less than 3 years is held to **100** on the autostrada. On the principale the same driver's **90** is one step down, as the series predicts.
 - **80** is the figure for slow vehicles on the fastest roads. It is the limit when towing on the autostrada, and the limit for a non-light quadricycle outside built-up areas.
@@ -170,13 +170,13 @@ Tre materie condividono questo argomento, e un'idea le governa tutte: il limite 
 
 ### Come ricordare i numeri
 
-![!xl Le cifre verdi seguono dalla riga ordinaria con un passo di 20 km/h, quelle grigie restano invariate, e quelle arancioni sono fuori dalla serie e vanno memorizzate](review_media/speed-limits-it.svg)
+![!xl Le cifre verdi seguono dalla riga ordinaria con un passo di 20 km/h, quelle grigie restano invariate, quelle arancioni sono fuori dalla serie e vanno memorizzate, e quelle viola sono il tetto per la nebbia che può essere imposto sulle due strade più veloci](review_media/speed-limits-it.svg)
 
 - I limiti formano una serie di decine dispari, a 20 km/h l'una dall'altra, da **150** giù per **130, 110, 90 e 70** fino a **50**. Dividendo uno qualsiasi di essi per 10 si ottiene un numero dispari.
 - I quattro limiti ordinari sono **130, 110, 90 e 50** (autostrada, principale, secondaria, centro abitato). Il 70 fa parte della serie ma non è tra questi, perché nessun tipo di strada lo ha come limite ordinario.
 - Un segnale può alzare un limite di un passo. L'autostrada sale a **150** e una strada urbana adatta a **70**, ma solo dove segnalato.
 - **La pioggia, qualsiasi precipitazione, abbassa il limite di un passo sulle due strade più veloci**, da 130 a 110 in autostrada e da 110 a 90 sulla principale. La secondaria resta a 90 e il centro abitato a 50.
-- Con nebbia fitta l'autostrada e la principale possono essere limitate alla cifra più bassa della serie, **50**.
+- La nebbia obbliga su ogni strada a rallentare secondo quanto si vede. Solo in autostrada e sulla principale può esserne imposta una cifra, un limite temporaneo di **50** con visibilità inferiore a 100 m.
 - Al traino di un rimorchio o caravan il limite è **70** su ogni strada extraurbana, principale o secondaria. È una cifra della serie, ma la stessa cifra per entrambe le strade.
 - Solo poche cifre restano fuori dalla serie, e sono quelle da memorizzare. Chi ha la patente da meno di 3 anni è limitato a **100** in autostrada. Sulla principale il **90** dello stesso conducente è un passo più in basso, come prevede la serie.
 - **80** è la cifra dei veicoli lenti sulle strade più veloci. È il limite al traino in autostrada e il limite per un quadriciclo non leggero fuori dai centri abitati.

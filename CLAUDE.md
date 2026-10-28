@@ -5418,6 +5418,17 @@ to areas open to the public, and the two Reference rows whose only source was
   SIDA manual's own table (fig. 3038) lists the limits and was not used:
   it is copyrighted and shows no pattern. At 390 px the figure fits with
   no sideways scroll, but its legend text renders small.
+  **Fog is two rules, not one figure (20261028n, maintainer, 2026-10-28:
+  "strange that dense fog only applies to autostrade and extraurban").**
+  On every road art. 141 obliges you to slow to what you can see; only on
+  the autostrada and the principale may a figure be posted, a temporary cap
+  of 50 with visibility under 100 m (22454: *possono essere imposti*). The
+  figure's fog row first marked the secondaria and town "does not apply" and
+  colored the 50 as the one-step rule; the 50 is now purple ("Cap that may
+  be posted") and those two cells read "Slow to visibility", with the
+  legend on two rows. The fog bullet in topic 11 and in the Reference box
+  says both rules. The 50 is not in art. 142's text, which has the rain
+  rule only.
   **An emergency halt is never parking (20261023m, maintainer, 2026-10-23).**
   Topic 21's emergency-lane bullet, 20955 and 23903 now say the three hours
   are the ceiling of a *sosta di emergenza*, not an allowance, as topic 07's
