@@ -2199,6 +2199,32 @@ behind what shipped:
   same-average windows priced apart, the zero-variance floor, three sheets
   priced below five, and the wording in each state. `/tmp/show_form.js` prints
   the line for four realistic runs, which is the quickest way to judge it.
+- **The t was checked against KNOWN TRUTH on 2026-10-28, and it is the best
+  calibrated of four models.** The maintainer asked whether a symmetric t is
+  right when the scores are bounded at 30 and skewed near a perfect sheet.
+  Comparing the t with a binomial on his own export suggested it was about
+  one point optimistic near 5%, and that was WRONG: it measured one model
+  against another. The test that settles it is a simulation in which the
+  truth is set by hand. A learner is given a true error rate and a true
+  day-to-day variation of that rate (none, or a beta-binomial with
+  intra-sheet correlation 0.01 or 0.03). Their exact chance of failing then
+  follows from that distribution, and 15 or 30 mock sheets are drawn from it,
+  300 histories per case. Over true chances from 0.8% to 15.5%, the t's
+  average prediction stayed within about 1.5 points of the truth, leaning
+  cautious. A binomial with an uncertain rate (bounded and skewed) was as
+  good with no day-to-day variation and optimistic with it (a true 6.8% read
+  3.5%, banner shown 76% of the time). Beta-binomials that put a prior on
+  the variation overstated by 2 to 8 points, and with a flat prior almost
+  never showed the banner. The skew does not matter because the app needs
+  one tail probability, 4 or more wrong, about 1.5 to 2 standard deviations
+  out, where the t's heavier tails and the binomial floor make up for it.
+  The truth is only as good as the generating model. It assumes the sheets
+  are independent and the learner is not improving within the window. It
+  ignores the spread-reducing effect of drawing by topic, which would make
+  the binomial floor, and so the t, more cautious still. Do not replace the t
+  on a model-to-model comparison; rerun this simulation (rebuild it from this
+  description, since it lived in a session scratchpad) against any
+  candidate.
 
 ## "Why?" in the weak spots (20261007m)
 
