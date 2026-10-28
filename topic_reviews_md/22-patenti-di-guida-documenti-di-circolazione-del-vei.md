@@ -77,7 +77,7 @@ Which limit belongs to which category is worth fixing in mind, because the law c
 - B does not cover a bus, nor a goods vehicle or a motorhome over 3.5 t.
 - **B and a trailer.** Towing behind a car is decided by the mass of the **whole combination**, not by the trailer alone. B by itself covers a **light trailer** up to **750 kg**, and a heavier trailer as well provided the **combination stays within 3.5 t**. <!-- q: 24538 24541 24553 24554 -->
 - **B96 is category B with harmonized code 96 added**, not a separate license. It covers a car towing a trailer over 750 kg where the combination is above 3.5 t but no more than **4,250 kg**. <!-- q: 24557 24560 24561 24565 -->
-- B96 is earned by a practical test on such a combination, and unlike BE it may be taken **at the same time as B** or at any point afterwards. It presupposes no other category. <!-- q: 24558 24559 24564 -->
+- B96 is earned by a driving test on such a combination, and no theory exam is needed. Unlike BE, it may be taken **at the same time as B** or at any point afterwards. It presupposes no other category. <!-- q: 24558 24559 24564 -->
 - Code 96 is valid throughout the EU and not in Italy alone. It adds a trailer and nothing else: no motorcycle and no articulated vehicle. <!-- q: 24562 24563 24566 -->
 - **BE, the trailer E on category B.** It covers a vehicle of up to **3.5 t** towing a trailer of up to **3,500 kg**, so the combination may reach **7 t**, well above the 4,250 kg of B96. The towing vehicle itself never exceeds 3.5 t on BE, and the trailer never exceeds 3,500 kg. <!-- q: 24567 24568 24569 24571 24572 24575 -->
 - BE cannot be earned together with B, so you must already hold B and then pass the separate BE test. Its minimum age is that of B, 18. <!-- q: 24576 -->
@@ -291,7 +291,7 @@ Vale la pena fissare quale limite appartiene a quale categoria, perché la legge
 - La B non copre gli autobus, né gli autocarri o gli autocaravan oltre 3,5 t.
 - **La B e il rimorchio.** Il traino dietro un'automobile si decide sulla massa del **complesso**, non su quella del solo rimorchio. La B da sola copre un **rimorchio leggero** fino a **750 kg**, e anche un rimorchio più pesante purché il **complesso resti entro 3,5 t**.
 - **La B96 è la categoria B con il codice armonizzato 96**, non una patente a parte. Copre un'automobile che traina un rimorchio oltre 750 kg quando il complesso supera 3,5 t ma non supera **4.250 kg**.
-- La B96 si consegue con una prova pratica su un complesso di quel tipo e, a differenza della BE, si può sostenere **contestualmente alla B** o in qualsiasi momento successivo. Non presuppone alcun'altra categoria.
+- La B96 si consegue con una prova di guida su un complesso di quel tipo, e non serve un esame di teoria. A differenza della BE, si può sostenere **contestualmente alla B** o in qualsiasi momento successivo. Non presuppone alcun'altra categoria.
 - Il codice 96 vale in tutta l'Unione Europea e non solo in Italia. Aggiunge un rimorchio e nient'altro: nessun motociclo e nessun autosnodato.
 - **La BE, cioè la E del rimorchio sulla categoria B.** Copre un veicolo fino a **3,5 t** che traina un rimorchio fino a **3.500 kg**, quindi il complesso può arrivare a **7 t**, ben oltre i 4.250 kg della B96. Con la BE il veicolo trainante non supera mai 3,5 t, e il rimorchio non supera mai 3.500 kg.
 - La BE non si può conseguire insieme alla B, quindi devi già avere la B e poi superare la prova BE separata. La sua età minima è quella della B, 18 anni.

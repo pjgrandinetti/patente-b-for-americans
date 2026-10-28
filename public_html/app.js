@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261029g';
+const APP_VERSION     = '20261029h';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1468,7 +1468,7 @@ function bindUpdateCheck() {
 // into this file and into sw.js, so a data file is downloaded only when it
 // has changed rather than on every release (see the note above dataUrl in
 // sw.js).
-const DATA_HASH = { 'questions.json': 'ff07a49fdd5b', 'vocabulary.json': '543bc915da5d', 'topic_reviews.json': 'f147322d04d6' };
+const DATA_HASH = { 'questions.json': 'ff07a49fdd5b', 'vocabulary.json': '543bc915da5d', 'topic_reviews.json': '3549ac7a034d' };
 const dataUrl = name => `${name}?v=${DATA_HASH[name]}`;
 
 // Fetch one of the three big JSON files, and REPAIR the cache if what comes
