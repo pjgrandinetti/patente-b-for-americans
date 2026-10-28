@@ -84,7 +84,7 @@ setTimeout(()=>{
   ok(Math.abs((nx.hi-nx.lo)/2-1.7613101*f.s*Math.sqrt(1+1/15))<1e-5 && Math.abs((nx.hi+nx.lo)/2-f.mean)<1e-9,'the range of the next score: mean ± t·s·√(1+1/n)');
   ok((30-nx.hi<26.5)===(f.chance<0.95) && 30-nx.hi<27,'not ready (chance '+f.chance.toFixed(3)+'): the band reaches below the pass line, lower edge '+(30-nx.hi).toFixed(2));
   ok(svgs[0].querySelectorAll('polygon.tc-band').length===1 && rows[1].next===null && rows[2].next && (rows[2].next.hi-rows[2].next.lo)>(nx.hi-nx.lo),'one band, from the third mock, narrowing with more mocks');
-  ok(/(lower edge is at 26[.,]1|bordo inferiore è a 26,1)/.test(tr.querySelector('.trend-band-note').textContent),'the note gives the lower edge: '+tr.querySelector('.trend-band-note').textContent);
+  ok(/(every score in the range is 27 or more\. The range now starts at 26\.|ogni punteggio dell’intervallo è 27 o più\. Ora l’intervallo parte da 26\.)/.test(tr.querySelector('.trend-band-note').textContent) && !/\d[.,]\d/.test(tr.querySelector('.trend-band-note').textContent),'the note speaks in whole scores: '+tr.querySelector('.trend-band-note').textContent);
   ok(/(raise your average score|alza la media)/.test(tr.querySelector('.trend-verdict').textContent) && !/(random|drawn|estratt|caso)/i.test(tr.textContent),'steady scores: raise the average, with no talk of random draws');
   ok(tr.querySelectorAll('.trend-legend .trend-key').length===6,'the chart has its legend');
   const ticks=i=>[...svgs[i].querySelectorAll('.tc-tick')].filter(e=>e.getAttribute('text-anchor')==='end').map(e=>e.textContent);
@@ -109,7 +109,7 @@ setTimeout(()=>{
   set([0,6,0,7,1,0,6,0,5,0].map((x,i)=>sheet(i,x,x,540))); 
   ok(/(vary a lot|variano molto)/.test($('exam-trend').querySelector('.trend-verdict').textContent),'erratic results: steadier scores');
   { const good=[1,0,1,1,0,2,1,0,1,1,0,1,1,0,1]; set(good.map((x,i)=>sheet(i,x,x,540)));
-    const r=w.mockTrendData()[14]; ok(w.mockRecentForm(15,15).chance>=0.95 && 30-r.next.hi>=26.5 && /(whole band is above|Tutta la fascia)/.test($('exam-trend').querySelector('.trend-band-note').textContent) && !$('exam-trend').querySelector('.trend-verdict'),'at the banner\'s bar the whole band clears the pass line, and the note says so'); }
+    const r=w.mockTrendData()[14]; ok(w.mockRecentForm(15,15).chance>=0.95 && 30-r.next.hi>=26.5 && /(Every score in the range is 27 or more|Ogni punteggio dell’intervallo è 27 o più)/.test($('exam-trend').querySelector('.trend-band-note').textContent) && !$('exam-trend').querySelector('.trend-verdict'),'at the banner\'s bar the whole band clears the pass line, and the note says so'); }
   { const band=()=>(($('exam-trend').querySelector('.trend-swatch.is-band')||{}).parentElement||{}).textContent||'';
     const num=x=>Number(String(x).replace(',','.'));
     const parse=()=>{ const m=band().match(/(\d+(?:[.,]\d+)?) (?:chances in 100|probabilità su 100): (\d+)–(\d+)$/); return m&&{pct:num(m[1]),lo:+m[2],hi:+m[3]}; };
