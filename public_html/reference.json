@@ -44,7 +44,7 @@
    "id": "distance",
    "en": "Distances (distanze)",
    "it": "Distanze",
-   "noteEn": "US equivalents are in parentheses, rounded. An inch is 2.54 cm, so divide centimeters by 2.5 to get inches. A meter is about 3.3 feet, so multiply meters by 3.3 to get feet."
+   "noteEn": "US equivalents are in parentheses, rounded. Road distances are given in yards, and a yard is close to a meter: multiply meters by 1.1 to get yards. The short distances are given in feet: multiply meters by 3.3 to get feet."
   },
   {
    "id": "mass",
@@ -1082,7 +1082,7 @@
    "group": "autostrada",
    "noWrong": true,
    "alwaysTrue": true,
-   "us": "1/3 mi",
+   "us": "550 yd",
    "asked": [
     "23893"
    ],
@@ -1105,7 +1105,7 @@
     "21054"
    ],
    "group": "warn",
-   "us": "500 ft",
+   "us": "165 yd",
    "asked": [
     "18856",
     "18881",
@@ -1142,7 +1142,7 @@
    ],
    "group": "warn",
    "noWrong": true,
-   "us": "330 ft",
+   "us": "110 yd",
    "asked": [
     "19106"
    ],
@@ -1161,7 +1161,7 @@
    ],
    "group": "warn",
    "noWrong": true,
-   "us": "165 ft",
+   "us": "55 yd",
    "asked": [
     "19106"
    ],
@@ -1181,7 +1181,7 @@
     "22587"
    ],
    "group": "follow",
-   "us": "140 ft",
+   "us": "46 yd",
    "asked": [
     "22581",
     "22587",
@@ -1204,7 +1204,7 @@
     "22586"
    ],
    "group": "follow",
-   "us": "120 ft",
+   "us": "39 yd",
    "asked": [
     "22582",
     "22586",
@@ -1227,7 +1227,7 @@
     "22585"
    ],
    "group": "follow",
-   "us": "90 ft",
+   "us": "31 yd",
    "asked": [
     "22580",
     "22585",
@@ -1250,7 +1250,7 @@
     "22584"
    ],
    "group": "follow",
-   "us": "45 ft",
+   "us": "15 yd",
    "asked": [
     "22579",
     "22584",
@@ -1272,7 +1272,7 @@
     "22583"
    ],
    "group": "follow",
-   "us": "30 ft",
+   "us": "10 yd",
    "asked": [
     "22578",
     "22583"
@@ -1292,7 +1292,7 @@
     "22550"
    ],
    "group": "gap",
-   "us": "330 ft",
+   "us": "110 yd",
    "asked": [
     "22541",
     "22550"
@@ -1315,7 +1315,7 @@
     "22142"
    ],
    "group": "gap",
-   "us": "65 ft",
+   "us": "22 yd",
    "asked": [
     "22136",
     "22142",
@@ -1340,7 +1340,7 @@
     "23786"
    ],
    "group": "park",
-   "us": "50 ft",
+   "us": "16 yd",
    "asked": [
     "23755",
     "23781",
@@ -1425,7 +1425,7 @@
     "23836"
    ],
    "group": "triangle",
-   "us": "330 ft",
+   "us": "110 yd",
    "asked": [
     "23828",
     "23829",
@@ -1449,7 +1449,7 @@
     "23832"
    ],
    "group": "triangle",
-   "us": "165 ft",
+   "us": "55 yd",
    "asked": [
     "23831",
     "23832"
@@ -1490,7 +1490,7 @@
    ],
    "group": "visibility",
    "noWrong": true,
-   "us": "330 ft",
+   "us": "110 yd",
    "asked": [
     "22454"
    ],
@@ -1510,7 +1510,7 @@
    "group": "visibility",
    "noWrong": true,
    "alwaysTrue": true,
-   "us": "165 ft",
+   "us": "55 yd",
    "asked": [
     "24152"
    ],

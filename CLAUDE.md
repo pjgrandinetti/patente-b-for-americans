@@ -613,7 +613,15 @@ reach the session on 2026-09-20, which is why it is recorded here.
   carry `noteEn`, one line on converting (divide cm by 2.5, multiply m by
   3.3), drawn under the category title in English only. `us` cannot go in
   `valueEn`, which must carry the same digits as `value`. Speeds and the two
-  tread depths carry none. The explanations of 24104 and 24105 give the
+  tread depths carry none. **Road distances are in YARDS since 20261028t** (maintainer,
+  2026-10-28, on "500 m (1/3 mi)"), the house standard of
+  docs/review-glossary.md that the notes already followed: every
+  `distance` row of 9 m or more gives yards (500 m is 550 yd, 150 m 165 yd,
+  14 m 15 yd), the short ones keep feet (5 m 16 ft, 1 m 3 ft), and the
+  `size` rows keep inches and feet. The category note now says to multiply
+  meters by 1.1 for yards. `validate_data.py` fails on a distance of 9 m
+  or more not in yards (proved by sabotage); `check_us_units.js` asserts
+  550 yd, 22 yd and 3 ft. The explanations of 24104 and 24105 give the
   inches in English only, and topic 21's English half writes 30 cm as
   "30 cm (12 in)", the way it already wrote 50 cm and 20 cm. The mirror row
   names 24104's 50 cm through `wrong`, and the 30 cm row now names the

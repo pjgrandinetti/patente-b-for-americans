@@ -21,8 +21,11 @@ setTimeout(()=>{
   ok(v(mirror)===(IT?'20 cm':'20 cm (8 in)'),'mirror row value: '+v(mirror));
   ok(v(side)===(IT?'30 cm':'30 cm (12 in)'),'side projection row covers the T.A.T.S. boat, value: '+v(side));
   ok(v(tri)===(IT?'1 m':'1 m (3 ft)'),'triangle edge distance: '+v(tri));
-  const notes=[...box.querySelectorAll('.review-group-note')].filter(p=>/2\.54/.test(p.textContent));
+  const notes=[...box.querySelectorAll('.review-group-note')].filter(p=>/US equivalents are in parentheses/.test(p.textContent));
   ok(notes.length===(IT?0:2),'conversion note on the distance and size categories only: '+notes.length);
+  // Road distances in yards, short ones in feet (house standard; maintainer, 2026-10-28).
+  const exitRow=row(/Emergency lane usable to exit|Corsia di emergenza per uscire/), snow=row(/snowplow|sgombraneve/), ped=row(/Space left for pedestrians|transito dei pedoni/);
+  ok(v(exitRow)===(IT?'500 m':'500 m (550 yd)') && v(snow)===(IT?'20 m':'20 m (22 yd)') && v(ped)===(IT?'1 m':'1 m (3 ft)'),'yards for road distances, feet for short ones: '+[v(exitRow),v(snow),v(ped)].join(', '));
   const speed=row(/^At 130|A 130/); ok(!/\(|mph/.test(v(row(/km\/h/))||''),'speeds unchanged');
   const wr=mirror&&mirror.querySelector('.review-wrong');
   ok(wr && /50 cm/.test(wr.textContent) && (IT || /20 in/.test(wr.textContent)),'mirror row names the wrong figure, 50 cm: '+(wr&&wr.textContent));
