@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261028q';
+const APP_VERSION     = '20261028r';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -14645,11 +14645,14 @@ function renderReviewCats() {
 // stays closed until opened, since it names every figure and the values may
 // be hidden for a self-test.
 // The distances have the same kind of box since 20261028q: any category may
-// carry `remember`, whose `fig` names the pair of review_media figures.
+// carry `remember`, and its optional `fig` names a pair of review_media
+// figures. The distances' figure was removed in 20261028r at the maintainer's
+// word (the formula serves the safe distances better than bars, and the rest
+// gained nothing from a drawing); their box is text only.
 const _refRememberOpen = new Set();
 function refRememberHtml(r, it, id) {
   return `<details class="rules-note ref-remember" data-rem="${escHtml(id)}"${_refRememberOpen.has(id) ? ' open' : ''}><summary>${escHtml(it ? r.it : r.en)}</summary>` +
-    `<div class="rules-body"><img class="ref-remember-fig" src="review_media/${escHtml(r.fig)}-${it ? 'it' : 'en'}.svg" alt="${escHtml(it ? r.figIt : r.figEn)}" title="${escHtml(t('viewer.open'))}">` +
+    `<div class="rules-body">${r.fig ? `<img class="ref-remember-fig" src="review_media/${escHtml(r.fig)}-${it ? 'it' : 'en'}.svg" alt="${escHtml(it ? r.figIt : r.figEn)}" title="${escHtml(t('viewer.open'))}">` : ''}` +
     `<ul>${(it ? r.linesIt : r.linesEn).map(l => `<li>${escHtml(l)}</li>`).join('')}</ul></div></details>`;
 }
 function renderReviewNumbers() {

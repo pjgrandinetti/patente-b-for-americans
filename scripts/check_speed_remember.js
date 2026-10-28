@@ -45,11 +45,10 @@ setTimeout(()=>{
   chip('speedveh'); r=rem();
   ok(r.length===1 && r[0].open,'the by-vehicle chip alone still shows it, and it stays open once opened');
   chip('size'); ok(rem().length===0,'not under another category');
-  // The distances carry their own box and figure (20261028q).
+  // The distances carry their own box (20261028q), text only since 20261028r.
   chip('distance'); r=rem();
   ok(r.length===1 && r[0].dataset.rem==='distance' && /(How to remember the distances|Come ricordare le distanze)/.test(r[0].querySelector('summary').textContent) && r[0].querySelectorAll('li').length===8,'the distances have their own box, eight lines');
-  const dfig=r[0].querySelector('img.ref-remember-fig');
-  ok(dfig && dfig.getAttribute('src')==='review_media/distances-'+(IT?'it':'en')+'.svg' && fs.existsSync(root+'/'+dfig.getAttribute('src')),'with the distances figure in the reader\'s language');
+  ok(!r[0].querySelector('img'),'text only, with no figure (removed in 20261028r)');
   const dvals=new Set(ref.numbers.filter(n=>n.cat==='distance').map(n=>(String(n.value).match(/\d+/)||[])[0]));
   const kmh=new Set(['30','50','100','130','150']);
   const dnamed=(r[0].textContent.match(/\b\d+(?:[.,]\d+)?\b/g)||[]).filter(x=>!['3,5','3.5','10','3'].includes(x)||dvals.has(x));

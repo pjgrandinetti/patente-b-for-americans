@@ -5469,6 +5469,11 @@ to areas open to the public, and the two Reference rows whose only source was
   is on the Reference page only, since the distances belong to six topics.
   `check_speed_remember.js` asserts the box, its figure and that every
   distance it names is a row on the page.
+  **The distances' figure was REMOVED in 20261028r** at the maintainer's
+  word: the formula serves the safe distances better than bars, and the
+  other distances gained nothing from a drawing. The two SVGs and
+  `draw_distances.py` are deleted; the box stays, text only (`fig` is now
+  optional on `remember`). Do not draw it again unasked.
   **An emergency halt is never parking (20261023m, maintainer, 2026-10-23).**
   Topic 21's emergency-lane bullet, 20955 and 23903 now say the three hours
   are the ceiling of a *sosta di emergenza*, not an allowance, as topic 07's

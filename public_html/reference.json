@@ -45,11 +45,8 @@
    "en": "Distances (distanze)",
    "it": "Distanze",
    "remember": {
-    "fig": "distances",
     "en": "How to remember the distances",
     "it": "Come ricordare le distanze",
-    "figEn": "Distances in meters: the multiples of 50 m that the railroad countdown panels count off, the safe following distance at each tested speed, and the short distances of stopping and parking.",
-    "figIt": "Distanze in metri: i multipli di 50 m che i pannelli del passaggio a livello contano a ritroso, la distanza di sicurezza a ogni velocità, e le distanze brevi di fermata e sosta.",
     "linesEn": [
      "Most of the longer distances are multiples of 50 m, namely 50, 100 and 150.",
      "The railroad crossing counts them down. Its countdown panels carry three, two and one red bars at 150, 100 and 50 m, one bar for each 50 m.",
