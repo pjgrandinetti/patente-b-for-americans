@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261029i';
+const APP_VERSION     = '20261029j';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -398,7 +398,7 @@ const T = {
   'examdate.vTakenN': { en: '{0} taken', it: '{0} svolte' },
   'examdate.pace': { en: 'To stay prepared, plan on about an hour a day: the questions set for review, then one mock exam. Time left over is best spent continuing the review.', it: 'Per restare preparato, prevedi circa un\u2019ora al giorno: le domande da ripassare, poi una simulazione. Il tempo che avanza \u00e8 meglio spenderlo continuando il ripasso.' },
   'examdate.paceNear': { en: 'With the exam this close, do as much of the review as you can, in two or three sittings a day, and one mock exam a day. Go lightly on the day before.', it: 'Con l\u2019esame cos\u00ec vicino, fai quanto pi\u00f9 ripasso riesci, in due o tre sedute al giorno, e una simulazione al giorno. Il giorno prima vai leggero.' },
-  'examdate.paceLast': { en: 'Go lightly today. Do the day\u2019s review once, look over the figures you keep missing, and get a full night\u2019s sleep. A mock exam today is optional.', it: 'Oggi vai leggero. Fai una volta il ripasso di oggi, rivedi le cifre che continui a sbagliare e dormi una notte piena. La simulazione di oggi \u00e8 facoltativa.' },
+  'examdate.paceLast': { en: 'Go lightly today. Do the day\u2019s review once, look over the figures you keep missing, and get a full night\u2019s sleep. Take today\u2019s mock exam as usual, then stop.', it: 'Oggi vai leggero. Fai una volta il ripasso di oggi, rivedi le cifre che continui a sbagliare e dormi una notte piena. Fai la simulazione di oggi come sempre, poi fermati.' },
   'examdate.wish': { en: 'In bocca al lupo!', it: 'In bocca al lupo!' },
   'examdate.reviewStart': { en: 'Start the review', it: 'Inizia il ripasso' },
   'examdate.reviewContinue': { en: 'Continue the review', it: 'Continua il ripasso' },

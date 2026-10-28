@@ -2692,8 +2692,10 @@ behind what shipped:
   much review as possible, with the Still waiting count and the table of
   questions needing correct answers on days that no longer come. At one
   day out `examdate.paceLast` reads: go lightly today, do the day's review
-  once, look over the figures you keep missing, sleep a full night, a mock
-  today is optional. The Still waiting row, Continue the review and the
+  once, look over the figures you keep missing, sleep a full night, and take
+  today's mock exam as usual, then stop (20261029j, maintainer: "optional"
+  was my judgment with no source, and the retrieval-practice research the
+  app cites favors the mock). The Still waiting row, Continue the review and the
   pool table are left out; the figures link stays, outside the table
   (`examFiguresLinkHtml`).
   **The day before and the day itself say *In bocca al lupo!*
