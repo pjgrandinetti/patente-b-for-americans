@@ -48,7 +48,7 @@ The ministry files three subjects under one heading. Read them as one journey an
 ### How it changes the drive
 
 - Towing **lengthens the braking distance**, cuts **acceleration**, heats the engine on climbs, makes the combination **wind-sensitive**, **pushes** the car on descents, and **cuts in** on bends. It follows a wider **swept path**, so watch the right rear wheel at curbs. <!-- q: 24029 24030 24031 24033 24048 24051 24115 24116 24117 24118 24123 -->
-- The trailer cuts in because it follows a circle of **smaller radius** than the towing vehicle. <!-- q: 24120 -->
+- The trailer cuts in because it follows a circle of **smaller radius** than the towing vehicle. So a combination takes a turn **wider** than a car alone, or its rear wheels run over the corner of the sidewalk. <!-- q: 24120 -->
 - Towing also raises **fuel consumption**, even at moderate speed. <!-- q: 24126 -->
 - Before any maneuver with the trailer hitched, make sure no people or objects are within the combination's turning radius. <!-- q: 24119 -->
 - The common **inertia (overrun) brake** works off that push: the slowing car is shoved by the trailer, the coupling compresses, and only then do the trailer's brakes apply. Its braking therefore always **lags an instant** behind the car's. <!-- q: 24038 24082 24083 24087 24088 -->
@@ -231,7 +231,7 @@ Il ministero raggruppa tre materie sotto un solo titolo. Leggile come un unico v
 ### Come cambia la guida
 
 - Il traino **allunga la frenata**, riduce la **ripresa**, scalda il motore in salita, rende il complesso **sensibile al vento**, **spinge** l'auto in discesa e **stringe** in curva. La **fascia di ingombro** diventa più ampia, quindi attenzione alla ruota posteriore destra sui marciapiedi.
-- Il rimorchio stringe perché percorre una circonferenza di **raggio inferiore** a quella della motrice.
+- Il rimorchio stringe perché percorre una circonferenza di **raggio inferiore** a quella della motrice. Per questo un complesso affronta una svolta **più larga** di un'auto sola, altrimenti le ruote posteriori salgono sull'angolo del marciapiede.
 - Il traino aumenta anche i **consumi di carburante**, persino a velocità moderata.
 - Prima di qualsiasi manovra con il rimorchio agganciato, accertati che non ci siano persone o cose nel raggio di manovra del complesso.
 - Il diffuso **freno a inerzia** sfrutta proprio quella spinta: il rimorchio preme sull'auto che rallenta, il giunto si comprime e solo allora i freni del rimorchio agiscono. La sua frenata è quindi sempre **un istante in ritardo**.

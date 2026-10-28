@@ -52884,8 +52884,8 @@
         "italian_text": "Nelle curve il rimorchio tende a \"stringere\" perché percorre una traiettoria circolare con raggio inferiore alla motrice",
         "answer": "VERO",
         "english_translation": "On curves the trailer tends to 'cut inside' because it follows a circular path with a radius smaller than the tractor unit.",
-        "explanation": "True. On bends the trailer cuts in, following a tighter radius than the towing vehicle.",
-        "explanation_it": "Vero. In curva il rimorchio taglia dentro, seguendo un raggio più stretto del veicolo trainante."
+        "explanation": "True. The trailer is pulled from the hitch, behind the car's rear axle, and its wheels follow the hitch on a shortcut toward the inside of the bend. So they trace a circle of smaller radius than the towing vehicle's wheels, and the trailer cuts in. That is why a combination must take a turn wider than a car alone, entering the corner farther from the curb, or its rear wheels run over the corner of the sidewalk and anyone standing there. A tractor-trailer swinging wide before a right turn is the same effect on a larger scale.",
+        "explanation_it": "Vero. Il rimorchio è tirato dal gancio, dietro l'asse posteriore dell'auto, e le sue ruote seguono il gancio tagliando verso l'interno della curva. Percorrono quindi una circonferenza di raggio inferiore a quella delle ruote della motrice, e il rimorchio stringe. Per questo un complesso deve affrontare una svolta più larga di un'auto sola, entrando nell'incrocio più lontano dal marciapiede, altrimenti le ruote posteriori salgono sull'angolo del marciapiede e su chi vi si trova. Un autoarticolato che allarga prima di svoltare a destra mostra lo stesso effetto in scala più grande."
       },
       {
         "number": "24121",
