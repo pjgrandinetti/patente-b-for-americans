@@ -5401,8 +5401,13 @@ to areas open to the public, and the two Reference rows whose only source was
   since prohibition signs are round too). 22314 reads "empty", not
   "unloaded". 23089: *alcun* after *non* or *senza* means any, one
   negation, while the plural *alcuni* means some; all 18 live statements
-  with *alcun* or *alcuna* now carry a fixed sentence pair naming the
-  phrase and its meaning (before the clause-trap pair on 20302), the
+  with *alcun* or *alcuna* now carry ONE English sentence, "After *non*,
+  *alcun* means any, so *non ... ad alcun veicolo* means to no vehicle at
+  all" (before the clause-trap pair on 20302), and the 27 with the plural
+  *alcuni* or *alcune* carry "The plural *alcuni* means some. Only the
+  singular *alcun*, after *non*, means any." (20261028y, maintainer: not
+  verbose, and for American learners; the Italian halves carry nothing,
+  since a native reader needs no note on it), the
   `parse` grammar point "Two negative words, one negation" gained *non ...
   alcun*, and the vocabulary gloss of *alcun* says so. 23344: *impegnare
   l'incrocio* is entering, not getting through; its explanation says so,
