@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261029l';
+const APP_VERSION     = '20261029m';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -403,6 +403,11 @@ const T = {
   'examdate.failNext': { en: 'At least a month must pass after a failed attempt, and the second attempt must fall within 6 months of filing your application. Add any questions you remember missing to the weak spots from the Questions tab. When you have the new date, enter it below.', it: 'Dopo un tentativo non superato deve passare almeno un mese, e il secondo tentativo deve cadere entro 6 mesi dalla presentazione della domanda. Aggiungi ai punti deboli le domande che ricordi di aver sbagliato, dalla scheda Domande. Quando hai la nuova data, inseriscila qui sotto.' },
   'examdate.failTwice': { en: 'An application allows two attempts at the theory exam, so a new application is needed before you can take it again. Add any questions you remember missing to the weak spots from the Questions tab. When you have the new date, enter it below.', it: 'Una domanda consente due tentativi all\u2019esame di teoria, quindi serve una nuova domanda prima di ripeterlo. Aggiungi ai punti deboli le domande che ricordi di aver sbagliato, dalla scheda Domande. Quando hai la nuova data, inseriscila qui sotto.' },
   'examdate.questionsTab': { en: 'Open the Questions tab', it: 'Apri la scheda Domande' },
+  // The key points of every topic on one page (20261029m, maintainer,
+  // 2026-10-29): the 25 summaries together, short enough for the last day.
+  'keypoints.title': { en: 'Key points of every topic', it: 'Punti chiave di ogni argomento' },
+  'keypoints.link': { en: 'Key points of every topic, about {0} minutes to read', it: 'Punti chiave di ogni argomento, circa {0} minuti di lettura' },
+  'keypoints.notes': { en: 'Open the full notes', it: 'Apri le note complete' },
   'examdate.rowReview': { en: 'Review today', it: 'Ripasso di oggi' },
   'examdate.rowWaiting': { en: 'Still waiting', it: 'Ancora in attesa' },
   'examdate.rowMock': { en: 'Mock exam today', it: 'Simulazione di oggi' },
@@ -1573,6 +1578,68 @@ async function loadTopicReviews() {
   }
 }
 let reviewClaims = {};       // { [statement number]: { topic, hash of the EN block } }
+
+// The key points of every topic on ONE page (20261029m, maintainer,
+// 2026-10-29): reading all 25 reviews on the last day is too long, and their
+// closing "Summary of key points" sections together are about 5,000 words.
+// A synthetic review entry is built from those sections, in both languages,
+// under KEY_POINTS, so the notes overlay shows it like any topic: the
+// language toggle, the IT or EN pills (its pairs map is assembled from each
+// topic's own) and the floating controls all work unchanged. It is never in
+// topicReviews, so nothing that walks the topics meets it.
+const KEY_POINTS = '__keypoints__';
+let _keyPoints = null;
+function keyPointsEntry() {
+  if (_keyPoints) return _keyPoints;
+  const section = (md, lang) => {
+    const lines = (md || '').replace(/\r\n/g, '\n').split('\n');
+    const re = lang === 'it' ? /^## Riepilogo/ : /^## Summary/;
+    let i = lines.findIndex(l => re.test(l));
+    if (i < 0) return '';
+    const out = [];
+    for (i++; i < lines.length && !/^## /.test(lines[i]); i++) out.push(lines[i]);
+    return out.join('\n').trim();
+  };
+  const en = [], it = [], order = [];
+  for (const topic of topicsInStudyOrder()) {
+    const entry = topicReviews[topic];
+    if (!entry) continue;
+    const e = section(entry.en, 'en'), i = section(entry.it, 'it');
+    if (!e || !i) continue;
+    const sh = TOPIC_SHORT[topic] || {};
+    en.push('## ' + (sh.en || topicFull(topic)) + '\n\n' + e);
+    it.push('## ' + (sh.it || topicFull(topic)) + '\n\n' + i);
+    order.push(topic);
+  }
+  const out = { en: en.join('\n\n'), it: it.join('\n\n'), order, pairs: {} };
+  _keyPoints = out;
+  // Pairs: each EN block of the page maps, through its topic's own pairs
+  // map, to the Italian source, found again by hash among the page's own
+  // Italian blocks.
+  const itIndex = new Map();
+  reviewBlocks(KEY_POINTS, 'it').forEach((b, idx) => { if (!itIndex.has(b.hash)) itIndex.set(b.hash, idx); });
+  for (const topic of order) {
+    const pairs = (topicReviews[topic] || {}).pairs || {};
+    const itBlocks = reviewItBlocks(topic);
+    for (const b of reviewBlocks(topic, 'en')) {
+      const idx = pairs[b.hash];
+      const src = idx === undefined ? null : itBlocks[idx];
+      if (src == null) continue;
+      const at = itIndex.get(reviewBlockHash(src));
+      if (at !== undefined) out.pairs[b.hash] = at;
+    }
+  }
+  return out;
+}
+function keyPointsMinutes(lang) {
+  const md = keyPointsEntry()[lang] || '';
+  const words = md.replace(/^## .*$/gm, '').split(/\s+/).filter(Boolean).length;
+  return Math.max(5, Math.round(words / 200 / 5) * 5);
+}
+function openKeyPoints() {
+  keyPointsEntry();
+  openReview(KEY_POINTS);
+}
 // The landing for a claimed statement: the block in both languages plus the
 // heading it sits under (for the tooltip, and as the fallback scroll).
 function reviewClaimTarget(num) {
@@ -1700,8 +1767,11 @@ async function loadAbridged() {
 // back to English, or null if no review exists yet for that topic.
 // Review in the CONTENT language (Italian from L2 up). No fallback across
 // languages: in L2/L3 a review only appears once an Italian version exists.
+function reviewEntry(topic) {
+  return topic === KEY_POINTS ? keyPointsEntry() : topicReviews[topic];
+}
 function reviewFor(topic, lang = contentLang()) {
-  const entry = topicReviews[topic];
+  const entry = reviewEntry(topic);
   if (!entry) return null;
   const md = (entry[lang] || '').trim();
   return md || null;
@@ -1789,7 +1859,7 @@ const _blockCache = new Map();
 function reviewBlocks(topic, lang) {
   const key = lang + '\n' + topic;
   if (_blockCache.has(key)) return _blockCache.get(key);
-  const md = (topicReviews[topic] || {})[lang] || '';
+  const md = (reviewEntry(topic) || {})[lang] || '';
   const out = [];
   let para = [], stack = [];
   const push = src => { if (src.trim()) out.push({ src, hash: reviewBlockHash(src), heads: stack.map(s => s.text) }); };
@@ -1825,7 +1895,7 @@ function reviewItBlocks(topic) {
 const _enPairCache = new Map();
 function reviewEnPairs(topic) {
   if (_enPairCache.has(topic)) return _enPairCache.get(topic);
-  const entry = topicReviews[topic];
+  const entry = reviewEntry(topic);
   let out = null;
   if (entry && entry.pairs) {
     const enByHash = new Map(reviewBlocks(topic, 'en').map(b => [b.hash, b.src]));
@@ -2280,7 +2350,10 @@ function renderReviewBody() {
   if (!reviewBody || !md) return;
   // The title follows the toggle too, not just the body.
   const titleEl = document.getElementById('review-title');
-  if (titleEl) {
+  if (titleEl && reviewTopic === KEY_POINTS) {
+    titleEl.textContent = t('keypoints.title');
+    titleEl.title = '';
+  } else if (titleEl) {
     const s = TOPIC_SHORT[reviewTopic];
     titleEl.textContent = s ? (reviewLang === 'it' ? s.it : s.en) : topicShort(reviewTopic);
     titleEl.title = reviewLang === 'it'
@@ -2294,7 +2367,7 @@ function renderReviewBody() {
   let pairs = null, twinBlocks = null;
   _twinLang = reviewLang === 'en' ? 'it' : 'en';
   if (reviewLang === 'en') {
-    pairs = (topicReviews[reviewTopic] || {}).pairs || null;
+    pairs = (reviewEntry(reviewTopic) || {}).pairs || null;
     if (pairs) twinBlocks = reviewItBlocks(reviewTopic);
   } else if (!browserPrefersItalian()) {
     const inv = reviewEnPairs(reviewTopic);
@@ -2302,6 +2375,19 @@ function renderReviewBody() {
   }
   const twinCaps = pairs ? reviewCaptionTwins(reviewFor(reviewTopic, _twinLang)) : null;
   reviewBody.innerHTML = renderMarkdownSubset(md, pairs, twinBlocks, _twinLang, twinCaps);
+  // On the key-points page each topic heading carries a link to its full
+  // notes, for a point that needs its explanation.
+  if (reviewTopic === KEY_POINTS) {
+    const order = keyPointsEntry().order;
+    reviewBody.querySelectorAll('h3').forEach((h, i) => {
+      const topic = order[i];
+      if (!topic) return;
+      const b = document.createElement('button');
+      b.type = 'button'; b.className = 'kp-notes'; b.dataset.topic = topic;
+      b.textContent = t('keypoints.notes');
+      h.insertAdjacentElement('afterend', b);
+    });
+  }
   // The standing line (shown only when opened from a card) follows the toggle.
   const noteTxt = document.querySelector('#review-note .review-note-text');
   if (noteTxt) noteTxt.textContent = t(reviewLang === 'it' ? 'review.noteIt' : 'review.noteEn');
@@ -2703,6 +2789,8 @@ document.addEventListener('click', e => {
     }
     return;
   }
+  const kp = e.target.closest('#review-body .kp-notes');
+  if (kp) { openReview(kp.dataset.topic); return; }
   if (e.target.closest('#review-to-top'))    { scrollReviewTo('top');    return; }
   if (e.target.closest('#review-to-bottom')) { scrollReviewTo('bottom'); return; }
   if (e.target.closest('#review-close-float') || e.target.closest('#review-start') || e.target.closest('#review-close-bottom')) {
@@ -4462,6 +4550,19 @@ function paintTopicHeading() {
   h.textContent = t('dash.topicConcepts');
   h.classList.toggle('hidden', !_dashCompact);
   if (orig) orig.classList.toggle('hidden', _dashCompact);
+  // The key points of every topic, offered at every stage (20261029m).
+  let kp = document.getElementById('dash-keypoints');
+  if (!kp) {
+    kp = document.createElement('p');
+    kp.id = 'dash-keypoints';
+    kp.className = 'dash-keypoints';
+    kp.innerHTML = '<button type="button" class="link-btn"></button>';
+    kp.querySelector('button').addEventListener('click', openKeyPoints);
+    grid.parentNode.insertBefore(kp, grid);
+  }
+  let m = 0; try { m = keyPointsMinutes(uiLang() === 'it' ? 'it' : 'en'); } catch { }
+  kp.querySelector('button').textContent = t('keypoints.link', m);
+  kp.classList.toggle('hidden', !m);
 }
 
 // Every active statement cleared at Italiano: the bank is finished at the
@@ -7911,6 +8012,10 @@ function examPoolHtml() {
     examFiguresLinkHtml() +
     `</details>`;
 }
+function keyPointsLinkHtml() {
+  let m = 0; try { m = keyPointsMinutes(uiLang() === 'it' ? 'it' : 'en'); } catch (e) { console.error('key points:', e); return ''; }
+  return `<p><button type="button" class="link-btn" data-ed="keypoints">${escHtml(t('keypoints.link', m))}</button></p>`;
+}
 function examFiguresLinkHtml() {
   let m = 0; try { m = missedFigureRows().size; } catch (e) { console.error('missed figures:', e); }
   return m ? `<p><button type="button" class="link-btn" data-ed="figures">${escHtml(t('examdate.missedFigures', m))}</button></p>` : '';
@@ -7934,6 +8039,7 @@ function renderExamDate(atBar) {
       else if (act === 'more') { startDailyReview(true); return; }
       else if (act === 'figures') { openMissedFigures(); return; }
       else if (act === 'bank') { openQuestionsTab(); return; }
+      else if (act === 'keypoints') { openKeyPoints(); return; }
       else if (act === 'pass' || act === 'fail') {
         const d = examAwaitingOutcome();
         if (d) { saveExamAttempts([...examAttempts(), { d, r: act }]); setExamDate(null); }
@@ -8028,7 +8134,8 @@ function renderExamDate(atBar) {
     (n >= 0 && left > 0 ? `<button type="button" class="btn-primary" data-ed="review">${escHtml(t('examdate.reviewStart'))}</button>` : '') +
     (n > 0 && !last && left === 0 && pool > 0 ? `<button type="button" class="btn-secondary" data-ed="more">${escHtml(t('examdate.reviewContinue'))}</button>` : '') +
     `<button type="button" class="link-btn" data-ed="change">${escHtml(t('examdate.change'))}</button>` +
-    (n >= 0 && pool > 0 ? (last ? examFiguresLinkHtml() : examPoolHtml()) : '');
+    (n >= 0 && pool > 0 ? (last ? examFiguresLinkHtml() : examPoolHtml()) : '') +
+    (n >= 0 && last ? keyPointsLinkHtml() : '');
   const det = box.querySelector('details.exam-date-pool');
   if (det) det.addEventListener('toggle', () => { _examPoolOpen = det.open; });
 }

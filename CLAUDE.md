@@ -2738,6 +2738,28 @@ behind what shipped:
   second fail says a new application is needed. Change my answer undoes
   the last outcome. The readiness banner is hidden in every after-exam
   state. `scripts/check_exam_outcome.js`, 20 checks in each face.
+  **The key points of every topic on one page (20261029m, maintainer,
+  2026-10-29: reading all the topics on the last day is too long, and the
+  key points together might be short enough).** Every review ends with a
+  "## Summary of key points" / "## Riepilogo dei punti chiave" (topic 25:
+  "## Summary" / "## Riepilogo"), numbered sentences with no figures, about
+  5,200 English words in all, 25 minutes at 200 words a minute. `keyPointsEntry`
+  builds a synthetic review `KEY_POINTS` from those sections in study order,
+  each under its topic's short name, with a pairs map assembled from each
+  topic's own, so `openReview(KEY_POINTS)` shows it in the notes overlay
+  with the language toggle and the IT or EN pills unchanged; `reviewEntry`
+  is the one place that resolves a topic to its entry, and the page is never
+  put into `topicReviews`, so nothing that walks the topics meets it. Each
+  heading carries "Open the full notes" (`.kp-notes`), since a summary leans
+  on terms its topic defined. Offered in two places: a line under the
+  dashboard's topics heading at every stage (`#dash-keypoints`), and in the
+  exam-date box on the day before and the day itself (`data-ed="keypoints"`),
+  both reading "Key points of every topic, about N minutes to read", N
+  computed from the word count in the reader's language and rounded to five.
+  The summaries are the SOURCE: a summary that does not stand on its own is
+  rewritten in its topic's Markdown, never in a second text, so the page and
+  the topic cannot drift apart. The renderer emits `##` as `h3`.
+  `scripts/check_key_points.js`, 18 checks in English, 15 in Italian.
   **The day before and the day itself say *In bocca al lupo!*
   (20261028b, maintainer)**, a line of its own under the advice
   (`examdate.wish`, `.exam-date-wish`), in Italian for every browser and
