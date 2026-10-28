@@ -5371,6 +5371,19 @@ to areas open to the public, and the two Reference rows whose only source was
   grow, none shrinks. Measured with Playwright at 390 and 1280 px: 4288
   392x240, 4289 378x240, 4296 147x260. A drawn figure is an SVG with text,
   so a later edit of a name is a text edit, not a redraw.
+  **Flags of 2026-10-28 (20261028i).** 20341's explanation was cut to the
+  rule (a blue circle with a white symbol is mandatory; round alone is not,
+  since prohibition signs are round too). 22314 reads "empty", not
+  "unloaded". 23089: *alcun* after *non* or *senza* means any, one
+  negation, while the plural *alcuni* means some; all 18 live statements
+  with *alcun* or *alcuna* now carry a fixed sentence pair naming the
+  phrase and its meaning (before the clause-trap pair on 20302), the
+  `parse` grammar point "Two negative words, one negation" gained *non ...
+  alcun*, and the vocabulary gloss of *alcun* says so. 23344: *impegnare
+  l'incrocio* is entering, not getting through; its explanation says so,
+  the Glossario entry *impegnare* names the opposite (*sgombrare*,
+  *liberare*, *disimpegnare*), and topic 25's opening gained a paragraph in
+  both halves on *impegnare*, *concludere la manovra* and *sgombrare*.
   **An emergency halt is never parking (20261023m, maintainer, 2026-10-23).**
   Topic 21's emergency-lane bullet, 20955 and 23903 now say the three hours
   are the ceiling of a *sosta di emergenza*, not an allowance, as topic 07's

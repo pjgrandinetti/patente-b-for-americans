@@ -6557,8 +6557,8 @@
         "italian_text": "Nell'incrocio rappresentato in figura il veicolo A non deve dare la precedenza ad alcun veicolo",
         "answer": "VERO",
         "english_translation": "In the intersection depicted in the figure, vehicle A does not have to yield to any vehicle.",
-        "explanation": "True. No vehicle arrives from A's right with a path that crosses its own, so the right-hand rule imposes nothing on A and it opens the order A, E, B.",
-        "explanation_it": "Vero. Nessun veicolo arriva dalla destra di A con una traiettoria che incrocia la sua, quindi la regola della destra non impone nulla ad A, che apre l'ordine A, E, B."
+        "explanation": "True. No vehicle arrives from A's right with a path that crosses its own, so the right-hand rule imposes nothing on A and it opens the order A, E, B. Here *non ... ad alcun veicolo* means to no vehicle at all. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some.",
+        "explanation_it": "Vero. Nessun veicolo arriva dalla destra di A con una traiettoria che incrocia la sua, quindi la regola della destra non impone nulla ad A, che apre l'ordine A, E, B. Qui *non ... ad alcun veicolo* significa a nessun veicolo. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche."
       },
       {
         "number": "23086",
@@ -6589,8 +6589,8 @@
         "italian_text": "Nell'incrocio rappresentato in figura il veicolo B non deve dare la precedenza ad alcun veicolo",
         "answer": "FALSO",
         "english_translation": "In the intersection shown in the figure, vehicle B does not have to yield to any vehicle.",
-        "explanation": "False. E comes from B's right, so the right-hand rule obliges B to let E through. E in turn waits for A, so B moves only after both and passes last. The vehicle that yields to no one is A, which has nobody on its right. The order is A, E, B.",
-        "explanation_it": "Falso. E proviene dalla destra di B, quindi la regola della precedenza a destra obbliga B a lasciarlo passare. E a sua volta attende A, quindi B si muove solo dopo entrambi e passa per ultimo. Il veicolo che non deve la precedenza a nessuno è A, che non ha nessuno alla propria destra. L'ordine è A, E, B."
+        "explanation": "False. E comes from B's right, so the right-hand rule obliges B to let E through. E in turn waits for A, so B moves only after both and passes last. The vehicle that yields to no one is A, which has nobody on its right. The order is A, E, B. Here *non ... ad alcun veicolo* means to no vehicle at all. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some.",
+        "explanation_it": "Falso. E proviene dalla destra di B, quindi la regola della precedenza a destra obbliga B a lasciarlo passare. E a sua volta attende A, quindi B si muove solo dopo entrambi e passa per ultimo. Il veicolo che non deve la precedenza a nessuno è A, che non ha nessuno alla propria destra. L'ordine è A, E, B. Qui *non ... ad alcun veicolo* significa a nessun veicolo. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche."
       },
       {
         "number": "23090",
@@ -6652,8 +6652,8 @@
         "italian_text": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R non deve dare la precedenza ad alcun veicolo",
         "answer": "VERO",
         "english_translation": "According to right-of-way rules in the intersection shown in the figure, vehicle R does not have to yield to any vehicle.",
-        "explanation": "True. No vehicle arrives from R's right, so the right-hand rule imposes nothing on R: it opens the sequence R, A, C.",
-        "explanation_it": "Vero. Nessun veicolo arriva dalla destra di R, quindi la regola della destra non gli impone nulla: apre la sequenza R, A, C."
+        "explanation": "True. No vehicle arrives from R's right, so the right-hand rule imposes nothing on R: it opens the sequence R, A, C. Here *non ... ad alcun veicolo* means to no vehicle at all. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some.",
+        "explanation_it": "Vero. Nessun veicolo arriva dalla destra di R, quindi la regola della destra non gli impone nulla: apre la sequenza R, A, C. Qui *non ... ad alcun veicolo* significa a nessun veicolo. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche."
       },
       {
         "number": "23097",
@@ -6668,8 +6668,8 @@
         "italian_text": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo C non deve dare la precedenza ad alcun veicolo",
         "answer": "FALSO",
         "english_translation": "According to right-of-way rules in the intersection shown in the figure, vehicle C does not have to yield to any vehicle.",
-        "explanation": "False. C must yield: A comes from its right, and A in turn waits for R, so C clears the intersection last. It is R that owes the way to no one.",
-        "explanation_it": "Falso. C deve dare la precedenza: A proviene dalla sua destra, e A a sua volta attende R, quindi C libera l'incrocio per ultimo. È R a non dover la precedenza a nessuno."
+        "explanation": "False. C must yield: A comes from its right, and A in turn waits for R, so C clears the intersection last. It is R that owes the way to no one. Here *non ... ad alcun veicolo* means to no vehicle at all. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some.",
+        "explanation_it": "Falso. C deve dare la precedenza: A proviene dalla sua destra, e A a sua volta attende R, quindi C libera l'incrocio per ultimo. È R a non dover la precedenza a nessuno. Qui *non ... ad alcun veicolo* significa a nessun veicolo. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche."
       },
       {
         "number": "23099",
@@ -6723,8 +6723,8 @@
         "italian_text": "Secondo le norme di precedenza possono impegnare l'incrocio rappresentato in figura il veicolo R senza dare la precedenza ad alcun veicolo",
         "answer": "VERO",
         "english_translation": "According to right-of-way rules, vehicle R can enter the intersection shown in the figure without yielding to any vehicle.",
-        "explanation": "True. R's right is free: no vehicle arrives from the arm on its right, so R crosses first without yielding to anyone.",
-        "explanation_it": "Vero. R ha la destra libera: nessun veicolo arriva dal braccio alla sua destra, quindi R attraversa per primo senza dare precedenza a nessuno."
+        "explanation": "True. R's right is free: no vehicle arrives from the arm on its right, so R crosses first without yielding to anyone. Here *senza ... ad alcun veicolo* means without yielding to any vehicle. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some.",
+        "explanation_it": "Vero. R ha la destra libera: nessun veicolo arriva dal braccio alla sua destra, quindi R attraversa per primo senza dare precedenza a nessuno. Qui *senza ... ad alcun veicolo* significa senza dare la precedenza a nessun veicolo. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche."
       },
       {
         "number": "23105",
@@ -7202,8 +7202,8 @@
         "italian_text": "Giungendo all'incrocio rappresentato in figura il veicolo B, dato che svolta a sinistra, non ha diritto di precedenza su alcun veicolo",
         "answer": "FALSO",
         "english_translation": "Arriving at the intersection shown in the figure, vehicle B, since it turns left, has no right of way over any vehicle.",
-        "explanation": "False. Turning left does not by itself strip a vehicle of its right of way: B still comes from L's right, so B holds precedence over L and passes third, ahead of it.",
-        "explanation_it": "Falso. La svolta a sinistra non toglie di per sé la precedenza: B proviene comunque dalla destra di L, quindi ha la precedenza su L e passa terzo, prima di lui."
+        "explanation": "False. Turning left does not by itself strip a vehicle of its right of way: B still comes from L's right, so B holds precedence over L and passes third, ahead of it. Here *non ... su alcun veicolo* means over no vehicle at all. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some.",
+        "explanation_it": "Falso. La svolta a sinistra non toglie di per sé la precedenza: B proviene comunque dalla destra di L, quindi ha la precedenza su L e passa terzo, prima di lui. Qui *non ... su alcun veicolo* significa su nessun veicolo. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche."
       },
       {
         "number": "23155",
@@ -7368,8 +7368,8 @@
         "italian_text": "Nell'incrocio rappresentato nella figura il conducente del veicolo B deve impegnare per ultimo l'incrocio perché svolta a sinistra",
         "answer": "FALSO",
         "english_translation": "In the intersection shown in the figure, the driver of vehicle B must enter the intersection last because it turns left.",
-        "explanation": "False. B enters the intersection before R; it must wait at the center for N, but turning left does not make it enter last.",
-        "explanation_it": "Falso. B entra nell'incrocio prima di R; deve attendere al centro per N, ma la svolta a sinistra non lo fa entrare per ultimo."
+        "explanation": "False. *Impegnare l'incrocio* means to enter the intersection, not to finish crossing it. B enters before R, because R arrives on B's left and must yield to B. B then waits at the center for the oncoming N and completes its left turn after N has passed. Turning left makes B finish after N, not enter last.",
+        "explanation_it": "Falso. *Impegnare l'incrocio* significa entrarvi, non finire di attraversarlo. B impegna l'incrocio prima di R, perché R arriva alla sua sinistra e deve dargli la precedenza. B attende poi al centro il veicolo N che viene in senso opposto e conclude la svolta a sinistra dopo il passaggio di N. La svolta a sinistra fa concludere B dopo N, non lo fa entrare per ultimo."
       },
       {
         "number": "23345",
@@ -8670,8 +8670,8 @@
         "italian_text": "Nell'incrocio rappresentato nella figura il conducente del veicolo D non ha l'obbligo di dare la precedenza ad alcun veicolo",
         "answer": "VERO",
         "english_translation": "At the intersection shown in the figure, the driver of vehicle D has no obligation to yield to any vehicle.",
-        "explanation": "True. D finds no vehicle coming from its right, so it owes precedence to no one, neither A nor E. E gains nothing from going straight: the right-hand rule, not the maneuver, decides.",
-        "explanation_it": "Vero. D non ha alcun veicolo proveniente dalla propria destra, quindi non deve la precedenza a nessuno, né ad A né a E. E non guadagna nulla dal procedere dritto: decide la regola della destra, non la manovra."
+        "explanation": "True. D finds no vehicle coming from its right, so it owes precedence to no one, neither A nor E. E gains nothing from going straight: the right-hand rule, not the maneuver, decides. Here *non ... ad alcun veicolo* means to no vehicle at all. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some.",
+        "explanation_it": "Vero. D non ha alcun veicolo proveniente dalla propria destra, quindi non deve la precedenza a nessuno, né ad A né a E. E non guadagna nulla dal procedere dritto: decide la regola della destra, non la manovra. Qui *non ... ad alcun veicolo* significa a nessun veicolo. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche."
       },
       {
         "number": "23305",
@@ -9346,8 +9346,8 @@
         "italian_text": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R non deve dare la precedenza ad alcun veicolo",
         "answer": "VERO",
         "english_translation": "According to right-of-way rules at the intersection shown in the figure, vehicle R must not yield to any vehicle.",
-        "explanation": "True. No vehicle arrives from R's right, so the right-hand rule imposes nothing on it: R opens the order R, A, C.",
-        "explanation_it": "Vero. Nessun veicolo arriva dalla destra di R, quindi la regola della destra non gli impone nulla: R apre l'ordine R, A, C."
+        "explanation": "True. No vehicle arrives from R's right, so the right-hand rule imposes nothing on it: R opens the order R, A, C. Here *non ... ad alcun veicolo* means to no vehicle at all. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some.",
+        "explanation_it": "Vero. Nessun veicolo arriva dalla destra di R, quindi la regola della destra non gli impone nulla: R apre l'ordine R, A, C. Qui *non ... ad alcun veicolo* significa a nessun veicolo. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche."
       },
       {
         "number": "23412",
@@ -9370,8 +9370,8 @@
         "italian_text": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo C non deve dare la precedenza ad alcun veicolo",
         "answer": "FALSO",
         "english_translation": "According to right-of-way rules at the intersection shown in the figure, vehicle C must not yield to any vehicle.",
-        "explanation": "False. C must yield: A comes from its right, and A in turn waits for R, so C clears last. It is R that owes the way to no one.",
-        "explanation_it": "Falso. C deve dare la precedenza: A proviene dalla sua destra, e A a sua volta attende R, quindi C libera per ultimo. È R a non dover la precedenza a nessuno."
+        "explanation": "False. C must yield: A comes from its right, and A in turn waits for R, so C clears last. It is R that owes the way to no one. Here *non ... ad alcun veicolo* means to no vehicle at all. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some.",
+        "explanation_it": "Falso. C deve dare la precedenza: A proviene dalla sua destra, e A a sua volta attende R, quindi C libera per ultimo. È R a non dover la precedenza a nessuno. Qui *non ... ad alcun veicolo* significa a nessun veicolo. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche."
       },
       {
         "number": "23415",
@@ -9425,8 +9425,8 @@
         "italian_text": "Nell'incrocio rappresentato in figura il veicolo H non deve dare la precedenza ad alcun veicolo",
         "answer": "VERO",
         "english_translation": "At the intersection shown in the figure, vehicle H must not yield to any vehicle.",
-        "explanation": "True. B does stand in the arm on H's right, but B turns left into the arm H is leaving while H turns right into B's, so the two paths never meet and the right-hand rule imposes nothing on H. H therefore opens the order H, D, B.",
-        "explanation_it": "Vero. B si trova effettivamente nel braccio alla destra di H, ma B svolta a sinistra verso il braccio da cui H proviene mentre H svolta a destra verso quello di B, quindi le due traiettorie non si incontrano mai e la regola della precedenza a destra non impone nulla ad H. H apre perciò l'ordine H, D, B."
+        "explanation": "True. B does stand in the arm on H's right, but B turns left into the arm H is leaving while H turns right into B's, so the two paths never meet and the right-hand rule imposes nothing on H. H therefore opens the order H, D, B. Here *non ... ad alcun veicolo* means to no vehicle at all. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some.",
+        "explanation_it": "Vero. B si trova effettivamente nel braccio alla destra di H, ma B svolta a sinistra verso il braccio da cui H proviene mentre H svolta a destra verso quello di B, quindi le due traiettorie non si incontrano mai e la regola della precedenza a destra non impone nulla ad H. H apre perciò l'ordine H, D, B. Qui *non ... ad alcun veicolo* significa a nessun veicolo. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche."
       },
       {
         "number": "23421",
@@ -9685,8 +9685,8 @@
         "italian_text": "Nell'incrocio rappresentato in figura il veicolo E non deve dare la precedenza ad alcun veicolo",
         "answer": "VERO",
         "english_translation": "At the intersection shown in the figure, vehicle E must not yield to any vehicle.",
-        "explanation": "True. Nothing arrives from E's right, so the right-hand rule imposes no duty on E: it opens the order E, C, L.",
-        "explanation_it": "Vero. Nulla arriva dalla destra di E, quindi la regola della destra non impone alcun obbligo a E: apre l'ordine E, C, L."
+        "explanation": "True. Nothing arrives from E's right, so the right-hand rule imposes no duty on E: it opens the order E, C, L. Here *non ... ad alcun veicolo* means to no vehicle at all. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some.",
+        "explanation_it": "Vero. Nulla arriva dalla destra di E, quindi la regola della destra non impone alcun obbligo a E: apre l'ordine E, C, L. Qui *non ... ad alcun veicolo* significa a nessun veicolo. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche."
       },
       {
         "number": "23450",
@@ -24039,8 +24039,8 @@
         "italian_text": "Il segnale raffigurato consente di marciare ad una velocità superiore a 30 km/h, senza alcun limite",
         "answer": "FALSO",
         "english_translation": "With this sign, you may travel at a speed greater than 30 km/h, without any limit.",
-        "explanation": "False. A minimum-speed sign sets a floor, not a ceiling, and it never suspends the general rules: the road's maximum limit (50 in town, 90, 110 or 130 outside, unless signed otherwise) still applies above the 30. 'Without any limit' is the trap. Read the whole sentence: strike «senza alcun limite» and what is left is true; the added words are what make the statement false.",
-        "explanation_it": "Falso. Un limite minimo fissa un pavimento, non un tetto, e non sospende mai le norme generali: sopra i 30 vale ancora il limite massimo della strada (50 in città, 90, 110 o 130 fuori, salvo diversa segnalazione). «Senza alcun limite» è il tranello. Leggi tutta la frase: togli «senza alcun limite» e ciò che resta è vero; sono le parole aggiunte a rendere falsa l'affermazione.",
+        "explanation": "False. A minimum-speed sign sets a floor, not a ceiling, and it never suspends the general rules: the road's maximum limit (50 in town, 90, 110 or 130 outside, unless signed otherwise) still applies above the 30. 'Without any limit' is the trap. Here *senza alcun limite* means with no limit at all. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some. Read the whole sentence: strike «senza alcun limite» and what is left is true; the added words are what make the statement false.",
+        "explanation_it": "Falso. Un limite minimo fissa un pavimento, non un tetto, e non sospende mai le norme generali: sopra i 30 vale ancora il limite massimo della strada (50 in città, 90, 110 o 130 fuori, salvo diversa segnalazione). «Senza alcun limite» è il tranello. Qui *senza alcun limite* significa senza nessun limite. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche. Leggi tutta la frase: togli «senza alcun limite» e ciò che resta è vero; sono le parole aggiunte a rendere falsa l'affermazione.",
         "clause": {
           "text": "senza alcun limite",
           "kind": "b"
@@ -27131,8 +27131,8 @@
         "italian_text": "Il segnale raffigurato è un segnale di obbligo",
         "answer": "VERO",
         "english_translation": "The sign shown is a mandatory sign.",
-        "explanation": "True. The blue circle gives a positive order, reserving the route for pedestrians and requiring them to use it; that is what mandatory signs do. Every mandatory sign is a blue circle with a white symbol, with no exception, and the end of an obligation is the same blue circle crossed by a red stripe. The reverse does not hold: a round sign is not always mandatory. Prohibition signs are round too, white with a red ring, and the blue discs with a red ring and one or two red stripes are the parking and stopping bans. Shape alone says round; shape and color together say mandatory.",
-        "explanation_it": "Vero. Il cerchio blu impartisce un ordine positivo, riservando il percorso ai pedoni e imponendone loro l'uso; è ciò che fanno i segnali di obbligo. Ogni segnale di obbligo è un cerchio blu con il simbolo bianco, senza eccezioni, e la fine dell'obbligo è lo stesso cerchio blu barrato da una striscia rossa. Non vale il contrario: un segnale rotondo non è sempre di obbligo. Anche i segnali di divieto sono rotondi, bianchi con la corona rossa, e i dischi blu con la corona rossa e una o due barre rosse sono i divieti di sosta e di fermata. La forma da sola dice rotondo; forma e colore insieme dicono obbligo."
+        "explanation": "True. A blue circle with a white symbol is a mandatory sign. It tells you what you must do, and this one reserves the path for pedestrians. Every mandatory sign has this shape and color. A round sign is not always mandatory, though, because prohibition signs are round too, white with a red ring.",
+        "explanation_it": "Vero. Un cerchio blu con il simbolo bianco è un segnale di obbligo. Dice che cosa si deve fare, e questo riserva il percorso ai pedoni. Ogni segnale di obbligo ha questa forma e questo colore. Un segnale rotondo però non è sempre di obbligo, perché anche i segnali di divieto sono rotondi, bianchi con la corona rossa."
       },
       {
         "number": "20342",
@@ -29660,8 +29660,8 @@
         "italian_text": "Avvicinandosi ad un passaggio a livello con luci rosse lampeggianti alternativamente e semibarriera ancora alzata, si può passare velocemente, se non si vede sopraggiungere alcun treno",
         "answer": "FALSO",
         "english_translation": "Approaching a railroad crossing with alternately flashing red lights and half-barrier still raised, you can proceed quickly if you do not see a train approaching.",
-        "explanation": "False. The lights come on precisely before the half-barriers lower, so this is the very moment the crossing is closing: you prepare to stop at the line. Seeing no train changes nothing, because the lights themselves already forbid passage.",
-        "explanation_it": "Falso. Le luci si accendono proprio prima che le semibarriere si abbassino, quindi è esattamente il momento in cui il passaggio si sta chiudendo: ci si predispone all'arresto alla linea. Non vedere il treno non cambia nulla, perché già le luci vietano il transito."
+        "explanation": "False. The lights come on precisely before the half-barriers lower, so this is the very moment the crossing is closing: you prepare to stop at the line. Seeing no train changes nothing, because the lights themselves already forbid passage. Here *non ... alcun treno* means no train at all. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some.",
+        "explanation_it": "Falso. Le luci si accendono proprio prima che le semibarriere si abbassino, quindi è esattamente il momento in cui il passaggio si sta chiudendo: ci si predispone all'arresto alla linea. Non vedere il treno non cambia nulla, perché già le luci vietano il transito. Qui *non ... alcun treno* significa nessun treno. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche."
       },
       {
         "number": "21052",
@@ -40461,8 +40461,8 @@
         "number": "22314",
         "italian_text": "E' obbligatorio ridurre la velocità solo se l'autovettura è scarica",
         "answer": "FALSO",
-        "english_translation": "It is mandatory to reduce speed only if the car is unloaded.",
-        "explanation": "False. The vehicle's load is one of the factors that set your speed. Load lengthens braking and alters stability, so a laden car must go more slowly than the same car empty. An unloaded car is therefore the case that least calls for slowing, not the only one. You must also slow for the road, the traffic, the weather, and situations such as curves and intersections.",
+        "english_translation": "It is mandatory to reduce speed only if the car is empty.",
+        "explanation": "False. The vehicle's load is one of the factors that set your speed. Load lengthens braking and alters stability, so a loaded car must go more slowly than the same car empty. An empty car is therefore the case that least calls for slowing, not the only one. You must also slow for the road, the traffic, the weather, and situations such as curves and intersections.",
         "explanation_it": "Falso. Il carico del veicolo è uno dei fattori che stabiliscono la velocità. Il carico allunga la frenata e altera la stabilità, quindi un'auto carica deve andare più piano della stessa auto scarica. Un'auto scarica è dunque il caso che meno richiede di rallentare, non l'unico. Devi rallentare anche per la strada, il traffico, le condizioni atmosferiche e situazioni come curve e incroci."
       },
       {
@@ -41882,8 +41882,8 @@
         "italian_text": "Se si attraversa un incrocio con diritto di precedenza, non si ha alcun obbligo di rallentare",
         "answer": "FALSO",
         "english_translation": "If you cross an intersection with the right of way, you have no obligation to slow down.",
-        "explanation": "False. Even with the right of way, you must reduce speed at intersections to allow safe intervention in case of unforeseen events and to ensure traffic safety.",
-        "explanation_it": "Falso. Anche con il diritto di precedenza, devi ridurre la velocità agli incroci per consentire un intervento sicuro in caso di eventi imprevisti e per garantire la sicurezza del traffico."
+        "explanation": "False. Even with the right of way, you must reduce speed at intersections to allow safe intervention in case of unforeseen events and to ensure traffic safety. Here *non ... alcun obbligo* means no duty at all. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some.",
+        "explanation_it": "Falso. Anche con il diritto di precedenza, devi ridurre la velocità agli incroci per consentire un intervento sicuro in caso di eventi imprevisti e per garantire la sicurezza del traffico. Qui *non ... alcun obbligo* significa nessun obbligo. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche."
       },
       {
         "number": "22478",
@@ -45232,8 +45232,8 @@
         "italian_text": "Quando si vuole cambiare corsia, per immettersi nella corsia di destra, non occorre alcuna particolare attenzione",
         "answer": "FALSO",
         "english_translation": "When wishing to change lanes to move into the right lane no particular care is needed.",
-        "explanation": "False. Every lane change, toward the right included, requires the same care: signal in advance, check the lane is clear ahead and behind, and mind the blind spot. The right lane may hold slower vehicles and two-wheelers.",
-        "explanation_it": "Falso. Ogni cambio di corsia, anche verso destra, richiede la stessa attenzione: segnalare in anticipo, verificare che la corsia sia libera davanti e dietro e controllare l'angolo cieco. Nella corsia di destra possono esserci veicoli più lenti e mezzi a due ruote."
+        "explanation": "False. Every lane change, toward the right included, requires the same care: signal in advance, check the lane is clear ahead and behind, and mind the blind spot. The right lane may hold slower vehicles and two-wheelers. Here *non ... alcuna particolare attenzione* means no particular care at all. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some.",
+        "explanation_it": "Falso. Ogni cambio di corsia, anche verso destra, richiede la stessa attenzione: segnalare in anticipo, verificare che la corsia sia libera davanti e dietro e controllare l'angolo cieco. Nella corsia di destra possono esserci veicoli più lenti e mezzi a due ruote. Qui *non ... alcuna particolare attenzione* significa nessuna particolare attenzione. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche."
       },
       {
         "number": "22848",
@@ -55695,8 +55695,8 @@
         "italian_text": "La patente di categoria A2 non consente di condurre alcun tipo di triciclo a motore",
         "answer": "FALSO",
         "english_translation": "Category A2 license does not allow driving any type of motor tricycle.",
-        "explanation": "False. Non ... alcun tipo di means 'no type at all', so the statement claims that A2 covers no motor tricycle whatsoever. That is too strong. A2 includes everything A1 covers, and A1 covers motor tricycles up to 15 kW, so an A2 holder may drive those. What A2 does not cover is a tricycle over 15 kW, which needs license A and a driver of at least 21.",
-        "explanation_it": "Falso. Non ... alcun tipo di significa 'nessun tipo', quindi l'affermazione sostiene che la A2 non abilita a nessun triciclo a motore. È troppo. La A2 comprende tutto ciò che copre la A1, e la A1 copre i tricicli a motore fino a 15 kW, quindi il titolare della A2 può condurli. Ciò che la A2 non copre è il triciclo oltre 15 kW, che richiede la patente A e un conducente di almeno 21 anni."
+        "explanation": "False. Non ... alcun tipo di means 'no type at all', so the statement claims that A2 covers no motor tricycle whatsoever. That is too strong. A2 includes everything A1 covers, and A1 covers motor tricycles up to 15 kW, so an A2 holder may drive those. What A2 does not cover is a tricycle over 15 kW, which needs license A and a driver of at least 21. Here *non ... alcun tipo* means no type at all. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some.",
+        "explanation_it": "Falso. Non ... alcun tipo di significa 'nessun tipo', quindi l'affermazione sostiene che la A2 non abilita a nessun triciclo a motore. È troppo. La A2 comprende tutto ciò che copre la A1, e la A1 copre i tricicli a motore fino a 15 kW, quindi il titolare della A2 può condurli. Ciò che la A2 non copre è il triciclo oltre 15 kW, che richiede la patente A e un conducente di almeno 21 anni. Qui *non ... alcun tipo* significa nessun tipo. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche."
       }
     ]
   },
@@ -58614,8 +58614,8 @@
         "italian_text": "Chi guida un veicolo senza motore, con una concentrazione di alcool nel sangue superiore al limite stabilito, non è soggetto ad alcuna sanzione",
         "answer": "FALSO",
         "english_translation": "Those who drive a vehicle without a motor with a blood alcohol concentration above the established limit are not subject to any penalty.",
-        "explanation": "False. The alcohol limit applies to whoever drives a vehicle, including non-motorized ones such as bicycles. Riding a bike over the limit is therefore punishable too.",
-        "explanation_it": "Falso. Il limite alcolemico si applica a chiunque conduca un veicolo, compresi quelli non a motore come le biciclette. Anche andare in bicicletta oltre il limite è quindi punibile."
+        "explanation": "False. The alcohol limit applies to whoever drives a vehicle, including non-motorized ones such as bicycles. Riding a bike over the limit is therefore punishable too. Here *non ... ad alcuna sanzione* means to no penalty at all. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some.",
+        "explanation_it": "Falso. Il limite alcolemico si applica a chiunque conduca un veicolo, compresi quelli non a motore come le biciclette. Anche andare in bicicletta oltre il limite è quindi punibile. Qui *non ... ad alcuna sanzione* significa a nessuna sanzione. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche."
       },
       {
         "number": "24853",
@@ -63650,8 +63650,8 @@
         "italian_text": "La manomissione dell'impianto di scarico non comporta alcuna sanzione, purché si circoli solo nei centri urbani",
         "answer": "FALSO",
         "english_translation": "Tampering with the exhaust system does not result in any penalty, provided you drive only in town.",
-        "explanation": "False. Tampering with the exhaust system is punishable wherever the vehicle is driven, in town and outside it alike. The muffler is what holds the exhaust noise down, and the system also reduces the toxicity of the gases, so a tampered exhaust pollutes and makes noise most of all where people live. A vehicle is driven only with a working, approved exhaust.",
-        "explanation_it": "Falso. La manomissione dell'impianto di scarico è sanzionata ovunque il veicolo circoli, in città come fuori. Il silenziatore è ciò che contiene il rumore dello scarico, e l'impianto riduce anche la tossicità dei gas, quindi uno scarico manomesso inquina e fa rumore soprattutto dove vive la gente. Un veicolo circola solo con uno scarico funzionante e omologato."
+        "explanation": "False. Tampering with the exhaust system is punishable wherever the vehicle is driven, in town and outside it alike. The muffler is what holds the exhaust noise down, and the system also reduces the toxicity of the gases, so a tampered exhaust pollutes and makes noise most of all where people live. A vehicle is driven only with a working, approved exhaust. Here *non ... alcuna sanzione* means no penalty at all. After *non* or *senza*, the singular *alcun* or *alcuna* means any, and the two words make one negation, while only the plural *alcuni* or *alcune* means some.",
+        "explanation_it": "Falso. La manomissione dell'impianto di scarico è sanzionata ovunque il veicolo circoli, in città come fuori. Il silenziatore è ciò che contiene il rumore dello scarico, e l'impianto riduce anche la tossicità dei gas, quindi uno scarico manomesso inquina e fa rumore soprattutto dove vive la gente. Un veicolo circola solo con uno scarico funzionante e omologato. Qui *non ... alcuna sanzione* significa nessuna sanzione. Dopo *non* o *senza*, *alcun* o *alcuna* vale nessuno, mentre solo il plurale *alcuni* o *alcune* significa qualche."
       }
     ]
   },

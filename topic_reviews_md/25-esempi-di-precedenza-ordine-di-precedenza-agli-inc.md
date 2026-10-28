@@ -8,6 +8,8 @@
 
 These questions show a junction with several vehicles and ask **who goes first, second, and last**. There is little to memorize: a short set of rules, applied in order at each crossing, settles every figure.
 
+The statements name each vehicle's movement with a few precise words. *Impegnare l'incrocio* means to enter the junction, which is not the same as getting through it. *Concludere la manovra* means to finish the turn, and *sgombrare*, *liberare* or *disimpegnare l'incrocio* means to leave the junction clear. A vehicle turning left often enters first and finishes last, so check which of these words the statement uses.
+
 > **Solve the figure before you read the statement.** Work out the whole order in your head first, then check what the statement claims against it. The statements are written to sound plausible and to nudge you toward a wrong order, but they cannot mislead you if you already have the answer.
 
 ## The rules
@@ -129,6 +131,8 @@ The lesson is that nothing overrode rule 7. It simply did not apply where the pa
 ## Di cosa tratta questo argomento
 
 Queste domande mostrano un incrocio con più veicoli e chiedono **chi passa per primo, per secondo e per ultimo**. C'è poco da memorizzare: un breve insieme di regole, applicate nell'ordine a ogni incrocio di traiettorie, risolve ogni figura.
+
+Le affermazioni descrivono il movimento di ogni veicolo con poche parole precise. *Impegnare l'incrocio* significa entrarvi, che non è lo stesso che attraversarlo. *Concludere la manovra* significa completare la svolta, e *sgombrare*, *liberare* o *disimpegnare l'incrocio* significa lasciarlo libero. Chi svolta a sinistra spesso impegna l'incrocio per primo e conclude per ultimo, quindi controlla quale di queste parole usa l'affermazione.
 
 > **Risolvi la figura prima di leggere l'affermazione.** Ricava prima tutto l'ordine a mente, poi confronta con ciò che l'affermazione sostiene. Le affermazioni sono scritte per sembrare plausibili e spingerti verso un ordine sbagliato, ma non possono ingannarti se hai già la risposta.
 

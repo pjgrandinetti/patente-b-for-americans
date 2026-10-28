@@ -15,7 +15,7 @@
  *     not just for images already viewed.
  */
 
-const CACHE_VERSION = 'patente-netfirst-20261028h';
+const CACHE_VERSION = 'patente-netfirst-20261028i';
 const BASE          = '';
 
 // Small app shell — versioned cache, network-first so code/UI updates apply at once.
@@ -60,7 +60,7 @@ const DATA_CACHE = 'patente-data-v1';
 // scripts/stamp_data_hashes.py into BOTH this file and app.js (`DATA_HASH`),
 // and validate_data.py fails when either is stale. Keep `dataUrl` here and in
 // app.js in step.
-const DATA_HASH = { 'questions.json': '0717c3e05327', 'vocabulary.json': '3e44ab4b1275', 'topic_reviews.json': '8d8bbea77601' };
+const DATA_HASH = { 'questions.json': '52c3d3c108b5', 'vocabulary.json': 'e17373bbca17', 'topic_reviews.json': 'd4ae0506334c' };
 const dataUrl = name => `${BASE}/${name}?v=${DATA_HASH[name]}`;
 const dataHashFor = pathname => DATA_HASH[pathname.slice(pathname.lastIndexOf('/') + 1)];
 // True only if the response body is complete, valid JSON. A truncated file

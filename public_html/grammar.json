@@ -67,8 +67,8 @@
      "after": "<p>In the first, <i>mettersi</i> is <i>mettere</i> + <i>si</i>, to put oneself: it is you who must not go under the car, not the jack. In the second, <i>bloccarglieli</i> is <i>bloccare</i> + <i>gli</i> + <i>li</i>, to immobilize them (the limbs) for him (the injured person).</p>"
     },
     {
-     "h": "Two negative words, one negation: non ... mai, non ... né",
-     "p": "<p>Italian often puts <i>non</i> in front of the verb and a second negative word after it: <i>non ... mai</i> (never), <i>non ... né ... né</i> (neither ... nor), <i>non ... nessuno</i> (nobody), <i>non ... niente</i> (nothing). In English two negatives cancel out or sound wrong; in Italian they do not cancel. The pair is ONE negation, and the second word says what kind.</p>",
+     "h": "Two negative words, one negation: non ... mai, non ... né, non ... alcun",
+     "p": "<p>Italian often puts <i>non</i> in front of the verb and a second negative word after it: <i>non ... mai</i> (never), <i>non ... né ... né</i> (neither ... nor), <i>non ... nessuno</i> (nobody), <i>non ... niente</i> (nothing), <i>non ... alcun</i> (not any, no). In English two negatives cancel out or sound wrong; in Italian they do not cancel. The pair is ONE negation, and the second word says what kind.</p>",
      "ex": [
       {
        "n": "31024",
@@ -79,7 +79,7 @@
        "hl": "non guardare né a destra, né a sinistra"
       }
      ],
-     "after": "<p><i>Non deve mai sopravvalutare</i>: <i>must never overestimate</i>, not <i>must not never</i>. <i>Non guardare né a destra, né a sinistra</i>: <i>look neither right nor left</i>. So <i>non bisogna mai</i> means <i>you must never</i>, a ban with no exception.</p>"
+     "after": "<p><i>Non deve mai sopravvalutare</i>: <i>must never overestimate</i>, not <i>must not never</i>. <i>Non guardare né a destra, né a sinistra</i>: <i>look neither right nor left</i>. So <i>non bisogna mai</i> means <i>you must never</i>, a ban with no exception. The same holds for <i>alcun</i> and <i>alcuna</i>: <i>non deve dare la precedenza ad alcun veicolo</i> means <i>must yield to no vehicle at all</i>. Only the plural <i>alcuni</i> or <i>alcune</i> means <i>some</i>.</p>"
     },
     {
      "h": "A condition that sets the scene: quando, se",
