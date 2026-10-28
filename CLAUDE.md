@@ -3847,8 +3847,8 @@ behind what shipped:
   the figure, the Italian and the misses by level; an Italian browser sees
   the Italiano count only. Opened: the English (non-Italian browser), "Words
   in this question", a Show answer button over the answer and both
-  explanations, and the 📖, which opens the notes at that statement's
-  landing (`reviewTargetFor`). The answer stays behind the button on
+  explanations; the 📖 that opened the notes at that statement was
+  removed from both modes in 20261029t and u (maintainer, 2026-10-29). The answer stays behind the button on
   purpose: the list of 2026-09-30 with answers in front was reverted as a
   list to memorize. **A second select splits the Italian misses by remedy (20261006q,
   reworked in 20261006s at the maintainer's request to offer only what helps
@@ -3902,8 +3902,8 @@ behind what shipped:
   mode draws each row flat (`.km-row.km-read`): the figure, the Italian,
   the English for a non-Italian browser, the answer as a VERO or FALSO
   chip, the explanation (20261029q, maintainer: it had been left out),
-  folded under "Why?" (`details.km-why`, closed, 20261029r), and no
-  Concepts button (removed in 20261029t, maintainer).
+  folded under "Why?" (`details.km-why`, closed, 20261029r). Neither mode
+  carries the Concepts button since 20261029u (maintainer).
   The explanation is the English one for a non-Italian browser, with the
   Italian behind an IT pill (`.rb-it`, 20261029s, maintainer), and the
   Italian one for an Italian browser. No

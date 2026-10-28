@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261029t';
+const APP_VERSION     = '20261029u';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -14414,8 +14414,8 @@ function statementByNumber(num) {
 // page and synced. A row shows the statement, its figure and its misses by
 // level, which is what tells a misread word from a rule not known; opened, it
 // gives the English, the answer behind a button (a list with the answers in
-// front was built and reverted on 2026-09-30 as a list to memorize), and the
-// 📖 that opens the notes at that question.
+// front was built and reverted on 2026-09-30 as a list to memorize). The 📖
+// that opened the notes at that question was removed in 20261029u.
 const MISS_MIN_KEY = 'patente_miss_min';
 function missMin() {
   try { const v = Number(localStorage.getItem(MISS_MIN_KEY)); return v >= 1 && v <= 9 ? v : 3; } catch { return 3; }
@@ -14534,12 +14534,6 @@ function renderMissBreakdown() {
       if (mode) { _kmRead = mode.dataset.mode === 'read'; renderMissBreakdown(); return; }
       const vf = ev.target.closest('.km-vf');
       if (vf) { answerFromList(vf); return; }
-      const book = ev.target.closest('.km-book');
-      if (book) {
-        const q = questions.find(x => String(x.id) === book.dataset.qid);
-        const st = q && (q.statements || []).find(x => String(x.number) === book.dataset.num);
-        if (q && st) openReview(q.topic, reviewTargetFor(q, st.number) || { fromCard: true });
-      }
     });
   }
   const min = missMin();
@@ -14586,8 +14580,8 @@ function renderMissBreakdown() {
               `<div class="km-expl km-expl-en">${explHtml(st.explanation)}` +
               (st.explanation_it ? ` <button type="button" class="rb-it" aria-expanded="false" title="${escHtml(t('review.itPillTip'))}">IT</button><span class="rb-itxt hidden" lang="it">${explHtml(st.explanation_it)}</span>` : '') +
               `${readingHtml(st)}</div></details>` : '')) +
-        // No Concepts button here (20261029t, maintainer): the list is for
-        // reading the answers, and the explanation is under Why?.
+        // No Concepts button on either mode's rows (20261029t, 20261029u,
+        // maintainer).
         `</div></div>`;
       continue;
     }
@@ -14598,8 +14592,6 @@ function renderMissBreakdown() {
     const key = `data-qid="${escHtml(String(q.id))}" data-num="${escHtml(String(st.number))}"`;
     const explIt = st.explanation_it ? `<div class="km-expl">${explHtml(st.explanation_it)}</div>` : '';
     const explEn = !it && st.explanation ? `<div class="km-expl km-expl-en">${explHtml(st.explanation)}${readingHtml(st)}</div>` : '';
-    const book = reviewFor(q.topic)
-      ? `<button type="button" class="stmt-it-btn km-book" data-qid="${escHtml(String(q.id))}" data-num="${escHtml(String(st.number))}">${escHtml(t('review.notes'))}</button>` : '';
     html += `<details class="km-row"><summary>` +
       (q.image ? `<img class="km-img" src="${escHtml(q.image)}" alt="" loading="lazy">` : '') +
       `<span class="km-main"><span class="km-it">${escHtml(st.italian_text)}</span>` +
@@ -14609,7 +14601,7 @@ function renderMissBreakdown() {
       `<div class="km-vfrow"><button type="button" class="btn-secondary km-vf" data-choice="VERO" ${key}>VERO</button>` +
       `<button type="button" class="btn-secondary km-vf" data-choice="FALSO" ${key}>FALSO</button></div>` +
       `<div class="km-ans hidden"><div class="km-answer"></div>${en}${explIt}${explEn}` +
-      (book ? `<div class="km-actions">${book}</div>` : '') + `</div></div></details>`;
+      `</div></div></details>`;
   }
   el.innerHTML = html + '</div></details>';
   el.querySelector('details.stats-box')?.addEventListener('toggle', e => { if (e.target.classList.contains('stats-box')) _kmOpen = e.target.open; });

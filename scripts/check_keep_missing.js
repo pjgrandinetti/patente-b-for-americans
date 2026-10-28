@@ -49,9 +49,7 @@ setTimeout(()=>{
   ok(!r0[0].querySelector('.km-ans').classList.contains('hidden') && /Right|Giusto/.test(r0[0].querySelector('.km-answer').textContent) && r0[0].querySelector('.km-answer').textContent.includes(a.answer),'a right answer shows the result: '+r0[0].querySelector('.km-answer').textContent);
   ok(rec3().streak===s0+1 && rec3().seen===seen0+1,'and counts at Italiano: the run grows');
   ok([...r0[0].querySelectorAll('.km-vf')].every(b=>b.disabled),'one answer per opening');
-  r0[0].querySelector('.km-book').click();
-  ok(!$('review-overlay').classList.contains('hidden'),'📖 opens the notes');
-  $('review-overlay').classList.add('hidden');
+  ok(!r0[0].querySelector('.km-book'),'no Concepts button on a practice row (20261029u)');
   const sel=$('km-min'); sel.value='2'; sel.dispatchEvent(new w.Event('change',{bubbles:true}));
   ok(disc().open,'it stays open when a control redraws the list');
   ok(rows().length===(IT?2:3) && w.localStorage.getItem('patente_miss_min')==='2' && w.buildProgressBundle().settings.missMin==='2','threshold 2: more rows, stored and synced');
