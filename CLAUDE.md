@@ -2694,8 +2694,16 @@ behind what shipped:
   day out `examdate.paceLast` reads: go lightly today, do the day's review
   once, look over the figures you keep missing, sleep a full night, and take
   today's mock exam as usual, then stop (20261029j, maintainer: "optional"
-  was my judgment with no source, and the retrieval-practice research the
-  app cites favors the mock). The Still waiting row, Continue the review and the
+  was my judgment with no source). The reason is the routine, NOT
+  research: Roediger and Karpicke 2006 found the testing benefit at 2 days
+  and 1 week, while restudying won at 5 minutes, so it says nothing either
+  way about a mock the day before. Checked against sources on 2026-10-29:
+  for the days just before an exam only SLEEP is well supported (Diekelmann
+  and Born 2010; Lim and Dinges 2010, a meta-analysis of 70 studies of
+  sleep loss under 48 hours). Writing out worries (Ramirez and Beilock 2011)
+  did not hold up in later classroom studies, and reappraising arousal
+  (Jamieson et al. 2010) failed a replication across 12 science courses;
+  do not put either on screen. The Still waiting row, Continue the review and the
   pool table are left out; the figures link stays, outside the table
   (`examFiguresLinkHtml`).
   **The day before and the day itself say *In bocca al lupo!*
