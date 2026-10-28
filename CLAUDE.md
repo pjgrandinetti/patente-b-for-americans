@@ -1276,8 +1276,11 @@ reach the session on 2026-09-20, which is why it is recorded here.
   reads the lemmas back, so an inflected form finds its entry exactly as a
   tap would. Since 20261001y the same list also follows "Why?" on a RIGHT
   answer (`whyWords`, folded and unfolded with the English, the maintainer's
-  question the same day), so it appears only when asked for; nothing for a
-  removed word, nothing for an Italian browser, and never before the answer.
+  question the same day), so it appears only when asked for; nothing for an
+  Italian browser, and never before the answer. **A word removed from the
+  study list IS listed (20261029b, maintainer, 2026-10-29)**: removal takes a
+  word off the study list and nothing more. Hiding removed words had never
+  been his decision, and it hid *alcuni* under a statement it decided.
   `lookedUpWordsEl` is the one builder both paths use. The vocabulary review
   draws from the same function, so a rare word never looked up is reviewed
   too (393 records on the maintainer's file, from 300); its queue excludes

@@ -21,6 +21,11 @@ setTimeout(()=>{
   const lk=w.lookupsLog ? w.lookupsLog() : {}; const removedSeen=lk.alcuni && lk.alcuni.d>lk.alcuni.t;
   const a2=words('I contrassegni rappresentati in figura sono applicati ad alcuni autobus');
   ok(removedSeen && a2.some(x=>/^alcuni = some \(plural/.test(x)),'listed even when removed from the study list, with the dictionary gloss: '+a2.join(' | '));
+  // Any removed study-list word is listed too (20261029b).
+  w.localStorage.setItem('patente-lookups', JSON.stringify({autobus:{term:'autobus',en:'bus',t:1,d:2}}));
+  const a3=words('I contrassegni rappresentati in figura sono applicati ad alcuni autobus');
+  ok(a3.some(x=>/^autobus = /.test(x)),'a removed study-list word is listed: '+a3.join(' | '));
+  w.localStorage.removeItem('patente-lookups');
   const c=words('Il veicolo deve essere fermato sulla strada');
   ok(!c.some(x=>/^(veicolo|strada) =/.test(x)),'a common word not marked always is still left out: '+c.join(' | '));
   console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);
