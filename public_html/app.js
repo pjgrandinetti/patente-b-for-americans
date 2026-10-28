@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261028p';
+const APP_VERSION     = '20261028q';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -14644,10 +14644,12 @@ function renderReviewCats() {
 // still finds it. Never while searching, nor on the missed-figures chip. It
 // stays closed until opened, since it names every figure and the values may
 // be hidden for a self-test.
-let _refRememberOpen = false;
-function refRememberHtml(r, it) {
-  return `<details class="rules-note ref-remember"${_refRememberOpen ? ' open' : ''}><summary>${escHtml(it ? r.it : r.en)}</summary>` +
-    `<div class="rules-body"><img class="ref-remember-fig" src="review_media/speed-limits-${it ? 'it' : 'en'}.svg" alt="${escHtml(it ? r.figIt : r.figEn)}" title="${escHtml(t('viewer.open'))}">` +
+// The distances have the same kind of box since 20261028q: any category may
+// carry `remember`, whose `fig` names the pair of review_media figures.
+const _refRememberOpen = new Set();
+function refRememberHtml(r, it, id) {
+  return `<details class="rules-note ref-remember" data-rem="${escHtml(id)}"${_refRememberOpen.has(id) ? ' open' : ''}><summary>${escHtml(it ? r.it : r.en)}</summary>` +
+    `<div class="rules-body"><img class="ref-remember-fig" src="review_media/${escHtml(r.fig)}-${it ? 'it' : 'en'}.svg" alt="${escHtml(it ? r.figIt : r.figEn)}" title="${escHtml(t('viewer.open'))}">` +
     `<ul>${(it ? r.linesIt : r.linesEn).map(l => `<li>${escHtml(l)}</li>`).join('')}</ul></div></details>`;
 }
 function renderReviewNumbers() {
@@ -14697,7 +14699,8 @@ function renderReviewNumbers() {
   const foldKeys = [];            // every group that can fold, in the order shown
   const groups = reference.groups || [];
   const speedRemember = ((reference.categories || []).find(x => x.id === 'speed') || {}).remember;
-  let rememberDone = !!q || cat === 'missed' || !speedRemember;
+  const rememberShown = new Set();
+  const noRemember = !!q || cat === 'missed';
   cats.forEach(c => {
     const rows = c.id === 'missed'
       ? nums.slice().sort((x, y) => missed.get((reference.numbers || []).indexOf(y)) - missed.get((reference.numbers || []).indexOf(x)))
@@ -14708,7 +14711,10 @@ function renderReviewNumbers() {
     // 24104, 2026-09-30), and the category says once how to convert. An
     // Italian reader thinks in meters and gets neither.
     if (!it && c.noteEn && cat !== 'missed') html += `<p class="review-group-note">${escHtml(c.noteEn)}</p>`;
-    if (!rememberDone && (c.id === 'speed' || c.id === 'speedveh')) { html += refRememberHtml(speedRemember, it); rememberDone = true; }
+    // The speeds' box shows once, under whichever speed category comes first.
+    const rem = c.id === 'speedveh' ? speedRemember : c.remember;
+    const remId = c.id === 'speedveh' ? 'speed' : c.id;
+    if (!noRemember && rem && !rememberShown.has(remId)) { html += refRememberHtml(rem, it, remId); rememberShown.add(remId); }
     // Inside a category the rows may carry a group (the speeds are grouped by
     // road type, so every autostrada limit sits together). Rows without one
     // are listed first, under no subheading.
@@ -14891,7 +14897,9 @@ function renderReviewNumbers() {
     });
   });
   box.innerHTML = html;
-  box.querySelector('.ref-remember')?.addEventListener('toggle', e => { _refRememberOpen = e.target.open; });
+  box.querySelectorAll('.ref-remember').forEach(d => d.addEventListener('toggle', e => {
+    if (e.target.open) _refRememberOpen.add(d.dataset.rem); else _refRememberOpen.delete(d.dataset.rem);
+  }));
   paintReviewFold(foldKeys, !!q);
   bindEntryFlags(box);
   return nums.length;

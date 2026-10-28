@@ -5454,6 +5454,21 @@ to areas open to the public, and the two Reference rows whose only source was
   events at 390 px: fitted 366 px wide, pinch out to 2.8x, pinch back to
   1x, double tap 2.5x and back, backdrop tap closes with the notes still
   open.
+  **The distances have the same kind of box (20261028q, maintainer)**:
+  "How to remember the distances" on the `distance` category, with
+  `review_media/distances-en.svg` and `-it.svg` drawn by
+  `scripts/draw_distances.py`. Three panels: the multiples of 50 m, each
+  under a drawing of the railroad countdown panel with that many bars
+  (150 for danger signs outside towns and the three-bar panel; 100 for the
+  two-bar panel, the triangle's visibility, the gap between trucks over
+  3.5 t and the fog cap; 50 for the one-bar panel, the triangle behind the
+  vehicle and the rear fog light); the safe distance at each tested speed
+  against (speed ÷ 10) × 3; and the short ones (1, 1, 3, 5, 15) with the
+  outliers 20 and 500. Any category may now carry `remember` with a `fig`;
+  the speeds' box still shows once across its two categories. The figure
+  is on the Reference page only, since the distances belong to six topics.
+  `check_speed_remember.js` asserts the box, its figure and that every
+  distance it names is a row on the page.
   **An emergency halt is never parking (20261023m, maintainer, 2026-10-23).**
   Topic 21's emergency-lane bullet, 20955 and 23903 now say the three hours
   are the ceiling of a *sosta di emergenza*, not an allowance, as topic 07's

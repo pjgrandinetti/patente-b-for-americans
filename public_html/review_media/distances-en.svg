@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 709" role="img" aria-label="Distances in meters: the multiples of 50 m that the railroad countdown panels count off, the safe following distance at each tested speed, and the short distances of parking and stopping.">
+<title>Distances in meters: the multiples of 50 m that the railroad countdown panels count off, the safe following distance at each tested speed, and the short distances of parking and stopping.</title>
+<rect x="1" y="1" width="638" height="707" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+<g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+<text x="16" y="34" font-size="14" font-weight="700" fill="#1e293b">Multiples of 50 m: one red bar for every 50 m</text>
+<rect x="16" y="48" width="196" height="235" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="1.5"/>
+<rect x="28" y="58" width="22" height="46" rx="2" fill="#ffffff" stroke="#b91c1c" stroke-width="1.5"/><path d="M31 75 L47 66 L47 71 L31 80 Z" fill="#dc2626"/><path d="M31 87 L47 78 L47 83 L31 92 Z" fill="#dc2626"/><path d="M31 99 L47 90 L47 95 L31 104 Z" fill="#dc2626"/>
+<text x="62" y="90" font-size="24" font-weight="700" fill="#712B13">150 m</text>
+<text x="28" y="124" font-size="12" fill="#712B13">Danger sign ahead,</text>
+<text x="28" y="139" font-size="12" fill="#712B13">outside built-up areas</text>
+<text x="28" y="162" font-size="12" fill="#712B13">Railroad crossing:</text>
+<text x="28" y="177" font-size="12" fill="#712B13">three-bar panel</text>
+<rect x="222" y="48" width="196" height="235" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="1.5"/>
+<rect x="234" y="58" width="22" height="46" rx="2" fill="#ffffff" stroke="#b91c1c" stroke-width="1.5"/><path d="M237 75 L253 66 L253 71 L237 80 Z" fill="#dc2626"/><path d="M237 87 L253 78 L253 83 L237 92 Z" fill="#dc2626"/>
+<text x="268" y="90" font-size="24" font-weight="700" fill="#712B13">100 m</text>
+<text x="234" y="124" font-size="12" fill="#712B13">Railroad crossing:</text>
+<text x="234" y="139" font-size="12" fill="#712B13">two-bar panel</text>
+<text x="234" y="162" font-size="12" fill="#712B13">Warning triangle:</text>
+<text x="234" y="177" font-size="12" fill="#712B13">visible from</text>
+<text x="234" y="200" font-size="12" fill="#712B13">Trucks over 3.5 t</text>
+<text x="234" y="215" font-size="12" fill="#712B13">that may not pass:</text>
+<text x="234" y="230" font-size="12" fill="#712B13">gap between them</text>
+<text x="234" y="253" font-size="12" fill="#712B13">Fog: visibility under</text>
+<text x="234" y="268" font-size="12" fill="#712B13">which a cap may be posted</text>
+<rect x="428" y="48" width="196" height="235" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="1.5"/>
+<rect x="440" y="58" width="22" height="46" rx="2" fill="#ffffff" stroke="#b91c1c" stroke-width="1.5"/><path d="M443 75 L459 66 L459 71 L443 80 Z" fill="#dc2626"/>
+<text x="474" y="90" font-size="24" font-weight="700" fill="#712B13">50 m</text>
+<text x="440" y="124" font-size="12" fill="#712B13">Railroad crossing:</text>
+<text x="440" y="139" font-size="12" fill="#712B13">one-bar panel</text>
+<text x="440" y="162" font-size="12" fill="#712B13">Warning triangle:</text>
+<text x="440" y="177" font-size="12" fill="#712B13">behind the vehicle</text>
+<text x="440" y="200" font-size="12" fill="#712B13">Fog: visibility under</text>
+<text x="440" y="215" font-size="12" fill="#712B13">which the rear fog</text>
+<text x="440" y="230" font-size="12" fill="#712B13">light goes on</text>
+<text x="16" y="309" font-size="14" font-weight="700" fill="#1e293b">Safe following distance, roughly (speed ÷ 10) × 3</text>
+<text x="16" y="338" font-size="12" fill="#475569">30 km/h</text>
+<rect x="84" y="325" width="99" height="18" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+<text x="191" y="339" font-size="13" font-weight="700" fill="#085041">9 m</text>
+<text x="16" y="364" font-size="12" fill="#475569">50 km/h</text>
+<rect x="84" y="351" width="154" height="18" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+<text x="246" y="365" font-size="13" font-weight="700" fill="#085041">14 m</text>
+<text x="16" y="390" font-size="12" fill="#475569">100 km/h</text>
+<rect x="84" y="377" width="308" height="18" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+<text x="400" y="391" font-size="13" font-weight="700" fill="#085041">28 m</text>
+<text x="16" y="416" font-size="12" fill="#475569">130 km/h</text>
+<rect x="84" y="403" width="396" height="18" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+<text x="488" y="417" font-size="13" font-weight="700" fill="#085041">36 m</text>
+<text x="16" y="442" font-size="12" fill="#475569">150 km/h</text>
+<rect x="84" y="429" width="462" height="18" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+<text x="554" y="443" font-size="13" font-weight="700" fill="#085041">42 m</text>
+<text x="16" y="475" font-size="14" font-weight="700" fill="#1e293b">Close by, and two outliers</text>
+<rect x="16" y="487" width="54" height="22" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.2"/>
+<text x="43" y="502" text-anchor="middle" font-size="12" font-weight="700" fill="#3C3489">1 m</text>
+<text x="78" y="502" font-size="12.5" fill="#1e293b">Pedestrians, with no raised sidewalk</text>
+<rect x="16" y="517" width="54" height="22" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.2"/>
+<text x="43" y="532" text-anchor="middle" font-size="12" font-weight="700" fill="#3C3489">1 m</text>
+<text x="78" y="532" font-size="12.5" fill="#1e293b">Warning triangle, from the road edge</text>
+<rect x="16" y="547" width="54" height="22" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.2"/>
+<text x="43" y="562" text-anchor="middle" font-size="12" font-weight="700" fill="#3C3489">3 m</text>
+<text x="78" y="562" font-size="12.5" fill="#1e293b">Left free to park on a one-way street's left</text>
+<rect x="16" y="577" width="54" height="22" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.2"/>
+<text x="43" y="592" text-anchor="middle" font-size="12" font-weight="700" fill="#3C3489">5 m</text>
+<text x="78" y="592" font-size="12.5" fill="#1e293b">No stopping near an intersection, in town</text>
+<rect x="16" y="607" width="54" height="22" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.2"/>
+<text x="43" y="622" text-anchor="middle" font-size="12" font-weight="700" fill="#3C3489">15 m</text>
+<text x="78" y="622" font-size="12.5" fill="#1e293b">No parking from a bus stop sign</text>
+<rect x="16" y="637" width="54" height="22" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.2"/>
+<text x="43" y="652" text-anchor="middle" font-size="12" font-weight="700" fill="#3C3489">20 m</text>
+<text x="78" y="652" font-size="12.5" fill="#1e293b">Behind a working snowplow</text>
+<rect x="16" y="667" width="54" height="22" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.2"/>
+<text x="43" y="682" text-anchor="middle" font-size="12" font-weight="700" fill="#3C3489">500 m</text>
+<text x="78" y="682" font-size="12.5" fill="#1e293b">Emergency lane usable to reach an exit</text>
+</g></svg>

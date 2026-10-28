@@ -19,8 +19,8 @@ setTimeout(()=>{
   const chip=id=>{ const c=w.document.querySelector(`.review-chip[data-cat="${id}"]`); if(c) c.click(); return !!c; };
   const rem=()=>[...$('review-numbers-body').querySelectorAll('.ref-remember')];
   chip('all');
-  let r=rem();
-  ok(r.length===1 && !r[0].open,'all categories: one disclosure, closed');
+  let r=rem().filter(d=>d.dataset.rem==='speed');
+  ok(r.length===1 && !r[0].open,'all categories: one speeds disclosure, closed');
   const title=r[0].querySelector('h2,summary').textContent;
   ok(title===(IT?'Come ricordare le velocità':'How to remember the speeds'),'its title: '+title);
   ok(r[0].querySelectorAll('li').length===9,'nine lines');
@@ -44,7 +44,17 @@ setTimeout(()=>{
   r[0].open=true; r[0].dispatchEvent(new w.Event('toggle'));
   chip('speedveh'); r=rem();
   ok(r.length===1 && r[0].open,'the by-vehicle chip alone still shows it, and it stays open once opened');
-  chip('distance'); ok(rem().length===0,'not under another category');
+  chip('size'); ok(rem().length===0,'not under another category');
+  // The distances carry their own box and figure (20261028q).
+  chip('distance'); r=rem();
+  ok(r.length===1 && r[0].dataset.rem==='distance' && /(How to remember the distances|Come ricordare le distanze)/.test(r[0].querySelector('summary').textContent) && r[0].querySelectorAll('li').length===8,'the distances have their own box, eight lines');
+  const dfig=r[0].querySelector('img.ref-remember-fig');
+  ok(dfig && dfig.getAttribute('src')==='review_media/distances-'+(IT?'it':'en')+'.svg' && fs.existsSync(root+'/'+dfig.getAttribute('src')),'with the distances figure in the reader\'s language');
+  const dvals=new Set(ref.numbers.filter(n=>n.cat==='distance').map(n=>(String(n.value).match(/\d+/)||[])[0]));
+  const kmh=new Set(['30','50','100','130','150']);
+  const dnamed=(r[0].textContent.match(/\b\d+(?:[.,]\d+)?\b/g)||[]).filter(x=>!['3,5','3.5','10','3'].includes(x)||dvals.has(x));
+  ok(dnamed.every(x=>dvals.has(x)||kmh.has(x)),'every distance it names is a distance on the page: '+[...new Set(dnamed)].join(' '));
+  chip('all'); ok(rem().length===2,'all categories: the speeds\' box and the distances\' box');
   const box=$('review-search')||w.document.querySelector('input[type=search]');
   if (box){ box.value='130'; box.dispatchEvent(new w.Event('input',{bubbles:true})); }
   ok(rem().length===0,'not while searching');
