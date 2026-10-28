@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261029w';
+const APP_VERSION     = '20261029x';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -2449,7 +2449,12 @@ function openReview(topic, opts = {}) {
   // no toggle and no pills at all.
   reviewTopic = topic;
   reviewTarget = opts;
-  reviewLang  = (browserPrefersItalian() || currentLevel === EXAM_LEVEL) ? 'it' : 'en';
+  // The key-points page opens in English for a non-Italian browser at every
+  // level (20261029x, maintainer): it carries the Italian key words in
+  // parentheses, so English is the face that teaches both.
+  reviewLang  = browserPrefersItalian() ? 'it'
+              : topic === KEY_POINTS ? 'en'
+              : currentLevel === EXAM_LEVEL ? 'it' : 'en';
   const langBox  = document.getElementById('review-lang');
   const bothLangs = !!reviewFor(topic, 'en') && !!reviewFor(topic, 'it');
   langBox?.classList.toggle('hidden', !bothLangs || browserPrefersItalian());

@@ -41,9 +41,10 @@ setTimeout(()=>{
   if (IT) {
     ok(lang==='it' && !body.querySelector('.rb-it') && !vis($('review-lang')),'an Italian browser reads it in Italian, with no pills and no toggle');
   } else {
-    ok(lang==='it' && vis($('review-lang')),'at Italiano the page opens in Italian with the toggle');
-    const pills=body.querySelectorAll('.rb-it').length;
-    ok(pills>=lis-5,'nearly every point carries an EN pill: '+pills+' of '+lis);
+    ok(lang==='en' && vis($('review-lang')),'even at Italiano the page opens in English for a non-Italian browser, with the toggle (20261029x)');
+    w.document.querySelector('#review-lang [data-lang=it]').click();
+    const pills=$('review-body').querySelectorAll('.rb-it').length, itLis=$('review-body').querySelectorAll('li').length;
+    ok(pills>=itLis-5,'the Italian face carries an EN pill on nearly every point: '+pills+' of '+itLis);
     w.document.querySelector('#review-lang [data-lang=en]').click();
     const en=$('review-body'); const enLis=en.querySelectorAll('li').length, enPills=en.querySelectorAll('.rb-it').length;
     ok(w.eval('reviewLang')==='en' && en.querySelectorAll('h3').length===25 && enPills>=enLis-5,'the English face has IT pills on nearly every point: '+enPills+' of '+enLis);

@@ -2785,6 +2785,10 @@ behind what shipped:
   The rubric is the rule for a new summary point: bold the term alone, not
   its article, and bold nothing that is a figure, a unit, a colour alone or
   an ordinary word.
+  **It opens in ENGLISH for a non-Italian browser at every level
+  (20261029x, maintainer)**, unlike a topic's notes, which open in
+  Italian at Italiano: the English face carries the Italian key words in
+  parentheses, so it teaches both. The toggle and the pills are unchanged.
   `scripts/check_key_points.js`, 20 checks in English, 15 in Italian.
   **The day before and the day itself say *In bocca al lupo!*
   (20261028b, maintainer)**, a line of its own under the advice
