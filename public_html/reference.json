@@ -44,7 +44,7 @@
    "id": "distance",
    "en": "Distances (distanze)",
    "it": "Distanze",
-   "noteEn": "US equivalents are in parentheses, rounded. Road distances are given in yards, and a yard is close to a meter: multiply meters by 1.1 to get yards. The short distances are given in feet: multiply meters by 3.3 to get feet."
+   "noteEn": "US equivalents are in parentheses, rounded. Meters are given in yards, and a yard is close to a meter: multiply meters by 1.1 to get yards. Centimeters are given in inches: divide centimeters by 2.5 to get inches."
   },
   {
    "id": "mass",
@@ -61,7 +61,7 @@
    "id": "size",
    "en": "Sizes and seats (dimensioni e posti)",
    "it": "Dimensioni e posti",
-   "noteEn": "US equivalents are in parentheses, rounded. An inch is 2.54 cm, so divide centimeters by 2.5 to get inches. A meter is about 3.3 feet, so multiply meters by 3.3 to get feet."
+   "noteEn": "US equivalents are in parentheses, rounded. Meters are given in yards, and a yard is close to a meter: multiply meters by 1.1 to get yards. Centimeters are given in inches: divide centimeters by 2.5 to get inches."
   },
   {
    "id": "time",
@@ -1082,7 +1082,7 @@
    "group": "autostrada",
    "noWrong": true,
    "alwaysTrue": true,
-   "us": "550 yd",
+   "us": "545 yd",
    "asked": [
     "23893"
    ],
@@ -1272,7 +1272,7 @@
     "22583"
    ],
    "group": "follow",
-   "us": "10 yd",
+   "us": "9.8 yd",
    "asked": [
     "22578",
     "22583"
@@ -1362,7 +1362,7 @@
    ],
    "group": "park",
    "noWrong": true,
-   "us": "16 ft",
+   "us": "5.5 yd",
    "asked": [
     "23681",
     "23686"
@@ -1382,7 +1382,7 @@
    ],
    "group": "park",
    "noWrong": true,
-   "us": "10 ft",
+   "us": "3.3 yd",
    "asked": [
     "23720"
    ],
@@ -1402,7 +1402,7 @@
    ],
    "group": "park",
    "noWrong": true,
-   "us": "3 ft",
+   "us": "1.1 yd",
    "asked": [
     "23659",
     "23711"
@@ -1470,7 +1470,7 @@
    ],
    "group": "triangle",
    "noWrong": true,
-   "us": "3 ft",
+   "us": "1.1 yd",
    "asked": [
     "23842",
     "23844"
@@ -1994,7 +1994,7 @@
    "group": "vehicle",
    "noWrong": true,
    "alwaysTrue": true,
-   "us": "23 ft",
+   "us": "7.7 yd",
    "asked": [
     "24097"
    ],
@@ -2077,7 +2077,7 @@
     "22698"
    ],
    "group": "load",
-   "us": "13 ft",
+   "us": "4.4 yd",
    "asked": [
     "22698"
    ],
@@ -2146,7 +2146,7 @@
    ],
    "group": "equip",
    "valueEn": "1.50 m",
-   "us": "4 ft 11 in",
+   "us": "1.6 yd",
    "asked": [
     "24369",
     "24374"

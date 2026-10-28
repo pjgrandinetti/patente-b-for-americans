@@ -621,7 +621,17 @@ reach the session on 2026-09-20, which is why it is recorded here.
   `size` rows keep inches and feet. The category note now says to multiply
   meters by 1.1 for yards. `validate_data.py` fails on a distance of 9 m
   or more not in yards (proved by sabotage); `check_us_units.js` asserts
-  550 yd, 22 yd and 3 ft. The explanations of 24104 and 24105 give the
+  550 yd, 22 yd and 3 ft. **Widened the same day (20261028v, maintainer):
+  every length in meters is given in yards and every length in centimeters
+  in inches, throughout the app, never feet or miles.** Under 10 m the yards
+  carry one decimal (1 m is 1.1 yd, 5 m 5.5 yd, the child-restraint 1.50 m
+  1.6 yd), 10 to 99 m whole yards, 100 m and up to the nearest 5 (500 m is
+  545 yd). Applied to the Reference page, the English notes (topics 04, 09,
+  12, 13, 19, 21) and the explanations; the category notes say to multiply
+  meters by 1.1 and divide centimeters by 2.5. `validate_data.py` refuses
+  a `us` that breaks it, and `check_us_units.js` sweeps every English note
+  and explanation for a meter given in feet or miles (the previous release
+  fails three of its checks). The explanations of 24104 and 24105 give the
   inches in English only, and topic 21's English half writes 30 cm as
   "30 cm (12 in)", the way it already wrote 50 cm and 20 cm. The mirror row
   names 24104's 50 cm through `wrong`, and the 30 cm row now names the

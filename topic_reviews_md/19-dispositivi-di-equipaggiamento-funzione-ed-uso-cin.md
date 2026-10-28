@@ -49,7 +49,7 @@ This topic covers the safety gear in and on a vehicle. It includes **seatbelts, 
 
 ## Child restraints
 
-- A child **under 1.50 m (4 ft 11 in)** must be secured by an **approved child restraint** suited to their height and weight.
+- A child **under 1.50 m (1.6 yd)** must be secured by an **approved child restraint** suited to their height and weight.
 - That holds on **urban trips**, at **any speed**, and in the **front seats** as in the back, even within the driver's reach. <!-- q: 24370 24371 24372 -->
 - A child under 1.50 m may never ride **in an adult's arms**, in front or in the back. A belted adult does not make it safe. <!-- q: 24362 24373 -->
 - The **adult belt** is no substitute for the restraint, whatever the child's height below 1.50 m. <!-- q: 24374 -->

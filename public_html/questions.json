@@ -43686,7 +43686,7 @@
         "italian_text": "Il carico deve essere sistemato sui motocicli in modo da non sporgere lateralmente di oltre 50 cm",
         "answer": "VERO",
         "english_translation": "The load must be arranged on motorcycles so as not to protrude laterally by more than 50 cm.",
-        "explanation": "True. On a motorcycle the load must not stick out sideways by more than 50 cm (about 20 inches). It also must not trail more than 50 cm beyond the rear, and must never block your view or cover the lights and plate.",
+        "explanation": "True. On a motorcycle the load must not stick out sideways by more than 50 cm (20 in). It also must not trail more than 50 cm beyond the rear, and must never block your view or cover the lights and plate.",
         "explanation_it": "Vero. Su un motociclo il carico non deve sporgere lateralmente di oltre 50 cm. Non deve nemmeno sporgere oltre 50 cm dal retro, né ostacolare la visuale o coprire luci e targa."
       },
       {
@@ -43782,7 +43782,7 @@
         "italian_text": "Sui motocicli in nessun caso è consentito trasportare un carico",
         "answer": "FALSO",
         "english_translation": "On motorcycles it is not permitted in any case to carry a load.",
-        "explanation": "False. A motorcycle may carry a load, within limits. The load must be firmly secured and must not block the rider's view. It must not project more than 50 cm (about 20 inches) sideways or lengthwise beyond the vehicle. Within those limits even animals may travel, in a proper cage.",
+        "explanation": "False. A motorcycle may carry a load, within limits. The load must be firmly secured and must not block the rider's view. It must not project more than 50 cm (20 in) sideways or lengthwise beyond the vehicle. Within those limits even animals may travel, in a proper cage.",
         "explanation_it": "Falso. Sul motociclo il carico è ammesso, entro certi limiti. Il carico deve essere saldamente assicurato e non deve limitare la visibilità del conducente. Non deve sporgere di oltre 50 cm lateralmente né in lunghezza rispetto al veicolo. Entro questi limiti si possono trasportare anche animali, purché in un'apposita gabbia."
       },
       {
@@ -48791,7 +48791,7 @@
         "italian_text": "In caso di fermata su strada urbana in cui non esiste il marciapiede rialzato, il conducente deve collocare il veicolo il più vicino possibile al margine destro della carreggiata",
         "answer": "FALSO",
         "english_translation": "In case of a stop on an urban road where there is no raised sidewalk, the driver must place the vehicle as close as possible to the right margin of the carriageway.",
-        "explanation": "False. The one-meter rule applies to a stop (fermata) just as it does to parking (sosta): art. 157 c. 2 of the Code gives one rule for both. On a town road with no raised sidewalk you do not hug the right margin; you leave at least 1 m (3 ft) between the vehicle and the edge so pedestrians can pass. Hugging the right margin is the rule outside built-up areas, where you cannot get off the carriageway.",
+        "explanation": "False. The one-meter rule applies to a stop (fermata) just as it does to parking (sosta): art. 157 c. 2 of the Code gives one rule for both. On a town road with no raised sidewalk you do not hug the right margin; you leave at least 1 m (1.1 yd) between the vehicle and the edge so pedestrians can pass. Hugging the right margin is the rule outside built-up areas, where you cannot get off the carriageway.",
         "explanation_it": "Falso. La regola del metro vale per la fermata come per la sosta: l'art. 157 c. 2 del Codice dà una sola regola per entrambe. Su una strada urbana senza marciapiede rialzato non si rasenta il margine destro; si lascia almeno 1 m tra il veicolo e il margine per il passaggio dei pedoni. Tenersi il più vicino possibile al margine destro è la regola fuori dei centri abitati, quando non si può uscire dalla carreggiata."
       },
       {
@@ -48882,7 +48882,7 @@
         "italian_text": "La fermata è vietata lungo il margine sinistro di una carreggiata a senso unico di circolazione",
         "answer": "FALSO",
         "english_translation": "Stopping is prohibited along the left margin of a one-way carriageway.",
-        "explanation": "False. On a one-way carriageway the left margin is expressly opened to both fermata and sosta, provided at least 3 m (10 ft) of carriageway, room for a file of traffic, stays free.",
+        "explanation": "False. On a one-way carriageway the left margin is expressly opened to both fermata and sosta, provided at least 3 m (3.3 yd) of carriageway, room for a file of traffic, stays free.",
         "explanation_it": "Falso. Su una carreggiata a senso unico il margine sinistro è espressamente ammesso sia per la fermata sia per la sosta, purché restino liberi almeno 3 m di carreggiata, lo spazio per una fila di veicoli."
       },
       {
@@ -48963,7 +48963,7 @@
         "italian_text": "Fuori dei centri abitati, la fermata è vietata in corrispondenza e in prossimità delle aree di intersezione",
         "answer": "VERO",
         "english_translation": "Outside built-up areas, stopping is prohibited at and near intersection areas.",
-        "explanation": "True. Outside built-up areas the ban covers the whole junction area and its vicinity; in town the same idea is made precise as a 5 m (16 ft) band around the intersection.",
+        "explanation": "True. Outside built-up areas the ban covers the whole junction area and its vicinity; in town the same idea is made precise as a 5 m (5.5 yd) band around the intersection.",
         "explanation_it": "Vero. Fuori dai centri abitati il divieto copre l'intera area di intersezione e le sue vicinanze; in città la stessa idea diventa precisa: una fascia di 5 m attorno all'incrocio."
       },
       {
@@ -48971,7 +48971,7 @@
         "italian_text": "Nei centri abitati, la fermata e la sosta sono vietate in corrispondenza delle aree di intersezione e in prossimità di esse a meno di 5 metri, salvo diversa segnalazione.",
         "answer": "VERO",
         "english_translation": "In built-up areas, stopping and parking are prohibited at intersection areas and near them within 5 meters, unless otherwise signaled.",
-        "explanation": "True. In town the vague 'vicinity' used outside built-up areas becomes an exact figure: fermata and sosta are banned at the junction and within 5 m (16 ft) of it, unless signs provide otherwise.",
+        "explanation": "True. In town the vague 'vicinity' used outside built-up areas becomes an exact figure: fermata and sosta are banned at the junction and within 5 m (5.5 yd) of it, unless signs provide otherwise.",
         "explanation_it": "Vero. In città la generica 'prossimità' usata fuori dai centri abitati diventa una misura esatta: fermata e sosta sono vietate all'incrocio ed entro 5 m da esso, salvo diversa segnalazione."
       },
       {
@@ -49235,7 +49235,7 @@
         "italian_text": "Salvo diversa segnalazione il conducente, in caso di sosta nei centri abitati, deve collocare il veicolo il più vicino possibile al margine destro della carreggiata, parallelamente ad esso e secondo il senso di marcia, purché esista il marciapiede rialzato",
         "answer": "VERO",
         "english_translation": "Unless otherwise signaled the driver, in case of parking in built-up areas, must place the vehicle as close as possible to the right edge of the carriageway, parallel to it and according to the direction of travel, provided that a raised sidewalk exists.",
-        "explanation": "True. Where a raised sidewalk exists, pedestrians have their own protected path, so the vehicle may hug the right edge, parallel to it and facing the direction of travel; without a raised sidewalk you must instead leave at least 1 m (3 ft) for pedestrians. That spot, the curb, is on the carriageway, at its edge. The carriageway is for driving, and in town parking is allowed on it only there.",
+        "explanation": "True. Where a raised sidewalk exists, pedestrians have their own protected path, so the vehicle may hug the right edge, parallel to it and facing the direction of travel; without a raised sidewalk you must instead leave at least 1 m (1.1 yd) for pedestrians. That spot, the curb, is on the carriageway, at its edge. The carriageway is for driving, and in town parking is allowed on it only there.",
         "explanation_it": "Vero. Dove esiste il marciapiede rialzato i pedoni hanno un percorso protetto, quindi il veicolo può accostarsi al margine destro, parallelo ad esso e nel senso di marcia; senza marciapiede rialzato bisogna invece lasciare almeno 1 m per i pedoni. Quel punto, lungo il cordolo, è sulla carreggiata, al suo margine. La carreggiata è destinata alla marcia, e in città la sosta vi è ammessa solo lì."
       },
       {
@@ -49283,7 +49283,7 @@
         "italian_text": "In caso di sosta in un centro abitato, il conducente deve collocare il veicolo il più vicino possibile al margine destro della carreggiata, anche dove non esiste il marciapiede rialzato",
         "answer": "FALSO",
         "english_translation": "In case of parking in a built-up area, the driver must place the vehicle as close as possible to the right edge of the carriageway, even where there is no raised sidewalk.",
-        "explanation": "False. The trick is 'anche' (even). In a built-up area, you must park close to the right edge only where there is a raised sidewalk; without one, you must instead leave at least 1 m (3 ft) for pedestrians. Read the whole sentence: strike «anche dove non esiste il marciapiede rialzato» and what is left is true; the added words are what make the statement false.",
+        "explanation": "False. The trick is 'anche' (even). In a built-up area, you must park close to the right edge only where there is a raised sidewalk; without one, you must instead leave at least 1 m (1.1 yd) for pedestrians. Read the whole sentence: strike «anche dove non esiste il marciapiede rialzato» and what is left is true; the added words are what make the statement false.",
         "explanation_it": "Falso. Il trucco è 'anche' (anche se). In centro abitato, devi parcheggiare vicino al margine destro solo dove esiste un marciapiede rialzato; senza di esso, bisogna invece lasciare almeno 1 m per i pedoni. Leggi tutta la frase: togli «anche dove non esiste il marciapiede rialzato» e ciò che resta è vero; sono le parole aggiunte a rendere falsa l'affermazione.",
         "clause": {
           "text": "anche dove non esiste il marciapiede rialzato",
@@ -49322,7 +49322,7 @@
         "italian_text": "Nelle strade urbane a senso unico di marcia, la sosta è consentita anche lungo il margine sinistro della carreggiata, purché rimanga uno spazio sufficiente al transito almeno di una fila di veicoli",
         "answer": "VERO",
         "english_translation": "On one-way urban streets, parking is permitted also along the left edge of the carriageway, provided that sufficient space remains for the passage of at least one lane of vehicles.",
-        "explanation": "True. On a one-way street no traffic comes the other way, so the code opens the left edge to parking as well, on one condition: at least one file of vehicles, in practice 3 m (10 ft) of carriageway, must still get through.",
+        "explanation": "True. On a one-way street no traffic comes the other way, so the code opens the left edge to parking as well, on one condition: at least one file of vehicles, in practice 3 m (3.3 yd) of carriageway, must still get through.",
         "explanation_it": "Vero. In una strada a senso unico non arriva traffico in senso opposto, quindi il codice ammette la sosta anche lungo il margine sinistro, a una condizione: deve poter passare ancora almeno una fila di veicoli, in pratica 3 m di carreggiata."
       },
       {
@@ -49330,7 +49330,7 @@
         "italian_text": "Nelle strade urbane a senso unico di marcia, la sosta è consentita anche lungo il margine sinistro della carreggiata, purché rimanga uno spazio non inferiore a tre metri di larghezza per il transito dei veicoli",
         "answer": "VERO",
         "english_translation": "On one-way urban streets, parking is permitted also along the left edge of the carriageway, provided that a space of not less than three meters in width remains for vehicle passage.",
-        "explanation": "True. The 3 m (10 ft) figure is the practical measure of the condition: enough carriageway for one file of vehicles must remain, and only on a one-way street may you use the left edge at all.",
+        "explanation": "True. The 3 m (3.3 yd) figure is the practical measure of the condition: enough carriageway for one file of vehicles must remain, and only on a one-way street may you use the left edge at all.",
         "explanation_it": "Vero. I 3 m sono la misura pratica della condizione: deve restare carreggiata sufficiente per una fila di veicoli, e solo in una strada a senso unico si può usare il margine sinistro."
       },
       {
@@ -49532,7 +49532,7 @@
         "italian_text": "Fuori dei centri abitati, la sosta e la fermata sono vietate in corrispondenza e in prossimità delle aree di intersezione",
         "answer": "VERO",
         "english_translation": "Outside built-up areas, parking and stopping are forbidden at and near intersection areas.",
-        "explanation": "True. Outside built-up areas the ban covers the whole junction area and its vicinity; in town the same idea becomes the precise 5 m (16 ft) band around the intersection.",
+        "explanation": "True. Outside built-up areas the ban covers the whole junction area and its vicinity; in town the same idea becomes the precise 5 m (5.5 yd) band around the intersection.",
         "explanation_it": "Vero. Fuori dai centri abitati il divieto copre l'intera area di intersezione e le sue vicinanze; in città la stessa idea diventa la fascia precisa di 5 m attorno all'incrocio."
       },
       {
@@ -49576,7 +49576,7 @@
         "italian_text": "Fuori dei centri abitati, la sosta è vietata in corrispondenza delle aree di intersezione ma non in loro prossimità",
         "answer": "FALSO",
         "english_translation": "Outside built-up areas, parking is forbidden at intersection areas but not near them.",
-        "explanation": "False. Outside built-up areas the ban covers the junction and its vicinity alike; the exact 5 m (16 ft) limit is the in-town version of the same rule. Read the whole sentence: strike «ma non in loro prossimità» and what is left is true; the added words are what make the statement false.",
+        "explanation": "False. Outside built-up areas the ban covers the junction and its vicinity alike; the exact 5 m (5.5 yd) limit is the in-town version of the same rule. Read the whole sentence: strike «ma non in loro prossimità» and what is left is true; the added words are what make the statement false.",
         "explanation_it": "Falso. Fuori dai centri abitati il divieto copre sia l'incrocio sia le sue vicinanze; il limite esatto di 5 m è la versione urbana della stessa regola. Leggi tutta la frase: togli «ma non in loro prossimità» e ciò che resta è vero; sono le parole aggiunte a rendere falsa l'affermazione.",
         "clause": {
           "text": "ma non in loro prossimità",

@@ -119,7 +119,7 @@ These are the **reaction-distance** figures (the meters covered in **one second*
 
 $$ safe distance ≈ (speed ÷ 10) × 3 $$
 
-- **30 km/h (19 mph)** gives about **9 m (10 yd)**. <!-- q: 22578 22583 -->
+- **30 km/h (19 mph)** gives about **9 m (9.8 yd)**. <!-- q: 22578 22583 -->
 - **50 km/h (31 mph)** gives about **14 m (15 yd)**. <!-- q: 22579 22584 22594 22599 -->
 - **100 km/h (62 mph)** gives about **28 m (31 yd)**. <!-- q: 22580 22585 22595 22600 -->
 - **130 km/h (81 mph)** gives about **36 m (39 yd)**. <!-- q: 22582 22586 22596 22601 -->

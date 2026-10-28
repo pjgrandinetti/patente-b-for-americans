@@ -626,15 +626,16 @@ if isinstance(refdata, dict):
         # us is the rounded US equivalent of a length, shown to an English
         # reader only (reviewer flag 24104, 2026-09-30).
         if n.get("us") is not None:
-            if n.get("cat") not in ("distance", "size") or not re.fullmatch(r"[0-9/ ]+ (in|ft|yd|mi)( [0-9]+ in)?", n["us"]):
-                err(f"{where}: us must be a length in in, ft, yd or mi on a distance or size row")
-            # The house standard (docs/review-glossary.md, imperial bridges):
-            # road distances in YARDS, which an American knows and which is
-            # close to a meter; feet only for the short ones, under 9 m
-            # (maintainer, 2026-10-28, on "500 m (1/3 mi)").
-            mm = re.fullmatch(r"(\d+) m", n.get("value", ""))
-            if n.get("cat") == "distance" and mm and int(mm.group(1)) >= 9 and not n["us"].endswith(" yd"):
-                err(f"{where}: a road distance of 9 m or more takes its US equivalent in yards, not {n['us']!r}")
+            if n.get("cat") not in ("distance", "size") or not re.fullmatch(r"[0-9.]+ (in|yd)", n["us"]):
+                err(f"{where}: us must be a length in in or yd on a distance or size row")
+            # The house standard (maintainer, 2026-10-28): a length in meters
+            # gives its US equivalent in YARDS, which an American knows and
+            # which is close to a meter, and a length in centimeters gives
+            # inches. Never feet or miles.
+            if re.fullmatch(r"[0-9]+(,[0-9]+)? m", n.get("value", "")) and not n["us"].endswith(" yd"):
+                err(f"{where}: a length in meters takes its US equivalent in yards, not {n['us']!r}")
+            if re.fullmatch(r"[0-9]+ cm", n.get("value", "")) and not n["us"].endswith(" in"):
+                err(f"{where}: a length in centimeters takes its US equivalent in inches, not {n['us']!r}")
         for f in ("en", "it", "value"):
             if not (n.get(f) or "").strip():
                 err(f"{where}: empty {f}")

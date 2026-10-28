@@ -82,7 +82,7 @@ Do not over-apply the bans.
 
 - The sosta-only bans above leave the halt allowed: at a driveway, at waste bins, at an open fuel station, on market and loading areas, and in second row if it obstructs nobody.
 - A halt is allowed along the **right margin**, and there is **no** blanket ban at night. <!-- q: 23672 23697 -->
-- On a **one-way urban road**, parking is allowed along the **left margin** too, provided at least **3 m (10 ft)** of carriageway, room for a file of traffic, stays free. It is not allowed always. A halt along the left margin of a one-way road is allowed. <!-- q: 23673 23719 23720 23723 -->
+- On a **one-way urban road**, parking is allowed along the **left margin** too, provided at least **3 m (3.3 yd)** of carriageway, room for a file of traffic, stays free. It is not allowed always. A halt along the left margin of a one-way road is allowed. <!-- q: 23673 23719 23720 23723 -->
 - Parking in town does not require marked parking spots. In a designated parking zone, place the vehicle as the signs and markings prescribe, and where **parking spots are marked**, park **inside one**, never straddling the next, however briefly. <!-- q: 23721 23722 23724 23725 -->
 - In town, park at the **right margin**, parallel to it and in the direction of travel, wherever there is a raised sidewalk. <!-- q: 23710 -->
 
