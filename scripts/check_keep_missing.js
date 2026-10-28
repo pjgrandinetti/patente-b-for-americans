@@ -111,6 +111,7 @@ setTimeout(()=>{
   const rd0=reads.find(r=>r.querySelector('.km-it').textContent===a.italian_text);
   ok(rd0 && rd0.querySelector('.km-key').textContent===a.answer,'each question shows its answer');
   ok(IT ? !rd0.querySelector('.km-en') : rd0.querySelector('.km-en').textContent===a.english_translation,IT?'an Italian browser gets no English':'and its English');
+  ok(rd0.querySelector('.km-expl') && (IT ? !rd0.querySelector('.km-expl-en') : !!rd0.querySelector('.km-expl-en')),'with its explanation'+(IT?' in Italian':', Italian and English'));
   ok(JSON.stringify(rec3())===rec0,'reading records nothing');
   box.querySelector('.km-mode-btn[data-mode=practice]').click();
   ok(rows().length===n0 && !!box.querySelector('.km-vf'),'Answer them brings back the practice rows');

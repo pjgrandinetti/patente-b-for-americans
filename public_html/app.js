@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261029p';
+const APP_VERSION     = '20261029q';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -14575,6 +14575,10 @@ function renderMissBreakdown() {
         `<div class="km-main"><span class="km-it">${escHtml(st.italian_text)}</span>` +
         (!it && st.english_translation ? `<span class="km-en">${escHtml(st.english_translation)}</span>` : '') +
         `<span class="km-key km-key-${st.answer === 'VERO' ? 'v' : 'f'}">${escHtml(st.answer)}</span>` +
+        // The explanation (20261029q, maintainer): Italian, then the English
+        // for a non-Italian browser, as an opened practice row shows them.
+        (st.explanation_it ? `<div class="km-expl">${explHtml(st.explanation_it)}</div>` : '') +
+        (!it && st.explanation ? `<div class="km-expl km-expl-en">${explHtml(st.explanation)}${readingHtml(st)}</div>` : '') +
         (reviewFor(q.topic) ? ` <button type="button" class="stmt-it-btn km-book" data-qid="${escHtml(String(q.id))}" data-num="${escHtml(String(st.number))}">${escHtml(t('review.notes'))}</button>` : '') +
         `</div></div>`;
       continue;
