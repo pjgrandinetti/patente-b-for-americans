@@ -80,6 +80,7 @@ Which limit belongs to which category is worth fixing in mind, because the law c
 - B96 is earned by a driving test on such a combination, and no theory exam is needed. Unlike BE, it may be taken **at the same time as B** or at any point afterwards. It presupposes no other category. <!-- q: 24558 24559 24564 -->
 - Code 96 is valid throughout the EU and not in Italy alone. It adds a trailer and nothing else: no motorcycle and no articulated vehicle. <!-- q: 24562 24563 24566 -->
 - **BE, the trailer E on category B.** It covers a vehicle of up to **3.5 t** towing a trailer of up to **3,500 kg**, so the combination may reach **7 t**, well above the 4,250 kg of B96. The towing vehicle itself never exceeds 3.5 t on BE, and the trailer never exceeds 3,500 kg. <!-- q: 24567 24568 24569 24571 24572 24575 -->
+- BE is earned by a driving test on such a combination, and no theory exam is needed for someone who already holds B.
 - BE cannot be earned together with B, so you must already hold B and then pass the separate BE test. Its minimum age is that of B, 18. <!-- q: 24576 -->
 - By containment BE covers what AM, B1, B and B96 cover, but not A, and it does not cover a **minibus** towing a trailer, which is D1E or DE ground. A minibus here is a small bus, with more than nine seats including the driver. A van with up to nine seats is an *autovettura*, and BE does cover it. <!-- q: 24570 24573 24574 -->
 - BE's validity runs on the **same schedule as B**.
@@ -294,6 +295,7 @@ Vale la pena fissare quale limite appartiene a quale categoria, perché la legge
 - La B96 si consegue con una prova di guida su un complesso di quel tipo, e non serve un esame di teoria. A differenza della BE, si può sostenere **contestualmente alla B** o in qualsiasi momento successivo. Non presuppone alcun'altra categoria.
 - Il codice 96 vale in tutta l'Unione Europea e non solo in Italia. Aggiunge un rimorchio e nient'altro: nessun motociclo e nessun autosnodato.
 - **La BE, cioè la E del rimorchio sulla categoria B.** Copre un veicolo fino a **3,5 t** che traina un rimorchio fino a **3.500 kg**, quindi il complesso può arrivare a **7 t**, ben oltre i 4.250 kg della B96. Con la BE il veicolo trainante non supera mai 3,5 t, e il rimorchio non supera mai 3.500 kg.
+- La BE si consegue con una prova di guida su un complesso di quel tipo, e non serve un esame di teoria per chi ha già la B.
 - La BE non si può conseguire insieme alla B, quindi devi già avere la B e poi superare la prova BE separata. La sua età minima è quella della B, 18 anni.
 - Per contenimento la BE copre ciò che coprono AM, B1, B e B96, ma non la A, e non copre un **minibus** che traina un rimorchio, che rientra nella D1E o nella DE. Il minibus qui è un piccolo autobus, con più di nove posti compreso il conducente. Un pulmino fino a nove posti è un'autovettura, e la BE lo copre.
 - La validità della BE segue le **stesse scadenze della B**.

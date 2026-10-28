@@ -5533,6 +5533,15 @@ to areas open to the public, and the two Reference rows whose only source was
   `draw_distances.py` are deleted; the box stays, text only (`fig` is now
   optional on `remember`). Do not draw it again unasked.
   **The distances' text box was removed too, in 20261028s** (maintainer).
+  **B96 and BE need no theory exam (20261029h, 20261029i, maintainer's
+  questions).** Topic 22 says in both halves that B96 is earned by a driving
+  test with no theory exam (24558, 24559) and that BE is too, for someone
+  who already holds B. The BE fact is tested by no statement and is not in
+  the Code's text (art. 121 states the two tests in general); it rests on a
+  regional Motorizzazione page (Regione FVG, "Ammissione all'esame") and
+  driving-school guides, which add that a B theory exam taken before
+  1 December 2013 brings a short oral check during the BE test. Re-check it
+  if the Ministry's exam rules change.
   Only the speeds carry a `remember` box now.
   **An emergency halt is never parking (20261023m, maintainer, 2026-10-23).**
   Topic 21's emergency-lane bullet, 20955 and 23903 now say the three hours
