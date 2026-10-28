@@ -2642,6 +2642,11 @@ behind what shipped:
   today is optional. The Still waiting row, Continue the review and the
   pool table are left out; the figures link stays, outside the table
   (`examFiguresLinkHtml`).
+  **The day before and the day itself say *In bocca al lupo!*
+  (20261028b, maintainer)**, a line of its own under the advice
+  (`examdate.wish`, `.exam-date-wish`), in Italian for every browser and
+  with no English gloss: it is the phrase the learner will hear from the
+  school, and a translation would flatten it.
   **The box is three parts since 20261023h** (maintainer, 2026-10-23: one
   paragraph had grown, with numbers scattered through it): the date as a
   line of its own, the advice paragraph (`examdate.pace` or `paceNear`,

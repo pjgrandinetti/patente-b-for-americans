@@ -30,7 +30,7 @@ setTimeout(()=>{
   w.setExamDate(key(7)); draw(sheets(good));
   ok(/(With the exam this close, do as much of the review as you can|Con l\u2019esame cos\u00ec vicino, fai quanto pi\u00f9 ripasso riesci)/.test(box().textContent) && !/(hour a day|ora al giorno)/.test(box().textContent),'seven days out the hour goes and the box asks for as much review as possible, in sittings (20261023g)');
   w.setExamDate(key(8)); draw(sheets(good));
-  ok(/(hour a day|ora al giorno)/.test(box().textContent),'eight days out the hour a day stands');
+  ok(/(hour a day|ora al giorno)/.test(box().textContent) && !box().querySelector('.exam-date-wish'),'eight days out the hour a day stands, and no wish yet');
   w.setExamDate(key(9)); draw(sheets(good));
   ok(/^(none left|nessuna)$/.test(box().querySelector('[data-row=review] dd').textContent) && !box().querySelector('[data-row=waiting]') && !box().querySelector('[data-ed=review]'),'with nothing to review the box says so and offers no button');
   ok(w.buildProgressBundle().settings.examDate===key(9),'the date rides in the synced settings');
@@ -45,7 +45,9 @@ setTimeout(()=>{
   ok(!$('exam-ready-banner').classList.contains('hidden') && $('exam-ready-banner').classList.contains('banner-warn'),'and the warning banner still shows above it');
   w.localStorage.setItem('patente_exam_date',key(1)); draw(sheets(good)); ok(/(tomorrow|domani)/.test(box().textContent),'one day out: tomorrow');
   ok(/(Go lightly today|Oggi vai leggero)/.test(box().textContent) && !/(With the exam this close|Con l\u2019esame cos\u00ec vicino)/.test(box().textContent) && !box().querySelector('details.exam-date-pool, [data-row=waiting], [data-ed=more]'),'the day before: go lightly, with no waiting count, no extra review and no table of days (20261028a)');
+  ok(box().querySelector('.exam-date-wish') && box().querySelector('.exam-date-wish').textContent==='In bocca al lupo!','the day before: in bocca al lupo, in Italian for every browser (20261028b)');
   w.localStorage.setItem('patente_exam_date',key(0)); draw(sheets(good)); ok(/(is today|è oggi)/.test(box().textContent) && !/(a day|al giorno)/.test(box().textContent),'the day itself: today, no pacing');
+  ok(box().querySelector('.exam-date-wish') && box().querySelector('.exam-date-wish').textContent==='In bocca al lupo!','the day itself: in bocca al lupo');
   w.localStorage.setItem('patente_exam_date',key(-1)); draw(sheets(good)); ok(w.examDate()===null && box().querySelector('input'),'a date that has passed is dropped and asked for again');
   w.localStorage.setItem('patente_exam_date',key(5)); draw(sheets(good)); box().querySelector('[data-ed=change]').click();
   ok(box().querySelector('input').value===key(5) && box().querySelector('[data-ed=remove]'),'Change reopens the field with the date, and offers Remove');

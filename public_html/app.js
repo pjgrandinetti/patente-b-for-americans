@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261028a';
+const APP_VERSION     = '20261028b';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -396,6 +396,7 @@ const T = {
   'examdate.pace': { en: 'To stay prepared, plan on about an hour a day: the questions set for review, then one mock exam. Time left over is best spent continuing the review.', it: 'Per restare preparato, prevedi circa un\u2019ora al giorno: le domande da ripassare, poi una simulazione. Il tempo che avanza \u00e8 meglio spenderlo continuando il ripasso.' },
   'examdate.paceNear': { en: 'With the exam this close, do as much of the review as you can, in two or three sittings a day, and one mock exam a day. Go lightly on the day before.', it: 'Con l\u2019esame cos\u00ec vicino, fai quanto pi\u00f9 ripasso riesci, in due o tre sedute al giorno, e una simulazione al giorno. Il giorno prima vai leggero.' },
   'examdate.paceLast': { en: 'Go lightly today. Do the day\u2019s review once, look over the figures you keep missing, and get a full night\u2019s sleep. A mock exam today is optional.', it: 'Oggi vai leggero. Fai una volta il ripasso di oggi, rivedi le cifre che continui a sbagliare e dormi una notte piena. La simulazione di oggi \u00e8 facoltativa.' },
+  'examdate.wish': { en: 'In bocca al lupo!', it: 'In bocca al lupo!' },
   'examdate.reviewStart': { en: 'Start the review', it: 'Inizia il ripasso' },
   'examdate.reviewContinue': { en: 'Continue the review', it: 'Continua il ripasso' },
   'examdate.poolRule': { en: 'A question leaves the review once you answer it correctly on {0} different days.', it: 'Una domanda esce dal ripasso quando rispondi correttamente in {0} giorni diversi.' },
@@ -7783,7 +7784,10 @@ function renderExamDate(atBar) {
     row('mock', 'examdate.rowMock', todayN > 1 ? t('examdate.vTakenN', todayN) : todayN ? t('examdate.vTaken') : t('examdate.vNotYet')) +
     `</dl>` : '';
   box.innerHTML = `<div class="exam-date-text"><strong>${escHtml(head)}</strong>` +
-    (n > 0 ? `<p class="exam-date-advice">${escHtml(t(last ? 'examdate.paceLast' : n <= EXAM_NEAR_DAYS ? 'examdate.paceNear' : 'examdate.pace'))}</p>` : '') + today + `</div>` +
+    (n > 0 ? `<p class="exam-date-advice">${escHtml(t(last ? 'examdate.paceLast' : n <= EXAM_NEAR_DAYS ? 'examdate.paceNear' : 'examdate.pace'))}</p>` : '') +
+    // The day before and the day itself wish the learner well, in Italian
+    // for every browser (20261028b, maintainer, 2026-10-28).
+    (n <= 1 ? `<p class="exam-date-wish" lang="it">${escHtml(t('examdate.wish'))}</p>` : '') + today + `</div>` +
     (n > 0 && left > 0 ? `<button type="button" class="btn-primary" data-ed="review">${escHtml(t('examdate.reviewStart'))}</button>` : '') +
     (n > 0 && !last && left === 0 && pool > 0 ? `<button type="button" class="btn-secondary" data-ed="more">${escHtml(t('examdate.reviewContinue'))}</button>` : '') +
     `<button type="button" class="link-btn" data-ed="change">${escHtml(t('examdate.change'))}</button>` +
