@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261028b';
+const APP_VERSION     = '20261028c';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -454,7 +454,8 @@ const T = {
   'trend.tipN': { en: 'Mock exam {0}', it: 'Simulazione {0}' },
   'trend.tipWrong': { en: 'Correct: {0}', it: 'Esatte: {0}' },
   'trend.tipAvg': { en: 'Average: {0}', it: 'Media: {0}' },
-  'trend.avgRange': { en: 'Where your next score should fall, 9 chances in 10', it: 'Dove dovrebbe cadere il prossimo punteggio, 9 probabilit\u00e0 su 10' },
+  'trend.avgRange': { en: 'Where your next score should fall, 90 chances in 100', it: 'Dove dovrebbe cadere il prossimo punteggio, 90 probabilit\u00e0 su 100' },
+  'trend.avgRange30': { en: 'Where your next score should fall, 95 chances in 100', it: 'Dove dovrebbe cadere il prossimo punteggio, 95 probabilit\u00e0 su 100' },
   'trend.tipNext': { en: 'Next score: {0} to {1}', it: 'Prossimo punteggio: da {0} a {1}' },
   'trend.tipOpen': { en: 'Tap or click to see this exam below.', it: 'Tocca o fai clic per vedere questa simulazione qui sotto.' },
   'trend.bandShort': { en: 'You are ready when the whole band is above the pass line. Its lower edge is at {0}.', it: 'Sei pronto quando tutta la fascia \u00e8 sopra la soglia. Il suo bordo inferiore \u00e8 a {0}.' },
@@ -10637,10 +10638,15 @@ function drawMockTrend() {
     lines: [{ cls: 'is-main', end: true, pts: shown.map(r => ({ x: r.i, y: Q - r.mean })) }],
   };
   const edge = last.next ? Q - last.next.hi : null;
+  // The band is mean ± h, one chance in 20 beyond each edge. When its upper
+  // edge passes 30 the chart stops it at 30, and the chance that lay above
+  // the edge, on scores that cannot happen, falls inside: the range shown
+  // then holds 95 chances in 100, not 90 (20261028c, maintainer).
+  const atTop = last.next && Q - last.next.lo > Q;
   body.innerHTML =
     `<div class="trend-chart" data-chart="wrong"><p class="guess-head">${escHtml(c1.title)}</p>` +
       `<div class="trend-legend">${key('is-dot is-pass', t('trend.dotPass'))}${key('is-dot is-edge', t('trend.dotEdge', Q - EXAM_MAX_WRONG))}${key('is-dot is-fail', t('trend.dotFail'))}${key('is-main', t('trend.avg', win) + ': ' + f1(Q - last.mean))}` +
-        `${last.next ? key('is-band', t('trend.avgRange') + ': ' + f1(edge) + '\u2013' + f1(Math.min(Q, Q - last.next.lo))) : ''}` +
+        `${last.next ? key('is-band', t(atTop ? 'trend.avgRange30' : 'trend.avgRange') + ': ' + f1(edge) + '\u2013' + f1(Math.min(Q, Q - last.next.lo))) : ''}` +
         `${key('is-level', t('trend.pass', passMark))}</div>` +
       `<div class="trend-plot">${trendChartSvg(W, c1)}<div class="trend-tip hidden"></div></div>` +
       (edge != null ? `<p class="weak-note trend-band-note">${escHtml(edge >= passMark - 0.5 ? t('trend.bandReady') : t('trend.bandShort', f1(edge)))}</p>` : '') +

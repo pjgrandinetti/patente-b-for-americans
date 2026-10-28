@@ -110,6 +110,11 @@ setTimeout(()=>{
   ok(/(vary a lot|variano molto)/.test($('exam-trend').querySelector('.trend-verdict').textContent),'erratic results: steadier scores');
   { const good=[1,0,1,1,0,2,1,0,1,1,0,1,1,0,1]; set(good.map((x,i)=>sheet(i,x,x,540)));
     const r=w.mockTrendData()[14]; ok(w.mockRecentForm(15,15).chance>=0.95 && 30-r.next.hi>=26.5 && /(whole band is above|Tutta la fascia)/.test($('exam-trend').querySelector('.trend-band-note').textContent) && !$('exam-trend').querySelector('.trend-verdict'),'at the banner\'s bar the whole band clears the pass line, and the note says so'); }
+  { const band=()=>(($('exam-trend').querySelector('.trend-swatch.is-band')||{}).parentElement||{}).textContent||'';
+    set([1,0,1,1,0,2,1,0,1,1,0,1,1,0,1].map((x,i)=>sheet(i,x,x,540)));
+    ok(30-w.mockTrendData()[14].next.lo>30 && /(95 chances in 100|95 probabilità su 100)/.test(band()) && /[–-]30[.,]0$/.test(band()),'a band reaching 30 holds 95 chances in 100: '+band());
+    set([5,6,4,5,6,5,4,5,6,5].map((x,i)=>sheet(i,x,x,540)));
+    ok(30-w.mockTrendData()[9].next.lo<30 && /(90 chances in 100|90 probabilità su 100)/.test(band()),'a band ending below 30 holds 90 chances in 100: '+band()); }
   set([1,0,2].map((x,i)=>sheet(i,x,x,540))); ok($('exam-trend').classList.contains('hidden'),'three mocks: no trend box');
   set([1,0,2,1].map((x,i)=>sheet(i,x,x,540))); ok(!$('exam-trend').classList.contains('hidden'),'four mocks: the box appears');
   console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);
