@@ -109,7 +109,7 @@ setTimeout(()=>{
   set([0,6,0,7,1,0,6,0,5,0].map((x,i)=>sheet(i,x,x,540))); 
   ok(/(vary a lot|variano molto)/.test($('exam-trend').querySelector('.trend-verdict').textContent),'erratic results: steadier scores');
   { const good=[1,0,1,1,0,2,1,0,1,1,0,1,1,0,1]; set(good.map((x,i)=>sheet(i,x,x,540)));
-    const r=w.mockTrendData()[14]; ok(w.mockRecentForm(15,15).chance>=0.95 && 30-r.next.hi>=26.5 && /(Every score in the range is 27 or more|Ogni punteggio dell’intervallo è 27 o più)/.test($('exam-trend').querySelector('.trend-band-note').textContent) && !$('exam-trend').querySelector('.trend-verdict'),'at the banner\'s bar the whole band clears the pass line, and the note says so'); }
+    const r=w.mockTrendData()[14]; ok(w.mockRecentForm(15,15).chance>=0.95 && 30-r.next.hi>=26.5 && !$('exam-trend').querySelector('.trend-band-note') && !$('exam-trend').querySelector('.trend-verdict'),'at the banner\'s bar the whole band clears the pass line, and no note is drawn'); }
   { const band=()=>(($('exam-trend').querySelector('.trend-swatch.is-band')||{}).parentElement||{}).textContent||'';
     const num=x=>Number(String(x).replace(',','.'));
     const parse=()=>{ const m=band().match(/(\d+(?:[.,]\d+)?) (?:chances in 100|probabilità su 100): (\d+)–(\d+)$/); return m&&{pct:num(m[1]),lo:+m[2],hi:+m[3]}; };

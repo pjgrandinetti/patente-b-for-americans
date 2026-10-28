@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261028f';
+const APP_VERSION     = '20261028g';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -458,7 +458,6 @@ const T = {
   'trend.tipNext': { en: 'Next score: {0} to {1}', it: 'Prossimo punteggio: da {0} a {1}' },
   'trend.tipOpen': { en: 'Tap or click to see this exam below.', it: 'Tocca o fai clic per vedere questa simulazione qui sotto.' },
   'trend.bandShort': { en: 'You are ready when every score in the range is {0} or more. The range now starts at {1}.', it: 'Sei pronto quando ogni punteggio dell\u2019intervallo \u00e8 {0} o pi\u00f9. Ora l\u2019intervallo parte da {1}.' },
-  'trend.bandReady': { en: 'Every score in the range is {0} or more, a pass.', it: 'Ogni punteggio dell\u2019intervallo \u00e8 {0} o pi\u00f9, sopra la soglia.' },
   'trend.effortReady': { en: 'Your mock exams meet the 5% target.', it: 'Le tue simulazioni raggiungono l\u2019obiettivo del 5%.' },
   'trend.sdNote': { en: 'To move the band up, raise your average score.', it: 'Per alzare la fascia, alza la media dei tuoi punteggi.' },
   'reading.head': { en: 'The sentence, part by part:', it: 'La frase, parte per parte:' },
@@ -10668,7 +10667,10 @@ function drawMockTrend() {
         `${last.next ? key('is-band', t('trend.avgRange', shownNext.pct) + ': ' + shownNext.lo + '\u2013' + shownNext.hi) : ''}` +
         `${key('is-level', t('trend.pass', passMark))}</div>` +
       `<div class="trend-plot">${trendChartSvg(W, c1)}<div class="trend-tip hidden"></div></div>` +
-      (shownNext ? `<p class="weak-note trend-band-note">${escHtml(shownNext.lo >= passMark ? t('trend.bandReady', passMark) : t('trend.bandShort', passMark, shownNext.lo))}</p>` : '') +
+      // Only a range that starts below the pass line gets a sentence: it says what
+      // must change. A range of passing scores needs none, since the legend
+      // above already gives it (20261028g, maintainer).
+      (shownNext && shownNext.lo < passMark ? `<p class="weak-note trend-band-note">${escHtml(t('trend.bandShort', passMark, shownNext.lo))}</p>` : '') +
       // The standard deviation chart is gone (20261008o, maintainer: the
       // band already carries the spread). What it was for stays as one
       // sentence, shown only while the band is short of the line: raise the
