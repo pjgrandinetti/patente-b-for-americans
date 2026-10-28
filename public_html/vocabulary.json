@@ -3355,7 +3355,7 @@
   },
   {
    "term": "alcuni",
-   "en": "some (plural, not any)",
+   "en": "some (plural). Only the singular alcun, after non or senza, means any",
    "always": true,
    "note": null,
    "f": 16
@@ -9323,7 +9323,7 @@
   },
   {
    "term": "alcun",
-   "en": "any (after non or senza: no ... at all)",
+   "en": "any, after non or senza (so: no ... at all). The plural alcuni means some",
    "always": true,
    "f": 3
   },
@@ -33677,14 +33677,14 @@
   },
   {
    "term": "alcuna",
-   "en": "any (in a negative: no, none at all)",
+   "en": "any, after non or senza (so: no ... at all). The plural alcune means some",
    "always": true,
    "note": null,
    "f": 3
   },
   {
    "term": "alcune",
-   "en": "some (feminine plural, not any)",
+   "en": "some (feminine plural). Only the singular alcuna, after non or senza, means any",
    "always": true,
    "note": null,
    "f": 10

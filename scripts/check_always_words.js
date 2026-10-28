@@ -13,14 +13,14 @@ let fails=0; const ok=(c,m)=>{console.log((c?'ok  ':'FAIL')+' '+m); if(!c)fails+
 setTimeout(()=>{
   const words=t=>w.lookedUpWordsIn(t).map(x=>x.term+' = '+x.en);
   const a=words('I contrassegni rappresentati in figura sono applicati ad alcuni autobus');
-  ok(a.some(x=>/^alcuni = some/.test(x)),'the plural alcuni is listed with no look-up: '+a.join(' | '));
+  ok(a.some(x=>/^alcuni = some \(plural\)\. Only the singular alcun, after non or senza, means any/.test(x)),'the plural alcuni is listed with no look-up: '+a.join(' | '));
   const b=words('Nell\'incrocio rappresentato in figura il veicolo B non deve dare la precedenza ad alcun veicolo');
   ok(b.some(x=>/alcun/.test(x.split(' = ')[0]) && /\bany\b/.test(x)),'the singular after non is listed: '+b.join(' | '));
   // A removed alcuni is still listed (20261029a): the maintainer had removed it from his study list.
   w.localStorage.setItem('patente-lookups', JSON.stringify({alcuni:{term:'alcuni',en:'some',t:1,d:2}}));
   const lk=w.lookupsLog ? w.lookupsLog() : {}; const removedSeen=lk.alcuni && lk.alcuni.d>lk.alcuni.t;
   const a2=words('I contrassegni rappresentati in figura sono applicati ad alcuni autobus');
-  ok(removedSeen && a2.some(x=>/^alcuni = some \(plural/.test(x)),'listed even when removed from the study list, with the dictionary gloss: '+a2.join(' | '));
+  ok(removedSeen && a2.some(x=>/^alcuni = some \(plural\)/.test(x)),'listed even when removed from the study list, with the dictionary gloss: '+a2.join(' | '));
   // Any removed study-list word is listed too (20261029b).
   w.localStorage.setItem('patente-lookups', JSON.stringify({autobus:{term:'autobus',en:'bus',t:1,d:2}}));
   const a3=words('I contrassegni rappresentati in figura sono applicati ad alcuni autobus');

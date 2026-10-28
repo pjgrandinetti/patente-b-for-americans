@@ -5416,7 +5416,11 @@ to areas open to the public, and the two Reference rows whose only source was
   a statement that turns on it). The nine entries built on alcun carry it,
   including the phrases *dare la precedenza ad alcun veicolo* and *senza
   alcun limite*, which the highlighter matches in place of the single word;
-  the plural glosses read "some (plural, not any)". `validate_data.py`
+  each of the four single-word glosses names the other case (20261029c,
+  maintainer: "some (plural, not any)" did not say when it means any), so
+  *alcuni* reads "some (plural). Only the singular alcun, after non or
+  senza, means any" and *alcun* reads "any, after non or senza (so: no ...
+  at all). The plural alcuni means some". `validate_data.py`
   fails an alcun entry without the flag (proved by sabotage);
   `scripts/check_always_words.js`, 4 checks (the previous release fails
   one), and since 20261029a an `always` entry is listed even when the
