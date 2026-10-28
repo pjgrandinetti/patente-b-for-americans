@@ -112,7 +112,7 @@ setTimeout(()=>{
     const r=w.mockTrendData()[14]; ok(w.mockRecentForm(15,15).chance>=0.95 && 30-r.next.hi>=26.5 && !$('exam-trend').querySelector('.trend-band-note') && !$('exam-trend').querySelector('.trend-verdict'),'at the banner\'s bar the whole band clears the pass line, and no note is drawn'); }
   { const band=()=>(($('exam-trend').querySelector('.trend-swatch.is-band')||{}).parentElement||{}).textContent||'';
     const num=x=>Number(String(x).replace(',','.'));
-    const parse=()=>{ const m=band().match(/(\d+(?:[.,]\d+)?) (?:chances in 100|probabilità su 100): (\d+)–(\d+)$/); return m&&{pct:num(m[1]),lo:+m[2],hi:+m[3]}; };
+    const parse=()=>{ const m=band().match(/^(\d+(?:[.,]\d+)?)% (?:chance your next score is|di probabilità che il prossimo punteggio sia tra) (\d+) (?:to|e) (\d+)$/); return m&&{pct:num(m[1]),lo:+m[2],hi:+m[3]}; };
     // the share of a whole-score range, straight from the t, as a check on the app's arithmetic
     const shareOf=(nx,lo,hi)=>{ const at=x=>w.studentT((x-(30-nx.mean))/nx.se,nx.df); return (hi>=30?1:at(hi+0.5))-at(lo-0.5); };
     // (1) A learner at the bar whose range is 27 to 30: the share is the chance of passing, and the two figures add to 100.

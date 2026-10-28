@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261028g';
+const APP_VERSION     = '20261028h';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -454,7 +454,8 @@ const T = {
   'trend.tipN': { en: 'Mock exam {0}', it: 'Simulazione {0}' },
   'trend.tipWrong': { en: 'Correct: {0}', it: 'Esatte: {0}' },
   'trend.tipAvg': { en: 'Average: {0}', it: 'Media: {0}' },
-  'trend.avgRange': { en: 'Where your next score should fall, {0} chances in 100', it: 'Dove dovrebbe cadere il prossimo punteggio, {0} probabilit\u00e0 su 100' },
+  'trend.avgRange': { en: '{0}% chance your next score is {1} to {2}', it: '{0}% di probabilit\u00e0 che il prossimo punteggio sia tra {1} e {2}' },
+  'trend.avgRangeOne': { en: '{0}% chance your next score is {1}', it: '{0}% di probabilit\u00e0 che il prossimo punteggio sia {1}' },
   'trend.tipNext': { en: 'Next score: {0} to {1}', it: 'Prossimo punteggio: da {0} a {1}' },
   'trend.tipOpen': { en: 'Tap or click to see this exam below.', it: 'Tocca o fai clic per vedere questa simulazione qui sotto.' },
   'trend.bandShort': { en: 'You are ready when every score in the range is {0} or more. The range now starts at {1}.', it: 'Sei pronto quando ogni punteggio dell\u2019intervallo \u00e8 {0} o pi\u00f9. Ora l\u2019intervallo parte da {1}.' },
@@ -10664,7 +10665,7 @@ function drawMockTrend() {
   body.innerHTML =
     `<div class="trend-chart" data-chart="wrong"><p class="guess-head">${escHtml(c1.title)}</p>` +
       `<div class="trend-legend">${key('is-dot is-pass', t('trend.dotPass'))}${key('is-dot is-edge', t('trend.dotEdge', Q - EXAM_MAX_WRONG))}${key('is-dot is-fail', t('trend.dotFail'))}${key('is-main', t('trend.avg', win) + ': ' + f1(Q - last.mean))}` +
-        `${last.next ? key('is-band', t('trend.avgRange', shownNext.pct) + ': ' + shownNext.lo + '\u2013' + shownNext.hi) : ''}` +
+        `${last.next ? key('is-band', shownNext.lo === shownNext.hi ? t('trend.avgRangeOne', shownNext.pct, shownNext.lo) : t('trend.avgRange', shownNext.pct, shownNext.lo, shownNext.hi)) : ''}` +
         `${key('is-level', t('trend.pass', passMark))}</div>` +
       `<div class="trend-plot">${trendChartSvg(W, c1)}<div class="trend-tip hidden"></div></div>` +
       // Only a range that starts below the pass line gets a sentence: it says what
