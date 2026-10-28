@@ -5384,6 +5384,17 @@ to areas open to the public, and the two Reference rows whose only source was
   the Glossario entry *impegnare* names the opposite (*sgombrare*,
   *liberare*, *disimpegnare*), and topic 25's opening gained a paragraph in
   both halves on *impegnare*, *concludere la manovra* and *sgombrare*.
+  **Topic 11's "How to remember the numbers" is a rule, not a list
+  (20261028k, maintainer, 2026-10-28: the limits are odd tens, and a
+  condition tends to lower them 20 km/h).** The section now gives the
+  series 150, 130, 110, 90, 70, 50, the four standard limits, a sign raising
+  one step (150, urban 70), rain lowering one step on the two fastest roads
+  only, fog at 50, towing at 70 on every extra-urban road, then the figures
+  outside the series to memorize: the new driver's 100 on the autostrada
+  (the 90 on the principale fits), 80 for towing on the autostrada and for a
+  non-light quadricycle, and the vehicle limits 45, 40 and 15. Both halves.
+  The words "ladder" and "learn by heart" were tried first and are banned by
+  `check_review_english.py`; the section says "series" and "step".
   **An emergency halt is never parking (20261023m, maintainer, 2026-10-23).**
   Topic 21's emergency-lane bullet, 20955 and 23903 now say the three hours
   are the ceiling of a *sosta di emergenza*, not an allowance, as topic 07's

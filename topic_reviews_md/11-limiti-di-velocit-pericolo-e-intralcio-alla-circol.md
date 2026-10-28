@@ -30,9 +30,15 @@ American instincts about speed numbers mislead until you match the **road types*
 
 ### How to remember the numbers
 
-- The four standard limits are **130, 110, 90 and 50** (autostrada, principale, secondaria, town). Note that 70 is not among them: no road type carries it as a standard limit.
-- **Rain, any precipitation, lowers the two highest limits**, from 130 to 110 and from 110 to 90. The other two do not change.
-- Everything else is a short list of exceptions: **70** in town where signed, **150** on the autostrada where signed, **100** on the autostrada and **90** on the principale for your first 3 years, **80** on the autostrada and **70** on extra-urban roads when towing a trailer, **45** for mopeds, **80** for non-light quadricycles, and **40** for farm and work machines.
+- The limits form a series of odd tens, 20 km/h apart, from **150** down through **130, 110, 90 and 70** to **50**. Divide any of them by 10 and the result is an odd number.
+- The four standard limits are **130, 110, 90 and 50** (autostrada, principale, secondaria, town). Seventy is in the series but is not among them, since no road type carries it as a standard limit.
+- A sign can raise a limit one step. The autostrada goes up to **150** and a suitable urban road to **70**, but only where signed.
+- **Rain, any precipitation, lowers a limit one step on the two fastest roads**, from 130 to 110 on the autostrada and from 110 to 90 on the principale. The secondaria stays at 90 and town at 50.
+- In dense fog the autostrada and the principale can be held to the lowest figure of the series, **50**.
+- Towing a trailer or caravan means **70** on every extra-urban road, main or secondary. It is a figure of the series, but the same figure for both roads.
+- Only a few figures fall outside the series, and they are the ones to memorize. A driver licensed less than 3 years is held to **100** on the autostrada. On the principale the same driver's **90** is one step down, as the series predicts.
+- **80** is the figure for slow vehicles on the fastest roads. It is the limit when towing on the autostrada, and the limit for a non-light quadricycle outside built-up areas.
+- The limits under 50 belong to vehicles, not to roads. Mopeds and light quadricycles are held to **45** on every road, and farm and work machines to **40** on tires and **15** on tracks.
 - And remember: these are **Italy's** numbers. Every European country sets its own, so autostrada and extra-urban limits **differ across Europe**. That is why the ITALIA board at the border lists them for drivers entering the country. <!-- q: 22474 -->
 
 ### The standard speed limits (car or vehicle up to 3.5 t)
@@ -162,9 +168,15 @@ Tre materie condividono questo argomento, e un'idea le governa tutte: il limite 
 
 ### Come ricordare i numeri
 
-- I quattro limiti ordinari sono **130, 110, 90 e 50** (autostrada, principale, secondaria, centro abitato). Nota che il 70 non è tra questi: nessun tipo di strada lo ha come limite ordinario.
-- **La pioggia, qualsiasi precipitazione, abbassa i due limiti più alti**, da 130 a 110 e da 110 a 90. Gli altri due non cambiano.
-- Tutto il resto è una breve lista di eccezioni: **70** in città dove segnalato, **150** in autostrada dove segnalato, **100** in autostrada e **90** sulla principale nei primi 3 anni di patente, **80** in autostrada e **70** sulle extraurbane con rimorchio, **45** per i ciclomotori, **80** per i quadricicli non leggeri e **40** per le macchine agricole e operatrici.
+- I limiti formano una serie di decine dispari, a 20 km/h l'una dall'altra, da **150** giù per **130, 110, 90 e 70** fino a **50**. Dividendo uno qualsiasi di essi per 10 si ottiene un numero dispari.
+- I quattro limiti ordinari sono **130, 110, 90 e 50** (autostrada, principale, secondaria, centro abitato). Il 70 fa parte della serie ma non è tra questi, perché nessun tipo di strada lo ha come limite ordinario.
+- Un segnale può alzare un limite di un passo. L'autostrada sale a **150** e una strada urbana adatta a **70**, ma solo dove segnalato.
+- **La pioggia, qualsiasi precipitazione, abbassa il limite di un passo sulle due strade più veloci**, da 130 a 110 in autostrada e da 110 a 90 sulla principale. La secondaria resta a 90 e il centro abitato a 50.
+- Con nebbia fitta l'autostrada e la principale possono essere limitate alla cifra più bassa della serie, **50**.
+- Al traino di un rimorchio o caravan il limite è **70** su ogni strada extraurbana, principale o secondaria. È una cifra della serie, ma la stessa cifra per entrambe le strade.
+- Solo poche cifre restano fuori dalla serie, e sono quelle da memorizzare. Chi ha la patente da meno di 3 anni è limitato a **100** in autostrada. Sulla principale il **90** dello stesso conducente è un passo più in basso, come prevede la serie.
+- **80** è la cifra dei veicoli lenti sulle strade più veloci. È il limite al traino in autostrada e il limite per un quadriciclo non leggero fuori dai centri abitati.
+- I limiti sotto 50 appartengono ai veicoli, non alle strade. Ciclomotori e quadricicli leggeri sono limitati a **45** su ogni strada, e le macchine agricole e operatrici a **40** su pneumatici e **15** su cingoli.
 - E ricorda: questi sono i numeri **italiani**. Ogni Paese europeo fissa i propri, quindi i limiti autostradali ed extraurbani **cambiano da Stato a Stato**. Per questo il pannello ITALIA al confine li elenca a chi entra nel Paese.
 
 ### I limiti di velocità standard (auto / veicolo fino a 3,5 t)
