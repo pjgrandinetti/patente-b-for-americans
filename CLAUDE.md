@@ -2414,7 +2414,7 @@ behind what shipped:
     and he was right: the range of the average says where the true mean
     lies, while readiness is about where the NEXT SINGLE score falls. The
     band is now the prediction interval, mean ± t(0.95, n−1)·s·√(1 + 1/n)
-    (`nextRange`, 9 chances in 10 two-sided, from the third mock; **the legend reads "90 chances in 100", and "95 chances in 100" when the band's upper edge passes 30**, since the chart stops it at 30 and the twentieth that lay above the edge, on impossible scores, falls inside, 20261028c, maintainer, `trend.avgRange30`, asserted in `check_mock_trend.js`), and its
+    (`nextRange`, 9 chances in 10 two-sided, from the third mock; **the legend reads "90 chances in 100", and "95 chances in 100" when the band's upper edge passes 30**, since the chart stops it at 30 and the twentieth that lay above the edge, on impossible scores, falls inside, 20261028c, maintainer, `trend.avgRange30`, asserted in `check_mock_trend.js`; **both edges are given as WHOLE scores since 20261028d**, maintainer: "26.8–30" read as though 26.8 were a score, and 26 fails. Each edge is rounded to the nearest score, the prediction's own continuity correction, so a lower edge at or above 26.5 shows as 27, exactly the banner's test; the tooltip's "Next score" follows; the 95 wording applies when the range shown ends at 30), and its
     lower edge is the banner's own test: the chance of passing is 95%
     exactly when the edge clears the pass line, which is drawn at 26.5,
     between a failing 26 and a passing 27. A sentence under the chart says

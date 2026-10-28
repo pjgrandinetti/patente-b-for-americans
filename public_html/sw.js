@@ -15,7 +15,7 @@
  *     not just for images already viewed.
  */
 
-const CACHE_VERSION = 'patente-netfirst-20261028c';
+const CACHE_VERSION = 'patente-netfirst-20261028d';
 const BASE          = '';
 
 // Small app shell — versioned cache, network-first so code/UI updates apply at once.

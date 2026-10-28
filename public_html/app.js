@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261028c';
+const APP_VERSION     = '20261028d';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -10642,11 +10642,20 @@ function drawMockTrend() {
   // edge passes 30 the chart stops it at 30, and the chance that lay above
   // the edge, on scores that cannot happen, falls inside: the range shown
   // then holds 95 chances in 100, not 90 (20261028c, maintainer).
-  const atTop = last.next && Q - last.next.lo > Q;
+  // The legend and the tooltip give the range in WHOLE scores (20261028d,
+  // maintainer: "26.8 to 30" read as though 26.8 were a score, and 26 fails).
+  // Each edge is rounded to the nearest score, the continuity correction the
+  // prediction itself uses: score k stands for 26.5 to 27.5 on the band's
+  // scale, so a lower edge at or above 26.5 shows as 27, which is exactly the
+  // banner's test. A range shown ending at 30 holds everything above its
+  // lower score, so 95 chances in 100 at least.
+  const scoreRange = nx => ({ lo: Math.round(Q - nx.hi), hi: Math.min(Q, Math.round(Q - nx.lo)) });
+  const shownNext = last.next ? scoreRange(last.next) : null;
+  const atTop = shownNext && shownNext.hi === Q;
   body.innerHTML =
     `<div class="trend-chart" data-chart="wrong"><p class="guess-head">${escHtml(c1.title)}</p>` +
       `<div class="trend-legend">${key('is-dot is-pass', t('trend.dotPass'))}${key('is-dot is-edge', t('trend.dotEdge', Q - EXAM_MAX_WRONG))}${key('is-dot is-fail', t('trend.dotFail'))}${key('is-main', t('trend.avg', win) + ': ' + f1(Q - last.mean))}` +
-        `${last.next ? key('is-band', t(atTop ? 'trend.avgRange30' : 'trend.avgRange') + ': ' + f1(edge) + '\u2013' + f1(Math.min(Q, Q - last.next.lo))) : ''}` +
+        `${last.next ? key('is-band', t(atTop ? 'trend.avgRange30' : 'trend.avgRange') + ': ' + shownNext.lo + '\u2013' + shownNext.hi) : ''}` +
         `${key('is-level', t('trend.pass', passMark))}</div>` +
       `<div class="trend-plot">${trendChartSvg(W, c1)}<div class="trend-tip hidden"></div></div>` +
       (edge != null ? `<p class="weak-note trend-band-note">${escHtml(edge >= passMark - 0.5 ? t('trend.bandReady') : t('trend.bandShort', f1(edge)))}</p>` : '') +
@@ -10672,7 +10681,7 @@ function drawMockTrend() {
       const r = rows[i - 1], px = sc.X(i);
       cross.setAttribute('x1', px); cross.setAttribute('x2', px); cross.classList.remove('hidden');
       tip.innerHTML = `<strong>${escHtml(t('trend.tipN', i))}${r.date ? escHtml(', ' + fDate(r.date)) : ''}</strong>` +
-        `<span>${escHtml(t('trend.tipWrong', Q - r.wrong))}</span><span>${escHtml(t('trend.tipAvg', f1(Q - r.mean)))}</span>` + (r.next ? `<span>${escHtml(t('trend.tipNext', f1(Q - r.next.hi), f1(Math.min(Q, Q - r.next.lo))))}</span>` : '');
+        `<span>${escHtml(t('trend.tipWrong', Q - r.wrong))}</span><span>${escHtml(t('trend.tipAvg', f1(Q - r.mean)))}</span>` + (r.next ? `<span>${escHtml(t('trend.tipNext', scoreRange(r.next).lo, scoreRange(r.next).hi))}</span>` : '');
       if (r.items) tip.insertAdjacentHTML('beforeend', `<span class="trend-tip-open">${escHtml(t('trend.tipOpen'))}</span>`);
       tip.classList.remove('hidden');
       tip.style.left = Math.max(0, Math.min(W - 172, px + (px > W / 2 ? -180 : 10))) + 'px';
