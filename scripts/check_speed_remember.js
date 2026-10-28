@@ -29,6 +29,13 @@ setTimeout(()=>{
   const cats=[...$('review-numbers-body').querySelectorAll('.review-cat-title')];
   ok(cats[0] && /(Speeds by road type|Velocità per tipo di strada)/.test(cats[0].textContent) && cats[0].nextElementSibling===r[0],'it sits under the first speed category');
   ok(/(odd tens|decine dispari)/.test(r[0].textContent) && /(100|80)/.test(r[0].textContent),'it teaches the series and the exceptions');
+  // A tap opens the figure full screen; Esc closes it and leaves the page as it was (20261028o).
+  fig.click();
+  const v=$('fig-viewer');
+  ok(v && !v.classList.contains('hidden') && v.querySelector('img').getAttribute('src')===fig.getAttribute('src') && w.document.body.classList.contains('fig-viewing'),'a tap opens the figure full screen');
+  w.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
+  ok(v.classList.contains('hidden') && !w.document.body.classList.contains('fig-viewing') && !$('screen-vocab').classList.contains('hidden'),'Esc closes it and the Reference page stays');
+  fig.click(); v.click(); ok(v.classList.contains('hidden'),'a tap on the viewer closes it');
   const ref=JSON.parse(fs.readFileSync(root+'/reference.json','utf8'));
   const speeds=new Set(ref.numbers.filter(n=>n.cat==='speed'||n.cat==='speedveh').map(n=>(String(n.value).match(/\d+/)||[])[0]));
   const named=new Set((r[0].textContent.match(/\b\d+\b/g)||[]).filter(x=>!['3','10','20'].includes(x)));

@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261028n';
+const APP_VERSION     = '20261028o';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -335,6 +335,8 @@ const STATIC_IT = {
 
 // Dynamic strings (built in code). {0},{1}… are filled by t(key, ...args).
 const T = {
+  'viewer.close': { en: 'Close', it: 'Chiudi' },
+  'viewer.open': { en: 'Tap to enlarge', it: 'Tocca per ingrandire' },
   'lvl.1.name': { en: 'English',          it: 'Inglese' },
   'lvl.2.name': { en: 'Italian + hints',  it: 'Italiano + aiuti' },
   'lvl.3.name': { en: 'Italian only',     it: 'Solo italiano' },
@@ -2105,7 +2107,7 @@ function renderMarkdownSubset(md, pairs = null, twinBlocks = null, twinLang = 'i
           alt = alt.slice(mk[0].length);
         }
         return `<figure class="review-fig${sizeCls}">` +
-          `<img class="review-fig-img" src="${escHtml(src)}" alt="${escHtml(alt)}" loading="lazy">` +
+          `<img class="review-fig-img" src="${escHtml(src)}" alt="${escHtml(alt)}" loading="lazy"${src.startsWith('review_media/') ? ` title="${escHtml(t('viewer.open'))}"` : ''}>` +
           (alt ? `<figcaption>${inline(alt)}${capPill(src, alt)}</figcaption>` : '') +
           `</figure>`;
       }).join('');
@@ -2697,6 +2699,50 @@ document.addEventListener('keydown', e => {
   const ov = document.getElementById('review-overlay');
   if (ov && !ov.classList.contains('hidden')) dismissReview();
 });
+
+// The full-screen figure viewer (20261028o, maintainer, 2026-10-28: the
+// speed grid's labels are small on a phone). A tap on a concept figure
+// (review_media/, in the notes or the Reference box) opens it over the whole
+// screen at no less than 680 px wide, so on a phone it is larger than the
+// screen and pans; on a desktop it fills the window up to 1100 px. Any tap,
+// the ✕ or Esc closes it. The sign drawings keep their own tap behavior.
+const FIG_ZOOM_SEL = '.review-fig-img[src^="review_media/"], .ref-remember-fig';
+function openFigureViewer(img) {
+  let v = document.getElementById('fig-viewer');
+  if (!v) {
+    v = document.createElement('div');
+    v.id = 'fig-viewer'; v.className = 'hidden';
+    v.setAttribute('role', 'dialog'); v.setAttribute('aria-modal', 'true');
+    v.innerHTML = '<button type="button" class="fig-viewer-close"></button><div class="fig-viewer-scroll"><img alt=""></div>';
+    v.addEventListener('click', closeFigureViewer);
+    document.body.appendChild(v);
+  }
+  const close = v.querySelector('.fig-viewer-close');
+  close.textContent = '\u2715'; close.setAttribute('aria-label', t('viewer.close'));
+  const big = v.querySelector('img');
+  big.src = img.getAttribute('src'); big.alt = img.alt || '';
+  v.setAttribute('aria-label', img.alt || '');
+  v.classList.remove('hidden'); v.scrollTop = 0; v.scrollLeft = 0;
+  document.body.classList.add('fig-viewing');
+  close.focus({ preventScroll: true });
+}
+function closeFigureViewer() {
+  const v = document.getElementById('fig-viewer');
+  if (!v || v.classList.contains('hidden')) return false;
+  v.classList.add('hidden');
+  document.body.classList.remove('fig-viewing');
+  return true;
+}
+document.addEventListener('click', e => {
+  const img = e.target.closest && e.target.closest(FIG_ZOOM_SEL);
+  if (!img) return;
+  e.preventDefault(); e.stopPropagation();
+  openFigureViewer(img);
+});
+// Capture phase, so Esc closes the viewer and not the notes beneath it.
+window.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && closeFigureViewer()) { e.stopImmediatePropagation(); e.preventDefault(); }
+}, true);
 
 // Settings dialog: close on the ✕, on the dimmed backdrop, or with Esc.
 document.addEventListener('click', e => {
@@ -14517,7 +14563,7 @@ function renderReviewCats() {
 let _refRememberOpen = false;
 function refRememberHtml(r, it) {
   return `<details class="rules-note ref-remember"${_refRememberOpen ? ' open' : ''}><summary>${escHtml(it ? r.it : r.en)}</summary>` +
-    `<div class="rules-body"><img class="ref-remember-fig" src="review_media/speed-limits-${it ? 'it' : 'en'}.svg" alt="${escHtml(it ? r.figIt : r.figEn)}">` +
+    `<div class="rules-body"><img class="ref-remember-fig" src="review_media/speed-limits-${it ? 'it' : 'en'}.svg" alt="${escHtml(it ? r.figIt : r.figEn)}" title="${escHtml(t('viewer.open'))}">` +
     `<ul>${(it ? r.linesIt : r.linesEn).map(l => `<li>${escHtml(l)}</li>`).join('')}</ul></div></details>`;
 }
 function renderReviewNumbers() {

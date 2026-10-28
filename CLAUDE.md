@@ -5429,6 +5429,17 @@ to areas open to the public, and the two Reference rows whose only source was
   legend on two rows. The fog bullet in topic 11 and in the Reference box
   says both rules. The 50 is not in art. 142's text, which has the rain
   rule only.
+  **A tap on a concept figure opens it full screen (20261028o, maintainer,
+  2026-10-28: the grid's labels are small on a phone, and the vehicle
+  limits stay in the one figure).** `openFigureViewer`, for every
+  `review_media/` figure in the notes and for the Reference box's figure
+  (`FIG_ZOOM_SEL`): a dark overlay with the image at no less than 680 px
+  wide, so on a phone it is larger than the screen and pans, and up to
+  1100 px on a desktop. Any tap, the ✕ or Esc closes it; Esc is caught in
+  the capture phase so it does not also close the notes. The sign drawings
+  are not included. A "Tap to enlarge" tooltip marks the figures.
+  `check_speed_remember.js` covers open, Esc and tap to close; measured in
+  Chromium at 390 px (image 680 px, pans) and 1280 px (1100 px).
   **An emergency halt is never parking (20261023m, maintainer, 2026-10-23).**
   Topic 21's emergency-lane bullet, 20955 and 23903 now say the three hours
   are the ceiling of a *sosta di emergenza*, not an allowance, as topic 07's
