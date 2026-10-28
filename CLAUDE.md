@@ -2703,7 +2703,16 @@ behind what shipped:
   sleep loss under 48 hours). Writing out worries (Ramirez and Beilock 2011)
   did not hold up in later classroom studies, and reappraising arousal
   (Jamieson et al. 2010) failed a replication across 12 science courses;
-  do not put either on screen. The Still waiting row, Continue the review and the
+  do not put either on screen.
+  **The sleep advice is sourced (20261029k, maintainer):** the day-before
+  line ends "Sleep a full night: no caffeine after mid-afternoon, no
+  alcohol, screens away before bed, and bed at your usual time." Caffeine
+  6 h before bed still cut sleep by over an hour (Drake et al. 2013, JCSM);
+  alcohol fragments the second half of the night (Ebrahim et al. 2013);
+  evening tablet reading delayed sleep and cut REM (Chang et al. 2015,
+  PNAS); the hours before habitual bedtime resist sleep (Lavie 1986, the
+  "forbidden zone"), so going to bed early backfires. No minutes before bed
+  are given for screens, since no source set a figure. The Still waiting row, Continue the review and the
   pool table are left out; the figures link stays, outside the table
   (`examFiguresLinkHtml`).
   **The day before and the day itself say *In bocca al lupo!*
