@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261029k';
+const APP_VERSION     = '20261029l';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -387,6 +387,22 @@ const T = {
   'examdate.inN': { en: 'Your exam is in {0} days, on {1}.', it: 'Il tuo esame \u00e8 tra {0} giorni, {1}.' },
   'examdate.tomorrow': { en: 'Your exam is tomorrow, {0}.', it: 'Il tuo esame \u00e8 domani, {0}.' },
   'examdate.today': { en: 'Your exam is today.', it: 'Il tuo esame \u00e8 oggi.' },
+  // The exam day itself (20261029l, maintainer, 2026-10-29): the review and
+  // the mock exam stay, since the exam may be late in the day.
+  'examdate.paceToday': { en: 'If your exam is later in the day, the review and a mock exam are here. In the room you have 20 minutes for 30 questions. Answer the ones you are sure of first, then use the time left to read the others again.', it: 'Se l\u2019esame \u00e8 pi\u00f9 tardi nella giornata, il ripasso e una simulazione sono qui. In aula hai 20 minuti per 30 domande. Rispondi prima a quelle di cui sei sicuro, poi usa il tempo che resta per rileggere le altre.' },
+  // After the exam (20261029l): one question until it is answered, then
+  // what comes next for a pass or a fail.
+  'examdate.howWent': { en: 'How did your theory exam on {0} go?', it: 'Com\u2019\u00e8 andato l\u2019esame di teoria di {0}?' },
+  'examdate.passed': { en: 'I passed', it: 'Ho superato l\u2019esame' },
+  'examdate.failed': { en: 'I did not pass', it: 'Non l\u2019ho superato' },
+  'examdate.postponed': { en: 'It was postponed', it: '\u00c8 stato rinviato' },
+  'examdate.undo': { en: 'Change my answer', it: 'Cambia la risposta' },
+  'examdate.passHead': { en: 'Congratulations on passing the theory exam.', it: 'Complimenti, hai superato l\u2019esame di teoria.' },
+  'examdate.passNext': { en: 'Your foglio rosa lets you practice driving for 12 months. You may take the driving test from one month after it was issued, with up to 3 attempts.', it: 'Il foglio rosa ti permette di esercitarti alla guida per 12 mesi. Puoi sostenere l\u2019esame di guida da un mese dopo il rilascio, con al massimo 3 tentativi.' },
+  'examdate.failHead': { en: 'You can take the exam again from {0}.', it: 'Puoi ripetere l\u2019esame dal {0}.' },
+  'examdate.failNext': { en: 'At least a month must pass after a failed attempt, and the second attempt must fall within 6 months of filing your application. Add any questions you remember missing to the weak spots from the Questions tab. When you have the new date, enter it below.', it: 'Dopo un tentativo non superato deve passare almeno un mese, e il secondo tentativo deve cadere entro 6 mesi dalla presentazione della domanda. Aggiungi ai punti deboli le domande che ricordi di aver sbagliato, dalla scheda Domande. Quando hai la nuova data, inseriscila qui sotto.' },
+  'examdate.failTwice': { en: 'An application allows two attempts at the theory exam, so a new application is needed before you can take it again. Add any questions you remember missing to the weak spots from the Questions tab. When you have the new date, enter it below.', it: 'Una domanda consente due tentativi all\u2019esame di teoria, quindi serve una nuova domanda prima di ripeterlo. Aggiungi ai punti deboli le domande che ricordi di aver sbagliato, dalla scheda Domande. Quando hai la nuova data, inseriscila qui sotto.' },
+  'examdate.questionsTab': { en: 'Open the Questions tab', it: 'Apri la scheda Domande' },
   'examdate.rowReview': { en: 'Review today', it: 'Ripasso di oggi' },
   'examdate.rowWaiting': { en: 'Still waiting', it: 'Ancora in attesa' },
   'examdate.rowMock': { en: 'Mock exam today', it: 'Simulazione di oggi' },
@@ -4403,7 +4419,9 @@ function renderDashboard() {
     // With an exam date entered the ready banner goes (20261009z,
     // maintainer): the countdown box under it carries this phase. A
     // warning still shows.
-    banner.classList.toggle('hidden', !text || (atBar && !!examDate()));
+    // After the exam (20261029l) the box says what comes next, and the
+    // banner, which is about readiness for the exam, goes.
+    banner.classList.toggle('hidden', !text || (atBar && !!examDate()) || !!examAfterState());
     banner.classList.toggle('banner-success', atBar);
     banner.classList.toggle('banner-warn', !atBar);
     banner.textContent = text;
@@ -4480,7 +4498,9 @@ function renderWeakSpots() {
   // once the levels are cleared it STAYS, saying there are none, since mock
   // exam misses bring weak spots back.
   const complete = currentLevel > 1 && italianoComplete();
-  const mockShow = complete || mockEarlyOn();
+  // Once the theory exam is passed (20261029l) nothing asks for mock exams
+  // or weak spots.
+  const mockShow = (complete || mockEarlyOn()) && !theoryPassed();
   const wrap = ensureDashNext();
   wrap.classList.toggle('hidden', !mockShow);
   wrap.classList.toggle('is-single', !complete);
@@ -7806,6 +7826,45 @@ function examDate() {
   if (!v || !/^\d{4}-\d{2}-\d{2}$/.test(v)) return null;
   return v < dayKey() ? null : v;
 }
+// The outcome of each theory exam taken (20261029l, maintainer,
+// 2026-10-29): a list of {d: exam date, r: 'pass' | 'fail'}, synced like
+// the date. A date that has passed with no outcome asks how it went.
+const EXAM_OUTCOME_KEY = 'patente_exam_outcome';
+function examAttempts() {
+  try { const a = JSON.parse(localStorage.getItem(EXAM_OUTCOME_KEY) || '[]'); return Array.isArray(a) ? a.filter(x => x && x.d && (x.r === 'pass' || x.r === 'fail')) : []; } catch { return []; }
+}
+function saveExamAttempts(a) {
+  try { if (a.length) localStorage.setItem(EXAM_OUTCOME_KEY, JSON.stringify(a)); else localStorage.removeItem(EXAM_OUTCOME_KEY); } catch { }
+  stampSettings();
+}
+function theoryPassed() { return examAttempts().some(x => x.r === 'pass'); }
+// The stored date when it has passed and no outcome is recorded for it.
+function examAwaitingOutcome() {
+  let v = null;
+  try { v = localStorage.getItem(EXAM_DATE_KEY); } catch { }
+  if (!v || !/^\d{4}-\d{2}-\d{2}$/.test(v) || v >= dayKey()) return null;
+  return examAttempts().some(x => x.d === v) ? null : v;
+}
+// What the box shows after an exam, or null before one: 'ask', 'pass', or
+// 'fail' (the last attempt failed and no new date is set).
+function examAfterState() {
+  if (theoryPassed()) return 'pass';
+  if (examAwaitingOutcome()) return 'ask';
+  const a = examAttempts();
+  if (a.length && a[a.length - 1].r === 'fail' && !examDate()) return 'fail';
+  return null;
+}
+function examDayWords(v) {
+  const [y, m, d] = v.split('-').map(Number);
+  return new Intl.DateTimeFormat(uiLang() === 'it' ? 'it-IT' : 'en-US', { weekday: 'long', month: 'long', day: 'numeric' }).format(new Date(y, m - 1, d));
+}
+function openQuestionsTab() {
+  reviewSection = 'bank';
+  saveVocabView();
+  document.querySelector('.nav-btn[data-screen="vocab"]')?.click();
+  reviewSection = 'bank';
+  try { renderReviewScreen(); } catch (e) { console.error('questions tab:', e); }
+}
 function setExamDate(v) {
   try { if (v) localStorage.setItem(EXAM_DATE_KEY, v); else localStorage.removeItem(EXAM_DATE_KEY); } catch { }
   stampSettings();
@@ -7874,8 +7933,20 @@ function renderExamDate(atBar) {
       else if (act === 'review') { startDailyReview(); return; }
       else if (act === 'more') { startDailyReview(true); return; }
       else if (act === 'figures') { openMissedFigures(); return; }
+      else if (act === 'bank') { openQuestionsTab(); return; }
+      else if (act === 'pass' || act === 'fail') {
+        const d = examAwaitingOutcome();
+        if (d) { saveExamAttempts([...examAttempts(), { d, r: act }]); setExamDate(null); }
+        _examDateEdit = false;
+      }
+      else if (act === 'postponed') { setExamDate(null); _examDateEdit = false; }
+      else if (act === 'undo') {
+        const a = examAttempts(); const last = a.pop();
+        if (last) { saveExamAttempts(a); setExamDate(last.d); }
+      }
       renderExamDate(box._atBar);
-      banner.classList.toggle('hidden', !banner.textContent || (box._atBar && !!examDate()));
+      banner.classList.toggle('hidden', !banner.textContent || (box._atBar && !!examDate()) || !!examAfterState());
+      if (act === 'pass' || act === 'fail' || act === 'undo' || act === 'postponed') { try { renderDashboard(); } catch (err) { console.error(err); } }
     });
   }
   // The review comes before the mock exam (20261010g, maintainer), so the
@@ -7885,10 +7956,37 @@ function renderExamDate(atBar) {
   else if (banner.nextElementSibling !== box) banner.parentNode.insertBefore(box, banner.nextSibling);
   box._atBar = atBar;
   const date = examDate();
-  box.classList.toggle('hidden', !atBar && !date);
-  if (!atBar && !date) { box.innerHTML = ''; return; }
+  const after = _examDateEdit ? null : examAfterState();
+  box.classList.toggle('hidden', !atBar && !date && !after);
+  if (!atBar && !date && !after) { box.innerHTML = ''; return; }
+  if (after === 'ask') {
+    box.innerHTML = `<div class="exam-date-text"><strong>${escHtml(t('examdate.howWent', examDayWords(examAwaitingOutcome())))}</strong></div>` +
+      `<button type="button" class="btn-primary" data-ed="pass">${escHtml(t('examdate.passed'))}</button>` +
+      `<button type="button" class="btn-secondary" data-ed="fail">${escHtml(t('examdate.failed'))}</button>` +
+      `<button type="button" class="link-btn" data-ed="postponed">${escHtml(t('examdate.postponed'))}</button>`;
+    return;
+  }
+  if (after === 'pass') {
+    box.innerHTML = `<div class="exam-date-text"><strong>${escHtml(t('examdate.passHead'))}</strong>` +
+      `<p class="exam-date-advice">${escHtml(t('examdate.passNext'))}</p></div>` +
+      `<button type="button" class="link-btn" data-ed="undo">${escHtml(t('examdate.undo'))}</button>`;
+    return;
+  }
+  let failHtml = '';
+  if (after === 'fail' || (!date && !_examDateEdit && examAttempts().length && examAttempts().slice(-1)[0].r === 'fail')) {
+    const a = examAttempts(); const last = a[a.length - 1];
+    const fails = a.filter(x => x.r === 'fail').length;
+    const [y, m, d] = last.d.split('-').map(Number);
+    const again = new Date(y, m, d);   // a month after the attempt
+    const againKey = dayKey(again);
+    failHtml = `<div class="exam-date-text exam-after-fail">` +
+      (fails >= 2 ? '' : `<strong>${escHtml(t('examdate.failHead', examDayWords(againKey)))}</strong>`) +
+      `<p class="exam-date-advice">${escHtml(t(fails >= 2 ? 'examdate.failTwice' : 'examdate.failNext'))}</p>` +
+      `<p><button type="button" class="link-btn" data-ed="bank">${escHtml(t('examdate.questionsTab'))}</button> ` +
+      `<button type="button" class="link-btn" data-ed="undo">${escHtml(t('examdate.undo'))}</button></p></div>`;
+  }
   if (!date || _examDateEdit) {
-    box.innerHTML = `<label for="exam-date-input">${escHtml(t('examdate.ask'))}</label>` +
+    box.innerHTML = failHtml + `<label for="exam-date-input">${escHtml(t('examdate.ask'))}</label>` +
       `<input type="date" id="exam-date-input" min="${dayKey()}" value="${date || ''}">` +
       `<button type="button" class="btn-secondary" data-ed="set">${escHtml(t('examdate.set'))}</button>` +
       (date ? `<button type="button" class="link-btn" data-ed="remove">${escHtml(t('examdate.remove'))}</button>` : '');
@@ -7913,22 +8011,24 @@ function renderExamDate(atBar) {
   // needing correct answers on days that no longer come before the exam;
   // the link to the figures missed stays, since it is the one list worth a
   // last look.
-  const last = n === 1;
+  // The day before (20261028a) and, since 20261029l, the exam day itself:
+  // the review and the mock stay, without the Still waiting count.
+  const last = n <= 1;
   const waiting = last ? 0 : Math.max(0, pool - left);
-  const today = n > 0 ? `<dl class="exam-date-today">` +
+  const today = n >= 0 ? `<dl class="exam-date-today">` +
     row('review', 'examdate.rowReview', left > 0 ? t('examdate.vLeft', left) : pool > 0 || reviewDoneToday() > 0 ? t('examdate.vDone') : t('examdate.vNone')) +
     (waiting > 0 ? row('waiting', 'examdate.rowWaiting', String(waiting)) : '') +
     row('mock', 'examdate.rowMock', todayN > 1 ? t('examdate.vTakenN', todayN) : todayN ? t('examdate.vTaken') : t('examdate.vNotYet')) +
     `</dl>` : '';
   box.innerHTML = `<div class="exam-date-text"><strong>${escHtml(head)}</strong>` +
-    (n > 0 ? `<p class="exam-date-advice">${escHtml(t(last ? 'examdate.paceLast' : n <= EXAM_NEAR_DAYS ? 'examdate.paceNear' : 'examdate.pace'))}</p>` : '') +
+    (n >= 0 ? `<p class="exam-date-advice">${escHtml(t(n === 0 ? 'examdate.paceToday' : last ? 'examdate.paceLast' : n <= EXAM_NEAR_DAYS ? 'examdate.paceNear' : 'examdate.pace'))}</p>` : '') +
     // The day before and the day itself wish the learner well, in Italian
     // for every browser (20261028b, maintainer, 2026-10-28).
     (n <= 1 ? `<p class="exam-date-wish" lang="it">${escHtml(t('examdate.wish'))}</p>` : '') + today + `</div>` +
-    (n > 0 && left > 0 ? `<button type="button" class="btn-primary" data-ed="review">${escHtml(t('examdate.reviewStart'))}</button>` : '') +
+    (n >= 0 && left > 0 ? `<button type="button" class="btn-primary" data-ed="review">${escHtml(t('examdate.reviewStart'))}</button>` : '') +
     (n > 0 && !last && left === 0 && pool > 0 ? `<button type="button" class="btn-secondary" data-ed="more">${escHtml(t('examdate.reviewContinue'))}</button>` : '') +
     `<button type="button" class="link-btn" data-ed="change">${escHtml(t('examdate.change'))}</button>` +
-    (n > 0 && pool > 0 ? (last ? examFiguresLinkHtml() : examPoolHtml()) : '');
+    (n >= 0 && pool > 0 ? (last ? examFiguresLinkHtml() : examPoolHtml()) : '');
   const det = box.querySelector('details.exam-date-pool');
   if (det) det.addEventListener('toggle', () => { _examPoolOpen = det.open; });
 }
@@ -8721,6 +8821,7 @@ function buildProgressBundle() {
       dashFull:     localStorage.getItem(DASH_FULL_KEY),
       mockEarly:    localStorage.getItem(MOCK_EARLY_KEY),
       examDate:     localStorage.getItem(EXAM_DATE_KEY),
+      examOutcome:  localStorage.getItem(EXAM_OUTCOME_KEY),
       missMin:      localStorage.getItem(MISS_MIN_KEY),
       missFilter:   localStorage.getItem(MISS_FILTER_KEY),
       missRun:      localStorage.getItem(MISS_RUN_KEY),
@@ -10225,6 +10326,7 @@ function mergeSyncSettings(s) {
   if (s.dashFull   !== undefined) set(DASH_FULL_KEY, s.dashFull);
   if (s.mockEarly  !== undefined) set(MOCK_EARLY_KEY, s.mockEarly);
   if (s.examDate   !== undefined) set(EXAM_DATE_KEY, s.examDate);
+  if (s.examOutcome !== undefined) set(EXAM_OUTCOME_KEY, s.examOutcome);
   if (s.missMin    !== undefined) set(MISS_MIN_KEY, s.missMin);
   if (s.missFilter !== undefined) set(MISS_FILTER_KEY, s.missFilter);
   if (s.missRun    !== undefined) set(MISS_RUN_KEY, s.missRun);

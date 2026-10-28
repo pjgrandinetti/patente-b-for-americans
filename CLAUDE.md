@@ -71,6 +71,7 @@ rather than re-deriving when a feature applies.
 | 4. Weak spots | everyone | clear the questions missed in stages 1 to 3 | Italiano cleared | `italianoComplete()`, `difficultCards()`, the drill |
 | 5. Mock exams | everyone | mocks until the chance of failing is 5% or less over 15 or more | Italiano cleared, or earlier by the Settings option | `mockEarlyOn()`, `examReady()` |
 | 6. Review | everyone | one mock and the day's review each day until the exam | an exam date entered, offered once stage 5 is met | `inReviewPhase()`, `examDate()` |
+| 7. After the theory exam | everyone | a pass: the foglio rosa and the driving test; a fail: the wait, the second attempt, a new date | the exam date has passed and the learner answers how it went | `examAfterState()`, `theoryPassed()`, `examAttempts()` |
 
 - **Stages 1 to 3 are LEVELS**: each is a full pass over the bank under a
   language setting, with its own progress map (`patente_progress_L1` to
@@ -2715,6 +2716,28 @@ behind what shipped:
   are given for screens, since no source set a figure. The Still waiting row, Continue the review and the
   pool table are left out; the figures link stays, outside the table
   (`examFiguresLinkHtml`).
+  **The exam day keeps the work, and the day after asks how it went
+  (20261029l, maintainer, 2026-10-29).** On the day itself the box keeps
+  the review rows, the Start button and the mock card, since the exam may
+  be late in the day (the maintainer refused to hide them without
+  certainty, and no source gives it), with `examdate.paceToday`: the room
+  gives 20 minutes for 30 questions, so answer the sure ones first and use
+  the time left to reread the others. Nothing says to keep a first answer:
+  changes go from wrong to right more often than the reverse (Kruger,
+  Wirtz and Miller 2005). From the next day a date with no outcome asks
+  "How did your theory exam on ... go?" with I passed, I did not pass and
+  It was postponed. The answer is a list of attempts
+  (`EXAM_OUTCOME_KEY`, `{d, r}`), synced as `examOutcome`, and recording it
+  clears the date. A pass shows the foglio rosa (12 months, the driving
+  test from a month after its issue, up to 3 attempts) and hides the
+  readiness banner and the weak-spots and mock row; the nav's Begin still
+  opens the drill. A fail gives the first day it may be taken again (a
+  month on, art. 121 c. 10), the second attempt within 6 months of filing
+  (art. 122 c. 1, no more than two attempts), a link to the Questions tab
+  for adding remembered misses to the weak spots, and the date field; a
+  second fail says a new application is needed. Change my answer undoes
+  the last outcome. The readiness banner is hidden in every after-exam
+  state. `scripts/check_exam_outcome.js`, 20 checks in each face.
   **The day before and the day itself say *In bocca al lupo!*
   (20261028b, maintainer)**, a line of its own under the advice
   (`examdate.wish`, `.exam-date-wish`), in Italian for every browser and

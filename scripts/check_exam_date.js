@@ -48,7 +48,7 @@ setTimeout(()=>{
   ok(box().querySelector('.exam-date-wish') && box().querySelector('.exam-date-wish').textContent==='In bocca al lupo!','the day before: in bocca al lupo, in Italian for every browser (20261028b)');
   w.localStorage.setItem('patente_exam_date',key(0)); draw(sheets(good)); ok(/(is today|è oggi)/.test(box().textContent) && !/(a day|al giorno)/.test(box().textContent),'the day itself: today, no pacing');
   ok(box().querySelector('.exam-date-wish') && box().querySelector('.exam-date-wish').textContent==='In bocca al lupo!','the day itself: in bocca al lupo');
-  w.localStorage.setItem('patente_exam_date',key(-1)); draw(sheets(good)); ok(w.examDate()===null && box().querySelector('input'),'a date that has passed is dropped and asked for again');
+  w.localStorage.setItem('patente_exam_date',key(-1)); draw(sheets(good)); ok(w.examDate()===null && box().querySelector('[data-ed=pass]') && !box().querySelector('input'),'a date that has passed asks how the exam went, not for a new date (20261029l)');
   w.localStorage.setItem('patente_exam_date',key(5)); draw(sheets(good)); box().querySelector('[data-ed=change]').click();
   ok(box().querySelector('input').value===key(5) && box().querySelector('[data-ed=remove]'),'Change reopens the field with the date, and offers Remove');
   box().querySelector('[data-ed=remove]').click(); ok(!$('exam-ready-banner').classList.contains('hidden'),'and comes back when the date is removed'); ok(w.examDate()===null && w.buildProgressBundle().settings.examDate===null,'Remove clears it');
