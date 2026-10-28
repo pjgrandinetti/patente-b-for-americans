@@ -30,6 +30,8 @@ American instincts about speed numbers mislead until you match the **road types*
 
 ### How to remember the numbers
 
+![!xl Green figures follow from the standard row by one step of 20 km/h, gray ones are unchanged, and orange ones fall outside the series and must be memorized](review_media/speed-limits-en.svg)
+
 - The limits form a series of odd tens, 20 km/h apart, from **150** down through **130, 110, 90 and 70** to **50**. Divide any of them by 10 and the result is an odd number.
 - The four standard limits are **130, 110, 90 and 50** (autostrada, principale, secondaria, town). Seventy is in the series but is not among them, since no road type carries it as a standard limit.
 - A sign can raise a limit one step. The autostrada goes up to **150** and a suitable urban road to **70**, but only where signed.
@@ -167,6 +169,8 @@ Tre materie condividono questo argomento, e un'idea le governa tutte: il limite 
 ## I numeri
 
 ### Come ricordare i numeri
+
+![!xl Le cifre verdi seguono dalla riga ordinaria con un passo di 20 km/h, quelle grigie restano invariate, e quelle arancioni sono fuori dalla serie e vanno memorizzate](review_media/speed-limits-it.svg)
 
 - I limiti formano una serie di decine dispari, a 20 km/h l'una dall'altra, da **150** giù per **130, 110, 90 e 70** fino a **50**. Dividendo uno qualsiasi di essi per 10 si ottiene un numero dispari.
 - I quattro limiti ordinari sono **130, 110, 90 e 50** (autostrada, principale, secondaria, centro abitato). Il 70 fa parte della serie ma non è tra questi, perché nessun tipo di strada lo ha come limite ordinario.

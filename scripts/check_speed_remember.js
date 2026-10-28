@@ -24,6 +24,8 @@ setTimeout(()=>{
   const title=r[0].querySelector('h2,summary').textContent;
   ok(title===(IT?'Come ricordare le velocità':'How to remember the speeds'),'its title: '+title);
   ok(r[0].querySelectorAll('li').length===9,'nine lines');
+  const fig=r[0].querySelector('img.ref-remember-fig');
+  ok(fig && fig.getAttribute('src')==='review_media/speed-limits-'+(IT?'it':'en')+'.svg' && fs.existsSync(root+'/'+fig.getAttribute('src')) && fig.alt.length>40,'the grid figure in the reader\'s language: '+(fig&&fig.getAttribute('src')));
   const cats=[...$('review-numbers-body').querySelectorAll('.review-cat-title')];
   ok(cats[0] && /(Speeds by road type|Velocità per tipo di strada)/.test(cats[0].textContent) && cats[0].nextElementSibling===r[0],'it sits under the first speed category');
   ok(/(odd tens|decine dispari)/.test(r[0].textContent) && /(100|80)/.test(r[0].textContent),'it teaches the series and the exceptions');

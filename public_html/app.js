@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261028l';
+const APP_VERSION     = '20261028m';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1465,7 +1465,7 @@ function bindUpdateCheck() {
 // into this file and into sw.js, so a data file is downloaded only when it
 // has changed rather than on every release (see the note above dataUrl in
 // sw.js).
-const DATA_HASH = { 'questions.json': '52c3d3c108b5', 'vocabulary.json': 'e17373bbca17', 'topic_reviews.json': 'f2855e4897f1' };
+const DATA_HASH = { 'questions.json': '52c3d3c108b5', 'vocabulary.json': 'e17373bbca17', 'topic_reviews.json': '5597b9b43203' };
 const dataUrl = name => `${name}?v=${DATA_HASH[name]}`;
 
 // Fetch one of the three big JSON files, and REPAIR the cache if what comes
@@ -2013,12 +2013,17 @@ function reviewEqHtml(h) {
 // pair by IMAGE instead (20261010j, maintainer, 2026-10-04: the captions had
 // no EN pill): the same file in the other half, matched in order of
 // appearance when a file is shown more than once.
+// A figure drawn with words on it comes as two files, one per language,
+// named NAME-en.svg and NAME-it.svg (the speed-limit grid, 20261028m), and
+// its captions pair as though it were one file.
+function captionKey(src) { return String(src).replace(/-(en|it)(\.[a-z]+)$/i, '$2'); }
 function reviewCaptionTwins(md) {
   const out = new Map();
   for (const m of (md || '').matchAll(/!\[([^\]]*)\]\(([^)]+)\)/g)) {
     const alt = m[1].replace(/^!(xl|big|small)\s+/, '').replace(/<!--.*?-->/g, '').trim();
-    if (!out.has(m[2])) out.set(m[2], []);
-    out.get(m[2]).push(alt);
+    const key = captionKey(m[2]);
+    if (!out.has(key)) out.set(key, []);
+    out.get(key).push(alt);
   }
   return out;
 }
@@ -2053,8 +2058,9 @@ function renderMarkdownSubset(md, pairs = null, twinBlocks = null, twinLang = 'i
   const inline = (s) => colorizeBoldColors(inlineRaw(s));
   const capPill = (src, alt) => {
     if (!twinCaps) return '';
-    const k = capSeen.get(src) || 0; capSeen.set(src, k + 1);
-    const list = twinCaps.get(src) || [];
+    const key = captionKey(src);
+    const k = capSeen.get(key) || 0; capSeen.set(key, k + 1);
+    const list = twinCaps.get(key) || [];
     const twin = list[Math.min(k, list.length - 1)];
     if (!twin || twin === alt) return '';
     return ` <button type="button" class="rb-it" aria-expanded="false" title="${escHtml(pillTip)}">${pillLabel}</button>` +
@@ -14511,7 +14517,8 @@ function renderReviewCats() {
 let _refRememberOpen = false;
 function refRememberHtml(r, it) {
   return `<details class="rules-note ref-remember"${_refRememberOpen ? ' open' : ''}><summary>${escHtml(it ? r.it : r.en)}</summary>` +
-    `<div class="rules-body"><ul>${(it ? r.linesIt : r.linesEn).map(l => `<li>${escHtml(l)}</li>`).join('')}</ul></div></details>`;
+    `<div class="rules-body"><img class="ref-remember-fig" src="review_media/speed-limits-${it ? 'it' : 'en'}.svg" alt="${escHtml(it ? r.figIt : r.figEn)}">` +
+    `<ul>${(it ? r.linesIt : r.linesEn).map(l => `<li>${escHtml(l)}</li>`).join('')}</ul></div></details>`;
 }
 function renderReviewNumbers() {
   const box = document.getElementById('review-numbers-body');

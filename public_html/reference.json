@@ -7,6 +7,8 @@
    "it": "Velocità per tipo di strada",
    "remember": {
     "en": "How to remember the speeds",
+    "figEn": "Speed limits in km/h by road type and condition, colored by how each figure is found: by the one-step rule, unchanged, or outside the series and to be memorized.",
+    "figIt": "Limiti di velocità in km/h per tipo di strada e condizione, colorati secondo come si ricava ogni cifra: con la regola del passo, invariata, o fuori dalla serie e da memorizzare.",
     "it": "Come ricordare le velocità",
     "linesEn": [
      "The limits form a series of odd tens, 20 km/h apart, from 150 down through 130, 110, 90 and 70 to 50. Divide any of them by 10 and the result is an odd number.",

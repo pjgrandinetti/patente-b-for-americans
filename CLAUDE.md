@@ -5404,6 +5404,20 @@ to areas open to the public, and the two Reference rows whose only source was
   values may be hidden for a self-test. A change to the rule is two edits,
   topic 11 and reference.json. `scripts/check_speed_remember.js`, 9 checks
   in each face, including that every figure it names is a speed row.
+  **A grid figure leads both (20261028m, maintainer: "some kind of
+  graphic")**: `review_media/speed-limits-en.svg` and `-it.svg`, road types
+  against conditions (where signed, standard, rain, dense fog, new driver,
+  towing) with the vehicle limits below, each cell colored by how the figure
+  is found (green by the one-step rule, gray unchanged, orange outside the
+  series and to memorize, dashed where it does not apply). Both files are
+  drawn by `scripts/draw_speed_limits.py` from one table; edit there and
+  rerun. It opens topic 11's "How to remember the numbers" in each half and
+  the Reference box. A figure with words on it is two files, so caption
+  pairing now keys a file by `captionKey`, which treats NAME-en.svg and
+  NAME-it.svg as one figure. Both files are in the worker's precache. The
+  SIDA manual's own table (fig. 3038) lists the limits and was not used:
+  it is copyrighted and shows no pattern. At 390 px the figure fits with
+  no sideways scroll, but its legend text renders small.
   **An emergency halt is never parking (20261023m, maintainer, 2026-10-23).**
   Topic 21's emergency-lane bullet, 20955 and 23903 now say the three hours
   are the ceiling of a *sosta di emergenza*, not an allowance, as topic 07's
