@@ -2815,10 +2815,14 @@ behind what shipped:
   practical test). The circular's foglio rosa figures (six months, one retry)
   are out of date and are not used. The text lives in `DRIVING_TEST_MD` in
   app.js, English and Italian written block for block so they pair by
-  position; the English closes with "Habits worth checking" (STOP, no right
-  on red, yellow, pedestrians, the right-hand rule, no passing on the right,
-  visible checks), marked as not from the circular, with no Italian and no
-  pill. A non-Italian browser opens it in English at every level. An edit to
+  position; the English closes with "For American drivers", marked as not
+  from the circular, with no Italian and no pill. **It holds only what the
+  driving test itself asks of an American (20261030m, maintainer: theory
+  rules were covered by the theory exam and are not repeated)**: visible
+  checks, practising the maneuvers rare in the US, a hill start for someone
+  who has driven only automatics, and directions given in Italian. It first
+  listed STOP, red, yellow, pedestrians, the right-hand rule and passing on
+  the right; do not put theory rules back. A non-Italian browser opens it in English at every level. An edit to
   one half needs the same edit to the other in the same position, or the
   pills pair the wrong blocks in silence. `docs/driving-test-draft.md` is the
   draft it came from. `scripts/check_driving_test.js`, 9 checks in English,

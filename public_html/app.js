@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030l';
+const APP_VERSION     = '20261030m';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1682,8 +1682,8 @@ function openKeyPoints() {
 // are not used. A synthetic review like KEY_POINTS, so the notes overlay, the
 // language toggle and the pills work unchanged. The two halves are written
 // block for block, so they pair by position; the English closes with
-// "Habits worth checking", written for an American driver, which has no
-// Italian and so no pill. The draft and its reasoning are in
+// "For American drivers", four points for the driving test itself (no theory
+// rules, maintainer, 20261030m), which has no Italian and so no pill. The draft and its reasoning are in
 // docs/driving-test-draft.md; this text is the one that ships.
 const DRIVING_TEST = '__drivingtest__';
 const DRIVING_TEST_MD = {
@@ -1833,18 +1833,15 @@ following.
 The result is given at the end of the test, with a reason if you fail. If you
 pass, you receive your license there and then.
 
-## Habits worth checking
+## For American drivers
 
-These are rules of the Code, not points from the circular, that an
-experienced American driver may break out of habit. Each one is something the examiner judges under the areas above.
+These points are not in the circular. They are what an American driver is most
+likely to miss.
 
-- At a STOP sign, the wheels must stop completely at the line, even when nothing is coming.
-- There is no right turn on red. You wait unless a green arrow allows the turn.
-- At a yellow light, stop if you can do so safely.
-- At a zebra crossing, stop for a pedestrian who is crossing or about to cross.
-- At a junction with no signs, a vehicle coming from your right has priority.
-- Never pass on the right.
-- Make every check visible. The examiner can judge only what they see you do.`,
+- Make every check visible. Turn your head for the blind spot and look in the mirrors so the examiner sees you do it, because the examiner can judge only what they see.
+- Practice parallel parking, reversing around a corner and turning around in several moves during your lessons. They are routine on this test and rare in American driving.
+- If you have driven only automatics and your lessons are in a manual car, practice starting on a hill. Ask your instructor whether the examiners expect a particular technique, such as the handbrake.
+- The examiner gives directions in Italian. Learn the usual directions before the test, so that a word you miss does not become a wrong turn.`,
   it: `Questa pagina segue le istruzioni che la Motorizzazione dà ai suoi esaminatori
 per l'esame di guida della patente B (circolare 28819 del 19 settembre 2019).
 

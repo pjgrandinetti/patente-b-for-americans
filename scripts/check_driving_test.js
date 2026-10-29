@@ -1,6 +1,6 @@
 // How the driving test works (20261030j, maintainer, 2026-10-29): a page opened from the pass box, from circular
 // 28819 of 2019, in the notes overlay. English for a non-Italian browser with an IT pill on every block that has an
-// Italian twin, and "Habits worth checking" in English only; Italian alone for an Italian browser.
+// Italian twin, and "For American drivers" in English only; Italian alone for an Italian browser.
 // Run: node scripts/check_driving_test.js (UILANG=it-IT; SRC= another public_html).
 const {JSDOM}=require(process.env.JSDOM||'/tmp/node_modules/jsdom'); const fs=require('fs');
 const root=process.env.SRC||require('path').resolve(__dirname,'../public_html');
@@ -37,8 +37,8 @@ setTimeout(()=>{
     const lis=[...body.querySelectorAll('[data-rb]')];
     const withPill=lis.filter(e=>e.querySelector(':scope > .rb-it')).length;
     ok(withPill===77,'every block with an Italian twin carries an IT pill: '+withPill+' of '+lis.length);
-    const habits=heads.indexOf('Habits worth checking');
-    ok(habits===6 && !/STOP sign[\s\S]*rb-it/.test(body.innerHTML.slice(body.innerHTML.indexOf('Habits worth checking'))),'the habits close the page and carry no pill');
+    const habits=heads.indexOf('For American drivers');
+    ok(habits===6 && (body.innerHTML.slice(body.innerHTML.indexOf('For American drivers')).match(/<li/g)||[]).length===4 && !/STOP sign/.test(txt) && !/parallel parking[\s\S]*rb-it/.test(body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'))),'the American section closes the page with its four points and no pill');
     const first=body.querySelector('.rb-it'); first.click();
     ok(/circolare 28819/.test(first.nextElementSibling.textContent),'the first pill opens its own Italian twin');
     const rev=[...lis].find(e=>/^Turn your head/.test(e.textContent));
