@@ -2791,12 +2791,16 @@ behind what shipped:
   Questions search; the Statistics page and its mock button stay as a
   record), the box links the key points as a refresher before lessons,
   and nothing is deleted. The box is festive at his request ("the app
-  knows how long they have been studying"): a 🎉 heading, the learner's own
-  journey from their records (`passJourney`: the start is the older of the
-  earliest answer stamp `gAt` at any level and the earliest day in the daily
-  log, which keeps 120 days; the days from it to the pass; the questions
-  cleared at Italiano, by `countCards`, so the active set; the mocks on
-  record, "more than" at the 50 the history keeps), and a one-time confetti
+  knows how long they have been studying"): a 🎉 heading, then the
+  maintainer's own words (20261030h; the counts of days, questions and
+  mocks shipped first and he called them clinical): "You've been preparing
+  for this moment for about 2 months, and you've finally made it! You're
+  not done yet, but this was a big accomplishment. Again, congratulations."
+  The span is `passJourney`'s, from the older of the earliest answer stamp
+  `gAt` at any level and the earliest day in the daily log (kept 120 days)
+  to the day of the pass, in words: days under 14, weeks under 46 days,
+  then months rounded ("about", since his 57 days are just under two
+  months, where he had written "over 2 months"). And a one-time confetti
   burst (`celebratePass`, `patente_pass_celebrated` per device, never with
   reduced motion). No study time is claimed: `ms` measures reading time on
   clean answers only, not hours studied. The driving stage (the foglio rosa

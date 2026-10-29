@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030g';
+const APP_VERSION     = '20261030h';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -401,8 +401,13 @@ const T = {
   'examdate.passHead': { en: '\ud83c\udf89 Congratulations, you passed the theory exam!', it: '\ud83c\udf89 Complimenti, hai superato l\u2019esame di teoria!' },
   // The learner's own journey, from their records (20261030g, maintainer:
   // more festive, since the app knows how long they studied).
-  'examdate.passJourney': { en: 'You started on {0}, {1} days before your exam. Since then you answered {2} questions correctly in Italian and took {3} mock exams.', it: 'Hai iniziato il {0}, {1} giorni prima dell\u2019esame. Da allora hai risposto correttamente a {2} domande in italiano e hai fatto {3} simulazioni.' },
-  'examdate.passJourneyMany': { en: 'You started on {0}, {1} days before your exam. Since then you answered {2} questions correctly in Italian and took more than {3} mock exams.', it: 'Hai iniziato il {0}, {1} giorni prima dell\u2019esame. Da allora hai risposto correttamente a {2} domande in italiano e hai fatto pi\u00f9 di {3} simulazioni.' },
+  // The maintainer's own words (20261030h), in place of the counts of
+  // 20261030g, which read as clinical.
+  'examdate.passJourney': { en: 'You\u2019ve been preparing for this moment for {0}, and you\u2019ve finally made it! You\u2019re not done yet, but this was a big accomplishment. Again, congratulations.', it: 'Ti prepari a questo momento da {0}, e finalmente ce l\u2019hai fatta! Non hai ancora finito, ma \u00e8 stato un grande traguardo. Ancora complimenti.' },
+  'examdate.spanDays': { en: '{0} days', it: '{0} giorni' },
+  'examdate.spanWeeks': { en: 'about {0} weeks', it: 'circa {0} settimane' },
+  'examdate.spanMonth': { en: 'about a month', it: 'circa un mese' },
+  'examdate.spanMonths': { en: 'about {0} months', it: 'circa {0} mesi' },
   'examdate.passNext': { en: 'Your foglio rosa lets you practice driving for 12 months. You may take the driving test from one month after it was issued, with up to 3 attempts.', it: 'Il foglio rosa ti permette di esercitarti alla guida per 12 mesi. Puoi sostenere l\u2019esame di guida da un mese dopo il rilascio, con al massimo 3 tentativi.' },
   'examdate.failHead': { en: 'You can take the exam again from {0}.', it: 'Puoi ripetere l\u2019esame dal {0}.' },
   'examdate.failNext': { en: 'At least a month must pass after a failed attempt, and the second attempt must fall within 6 months of filing your application. If your school gives you the exam sheet, it shows your answer to each question. Search for each one you missed in the Questions tab and add it to the weak spots. When you have the new date, enter it below.', it: 'Dopo un tentativo non superato deve passare almeno un mese, e il secondo tentativo deve cadere entro 6 mesi dalla presentazione della domanda. Se l\u2019autoscuola ti d\u00e0 la scheda d\u2019esame, vi trovi la tua risposta a ogni domanda. Cerca nella sezione Domande ciascuna che hai sbagliato e aggiungila ai punti deboli. Quando hai la nuova data, inseriscila qui sotto.' },
@@ -7984,12 +7989,10 @@ function examAfterState() {
   if (a.length && a[a.length - 1].r === 'fail' && !examDate()) return 'fail';
   return null;
 }
-// How long the learner studied, from their own records (20261030g): the
-// earliest answer stamp at any level or the earliest day in the daily log,
-// whichever is older, to the day of the pass; the questions cleared at
-// Italiano; the mock exams on record. Nothing is shown when no start is
-// known. The history keeps the latest EXAM_HISTORY_LIMIT mocks, so a full
-// one reads "more than".
+// How long the learner prepared, from their own records (20261030g, in
+// words since 20261030h): the earliest answer stamp at any level or the
+// earliest day in the daily log, whichever is older, to the day of the
+// pass. Nothing is shown when no start is known.
 function passJourney() {
   const pass = examAttempts().find(x => x.r === 'pass');
   if (!pass) return '';
@@ -8009,12 +8012,13 @@ function passJourney() {
   const s = new Date(start); s.setHours(0, 0, 0, 0);
   const [py, pm, pd] = pass.d.split('-').map(Number);
   const span = Math.max(1, Math.round((new Date(py, pm - 1, pd) - s) / 864e5));
-  const when = new Intl.DateTimeFormat(uiLang() === 'it' ? 'it-IT' : 'en-US', { month: 'long', day: 'numeric', year: 'numeric' }).format(s);
-  let cleared = 0; try { cleared = countCards(loadProgressForLevel(EXAM_LEVEL)).qCleared; } catch { }
-  const mocks = loadExamHistory().length;
-  const loc = uiLang() === 'it' ? 'it-IT' : 'en-US';
-  return t(mocks >= EXAM_HISTORY_LIMIT ? 'examdate.passJourneyMany' : 'examdate.passJourney',
-    when, span.toLocaleString(loc), cleared.toLocaleString(loc), mocks.toLocaleString(loc));
+  // In words, rounded: days under two weeks, weeks under about six, then
+  // months (57 days reads "about 2 months").
+  const months = Math.round(span / 30.44), weeks = Math.round(span / 7);
+  const words = span < 14 ? t('examdate.spanDays', span)
+    : span < 46 ? t('examdate.spanWeeks', weeks)
+    : months === 1 ? t('examdate.spanMonth') : t('examdate.spanMonths', months);
+  return t('examdate.passJourney', words);
 }
 // A short burst of confetti the first time the pass is shown on a device
 // (20261030g), never with reduced motion asked for. Purely decorative.
