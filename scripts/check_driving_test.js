@@ -41,6 +41,7 @@ setTimeout(()=>{
     ok(habits===6 && (body.innerHTML.slice(body.innerHTML.indexOf('For American drivers')).match(/<li/g)||[]).length===4 && !/STOP sign/.test(txt) && !/parallel parking[\s\S]*rb-it/.test(body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'))),'the American section closes the page with its four points and no pill');
     const first=body.querySelector('.rb-it'); first.click();
     ok(/circolare 28819/.test(first.nextElementSibling.textContent),'the first pill opens its own Italian twin');
+    ok(['Reversing (retromarcia)','Turning around (inversione di marcia)','Parking (parcheggio)','Stopping at a given point (frenata di precisione)'].every(h=>[...body.querySelectorAll('h4')].some(e=>e.textContent===h)) && /a pettine/.test(txt) && /a spina di pesce/.test(txt),'each maneuver carries the Italian name the examiner uses (20261030n)');
     const rev=[...lis].find(e=>/^Turn your head/.test(e.textContent));
     ok(rev && /Gira la testa/.test(rev.querySelector('.rb-itxt').textContent),'a step deep in the page pairs with its own twin');
   }

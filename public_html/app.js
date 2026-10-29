@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030m';
+const APP_VERSION     = '20261030n';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1718,11 +1718,12 @@ way a careful driver does.
 ## Part 2: the maneuvers
 
 You perform at least two of the four maneuvers below, and at least one of them
-is in reverse. The examiner says which ones and how. If you make a mistake in a
+is in reverse. The examiner says which ones and how, naming each in Italian, so
+the Italian name is given beside each one. If you make a mistake in a
 maneuver, the examiner may let you repeat it. A second mistake in the same
 maneuver ends the test.
 
-### Reversing
+### Reversing (*retromarcia*)
 
 You may be asked to reverse in a straight line or around a corner.
 
@@ -1732,7 +1733,7 @@ You may be asked to reverse in a straight line or around a corner.
 - Reverse slowly, parallel to the curb, with small corrections of the wheel. Short glances at the mirrors are allowed.
 - Around a corner, keep both hands on the wheel and rely more on the mirrors.
 
-### Turning around
+### Turning around (*inversione di marcia*)
 
 You turn the car to face the other way, using forward and reverse gears. You
 must do it in several moves, even if the road is wide enough to turn in one.
@@ -1745,20 +1746,22 @@ The examiner tells you this before you start.
 - Turn the wheel the other way, switch on the right turn signal, and reverse.
 - Select first gear, switch on the left turn signal, check the traffic, and pull out into the right lane.
 
-### Parking
+### Parking (*parcheggio*)
 
-You may be asked to park parallel to the curb, in a bay at a right angle, or in
-a bay at an angle, forward or in reverse, on level ground or on a slope. Then
+You may be asked to park parallel to the curb (*in linea*), in a bay at a right
+angle (*a pettine*), or in a bay at an angle (*a spina di pesce*), forward or in
+reverse, on level ground or on a slope. Then
 you pull out again.
 
 - Before you start, check behind and to both sides.
 - The exact distance from the curb does not matter. What matters is that you touch nothing, put nobody at risk, block no traffic, and finish inside the bay.
 - To pull out, signal, check every mirror and both blind spots, then move off promptly and join the right lane.
 
-### Stopping at a given point
+### Stopping at a given point (*frenata di precisione*)
 
 The examiner names a point, and you bring the car to a stop exactly there. An
-emergency stop may also be asked for, but it is optional.
+emergency stop (*frenata di emergenza*) may also be asked for, but it is
+optional.
 
 ## Part 3: driving in traffic
 
