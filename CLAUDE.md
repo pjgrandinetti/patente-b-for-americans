@@ -2769,7 +2769,20 @@ behind what shipped:
   taken it? Tell the app how it went." with I passed and I did not pass
   (`.exam-date-taken`), recorded for that day; Change my answer returns to
   the exam-day box. The day after still asks if nothing was answered.
-  `scripts/check_exam_outcome.js`, 21 checks in each face.
+  **After a fail (20261030f, maintainer).** The note points to the exam
+  sheet rather than to memory ("If your school gives you the exam sheet, it
+  shows your answer to each question. Search for each one you missed in the
+  Questions tab and add it to the weak spots."), hedged because one sheet
+  is the only evidence that candidates receive it. And after a FIRST fail
+  the app sets a PROVISIONAL date (`EXAM_DATE_PROV_KEY`, synced as
+  `examDateProv`), the first day the exam may be taken again
+  (`examRetakeKey`, a month on), so the daily review and one mock a day
+  run through the wait; the box keeps the fail note above it and heads the
+  countdown "Planned for ..., the first day you may take it again". Any date
+  the learner enters clears the flag. A second fail sets no date, since the
+  new application's timing cannot be predicted. The count of mistakes is
+  deliberately not asked: it would change nothing the app advises.
+  `scripts/check_exam_outcome.js`, 23 checks in each face.
   **The exam day keeps "Continue the review" and the Still waiting count
   (20261029y, maintainer, 2026-10-29: the day's set once left nothing to
   review if the exam is late in the day).** Only the day before stops at

@@ -54,13 +54,17 @@ setTimeout(()=>{
   const [y,m,d]=key(-1).split('-').map(Number); const again=new Date(y,m,d);
   const againWords=new Intl.DateTimeFormat(IT?'it-IT':'en-US',{weekday:'long',month:'long',day:'numeric'}).format(again);
   ok(txt.includes(againWords),'a fail gives the first day it may be taken again, a month on: '+againWords);
-  ok(/(6 months|6 mesi)/.test(txt) && !!box().querySelector('[data-ed=bank]') && !!box().querySelector('#exam-date-input'),'it names the six months, opens the Questions tab, and asks for the new date');
-  ok(!vis($('exam-ready-banner')),'no readiness banner after a fail until a new date');
-  box().querySelector('#exam-date-input').value=key(40); click('set');
-  ok(/(Your exam is in 40 days|tra 40 giorni)/.test(box().textContent),'a new date brings back the countdown');
+  ok(/(6 months|6 mesi)/.test(txt) && !!box().querySelector('[data-ed=bank]') && /(exam sheet|scheda d’esame)/.test(txt),'it names the six months, points to the exam sheet and opens the Questions tab');
+  // A first fail plans the review on the first day it may be taken again (20261030f).
+  const retake=key(-1).split('-').map(Number), retakeKey=(()=>{const d=new Date(retake[0],retake[1],retake[2]);return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');})();
+  ok(w.examDate()===retakeKey && w.localStorage.getItem('patente_exam_date_prov')==='1' && w.buildProgressBundle().settings.examDateProv==='1','a first fail sets a provisional date, the first day it may be taken again, and syncs it');
+  ok(!!box().querySelector('[data-row=review]') && /(Planned for|Pianificato per)/.test(txt) && !box().querySelector('#exam-date-input') && w.inReviewPhase(),'the daily review keeps running toward it, under a line that says it is planned, not booked');
+  ok(!vis($('exam-ready-banner')) || $('exam-ready-banner').classList.contains('banner-warn'),'no ready banner while the date is provisional');
+  click('change'); box().querySelector('#exam-date-input').value=key(40); click('set');
+  ok(/(Your exam is in 40 days|tra 40 giorni)/.test(box().textContent) && !w.localStorage.getItem('patente_exam_date_prov') && !box().querySelector('.exam-after-fail'),'the real date replaces it: the countdown, and the fail note goes');
   // a second fail
   w.localStorage.setItem('patente_exam_date',key(-2)); w.renderDashboard(); click('fail');
-  ok(/(new application|nuova domanda)/.test(box().textContent),'a second fail says a new application is needed');
+  ok(/(new application|nuova domanda)/.test(box().textContent) && !w.examDate() && !!box().querySelector('#exam-date-input'),'a second fail says a new application is needed, sets no provisional date and asks for one');
   // postponed
   w.localStorage.removeItem('patente_exam_outcome'); w.localStorage.setItem('patente_exam_date',key(-1)); w.renderDashboard(); click('postponed');
   ok(!w.localStorage.getItem('patente_exam_outcome') && !!box().querySelector('#exam-date-input') && !box().querySelector('[data-ed=bank]'),'postponed records nothing and asks for the date');

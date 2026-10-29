@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030e';
+const APP_VERSION     = '20261030f';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -401,8 +401,12 @@ const T = {
   'examdate.passHead': { en: 'Congratulations on passing the theory exam.', it: 'Complimenti, hai superato l\u2019esame di teoria.' },
   'examdate.passNext': { en: 'Your foglio rosa lets you practice driving for 12 months. You may take the driving test from one month after it was issued, with up to 3 attempts.', it: 'Il foglio rosa ti permette di esercitarti alla guida per 12 mesi. Puoi sostenere l\u2019esame di guida da un mese dopo il rilascio, con al massimo 3 tentativi.' },
   'examdate.failHead': { en: 'You can take the exam again from {0}.', it: 'Puoi ripetere l\u2019esame dal {0}.' },
-  'examdate.failNext': { en: 'At least a month must pass after a failed attempt, and the second attempt must fall within 6 months of filing your application. Add any questions you remember missing to the weak spots from the Questions tab. When you have the new date, enter it below.', it: 'Dopo un tentativo non superato deve passare almeno un mese, e il secondo tentativo deve cadere entro 6 mesi dalla presentazione della domanda. Aggiungi ai punti deboli le domande che ricordi di aver sbagliato, dalla scheda Domande. Quando hai la nuova data, inseriscila qui sotto.' },
-  'examdate.failTwice': { en: 'An application allows two attempts at the theory exam, so a new application is needed before you can take it again. Add any questions you remember missing to the weak spots from the Questions tab. When you have the new date, enter it below.', it: 'Una domanda consente due tentativi all\u2019esame di teoria, quindi serve una nuova domanda prima di ripeterlo. Aggiungi ai punti deboli le domande che ricordi di aver sbagliato, dalla scheda Domande. Quando hai la nuova data, inseriscila qui sotto.' },
+  'examdate.failNext': { en: 'At least a month must pass after a failed attempt, and the second attempt must fall within 6 months of filing your application. If your school gives you the exam sheet, it shows your answer to each question. Search for each one you missed in the Questions tab and add it to the weak spots. When you have the new date, enter it below.', it: 'Dopo un tentativo non superato deve passare almeno un mese, e il secondo tentativo deve cadere entro 6 mesi dalla presentazione della domanda. Se l\u2019autoscuola ti d\u00e0 la scheda d\u2019esame, vi trovi la tua risposta a ogni domanda. Cerca nella sezione Domande ciascuna che hai sbagliato e aggiungila ai punti deboli. Quando hai la nuova data, inseriscila qui sotto.' },
+  // After a first fail the review runs on a provisional date, the first day
+  // the exam may be taken again (20261030f, maintainer).
+  'examdate.failProv': { en: 'At least a month must pass after a failed attempt, and the second attempt must fall within 6 months of filing your application. If your school gives you the exam sheet, it shows your answer to each question. Search for each one you missed in the Questions tab and add it to the weak spots. Until you know the new date, the review below is planned for the first day you may take the exam again. Change the date when your school gives it to you.', it: 'Dopo un tentativo non superato deve passare almeno un mese, e il secondo tentativo deve cadere entro 6 mesi dalla presentazione della domanda. Se l\u2019autoscuola ti d\u00e0 la scheda d\u2019esame, vi trovi la tua risposta a ogni domanda. Cerca nella sezione Domande ciascuna che hai sbagliato e aggiungila ai punti deboli. Finch\u00e9 non conosci la nuova data, il ripasso qui sotto \u00e8 pianificato per il primo giorno in cui puoi ripetere l\u2019esame. Cambia la data quando l\u2019autoscuola te la comunica.' },
+  'examdate.provHead': { en: 'Planned for {1}, in {0} days, the first day you may take it again.', it: 'Pianificato per {1}, tra {0} giorni, il primo giorno in cui puoi ripeterlo.' },
+  'examdate.failTwice': { en: 'An application allows two attempts at the theory exam, so a new application is needed before you can take it again. If your school gives you the exam sheet, it shows your answer to each question. Search for each one you missed in the Questions tab and add it to the weak spots. When you have the new date, enter it below.', it: 'Una domanda consente due tentativi all\u2019esame di teoria, quindi serve una nuova domanda prima di ripeterlo. Se l\u2019autoscuola ti d\u00e0 la scheda d\u2019esame, vi trovi la tua risposta a ogni domanda. Cerca nella sezione Domande ciascuna che hai sbagliato e aggiungila ai punti deboli. Quando hai la nuova data, inseriscila qui sotto.' },
   'examdate.questionsTab': { en: 'Open the Questions tab', it: 'Apri la scheda Domande' },
   // The key points of every topic on one page (20261029m, maintainer,
   // 2026-10-29): the 25 summaries together, short enough for the last day.
@@ -7981,9 +7985,25 @@ function openQuestionsTab() {
   reviewSection = 'bank';
   try { renderReviewScreen(); } catch (e) { console.error('questions tab:', e); }
 }
-function setExamDate(v) {
-  try { if (v) localStorage.setItem(EXAM_DATE_KEY, v); else localStorage.removeItem(EXAM_DATE_KEY); } catch { }
+// A provisional date (20261030f): set after a first fail to the first day
+// the exam may be taken again, so the daily review runs through the wait.
+// Any date the learner enters clears it.
+const EXAM_DATE_PROV_KEY = 'patente_exam_date_prov';
+function examDateProv() {
+  try { return localStorage.getItem(EXAM_DATE_PROV_KEY) === '1' && !!examDate(); } catch { return false; }
+}
+function setExamDate(v, prov = false) {
+  try {
+    if (v) localStorage.setItem(EXAM_DATE_KEY, v); else localStorage.removeItem(EXAM_DATE_KEY);
+    if (v && prov) localStorage.setItem(EXAM_DATE_PROV_KEY, '1'); else localStorage.removeItem(EXAM_DATE_PROV_KEY);
+  } catch { }
   stampSettings();
+}
+// The first day the exam may be taken again after an attempt on day d: a
+// month on (art. 121 c. 10).
+function examRetakeKey(d) {
+  const [y, m, dd] = d.split('-').map(Number);
+  return dayKey(new Date(y, m, dd));
 }
 function examDaysLeft(v) {
   const [y, m, d] = v.split('-').map(Number);
@@ -8060,7 +8080,16 @@ function renderExamDate(atBar) {
         // maintainer), so today's date can be answered too.
         const today = examDate();
         const d = examAwaitingOutcome() || (today && examDaysLeft(today) === 0 ? today : null);
-        if (d) { saveExamAttempts([...examAttempts(), { d, r: act }]); setExamDate(null); }
+        if (d) {
+          const a = [...examAttempts(), { d, r: act }];
+          saveExamAttempts(a);
+          const again = examRetakeKey(d);
+          // After a FIRST fail the review keeps running on the first day the
+          // exam may be taken again (20261030f, maintainer); a second fail
+          // needs a new application, whose date nobody can predict.
+          if (act === 'fail' && a.filter(x => x.r === 'fail').length === 1 && again >= dayKey()) setExamDate(again, true);
+          else setExamDate(null);
+        }
         _examDateEdit = false;
       }
       else if (act === 'postponed') { setExamDate(null); _examDateEdit = false; }
@@ -8097,15 +8126,15 @@ function renderExamDate(atBar) {
     return;
   }
   let failHtml = '';
-  if (after === 'fail' || (!date && !_examDateEdit && examAttempts().length && examAttempts().slice(-1)[0].r === 'fail')) {
+  const lastFail = examAttempts().length && examAttempts().slice(-1)[0].r === 'fail';
+  const prov = !_examDateEdit && lastFail && examDateProv();
+  if (after === 'fail' || prov || (!date && !_examDateEdit && lastFail)) {
     const a = examAttempts(); const last = a[a.length - 1];
     const fails = a.filter(x => x.r === 'fail').length;
-    const [y, m, d] = last.d.split('-').map(Number);
-    const again = new Date(y, m, d);   // a month after the attempt
-    const againKey = dayKey(again);
+    const againKey = examRetakeKey(last.d);
     failHtml = `<div class="exam-date-text exam-after-fail">` +
-      (fails >= 2 ? '' : `<strong>${escHtml(t('examdate.failHead', examDayWords(againKey)))}</strong>`) +
-      `<p class="exam-date-advice">${escHtml(t(fails >= 2 ? 'examdate.failTwice' : 'examdate.failNext'))}</p>` +
+      (fails >= 2 || prov ? '' : `<strong>${escHtml(t('examdate.failHead', examDayWords(againKey)))}</strong>`) +
+      `<p class="exam-date-advice">${escHtml(t(fails >= 2 ? 'examdate.failTwice' : prov ? 'examdate.failProv' : 'examdate.failNext'))}</p>` +
       `<p><button type="button" class="link-btn" data-ed="bank">${escHtml(t('examdate.questionsTab'))}</button> ` +
       `<button type="button" class="link-btn" data-ed="undo">${escHtml(t('examdate.undo'))}</button></p></div>`;
   }
@@ -8124,7 +8153,8 @@ function renderExamDate(atBar) {
   // days is retained better than the same practice massed, and a missed
   // question is relearned on separate days.
   let pool = 0, left = 0; try { pool = dailyReviewPool().length; left = dailyReviewSet().length; } catch (e) { console.error('daily review:', e); }
-  const head = n === 0 ? t('examdate.today') : n === 1 ? t('examdate.tomorrow', when) : t('examdate.inN', n, when);
+  const head = prov && n > 1 ? t('examdate.provHead', n, when)
+    : n === 0 ? t('examdate.today') : n === 1 ? t('examdate.tomorrow', when) : t('examdate.inN', n, when);
   // Three parts since 20261023h (maintainer, 2026-10-23: the one paragraph
   // had grown, with numbers scattered through it): the date, the advice,
   // then today's figures as rows with the numbers at the right edge.
@@ -8148,7 +8178,7 @@ function renderExamDate(atBar) {
     (waiting > 0 ? row('waiting', 'examdate.rowWaiting', String(waiting)) : '') +
     row('mock', 'examdate.rowMock', todayN > 1 ? t('examdate.vTakenN', todayN) : todayN ? t('examdate.vTaken') : t('examdate.vNotYet')) +
     `</dl>` : '';
-  box.innerHTML = `<div class="exam-date-text"><strong>${escHtml(head)}</strong>` +
+  box.innerHTML = failHtml + `<div class="exam-date-text"><strong>${escHtml(head)}</strong>` +
     (n >= 0 ? `<p class="exam-date-advice">${escHtml(t(n === 0 ? 'examdate.paceToday' : last ? 'examdate.paceLast' : n <= EXAM_NEAR_DAYS ? 'examdate.paceNear' : 'examdate.pace'))}</p>` : '') +
     // The day before and the day itself wish the learner well, in Italian
     // for every browser (20261028b, maintainer, 2026-10-28).
@@ -8956,6 +8986,7 @@ function buildProgressBundle() {
       dashFull:     localStorage.getItem(DASH_FULL_KEY),
       mockEarly:    localStorage.getItem(MOCK_EARLY_KEY),
       examDate:     localStorage.getItem(EXAM_DATE_KEY),
+      examDateProv: localStorage.getItem(EXAM_DATE_PROV_KEY),
       examOutcome:  localStorage.getItem(EXAM_OUTCOME_KEY),
       missMin:      localStorage.getItem(MISS_MIN_KEY),
       missFilter:   localStorage.getItem(MISS_FILTER_KEY),
@@ -10461,6 +10492,7 @@ function mergeSyncSettings(s) {
   if (s.dashFull   !== undefined) set(DASH_FULL_KEY, s.dashFull);
   if (s.mockEarly  !== undefined) set(MOCK_EARLY_KEY, s.mockEarly);
   if (s.examDate   !== undefined) set(EXAM_DATE_KEY, s.examDate);
+  if (s.examDateProv !== undefined) set(EXAM_DATE_PROV_KEY, s.examDateProv);
   if (s.examOutcome !== undefined) set(EXAM_OUTCOME_KEY, s.examOutcome);
   if (s.missMin    !== undefined) set(MISS_MIN_KEY, s.missMin);
   if (s.missFilter !== undefined) set(MISS_FILTER_KEY, s.missFilter);

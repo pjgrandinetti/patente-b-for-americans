@@ -3483,3 +3483,4 @@ body.fig-viewing { overflow: hidden; }
 .km-more-wrap { margin: .8rem 0 .2rem; text-align: center; }
 .km-more { padding: .35rem 1rem; border-radius: 8px; font: inherit; cursor: pointer; }
 .exam-date-box .exam-date-taken { flex-basis: 100%; display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .6rem; margin-top: .4rem; padding-top: .6rem; border-top: 1px solid var(--border); }
+.exam-date-box .exam-after-fail { flex-basis: 100%; }
