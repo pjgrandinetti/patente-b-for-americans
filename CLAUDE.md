@@ -2803,7 +2803,24 @@ behind what shipped:
   then months rounded ("about", since his 57 days are just under two
   months, where he had written "over 2 months"). And a one-time confetti
   burst (`celebratePass`, `patente_pass_celebrated` per device, never with
-  reduced motion). No study time is claimed: `ms` measures reading time on
+  reduced motion). **The box links "How the driving test works"
+  (20261030j, maintainer, 2026-10-29)**, a page in the notes overlay
+  (`DRIVING_TEST`, `drivingTestEntry`, `openDrivingTest`, built like
+  `KEY_POINTS`): the three parts of the B driving test, the routine for each
+  maneuver, the roundabout rules by lane, what the examiner judges and what
+  ends the test at once, all from the Motorizzazione's circular to examiners,
+  prot. 28819 of 19 September 2019 (the SIDA manual has nothing on the
+  practical test). The circular's foglio rosa figures (six months, one retry)
+  are out of date and are not used. The text lives in `DRIVING_TEST_MD` in
+  app.js, English and Italian written block for block so they pair by
+  position; the English closes with "Habits worth checking" (STOP, no right
+  on red, yellow, pedestrians, the right-hand rule, no passing on the right,
+  visible checks), marked as not from the circular, with no Italian and no
+  pill. A non-Italian browser opens it in English at every level. An edit to
+  one half needs the same edit to the other in the same position, or the
+  pills pair the wrong blocks in silence. `docs/driving-test-draft.md` is the
+  draft it came from. `scripts/check_driving_test.js`, 9 checks in English,
+  5 in Italian. No study time is claimed: `ms` measures reading time on
   clean answers only, not hours studied. The driving stage (the foglio rosa
   tracker and the rest) will replace this box. `scripts/check_after_pass.js`,
   11 checks in each face.

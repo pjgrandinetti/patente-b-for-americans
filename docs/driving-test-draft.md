@@ -1,8 +1,9 @@
 # The driving test, explained (draft, 2026-10-29)
 
 Draft of the stage 7 content for a learner holding the foglio rosa. English
-face only; the Italian face follows once the English is agreed. Nothing here
-is in the app yet.
+face first, the Italian below it. **Shipped in 20261030j** as the page "How
+the driving test works", whose text is `DRIVING_TEST_MD` in app.js; edit it
+there, not here.
 
 **Source.** Every rule below comes from the Motorizzazione's circular to
 examiners, prot. 28819 of 19 September 2019, "Conseguimento patente B"
