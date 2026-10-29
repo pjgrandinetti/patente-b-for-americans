@@ -2795,7 +2795,8 @@ behind what shipped:
   maintainer's own words (20261030h; the counts of days, questions and
   mocks shipped first and he called them clinical): "You've been preparing
   for this moment for about 2 months, and you've finally made it! You're
-  not done yet, but this was a big accomplishment. Again, congratulations."
+  not done yet, but this was a big accomplishment. Again, congratulations
+  on obtaining your foglio rosa." (20261030i, his wording)
   The span is `passJourney`'s, from the older of the earliest answer stamp
   `gAt` at any level and the earliest day in the daily log (kept 120 days)
   to the day of the pass, in words: days under 14, weeks under 46 days,

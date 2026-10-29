@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030h';
+const APP_VERSION     = '20261030i';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -403,7 +403,7 @@ const T = {
   // more festive, since the app knows how long they studied).
   // The maintainer's own words (20261030h), in place of the counts of
   // 20261030g, which read as clinical.
-  'examdate.passJourney': { en: 'You\u2019ve been preparing for this moment for {0}, and you\u2019ve finally made it! You\u2019re not done yet, but this was a big accomplishment. Again, congratulations.', it: 'Ti prepari a questo momento da {0}, e finalmente ce l\u2019hai fatta! Non hai ancora finito, ma \u00e8 stato un grande traguardo. Ancora complimenti.' },
+  'examdate.passJourney': { en: 'You\u2019ve been preparing for this moment for {0}, and you\u2019ve finally made it! You\u2019re not done yet, but this was a big accomplishment. Again, congratulations on obtaining your foglio rosa.', it: 'Ti prepari a questo momento da {0}, e finalmente ce l\u2019hai fatta! Non hai ancora finito, ma \u00e8 stato un grande traguardo. Ancora complimenti per il tuo foglio rosa.' },
   'examdate.spanDays': { en: '{0} days', it: '{0} giorni' },
   'examdate.spanWeeks': { en: 'about {0} weeks', it: 'circa {0} settimane' },
   'examdate.spanMonth': { en: 'about a month', it: 'circa un mese' },
