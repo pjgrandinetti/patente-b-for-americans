@@ -3261,8 +3261,9 @@ behind what shipped:
   already recorded for a wrong answer at Solo italiano (`enOnWrong`), where
   the maintainer asked for the translations without a control. `.exam-rev-enbtn`
   and `.exam-rev-enblock` are gone, along with the click branch that toggled
-  them; the `.exam-rev-revbtn` link into the notes stays, since that is the
-  row's real remedy. Both entry points share this function, the live review
+  them. The `.exam-rev-revbtn` link into the notes (📖 Topic review) was
+  REMOVED in 20261029z at the maintainer's word, as on Questions you keep
+  missing; the "+ Add to weak spots" pin on a right answer stays. Both entry points share this function, the live review
   and the past-results panel, so the change reaches both.
 - **Verified in jsdom**, `/tmp/exam_dom.js`, 21 checks plus 7 on the review's
   English, run in BOTH language faces (`UILANG=it-IT node exam_dom.js`): a

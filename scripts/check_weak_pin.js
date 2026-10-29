@@ -24,6 +24,7 @@ setTimeout(()=>{
   const items=[...w.document.querySelectorAll('#exam-history-review .exam-rev-item')];
   const btn=()=>w.document.querySelector('#exam-history-review .exam-rev-pin');
   ok(items.length===2 && items[0].querySelector('.exam-rev-pin') && !items[1].querySelector('.exam-rev-pin'),'the button is on the right answer only');
+  ok(!w.document.querySelector('#exam-history-review .exam-rev-revbtn'),'no Concepts button on a reviewed mock question (20261029z)');
   ok(btn().textContent===(IT?'+ Aggiungi ai punti deboli':'+ Add to weak spots'),'label: '+btn().textContent);
   const inWeak=()=>w.difficultCards().some(d=>d.id===C.id && d.stmts.includes(String(st.number)));
   const r3=()=>w.eval(`loadProgressForLevel(3)[${JSON.stringify(C.id)}].st[${JSON.stringify(String(st.number))}]`);

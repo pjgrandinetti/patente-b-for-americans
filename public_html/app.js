@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261029y';
+const APP_VERSION     = '20261029z';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -896,7 +896,6 @@ const T = {
   'exrev.ans': { en: 'Your answer: <strong>{0}</strong> &middot; Correct: <strong>{1}</strong>',
                  it: 'La tua risposta: <strong>{0}</strong> &middot; Corretta: <strong>{1}</strong>' },
   'exrev.qid': { en: 'Quesito n° {0}', it: 'Quesito n° {0}' },
-  'exrev.review': { en: '📖 Topic review', it: '📖 Ripasso dell’argomento' },
   'exam.hide': { en: 'Hide Answers', it: 'Nascondi risposte' },
   'exam.reviewBtn': { en: 'Review Answers', it: 'Rivedi le risposte' },
   'exam.counter': { en: 'Question {0} of {1}', it: 'Domanda {0} di {1}' },
@@ -11372,11 +11371,6 @@ document.addEventListener('click', (e) => {
     pin.textContent = weakPinLabel(on);
     return;
   }
-  const rev = e.target.closest('.exam-rev-revbtn');
-  if (rev) {
-    const q = questionById(rev.dataset.qid);
-    if (q) openReview(q.topic);
-  }
 });
 
 // Card lookup by id, built lazily once (questions don't change mid-session).
@@ -11473,15 +11467,12 @@ function buildExamReviewHtml(rows) {
     const expl    = (explTxt ? `<div class="exam-rev-expl">${explHtml(explTxt)}${contentLang() === 'it' ? '' : readingHtml(stmt)}</div>` : '') +
       (enWanted && contentLang() === 'it' && stmt.explanation
         ? `<div class="exam-rev-expl exam-rev-expl-en">${explHtml(stmt.explanation)}${readingHtml(stmt)}</div>` : '');
-    // Straight to the concept review for the topic this question came from:
-    // after an exam, a miss is usually a rule to re-read, not a word to look up.
-    const revBtn = q && reviewFor(q.topic)
-      ? `<button type="button" class="stmt-it-btn exam-rev-revbtn" data-qid="${escHtml(String(q.id))}">${t('exrev.review')}</button>`
-      : '';
+    // No Concepts button on a reviewed mock question (20261029z, maintainer),
+    // as in Questions you keep missing.
     const pinBtn = q && chosen === correct
       ? `<button type="button" class="stmt-it-btn exam-rev-pin${weakPinned(q.id, stmt.number) ? ' is-on' : ''}" data-qid="${escHtml(String(q.id))}" data-num="${escHtml(String(stmt.number))}">${escHtml(weakPinLabel(weakPinned(q.id, stmt.number)))}</button>`
       : '';
-    const actions = (revBtn || pinBtn) ? `<div class="exam-rev-actions">${revBtn}${pinBtn}</div>` : '';
+    const actions = pinBtn ? `<div class="exam-rev-actions">${pinBtn}</div>` : '';
     return `
       <div class="exam-rev-item exam-rev-${cls}">
         ${q && q.image ? `<img class="exam-rev-img" src="${escHtml(q.image)}" alt="" loading="lazy">` : ''}
