@@ -2737,7 +2737,13 @@ behind what shipped:
   for adding remembered misses to the weak spots, and the date field; a
   second fail says a new application is needed. Change my answer undoes
   the last outcome. The readiness banner is hidden in every after-exam
-  state. `scripts/check_exam_outcome.js`, 20 checks in each face.
+  state. `scripts/check_exam_outcome.js`, 19 checks in each face.
+  **The exam day keeps "Continue the review" and the Still waiting count
+  (20261029y, maintainer, 2026-10-29: the day's set once left nothing to
+  review if the exam is late in the day).** Only the day before stops at
+  the day's set (`dayBefore` in `renderExamDate`); on the day itself the
+  figures link stays in place of the pool table. `check_review_extra.js`
+  asserts both days.
   **The key points of every topic on one page (20261029m, maintainer,
   2026-10-29: reading all the topics on the last day is too long, and the
   key points together might be short enough).** Every review ends with a

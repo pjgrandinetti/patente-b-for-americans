@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261029x';
+const APP_VERSION     = '20261029y';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -8145,7 +8145,11 @@ function renderExamDate(atBar) {
   // The day before (20261028a) and, since 20261029l, the exam day itself:
   // the review and the mock stay, without the Still waiting count.
   const last = n <= 1;
-  const waiting = last ? 0 : Math.max(0, pool - left);
+  // The exam day itself keeps the Still waiting count and Continue the
+  // review (20261029y, maintainer, 2026-10-29: the day's set once was too
+  // little if the exam is late in the day); only the day before stops there.
+  const dayBefore = n === 1;
+  const waiting = dayBefore ? 0 : Math.max(0, pool - left);
   const today = n >= 0 ? `<dl class="exam-date-today">` +
     row('review', 'examdate.rowReview', left > 0 ? t('examdate.vLeft', left) : pool > 0 || reviewDoneToday() > 0 ? t('examdate.vDone') : t('examdate.vNone')) +
     (waiting > 0 ? row('waiting', 'examdate.rowWaiting', String(waiting)) : '') +
@@ -8157,7 +8161,7 @@ function renderExamDate(atBar) {
     // for every browser (20261028b, maintainer, 2026-10-28).
     (n <= 1 ? `<p class="exam-date-wish" lang="it">${escHtml(t('examdate.wish'))}</p>` : '') + today + `</div>` +
     (n >= 0 && left > 0 ? `<button type="button" class="btn-primary" data-ed="review">${escHtml(t('examdate.reviewStart'))}</button>` : '') +
-    (n > 0 && !last && left === 0 && pool > 0 ? `<button type="button" class="btn-secondary" data-ed="more">${escHtml(t('examdate.reviewContinue'))}</button>` : '') +
+    (n >= 0 && !dayBefore && left === 0 && pool > 0 ? `<button type="button" class="btn-secondary" data-ed="more">${escHtml(t('examdate.reviewContinue'))}</button>` : '') +
     `<button type="button" class="link-btn" data-ed="change">${escHtml(t('examdate.change'))}</button>` +
     (n >= 0 && pool > 0 ? (last ? examFiguresLinkHtml() : examPoolHtml()) : '') +
     (n >= 0 && last ? keyPointsLinkHtml() : '');

@@ -28,7 +28,6 @@ setTimeout(()=>{
   ok(/(Your exam is today|Il tuo esame è oggi)/.test(txt),'the exam day reads as today');
   ok(/(later in the day|più tardi nella giornata)/.test(txt) && /(20 minutes for 30|20 minuti per 30)/.test(txt),'its advice keeps the review and mock for a late exam, and gives the room\'s time');
   ok(!!box().querySelector('[data-row=review]') && !!box().querySelector('[data-row=mock]'),'the review and mock rows stay on the exam day');
-  ok(!box().querySelector('[data-row=waiting]'),'no Still waiting row on the exam day');
   ok(vis($('dash-next')),'the mock card stays on the exam day');
   ok(!box().querySelector('[data-ed=pass]'),'nothing asks how it went on the day itself');
   // the day after

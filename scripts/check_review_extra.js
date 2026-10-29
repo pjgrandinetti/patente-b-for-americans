@@ -49,5 +49,11 @@ setTimeout(()=>{
   $('exam-date-box').querySelector('[data-ed=more]').click();
   const s2=w.eval('session');
   ok(s2.reviewExtra===true && s2.queue.length===10 && s2.reviewDoneBefore===1 && /(Extra review: 1 of 11|Ripasso extra: 1 di 11)/.test($('study-progress-label').textContent),'continuing again resumes the extra session at 1 of 11 with the 10 cards left: '+$('study-progress-label').textContent);
+  // The exam day keeps Continue the review and the waiting count (20261029y); the day before does not.
+  w.showScreen('dashboard'); w.eval('session.buildMode = null');
+  w.localStorage.setItem('patente_exam_date',key(0)); w.renderDashboard();
+  { const b=$('exam-date-box'); ok(!!b.querySelector('[data-ed=more]') && !!b.querySelector('[data-row=waiting]'),'on the exam day the review can be continued, with the waiting count'); }
+  w.localStorage.setItem('patente_exam_date',key(1)); w.renderDashboard();
+  { const b=$('exam-date-box'); ok(!b.querySelector('[data-ed=more]') && !b.querySelector('[data-row=waiting]'),'the day before stops at the day\'s set'); }
   console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);
 },2500);
