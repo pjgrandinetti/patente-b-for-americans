@@ -2359,7 +2359,17 @@ behind what shipped:
   sections covering exactly our eight topics, which would make 33, so which
   five take a second place is unknown (the app picks five of the eight at
   random per sheet, each at most once more). The text on the page says the
-  Ministry does not publish the rule; keep that sentence. Measured on the
+  Ministry does not publish the rule; keep that sentence. **One real
+  sheet agrees with that model (the maintainer's theory exam, 2026-10-29,
+  passed 30 of 30):** every one of its 30 statements is a live statement
+  of our bank, word for word; all 25 topics appeared, and the five that
+  appeared twice (circulation and position, the driver's condition and
+  first aid, carriageway and autostrada, right-of-way signs, safe distance)
+  are all among our eight `SAFETY_TOPICS`. The sheet ran through the topics
+  once (questions 1 to 17) and then again with the rest, so a topic's two
+  questions were far apart. One sheet cannot say which five are chosen or
+  how; it only fails to contradict the model. Do not record the personal
+  details on the sheet anywhere in the repository. Measured on the
   maintainer's record: the plausible rules span about nine points of pass
   rate and the app's sits near the hard end. Reweighting the weak-spots
   drill by these odds was offered and NOT decided; do not do it unasked.
