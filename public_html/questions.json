@@ -41306,8 +41306,8 @@
         "italian_text": "Su strade extraurbane principali il limite massimo di velocità è di 70 km/h per autotreni",
         "answer": "VERO",
         "english_translation": "On main extra-urban roads the maximum speed limit is 70 km/h for truck-and-trailer combinations (autotreni).",
-        "explanation": "True. Truck-and-trailer combinations are limited to 70 km/h on main extra-urban roads. A truck-and-trailer combination (*autotreno*) is held to 70 km/h on extra-urban roads and to 80 on the autostrada.",
-        "explanation_it": "Vero. Gli autotreni sono limitati a 70 km/h sulle strade extraurbane principali. Un autotreno è limitato a 70 km/h sulle strade extraurbane e a 80 in autostrada."
+        "explanation": "True. An *autotreno* is a truck towing a trailer, and a vehicle towing a trailer is held to 70 km/h on every extra-urban road, main or secondary. On the autostrada an autotreno is held to 80 km/h.",
+        "explanation_it": "Vero. L'autotreno è un autocarro che traina un rimorchio, e chi traina un rimorchio è limitato a 70 km/h su tutte le strade extraurbane, principali e secondarie. In autostrada l'autotreno è limitato a 80 km/h."
       },
       {
         "number": "22413",
@@ -45585,8 +45585,8 @@
         "italian_text": "Durante la marcia per file parallele i motocicli possono procedere passando tra i veicoli affiancati",
         "answer": "FALSO",
         "english_translation": "During parallel-line driving motorcycles may proceed by passing between vehicles driving side by side.",
-        "explanation": "False. Motorcycles may not thread between vehicles traveling side by side in parallel lines. Like every other vehicle, a motorcycle keeps to its lane within the lines. Approaching an intersection, a two-wheeler queues behind the vehicles already waiting and moves off in turn.",
-        "explanation_it": "Falso. I motocicli non possono infilarsi tra i veicoli che marciano affiancati per file parallele. Come ogni altro veicolo, il motociclo resta nella propria corsia all'interno delle file. Avvicinandosi a un incrocio, il veicolo a due ruote si incolonna dietro i veicoli già in attesa e riparte al suo turno."
+        "explanation": "False. Here *tra* means between, not among. The statement says motorcycles may ride through the gap between two vehicles driving side by side, and they may not. Like every other vehicle, a motorcycle keeps to its own lane within the lines. Approaching an intersection, a two-wheeler queues behind the vehicles already waiting and moves off in turn.",
+        "explanation_it": "Falso. I motocicli non possono infilarsi nello spazio tra due veicoli che marciano affiancati per file parallele. Come ogni altro veicolo, il motociclo resta nella propria corsia all'interno delle file. Avvicinandosi a un incrocio, il veicolo a due ruote si incolonna dietro i veicoli già in attesa e riparte al suo turno."
       }
     ]
   },

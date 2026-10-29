@@ -5639,6 +5639,13 @@ to areas open to the public, and the two Reference rows whose only source was
   grow, none shrinks. Measured with Playwright at 390 and 1280 px: 4288
   392x240, 4289 378x240, 4296 147x260. A drawn figure is an SVG with text,
   so a later edit of a name is a text edit, not a redraw.
+  **Flags of 2026-10-29 (20261030k).** 22878: *tra* reads as between or
+  among, and the statement means between, slipping through the gap between
+  two vehicles side by side; the English explanation now opens on that
+  (English only, a native reader needing none), the Italian says *nello
+  spazio tra due veicoli*. 22412: the explanation repeated itself and now
+  says what the autotreno is, a truck towing a trailer, held to 70 on every
+  extra-urban road like any vehicle towing, and to 80 on the autostrada.
   **Flags of 2026-10-28 (20261028i).** 20341's explanation was cut to the
   rule (a blue circle with a white symbol is mandatory; round alone is not,
   since prohibition signs are round too). 22314 reads "empty", not
