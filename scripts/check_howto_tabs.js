@@ -35,6 +35,9 @@ setTimeout(()=>{
     tabs()[0].click(); a.click();
     setTimeout(()=>{
       ok(scrolled && scrolled.closest('.route-pane').dataset.route==='school','and of the school tab when that one shows');
+      // What happens at the exam center (20261030c, maintainer's own exam): in both routes' theory step, English face only.
+      const steps=[...w.document.querySelectorAll('.route-pane .step-theory')];
+      ok(steps.length===2 && steps.every(li=>IT ? !/On the day|locker/.test(li.textContent) : /On the day\./.test(li.textContent) && /locker/.test(li.textContent) && /two statements/.test(li.textContent) && /mock exam in this app/.test(li.textContent)),IT?'the Italian face carries no exam-center paragraph':'both theory steps say what happens at the exam center');
       console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);
     },30);
   },30);

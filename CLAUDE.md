@@ -2369,7 +2369,22 @@ behind what shipped:
   once (questions 1 to 17) and then again with the rest, so a topic's two
   questions were far apart. One sheet cannot say which five are chosen or
   how; it only fails to contradict the model. Do not record the personal
-  details on the sheet anywhere in the repository. Measured on the
+  details on the sheet anywhere in the repository.
+  **What happens at the exam center is in the How-to (20261030c, from the
+  maintainer's account of that day).** Both routes' theory-exam step ends
+  with an "On the day." paragraph, English face only (an Italian candidate
+  understands the staff and needs none of it): the phone switched off in a
+  locker with coat and hat, a camera checking the face at the entrance and
+  at the desk against the application photo, the staff's explanation in
+  Italian only, two statements to accept on screen before the start (what
+  they say is NOT known; the step says to ask the school, and the app must
+  not guess), the exam screen laid out like the mock exam here with answers
+  reviewable before ending, and a result that may come later through the
+  school rather than on screen. Written as what candidates commonly meet,
+  since it is one candidate at one office. Left out on purpose: the
+  proctor's hint and remarks about kind or unkind staff, and the school's
+  lift to the center. `check_howto_tabs.js` asserts the paragraph in both
+  routes in English and its absence in Italian. Measured on the
   maintainer's record: the plausible rules span about nine points of pass
   rate and the app's sits near the hard end. Reweighting the weak-spots
   drill by these odds was offered and NOT decided; do not do it unasked.
