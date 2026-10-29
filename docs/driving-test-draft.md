@@ -178,3 +178,157 @@ of habit. Each one is something the examiner judges under the areas above.
 - The circular says nothing about satnav or about driving without directions. It does say the examiner sets how a maneuver is done ("secondo la modalità indicata dall'esaminatore").
 - Not yet checked against your school: the routes your office uses, and whether its examiners ask for the emergency stop.
 - The Italian face will be written from this text once it is agreed. The commands the examiner uses in Italian belong to item 3 and are not here.
+
+---
+
+# L'esame di guida spiegato (bozza, versione italiana)
+
+Versione italiana della bozza qui sopra, frase per frase, con la stessa fonte
+(circolare prot. 28819 del 19 settembre 2019). La sezione "Habits worth
+checking" non ha un equivalente italiano: è scritta per un automobilista
+americano, e un lettore italiano non ne ha bisogno, come per le note *For US
+drivers* dei riepiloghi.
+
+## Come si svolge l'esame
+
+L'esame ha tre fasi, in ordine, e per passare alla fase successiva devi
+superare quella precedente. L'esaminatore è in auto con te, e l'istruttore
+siede al tuo fianco con i doppi comandi. L'ufficio prevede circa 40 minuti per
+candidato, di cui 25 di guida nel traffico.
+
+Puoi sostenere l'esame su un'auto con cambio manuale o automatico. Un esame
+superato con il cambio automatico porta il codice 78 sulla patente, che non
+consente di guidare un'auto con cambio manuale.
+
+## Prima fase: la preparazione alla guida
+
+Questa fase non è un esame di teoria. L'esaminatore osserva come prepari
+l'auto, come farebbe un conducente attento.
+
+- Regola la distanza del sedile dai pedali e dal volante, poi l'altezza e l'inclinazione dello schienale.
+- Regola lo specchio interno ed entrambi gli specchi esterni.
+- Allaccia la cintura di sicurezza, e regolane l'altezza se l'auto lo consente.
+- Regola il poggiatesta.
+- Controlla che le porte e il bagagliaio siano chiusi, e sappi dov'è la spia delle porte aperte.
+- Sappi come si apre il cofano e come funziona la sicura per bambini.
+- Preparati a controllare o usare almeno due dispositivi scelti a caso dall'esaminatore. Sono gli pneumatici, lo sterzo, i freni, l'avvisatore acustico e le luci, e i livelli dei liquidi (olio, liquido di raffreddamento, liquido dei freni e liquido lavavetri).
+- Preparati ad accendere gli anabbaglianti, gli abbaglianti, gli indicatori di direzione, le luci di emergenza e i fendinebbia, e a usare l'avvisatore acustico.
+
+## Seconda fase: le manovre
+
+Esegui almeno due delle quattro manovre qui sotto, e almeno una è in
+retromarcia. L'esaminatore dice quali e come. Se sbagli una manovra,
+l'esaminatore può farti ripetere. Un secondo errore nella stessa manovra
+conclude l'esame.
+
+### La retromarcia
+
+Può esserti chiesta in linea retta o con una svolta.
+
+- Guarda nello specchio interno e nello specchio destro.
+- Accendi l'indicatore di direzione destro.
+- Gira la testa e il busto per controllare direttamente l'angolo cieco a destra. L'esaminatore deve vederti farlo.
+- Procedi lentamente, parallelo al margine, con piccole correzioni dello sterzo. Sono ammesse brevi occhiate agli specchi.
+- In curva, tieni entrambe le mani sul volante e affidati di più agli specchi.
+
+### L'inversione di marcia
+
+Giri l'auto nel senso opposto, usando la marcia avanti e la retromarcia. Devi
+farlo in più manovre, anche se la strada è abbastanza larga per girare in una
+sola. L'esaminatore te lo dice prima di iniziare.
+
+- Parti dal margine destro della strada, in prima.
+- Guarda avanti, dietro e su entrambi i lati.
+- Accendi l'indicatore sinistro, poi avanza lentamente sterzando.
+- Fermati vicino al margine sinistro senza toccare il marciapiede.
+- Sterza dalla parte opposta, accendi l'indicatore destro e fai retromarcia.
+- Inserisci la prima, accendi l'indicatore sinistro, controlla il traffico e immettiti nella corsia di destra.
+
+### Il parcheggio
+
+Può esserti chiesto di parcheggiare in linea lungo il marciapiede, a pettine o
+a spina di pesce, in avanti o in retromarcia, in piano o in pendenza. Poi esci
+di nuovo dal posto.
+
+- Prima di iniziare, controlla dietro e su entrambi i lati.
+- La distanza esatta dal marciapiede non conta. Conta che tu non tocchi nulla, non metta in pericolo nessuno, non intralci il traffico e finisca dentro lo stallo.
+- Per uscire, segnala, controlla tutti gli specchi ed entrambi gli angoli ciechi, poi parti senza esitare e immettiti nella corsia di destra.
+
+### La frenata di precisione
+
+L'esaminatore indica un punto, e tu fermi l'auto esattamente lì. Può esserti
+chiesta anche una frenata di emergenza, ma è facoltativa.
+
+## Terza fase: la guida nel traffico
+
+Guidi per 25 minuti su strade scelte dall'ufficio, nel traffico normale,
+seguendo le indicazioni dell'esaminatore. La prova può comprendere una
+qualsiasi delle situazioni seguenti.
+
+- La partenza da un parcheggio, da una fermata nel traffico o da una strada laterale.
+- I rettilinei, compreso l'incrocio con i veicoli in senso opposto dove la strada è stretta.
+- Le curve.
+- Le intersezioni di ogni tipo.
+- Le svolte a sinistra e a destra, e i cambi di corsia.
+- L'ingresso in autostrada e l'uscita, dalle rampe. In autostrada puoi usare solo le due corsie più vicine al margine destro.
+- Il sorpasso di veicoli e ostacoli, e l'essere sorpassati.
+- Le rotatorie, i passaggi a livello, le fermate di autobus e tram, gli attraversamenti pedonali, le salite e discese lunghe, le gallerie.
+- La discesa dall'auto in sicurezza, alla fine.
+
+### Le rotatorie
+
+La circolare dà agli esaminatori regole precise per le rotatorie, perché è lì
+che i candidati sbagliano più spesso.
+
+- Una rotatoria è un'intersezione, e ogni uscita è una svolta.
+- Avvicinati lentamente e preparati a dare la precedenza. Quasi tutte le rotatorie hanno il segnale di dare precedenza agli ingressi, che dà la precedenza a chi è già dentro. Dove il segnale manca, ha la precedenza chi entra, per la regola della precedenza a destra.
+- Non segnalare mai a sinistra entrando in una rotatoria a una corsia.
+- Per uscire alla prima uscita, segnala a destra mentre ti avvicini. Per un'uscita successiva, segnala a destra subito dopo aver superato l'uscita che precede la tua.
+- In una rotatoria con due o più corsie, la corsia dipende dalla tua uscita:
+  - per uscire a destra, avvicinati vicino al margine destro e resta nella corsia di destra;
+  - per proseguire dritto con poco traffico, resta nella corsia di destra e segnala a destra subito prima della tua uscita;
+  - per proseguire dritto con traffico intenso, entra in una corsia libera e mantienila, poi spostati nella corsia di destra segnalando prima della tua uscita;
+  - per uscire a sinistra, avvicinati nella corsia di sinistra come per una svolta a sinistra, segnala a sinistra entrando e resta nella corsia di sinistra. Prima della tua uscita, segnala a destra e spostati nella corsia di destra senza tagliare la strada a nessuno. Se il traffico intenso ti impedisce di prendere la corsia di sinistra, resta nella corsia di destra per tutto il giro.
+
+## Che cosa valuta l'esaminatore
+
+L'esaminatore valuta in parte se rispetti la segnaletica e le norme, e in parte
+secondo il proprio giudizio su quanto guidi in sicurezza. La circolare indica
+questi aspetti.
+
+- **Il controllo del veicolo.** Usi correttamente cintura, specchi, sedile, luci, frizione, marce, acceleratore, freni e sterzo, a ogni velocità e in ogni situazione.
+- **L'osservazione.** Guardi tutto intorno all'auto, usi gli specchi e guardi vicino, a media distanza e lontano.
+- **La precedenza.** Dai la precedenza dove devi, alle intersezioni, in retromarcia, nei cambi di corsia e agli attraversamenti pedonali.
+- **La posizione.** Mantieni la corsia giusta in rettilineo, in rotatoria e in curva.
+- **La distanza.** Mantieni una distanza di sicurezza dal veicolo davanti, dai veicoli al tuo fianco e dagli altri utenti della strada.
+- **La velocità.** Rispetti i limiti, ti adegui al traffico e al tempo, e puoi sempre fermarti nello spazio che vedi libero.
+- **La segnaletica.** Rispetti i semafori, gli agenti, i segnali e la segnaletica orizzontale.
+- **Le segnalazioni.** Segnali in tempo, disattivi l'indicatore dopo la manovra e rispondi alle segnalazioni degli altri conducenti.
+- **La frenata e l'arresto.** Freni per tempo e con dolcezza, e fai attenzione quando parcheggi e scendi.
+
+L'esaminatore valuta anche la tua prudenza e il rispetto per gli altri,
+soprattutto per pedoni e ciclisti. La circolare chiede all'esaminatore di tener
+conto dell'emozione del candidato, ma non a scapito della sicurezza.
+
+## Che cosa conclude subito l'esame
+
+Qualsiasi errore che mette qualcuno in pericolo fa fallire l'esame, che
+l'istruttore sia dovuto intervenire o no. In particolare, l'esame si conclude
+subito per uno qualsiasi dei casi seguenti.
+
+- L'istruttore usa i doppi comandi o interviene sui comandi dell'auto per evitare un pericolo.
+- Un secondo errore nella stessa manovra.
+- La mancata precedenza a un'intersezione, o l'immissione da una strada laterale senza dare la precedenza.
+- Il passaggio con il semaforo rosso, o contro l'ordine di un agente.
+- Il superamento del limite di velocità di oltre 40 km/h.
+- La circolazione contromano in curva, su un dosso, dove la visibilità è insufficiente, o su una strada a carreggiate separate.
+- Il sorpasso in curva, su un dosso, dove non c'è visibilità, a un'intersezione, a un passaggio a livello, o di un veicolo che sta già sorpassando.
+- Il sorpasso eseguito male, cioè troppo lento, troppo vicino di lato, o senza rientrare a destra appena possibile.
+- La retromarcia o la marcia contromano in autostrada, o l'uso scorretto della corsia di emergenza o delle corsie di accelerazione e decelerazione.
+- La mancanza della massima prudenza a un passaggio a livello.
+- L'ingresso in un'intersezione che non puoi liberare.
+- Una collisione causata da una distanza di sicurezza insufficiente.
+- La guida senza cintura di sicurezza, o l'uso del telefono.
+
+L'esito viene comunicato alla fine dell'esame, con la motivazione se è
+negativo. Se superi l'esame, ricevi la patente subito.
