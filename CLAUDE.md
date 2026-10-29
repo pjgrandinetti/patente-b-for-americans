@@ -2822,7 +2822,14 @@ behind what shipped:
   checks, practising the maneuvers rare in the US, a hill start for someone
   who has driven only automatics, and directions given in Italian. It first
   listed STOP, red, yellow, pedestrians, the right-hand rule and passing on
-  the right; do not put theory rules back. A non-Italian browser opens it in English at every level. An edit to
+  the right; do not put theory rules back.
+  **The English names each maneuver in Italian (20261030n)**, the circular's
+  own terms (*retromarcia*, *inversione di marcia*, *parcheggio* in linea, a
+  pettine or a spina di pesce, *frenata di precisione* and *di emergenza*),
+  since the examiner asks for them in Italian. The examiner's directions in
+  traffic are NOT on the page: no source gives the examiner's wording (The
+  Local's 2021 list is an instructor's informal *tu*, with errors), so they
+  wait for the maintainer's own instructor. A non-Italian browser opens it in English at every level. An edit to
   one half needs the same edit to the other in the same position, or the
   pills pair the wrong blocks in silence. `docs/driving-test-draft.md` is the
   draft it came from. `scripts/check_driving_test.js`, 9 checks in English,
