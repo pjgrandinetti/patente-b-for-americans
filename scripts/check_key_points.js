@@ -63,12 +63,14 @@ setTimeout(()=>{
   w.italianoComplete=()=>true;
   w.localStorage.setItem('patente_exam_date',key(1)); w.renderDashboard();
   ok(!!$('exam-date-box').querySelector('[data-ed=keypoints]'),'the exam-date box offers it the day before');
+  ok($('dash-keypoints').classList.contains('hidden'),'and the dashboard line steps aside, so the link appears once (20261030a)');
   w.localStorage.setItem('patente_exam_date',key(0)); w.renderDashboard();
   const kb=$('exam-date-box').querySelector('[data-ed=keypoints]');
   ok(!!kb,'and on the day itself');
   kb.click(); ok(vis(ov) && body.querySelectorAll('h3').length===25,'the link opens the page'); w.dismissReview();
   w.localStorage.setItem('patente_exam_date',key(6)); w.renderDashboard();
   ok(!$('exam-date-box').querySelector('[data-ed=keypoints]'),'not six days out, where the box asks for the review');
+  ok(!$('dash-keypoints').classList.contains('hidden'),'six days out the dashboard line is back');
   ok(!(w.eval('KEY_POINTS') in w.eval('topicReviews')),'the page is not a topic in topicReviews');
   console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);
 },2500);

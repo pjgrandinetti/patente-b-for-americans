@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261029z';
+const APP_VERSION     = '20261030a';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -4586,7 +4586,11 @@ function paintTopicHeading() {
   }
   let m = 0; try { m = keyPointsMinutes(uiLang() === 'it' ? 'it' : 'en'); } catch { }
   kp.querySelector('button').textContent = t('keypoints.link', m);
-  kp.classList.toggle('hidden', !m);
+  // On the day before and the day of the exam the exam-date box offers the
+  // same link, so the dashboard line steps aside (20261030a, maintainer).
+  let inBox = false;
+  try { const d = examDate(); inBox = !!d && examDaysLeft(d) <= 1 && !_examDateEdit; } catch { }
+  kp.classList.toggle('hidden', !m || inBox);
 }
 
 // Every active statement cleared at Italiano: the bank is finished at the
