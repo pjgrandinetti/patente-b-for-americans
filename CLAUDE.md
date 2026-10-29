@@ -2815,7 +2815,17 @@ behind what shipped:
   2026-10-29)**, titled "The driving test" / *L'esame di guida* since
   20261030s, is a page in the notes overlay. It was first a link in the
   pass box; since 20261030s it is a closed disclosure on the dashboard,
-  ABOVE the theory box (`paintDriveTestBox`, `#dash-drivetest-box`), whose
+  ABOVE the theory box (`paintDriveTestBox`, `#dash-drivetest-box`). **Since
+  20261030t (maintainer) the dashboard after a pass runs in this order**: the
+  pass box (Change my answer a small line at its foot, `.exam-date-undo`,
+  and the box spaced like the others, `.is-after-pass`), The driving test,
+  How to get an Italian license, Theory concepts by topic, then How to use
+  this app, which is about theory study. `paintDriveTestBox` places the chain
+  before `#cards-progress`, past the elements other renders re-place, and the
+  two moved panels go back to comment markers left where they were
+  (`_home`) when the pass is undone. The process box's title lost its em
+  dash the same day, "How to get an Italian license, step by step" / *Come
+  si prende la patente in Italia, passo per passo*, at every stage. The driving test box's
   tiles are the page's "## " sections in the reader's language, each
   opening the page at its section (`scrollToHeading`). The maintainer
   suggested "Driving Practical Exam"; Americans say driving test. The page

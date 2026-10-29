@@ -41,6 +41,13 @@ setTimeout(()=>{
   ok(!w.document.querySelector('.confetti-layer'),'and only the first time on this device');
   ok(!vis($('nav-resume')),'no Begin or Resume after a pass');
   ok(!vis($('daily-loop')),'no daily block (Today, streak, pace, ready date) after a pass (20261030o)');
+  { const all=[...w.document.querySelectorAll('#screen-dashboard *')];
+    const at=el=>all.indexOf(el);
+    const proc=w.document.querySelector('[data-i18n="next.summary"]').closest('details'), howto=w.document.querySelector('[data-i18n="rules.summary"]').closest('details');
+    const seq=[$('exam-date-box'),$('dash-drivetest-box'),proc,$('dash-topics-box'),howto].map(at);
+    ok(seq.every((x,i)=>x>=0&&(i===0||x>seq[i-1])),'the order after a pass: pass box, driving test, the process, theory, How to use this app (20261030t): '+seq.join(','));
+    ok(!!$('exam-date-box').querySelector('.exam-date-text .exam-date-undo [data-ed=undo]'),'Change my answer sits at the foot of the message');
+    ok(/(How to get an Italian license, step by step|Come si prende la patente in Italia, passo per passo)/.test(proc.querySelector('summary').textContent) && !/—/.test(proc.querySelector('summary').textContent),'the process box carries no em dash: '+proc.querySelector('summary').textContent); }
   { const tb=$('dash-topics-box'), g=$('topic-progress-grid');
     ok(tb && !tb.classList.contains('hidden') && !tb.open && g.parentNode===tb && g.children.length>0 && tb.querySelector('summary').textContent===(IT?'Concetti di teoria per argomento':'Theory concepts by topic') && !vis($('dash-topics-concepts')),'the topics fold into a closed disclosure (20261030q)');
     tb.open=true; tb.dispatchEvent(new w.Event('toggle')); w.renderDashboard();
@@ -55,6 +62,9 @@ setTimeout(()=>{
   box.querySelector('[data-ed=undo]').click(); w.renderDashboard();
   ok(vis($('daily-loop')),'Change my answer brings the daily block back');
   ok($('dash-drivetest-box').classList.contains('hidden'),'Change my answer hides the driving test box');
+  { const all=[...w.document.querySelectorAll('#screen-dashboard *')];
+    const howto=w.document.querySelector('[data-i18n="rules.summary"]').closest('details'), proc=w.document.querySelector('[data-i18n="next.summary"]').closest('details');
+    ok(all.indexOf(howto)<all.indexOf($('topic-progress-grid')) && all.indexOf(proc)>all.indexOf($('topic-progress-grid')),'and How to use this app and the process go back where they were'); }
   ok($('dash-topics-box').classList.contains('hidden') && $('topic-progress-grid').parentNode!==$('dash-topics-box') && vis($('topic-progress-grid')),'and the topics open again, out of the disclosure');
   console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);
 },2500);

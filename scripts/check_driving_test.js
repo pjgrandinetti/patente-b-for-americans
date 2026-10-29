@@ -26,7 +26,7 @@ setTimeout(()=>{
   $('exam-date-box').querySelector('[data-ed=pass]').click();
   const dbox=$('dash-drivetest-box'), tbox=$('dash-topics-box');
   const tiles=dbox?[...dbox.querySelectorAll('.topic-card')]:[];
-  ok(dbox && !dbox.open && dbox.querySelector('summary').textContent===(IT?'L’esame di guida':'The driving test') && dbox.nextElementSibling===tbox,'a closed "driving test" box sits above the theory box (20261030s)');
+  ok(dbox && !dbox.open && dbox.querySelector('summary').textContent===(IT?'L’esame di guida':'The driving test') && dbox.nextElementSibling===w.document.querySelector('[data-i18n="next.summary"]').closest('details') && dbox.nextElementSibling.nextElementSibling===tbox,'a closed "driving test" box, then the process, then the theory box (20261030s, t)');
   ok(tiles.length===(IT?6:7) && tiles[2].textContent===(IT?'Seconda fase: le manovre':'Part 2: the maneuvers'),'one tile per section, in the reader\'s language: '+tiles.map(b=>b.textContent).join(' | '));
   ok(!$('exam-date-box').querySelector('[data-ed=drivetest]'),'the pass box no longer carries a link of its own');
   tiles[0].click();

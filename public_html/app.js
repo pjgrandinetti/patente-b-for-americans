@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030s';
+const APP_VERSION     = '20261030t';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -189,7 +189,7 @@ const STATIC_IT = {
     '<li><strong>La figura fa parte della domanda.</strong> Molte schede ripetono le stesse frasi su un’immagine diversa. Rispondi esattamente per il segnale o la scena mostrati, non per quelli che ricordi dalla scheda precedente.</li>' +
     '<li><strong>Alcune domande sono davvero ambigue.</strong> Alcune domande ufficiali sono formulate in modo che si potrebbe ragionevolmente sostenere la risposta opposta. Mentre studi sono contrassegnate con 🤔 e sono raccolte sotto <strong>🤔 Ambigue</strong> nel <strong>📗 Prontuario</strong>, quindi assicurati di conoscere la risposta ufficiale di ciascuna.</li>' +
     '</ul>',
-  'next.summary': 'Come si prende la patente in Italia: l’intero percorso',
+  'next.summary': 'Come si prende la patente in Italia, passo per passo',
   'next.body':
     '<p>Prendere la patente B in Italia richiede più passaggi, e questa app ti prepara a uno di essi, l’<strong>esame di teoria</strong>. Puoi passare per un’<strong>autoscuola</strong>, che presenta la pratica e prenota gli esami per te, oppure presentarti come <strong>privatista</strong> e fare tutto da solo. Frequentare il corso di teoria in aula non è obbligatorio, quindi la teoria puoi studiarla qui.</p>' +
     '<p>In entrambi i casi devi avere almeno 18 anni ed essere residente in Italia. Un cittadino extracomunitario deve anche mostrare un permesso di soggiorno valido.</p>' +
@@ -4959,7 +4959,15 @@ let _driveOpen = false;
 function paintDriveTestBox() {
   const ref = document.getElementById('dash-topics-box');
   let box = document.getElementById('dash-drivetest-box');
-  if (!theoryPassed() || !ref) { box?.classList.add('hidden'); return; }
+  if (!theoryPassed() || !ref) {
+    box?.classList.add('hidden');
+    // Back where they were before the pass.
+    for (const k of ['next.summary', 'rules.summary']) {
+      const el = document.querySelector(`[data-i18n="${k}"]`)?.closest('details');
+      if (el && el._home && el._home.parentNode) el._home.parentNode.insertBefore(el, el._home);
+    }
+    return;
+  }
   if (!box) {
     box = document.createElement('details');
     box.id = 'dash-drivetest-box';
@@ -4970,8 +4978,26 @@ function paintDriveTestBox() {
     box.appendChild(grid);
     box.addEventListener('toggle', () => { _driveOpen = box.open; });
   }
-  if (box.nextElementSibling !== ref) ref.parentNode.insertBefore(box, ref);
   box.classList.remove('hidden');
+  // The order after a pass (20261030t, maintainer): the pass box, then the
+  // driving test, the licensing process, the theory concepts and, last, How
+  // to use this app, which explains studying for the theory exam. The chain
+  // is placed before #cards-progress, past the elements other renders keep
+  // re-placing (the pass box before #dash-next, #dash-next before the level
+  // selector), so neither undoes the other. The two moved panels remember
+  // where they came from, for "Change my answer".
+  const anchor = document.getElementById('cards-progress');
+  const proc = document.querySelector('[data-i18n="next.summary"]')?.closest('details');
+  const howto = document.querySelector('[data-i18n="rules.summary"]')?.closest('details');
+  if (anchor && anchor.parentNode === ref.parentNode) {
+    [box, proc, ref, howto].filter(Boolean).forEach(el => {
+      if (el !== box && el !== ref && !el._home) {
+        el._home = document.createComment('home');
+        el.parentNode.insertBefore(el._home, el);
+      }
+      anchor.parentNode.insertBefore(el, anchor);
+    });
+  } else if (box.nextElementSibling !== ref) ref.parentNode.insertBefore(box, ref);
   box.querySelector('summary').textContent = t('drivetest.title');
   box.open = _driveOpen;
   const heads = md => [...md.matchAll(/^## (.*)$/gm)].map(m => m[1].trim());
@@ -8591,6 +8617,7 @@ function renderExamDate(atBar) {
   const date = examDate();
   const after = _examDateEdit ? null : examAfterState();
   box.classList.toggle('hidden', !atBar && !date && !after);
+  box.classList.toggle('is-after-pass', after === 'pass');
   if (!atBar && !date && !after) { box.innerHTML = ''; return; }
   if (after === 'ask') {
     box.innerHTML = `<div class="exam-date-text"><strong>${escHtml(t('examdate.howWent', examDayWords(examAwaitingOutcome())))}</strong></div>` +
@@ -8606,9 +8633,9 @@ function renderExamDate(atBar) {
       (j ? `<p class="exam-date-journey">${escHtml(j)}</p>` : '') +
       `<p class="exam-date-advice">${escHtml(t('examdate.passNext'))}</p>` +
       // The driving test has its own box on the dashboard (20261030s); the
-      // key points are not linked here either (20261030l).
-      `</div>` +
-      `<button type="button" class="link-btn" data-ed="undo">${escHtml(t('examdate.undo'))}</button>`;
+      // key points are not linked here either (20261030l). Change my answer
+      // is a small line at the foot, not beside the message (20261030t).
+      `<p class="exam-date-undo"><button type="button" class="link-btn" data-ed="undo">${escHtml(t('examdate.undo'))}</button></p></div>`;
     return;
   }
   let failHtml = '';

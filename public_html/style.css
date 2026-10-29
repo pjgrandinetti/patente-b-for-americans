@@ -371,6 +371,10 @@ body {
 .exam-date-box { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .85rem; margin: -.35rem 0 1rem; padding: .7rem 1.25rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); font-size: .92rem; }
 .exam-date-box .link-btn { background: none; border: 0; padding: 0; font: inherit; color: var(--accent); text-decoration: underline; cursor: pointer; }
 .exam-date-box.hidden { display: none; }
+/* After a pass the box is one of a column of boxes and takes their spacing,
+   and Change my answer sits at its foot, small (20261030t). */
+.exam-date-box.is-after-pass { margin: 0 0 1.5rem; padding: .9rem 1.25rem; }
+.exam-date-box .exam-date-undo { margin: .6rem 0 0; font-size: .85rem; }
 .exam-date-box .exam-date-text { flex: 1 1 16rem; min-width: 0; }
 .exam-date-box .btn-primary { padding: .4rem .9rem; }
 .exam-date-box .btn-secondary { padding: .3rem .8rem; border-radius: 8px; font: inherit; cursor: pointer; }
