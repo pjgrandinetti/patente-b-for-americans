@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030a';
+const APP_VERSION     = '20261030b';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -4574,23 +4574,9 @@ function paintTopicHeading() {
   h.textContent = t('dash.topicConcepts');
   h.classList.toggle('hidden', !_dashCompact);
   if (orig) orig.classList.toggle('hidden', _dashCompact);
-  // The key points of every topic, offered at every stage (20261029m).
-  let kp = document.getElementById('dash-keypoints');
-  if (!kp) {
-    kp = document.createElement('p');
-    kp.id = 'dash-keypoints';
-    kp.className = 'dash-keypoints';
-    kp.innerHTML = '<button type="button" class="link-btn"></button>';
-    kp.querySelector('button').addEventListener('click', openKeyPoints);
-    grid.parentNode.insertBefore(kp, grid);
-  }
-  let m = 0; try { m = keyPointsMinutes(uiLang() === 'it' ? 'it' : 'en'); } catch { }
-  kp.querySelector('button').textContent = t('keypoints.link', m);
-  // On the day before and the day of the exam the exam-date box offers the
-  // same link, so the dashboard line steps aside (20261030a, maintainer).
-  let inBox = false;
-  try { const d = examDate(); inBox = !!d && examDaysLeft(d) <= 1 && !_examDateEdit; } catch { }
-  kp.classList.toggle('hidden', !m || inBox);
+  // The key points of every topic are offered only in the exam-date box on
+  // the day before and the day of the exam (20261030b, maintainer): the
+  // dashboard line of 20261029m is gone.
 }
 
 // Every active statement cleared at Italiano: the bank is finished at the

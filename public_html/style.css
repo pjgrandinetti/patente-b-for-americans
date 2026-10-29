@@ -3465,9 +3465,6 @@ body.fig-viewing { overflow: hidden; }
 
 /* The key points of every topic (20261029m): the dashboard link under the
    topics heading, and the per-topic link to the full notes on that page. */
-.dash-keypoints { margin: -.2rem 0 .8rem; font-size: .92rem; }
-.dash-keypoints .link-btn { background: none; border: 0; padding: 0; font: inherit; color: var(--accent); text-decoration: underline; cursor: pointer; }
-.dash-keypoints.hidden { display: none; }
 #review-body .kp-notes { display: inline-block; margin: -.3rem 0 .6rem; background: none; border: 0; padding: 0; font: inherit; font-size: .88rem; color: var(--accent); text-decoration: underline; cursor: pointer; }
 
 /* Questions you keep missing: answer them, or read them with their answers

@@ -2757,13 +2757,13 @@ behind what shipped:
   is the one place that resolves a topic to its entry, and the page is never
   put into `topicReviews`, so nothing that walks the topics meets it. Each
   heading carries "Open the full notes" (`.kp-notes`), since a summary leans
-  on terms its topic defined. Offered in two places: a line under the
-  dashboard's topics heading at every stage (`#dash-keypoints`), and in the
-  exam-date box on the day before and the day itself (`data-ed="keypoints"`),
-  both reading "Key points of every topic, about N minutes to read", N
-  computed from the word count in the reader's language and rounded to five.
-  The dashboard line hides while the box carries the link, so it appears
-  once (20261030a, maintainer: it showed twice on the day before).
+  on terms its topic defined. Offered ONLY in the exam-date box on the day
+  before and the day itself (`data-ed="keypoints"`), reading "Key points of
+  every topic, about N minutes to read", N computed from the word count in
+  the reader's language and rounded to five. A line under the dashboard's
+  topics heading offered it at every stage for two releases and was removed
+  in 20261030b (maintainer: it belongs to the final stage of preparation
+  only); do not put it back.
   The summaries are the SOURCE: a summary that does not stand on its own is
   rewritten in its topic's Markdown, never in a second text, so the page and
   the topic cannot drift apart. The renderer emits `##` as `h3`.

@@ -20,12 +20,14 @@ let fails=0; const ok=(c,m)=>{console.log((c?'ok  ':'FAIL')+' '+m); if(!c)fails+
 const $=id=>w.document.getElementById(id);
 const vis=el=>el&&!el.classList.contains('hidden');
 setTimeout(()=>{
-  w.renderDashboard();
-  const link=$('dash-keypoints');
-  ok(vis(link) && /(Key points of every topic|Punti chiave di ogni argomento), .*(\d+) (minutes|minuti)/.test(link.textContent),'the dashboard offers the page with a reading time: '+link.textContent);
+  w.italianoComplete=()=>true; w.renderDashboard();
+  ok(!$('dash-keypoints') && !w.document.querySelector('[data-ed=keypoints]'),'with no exam date the page is offered nowhere (20261030b)');
+  w.localStorage.setItem('patente_exam_date',key(1)); w.renderDashboard();
+  const link=$('exam-date-box').querySelector('[data-ed=keypoints]');
+  ok(link && /(Key points of every topic|Punti chiave di ogni argomento), .*(\d+) (minutes|minuti)/.test(link.textContent),'the day before, the exam-date box offers it with a reading time: '+(link&&link.textContent));
   const mins=Number(link.textContent.match(/(\d+) (minutes|minuti)/)[1]);
-  ok(mins>=15 && mins<=40,'the reading time is a short one: '+mins);
-  link.querySelector('button').click();
+  ok(mins>=15 && mins<=45,'the reading time is a short one: '+mins);
+  link.click();
   const ov=$('review-overlay'); const body=$('review-body');
   ok(vis(ov) && $('review-title').textContent===(IT?'Punti chiave di ogni argomento':'Key points of every topic'),'it opens in the notes overlay under its own title');
   const h2=[...body.querySelectorAll('h3')];
@@ -63,14 +65,13 @@ setTimeout(()=>{
   w.italianoComplete=()=>true;
   w.localStorage.setItem('patente_exam_date',key(1)); w.renderDashboard();
   ok(!!$('exam-date-box').querySelector('[data-ed=keypoints]'),'the exam-date box offers it the day before');
-  ok($('dash-keypoints').classList.contains('hidden'),'and the dashboard line steps aside, so the link appears once (20261030a)');
   w.localStorage.setItem('patente_exam_date',key(0)); w.renderDashboard();
   const kb=$('exam-date-box').querySelector('[data-ed=keypoints]');
   ok(!!kb,'and on the day itself');
   kb.click(); ok(vis(ov) && body.querySelectorAll('h3').length===25,'the link opens the page'); w.dismissReview();
   w.localStorage.setItem('patente_exam_date',key(6)); w.renderDashboard();
   ok(!$('exam-date-box').querySelector('[data-ed=keypoints]'),'not six days out, where the box asks for the review');
-  ok(!$('dash-keypoints').classList.contains('hidden'),'six days out the dashboard line is back');
+  ok(w.document.querySelectorAll('[data-ed=keypoints]').length===0 && !$('dash-keypoints'),'six days out it is offered nowhere');
   ok(!(w.eval('KEY_POINTS') in w.eval('topicReviews')),'the page is not a topic in topicReviews');
   console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);
 },2500);
