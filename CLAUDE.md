@@ -2763,7 +2763,13 @@ behind what shipped:
   for adding remembered misses to the weak spots, and the date field; a
   second fail says a new application is needed. Change my answer undoes
   the last outcome. The readiness banner is hidden in every after-exam
-  state. `scripts/check_exam_outcome.js`, 19 checks in each face.
+  state. **The exam day itself offers the outcome too (20261030e,
+  maintainer: the result usually arrives the same day; his came from the
+  school that afternoon).** Below the day's work the box carries "Already
+  taken it? Tell the app how it went." with I passed and I did not pass
+  (`.exam-date-taken`), recorded for that day; Change my answer returns to
+  the exam-day box. The day after still asks if nothing was answered.
+  `scripts/check_exam_outcome.js`, 21 checks in each face.
   **The exam day keeps "Continue the review" and the Still waiting count
   (20261029y, maintainer, 2026-10-29: the day's set once left nothing to
   review if the exam is late in the day).** Only the day before stops at

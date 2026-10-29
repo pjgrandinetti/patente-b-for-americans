@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030d';
+const APP_VERSION     = '20261030e';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -393,6 +393,7 @@ const T = {
   // After the exam (20261029l): one question until it is answered, then
   // what comes next for a pass or a fail.
   'examdate.howWent': { en: 'How did your theory exam on {0} go?', it: 'Com\u2019\u00e8 andato l\u2019esame di teoria di {0}?' },
+  'examdate.takenQ': { en: 'Already taken it? Tell the app how it went.', it: 'L\u2019hai gi\u00e0 sostenuto? Di\u2019 all\u2019app com\u2019\u00e8 andato.' },
   'examdate.passed': { en: 'I passed', it: 'Ho superato l\u2019esame' },
   'examdate.failed': { en: 'I did not pass', it: 'Non l\u2019ho superato' },
   'examdate.postponed': { en: 'It was postponed', it: '\u00c8 stato rinviato' },
@@ -8055,7 +8056,10 @@ function renderExamDate(atBar) {
       else if (act === 'bank') { openQuestionsTab(); return; }
       else if (act === 'keypoints') { openKeyPoints(); return; }
       else if (act === 'pass' || act === 'fail') {
-        const d = examAwaitingOutcome();
+        // On the exam day itself the result may already be known (20261030e,
+        // maintainer), so today's date can be answered too.
+        const today = examDate();
+        const d = examAwaitingOutcome() || (today && examDaysLeft(today) === 0 ? today : null);
         if (d) { saveExamAttempts([...examAttempts(), { d, r: act }]); setExamDate(null); }
         _examDateEdit = false;
       }
@@ -8153,7 +8157,13 @@ function renderExamDate(atBar) {
     (n >= 0 && !dayBefore && left === 0 && pool > 0 ? `<button type="button" class="btn-secondary" data-ed="more">${escHtml(t('examdate.reviewContinue'))}</button>` : '') +
     `<button type="button" class="link-btn" data-ed="change">${escHtml(t('examdate.change'))}</button>` +
     (n >= 0 && pool > 0 ? (last ? examFiguresLinkHtml() : examPoolHtml()) : '') +
-    (n >= 0 && last ? keyPointsLinkHtml() : '');
+    (n >= 0 && last ? keyPointsLinkHtml() : '') +
+    // The result often arrives the same day (20261030e, maintainer, after his
+    // own exam: the school sent it that afternoon), so the exam day already
+    // offers the outcome, below the day's work.
+    (n === 0 ? `<div class="exam-date-taken"><span>${escHtml(t('examdate.takenQ'))}</span> ` +
+      `<button type="button" class="btn-secondary" data-ed="pass">${escHtml(t('examdate.passed'))}</button>` +
+      `<button type="button" class="btn-secondary" data-ed="fail">${escHtml(t('examdate.failed'))}</button></div>` : '');
   const det = box.querySelector('details.exam-date-pool');
   if (det) det.addEventListener('toggle', () => { _examPoolOpen = det.open; });
 }

@@ -29,7 +29,11 @@ setTimeout(()=>{
   ok(/(later in the day|più tardi nella giornata)/.test(txt) && /(20 minutes for 30|20 minuti per 30)/.test(txt),'its advice keeps the review and mock for a late exam, and gives the room\'s time');
   ok(!!box().querySelector('[data-row=review]') && !!box().querySelector('[data-row=mock]'),'the review and mock rows stay on the exam day');
   ok(vis($('dash-next')),'the mock card stays on the exam day');
-  ok(!box().querySelector('[data-ed=pass]'),'nothing asks how it went on the day itself');
+  ok(!!box().querySelector('.exam-date-taken [data-ed=pass]') && !!box().querySelector('.exam-date-taken [data-ed=fail]') && /(Already taken it|L’hai già sostenuto)/.test(box().textContent),'the exam day already offers the outcome, below the day\'s work (20261030e)');
+  box().querySelector('.exam-date-taken [data-ed=pass]').click();
+  ok(JSON.parse(w.localStorage.getItem('patente_exam_outcome'))[0].d===key(0) && /(Congratulations|Complimenti)/.test(box().textContent),'a pass given on the day is recorded for that day and shows what comes next');
+  click('undo');
+  ok(!w.localStorage.getItem('patente_exam_outcome') && /(Your exam is today|Il tuo esame è oggi)/.test(box().textContent),'Change my answer on the day returns to the exam-day box');
   // the day after
   w.localStorage.setItem('patente_exam_date',key(-1)); w.renderDashboard();
   txt=box().textContent;
