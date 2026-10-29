@@ -35,7 +35,7 @@ setTimeout(()=>{
   const box=$('exam-date-box'), txt=box.textContent;
   ok(/(🎉 Congratulations, you passed the theory exam!|🎉 Complimenti, hai superato l’esame di teoria!)/.test(txt),'the box opens with a celebration');
   ok(/(for about 3 months, and you’ve finally made it! You’re not done yet, but this was a big accomplishment\. Again, congratulations on obtaining your foglio rosa\.|da circa 3 mesi, e finalmente ce l’hai fatta! Non hai ancora finito, ma è stato un grande traguardo\. Ancora complimenti per il tuo foglio rosa\.)/.test(txt) && !/(mock exams|simulazioni)\b.*\d/.test((box.querySelector('.exam-date-journey')||{}).textContent||''),'the journey in the maintainer\'s words, 100 days reading about 3 months, with no counts (20261030h): '+(box.querySelector('.exam-date-journey')||{}).textContent);
-  ok(!!box.querySelector('[data-ed=keypoints]') && /(foglio rosa)/.test(txt),'the key points stay one tap away, beside the foglio rosa facts');
+  ok(!box.querySelector('[data-ed=keypoints]') && !!box.querySelector('[data-ed=drivetest]') && /(foglio rosa)/.test(txt),'the driving test page, not the key points, beside the foglio rosa facts (20261030l)');
   ok(w.document.querySelectorAll('.confetti-layer .confetti').length>50,'confetti the first time');
   w.document.querySelectorAll('.confetti-layer').forEach(e=>e.remove()); w.renderDashboard();
   ok(!w.document.querySelector('.confetti-layer'),'and only the first time on this device');

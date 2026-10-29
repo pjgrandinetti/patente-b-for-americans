@@ -2789,7 +2789,9 @@ behind what shipped:
   readiness banner and the weak-spots and mock row hidden since 20261029l.
   The theory stays as reference (the notes, the Reference page, the
   Questions search; the Statistics page and its mock button stay as a
-  record), the box links the key points as a refresher before lessons,
+  record), the box linked the key points as a refresher before lessons
+  until 20261030l (maintainer: little of that summary bears on the driving
+  test, and the driving test page covers what does; do not put it back),
   and nothing is deleted. The box is festive at his request ("the app
   knows how long they have been studying"): a 🎉 heading, then the
   maintainer's own words (20261030h; the counts of days, questions and

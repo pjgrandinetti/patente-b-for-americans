@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030k';
+const APP_VERSION     = '20261030l';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -8532,9 +8532,9 @@ function renderExamDate(atBar) {
     box.innerHTML = `<div class="exam-date-text exam-date-pass"><strong>${escHtml(t('examdate.passHead'))}</strong>` +
       (j ? `<p class="exam-date-journey">${escHtml(j)}</p>` : '') +
       `<p class="exam-date-advice">${escHtml(t('examdate.passNext'))}</p>` +
-      `<p><button type="button" class="link-btn" data-ed="drivetest">${escHtml(t('drivetest.title'))}</button></p>` +
-      // The rules are what the lessons put into practice (20261030g).
-      keyPointsLinkHtml() + `</div>` +
+      // The driving test page, not the key points (20261030l, maintainer):
+      // little of the theory summary bears on the driving test.
+      `<p><button type="button" class="link-btn" data-ed="drivetest">${escHtml(t('drivetest.title'))}</button></p>` + `</div>` +
       `<button type="button" class="link-btn" data-ed="undo">${escHtml(t('examdate.undo'))}</button>`;
     return;
   }
