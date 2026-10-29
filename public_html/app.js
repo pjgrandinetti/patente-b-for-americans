@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030n';
+const APP_VERSION     = '20261030o';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -5223,6 +5223,11 @@ function dailyRateLine(r) {
 function renderDailyLoop() {
   const wrap = document.getElementById('daily-loop');
   if (!wrap) return;
+  // Hidden once the theory exam is passed (20261030o, maintainer): the block
+  // counts theory answers and projects a date for an exam already behind.
+  const passed = theoryPassed();
+  wrap.classList.toggle('hidden', passed);
+  if (passed) return;
   const log   = loadDaily();
   const today = dailyProgress(log[dayKey()]);
   const r     = studyRate(log);
