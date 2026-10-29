@@ -41,6 +41,10 @@ setTimeout(()=>{
   ok(!w.document.querySelector('.confetti-layer'),'and only the first time on this device');
   ok(!vis($('nav-resume')),'no Begin or Resume after a pass');
   ok(!vis($('daily-loop')),'no daily block (Today, streak, pace, ready date) after a pass (20261030o)');
+  { const tb=$('dash-topics-box'), g=$('topic-progress-grid');
+    ok(tb && !tb.classList.contains('hidden') && !tb.open && g.parentNode===tb && g.children.length>0 && tb.querySelector('summary').textContent===(IT?'Concetti di teoria per argomento':'Theory concepts by topic') && !vis($('dash-topics-concepts')),'the topics fold into a closed disclosure (20261030q)');
+    tb.open=true; tb.dispatchEvent(new w.Event('toggle')); w.renderDashboard();
+    ok($('dash-topics-box').open,'an opened disclosure stays open for the session'); }
   ok($('sg-after').classList.contains('hidden') && $('sg-review').classList.contains('hidden'),'no weak-spots, mock or exam-date Settings groups after a pass');
   ok(!vis($('dash-next')) && !vis($('exam-ready-banner')),'no weak-spots or mock card and no readiness banner');
   ok(Object.keys(JSON.parse(w.localStorage.getItem('patente_progress_L3'))).length===3 && JSON.parse(w.localStorage.getItem('patente_exam_history')).length===15,'nothing is deleted');
@@ -50,5 +54,6 @@ setTimeout(()=>{
   ok(!w.document.querySelector('.confetti-layer'),'no confetti when reduced motion is asked for');
   box.querySelector('[data-ed=undo]').click(); w.renderDashboard();
   ok(vis($('daily-loop')),'Change my answer brings the daily block back');
+  ok($('dash-topics-box').classList.contains('hidden') && $('topic-progress-grid').parentNode!==$('dash-topics-box') && vis($('topic-progress-grid')),'and the topics open again, out of the disclosure');
   console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);
 },2500);

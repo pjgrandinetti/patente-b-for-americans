@@ -2791,7 +2791,11 @@ behind what shipped:
   Questions search; the Statistics page and its mock button stay as a
   record), the dashboard's daily block (Today, the dots, the streak, the
   pace and the ready date) is hidden since 20261030o (maintainer: it counts
-  theory answers and dated an exam already passed; `renderDailyLoop`), the box linked the key points as a refresher before lessons
+  theory answers and dated an exam already passed; `renderDailyLoop`),
+  the topic grid folds into a closed disclosure titled "Theory concepts by
+  topic" since 20261030q (maintainer: the dashboard's focus moves to the
+  driving test; `paintTopicHeading`, `#dash-topics-box`, open state kept
+  for the session), the box linked the key points as a refresher before lessons
   until 20261030l (maintainer: little of that summary bears on the driving
   test, and the driving test page covers what does; do not put it back),
   and nothing is deleted. The box is festive at his request ("the app

@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030p';
+const APP_VERSION     = '20261030q';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -4908,6 +4908,7 @@ function renderDashboard() {
 // The grid's heading says what the grid is: progress while the levels are
 // worked, the Concepts once they are cleared. A second heading built in JS
 // rather than a rewritten data-i18n one, which applyI18n would repaint.
+let _topicsOpen = false;
 function paintTopicHeading() {
   const grid = document.getElementById('topic-progress-grid');
   const orig = document.querySelector('[data-i18n="dash.progressByTopic"]');
@@ -4920,8 +4921,27 @@ function paintTopicHeading() {
     grid.parentNode.insertBefore(h, grid);
   }
   h.textContent = t('dash.topicConcepts');
-  h.classList.toggle('hidden', !_dashCompact);
-  if (orig) orig.classList.toggle('hidden', _dashCompact);
+  // After the theory exam is passed the topics fold into a closed disclosure
+  // (20261030q, maintainer), so the dashboard's focus moves to the driving
+  // test. The open state lasts the session (_topicsOpen).
+  const passed = theoryPassed();
+  let box = document.getElementById('dash-topics-box');
+  if (passed && !box) {
+    box = document.createElement('details');
+    box.id = 'dash-topics-box';
+    box.className = 'rules-note dash-topics-box';
+    box.appendChild(document.createElement('summary'));
+    box.addEventListener('toggle', () => { _topicsOpen = box.open; });
+    h.parentNode.insertBefore(box, h);
+  }
+  if (box) {
+    box.querySelector('summary').textContent = t('dash.topicConcepts');
+    if (passed) { if (grid.parentNode !== box) box.appendChild(grid); box.open = _topicsOpen; }
+    else if (grid.parentNode === box) box.parentNode.insertBefore(grid, h.nextSibling);
+    box.classList.toggle('hidden', !passed);
+  }
+  h.classList.toggle('hidden', !_dashCompact || passed);
+  if (orig) orig.classList.toggle('hidden', _dashCompact || passed);
   // The key points of every topic are offered only in the exam-date box on
   // the day before and the day of the exam (20261030b, maintainer): the
   // dashboard line of 20261029m is gone.
