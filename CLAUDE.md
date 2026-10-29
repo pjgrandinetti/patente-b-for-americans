@@ -2811,10 +2811,16 @@ behind what shipped:
   then months rounded ("about", since his 57 days are just under two
   months, where he had written "over 2 months"). And a one-time confetti
   burst (`celebratePass`, `patente_pass_celebrated` per device, never with
-  reduced motion). **The box links "How the driving test works"
-  (20261030j, maintainer, 2026-10-29)**, a page in the notes overlay
+  reduced motion). **The driving test page (20261030j, maintainer,
+  2026-10-29)**, titled "The driving test" / *L'esame di guida* since
+  20261030s, is a page in the notes overlay. It was first a link in the
+  pass box; since 20261030s it is a closed disclosure on the dashboard,
+  ABOVE the theory box (`paintDriveTestBox`, `#dash-drivetest-box`), whose
+  tiles are the page's "## " sections in the reader's language, each
+  opening the page at its section (`scrollToHeading`). The maintainer
+  suggested "Driving Practical Exam"; Americans say driving test. The page
   (`DRIVING_TEST`, `drivingTestEntry`, `openDrivingTest`, built like
-  `KEY_POINTS`): the three parts of the B driving test, the routine for each
+  `KEY_POINTS`) gives the three parts of the B driving test, the routine for each
   maneuver, the roundabout rules by lane, what the examiner judges and what
   ends the test at once, all from the Motorizzazione's circular to examiners,
   prot. 28819 of 19 September 2019 (the SIDA manual has nothing on the

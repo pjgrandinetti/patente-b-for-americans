@@ -35,7 +35,7 @@ setTimeout(()=>{
   const box=$('exam-date-box'), txt=box.textContent;
   ok(/(🎉 Congratulations, you passed the theory exam!|🎉 Complimenti, hai superato l’esame di teoria!)/.test(txt),'the box opens with a celebration');
   ok(/(for about 3 months, and you’ve finally made it! You’re not done yet, but this was a big accomplishment\. Again, congratulations on obtaining your foglio rosa\.|da circa 3 mesi, e finalmente ce l’hai fatta! Non hai ancora finito, ma è stato un grande traguardo\. Ancora complimenti per il tuo foglio rosa\.)/.test(txt) && !/(mock exams|simulazioni)\b.*\d/.test((box.querySelector('.exam-date-journey')||{}).textContent||''),'the journey in the maintainer\'s words, 100 days reading about 3 months, with no counts (20261030h): '+(box.querySelector('.exam-date-journey')||{}).textContent);
-  ok(!box.querySelector('[data-ed=keypoints]') && !!box.querySelector('[data-ed=drivetest]') && /(foglio rosa)/.test(txt),'the driving test page, not the key points, beside the foglio rosa facts (20261030l)');
+  ok(!box.querySelector('[data-ed=keypoints]') && /(foglio rosa)/.test(txt) && !!$('dash-drivetest-box') && !$('dash-drivetest-box').classList.contains('hidden'),'no key points in the pass box, and the driving test box on the dashboard (20261030l, s)');
   ok(w.document.querySelectorAll('.confetti-layer .confetti').length>50,'confetti the first time');
   w.document.querySelectorAll('.confetti-layer').forEach(e=>e.remove()); w.renderDashboard();
   ok(!w.document.querySelector('.confetti-layer'),'and only the first time on this device');
@@ -54,6 +54,7 @@ setTimeout(()=>{
   ok(!w.document.querySelector('.confetti-layer'),'no confetti when reduced motion is asked for');
   box.querySelector('[data-ed=undo]').click(); w.renderDashboard();
   ok(vis($('daily-loop')),'Change my answer brings the daily block back');
+  ok($('dash-drivetest-box').classList.contains('hidden'),'Change my answer hides the driving test box');
   ok($('dash-topics-box').classList.contains('hidden') && $('topic-progress-grid').parentNode!==$('dash-topics-box') && vis($('topic-progress-grid')),'and the topics open again, out of the disclosure');
   console.log(fails?`${fails} FAILED`:'all passed'); process.exit(fails?1:0);
 },2500);

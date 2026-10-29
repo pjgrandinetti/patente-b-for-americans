@@ -502,8 +502,8 @@ body {
 .topic-grid > .topic-group-header:first-child { margin-top: 0; }
 /* After a pass the grid sits inside a closed disclosure (20261030q); it
    takes the same inset as a .rules-body so the tiles clear the box's edges. */
-#dash-topics-box > .topic-grid { padding: 1.1rem 1.35rem 1.35rem; margin-bottom: 0; }
-@media (max-width: 440px) { #dash-topics-box > .topic-grid { padding: .9rem .9rem 1rem; } }
+.dash-topics-box > .topic-grid { padding: 1.1rem 1.35rem 1.35rem; margin-bottom: 0; }
+@media (max-width: 440px) { .dash-topics-box > .topic-grid { padding: .9rem .9rem 1rem; } }
 .topic-card {
   background: color-mix(in srgb, var(--topic-tint, transparent) 7%, var(--card-bg));
   border: 1px solid color-mix(in srgb, var(--topic-tint, var(--border)) 30%, var(--border));

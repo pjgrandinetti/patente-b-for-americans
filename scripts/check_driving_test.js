@@ -1,4 +1,4 @@
-// How the driving test works (20261030j, maintainer, 2026-10-29): a page opened from the pass box, from circular
+// The driving test (20261030j, a dashboard box since 20261030s, maintainer, 2026-10-29): a page opened from the pass box, from circular
 // 28819 of 2019, in the notes overlay. English for a non-Italian browser with an IT pill on every block that has an
 // Italian twin, and "For American drivers" in English only; Italian alone for an Italian browser.
 // Run: node scripts/check_driving_test.js (UILANG=it-IT; SRC= another public_html).
@@ -24,11 +24,14 @@ const $=id=>w.document.getElementById(id);
 setTimeout(()=>{
   w.italianoComplete=()=>true; w.renderDashboard();
   $('exam-date-box').querySelector('[data-ed=pass]').click();
-  const link=$('exam-date-box').querySelector('[data-ed=drivetest]');
-  ok(!!link && link.textContent===(IT?'Come si svolge l’esame di guida':'How the driving test works'),'the pass box links the page');
-  link.click();
+  const dbox=$('dash-drivetest-box'), tbox=$('dash-topics-box');
+  const tiles=dbox?[...dbox.querySelectorAll('.topic-card')]:[];
+  ok(dbox && !dbox.open && dbox.querySelector('summary').textContent===(IT?'L’esame di guida':'The driving test') && dbox.nextElementSibling===tbox,'a closed "driving test" box sits above the theory box (20261030s)');
+  ok(tiles.length===(IT?6:7) && tiles[2].textContent===(IT?'Seconda fase: le manovre':'Part 2: the maneuvers'),'one tile per section, in the reader\'s language: '+tiles.map(b=>b.textContent).join(' | '));
+  ok(!$('exam-date-box').querySelector('[data-ed=drivetest]'),'the pass box no longer carries a link of its own');
+  tiles[0].click();
   const body=$('review-body'), title=$('review-title').textContent, txt=body.textContent;
-  ok(title===(IT?'Come si svolge l’esame di guida':'How the driving test works'),'the overlay carries the page title: '+title);
+  ok(title===(IT?'L’esame di guida':'The driving test'),'the overlay carries the page title: '+title);
   const heads=[...body.querySelectorAll('h3')].map(h=>h.textContent);
   ok(heads.length===(IT?6:7),'six parts, and the habits in English only: '+heads.join(' | '));
   ok(IT ? /circolare 28819/.test(txt) && /frenata di precisione/.test(txt) : /circular 28819/.test(txt) && /several moves/.test(txt),'the opening names the circular, and the maneuvers are there');

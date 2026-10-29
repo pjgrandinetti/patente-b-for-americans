@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030r';
+const APP_VERSION     = '20261030s';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -422,7 +422,7 @@ const T = {
   'keypoints.title': { en: 'Key points of every topic', it: 'Punti chiave di ogni argomento' },
   'keypoints.link': { en: 'Key points of every topic, about {0} minutes to read', it: 'Punti chiave di ogni argomento, circa {0} minuti di lettura' },
   'keypoints.notes': { en: 'Open the full notes', it: 'Apri le note complete' },
-  'drivetest.title': { en: 'How the driving test works', it: 'Come si svolge l\u2019esame di guida' },
+  'drivetest.title': { en: 'The driving test', it: 'L\u2019esame di guida' },
   'examdate.rowReview': { en: 'Review today', it: 'Ripasso di oggi' },
   'examdate.rowWaiting': { en: 'Still waiting', it: 'Ancora in attesa' },
   'examdate.rowMock': { en: 'Mock exam today', it: 'Simulazione di oggi' },
@@ -4902,6 +4902,7 @@ function renderDashboard() {
   try { renderDailyLoop(); } catch (e) { console.error('daily loop:', e); }
   try { renderTopicProgress('topic-progress-grid'); } catch (e) { console.error('topic grid:', e); }
   try { paintTopicHeading(); }      catch (e) { console.error('topic heading:', e); }
+  try { paintDriveTestBox(); }      catch (e) { console.error('driving test box:', e); }
   try { renderReviewerFlags(); }    catch (e) { console.error('reviewer flags:', e); }
 }
 
@@ -4945,6 +4946,54 @@ function paintTopicHeading() {
   // The key points of every topic are offered only in the exam-date box on
   // the day before and the day of the exam (20261030b, maintainer): the
   // dashboard line of 20261029m is gone.
+}
+
+// After the theory exam is passed, the driving test is a closed disclosure
+// above the theory one (20261030s, maintainer), so it leads the dashboard.
+// Its tiles are the page's own sections, each opening the page at that
+// section, the way a theory tile opens its topic. The page's text is
+// DRIVING_TEST_MD; the tiles follow its "## " headings, in the reader's
+// language, the English pairing with the Italian by position (the English
+// closes with a section the Italian does not have).
+let _driveOpen = false;
+function paintDriveTestBox() {
+  const ref = document.getElementById('dash-topics-box');
+  let box = document.getElementById('dash-drivetest-box');
+  if (!theoryPassed() || !ref) { box?.classList.add('hidden'); return; }
+  if (!box) {
+    box = document.createElement('details');
+    box.id = 'dash-drivetest-box';
+    box.className = 'rules-note dash-topics-box';
+    box.appendChild(document.createElement('summary'));
+    const grid = document.createElement('div');
+    grid.className = 'topic-grid';
+    box.appendChild(grid);
+    box.addEventListener('toggle', () => { _driveOpen = box.open; });
+  }
+  if (box.nextElementSibling !== ref) ref.parentNode.insertBefore(box, ref);
+  box.classList.remove('hidden');
+  box.querySelector('summary').textContent = t('drivetest.title');
+  box.open = _driveOpen;
+  const heads = md => [...md.matchAll(/^## (.*)$/gm)].map(m => m[1].trim());
+  const en = heads(DRIVING_TEST_MD.en), it = heads(DRIVING_TEST_MD.it);
+  const ui = browserPrefersItalian() ? it : en;
+  const grid = box.querySelector('.topic-grid');
+  grid.innerHTML = '';
+  ui.forEach((label, i) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'topic-card topic-card-done topic-card-concepts';
+    b.style.setProperty('--topic-tint', `hsl(${Math.round((i * 137.5 + 200) % 360)} 38% 52%)`);
+    const name = document.createElement('span');
+    name.className = 'topic-title-it';
+    name.textContent = label;
+    b.appendChild(name);
+    b.addEventListener('click', () => {
+      drivingTestEntry();
+      openReview(DRIVING_TEST, { scrollToHeading: { en: en[i] || label, it: it[i] || label } });
+    });
+    grid.appendChild(b);
+  });
 }
 
 // Every active statement cleared at Italiano: the bank is finished at the
@@ -8506,7 +8555,6 @@ function renderExamDate(atBar) {
       else if (act === 'figures') { openMissedFigures(); return; }
       else if (act === 'bank') { openQuestionsTab(); return; }
       else if (act === 'keypoints') { openKeyPoints(); return; }
-      else if (act === 'drivetest') { openDrivingTest(); return; }
       else if (act === 'pass' || act === 'fail') {
         // On the exam day itself the result may already be known (20261030e,
         // maintainer), so today's date can be answered too.
@@ -8557,9 +8605,9 @@ function renderExamDate(atBar) {
     box.innerHTML = `<div class="exam-date-text exam-date-pass"><strong>${escHtml(t('examdate.passHead'))}</strong>` +
       (j ? `<p class="exam-date-journey">${escHtml(j)}</p>` : '') +
       `<p class="exam-date-advice">${escHtml(t('examdate.passNext'))}</p>` +
-      // The driving test page, not the key points (20261030l, maintainer):
-      // little of the theory summary bears on the driving test.
-      `<p><button type="button" class="link-btn" data-ed="drivetest">${escHtml(t('drivetest.title'))}</button></p>` + `</div>` +
+      // The driving test has its own box on the dashboard (20261030s); the
+      // key points are not linked here either (20261030l).
+      `</div>` +
       `<button type="button" class="link-btn" data-ed="undo">${escHtml(t('examdate.undo'))}</button>`;
     return;
   }
