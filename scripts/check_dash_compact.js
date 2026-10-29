@@ -34,7 +34,7 @@ setTimeout(()=>{
   ok(btns.length===25 && btns.every(b=>b.tagName==='BUTTON' && b.children.length===1),'25 topics, each a button holding only its name: '+btns.length);
   ok(!dash.querySelector('.topic-done-check, .topic-bar, .topic-study-btn'),'no check marks, bars or study buttons');
   ok(btns[1].textContent===(IT?'Segnali di pericolo':'Warning signs') ,'topic names in the reader\'s language at Italiano: '+btns[1].textContent);
-  ok(vis($('dash-topics-concepts')) && !vis(dash.querySelector('[data-i18n="dash.progressByTopic"]')) && $('dash-topics-concepts').textContent===(IT?'Concetti per argomento':'Concepts by topic'),'the heading reads '+$('dash-topics-concepts').textContent);
+  ok(vis($('dash-topics-concepts')) && !vis(dash.querySelector('[data-i18n="dash.progressByTopic"]')) && $('dash-topics-concepts').textContent===(IT?'Concetti di teoria per argomento':'Theory concepts by topic'),'the heading reads '+$('dash-topics-concepts').textContent);
   btns[0].click(); ok(!$('review-overlay').classList.contains('hidden'),'a topic button opens its Concepts');
   w.closeReview ? w.closeReview() : $('review-overlay').classList.add('hidden');
   w.difficultCards=()=>[{topic:w.eval('questions')[0].topic,stmts:[1,2,3],weight:3}];

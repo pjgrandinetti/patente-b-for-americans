@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030o';
+const APP_VERSION     = '20261030p';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -534,7 +534,7 @@ const T = {
   // each question, or, for a last review, read each one with its answer.
   'km.modePractice': { en: 'Answer them', it: 'Rispondi' },
   'km.modeRead': { en: 'Read with answers', it: 'Leggi con le risposte' },
-  'dash.topicConcepts': { en: 'Concepts by topic', it: 'Concetti per argomento' },
+  'dash.topicConcepts': { en: 'Theory concepts by topic', it: 'Concetti di teoria per argomento' },
   // The number here is the release rule doubled, so the rule travels with it.
   // The line used to print the doubled figure alone, which left the learner
   // to reverse-engineer what clears a question from an unexplained total

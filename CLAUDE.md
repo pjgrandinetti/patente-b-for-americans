@@ -3940,7 +3940,7 @@ behind what shipped:
   name in the reader's language (`topicShortUi`, 20261006m: English for a
   non-Italian browser even at Italiano), which open the Concepts
   (`.topic-card-concepts`), under a heading
-  "Concepts by topic" built in JS (`paintTopicHeading`). A row `#dash-next`,
+  "Concepts by topic" built in JS (`paintTopicHeading`), "Theory concepts by topic" since 20261030p (maintainer). A row `#dash-next`,
   built in JS (`ensureDashNext`) and placed before the level selector, holds
   the weak-spots card and a mock exam card (`#dash-mock`, Start goes to the
   Final Stretch screen and starts the sheet). The weak-spots card no longer
