@@ -2378,7 +2378,8 @@ behind what shipped:
   at the desk against the application photo, the staff's explanation in
   Italian only, two statements to accept on screen before the start (what
   they say is NOT known; the step says to ask the school, and the app must
-  not guess), the exam screen laid out like the mock exam here with answers
+  not guess; since 20261030d it adds "You must accept them to begin.", a fact
+  of that day), the exam screen laid out like the mock exam here with answers
   reviewable before ending, and a result that may come later through the
   school rather than on screen. Written as what candidates commonly meet,
   since it is one candidate at one office. Left out on purpose: the
