@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030f';
+const APP_VERSION     = '20261030g';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -398,7 +398,11 @@ const T = {
   'examdate.failed': { en: 'I did not pass', it: 'Non l\u2019ho superato' },
   'examdate.postponed': { en: 'It was postponed', it: '\u00c8 stato rinviato' },
   'examdate.undo': { en: 'Change my answer', it: 'Cambia la risposta' },
-  'examdate.passHead': { en: 'Congratulations on passing the theory exam.', it: 'Complimenti, hai superato l\u2019esame di teoria.' },
+  'examdate.passHead': { en: '\ud83c\udf89 Congratulations, you passed the theory exam!', it: '\ud83c\udf89 Complimenti, hai superato l\u2019esame di teoria!' },
+  // The learner's own journey, from their records (20261030g, maintainer:
+  // more festive, since the app knows how long they studied).
+  'examdate.passJourney': { en: 'You started on {0}, {1} days before your exam. Since then you answered {2} questions correctly in Italian and took {3} mock exams.', it: 'Hai iniziato il {0}, {1} giorni prima dell\u2019esame. Da allora hai risposto correttamente a {2} domande in italiano e hai fatto {3} simulazioni.' },
+  'examdate.passJourneyMany': { en: 'You started on {0}, {1} days before your exam. Since then you answered {2} questions correctly in Italian and took more than {3} mock exams.', it: 'Hai iniziato il {0}, {1} giorni prima dell\u2019esame. Da allora hai risposto correttamente a {2} domande in italiano e hai fatto pi\u00f9 di {3} simulazioni.' },
   'examdate.passNext': { en: 'Your foglio rosa lets you practice driving for 12 months. You may take the driving test from one month after it was issued, with up to 3 attempts.', it: 'Il foglio rosa ti permette di esercitarti alla guida per 12 mesi. Puoi sostenere l\u2019esame di guida da un mese dopo il rilascio, con al massimo 3 tentativi.' },
   'examdate.failHead': { en: 'You can take the exam again from {0}.', it: 'Puoi ripetere l\u2019esame dal {0}.' },
   'examdate.failNext': { en: 'At least a month must pass after a failed attempt, and the second attempt must fall within 6 months of filing your application. If your school gives you the exam sheet, it shows your answer to each question. Search for each one you missed in the Questions tab and add it to the weak spots. When you have the new date, enter it below.', it: 'Dopo un tentativo non superato deve passare almeno un mese, e il secondo tentativo deve cadere entro 6 mesi dalla presentazione della domanda. Se l\u2019autoscuola ti d\u00e0 la scheda d\u2019esame, vi trovi la tua risposta a ogni domanda. Cerca nella sezione Domande ciascuna che hai sbagliato e aggiungila ai punti deboli. Quando hai la nuova data, inseriscila qui sotto.' },
@@ -4829,6 +4833,10 @@ function updateSettingsGroups() {
   let after = false, review = false;
   try { after = italianoComplete() || mockEarlyOn(); } catch { }
   try { review = inReviewPhase(); } catch { }
+  // After a pass the groups for the weak spots, the mocks and the exam date
+  // go (20261030g).
+  let passed = false; try { passed = theoryPassed(); } catch { }
+  if (passed) { after = false; review = false; }
   document.getElementById('sg-after')?.classList.toggle('hidden', !after);
   document.getElementById('sg-review')?.classList.toggle('hidden', !review);
 }
@@ -6533,6 +6541,8 @@ function liveDailySession() {
 function updateResumeButton() {
   const btn = document.getElementById('nav-resume');
   if (!btn || !questions.length) return;
+  // Once the theory exam is passed nothing asks for theory work (20261030g).
+  if (theoryPassed()) { btn.classList.add('hidden'); return; }
   if (inReviewPhase()) {
     invalidateDrillMemo();
     const live = liveDailySession();
@@ -7974,6 +7984,64 @@ function examAfterState() {
   if (a.length && a[a.length - 1].r === 'fail' && !examDate()) return 'fail';
   return null;
 }
+// How long the learner studied, from their own records (20261030g): the
+// earliest answer stamp at any level or the earliest day in the daily log,
+// whichever is older, to the day of the pass; the questions cleared at
+// Italiano; the mock exams on record. Nothing is shown when no start is
+// known. The history keeps the latest EXAM_HISTORY_LIMIT mocks, so a full
+// one reads "more than".
+function passJourney() {
+  const pass = examAttempts().find(x => x.r === 'pass');
+  if (!pass) return '';
+  let start = Infinity;
+  for (const lvl of [1, 2, 3]) {
+    const prog = lvl === currentLevel ? progress : loadProgressForLevel(lvl);
+    for (const card of Object.values(prog || {})) {
+      for (const r of Object.values((card && card.st) || {})) if (r && !r.lft && r.gAt && r.gAt < start) start = r.gAt;
+    }
+  }
+  const days = Object.keys(loadDaily()).filter(k => /^\d{4}-\d{2}-\d{2}$/.test(k)).sort();
+  if (days.length) {
+    const [y, m, d] = days[0].split('-').map(Number);
+    start = Math.min(start, new Date(y, m - 1, d).getTime());
+  }
+  if (!isFinite(start)) return '';
+  const s = new Date(start); s.setHours(0, 0, 0, 0);
+  const [py, pm, pd] = pass.d.split('-').map(Number);
+  const span = Math.max(1, Math.round((new Date(py, pm - 1, pd) - s) / 864e5));
+  const when = new Intl.DateTimeFormat(uiLang() === 'it' ? 'it-IT' : 'en-US', { month: 'long', day: 'numeric', year: 'numeric' }).format(s);
+  let cleared = 0; try { cleared = countCards(loadProgressForLevel(EXAM_LEVEL)).qCleared; } catch { }
+  const mocks = loadExamHistory().length;
+  const loc = uiLang() === 'it' ? 'it-IT' : 'en-US';
+  return t(mocks >= EXAM_HISTORY_LIMIT ? 'examdate.passJourneyMany' : 'examdate.passJourney',
+    when, span.toLocaleString(loc), cleared.toLocaleString(loc), mocks.toLocaleString(loc));
+}
+// A short burst of confetti the first time the pass is shown on a device
+// (20261030g), never with reduced motion asked for. Purely decorative.
+const PASS_CELEBRATED_KEY = 'patente_pass_celebrated';
+function celebratePass() {
+  const pass = examAttempts().find(x => x.r === 'pass');
+  if (!pass) return;
+  try { if (localStorage.getItem(PASS_CELEBRATED_KEY) === pass.d) return; localStorage.setItem(PASS_CELEBRATED_KEY, pass.d); } catch { return; }
+  try { if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return; } catch { }
+  const layer = document.createElement('div');
+  layer.className = 'confetti-layer';
+  layer.setAttribute('aria-hidden', 'true');
+  const colors = ['#7c3aed', '#2e9e5b', '#f59e0b', '#ed5a52', '#0ea5e9', '#ec4899'];
+  for (let i = 0; i < 90; i++) {
+    const p = document.createElement('span');
+    p.className = 'confetti';
+    p.style.left = (Math.random() * 100) + 'vw';
+    p.style.background = colors[i % colors.length];
+    p.style.animationDelay = (Math.random() * 0.6) + 's';
+    p.style.animationDuration = (2.2 + Math.random() * 1.6) + 's';
+    p.style.setProperty('--drift', ((Math.random() - 0.5) * 30) + 'vw');
+    p.style.setProperty('--spin', (360 + Math.random() * 720) + 'deg');
+    layer.appendChild(p);
+  }
+  document.body.appendChild(layer);
+  setTimeout(() => layer.remove(), 4500);
+}
 function examDayWords(v) {
   const [y, m, d] = v.split('-').map(Number);
   return new Intl.DateTimeFormat(uiLang() === 'it' ? 'it-IT' : 'en-US', { weekday: 'long', month: 'long', day: 'numeric' }).format(new Date(y, m - 1, d));
@@ -8120,8 +8188,13 @@ function renderExamDate(atBar) {
     return;
   }
   if (after === 'pass') {
-    box.innerHTML = `<div class="exam-date-text"><strong>${escHtml(t('examdate.passHead'))}</strong>` +
-      `<p class="exam-date-advice">${escHtml(t('examdate.passNext'))}</p></div>` +
+    celebratePass();
+    const j = passJourney();
+    box.innerHTML = `<div class="exam-date-text exam-date-pass"><strong>${escHtml(t('examdate.passHead'))}</strong>` +
+      (j ? `<p class="exam-date-journey">${escHtml(j)}</p>` : '') +
+      `<p class="exam-date-advice">${escHtml(t('examdate.passNext'))}</p>` +
+      // The rules are what the lessons put into practice (20261030g).
+      keyPointsLinkHtml() + `</div>` +
       `<button type="button" class="link-btn" data-ed="undo">${escHtml(t('examdate.undo'))}</button>`;
     return;
   }

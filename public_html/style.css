@@ -3484,3 +3484,11 @@ body.fig-viewing { overflow: hidden; }
 .km-more { padding: .35rem 1rem; border-radius: 8px; font: inherit; cursor: pointer; }
 .exam-date-box .exam-date-taken { flex-basis: 100%; display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .6rem; margin-top: .4rem; padding-top: .6rem; border-top: 1px solid var(--border); }
 .exam-date-box .exam-after-fail { flex-basis: 100%; }
+
+/* After a pass (20261030g): the learner's journey and a one-time confetti burst. */
+.exam-date-box .exam-date-pass > strong { font-size: 1.15rem; color: var(--accent); }
+.exam-date-box .exam-date-journey { margin: .35rem 0 .2rem; }
+.confetti-layer { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 9999; }
+.confetti { position: absolute; top: -12px; width: 8px; height: 12px; border-radius: 2px; opacity: .9; animation-name: confetti-fall; animation-timing-function: cubic-bezier(.25,.6,.5,1); animation-fill-mode: forwards; }
+@keyframes confetti-fall { to { transform: translate(var(--drift), 105vh) rotate(var(--spin)); opacity: .2; } }
+@media (prefers-reduced-motion: reduce) { .confetti-layer { display: none; } }

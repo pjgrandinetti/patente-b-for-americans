@@ -2782,6 +2782,26 @@ behind what shipped:
   the learner enters clears the flag. A second fail sets no date, since the
   new application's timing cannot be predicted. The count of mistakes is
   deliberately not asked: it would change nothing the app advises.
+  **After a pass (20261030g, maintainer, 2026-10-30).** Nothing asks for
+  theory work: ▶ Begin/Resume is hidden (`updateResumeButton` returns on
+  `theoryPassed()`), and so are the Settings groups for the weak spots and
+  mocks and for the exam date (`updateSettingsGroups`), on top of the
+  readiness banner and the weak-spots and mock row hidden since 20261029l.
+  The theory stays as reference (the notes, the Reference page, the
+  Questions search; the Statistics page and its mock button stay as a
+  record), the box links the key points as a refresher before lessons,
+  and nothing is deleted. The box is festive at his request ("the app
+  knows how long they have been studying"): a 🎉 heading, the learner's own
+  journey from their records (`passJourney`: the start is the older of the
+  earliest answer stamp `gAt` at any level and the earliest day in the daily
+  log, which keeps 120 days; the days from it to the pass; the questions
+  cleared at Italiano, by `countCards`, so the active set; the mocks on
+  record, "more than" at the 50 the history keeps), and a one-time confetti
+  burst (`celebratePass`, `patente_pass_celebrated` per device, never with
+  reduced motion). No study time is claimed: `ms` measures reading time on
+  clean answers only, not hours studied. The driving stage (the foglio rosa
+  tracker and the rest) will replace this box. `scripts/check_after_pass.js`,
+  11 checks in each face.
   `scripts/check_exam_outcome.js`, 23 checks in each face.
   **The exam day keeps "Continue the review" and the Still waiting count
   (20261029y, maintainer, 2026-10-29: the day's set once left nothing to
