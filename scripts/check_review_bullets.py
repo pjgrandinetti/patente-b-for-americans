@@ -41,7 +41,9 @@ import review_landings as RL       # noqa: E402
 BASELINE = ROOT / "docs" / "review-bullet-baseline.json"
 # A bold run that opens a sentence: start of block, or after . ! ? or a colon.
 LABEL_RE = re.compile(r"(?:^|(?<=[.!?:])\s+)\*\*([^*]{3,40}?)\*\*")
-SUMMARY = ("summary of key points", "riepilogo dei punti chiave")
+# Topic 25's summary is headed plainly "Summary" / "Riepilogo" (its whole
+# subject is examples), so the exemption matches the bare word too.
+SUMMARY = ("summary", "riepilogo")
 
 
 def blocks_by_lang():
