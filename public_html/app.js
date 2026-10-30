@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261031k';
+const APP_VERSION     = '20261031l';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1802,6 +1802,17 @@ far as the roads near the exam site allow.
 - Junctions of every kind.
 - Turning left and right, and changing lanes.
 - Joining the autostrada, or a main extra-urban road, by its acceleration lane, and leaving it by its deceleration lane. Where such a road is near enough, the route is meant to include it. On it you may use only the two lanes nearest the right edge, and you must keep to the limits for new drivers, 100 km/h on the autostrada and 90 on a main extra-urban road.
+
+Many learners dread the autostrada, and some dread it so much that they put off
+the lessons. The fear is common, and there is nothing wrong with you for having
+it. The lessons are the place to deal with it, with an instructor beside you
+who has dual controls and has sat beside many frightened learners before. Tell
+your instructor about it at the first lesson, before you are on the road. A
+good instructor will start with a short, quiet stretch and build up from there,
+and will add lessons if you need them. The fear fades with practice. Avoiding
+the road keeps it alive. And you need to master the autostrada only long enough
+to pass the driving test. After that you are free to avoid it as you prefer.
+
 - Passing other vehicles and obstacles, and being passed.
 - Roundabouts, level crossings, bus and tram stops, pedestrian crossings, long hills and tunnels.
 - Getting out of the car safely at the end.
@@ -1863,22 +1874,6 @@ following.
 
 The result is given at the end of the test, with a reason if you fail. If you
 pass, you receive your license there and then.
-
-## If the autostrada frightens you
-
-The route is meant to include the autostrada, or a main extra-urban road,
-wherever one is near enough to the exam site, so the fear cannot be worked
-around on the day. It can be worked through before it.
-
-Many learners dread the autostrada, and some dread it so much that they put off
-the lessons. The fear is common, and there is nothing wrong with you for having
-it. The lessons are the place to deal with it, with an instructor beside you
-who has dual controls and has sat beside many frightened learners before. Tell
-your instructor about it at the first lesson, before you are on the road. A
-good instructor will start with a short, quiet stretch and build up from there,
-and will add lessons if you need them. The fear fades with practice. Avoiding
-the road keeps it alive. And you need to master the autostrada only long enough
-to pass the driving test. After that you are free to avoid it as you prefer.
 
 ## Summary
 
@@ -2031,6 +2026,17 @@ seguenti, per quanto lo permettono le strade vicine alla sede d'esame.
 - Le intersezioni di ogni tipo.
 - Le svolte a sinistra e a destra, e i cambi di corsia.
 - L'ingresso in autostrada, o su una strada extraurbana principale, dalla corsia di accelerazione, e l'uscita dalla corsia di decelerazione. Dove una strada del genere è abbastanza vicina, il percorso deve comprenderla. Su di essa puoi usare solo le due corsie più vicine al margine destro, e devi rispettare i limiti per i neopatentati, 100 km/h in autostrada e 90 su strada extraurbana principale.
+
+Molti allievi hanno paura dell'autostrada, e alcuni ne hanno tanta da rimandare
+le guide. È una paura comune, e non c'è niente di sbagliato in te se ce l'hai.
+Le guide sono il posto giusto per affrontarla, con accanto un istruttore che ha
+i doppi comandi e ha già avuto accanto molti allievi spaventati. Parlane con
+l'istruttore alla prima guida, prima di essere in strada. Un buon istruttore
+comincia da un tratto breve e tranquillo e aumenta a poco a poco, e aggiunge
+guide se ti servono. La paura passa con la pratica. Evitare la strada la tiene
+viva. E l'autostrada devi padroneggiarla solo quanto basta per superare l'esame
+di guida. Dopo, sei libero di evitarla come preferisci.
+
 - Il sorpasso di veicoli e ostacoli, e l'essere sorpassati.
 - Le rotatorie, i passaggi a livello, le fermate di autobus e tram, gli attraversamenti pedonali, le salite e discese lunghe, le gallerie.
 - La discesa dall'auto in sicurezza, alla fine.
@@ -2092,22 +2098,6 @@ subito per uno qualsiasi dei casi seguenti.
 
 L'esito viene comunicato alla fine dell'esame, con la motivazione se è
 negativo. Se superi l'esame, ricevi la patente subito.
-
-## Se l'autostrada ti fa paura
-
-Il percorso deve comprendere l'autostrada, o una strada extraurbana
-principale, dove ce n'è una abbastanza vicina alla sede d'esame, quindi la
-paura non si può aggirare il giorno dell'esame. Si può superare prima.
-
-Molti allievi hanno paura dell'autostrada, e alcuni ne hanno tanta da rimandare
-le guide. È una paura comune, e non c'è niente di sbagliato in te se ce l'hai.
-Le guide sono il posto giusto per affrontarla, con accanto un istruttore che ha
-i doppi comandi e ha già avuto accanto molti allievi spaventati. Parlane con
-l'istruttore alla prima guida, prima di essere in strada. Un buon istruttore
-comincia da un tratto breve e tranquillo e aumenta a poco a poco, e aggiunge
-guide se ti servono. La paura passa con la pratica. Evitare la strada la tiene
-viva. E l'autostrada devi padroneggiarla solo quanto basta per superare l'esame
-di guida. Dopo, sei libero di evitarla come preferisci.
 
 ## Riepilogo
 

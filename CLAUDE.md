@@ -2957,13 +2957,11 @@ behind what shipped:
   finding the sources agree on); and, the maintainer's point, you need to
   master the autostrada only long enough to pass the test, and after that
   you are free to avoid it. Write for the person who is afraid, not at them.
-  **The same text is a section of the driving test page since 20261031j**
-  (maintainer: he looked for it there), "## If the autostrada frightens you"
-  / "## Se l'autostrada ti fa paura", after "What ends the test at once" and
-  before the Summary, in both halves, opening with why it cannot be worked
-  around on the day (the route is meant to include such a road). **The
-  How-to's copy was REMOVED in 20261031k** (maintainer): the text lives on
-  the driving test page only.
+  **The text is on the driving test page since 20261031j** (maintainer: he
+  looked for it there) and **a paragraph, not a section, since 20261031l**
+  (maintainer): it sits in Part 3 right after the autostrada bullet, in
+  both halves, which splits that list in two. The How-to's copy was
+  REMOVED in 20261031k; the text lives on the driving test page only.
 - **The page beneath a modal is `inert` (20261031i, maintainer, 2026-10-31:
   the browser's find-in-page searched the page under the notes, not the
   notes).** `lockBodyScroll` sets `inert` on `#nav` and every
