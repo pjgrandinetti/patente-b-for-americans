@@ -40,7 +40,7 @@ setTimeout(()=>{
     const lis=[...body.querySelectorAll('[data-rb]')];
     const withPill=lis.filter(e=>e.querySelector(':scope > .rb-it')).length;
     ok(withPill===87,'every block with an Italian twin carries an IT pill: '+withPill+' of '+lis.length);
-    { const fear=lis.find(e=>/^Many learners dread the autostrada/.test(e.textContent)), fp=fear&&fear.querySelector(':scope > .rb-it');
+    { const fear=lis.find(e=>/^Many learners dread driving on the autostrada/.test(e.textContent)), fp=fear&&fear.querySelector(':scope > .rb-it');
       if(fp) fp.click();
       const host=fear&&fear.closest('li');
       ok(!!fp && fear.classList.contains('li-cont') && host && /acceleration lane/.test(host.firstChild.textContent||host.textContent) && !heads.includes('If the autostrada frightens you') && /^Molti allievi hanno paura/.test(fp.nextElementSibling.textContent.trim()),'the autostrada-fear text is a second paragraph inside the autostrada bullet (20261031m), with its own pill'); }

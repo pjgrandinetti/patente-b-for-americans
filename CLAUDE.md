@@ -2968,6 +2968,9 @@ behind what shipped:
   IT pill too. A continuation must be ONE line, since each indented line is
   its own `<p>`. The How-to's copy was REMOVED in 20261031k; the text lives
   on the driving test page only.
+  **Its opening is the maintainer's wording since 20261031n**: "Many
+  learners dread driving on the autostrada. The fear is common, and you
+  should not be ashamed about discussing it with your driving instructor."
 - **The page beneath a modal is `inert` (20261031i, maintainer, 2026-10-31:
   the browser's find-in-page searched the page under the notes, not the
   notes).** `lockBodyScroll` sets `inert` on `#nav` and every
