@@ -2804,7 +2804,7 @@ behind what shipped:
   mocks shipped first and he called them clinical): "You've been preparing
   for this moment for about 2 months, and you've finally made it! You're
   not done yet, but this was a big accomplishment. Again, congratulations
-  on obtaining your foglio rosa." (20261030i, his wording)
+  on obtaining your foglio rosa." (20261030i, his wording) **Rewritten in 20261030z** (maintainer: it could be better written; "Again, congratulations" repeated the heading, and "you've finally made it" sat beside "you're not done yet"): "You prepared for about 2 months, and it paid off. Passing earns you the foglio rosa, and the driving test comes next." / "Hai studiato per circa 2 mesi, e ne è valsa la pena. Superare l'esame ti dà il foglio rosa, e ora tocca all'esame di guida." (*hai studiato*, not *ti sei preparato*, so the Italian assumes no gender).
   The span is `passJourney`'s, from the older of the earliest answer stamp
   `gAt` at any level and the earliest day in the daily log (kept 120 days)
   to the day of the pass, in words: days under 14, weeks under 46 days,
