@@ -384,6 +384,14 @@ body {
 .exam-date-box .exam-date-today .exam-date-row { display: contents; }
 .exam-date-box .exam-date-today dt { color: var(--muted); }
 .exam-date-box .exam-date-today dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+/* The foglio rosa inside the pass box (20261030v): the two dates as a small
+   form, then the rows and the three lesson blocks as a checklist. */
+.exam-date-box .foglio, .exam-date-box .foglio-form { margin-top: .9rem; padding-top: .8rem; border-top: 1px solid var(--border); }
+.exam-date-box .foglio-form label { display: inline-flex; flex-direction: column; gap: .2rem; margin: 0 .75rem .5rem 0; font-size: .9rem; color: var(--muted); }
+.exam-date-box .foglio-lessons { list-style: none; padding: 0; margin: .5rem 0; }
+.exam-date-box .foglio-lessons li { margin: .25rem 0; }
+.exam-date-box .foglio-lessons label { display: flex; gap: .5rem; align-items: flex-start; }
+.exam-date-box .foglio-lessons input { margin-top: .2rem; flex: none; }
 .review-ctx { display: block; font-size: .8rem; color: var(--accent); margin-bottom: .1rem; }
 /* The consistently-missed chip: one short line per figure (20261026c). */
 .review-row.is-short { padding: .45rem .8rem; }

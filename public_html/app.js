@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030u';
+const APP_VERSION     = '20261030v';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -202,11 +202,11 @@ const STATIC_IT = {
     '<li><strong>Visita medica.</strong> Prenoti la visita da un <a href="https://www.ilportaledellautomobilista.it/web/portale-automobilista/servizi-online-ricerca-medici-certificatori" target="_blank" rel="noopener">medico autorizzato dal Ministero</a> tramite la scuola, di solito nella sua sede. Porta il certificato anamnestico, perché senza di esso il medico non può rilasciare il certificato. Questo medico, non il tuo, controlla la vista, esamina il certificato anamnestico e rilascia il certificato medico.<br><strong>Se il certificato anamnestico ha un sì.</strong> Questo medico decide se rilasciarti il certificato o inviarti alla Commissione Medica Locale. Un sì non esclude da solo la patente, ma i tempi si allungano. La Commissione valuta l’epilessia salvo che un neurologo ne certifichi la guarigione, una passata dipendenza dall’alcol, l’uso abituale di medicinali che influiscono sulla guida, le patologie psichiche e neurologiche gravi, l’insufficienza renale che richiede la dialisi o un trapianto, e le menomazioni fisiche. Una malattia cardiaca richiede il certificato di un cardiologo di una struttura pubblica, e il diabete quello di un diabetologo. Con quel certificato questo medico può rilasciarti il certificato, oppure inviarti alla Commissione. Anche qualsiasi altro dubbio di questo medico sulla tua idoneità alla guida porta alla Commissione. Per ogni condizione segnata nel certificato anamnestico, porta a questa visita un certificato recente del tuo specialista.</li>' +
     '<li><strong>La scuola presenta la domanda.</strong> Presenta il <a href="https://www.ilportaledellautomobilista.it/documents/56611/128846273/TT2112.pdf/826c655d-eba2-465a-8ab8-c618bddf1d4e" target="_blank" rel="noopener">modello TT2112</a> all’Ufficio Provinciale della Motorizzazione con i tuoi documenti, il certificato medico e le ricevute dei versamenti. Il certificato medico non deve avere più di 3 mesi quando la domanda viene presentata. Da quel momento hai 6 mesi e 2 tentativi per superare l’esame di teoria, e tra un tentativo fallito e il successivo deve passare almeno un mese.</li>' +
     '<li class="step-theory"><strong>Esame di teoria.</strong> Ha 30 domande vero/falso in 20 minuti, e puoi sbagliarne al massimo 3. È in italiano, con versioni in francese e tedesco, e mai in inglese. In aula non sono ammessi interpreti né dizionari. Si svolge in aule informatizzate presso la <a href="https://www.ilportaledellautomobilista.it/gms/?pp=servizi-online&amp;cp=gsm" target="_blank" rel="noopener">Motorizzazione</a>, non in autoscuola. <strong>È ciò a cui questa app ti prepara.</strong><br><strong>È l’autoscuola a decidere quando presentarti</strong>, e quasi tutte non lo fanno finché non vedono una buona media sulle <strong>proprie</strong> schede d’esame, svolte nell’applicazione della scuola. Quasi tutte le scuole usano il libro e l’applicazione di un editore, e la scuola legge lì le tue medie. Il tuo lavoro qui loro non lo vedono, quindi metti in conto di fare anche le loro schede una volta finito lo studio. È una condizione della scuola e non una regola del Ministero. Chiedi per tempo quale media vuole e su quante schede, e a quanto stanno le date d’esame.</li>' +
-    '<li><strong>Foglio rosa e guide obbligatorie.</strong> Superata la teoria ottieni il foglio rosa, un’autorizzazione a esercitarti valida 12 mesi. Prima di poterti esercitare privatamente devi completare <strong>8 ore</strong> di guide certificate presso la scuola, in quattro moduli. Sono 2 ore di uso del veicolo e simulazione di emergenze, 3 ore di guida in città, 2 ore in autostrada o su strade extraurbane e 1 ora di notte. Dopo che la scuola le certifica puoi esercitarti con un accompagnatore che siede al tuo fianco, non ha più di 65 anni e ha la patente B da almeno 10 anni. Il veicolo deve esporre il contrassegno “P”.</li>' +
+    '<li><strong>Foglio rosa e guide obbligatorie.</strong> Superata la teoria ottieni il foglio rosa, un’autorizzazione a esercitarti valida 12 mesi. Devi completare <strong>6 ore</strong> di guide certificate presso la scuola, in tre blocchi di 2 ore: in autostrada o su strada extraurbana principale, su strada extraurbana secondaria o urbana di scorrimento, e di notte. Una guida dura al massimo 2 ore al giorno, e l’esame di guida si può prenotare solo quando tutte le 6 ore sono certificate. Un decreto del novembre 2025 le porta a 8 ore in quattro moduli per i fogli rosa rilasciati dopo la sua entrata in vigore, quindi chiedi alla scuola quale regola vale per te. Dopo che la scuola le certifica puoi esercitarti con un accompagnatore che siede al tuo fianco, non ha più di 65 anni e ha la patente B da almeno 10 anni. Il veicolo deve esporre il contrassegno “P”.</li>' +
     '<li><strong>Esame di guida.</strong> Lo prenota la scuola, che fornisce anche l’auto, la quale deve avere i <strong>doppi comandi</strong>. Puoi sostenerlo da 1 mese dopo il foglio rosa, con al massimo 3 tentativi entro i suoi 12 mesi e almeno un mese tra un tentativo fallito e il successivo. Un esaminatore della Motorizzazione verifica che sai preparare il veicolo a una guida sicura, osserva due manovre, una delle quali in retromarcia, e guida con te per almeno 25 minuti nel traffico normale. Si può fare l’esame con il cambio automatico, ma la patente porterà allora il codice 78 e varrà solo per veicoli automatici.</li>' +
     '<li><strong>Rilascio della patente.</strong> La patente B copre autovetture e furgoni fino a 3,5 t con al massimo 9 posti, un rimorchio leggero fino a 750 kg e, solo in Italia, motocicli fino a 125 cm³ e 11 kW. Vale 10 anni fino ai 50 anni di età, poi 5 anni fino ai 70, 3 fino agli 80 e 2 oltre. Da neopatentato hai limiti aggiuntivi nei primi tre anni, come potenza del veicolo ridotta e limite di alcol più severo.</li>' +
     '</ol>' +
-    '<p><strong>Costi.</strong> Non c’è una tariffa unica. Il certificato anamnestico costa circa 50 €, e sul certificato medico va una marca da bollo da 16 € oltre al compenso del medico autorizzato. La pratica di iscrizione in autoscuola costa di solito <strong>150–300 €</strong>, di più nelle grandi città, e di norma comprende i versamenti al Ministero. Le guide si vendono di solito a unità di 30 minuti, a circa 30 € l’una e meno nei pacchetti, quindi le 8 ore obbligatorie costano circa 400–500 €. In totale, prendere la patente tramite autoscuola costa in genere <strong>800–1.500 €</strong>. Aspettati una piccola cauzione alla prenotazione degli esami, persa in caso di assenza ingiustificata, e una regola di disdetta delle guide con 24 ore di preavviso.</p>' +
+    '<p><strong>Costi.</strong> Non c’è una tariffa unica. Il certificato anamnestico costa circa 50 €, e sul certificato medico va una marca da bollo da 16 € oltre al compenso del medico autorizzato. La pratica di iscrizione in autoscuola costa di solito <strong>150–300 €</strong>, di più nelle grandi città, e di norma comprende i versamenti al Ministero. Le guide si vendono di solito a unità di 30 minuti, a circa 30 € l’una e meno nei pacchetti, quindi le 6 ore obbligatorie costano circa 300–400 €. In totale, prendere la patente tramite autoscuola costa in genere <strong>800–1.500 €</strong>. Aspettati una piccola cauzione alla prenotazione degli esami, persa in caso di assenza ingiustificata, e una regola di disdetta delle guide con 24 ore di preavviso.</p>' +
     '</div>' +
     '<div class="route-pane hidden" data-route="private">' +
     '<ol>' +
@@ -216,11 +216,11 @@ const STATIC_IT = {
     '<li><strong>Paga i versamenti.</strong> Paga su pagoPA, tramite il <a href="https://www.ilportaledellautomobilista.it" target="_blank" rel="noopener">Portale dell’Automobilista</a>, intestando il versamento a te. L’iscrizione è la tariffa N067, 26,40 € più 16 € di imposta di bollo, 42,40 € in tutto. Conserva la ricevuta con il codice IUV. L’esame di guida richiede poi la tariffa N019, 16 €.</li>' +
     '<li><strong>Presenta la domanda.</strong> Compila e firma il <a href="https://www.ilportaledellautomobilista.it/documents/56611/128846273/TT2112.pdf/826c655d-eba2-465a-8ab8-c618bddf1d4e" target="_blank" rel="noopener">modello TT2112</a> e presentalo all’<a href="https://www.ilportaledellautomobilista.it/gms/?pp=servizi-online&amp;cp=gsm" target="_blank" rel="noopener">Ufficio Provinciale della Motorizzazione</a>. Aggiungi la copia fronte-retro di un documento d’identità valido, la copia fronte-retro del codice fiscale o della tessera sanitaria, il certificato medico, la ricevuta pagoPA e una foto da 33 × 40 mm (alcuni uffici ne chiedono due). Un cittadino extracomunitario aggiunge anche la copia del permesso di soggiorno. Il modo di presentarla dipende dall’ufficio, perché alcuni la ricevono allo sportello e altri per email in un unico PDF, quindi informati prima. L’ufficio ti comunica poi la data dell’esame di teoria. Dalla presentazione hai 6 mesi e 2 tentativi per superarlo, e tra un tentativo fallito e il successivo deve passare almeno un mese.</li>' +
     '<li class="step-theory"><strong>Esame di teoria.</strong> Ha 30 domande vero/falso in 20 minuti, e puoi sbagliarne al massimo 3. È in italiano, con versioni in francese e tedesco, e mai in inglese. In aula non sono ammessi interpreti né dizionari. Si svolge in aule informatizzate presso la Motorizzazione. <strong>È ciò a cui questa app ti prepara.</strong></li>' +
-    '<li><strong>Foglio rosa e guide obbligatorie.</strong> Superata la teoria ottieni il foglio rosa, un’autorizzazione a esercitarti valida 12 mesi. Anche da privatista devi completare <strong>8 ore</strong> di guide certificate presso un’autoscuola autorizzata, negli stessi quattro moduli della strada con autoscuola. Dopo che la scuola le certifica puoi esercitarti con un accompagnatore che siede al tuo fianco, non ha più di 65 anni e ha la patente B da almeno 10 anni. Il veicolo deve esporre il contrassegno “P”.</li>' +
+    '<li><strong>Foglio rosa e guide obbligatorie.</strong> Superata la teoria ottieni il foglio rosa, un’autorizzazione a esercitarti valida 12 mesi. Anche da privatista devi completare <strong>6 ore</strong> di guide certificate presso un’autoscuola autorizzata, negli stessi tre blocchi della strada con autoscuola, prima di poter prenotare l’esame di guida. Dopo che la scuola le certifica puoi esercitarti con un accompagnatore che siede al tuo fianco, non ha più di 65 anni e ha la patente B da almeno 10 anni. Il veicolo deve esporre il contrassegno “P”.</li>' +
     '<li><strong>Esame di guida.</strong> L’auto d’esame deve avere i <strong>doppi comandi</strong>, quindi di fatto lo sostieni con l’auto di un’autoscuola, e alcuni uffici chiedono al privatista di passare da una scuola per questo passo. Puoi sostenerlo da 1 mese dopo il foglio rosa, con al massimo 3 tentativi entro i suoi 12 mesi e almeno un mese tra un tentativo fallito e il successivo. Porta la stessa pratica TT2112, ora con il foglio rosa, l’attestato delle guide e la ricevuta N019. L’esame in sé è lo stesso della strada con autoscuola.</li>' +
     '<li><strong>Rilascio della patente.</strong> La patente B copre autovetture e furgoni fino a 3,5 t con al massimo 9 posti, un rimorchio leggero fino a 750 kg e, solo in Italia, motocicli fino a 125 cm³ e 11 kW. Vale 10 anni fino ai 50 anni di età, poi 5 anni fino ai 70, 3 fino agli 80 e 2 oltre. Da neopatentato hai limiti aggiuntivi nei primi tre anni, come potenza del veicolo ridotta e limite di alcol più severo.</li>' +
     '</ol>' +
-    '<p><strong>Costi.</strong> È la strada più economica e quella con più lavoro. Il certificato anamnestico costa circa 50 €, e il medico autorizzato chiede un compenso a parte, più una marca da bollo da 16 € sul certificato. I versamenti al Ministero sono 42,40 € per l’iscrizione e 16 € per l’esame di guida. Le 8 ore di guide obbligatorie costano circa 400–500 €, e la scuola fa pagare l’uso della sua auto all’esame.</p>' +
+    '<p><strong>Costi.</strong> È la strada più economica e quella con più lavoro. Il certificato anamnestico costa circa 50 €, e il medico autorizzato chiede un compenso a parte, più una marca da bollo da 16 € sul certificato. I versamenti al Ministero sono 42,40 € per l’iscrizione e 16 € per l’esame di guida. Le 6 ore di guide obbligatorie costano circa 300–400 €, e la scuola fa pagare l’uso della sua auto all’esame.</p>' +
     '</div>' +
     '<p><strong>Quanto tempo serve?</strong> Di solito <strong>3–6 mesi</strong> in tutto. Possono bastare ~2 mesi se studi in fretta e ci sono date libere, oppure servirne fino a ~18 sfruttando tutti i termini di legge (6 mesi per la teoria, foglio rosa valido 12 mesi).</p>' +
     '<p>Le procedure variano secondo la regione e l’ufficio provinciale, e cambiano nel tempo. Quello che è descritto qui è il caso più comune, non una regola valida per ogni ufficio. Se la tua esperienza è diversa, faccelo sapere con <strong>Segnala un problema o suggerisci un’idea</strong> in fondo alla pagina principale, così potremo correggerla per chi viene dopo. Per i dettagli ufficiali aggiornati consulta la pagina del Ministero <a href="https://www.ilportaledellautomobilista.it/web/portale-automobilista/foglio-rosa-e-prove-new" target="_blank" rel="noopener">Foglio rosa e prove d’esame</a>. Una volta patentato, l’app ufficiale <a href="https://www.ilportaledellautomobilista.it/web/portale-automobilista/ipatente" target="_blank" rel="noopener">iPatente</a> tiene traccia di punti, rinnovi e scadenze della patente.</p>',
@@ -408,6 +408,23 @@ const T = {
   'examdate.spanWeeks': { en: 'about {0} weeks', it: 'circa {0} settimane' },
   'examdate.spanMonth': { en: 'about a month', it: 'circa un mese' },
   'examdate.spanMonths': { en: 'about {0} months', it: 'circa {0} mesi' },
+  'fr.ask':      { en: 'Enter the two dates printed on your foglio rosa.', it: 'Inserisci le due date stampate sul tuo foglio rosa.' },
+  'fr.issued':   { en: 'Issued (Emiss.)', it: 'Emesso (Emiss.)' },
+  'fr.expires':  { en: 'Expires (Scade il)', it: 'Scade il' },
+  'fr.save':     { en: 'Save', it: 'Salva' },
+  'fr.change':   { en: 'Change the dates', it: 'Modifica le date' },
+  'fr.head':     { en: 'Your foglio rosa', it: 'Il tuo foglio rosa' },
+  'fr.rowValid': { en: 'Valid until', it: 'Valido fino al' },
+  'fr.rowTest':  { en: 'Driving test possible from', it: 'Esame di guida possibile dal' },
+  'fr.rowLessons': { en: 'Mandatory lessons', it: 'Guide obbligatorie' },
+  'fr.daysLeft': { en: '{0} ({1} days left)', it: '{0} (mancano {1} giorni)' },
+  'fr.expired':  { en: '{0} (expired)', it: '{0} (scaduto)' },
+  'fr.now':      { en: '{0} (now)', it: '{0} (adesso)' },
+  'fr.hoursOf':  { en: '{0} of 6 hours', it: '{0} ore su 6' },
+  'fr.lessonsNote': { en: 'The school can book the driving test once all 6 hours are certified, and you have up to 3 attempts before the foglio rosa expires. Tick each lesson block as you complete it.', it: 'La scuola può prenotare l\u2019esame di guida quando tutte le 6 ore sono certificate, e hai al massimo 3 tentativi prima che il foglio rosa scada. Spunta ogni blocco di guide quando lo completi.' },
+  'fr.les0':     { en: '2 hours on the autostrada or a main extra-urban road', it: '2 ore in autostrada o su strada extraurbana principale' },
+  'fr.les1':     { en: '2 hours on a secondary extra-urban road or an urban arterial road', it: '2 ore su strada extraurbana secondaria o urbana di scorrimento' },
+  'fr.les2':     { en: '2 hours at night', it: '2 ore di notte' },
   'examdate.passNext': { en: 'Your foglio rosa lets you practice driving for 12 months. You may take the driving test from one month after it was issued, with up to 3 attempts.', it: 'Il foglio rosa ti permette di esercitarti alla guida per 12 mesi. Puoi sostenere l\u2019esame di guida da un mese dopo il rilascio, con al massimo 3 tentativi.' },
   'examdate.failHead': { en: 'You can take the exam again from {0}.', it: 'Puoi ripetere l\u2019esame dal {0}.' },
   'examdate.failNext': { en: 'At least a month must pass after a failed attempt, and the second attempt must fall within 6 months of filing your application. If your school gives you the exam sheet, it shows your answer to each question. Search for each one you missed in the Questions tab and add it to the weak spots. When you have the new date, enter it below.', it: 'Dopo un tentativo non superato deve passare almeno un mese, e il secondo tentativo deve cadere entro 6 mesi dalla presentazione della domanda. Se l\u2019autoscuola ti d\u00e0 la scheda d\u2019esame, vi trovi la tua risposta a ogni domanda. Cerca nella sezione Domande ciascuna che hai sbagliato e aggiungila ai punti deboli. Quando hai la nuova data, inseriscila qui sotto.' },
@@ -8409,6 +8426,53 @@ function saveExamAttempts(a) {
   stampSettings();
 }
 function theoryPassed() { return examAttempts().some(x => x.r === 'pass'); }
+// The foglio rosa (20261030v, maintainer, 2026-10-30, on the day he
+// collected his): the two dates printed on it, issued (Emiss.) and expires
+// (Scade il), and the three 2-hour lesson blocks of D.M. 20 April 2012
+// ticked off by the learner. The expiry is ASKED, not computed: on his the
+// twelve months ran from the theory exam, a day before the issue date, and
+// no source states which day counts. Synced like the exam date.
+const FOGLIO_KEY = 'patente_foglio_rosa';
+const FOGLIO_LESSONS = 3;
+function foglioRosa() {
+  try {
+    const o = JSON.parse(localStorage.getItem(FOGLIO_KEY) || 'null');
+    if (!o || !/^\d{4}-\d{2}-\d{2}$/.test(o.iss || '') || !/^\d{4}-\d{2}-\d{2}$/.test(o.exp || '')) return null;
+    const les = Array.from({ length: FOGLIO_LESSONS }, (_, i) => !!(o.les && o.les[i]));
+    return { iss: o.iss, exp: o.exp, les };
+  } catch { return null; }
+}
+function saveFoglioRosa(o) {
+  try { if (o) localStorage.setItem(FOGLIO_KEY, JSON.stringify(o)); else localStorage.removeItem(FOGLIO_KEY); } catch { }
+  stampSettings();
+}
+let _foglioEdit = false;
+function dayWordsYear(v) {
+  const [y, m, d] = v.split('-').map(Number);
+  return new Intl.DateTimeFormat(uiLang() === 'it' ? 'it-IT' : 'en-US', { month: 'long', day: 'numeric', year: 'numeric' }).format(new Date(y, m - 1, d));
+}
+function foglioHtml() {
+  const fr = _foglioEdit ? null : foglioRosa();
+  if (!fr) {
+    const old = foglioRosa();
+    return `<div class="foglio-form"><p>${escHtml(t('fr.ask'))}</p>` +
+      `<label>${escHtml(t('fr.issued'))} <input type="date" data-fr="iss" value="${old ? old.iss : ''}"></label>` +
+      `<label>${escHtml(t('fr.expires'))} <input type="date" data-fr="exp" value="${old ? old.exp : ''}"></label>` +
+      `<button type="button" class="btn-secondary" data-ed="frsave">${escHtml(t('fr.save'))}</button></div>`;
+  }
+  const row = (k, lab, val) => `<div class="exam-date-row" data-row="${k}"><dt>${escHtml(t(lab))}</dt><dd>${escHtml(val)}</dd></div>`;
+  const left = examDaysLeft(fr.exp);
+  const testKey = examRetakeKey(fr.iss);
+  const done = fr.les.filter(Boolean).length;
+  return `<div class="foglio"><strong>${escHtml(t('fr.head'))}</strong><dl class="exam-date-today">` +
+    row('valid', 'fr.rowValid', t(left < 0 ? 'fr.expired' : 'fr.daysLeft', dayWordsYear(fr.exp), left)) +
+    row('test', 'fr.rowTest', testKey <= dayKey() ? t('fr.now', dayWordsYear(testKey)) : dayWordsYear(testKey)) +
+    row('lessons', 'fr.rowLessons', t('fr.hoursOf', done * 2)) +
+    `</dl><ul class="foglio-lessons">` +
+    fr.les.map((on, i) => `<li><label><input type="checkbox" data-fr-les="${i}"${on ? ' checked' : ''}> ${escHtml(t('fr.les' + i))}</label></li>`).join('') +
+    `</ul><p class="exam-date-advice">${escHtml(t('fr.lessonsNote'))}</p>` +
+    `<p><button type="button" class="link-btn" data-ed="frchange">${escHtml(t('fr.change'))}</button></p></div>`;
+}
 // The stored date when it has passed and no outcome is recorded for it.
 function examAwaitingOutcome() {
   let v = null;
@@ -8571,6 +8635,14 @@ function renderExamDate(atBar) {
     box = document.createElement('div');
     box.id = 'exam-date-box';
     box.className = 'exam-date-box hidden';
+    box.addEventListener('change', e => {
+      const c = e.target.closest('input[data-fr-les]');
+      const fr = c && foglioRosa();
+      if (!fr) return;
+      fr.les[+c.dataset.frLes] = c.checked;
+      saveFoglioRosa(fr);
+      renderExamDate(box._atBar);
+    });
     box.addEventListener('click', e => {
       const b = e.target.closest('button[data-ed]');
       if (!b) return;
@@ -8601,6 +8673,14 @@ function renderExamDate(atBar) {
         _examDateEdit = false;
       }
       else if (act === 'postponed') { setExamDate(null); _examDateEdit = false; }
+      else if (act === 'frsave') {
+        const iss = box.querySelector('input[data-fr="iss"]').value, exp = box.querySelector('input[data-fr="exp"]').value;
+        if (!iss || !exp || exp <= iss) return;
+        const old = foglioRosa();
+        saveFoglioRosa({ iss, exp, les: old ? old.les : [] });
+        _foglioEdit = false;
+      }
+      else if (act === 'frchange') _foglioEdit = true;
       else if (act === 'undo') {
         const a = examAttempts(); const last = a.pop();
         if (last) { saveExamAttempts(a); setExamDate(last.d); }
@@ -8633,7 +8713,8 @@ function renderExamDate(atBar) {
     const j = passJourney();
     box.innerHTML = `<div class="exam-date-text exam-date-pass"><strong>${escHtml(t('examdate.passHead'))}</strong>` +
       (j ? `<p class="exam-date-journey">${escHtml(j)}</p>` : '') +
-      `<p class="exam-date-advice">${escHtml(t('examdate.passNext'))}</p>` +
+      (foglioRosa() && !_foglioEdit ? '' : `<p class="exam-date-advice">${escHtml(t('examdate.passNext'))}</p>`) +
+      foglioHtml() +
       // The driving test has its own box on the dashboard (20261030s); the
       // key points are not linked here either (20261030l). Change my answer
       // is a small line at the foot, not beside the message (20261030t).
@@ -9503,6 +9584,7 @@ function buildProgressBundle() {
       examDate:     localStorage.getItem(EXAM_DATE_KEY),
       examDateProv: localStorage.getItem(EXAM_DATE_PROV_KEY),
       examOutcome:  localStorage.getItem(EXAM_OUTCOME_KEY),
+      foglioRosa:   localStorage.getItem(FOGLIO_KEY),
       missMin:      localStorage.getItem(MISS_MIN_KEY),
       missFilter:   localStorage.getItem(MISS_FILTER_KEY),
       missRun:      localStorage.getItem(MISS_RUN_KEY),
@@ -11073,6 +11155,7 @@ function mergeSyncSettings(s) {
   if (s.examDate   !== undefined) set(EXAM_DATE_KEY, s.examDate);
   if (s.examDateProv !== undefined) set(EXAM_DATE_PROV_KEY, s.examDateProv);
   if (s.examOutcome !== undefined) set(EXAM_OUTCOME_KEY, s.examOutcome);
+  if (s.foglioRosa !== undefined) set(FOGLIO_KEY, s.foglioRosa);
   if (s.missMin    !== undefined) set(MISS_MIN_KEY, s.missMin);
   if (s.missFilter !== undefined) set(MISS_FILTER_KEY, s.missFilter);
   if (s.missRun    !== undefined) set(MISS_RUN_KEY, s.missRun);

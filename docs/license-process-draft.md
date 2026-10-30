@@ -219,7 +219,11 @@ that the theory course is optional, moves into the opening.
      dual-control car. It applies only once an implementing decreto
      dirigenziale is in force, to fogli rosa issued after it: whether it
      applies today is UNCONFIRMED. The old rule (DM 20 Apr 2012) is 6 hours.
-     The How-to states 8 hours in four modules as current; CHECK.
+     RESOLVED 2026-10-30: a foglio rosa issued 30 October 2026 took 6 hours
+     (the school's word), so the 2012 rule still applies; the How-to says 6
+     since 20261030v. Breakdown: three 2-hour blocks (autostrada or main
+     extra-urban, secondary extra-urban or urban arterial, night), per
+     sicurauto.it and the decree's text on studiocataldi.it.
    - Driving test: dual controls and an instructor beside the candidate
      (MIT circular 28819 of 19/09/2019, cited by Massa Carrara). Pistoia
      requires a privatista to go through a school for the test. A rented

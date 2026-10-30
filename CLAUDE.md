@@ -2860,6 +2860,28 @@ behind what shipped:
   tracker and the rest) will replace this box. `scripts/check_after_pass.js`,
   11 checks in each face.
   `scripts/check_exam_outcome.js`, 23 checks in each face.
+  **The foglio rosa in the pass box (20261030v, maintainer, 2026-10-30,
+  the day he collected his).** Below the journey the box asks for the two
+  dates printed on the document, issued (*Emiss.*) and expires (*Scade
+  il*), then shows Valid until (with the days left), Driving test possible
+  from (a month after the issue, art. 121 c. 10's month as already used)
+  and Mandatory lessons "N of 6 hours", with the three 2-hour blocks of
+  D.M. 20 April 2012 as a checklist the learner ticks. The expiry is ASKED,
+  never computed: on his the twelve months ran from the theory exam, a day
+  before the issue, and no source says which day counts. `FOGLIO_KEY`,
+  `foglioRosa`, `foglioHtml`, synced as `foglioRosa` and stamped. The
+  driving test date itself is the next step, asked only once the school
+  books it. `scripts/check_foglio_rosa.js`, 12 checks in each face.
+  **The How-to says 6 hours since 20261030v**, not 8: his foglio rosa,
+  issued 30 October 2026, carries 6 hours, three blocks of 2 (autostrada
+  or main extra-urban road, secondary extra-urban or urban arterial road,
+  night; D.M. 20 April 2012 art. 1, at most 2 hours a day, the logbook and
+  certificate shown when the driving test is booked). D.M. 294 of 17
+  November 2025 (8 hours, four modules) applies only to a foglio rosa
+  issued after its implementing decree, and the step says to ask the
+  school. The lesson costs were scaled to 6 hours (€300 to €400). If the
+  2025 decree comes into force, the How-to, `docs/american-guide.md` and
+  the checklist (`FOGLIO_LESSONS`, `fr.les*`, `fr.hoursOf`) change together.
   **The exam day keeps "Continue the review" and the Still waiting count
   (20261029y, maintainer, 2026-10-29: the day's set once left nothing to
   review if the exam is late in the day).** Only the day before stops at
