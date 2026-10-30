@@ -2875,6 +2875,11 @@ behind what shipped:
   **Change my answer sits right under the congratulations since
   20261030w** (maintainer), above the foglio rosa, since it undoes the pass
   and not the dates.
+  **Where the driving test is held (20261030x, maintainer, 2026-10-30).**
+  Both routes' driving test step says it may be held in a different town
+  from the theory exam, one of several in the province, and to ask the
+  school. One candidate's account (he was offered three towns), so "may";
+  the towns themselves are not recorded.
   **The How-to says 6 hours since 20261030v**, not 8: his foglio rosa,
   issued 30 October 2026, carries 6 hours, three blocks of 2 (autostrada
   or main extra-urban road, secondary extra-urban or urban arterial road,
