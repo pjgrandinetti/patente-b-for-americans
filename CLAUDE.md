@@ -2854,7 +2854,9 @@ behind what shipped:
   wait for the maintainer's own instructor. A non-Italian browser opens it in English at every level. An edit to
   one half needs the same edit to the other in the same position, or the
   pills pair the wrong blocks in silence. `docs/driving-test-draft.md` is the
-  draft it came from. `scripts/check_driving_test.js`, 9 checks in English,
+  draft it came from. The opening sentence links the circular on the
+  Ministry's own site (mit.gov.it/normativa/circolare-protocollo-28819-del-19092019,
+  20261030y, maintainer), in both halves. `scripts/check_driving_test.js`, 9 checks in English,
   5 in Italian. No study time is claimed: `ms` measures reading time on
   clean answers only, not hours studied. The driving stage (the foglio rosa
   tracker and the rest) will replace this box. `scripts/check_after_pass.js`,

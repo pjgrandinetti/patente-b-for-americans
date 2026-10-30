@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030x';
+const APP_VERSION     = '20261030y';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1706,7 +1706,7 @@ function openKeyPoints() {
 const DRIVING_TEST = '__drivingtest__';
 const DRIVING_TEST_MD = {
   en: `This page follows the instructions the Motorizzazione gives its examiners for
-the B driving test (circular 28819 of 19 September 2019).
+the B driving test ([circular 28819 of 19 September 2019](https://mit.gov.it/normativa/circolare-protocollo-28819-del-19092019)).
 
 ## How the test works
 
@@ -1864,7 +1864,7 @@ likely to miss.
 - If you have driven only automatics and your lessons are in a manual car, practice starting on a hill. Ask your instructor whether the examiners expect a particular technique, such as the handbrake.
 - The examiner gives directions in Italian. Learn the usual directions before the test, so that a word you miss does not become a wrong turn.`,
   it: `Questa pagina segue le istruzioni che la Motorizzazione dà ai suoi esaminatori
-per l'esame di guida della patente B (circolare 28819 del 19 settembre 2019).
+per l'esame di guida della patente B ([circolare 28819 del 19 settembre 2019](https://mit.gov.it/normativa/circolare-protocollo-28819-del-19092019)).
 
 ## Come si svolge l'esame
 
