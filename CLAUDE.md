@@ -2948,7 +2948,15 @@ behind what shipped:
   the circular cites (art. 117 c. 2: 100 on the autostrada, 90 on a main
   extra-urban road). No license without the autostrada can be chosen:
   code 05.07 is a medical restriction. A sentence of advice for a fearful
-  learner was drafted and rejected as lacking empathy; redrafting.
+  learner was drafted and rejected as lacking empathy. **The second draft
+  shipped in 20261031h**, at the end of both routes' lessons step in both
+  languages: the fear is common and nothing is wrong with you; the lessons,
+  with the instructor's dual controls, are the place to face it; say so at
+  the first lesson; a short quiet stretch first, more lessons if needed; the
+  fear fades with practice and avoiding the road keeps it alive (the one
+  finding the sources agree on); and, the maintainer's point, you need to
+  master the autostrada only long enough to pass the test, and after that
+  you are free to avoid it. Write for the person who is afraid, not at them.
   **The How-to says 6 hours since 20261030v**, not 8: his foglio rosa,
   issued 30 October 2026, carries 6 hours, three blocks of 2 (autostrada
   or main extra-urban road, secondary extra-urban or urban arterial road,
