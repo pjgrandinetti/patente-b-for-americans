@@ -208,7 +208,8 @@ Counts only users who enabled Sync — a lower bound on active users.</p>
 the sync code. "Last sync" is the last upload, which happens after the user answers something, so
 opening the app without studying does not move it. Rows older than 7 days are grayed.
 First sync, days active and uploads are recorded from 2026-09-27; a user shows "before tracking"
-until their next upload, and their counts start then.</p>
+until their next upload, and their counts start then. A bucket not used for 12 months, neither
+uploaded nor downloaded, is deleted by the next sync request that happens to sweep (sync.php, KEEP_DAYS).</p>
 <?php endif; ?>
 
 <?php

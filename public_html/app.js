@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261031o';
+const APP_VERSION     = '20261031p';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -268,7 +268,7 @@ const STATIC_IT = {
   'footer.checkUpdate': 'Controlla aggiornamenti',
   'footer.disclosures': 'Avvertenze e privacy',
   'footer.disclaimer': '<strong>Avvertenza:</strong> questo è uno strumento di studio indipendente e non ufficiale. Non è affiliato, approvato o collegato al governo italiano, al Ministero delle Infrastrutture e dei Trasporti o alla Motorizzazione Civile. L’archivio delle domande è quello pubblicato dal ministero. I contenuti hanno solo scopo didattico e informativo generale, sono forniti “così come sono” senza garanzia di superamento dell’esame e non costituiscono consulenza legale: regole, procedure, costi e requisiti cambiano, quindi verifica sempre presso le fonti ufficiali prima di agire. I link esterni non sono sotto il nostro controllo.',
-  'footer.privacy': '<strong>Privacy:</strong> questa app non usa cookie e non richiede un account, quindi il tuo utilizzo è anonimo. I tuoi progressi sono salvati sul tuo dispositivo. Non vengono mai inviati altrove, a meno che tu non attivi la Sincronizzazione (nel qual caso sono cifrati end-to-end con un codice che possiedi solo tu, quindi non possiamo leggerli) o non esporti tu stesso un backup. Se invii una segnalazione su una domanda (modalità revisore) o una segnalazione di bug, viene inviato allo sviluppatore solo ciò che scrivi, più la versione dell\'app e il browser. Un indirizzo email viene inviato solo se lo scrivi tu nel modulo di segnalazione, e serve soltanto per risponderti. Le uniche altre connessioni esterne sono i link che scegli di aprire.',
+  'footer.privacy': '<strong>Privacy:</strong> questa app non usa cookie e non richiede un account, quindi il tuo utilizzo è anonimo. I tuoi progressi sono salvati sul tuo dispositivo. Non vengono mai inviati altrove, a meno che tu non attivi la Sincronizzazione (nel qual caso sono cifrati end-to-end con un codice che possiedi solo tu, quindi non possiamo leggerli, e la copia sincronizzata viene cancellata dal nostro server dopo 12 mesi di inutilizzo) o non esporti tu stesso un backup. Se invii una segnalazione su una domanda (modalità revisore) o una segnalazione di bug, viene inviato allo sviluppatore solo ciò che scrivi, più la versione dell\'app e il browser. Un indirizzo email viene inviato solo se lo scrivi tu nel modulo di segnalazione, e serve soltanto per risponderti. Le uniche altre connessioni esterne sono i link che scegli di aprire.',
   'footer.about': "Informazioni sull'app (in inglese)",
   'footer.credits': 'Crediti delle immagini (in inglese)',
   'footer.source': 'Codice sorgente su GitHub',

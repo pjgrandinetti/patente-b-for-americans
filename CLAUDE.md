@@ -894,8 +894,8 @@ reach the session on 2026-09-20, which is why it is recorded here.
   fields, no duplicate statement numbers, image/abridged refs resolve, all 25
   topics have reviews, review images resolve, **and version lockstep**.
 - CI (`.github/workflows/ci.yml`) additionally runs eslint (no-undef), `php -l`,
-  and gitleaks. Keep PHP balanced; there is **no PHP runtime here**, so check
-  brace/paren balance manually instead of running `php -l` locally.
+  and gitleaks. Keep PHP balanced; this Mac has `php` at /opt/homebrew/bin, so
+  `php -l` works here (the sandbox of earlier sessions had none).
 
 ## Vocabulary help at the Italian-only level
 
@@ -5054,6 +5054,22 @@ behind what shipped:
   written before this release show "before tracking" until their next upload.
   The admin page's glob matches `[a-f0-9]{64}\.json$`, so the sidecar
   is never counted as a bucket; keep that anchor if either glob changes.
+- **A bucket unused for 12 months is deleted (20261031p, maintainer,
+  2026-10-30).** He asked whether codes created and never used would pile up;
+  they did, since nothing ever deleted a bucket. `sync.php` now sweeps them in
+  the same 1-in-20 pass as the rate-limit files: a blob whose mtime (the last
+  upload) AND whose sidecar `read` stamp (the last download, written by the
+  GET at most once a day) are both older than `$KEEP_DAYS` (365) is deleted
+  with its sidecar. A download counts as use, so a learner who only reads from
+  a second device is not expired; a sidecar may now exist from a GET alone, so
+  the POST fills in `first` when it is missing. The server copy is a mirror,
+  so a device returning to a deleted bucket gets a 404 and pushes its own
+  copy back; only someone who lost every device and never exported loses
+  anything. He chose use-based expiry over age alone first, then set 12
+  months after the last use. The privacy note (both faces) and the admin
+  page say so. Exercised with the local `php` (there is one on this Mac)
+  over seeded buckets: old and unread deleted, old but read kept, recent
+  kept.
 - **The privacy note does not describe the upload dates** (20261003o,
   maintainer's wording, 2026-09-27): it says the app sets no cookies and
   needs no account, so use is anonymous, and that synced progress is

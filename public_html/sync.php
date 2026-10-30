@@ -28,6 +28,7 @@ $STORE_DIR = __DIR__ . '/../patente_sync';            // outside web root + outs
 $MAX_BYTES   = 4194304;  // 4 MB body cap (encrypted+base64 progress; generous)
 $RATE_MAX    = 120;      // requests
 $RATE_WINDOW = 600;      // per 10 minutes per IP
+$KEEP_DAYS   = 365;      // a bucket not used (uploaded or downloaded) for this long is deleted
 // ─────────────────────────────────────────────────────────────────────
 
 function fail($code, $err) { http_response_code($code); echo json_encode(['ok' => false, 'error' => $err]); exit; }
@@ -79,11 +80,34 @@ $hits[] = $now;
 // longer count against any limit), so on roughly 1 request in 20 we sweep them.
 // This keeps the store at a handful of files with no cron job; mobile IPs
 // rotate constantly, so without it the folder grows one tiny file per IP
-// forever. Never touches the *.json sync buckets.
+// forever.
+//
+// The same sweep retires ABANDONED BUCKETS (2026-10-30, maintainer's decision):
+// a code that was created and never used again would otherwise sit here for
+// good, and nothing else ever deletes a bucket. A bucket's last use is the
+// later of its last upload (the blob's mtime) and its last download (`read`
+// in the sidecar, stamped by the GET below), so a learner who only reads from
+// a second device still counts as active. After $KEEP_DAYS without either, the
+// blob and its sidecar go. The server copy is a mirror: every device keeps the
+// full progress, and a device returning to a deleted bucket gets a 404 and
+// pushes its own copy back up, so only someone who lost every device and never
+// exported would lose anything. The privacy note and the admin page say so.
 if (random_int(1, 20) === 1) {
   foreach ((array)@glob($STORE_DIR . '/rl_*.txt') as $old) {
     $m = @filemtime($old);
     if ($m !== false && $m < $now - $RATE_WINDOW) @unlink($old);
+  }
+  $cutoff = $now - $KEEP_DAYS * 86400;
+  foreach ((array)@glob($STORE_DIR . '/*.json') as $old) {
+    if (!preg_match('/\/[a-f0-9]{64}\.json$/', $old)) continue;   // blobs only, never a sidecar
+    $m = @filemtime($old);
+    if ($m === false || $m >= $cutoff) continue;
+    $side = substr($old, 0, -5) . '.meta.json';
+    $sm = is_file($side) ? json_decode((string)@file_get_contents($side), true) : null;
+    $read = is_array($sm) ? (int)($sm['read'] ?? 0) : 0;
+    if ($read >= $cutoff) continue;
+    @unlink($old);
+    @unlink($side);
   }
 }
 
@@ -100,6 +124,16 @@ if ($method === 'GET') {
   if (!valid_bucket($bucket)) fail(400, 'bad_bucket');
   $file = $STORE_DIR . '/' . $bucket . '.json';
   if (!is_file($file)) fail(404, 'not_found');
+  // A download is a use too, for the retention sweep above: stamp `read` in
+  // the sidecar, at most once a day, since a device polls every few minutes.
+  // Never on the blob itself, whose mtime is the admin page's "last upload".
+  $metaFile = $STORE_DIR . '/' . $bucket . '.meta.json';
+  $meta = is_file($metaFile) ? json_decode((string)@file_get_contents($metaFile), true) : null;
+  if (!is_array($meta)) $meta = [];
+  if ((int)($meta['read'] ?? 0) < $now - 86400) {
+    $meta['read'] = $now;
+    @file_put_contents($metaFile, json_encode($meta), LOCK_EX);
+  }
   $stored = json_decode((string)@file_get_contents($file), true);
   if (!is_array($stored)) fail(500, 'corrupt');
   $storedBlob = (string)($stored['blob'] ?? '');
@@ -165,7 +199,8 @@ if (!@rename($tmp, $file)) { @unlink($tmp); fail(500, 'write'); }
 // is ignored: it must never cost the user a sync.
 $metaFile = $STORE_DIR . '/' . $bucket . '.meta.json';
 $meta = is_file($metaFile) ? json_decode((string)@file_get_contents($metaFile), true) : null;
-if (!is_array($meta)) $meta = ['first' => $updatedAt, 'pushes' => 0, 'days' => []];
+if (!is_array($meta)) $meta = [];
+if (empty($meta['first'])) $meta['first'] = $updatedAt;   // a sidecar may exist from a GET's `read` stamp alone
 $meta['pushes'] = (int)($meta['pushes'] ?? 0) + 1;
 $day = gmdate('Y-m-d');
 $days = array_values(array_filter((array)($meta['days'] ?? []), 'is_string'));
