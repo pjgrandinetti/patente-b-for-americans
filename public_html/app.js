@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261031e';
+const APP_VERSION     = '20261031f';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1719,6 +1719,11 @@ You may take the test in a car with a manual or an automatic gearbox. A test
 passed in an automatic puts code 78 on your license, and that license does not
 let you drive a manual.
 
+The test car must have dual controls, at least for the clutch and the brake,
+and reach at least 100 km/h. A driving school's student takes the test in a car
+registered to the school, and a private candidate in a school's car or one
+rented without a driver.
+
 A candidate from outside the EU must show a valid residence permit (*permesso
 di soggiorno*) at the driving test ([circular 41095 of 29 December 2022](https://www.patente.it/ecom.dll/noAjax?idc=4706)).
 The receipt for a permit application or renewal counts as the permit.
@@ -1874,6 +1879,7 @@ These points are not in the circular. They are what an American driver is most
 likely to miss.
 
 - If you have driven only automatics, you have two choices. You can take the lessons and the test in an automatic, if the school has one, and accept a license with code 78, which does not let you drive a manual. Or you can learn the manual gearbox, and then plan on more lessons and more time before the test than the 6 hours required.
+- In the US you usually take the road test in your own car. Here you take it in the school's car, which you may first drive at your lessons. Ask to take your last lessons in the car you will be tested in, so that its clutch, brakes and size are familiar.
 - The examiner gives directions in Italian. Learn the usual directions before the test, so that a word you miss does not become a wrong turn.
 
 ## Directions the examiner gives
@@ -1927,6 +1933,11 @@ candidato, di cui 25 di guida nel traffico.
 Puoi sostenere l'esame su un'auto con cambio manuale o automatico. Un esame
 superato con il cambio automatico porta il codice 78 sulla patente, che non
 consente di guidare un'auto con cambio manuale.
+
+L'auto d'esame deve avere i doppi comandi, almeno per frizione e freno, e
+raggiungere almeno 100 km/h. L'allievo di un'autoscuola sostiene l'esame su
+un'auto intestata alla scuola, il privatista su un'auto di un'autoscuola o
+noleggiata senza conducente.
 
 Un candidato non comunitario deve presentare all'esame di guida un permesso di
 soggiorno in corso di validità ([circolare 41095 del 29 dicembre 2022](https://www.patente.it/ecom.dll/noAjax?idc=4706)).

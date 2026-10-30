@@ -39,15 +39,18 @@ setTimeout(()=>{
   if(!IT){
     const lis=[...body.querySelectorAll('[data-rb]')];
     const withPill=lis.filter(e=>e.querySelector(':scope > .rb-it')).length;
-    ok(withPill===85,'every block with an Italian twin carries an IT pill: '+withPill+' of '+lis.length);
+    ok(withPill===86,'every block with an Italian twin carries an IT pill: '+withPill+' of '+lis.length);
     { const sum=lis.find(e=>/^The test has three parts, in order/.test(e.textContent)), sp=sum&&sum.querySelector(':scope > .rb-it');
       if(sp) sp.click();
       ok(!!sp && /^L'esame ha tre fasi, in ordine/.test(sp.nextElementSibling.textContent.trim()) && heads.indexOf('Summary')===6,'the summary (20261031b) comes before the American section, and its first point pairs with its Italian twin'); }
+    { const car=lis.find(e=>/^The test car must have dual controls/.test(e.textContent)), cp=car&&car.querySelector(':scope > .rb-it');
+      if(cp) cp.click();
+      ok(!!cp && /^L'auto d'esame deve avere i doppi comandi/.test(cp.nextElementSibling.textContent.trim()),'the test car paragraph (20261031f) pairs with its Italian twin'); }
     const permit=lis.find(e=>/residence permit/.test(e.textContent)), pp=permit&&permit.querySelector(':scope > .rb-it');
     if(pp) pp.click();
     ok(!!pp && /permesso di\s+soggiorno in corso di validità/.test(pp.nextElementSibling.textContent) && /41095/.test(permit.innerHTML),'the residence permit paragraph (20261031a) cites 41095 and its pill opens its own Italian twin');
     const habits=heads.indexOf('For American drivers');
-    ok(habits===7 && (body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'),body.innerHTML.indexOf('Directions the examiner gives')).match(/<li/g)||[]).length===2 && !/STOP sign/.test(txt) && !/parallel parking[\s\S]*rb-it/.test(body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'))),'the American section closes the page with its two points (20261031d) and no pill');
+    ok(habits===7 && (body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'),body.innerHTML.indexOf('Directions the examiner gives')).match(/<li/g)||[]).length===3 && !/STOP sign/.test(txt) && !/parallel parking[\s\S]*rb-it/.test(body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'))),'the American section closes the page with its three points (20261031f) and no pill');
     { const dh=heads.indexOf('Directions the examiner gives');
       const sp=[...body.querySelectorAll('.dt-speak')], said=[];
       w.speakItalian=t=>said.push(t);

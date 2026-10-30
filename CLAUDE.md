@@ -2928,6 +2928,15 @@ behind what shipped:
   dashboard box for a non-Italian browser and absent for an Italian one.
   `DRIVE_DIRECTIONS_HEAD` must match the heading. This supersedes "the
   examiner's directions are NOT on the page" above.
+  **The test car (20261031f, maintainer).** "How the test works" says, in
+  both halves, what circular 28819 para. 7.1 and Code art. 121 c. 9 say:
+  dual controls at least for clutch and brake, at least 100 km/h, a
+  school's student tested in a car registered to the school, a private
+  candidate in a school's car or one rented without a driver. The American
+  section gained a point: in the US the road test is usually taken in your
+  own car (state DMVs, e.g. Connecticut and Vermont), here in the school's,
+  so ask to take the last lessons in the car you will be tested in (advice,
+  not a rule).
   **The How-to says 6 hours since 20261030v**, not 8: his foglio rosa,
   issued 30 October 2026, carries 6 hours, three blocks of 2 (autostrada
   or main extra-urban road, secondary extra-urban or urban arterial road,
