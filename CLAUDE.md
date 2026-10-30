@@ -2971,6 +2971,9 @@ behind what shipped:
   **Its opening is the maintainer's wording since 20261031n**: "Many
   learners dread driving on the autostrada. The fear is common, and you
   should not be ashamed about discussing it with your driving instructor."
+  Its close too, since 20261031o: "Remember that you only need to master
+  the autostrada enough to pass the driving test. After that, you are free
+  to avoid it as you prefer."
 - **The page beneath a modal is `inert` (20261031i, maintainer, 2026-10-31:
   the browser's find-in-page searched the page under the notes, not the
   notes).** `lockBodyScroll` sets `inert` on `#nav` and every
