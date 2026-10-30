@@ -2961,9 +2961,9 @@ behind what shipped:
   (maintainer: he looked for it there), "## If the autostrada frightens you"
   / "## Se l'autostrada ti fa paura", after "What ends the test at once" and
   before the Summary, in both halves, opening with why it cannot be worked
-  around on the day (the route is meant to include such a road). The How-to
-  keeps its copy, since the licensing page is public and stands alone; a
-  change to the wording is two edits.
+  around on the day (the route is meant to include such a road). **The
+  How-to's copy was REMOVED in 20261031k** (maintainer): the text lives on
+  the driving test page only.
 - **The page beneath a modal is `inert` (20261031i, maintainer, 2026-10-31:
   the browser's find-in-page searched the page under the notes, not the
   notes).** `lockBodyScroll` sets `inert` on `#nav` and every
