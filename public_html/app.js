@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030t';
+const APP_VERSION     = '20261030u';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -851,6 +851,7 @@ const T = {
   'stmt.warnTitle': { en: 'Ambiguously worded official question: tap for the note', it: 'Domanda ufficiale dalla formulazione ambigua: tocca per la nota' },
   'flag.cat.ambiguous':   { en: 'Ambiguous wording', it: 'Formulazione ambigua' },
   'flag.cat.entry':       { en: 'Entry is wrong or unclear', it: 'Voce errata o poco chiara' },
+  'flag.cat.text':        { en: 'Wrong, out of date or unclear', it: 'Errato, superato o poco chiaro' },
   'flag.note':            { en: 'note (optional)', it: 'nota (facoltativa)' },
   'flag.save':            { en: 'Save', it: 'Salva' },
   'flag.cancel':          { en: 'Cancel', it: 'Annulla' },
@@ -1083,7 +1084,7 @@ function applyRouteTab() {
       b.setAttribute('aria-selected', on ? 'true' : 'false');
     });
     box.querySelectorAll('.route-pane').forEach(p => p.classList.toggle('hidden', p.dataset.route !== route));
-  });
+  });  try { addHowtoFlags(); } catch {}
 }
 document.addEventListener('click', e => {
   const tab = e.target.closest('.route-tab');
@@ -2755,6 +2756,7 @@ function renderReviewBody() {
       h.insertAdjacentElement('afterend', b);
     });
   }
+  if (reviewTopic === DRIVING_TEST) addDriveTestFlags(reviewBody);
   // The standing line (shown only when opened from a card) follows the toggle.
   const noteTxt = document.querySelector('#review-note .review-note-text');
   if (noteTxt) noteTxt.textContent = t(reviewLang === 'it' ? 'review.noteIt' : 'review.noteEn');
@@ -10747,6 +10749,11 @@ function entryFlagHtml(number, set, idx) {
 }
 function entryFlagFields(btn, rowEl) {
   const number = btn.dataset.fnum;
+  if (btn.dataset.ftopic) {
+    const text = proseFlagText(rowEl);
+    const it = btn.dataset.flang === 'it';
+    return () => ({ topic: btn.dataset.ftopic, italian: it ? text : '', english: it ? '' : text });
+  }
   if (number.startsWith('num: ')) {
     const n = (reference.numbers || [])[+btn.dataset.fidx] || {};
     return () => ({ topic: 'Reference: Numbers', italian: n.it + '. ' + n.value,
@@ -10768,12 +10775,12 @@ function bindEntryFlags(box) {
   box.addEventListener('click', e => {
     const btn = e.target.closest('.entry-flag');
     if (!btn || !box.contains(btn)) return;
-    const rowEl = btn.closest('li, .review-row');
+    const rowEl = btn.closest('.flag-host, li, .review-row');
     if (!rowEl) return;
     const open = rowEl.querySelector(':scope > .dev-flag');
     if (open) { open.remove(); rowEl.classList.remove('has-flag-form'); return; }
     const number = btn.dataset.fnum;
-    const form = buildFlagForm(number, ENTRY_FLAG_CATS, entryFlagFields(btn, rowEl), {
+    const form = buildFlagForm(number, btn.dataset.ftopic ? PROSE_FLAG_CATS : ENTRY_FLAG_CATS, entryFlagFields(btn, rowEl), {
       bare: true,
       onDone: () => {
         form.remove();
@@ -10786,6 +10793,65 @@ function bindEntryFlags(box) {
     rowEl.appendChild(form);
     form.querySelector('.dev-flag-note')?.focus();
   });
+}
+
+// Reviewer comments on the licensing How-to and on the driving test page
+// (20261030u, maintainer's bug report, 2026-10-30). The same ⚑ as the
+// Reference rows, on each step and paragraph of the How-to and each paragraph
+// and bullet of the driving test page. The flag's `number` names the page and
+// the passage ("howto: school step 4, Pass the medical", "drive: Part 2:
+// Reversing ..."), and the record carries the passage's text in the language
+// shown, so a comment can be acted on even after the wording changes.
+const PROSE_FLAG_CATS = ['text', 'translation', 'question', 'other'];
+function proseFlagText(host) {
+  const c = host.cloneNode(true);
+  c.querySelectorAll('.entry-flag, .dev-flag, .rb-it, .rb-itxt, ul, ol').forEach(x => x.remove());
+  return c.textContent.replace(/\s+/g, ' ').trim();
+}
+function proseFlagLabel(host) {
+  const strong = host.firstElementChild && host.firstElementChild.tagName === 'STRONG'
+    && host.firstChild === host.firstElementChild ? host.firstElementChild.textContent : '';
+  const text = (strong || proseFlagText(host)).replace(/[.:]\s*$/, '');
+  const words = text.split(' ');
+  return words.length > 8 ? words.slice(0, 8).join(' ') + ' ...' : text;
+}
+function addProseFlag(host, number, topic, lang, set) {
+  if (host.querySelector(':scope > .entry-flag')) return;
+  host.classList.add('flag-host');
+  host.insertAdjacentHTML('beforeend', ' ' + entryFlagHtml(number.slice(0, 120), set));
+  const b = host.querySelector(':scope > .entry-flag');
+  b.dataset.ftopic = topic;
+  b.dataset.flang = lang;
+}
+function addHowtoFlags() {
+  const set = entryFlagSet();
+  document.querySelectorAll('[data-i18n-html="next.body"]').forEach(box => {
+    if (!set) { box.querySelectorAll('.entry-flag, .dev-flag').forEach(x => x.remove()); return; }
+    const lang = uiLang() === 'it' ? 'it' : 'en';
+    const topic = 'How-to: getting a license';
+    box.querySelectorAll(':scope > p').forEach(p =>
+      addProseFlag(p, 'howto: ' + proseFlagLabel(p), topic, lang, set));
+    box.querySelectorAll('.route-pane').forEach(pane => {
+      const route = pane.dataset.route;
+      pane.querySelectorAll(':scope > ol > li').forEach((li, i) =>
+        addProseFlag(li, `howto: ${route} step ${i + 1}, ${proseFlagLabel(li)}`, topic, lang, set));
+      pane.querySelectorAll(':scope > p').forEach(p =>
+        addProseFlag(p, `howto: ${route}, ${proseFlagLabel(p)}`, topic, lang, set));
+    });
+    bindEntryFlags(box);
+  });
+}
+function addDriveTestFlags(body) {
+  const set = entryFlagSet();
+  if (!set) return;
+  let section = '';
+  body.querySelectorAll('h3, h4, p, li').forEach(el => {
+    if (el.tagName === 'H3' || el.tagName === 'H4') { section = el.textContent.trim(); return; }
+    if (el.closest('li') !== el && el.closest('li')) return;   // a paragraph inside a bullet
+    addProseFlag(el, `drive: ${section ? section + ': ' : ''}${proseFlagLabel(el)}`,
+      'Driving test page', reviewLang, set);
+  });
+  bindEntryFlags(body);
 }
 
 // Keys that could pollute Object.prototype if they slipped in from an imported

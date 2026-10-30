@@ -137,7 +137,12 @@ $INSTRUCTIONS = 'When addressing this review batch: fix each flagged item, then 
   . 'only if the answer shows the content is wrong or unclear. '
   . 'A flag whose number starts with "vocab:", "gloss:" or "num:" is about a '
   . 'Reference entry (vocabulary.json, glossary.json or reference.json), not '
-  . 'a statement; fix it in that file.';
+  . 'a statement; fix it in that file. '
+  . 'A flag whose number starts with "howto:" is about the licensing How-to '
+  . '(index.html, next.body, and its Italian in STATIC_IT in app.js; also '
+  . 'rebuild about/license-process.html); one starting with "drive:" is about '
+  . 'the driving test page (DRIVING_TEST_MD in app.js). Fix both language '
+  . 'halves.';
 
 $record = [
   'instructions' => $INSTRUCTIONS,

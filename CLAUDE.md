@@ -5003,6 +5003,20 @@ behind what shipped:
   its English label, so renaming a label orphans an old comment's name,
   not the comment. `scripts/check_entry_flags.js`, 13 checks in English,
   12 in Italian; the previous build fails.
+- **And on the How-to and the driving test page (20261030u, maintainer's
+  bug report, 2026-10-30).** In reviewer mode each step of both routes and
+  each paragraph of the licensing How-to (`addHowtoFlags`, run after every
+  paint from `applyRouteTab`, since `next.body` is repainted per language),
+  and each paragraph and bullet of the driving test page (`addDriveTestFlags`,
+  from `renderReviewBody`), carry the same ⚑. Numbers read `howto: school
+  step 4, Pass the medical`, `howto: <route>, Cost`, `howto: <first words>`
+  and `drive: <section>: <first words>`; the record carries the passage's
+  text in the language shown (`proseFlagText`, pills, nested lists and the
+  form stripped), with the categories Wrong, out of date or unclear;
+  Translation; Question; Other. `bindEntryFlags` now finds its row through
+  `.flag-host` too. A nested list item gets no ⚑. `submit-flags.php` says
+  where each prefix is fixed. `scripts/check_prose_flags.js`, 12 checks in
+  each face; the previous build fails.
 - **The backup banner's buttons open Settings AT their block (20261013a,
   maintainer, 2026-10-14: "it takes it to the settings but not where the
   sync button is").** Both called `openSettings()`, which opens at the top,

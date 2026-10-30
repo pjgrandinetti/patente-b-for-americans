@@ -896,6 +896,10 @@ body {
    to the middle; the label grows into the free space instead. */
 .review-row > .review-fact { flex: 1 1 auto; }
 .has-flag-form > .dev-flag { flex-basis: 100%; width: 100%; order: 99; }
+/* The same ⚑ on the How-to steps and the driving test page (20261030u): at
+   the end of the passage's last line, and the form under the passage. */
+.flag-host > .entry-flag { margin-left: .3rem; vertical-align: baseline; }
+.flag-host > .dev-flag { display: block; margin-top: .5rem; }
 
 .app-disclosures {
   max-width: 52ch;
