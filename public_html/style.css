@@ -312,6 +312,7 @@ body {
 /* A paragraph continuing a bullet: stays inside the item, so it lines up with
    the bullet's text instead of jumping back to the left margin. */
 .rules-body li .li-cont { margin: .5rem 0 0; }
+#review-body li .li-cont { margin: .5rem 0 0; }
 .rules-body ol li::marker { color: var(--accent); font-weight: 700; }
 .rules-body strong { color: var(--accent-dim); }
 /* The time-commitment table in "How to use this app": one label column and

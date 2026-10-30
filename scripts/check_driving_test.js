@@ -42,8 +42,8 @@ setTimeout(()=>{
     ok(withPill===87,'every block with an Italian twin carries an IT pill: '+withPill+' of '+lis.length);
     { const fear=lis.find(e=>/^Many learners dread the autostrada/.test(e.textContent)), fp=fear&&fear.querySelector(':scope > .rb-it');
       if(fp) fp.click();
-      const prev=fear&&fear.previousElementSibling;
-      ok(!!fp && prev && prev.tagName==='UL' && /acceleration lane/.test(prev.lastElementChild.textContent) && !heads.includes('If the autostrada frightens you') && /^Molti allievi hanno paura/.test(fp.nextElementSibling.textContent.trim()),'the autostrada-fear paragraph (20261031l) follows the autostrada bullet, is no section, and pairs with its Italian'); }
+      const host=fear&&fear.closest('li');
+      ok(!!fp && fear.classList.contains('li-cont') && host && /acceleration lane/.test(host.firstChild.textContent||host.textContent) && !heads.includes('If the autostrada frightens you') && /^Molti allievi hanno paura/.test(fp.nextElementSibling.textContent.trim()),'the autostrada-fear text is a second paragraph inside the autostrada bullet (20261031m), with its own pill'); }
     { const sum=lis.find(e=>/^The test has three parts, in order/.test(e.textContent)), sp=sum&&sum.querySelector(':scope > .rb-it');
       if(sp) sp.click();
       ok(!!sp && /^L'esame ha tre fasi, in ordine/.test(sp.nextElementSibling.textContent.trim()) && heads.indexOf('Summary')===6,'the summary (20261031b) comes before the American section, and its first point pairs with its Italian twin'); }

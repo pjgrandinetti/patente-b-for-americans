@@ -2958,10 +2958,16 @@ behind what shipped:
   master the autostrada only long enough to pass the test, and after that
   you are free to avoid it. Write for the person who is afraid, not at them.
   **The text is on the driving test page since 20261031j** (maintainer: he
-  looked for it there) and **a paragraph, not a section, since 20261031l**
-  (maintainer): it sits in Part 3 right after the autostrada bullet, in
-  both halves, which splits that list in two. The How-to's copy was
-  REMOVED in 20261031k; the text lives on the driving test page only.
+  looked for it there) and, since 20261031m (maintainer, after a section
+  in j and a paragraph splitting the list in l), **a second paragraph INSIDE
+  the autostrada bullet**: one physical line, indented two spaces after a
+  blank line, in both halves, which the renderer's continuation branch puts
+  inside the `<li>` as `p.li-cont`. That branch now gives the paragraph its
+  hash and its pill (`reviewBlocks` already treated such a line as a block
+  of its own), so the continuation paragraphs of topics 03 and 10 carry an
+  IT pill too. A continuation must be ONE line, since each indented line is
+  its own `<p>`. The How-to's copy was REMOVED in 20261031k; the text lives
+  on the driving test page only.
 - **The page beneath a modal is `inert` (20261031i, maintainer, 2026-10-31:
   the browser's find-in-page searched the page under the notes, not the
   notes).** `lockBodyScroll` sets `inert` on `#nav` and every
