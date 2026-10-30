@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261031h';
+const APP_VERSION     = '20261031i';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -2787,12 +2787,25 @@ function lockBodyScroll() {
   if (_scrollLockX) window.scrollTo(0, _scrollLockY);
   document.body.style.top = `-${_scrollLockY}px`;
   document.body.classList.add('scroll-locked');
+  setPageInert(true);
 }
 function unlockBodyScroll() {
   if (_scrollLockCount === 0 || --_scrollLockCount > 0) return;
   document.body.classList.remove('scroll-locked');
   document.body.style.top = '';
   window.scrollTo(_scrollLockX, _scrollLockY);
+  setPageInert(false);
+}
+// While a modal overlay is open the page beneath it is `inert` (20261031i,
+// maintainer, 2026-10-31: the browser's find-in-page searched the page under
+// the notes, not the notes). An inert subtree is skipped by find-in-page, by
+// the tab order and by screen readers, which is what a modal wants. Only the
+// nav and the screens are marked, where the page's text lives; the overlays
+// and the elements built beside them stay as they are.
+function setPageInert(on) {
+  document.querySelectorAll('#nav, section.screen').forEach(el => {
+    if (on) el.setAttribute('inert', ''); else el.removeAttribute('inert');
+  });
 }
 
 

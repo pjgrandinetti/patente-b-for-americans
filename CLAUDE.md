@@ -2957,6 +2957,16 @@ behind what shipped:
   finding the sources agree on); and, the maintainer's point, you need to
   master the autostrada only long enough to pass the test, and after that
   you are free to avoid it. Write for the person who is afraid, not at them.
+- **The page beneath a modal is `inert` (20261031i, maintainer, 2026-10-31:
+  the browser's find-in-page searched the page under the notes, not the
+  notes).** `lockBodyScroll` sets `inert` on `#nav` and every
+  `section.screen`, `unlockBodyScroll` removes it, so it follows the lock's
+  count and holds while a second overlay opens over the first. An inert
+  subtree is skipped by find-in-page, by the tab order and by screen readers
+  (per the HTML spec; Chrome does it, Safari's find is to be confirmed on a
+  phone). Only the nav and the screens are marked, never the overlays or
+  the elements built beside them, so a later overlay is never inert.
+  `scripts/check_page_inert.js`, 4 checks in each face.
   **The How-to says 6 hours since 20261030v**, not 8: his foglio rosa,
   issued 30 October 2026, carries 6 hours, three blocks of 2 (autostrada
   or main extra-urban road, secondary extra-urban or urban arterial road,
