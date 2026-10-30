@@ -2937,6 +2937,18 @@ behind what shipped:
   own car (state DMVs, e.g. Connecticut and Vermont), here in the school's,
   so ask to take the last lessons in the car you will be tested in (advice,
   not a rule).
+  **The autostrada is on the route (20261031g, maintainer's question:
+  what if a learner fears the autostrada?).** Part 3 said the drive "may
+  include" its list; circular 28819 says the candidate MUST perform the
+  maneuvers listed, and para. 7.5 says Part 3 is driven "if possible" on
+  superstrade and autostrade or similar. The page now says the route is
+  meant to cover the list as far as the roads near the exam site allow,
+  and the autostrada line names the acceleration and deceleration lanes,
+  the main extra-urban road as its equivalent, and the new-driver limits
+  the circular cites (art. 117 c. 2: 100 on the autostrada, 90 on a main
+  extra-urban road). No license without the autostrada can be chosen:
+  code 05.07 is a medical restriction. A sentence of advice for a fearful
+  learner was drafted and rejected as lacking empathy; redrafting.
   **The How-to says 6 hours since 20261030v**, not 8: his foglio rosa,
   issued 30 October 2026, carries 6 hours, three blocks of 2 (autostrada
   or main extra-urban road, secondary extra-urban or urban arterial road,

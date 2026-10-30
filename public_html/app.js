@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261031f';
+const APP_VERSION     = '20261031g';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1793,14 +1793,15 @@ optional.
 ## Part 3: driving in traffic
 
 You drive for 25 minutes on roads the office chooses, in ordinary traffic, and
-follow the examiner's directions. The drive may include any of the following.
+follow the examiner's directions. The route is meant to cover the following, as
+far as the roads near the exam site allow.
 
 - Moving off from a parking space, from a stop in traffic, or out of a side road.
 - Straight roads, including passing oncoming traffic where the road is narrow.
 - Bends.
 - Junctions of every kind.
 - Turning left and right, and changing lanes.
-- Joining and leaving the autostrada by its ramps. On the autostrada you may use only the two lanes nearest the right edge.
+- Joining the autostrada, or a main extra-urban road, by its acceleration lane, and leaving it by its deceleration lane. Where such a road is near enough, the route is meant to include it. On it you may use only the two lanes nearest the right edge, and you must keep to the limits for new drivers, 100 km/h on the autostrada and 90 on a main extra-urban road.
 - Passing other vehicles and obstacles, and being passed.
 - Roundabouts, level crossings, bus and tram stops, pedestrian crossings, long hills and tunnels.
 - Getting out of the car safely at the end.
@@ -2005,15 +2006,15 @@ chiesta anche una frenata di emergenza, ma è facoltativa.
 ## Terza fase: la guida nel traffico
 
 Guidi per 25 minuti su strade scelte dall'ufficio, nel traffico normale,
-seguendo le indicazioni dell'esaminatore. La prova può comprendere una
-qualsiasi delle situazioni seguenti.
+seguendo le indicazioni dell'esaminatore. Il percorso deve coprire le situazioni
+seguenti, per quanto lo permettono le strade vicine alla sede d'esame.
 
 - La partenza da un parcheggio, da una fermata nel traffico o da una strada laterale.
 - I rettilinei, compreso l'incrocio con i veicoli in senso opposto dove la strada è stretta.
 - Le curve.
 - Le intersezioni di ogni tipo.
 - Le svolte a sinistra e a destra, e i cambi di corsia.
-- L'ingresso in autostrada e l'uscita, dalle rampe. In autostrada puoi usare solo le due corsie più vicine al margine destro.
+- L'ingresso in autostrada, o su una strada extraurbana principale, dalla corsia di accelerazione, e l'uscita dalla corsia di decelerazione. Dove una strada del genere è abbastanza vicina, il percorso deve comprenderla. Su di essa puoi usare solo le due corsie più vicine al margine destro, e devi rispettare i limiti per i neopatentati, 100 km/h in autostrada e 90 su strada extraurbana principale.
 - Il sorpasso di veicoli e ostacoli, e l'essere sorpassati.
 - Le rotatorie, i passaggi a livello, le fermate di autobus e tram, gli attraversamenti pedonali, le salite e discese lunghe, le gallerie.
 - La discesa dall'auto in sicurezza, alla fine.
