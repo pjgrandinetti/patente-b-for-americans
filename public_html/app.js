@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261031c';
+const APP_VERSION     = '20261031d';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1873,9 +1873,7 @@ pass, you receive your license there and then.
 These points are not in the circular. They are what an American driver is most
 likely to miss.
 
-- Make every check visible. Turn your head for the blind spot and look in the mirrors so the examiner sees you do it, because the examiner can judge only what they see.
-- Practice parallel parking, reversing around a corner and turning around in several moves during your lessons. They are routine on this test and rare in American driving.
-- If you have driven only automatics and your lessons are in a manual car, practice starting on a hill. Ask your instructor whether the examiners expect a particular technique, such as the handbrake.
+- If you have driven only automatics, you have two choices. You can take the lessons and the test in an automatic, if the school has one, and accept a license with code 78, which does not let you drive a manual. Or you can learn the manual gearbox, and then plan on more lessons and more time before the test than the 6 hours required.
 - The examiner gives directions in Italian. Learn the usual directions before the test, so that a word you miss does not become a wrong turn.`,
   it: `Questa pagina segue le istruzioni che la Motorizzazione dà ai suoi esaminatori
 per l'esame di guida della patente B ([circolare 28819 del 19 settembre 2019](https://mit.gov.it/normativa/circolare-protocollo-28819-del-19092019)).

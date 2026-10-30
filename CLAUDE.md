@@ -2910,6 +2910,12 @@ behind what shipped:
   the circular says the FRONT must not go over the sidewalk, where the
   page had said "without touching the curb". Both halves. Do not tighten
   either back without a source.
+  **The American section is two points since 20261031d** (maintainer:
+  visible checks and practicing the maneuvers are not peculiar to
+  Americans). Left: the automatic-only driver's choice (lessons and test in
+  an automatic, if the school has one, with code 78; or learn the manual and
+  plan on more than the 6 hours), and the directions in Italian. The
+  hill-start bullet of 20261030m is superseded by the first.
   **The How-to says 6 hours since 20261030v**, not 8: his foglio rosa,
   issued 30 October 2026, carries 6 hours, three blocks of 2 (autostrada
   or main extra-urban road, secondary extra-urban or urban arterial road,
