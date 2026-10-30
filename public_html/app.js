@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261031d';
+const APP_VERSION     = '20261031e';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1874,7 +1874,46 @@ These points are not in the circular. They are what an American driver is most
 likely to miss.
 
 - If you have driven only automatics, you have two choices. You can take the lessons and the test in an automatic, if the school has one, and accept a license with code 78, which does not let you drive a manual. Or you can learn the manual gearbox, and then plan on more lessons and more time before the test than the 6 hours required.
-- The examiner gives directions in Italian. Learn the usual directions before the test, so that a word you miss does not become a wrong turn.`,
+- The examiner gives directions in Italian. Learn the usual directions before the test, so that a word you miss does not become a wrong turn.
+
+## Directions the examiner gives
+
+These are common directions in the polite form an examiner uses. They are
+ordinary Italian, not a record of what examiners say, so ask your instructor
+which ones your examiners use. Tap 🔊 to hear each one.
+
+### Getting ready
+
+- *Allacci la cintura.* Fasten your seat belt.
+- *Accenda gli anabbaglianti.* Switch on the low beams.
+- *Accenda gli abbaglianti.* Switch on the high beams.
+- *Metta le quattro frecce.* Switch on the hazard lights.
+- *Suoni il clacson.* Sound the horn.
+- *Apra il cofano.* Open the hood.
+
+### Directions
+
+- *Giri a destra.* Turn right.
+- *Giri a sinistra.* Turn left.
+- *Alla prossima, a destra.* At the next one, turn right.
+- *Al semaforo giri a sinistra.* At the traffic light, turn left.
+- *Prosegua dritto.* Continue straight ahead.
+- *Segua le indicazioni per Firenze.* Follow the signs for Florence.
+- *Alla rotatoria prenda la seconda uscita.* At the roundabout, take the second exit.
+- *Cambi corsia.* Change lanes.
+
+### Stopping and the maneuvers
+
+- *Accosti a destra.* Pull over to the right.
+- *Si fermi qui.* Stop here.
+- *Si fermi all'altezza del cartello.* Stop level with the sign.
+- *Riparta.* Move off.
+- *Faccia inversione di marcia.* Turn around.
+- *Faccia retromarcia.* Reverse.
+- *Parcheggi in linea.* Park parallel to the curb.
+- *Parcheggi a pettine.* Park in a bay at a right angle.
+- *Parcheggi a spina di pesce.* Park in a bay at an angle.
+- *Spenga il motore.* Turn off the engine.`,
   it: `Questa pagina segue le istruzioni che la Motorizzazione dà ai suoi esaminatori
 per l'esame di guida della patente B ([circolare 28819 del 19 settembre 2019](https://mit.gov.it/normativa/circolare-protocollo-28819-del-19092019)).
 
@@ -2799,7 +2838,7 @@ function renderReviewBody() {
       h.insertAdjacentElement('afterend', b);
     });
   }
-  if (reviewTopic === DRIVING_TEST) addDriveTestFlags(reviewBody);
+  if (reviewTopic === DRIVING_TEST) { addDriveTestSpeak(reviewBody); addDriveTestFlags(reviewBody); }
   // The standing line (shown only when opened from a card) follows the toggle.
   const noteTxt = document.querySelector('#review-note .review-note-text');
   if (noteTxt) noteTxt.textContent = t(reviewLang === 'it' ? 'review.noteIt' : 'review.noteEn');
@@ -3024,6 +3063,8 @@ function setItAll(on) {
   }
 }
 document.getElementById('review-body')?.addEventListener('click', e => {
+  const sp = e.target.closest('.dt-speak');
+  if (sp) { speakItalian(sp.dataset.speak); return; }
   const btn = e.target.closest('.rb-it');
   if (btn) { e.preventDefault(); toggleItBlock(btn); }
 });
@@ -10914,7 +10955,7 @@ function bindEntryFlags(box) {
 const PROSE_FLAG_CATS = ['text', 'translation', 'question', 'other'];
 function proseFlagText(host) {
   const c = host.cloneNode(true);
-  c.querySelectorAll('.entry-flag, .dev-flag, .rb-it, .rb-itxt, ul, ol').forEach(x => x.remove());
+  c.querySelectorAll('.entry-flag, .dev-flag, .rb-it, .rb-itxt, .speak-btn, ul, ol').forEach(x => x.remove());
   return c.textContent.replace(/\s+/g, ' ').trim();
 }
 function proseFlagLabel(host) {
@@ -10949,6 +10990,21 @@ function addHowtoFlags() {
     });
     bindEntryFlags(box);
   });
+}
+// The examiner's directions (20261031e, maintainer): each Italian line of
+// that English-only section gets a 🔊, which reads the italic Italian.
+const DRIVE_DIRECTIONS_HEAD = 'Directions the examiner gives';
+function addDriveTestSpeak(body) {
+  const h = [...body.querySelectorAll('h3')].find(x => x.textContent.trim() === DRIVE_DIRECTIONS_HEAD);
+  if (!h) return;
+  const tip = escHtml(vt('stmt.listen'));
+  for (let el = h.nextElementSibling; el && el.tagName !== 'H3'; el = el.nextElementSibling) {
+    el.querySelectorAll('li').forEach(li => {
+      const it = li.querySelector('em, i');
+      if (!it || li.querySelector('.dt-speak')) return;
+      li.insertAdjacentHTML('afterbegin', `<button type="button" class="speak-btn gr-speak dt-speak" data-speak="${escHtml(it.textContent)}" aria-label="${tip}" title="${tip}">🔊</button> `);
+    });
+  }
 }
 function addDriveTestFlags(body) {
   const set = entryFlagSet();

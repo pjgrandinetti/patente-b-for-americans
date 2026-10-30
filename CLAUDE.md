@@ -2916,6 +2916,18 @@ behind what shipped:
   an automatic, if the school has one, with code 78; or learn the manual and
   plan on more than the 6 hours), and the directions in Italian. The
   hill-start bullet of 20261030m is superseded by the first.
+  **The examiner's directions (20261031e, maintainer).** An English-only
+  section, "## Directions the examiner gives", closes the page: 24 lines in
+  three groups (getting ready, directions, stopping and the maneuvers),
+  each the Italian in italics in the polite *Lei* form, then the English,
+  with a 🔊 (`addDriveTestSpeak`, `.dt-speak`, `speakItalian` on the italic
+  text; the review body's click handler takes it before the pills). No
+  source records what examiners say, so the intro says the lines are
+  ordinary Italian and to ask the instructor which ones examiners use; the
+  maintainer will check them at his first lesson. It is a tile in the
+  dashboard box for a non-Italian browser and absent for an Italian one.
+  `DRIVE_DIRECTIONS_HEAD` must match the heading. This supersedes "the
+  examiner's directions are NOT on the page" above.
   **The How-to says 6 hours since 20261030v**, not 8: his foglio rosa,
   issued 30 October 2026, carries 6 hours, three blocks of 2 (autostrada
   or main extra-urban road, secondary extra-urban or urban arterial road,

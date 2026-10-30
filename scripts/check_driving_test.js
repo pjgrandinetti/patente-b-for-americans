@@ -27,13 +27,13 @@ setTimeout(()=>{
   const dbox=$('dash-drivetest-box'), tbox=$('dash-topics-box');
   const tiles=dbox?[...dbox.querySelectorAll('.topic-card')]:[];
   ok(dbox && !dbox.open && dbox.querySelector('summary').textContent===(IT?'L’esame di guida':'The driving test') && dbox.nextElementSibling===w.document.querySelector('[data-i18n="next.summary"]').closest('details') && dbox.nextElementSibling.nextElementSibling===tbox,'a closed "driving test" box, then the process, then the theory box (20261030s, t)');
-  ok(tiles.length===(IT?7:8) && tiles[2].textContent===(IT?'Seconda fase: le manovre':'Part 2: the maneuvers'),'one tile per section, in the reader\'s language: '+tiles.map(b=>b.textContent).join(' | '));
+  ok(tiles.length===(IT?7:9) && tiles[2].textContent===(IT?'Seconda fase: le manovre':'Part 2: the maneuvers'),'one tile per section, in the reader\'s language: '+tiles.map(b=>b.textContent).join(' | '));
   ok(!$('exam-date-box').querySelector('[data-ed=drivetest]'),'the pass box no longer carries a link of its own');
   tiles[0].click();
   const body=$('review-body'), title=$('review-title').textContent, txt=body.textContent;
   ok(title===(IT?'L’esame di guida':'The driving test'),'the overlay carries the page title: '+title);
   const heads=[...body.querySelectorAll('h3')].map(h=>h.textContent);
-  ok(heads.length===(IT?7:8),'six parts and the summary (20261031b), and the habits in English only: '+heads.join(' | '));
+  ok(heads.length===(IT?7:9),'six parts and the summary (20261031b), and the habits in English only: '+heads.join(' | '));
   ok(IT ? /circolare 28819/.test(txt) && /frenata di precisione/.test(txt) : /circular 28819/.test(txt) && /several moves/.test(txt),'the opening names the circular, and the maneuvers are there');
   ok(IT ? !/[a-z] the [a-z]/.test(txt) && !body.querySelector('.rb-it') : true,'an Italian browser sees no English and no pills');
   if(!IT){
@@ -47,7 +47,13 @@ setTimeout(()=>{
     if(pp) pp.click();
     ok(!!pp && /permesso di\s+soggiorno in corso di validità/.test(pp.nextElementSibling.textContent) && /41095/.test(permit.innerHTML),'the residence permit paragraph (20261031a) cites 41095 and its pill opens its own Italian twin');
     const habits=heads.indexOf('For American drivers');
-    ok(habits===7 && (body.innerHTML.slice(body.innerHTML.indexOf('For American drivers')).match(/<li/g)||[]).length===2 && !/STOP sign/.test(txt) && !/parallel parking[\s\S]*rb-it/.test(body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'))),'the American section closes the page with its two points (20261031d) and no pill');
+    ok(habits===7 && (body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'),body.innerHTML.indexOf('Directions the examiner gives')).match(/<li/g)||[]).length===2 && !/STOP sign/.test(txt) && !/parallel parking[\s\S]*rb-it/.test(body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'))),'the American section closes the page with its two points (20261031d) and no pill');
+    { const dh=heads.indexOf('Directions the examiner gives');
+      const sp=[...body.querySelectorAll('.dt-speak')], said=[];
+      w.speakItalian=t=>said.push(t);
+      const accosti=sp.find(b=>b.dataset.speak==='Accosti a destra.'); if(accosti) accosti.click();
+      const tail=body.innerHTML.slice(body.innerHTML.indexOf('Directions the examiner gives'));
+      ok(dh===8 && sp.length===24 && !/rb-it/.test(tail) && said[0]==='Accosti a destra.','the examiner\'s directions (20261031e): last, 24 lines each with a 🔊 that reads its Italian, and no pill'); }
     const first=body.querySelector('.rb-it'); first.click();
     ok(/circolare 28819/.test(first.nextElementSibling.textContent),'the first pill opens its own Italian twin');
     ok(['Reversing (retromarcia)','Turning around (inversione di marcia)','Parking (parcheggio)','Stopping at a given point (frenata di precisione)'].every(h=>[...body.querySelectorAll('h4')].some(e=>e.textContent===h)) && /a pettine/.test(txt) && /a spina di pesce/.test(txt),'each maneuver carries the Italian name the examiner uses (20261030n)');
