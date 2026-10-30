@@ -5069,7 +5069,15 @@ behind what shipped:
   months after the last use. The privacy note (both faces) and the admin
   page say so. Exercised with the local `php` (there is one on this Mac)
   over seeded buckets: old and unread deleted, old but read kept, recent
-  kept.
+  kept. **An EMPTY bucket goes after 30 days (20261031q, maintainer, the
+  same day)**: the common orphan is a code turned on in a browser and never
+  copied, or whose storage Safari evicted after a week of not visiting. A
+  stored file under `$EMPTY_BYTES` (800) holds no answer: measured with
+  jsdom and the real `syncEncrypt`, an empty bundle stores at 735 bytes
+  gzipped (1,279 without gzip, which only a browser lacking
+  CompressionStream sends, and that one is kept), one card answered at 895.
+  Re-measure if the bundle's shape changes. The same sweep, the same two
+  stamps, a shorter cutoff.
 - **The privacy note does not describe the upload dates** (20261003o,
   maintainer's wording, 2026-09-27): it says the app sets no cookies and
   needs no account, so use is anonymous, and that synced progress is

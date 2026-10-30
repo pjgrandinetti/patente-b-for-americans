@@ -29,6 +29,9 @@ $MAX_BYTES   = 4194304;  // 4 MB body cap (encrypted+base64 progress; generous)
 $RATE_MAX    = 120;      // requests
 $RATE_WINDOW = 600;      // per 10 minutes per IP
 $KEEP_DAYS   = 365;      // a bucket not used (uploaded or downloaded) for this long is deleted
+$EMPTY_DAYS  = 30;       // ... or this long, when the stored file is smaller than
+$EMPTY_BYTES = 800;      // this, which is a bundle with no progress in it (measured 2026-10-30:
+                         // empty 735 bytes gzipped, one card answered 895)
 // ─────────────────────────────────────────────────────────────────────
 
 function fail($code, $err) { http_response_code($code); echo json_encode(['ok' => false, 'error' => $err]); exit; }
@@ -91,15 +94,20 @@ $hits[] = $now;
 // blob and its sidecar go. The server copy is a mirror: every device keeps the
 // full progress, and a device returning to a deleted bucket gets a 404 and
 // pushes its own copy back up, so only someone who lost every device and never
-// exported would lose anything. The privacy note and the admin page say so.
+// exported would lose anything. An EMPTY bucket goes after $EMPTY_DAYS instead
+// (maintainer, same day): a code turned on in a browser and never copied, or
+// whose storage Safari evicted after a week, is the common orphan, and a stored
+// file under $EMPTY_BYTES holds no answer. The privacy note and the admin page
+// say so.
 if (random_int(1, 20) === 1) {
   foreach ((array)@glob($STORE_DIR . '/rl_*.txt') as $old) {
     $m = @filemtime($old);
     if ($m !== false && $m < $now - $RATE_WINDOW) @unlink($old);
   }
-  $cutoff = $now - $KEEP_DAYS * 86400;
   foreach ((array)@glob($STORE_DIR . '/*.json') as $old) {
     if (!preg_match('/\/[a-f0-9]{64}\.json$/', $old)) continue;   // blobs only, never a sidecar
+    $empty  = (int)@filesize($old) < $EMPTY_BYTES;
+    $cutoff = $now - ($empty ? $EMPTY_DAYS : $KEEP_DAYS) * 86400;
     $m = @filemtime($old);
     if ($m === false || $m >= $cutoff) continue;
     $side = substr($old, 0, -5) . '.meta.json';

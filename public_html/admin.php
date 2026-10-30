@@ -209,7 +209,8 @@ the sync code. "Last sync" is the last upload, which happens after the user answ
 opening the app without studying does not move it. Rows older than 7 days are grayed.
 First sync, days active and uploads are recorded from 2026-09-27; a user shows "before tracking"
 until their next upload, and their counts start then. A bucket not used for 12 months, neither
-uploaded nor downloaded, is deleted by the next sync request that happens to sweep (sync.php, KEEP_DAYS).</p>
+uploaded nor downloaded, is deleted by the next sync request that happens to sweep (sync.php, KEEP_DAYS); one that holds no
+progress (a stored file under 800 bytes) goes after 30 days (EMPTY_DAYS).</p>
 <?php endif; ?>
 
 <?php
