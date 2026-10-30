@@ -2882,6 +2882,19 @@ behind what shipped:
   from the theory exam, one of several in the province, and to ask the
   school. One candidate's account (he was offered three towns), so "may";
   the towns themselves are not recorded.
+  **The residence permit at the driving test (20261031a, maintainer,
+  2026-10-30).** Circular 41095 of 29 December 2022, para. 4.2: no
+  permesso di soggiorno is asked at the theory exam (the authorized doctor
+  checked it), but a non-EU candidate must present a valid one at the
+  driving test and in any case before the license is issued. Circular 962
+  of 12 January 2023: the receipt for an application or renewal counts as
+  the permit. Said in both routes' driving test step and as its own
+  paragraph under "How the test works" on the driving test page, in both
+  halves at the same position (the halves pair by position), linked to
+  patente.it's copy, since the Ministry's page for 41095 was not found.
+  The three later items (41095, 962, decree 449) and amendment 31299
+  (paragraph 6.4, audio for candidates with dyslexia, theory exam only)
+  change nothing else the driving test page says.
   **The How-to says 6 hours since 20261030v**, not 8: his foglio rosa,
   issued 30 October 2026, carries 6 hours, three blocks of 2 (autostrada
   or main extra-urban road, secondary extra-urban or urban arterial road,

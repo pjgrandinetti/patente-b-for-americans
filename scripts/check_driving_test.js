@@ -39,7 +39,10 @@ setTimeout(()=>{
   if(!IT){
     const lis=[...body.querySelectorAll('[data-rb]')];
     const withPill=lis.filter(e=>e.querySelector(':scope > .rb-it')).length;
-    ok(withPill===77,'every block with an Italian twin carries an IT pill: '+withPill+' of '+lis.length);
+    ok(withPill===78,'every block with an Italian twin carries an IT pill: '+withPill+' of '+lis.length);
+    const permit=lis.find(e=>/residence permit/.test(e.textContent)), pp=permit&&permit.querySelector(':scope > .rb-it');
+    if(pp) pp.click();
+    ok(!!pp && /permesso di\s+soggiorno in corso di validità/.test(pp.nextElementSibling.textContent) && /41095/.test(permit.innerHTML),'the residence permit paragraph (20261031a) cites 41095 and its pill opens its own Italian twin');
     const habits=heads.indexOf('For American drivers');
     ok(habits===6 && (body.innerHTML.slice(body.innerHTML.indexOf('For American drivers')).match(/<li/g)||[]).length===4 && !/STOP sign/.test(txt) && !/parallel parking[\s\S]*rb-it/.test(body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'))),'the American section closes the page with its four points and no pill');
     const first=body.querySelector('.rb-it'); first.click();
