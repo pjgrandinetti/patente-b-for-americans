@@ -2895,6 +2895,12 @@ behind what shipped:
   The three later items (41095, 962, decree 449) and amendment 31299
   (paragraph 6.4, audio for candidates with dyslexia, theory exam only)
   change nothing else the driving test page says.
+  **A Summary closes the driving test page (20261031b, maintainer: the
+  page is long).** Seven numbered points in both halves, "## Summary" /
+  "## Riepilogo", placed after "What ends the test at once" and BEFORE the
+  English-only American section, so the halves still pair by position;
+  it is also a tile in the dashboard's driving test box. A change to a
+  section above is a change to the summary too.
   **The How-to says 6 hours since 20261030v**, not 8: his foglio rosa,
   issued 30 October 2026, carries 6 hours, three blocks of 2 (autostrada
   or main extra-urban road, secondary extra-urban or urban arterial road,

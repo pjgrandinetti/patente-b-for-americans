@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261031a';
+const APP_VERSION     = '20261031b';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1858,6 +1858,16 @@ following.
 The result is given at the end of the test, with a reason if you fail. If you
 pass, you receive your license there and then.
 
+## Summary
+
+1. The test has three parts, in order: preparing the car, at least two maneuvers with one in reverse, and 25 minutes in traffic. You must pass each part to go on to the next.
+2. Prepare the car the way a careful driver does. Adjust the seat, mirrors, seat belt and head restraint, and be ready to show the lights, the horn and two checks the examiner picks.
+3. In every maneuver, look before you move, and let the examiner see you look. A second mistake in the same maneuver ends the test.
+4. Turn around in several moves even on a wide road, and park without touching anything or blocking traffic.
+5. At a roundabout, yield on entering where the sign says so, never signal left on a single-lane roundabout, and signal right before your exit.
+6. The examiner judges how you control the car, observe, yield, keep your position, distance and speed, and obey signs and signal. Above all, the examiner judges your care for pedestrians and cyclists.
+7. Anything that puts someone in danger fails the test. That includes the instructor using the dual controls, a red light, failing to yield, unsafe passing, and driving without a seat belt or with a phone.
+
 ## For American drivers
 
 These points are not in the circular. They are what an American driver is most
@@ -2016,7 +2026,17 @@ subito per uno qualsiasi dei casi seguenti.
 - La guida senza cintura di sicurezza, o l'uso del telefono.
 
 L'esito viene comunicato alla fine dell'esame, con la motivazione se è
-negativo. Se superi l'esame, ricevi la patente subito.`,
+negativo. Se superi l'esame, ricevi la patente subito.
+
+## Riepilogo
+
+1. L'esame ha tre fasi, in ordine: la preparazione dell'auto, almeno due manovre di cui una in retromarcia, e 25 minuti nel traffico. Per passare alla fase successiva devi superare quella precedente.
+2. Prepara l'auto come farebbe un conducente attento. Regola sedile, specchi, cintura e poggiatesta, e sii pronto a mostrare le luci, il clacson e due controlli scelti dall'esaminatore.
+3. In ogni manovra guarda prima di muoverti, e fai in modo che l'esaminatore ti veda guardare. Un secondo errore nella stessa manovra conclude l'esame.
+4. Fai l'inversione di marcia in più manovre anche su una strada larga, e parcheggia senza toccare nulla e senza intralciare il traffico.
+5. In rotatoria dai la precedenza all'ingresso dove il segnale lo indica, non mettere mai la freccia a sinistra in una rotatoria a una corsia, e metti la freccia a destra prima dell'uscita.
+6. L'esaminatore valuta come controlli l'auto, osservi, dai la precedenza, mantieni posizione, distanza e velocità, rispetti i segnali e segnali le manovre. Soprattutto, valuta la tua attenzione per pedoni e ciclisti.
+7. Tutto ciò che mette qualcuno in pericolo fa fallire l'esame. Questo comprende l'intervento dell'istruttore sui doppi comandi, il passaggio con il rosso, una precedenza non data, un sorpasso pericoloso, e la guida senza cintura o con il telefono.`,
 };
 let _drivingTest = null;
 function drivingTestEntry() {
