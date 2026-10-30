@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261030v';
+const APP_VERSION     = '20261030w';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -8713,12 +8713,13 @@ function renderExamDate(atBar) {
     const j = passJourney();
     box.innerHTML = `<div class="exam-date-text exam-date-pass"><strong>${escHtml(t('examdate.passHead'))}</strong>` +
       (j ? `<p class="exam-date-journey">${escHtml(j)}</p>` : '') +
-      (foglioRosa() && !_foglioEdit ? '' : `<p class="exam-date-advice">${escHtml(t('examdate.passNext'))}</p>`) +
-      foglioHtml() +
       // The driving test has its own box on the dashboard (20261030s); the
       // key points are not linked here either (20261030l). Change my answer
-      // is a small line at the foot, not beside the message (20261030t).
-      `<p class="exam-date-undo"><button type="button" class="link-btn" data-ed="undo">${escHtml(t('examdate.undo'))}</button></p></div>`;
+      // is a small line under the message it undoes (20261030t; above the
+      // foglio rosa since 20261030w, maintainer).
+      `<p class="exam-date-undo"><button type="button" class="link-btn" data-ed="undo">${escHtml(t('examdate.undo'))}</button></p>` +
+      (foglioRosa() && !_foglioEdit ? '' : `<p class="exam-date-advice">${escHtml(t('examdate.passNext'))}</p>`) +
+      foglioHtml() + `</div>`;
     return;
   }
   let failHtml = '';

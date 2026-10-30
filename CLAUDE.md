@@ -2872,6 +2872,9 @@ behind what shipped:
   `foglioRosa`, `foglioHtml`, synced as `foglioRosa` and stamped. The
   driving test date itself is the next step, asked only once the school
   books it. `scripts/check_foglio_rosa.js`, 12 checks in each face.
+  **Change my answer sits right under the congratulations since
+  20261030w** (maintainer), above the foglio rosa, since it undoes the pass
+  and not the dates.
   **The How-to says 6 hours since 20261030v**, not 8: his foglio rosa,
   issued 30 October 2026, carries 6 hours, three blocks of 2 (autostrada
   or main extra-urban road, secondary extra-urban or urban arterial road,
