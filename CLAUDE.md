@@ -2901,6 +2901,15 @@ behind what shipped:
   English-only American section, so the halves still pair by position;
   it is also a tile in the dashboard's driving test box. A change to a
   section above is a change to the summary too.
+  **The curb, as the circular words it (20261031c, maintainer's question,
+  2026-10-31: can the tires touch the curb when parallel parking?).**
+  Circular 28819 sets no rule on touching the curb when parking: the
+  distance from it does not matter, the car must hit no other vehicle,
+  create no danger, sit parallel and inside the bay. The page had said
+  "touch nothing"; it now says "hit no other vehicle". For the turnaround
+  the circular says the FRONT must not go over the sidewalk, where the
+  page had said "without touching the curb". Both halves. Do not tighten
+  either back without a source.
   **The How-to says 6 hours since 20261030v**, not 8: his foglio rosa,
   issued 30 October 2026, carries 6 hours, three blocks of 2 (autostrada
   or main extra-urban road, secondary extra-urban or urban arterial road,

@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261031b';
+const APP_VERSION     = '20261031c';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1764,7 +1764,7 @@ The examiner tells you this before you start.
 - Start at the right edge of the road, in first gear.
 - Look ahead, behind and to both sides.
 - Switch on the left turn signal, then move forward slowly while turning the wheel.
-- Stop close to the left edge without touching the curb.
+- Stop close to the left edge without the front of the car going over the curb.
 - Turn the wheel the other way, switch on the right turn signal, and reverse.
 - Select first gear, switch on the left turn signal, check the traffic, and pull out into the right lane.
 
@@ -1776,7 +1776,7 @@ reverse, on level ground or on a slope. Then
 you pull out again.
 
 - Before you start, check behind and to both sides.
-- The exact distance from the curb does not matter. What matters is that you touch nothing, put nobody at risk, block no traffic, and finish inside the bay.
+- The exact distance from the curb does not matter. What matters is that you hit no other vehicle, put nobody at risk, block no traffic, and finish parallel to the curb and inside the bay.
 - To pull out, signal, check every mirror and both blind spots, then move off promptly and join the right lane.
 
 ### Stopping at a given point (*frenata di precisione*)
@@ -1935,7 +1935,7 @@ sola. L'esaminatore te lo dice prima di iniziare.
 - Parti dal margine destro della strada, in prima.
 - Guarda avanti, dietro e su entrambi i lati.
 - Accendi l'indicatore sinistro, poi avanza lentamente sterzando.
-- Fermati vicino al margine sinistro senza toccare il marciapiede.
+- Fermati vicino al margine sinistro senza che la parte anteriore dell'auto salga sul marciapiede.
 - Sterza dalla parte opposta, accendi l'indicatore destro e fai retromarcia.
 - Inserisci la prima, accendi l'indicatore sinistro, controlla il traffico e immettiti nella corsia di destra.
 
@@ -1946,7 +1946,7 @@ a spina di pesce, in avanti o in retromarcia, in piano o in pendenza. Poi esci
 di nuovo dal posto.
 
 - Prima di iniziare, controlla dietro e su entrambi i lati.
-- La distanza esatta dal marciapiede non conta. Conta che tu non tocchi nulla, non metta in pericolo nessuno, non intralci il traffico e finisca dentro lo stallo.
+- La distanza esatta dal marciapiede non conta. Conta che tu non urti altri veicoli, non metta in pericolo nessuno, non intralci il traffico e finisca parallelo al marciapiede e dentro lo stallo.
 - Per uscire, segnala, controlla tutti gli specchi ed entrambi gli angoli ciechi, poi parti senza esitare e immettiti nella corsia di destra.
 
 ### La frenata di precisione
