@@ -27,22 +27,25 @@ setTimeout(()=>{
   const dbox=$('dash-drivetest-box'), tbox=$('dash-topics-box');
   const tiles=dbox?[...dbox.querySelectorAll('.topic-card')]:[];
   ok(dbox && !dbox.open && dbox.querySelector('summary').textContent===(IT?'L’esame di guida':'The driving test') && dbox.nextElementSibling===w.document.querySelector('[data-i18n="next.summary"]').closest('details') && dbox.nextElementSibling.nextElementSibling===tbox,'a closed "driving test" box, then the process, then the theory box (20261030s, t)');
-  ok(tiles.length===(IT?7:9) && tiles[2].textContent===(IT?'Seconda fase: le manovre':'Part 2: the maneuvers'),'one tile per section, in the reader\'s language: '+tiles.map(b=>b.textContent).join(' | '));
+  ok(tiles.length===(IT?8:10) && tiles[2].textContent===(IT?'Seconda fase: le manovre':'Part 2: the maneuvers'),'one tile per section, in the reader\'s language: '+tiles.map(b=>b.textContent).join(' | '));
   ok(!$('exam-date-box').querySelector('[data-ed=drivetest]'),'the pass box no longer carries a link of its own');
   tiles[0].click();
   const body=$('review-body'), title=$('review-title').textContent, txt=body.textContent;
   ok(title===(IT?'L’esame di guida':'The driving test'),'the overlay carries the page title: '+title);
   const heads=[...body.querySelectorAll('h3')].map(h=>h.textContent);
-  ok(heads.length===(IT?7:9),'six parts and the summary (20261031b), and the habits in English only: '+heads.join(' | '));
+  ok(heads.length===(IT?8:10),'six parts and the summary (20261031b), and the habits in English only: '+heads.join(' | '));
   ok(IT ? /circolare 28819/.test(txt) && /frenata di precisione/.test(txt) : /circular 28819/.test(txt) && /several moves/.test(txt),'the opening names the circular, and the maneuvers are there');
   ok(IT ? !/[a-z] the [a-z]/.test(txt) && !body.querySelector('.rb-it') : true,'an Italian browser sees no English and no pills');
   if(!IT){
     const lis=[...body.querySelectorAll('[data-rb]')];
     const withPill=lis.filter(e=>e.querySelector(':scope > .rb-it')).length;
-    ok(withPill===86,'every block with an Italian twin carries an IT pill: '+withPill+' of '+lis.length);
+    ok(withPill===88,'every block with an Italian twin carries an IT pill: '+withPill+' of '+lis.length);
+    { const fear=lis.find(e=>/^Many learners dread the autostrada/.test(e.textContent)), fp=fear&&fear.querySelector(':scope > .rb-it');
+      if(fp) fp.click();
+      ok(!!fp && heads.indexOf('If the autostrada frightens you')===6 && /^Molti allievi hanno paura/.test(fp.nextElementSibling.textContent.trim()),'the autostrada-fear section (20261031j) sits before the summary and pairs with its Italian'); }
     { const sum=lis.find(e=>/^The test has three parts, in order/.test(e.textContent)), sp=sum&&sum.querySelector(':scope > .rb-it');
       if(sp) sp.click();
-      ok(!!sp && /^L'esame ha tre fasi, in ordine/.test(sp.nextElementSibling.textContent.trim()) && heads.indexOf('Summary')===6,'the summary (20261031b) comes before the American section, and its first point pairs with its Italian twin'); }
+      ok(!!sp && /^L'esame ha tre fasi, in ordine/.test(sp.nextElementSibling.textContent.trim()) && heads.indexOf('Summary')===7,'the summary (20261031b) comes before the American section, and its first point pairs with its Italian twin'); }
     { const car=lis.find(e=>/^The test car must have dual controls/.test(e.textContent)), cp=car&&car.querySelector(':scope > .rb-it');
       if(cp) cp.click();
       ok(!!cp && /^L'auto d'esame deve avere i doppi comandi/.test(cp.nextElementSibling.textContent.trim()),'the test car paragraph (20261031f) pairs with its Italian twin'); }
@@ -50,13 +53,13 @@ setTimeout(()=>{
     if(pp) pp.click();
     ok(!!pp && /permesso di\s+soggiorno in corso di validità/.test(pp.nextElementSibling.textContent) && /41095/.test(permit.innerHTML),'the residence permit paragraph (20261031a) cites 41095 and its pill opens its own Italian twin');
     const habits=heads.indexOf('For American drivers');
-    ok(habits===7 && (body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'),body.innerHTML.indexOf('Directions the examiner gives')).match(/<li/g)||[]).length===3 && !/STOP sign/.test(txt) && !/parallel parking[\s\S]*rb-it/.test(body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'))),'the American section closes the page with its three points (20261031f) and no pill');
+    ok(habits===8 && (body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'),body.innerHTML.indexOf('Directions the examiner gives')).match(/<li/g)||[]).length===3 && !/STOP sign/.test(txt) && !/parallel parking[\s\S]*rb-it/.test(body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'))),'the American section closes the page with its three points (20261031f) and no pill');
     { const dh=heads.indexOf('Directions the examiner gives');
       const sp=[...body.querySelectorAll('.dt-speak')], said=[];
       w.speakItalian=t=>said.push(t);
       const accosti=sp.find(b=>b.dataset.speak==='Accosti a destra.'); if(accosti) accosti.click();
       const tail=body.innerHTML.slice(body.innerHTML.indexOf('Directions the examiner gives'));
-      ok(dh===8 && sp.length===24 && !/rb-it/.test(tail) && said[0]==='Accosti a destra.','the examiner\'s directions (20261031e): last, 24 lines each with a 🔊 that reads its Italian, and no pill'); }
+      ok(dh===9 && sp.length===24 && !/rb-it/.test(tail) && said[0]==='Accosti a destra.','the examiner\'s directions (20261031e): last, 24 lines each with a 🔊 that reads its Italian, and no pill'); }
     const first=body.querySelector('.rb-it'); first.click();
     ok(/circolare 28819/.test(first.nextElementSibling.textContent),'the first pill opens its own Italian twin');
     ok(['Reversing (retromarcia)','Turning around (inversione di marcia)','Parking (parcheggio)','Stopping at a given point (frenata di precisione)'].every(h=>[...body.querySelectorAll('h4')].some(e=>e.textContent===h)) && /a pettine/.test(txt) && /a spina di pesce/.test(txt),'each maneuver carries the Italian name the examiner uses (20261030n)');
