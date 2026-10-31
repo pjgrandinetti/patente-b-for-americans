@@ -6028,6 +6028,9 @@ to areas open to the public, and the two Reference rows whose only source was
   it finished, and take replacement strings from the stored markup, not
   from the plain-text dump: the US-license paragraph carries inline
   `<strong>` and a link, and the dump hid them.
+  **The car question is the maintainer's wording since 20261101s**: "What
+  does the school charge for using its car for the official driving
+  test?"
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
