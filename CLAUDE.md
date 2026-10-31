@@ -6201,6 +6201,23 @@ to areas open to the public, and the two Reference rows whose only source was
   on this app as proof of readiness. The Italian face carries the same
   changes; it has no non-EU-license or English-school paragraph, by
   design. `docs/howto-prose-en.txt` refreshed.
+  **The Italian face was then read in its own right (20261102j,
+  maintainer: "now do the same for the Italian version").** Found and
+  fixed: "La scuola presenta la domanda. Presenta il modello TT2112"
+  read as an imperative to the reader (now "La scuola presenta il
+  modello"); "medico di base in base ai dati" (now "partendo dai dati
+  clinici"); step 3 said *il certificato* where the rule wants
+  *il certificato anamnestico*; "Quando farlo" is "Quando richiederlo";
+  "Guide ed esame" is "Le guide e l'esame di guida"; "intestando il
+  versamento a te" is "a tuo nome"; "a quanto sono fissate le date" is
+  "con quanto anticipo si fissano le date"; "descritta nei passaggi delle
+  due strade" is "descritta nelle due strade qui sotto". The enrollment
+  question's colon, missed in both faces by the English pass, is split
+  in both ("Ask for the price item by item. The items are ..."). The
+  Italian keeps *medico autorizzato* as its ordinary full name, with
+  *dal Ministero* where the doctor is first introduced.
+  `docs/howto-prose-it.txt` is the Italian plain text, like the English
+  one.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
