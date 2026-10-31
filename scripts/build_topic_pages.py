@@ -442,8 +442,7 @@ def process_page(problems):
     # The shared paragraphs follow the last pane's closing tag.
     after = block[block.rfind('<div class="route-pane'):].split("</div>", 1)[1]
     lede = re.sub(r"</?p>", "", intro.split("</p>", 1)[0]).strip()
-    for tag in re.findall(r"<p>.*?</p>", intro, re.S)[1:]:
-        out.append(tag)
+    intro_rest = intro.split("</p>", 1)[1]
 
     def section(html_part, level):
         for tag in re.findall(r"<p>.*?</p>|<ul>.*?</ul>", html_part, re.S):
@@ -461,6 +460,9 @@ def process_page(problems):
                         continue
             out.append(tag)
 
+    # The opening's other paragraphs, and since 20261031u a labelled one
+    # ("Choosing a driving school.") that becomes a section with its list.
+    section(intro_rest, 2)
     for route, pane in panes:
         name = re.sub(r"<[^>]+>", "", tabs.get(route, route)).strip()
         out.append(_heading(name, seen, heads))
