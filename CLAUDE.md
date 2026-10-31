@@ -6143,7 +6143,9 @@ to areas open to the public, and the two Reference rows whose only source was
   anamnestico with you". The warning paragraph after the conditions list
   introduces the second visit and its doctor in one sentence, then the
   likely referral. Two mentions of that doctor in the step, both there.
-  Both faces.
+  Both faces. **And "the first of two medical steps" went too (20261102d,
+  maintainer's question)**: it was the last trace of the second visit in
+  the first paragraph, and it told the reader nothing about the note.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
