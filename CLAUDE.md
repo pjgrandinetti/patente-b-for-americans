@@ -6246,6 +6246,19 @@ to areas open to the public, and the two Reference rows whose only source was
   base, see a specialist, and if the specialist agrees bring their note
   back and ask for an updated certificato anamnestico; that takes time,
   but far less than the commission. The Italian mirrors it.
+  **Both routes' medical step was cut to what is new at that visit
+  (20261102o, maintainer's question).** With step 3 carrying the
+  warning, the step says: who books the visit and where, bring the
+  certificato anamnestico, the doctor checks the eyesight, reads it and
+  issues the certificato medico; then one sentence pointing at step 3
+  for a yes, and the specialist's report to bring if the yes could not
+  be removed, with the Annex III allowance in half a sentence. The
+  "If the certificato anamnestico has a yes" block, its list of the
+  conditions the commission judges and the "any other doubt" sentence
+  are gone from both routes and both faces; the private route keeps
+  the 3-month age of the certificato medico at filing. The sentence
+  "This doctor issues the medical certificate that goes into your
+  application" went too, since the step's last sentence says it.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
