@@ -6090,6 +6090,15 @@ to areas open to the public, and the two Reference rows whose only source was
   ore", since its readers are mostly new drivers. The two faces are
   written for two audiences and may say different things; check which
   audience a sentence is for before mirroring it.
+  **The two lists no longer overlap (20261101x, maintainer: the questions
+  about the foglio rosa stage belong to the private candidate).** The
+  enroll list holds enrollment itemized, studying on your own and this
+  app as proof, the publisher and English textbook, the English-speaking
+  instructor (English face only). The private list holds the driving
+  lessons (does the school give them to a private candidate, the cost and
+  length of a lesson, the 6 hours, the experienced-driver note), scheduling
+  after the foglio rosa, an automatic, and the car for the official test.
+  The "deliberately in both lists" of 20261101u is withdrawn.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
