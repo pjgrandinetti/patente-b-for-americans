@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261101e';
+const APP_VERSION     = '20261101f';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -197,7 +197,7 @@ const STATIC_IT = {
     '<li><strong>Prima di tutto, studia la teoria.</strong> Passa tutte le domande ufficiali in questa app prima di ogni altra cosa. Di solito ci vuole più di 3 mesi, e i tempi dei passaggi successivi sono brevi: il certificato medico vale 3 mesi, e la domanda presentata ti dà 6 mesi per l’esame di teoria. Mentre fai progressi con il materiale, puoi iniziare a occuparti dei passaggi seguenti.</li>' +
     '<li><strong>Decidi tra autoscuola e privatista.</strong> Le due strade costano in modo molto diverso (le cifre sono nel paragrafo Costi di ciascuna, qui sotto), ma in entrambi i casi ti serve un’autoscuola: anche da privatista, la strada meno cara, le guide obbligatorie vanno fatte presso un’autoscuola prima di poter sostenere l’esame di guida, e l’esame stesso si fa quasi sempre con la sua auto a doppi comandi. Quindi confronta le autoscuole prima di decidere. Sono autorizzate a livello locale e non esiste un elenco unico, quindi cerca nella tua zona, visitane due o tre e chiedi a ciascuna, qualunque strada tu scelga:' +
     '<ul>' +
-    '<li>La scuola è autorizzata, e quanto chiede per le sole guide obbligatorie e per la sua auto all’esame di guida?</li>' +
+    '<li>Quanto chiede la scuola per le sole guide obbligatorie, e per la sua auto all’esame di guida?</li>' +
     '<li>Quanto costa una guida in più, e quanto presto si possono fissare le guide una volta ottenuto il foglio rosa?</li>' +
     '<li>Guide ed esame si possono fare con il cambio automatico, se è quello che guidi? La patente porta allora il codice 78.</li>' +
     '<li>Quale editore usa per il manuale e il software delle simulazioni? Molte autoscuole lavorano con SIDA.</li>' +

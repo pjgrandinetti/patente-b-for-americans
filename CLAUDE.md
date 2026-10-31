@@ -5913,6 +5913,13 @@ to areas open to the public, and the two Reference rows whose only source was
   driving lessons, the 6 hours behind the wheel with an instructor", and
   the language question says "its theory course". The Italian face was
   already unambiguous (*guide* against *corso di teoria*).
+  **"Is the school authorized" was dropped (20261101f, maintainer's
+  question, 2026-11-01).** Art. 123 puts every autoscuola under a
+  provincial declaration and supervision, operating without one is an
+  offence (c. 11-bis), and no case of an unauthorized school taking
+  candidates is known, so the answer is always yes and tells the learner
+  nothing. The first question is now the prices alone; "authorized driving
+  school" stays in the Enroll and foglio rosa steps.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
