@@ -6160,6 +6160,22 @@ to areas open to the public, and the two Reference rows whose only source was
   states the note's own validity, and the maintainer's wording puts the
   3 months on the note, which is what his school told him. If a source
   ever gives the note a different validity, this sentence changes.
+  **Step 3 was rewritten whole in 20261102g** after the maintainer
+  asked why so much effort was going into one section ("you have been
+  organizing it poorly, and using unnecessary metaphors"). Eight
+  releases had patched sentences one at a time; the fault was the
+  ORDER, so the step was rebuilt from what the reader needs to know, in
+  the order they need it: what the note is and who writes it, what it
+  costs, no school needed ("Get the certificato anamnestico"); when to
+  get it, the 3 and the 6 months ("When to get it"); the conditions
+  ("What the note asks"); and only then the second doctor, in one
+  sentence, inside the warning that gives the reason to avoid a yes
+  ("Avoid a yes if you can"), which also carries "read the note before
+  you hand it in", since reading it is how a yes is caught. Four bold
+  labels, the first being the step's own. Plain sentences, no metaphor,
+  every doctor and document named. Both faces. When a passage keeps
+  needing one-sentence patches, stop patching and rebuild it from the
+  reader's order.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the

@@ -27,11 +27,11 @@ If you are considering the private route, you will still need a driving school o
 
 - Does the school provide its car for a private candidate's official driving test, and what does it charge for using it?
 
-- Get the certificato anamnestico (medical-history note). Your own doctor (medico di base) prepares this note from the medical records they hold, usually without examining you. It states whether you have any of the conditions listed below. The national health service does not cover it, so your medico di base will charge for it. Expect to pay about €50. Read the note before handing it in. You do not need to be enrolled at a driving school to get it.
+- Get the certificato anamnestico (medical-history note). This is a note on your medical history. Your own doctor (medico di base) writes it from the records they hold, usually without examining you. The note has one line for each of the conditions listed below, and your medico di base marks each line yes or no. The national health service does not cover the note, so your medico di base will charge for it. Expect to pay about €50. You do not need to be enrolled at a driving school to get it.
 
-This note is valid for 3 months, and it must still be valid when you file your application for the theory exam. The application then gives you 6 months to take the exam, with at most two attempts. So get the note when you expect to pass the theory within about 6 months. For most learners, that is when they have finished the questions in English and are working through them in Italian. Then take the next steps of your route in the following weeks, and bring the note with you.
+When to get it. The note is valid for 3 months, and it must still be valid when you file your application for the theory exam. The application then gives you 6 months to take the exam, with at most two attempts. So get the note when you expect to pass the theory within about 6 months. For most learners, that is when they have finished the questions in English and are working through them in Italian. Then take the next steps of your route in the following weeks, and bring the note with you.
 
-What the certificato anamnestico asks. It has one line for each of these conditions, in this order, and your medico di base answers yes or no on each.
+What the note asks.
 
 - Heart and circulation (apparato cardio-circolatorio)
 
@@ -55,7 +55,7 @@ What the certificato anamnestico asks. It has one line for each of these conditi
 
 - Sense organs, serious eye disease that is getting worse (organi di senso)
 
-A yes in any of these categories can delay your license. At the second medical visit, described in the routes below, a Ministry-authorized doctor (medico autorizzato) reads the certificato anamnestico and issues the medical certificate. That doctor will likely refer you to the local medical commission if there is a yes on the certificato anamnestico, and the wait for a visit there can run to several months. So do not take a certificato anamnestico with a yes on it to the Ministry-authorized doctor if you can avoid it. Work with your medico di base, and with a specialist if needed, to make certain that a yes is necessary before the certificato anamnestico is written. A condition that is cured, under control or mild may not call for one. That takes time, but far less than a referral to the commission.
+Avoid a yes if you can. A yes on any line can delay your license by months. At the second medical visit, described in the routes below, a Ministry-authorized doctor (medico autorizzato) reads the note. If a line says yes, that doctor will likely send you to the local medical commission, and the wait for a visit there can run to several months. So, before the note is written, work with your medico di base, and with a specialist if needed, to make certain that a yes is necessary. A condition that is cured, under control or mild may not call for one. That takes time, but far less than a referral to the commission. Read the note before you hand it in, and go back to your medico di base about any yes you did not expect.
 
 ## Through a driving school
 
