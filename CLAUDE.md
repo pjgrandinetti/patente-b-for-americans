@@ -5981,6 +5981,12 @@ to areas open to the public, and the two Reference rows whose only source was
   above as superseded. A nested list inside a step defeats a non-greedy
   `<li>.*?</li>` match; extract a step with depth counting, as
   `_top_items` does.
+  **Step 3 says the clocks start here (20261101n, maintainer)**: the
+  certificate it leads to is valid 3 months and the application then gives
+  6 for the theory exam, so do not take this step until well along in the
+  theory, close to answering the questions correctly in Italian. Step 1
+  stays general about the medical visits (20261031y); the timing belongs
+  to the step that starts the clocks.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
