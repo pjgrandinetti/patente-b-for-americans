@@ -4049,6 +4049,33 @@ behind what shipped:
   what they will remember the next time they meet the word. It also took a
   day of glosses that grew longer with each attempt before the teaching
   went where the learner is, the explanation, in one sentence.
+- **The How-to rules of 2026-10-31, from a day of rewriting one step
+  nine times.** The maintainer's expectations, in his words and from his
+  corrections, for any procedure the app describes: (1) a step is about
+  ONE thing, and nothing else enters it until the reader needs it (the
+  second doctor appears in step 3 only inside the warning about a yes);
+  (2) the order is the reader's order, what they need to know first,
+  then when, then what to watch for, never the order of importance or
+  the order the facts were learned; (3) every document and every person
+  is named in full every time ("the certificato anamnestico", "your
+  medico di base", "the Ministry-authorized doctor"), never "the note",
+  "this doctor", "the second visit", "it"; (4) no metaphor ("the clocks
+  start", "run on short clocks", "running their sheets"): say the thing;
+  (5) one idea per sentence, no semicolons, no mid-sentence colons; (6)
+  a warning ends with what to DO, as a sequence the reader can carry
+  out, not "work with your doctor"; (7) a sentence that was right where
+  it was written is not carried along when the passage moves; (8) when
+  a passage keeps needing one-sentence patches, stop and rebuild it from
+  the reader's situation, then read the rebuild against every rule the
+  passage already carried. The two faces are for two audiences and may
+  say different things. `python3 scripts/howto_prose.py dump` writes
+  `docs/howto-prose-en.txt` and `-it.txt`, the panel as plain text for
+  editing in Grammarly or by hand; `merge` carries the edited English
+  back into index.html with every tag kept (the Italian is written by
+  hand in app.js). After a merge, read the diff for meaning: Grammarly
+  changed six on 2026-10-31 (an "attend" for "go through", a relative
+  clause that moved to the wrong noun, a dropped "from", a deleted bold
+  label). The record of each release is in the How-to section.
 - **Name a level the way the level picker names it.** L1/L2/L3 left the UI, and
   the weak-spot text still said "Italiano", which is not a name the learner sees
   anywhere. Pass `t('lvl.N.name')` in rather than writing a level name into a
@@ -6263,9 +6290,10 @@ to areas open to the public, and the two Reference rows whose only source was
   (20261102p)**, who edited `docs/howto-prose-en.txt` and asked for a
   check that no meaning had changed. The edits were merged back into
   index.html by a tag-preserving character diff (the scratchpad's
-  `merge_prose.py`: the block split at the same tags the dump splits
-  at, each segment's text diffed against its edited line, tags kept in
-  place), which reproduced his file to the letter. Five things were put
+  `merge_prose.py`, now `scripts/howto_prose.py merge`: the block split
+  at the same tags the dump splits at, each segment's text diffed
+  against its edited line, tags kept in place), which reproduced his
+  file to the letter. Five things were put
   back, in his file and in the HTML: "go through a driving school" for
   "attend" (the route is paperwork, and the theory course is not
   required); "need a driving school" for "need to attend"; "the
