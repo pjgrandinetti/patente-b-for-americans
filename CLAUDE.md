@@ -6107,6 +6107,15 @@ to areas open to the public, and the two Reference rows whose only source was
   "your medico di base" or "the Ministry-authorized doctor", never "your
   doctor" or "the authorized doctor" or "the second visit" alone, in both
   faces. Two doctors in one step, so no pronoun or short form is safe.
+  **And every document too (20261102a, maintainer, 2026-10-31: "this
+  note", read right after a sentence about the certificato medico, had no
+  clear referent).** Step 3 and both routes' medical step say "the
+  certificato anamnestico" or "the medical certificate" (Italian *il
+  certificato anamnestico* / *il certificato medico*) in every sentence,
+  never "the note", "this note", "the form" or bare "the certificate";
+  the Ministry-authorized doctor is said to issue "a different document";
+  the two mid-sentence colons became sentence breaks. Two documents and
+  two doctors in one step: name each in full, every time.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
