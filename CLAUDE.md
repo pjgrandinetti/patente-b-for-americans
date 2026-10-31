@@ -5931,6 +5931,15 @@ to areas open to the public, and the two Reference rows whose only source was
   signing up, is now the whole of step 2. The step reads: choose an
   authorized school and sign up, the school says which papers to bring and
   usually takes the photo, choose it with the questions above.
+  **The medical-history note's warning now insists (20261101i,
+  maintainer, 2026-11-01).** Both routes' note step, both faces: do not
+  take a note with a yes on it to the authorized doctor if you can avoid
+  it; work with your own doctor, and a specialist if needed, to make
+  certain a yes is necessary before the note is written (a condition that
+  is cured, under control or mild may not call for one); that takes time,
+  but far less than a referral to the commission. It replaces "if a line
+  does not match your condition, ask your doctor about it", which was too
+  mild for the cost of a yes.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
