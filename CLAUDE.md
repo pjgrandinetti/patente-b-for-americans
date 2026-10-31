@@ -5998,6 +5998,13 @@ to areas open to the public, and the two Reference rows whose only source was
   to the authorized doctor and the filing in the weeks right after.
   "Close to answering the questions correctly in Italian" would have had
   people waiting too long.
+  **Step 1 no longer quotes the clocks (20261101p, maintainer: the two
+  figures side by side read as if the certificate had to last through
+  the theory).** It says the later steps run on short clocks once they
+  start, points at step 3, and keeps "so the theory comes first"; step 3
+  is the one place the 3 months and the 6 months are explained with their
+  relation (the certificate under 3 months old at filing, then 6 months
+  for the exam).
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the

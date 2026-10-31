@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261101o';
+const APP_VERSION     = '20261101p';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -194,7 +194,7 @@ const STATIC_IT = {
     '<p>Prendere la patente B in Italia richiede più passaggi, e questa app ti prepara a uno di essi, l’<strong>esame di teoria</strong>. Puoi passare per un’<strong>autoscuola</strong>, che presenta la pratica e prenota gli esami per te, oppure presentarti come <strong>privatista</strong> e fare tutto da solo. Frequentare il corso di teoria in aula non è obbligatorio, quindi la teoria puoi studiarla qui.</p>' +
     '<p>In entrambi i casi devi avere almeno 18 anni ed essere residente in Italia. Un cittadino extracomunitario deve anche mostrare un permesso di soggiorno valido.</p>' +
     '<ol class="howto-shared">' +
-    '<li><strong>Prima di tutto, studia la teoria.</strong> Passa tutte le domande ufficiali in questa app prima di ogni altra cosa. Di solito ci vuole più di 3 mesi, e i tempi dei passaggi successivi sono brevi: il certificato medico vale 3 mesi, e la domanda presentata ti dà 6 mesi per l’esame di teoria. Mentre fai progressi con il materiale, puoi iniziare a occuparti dei passaggi seguenti.</li>' +
+    '<li><strong>Prima di tutto, studia la teoria.</strong> Passa tutte le domande ufficiali in questa app prima di ogni altra cosa. Di solito ci vuole più di 3 mesi, e i passaggi successivi, una volta avviati, hanno tempi brevi (li spiega il passo 3), quindi la teoria viene prima. Mentre fai progressi con il materiale, puoi iniziare a occuparti dei passaggi seguenti.</li>' +
     '<li><strong>Decidi tra autoscuola e privatista.</strong> Le due strade costano in modo molto diverso (le cifre sono nel paragrafo Costi di ciascuna, qui sotto), ma in entrambi i casi ti serve un’autoscuola: anche da privatista, la strada meno cara, le guide obbligatorie vanno fatte presso un’autoscuola prima di poter sostenere l’esame di guida, e l’esame stesso si fa quasi sempre con la sua auto a doppi comandi. Quindi confronta le autoscuole prima di decidere. Sono autorizzate a livello locale e non esiste un elenco unico, quindi cerca nella tua zona, visitane due o tre e chiedi a ciascuna, qualunque strada tu scelga:' +
     '<ul>' +
     '<li>Quanto costa una guida, e quante ore dura? Quanto costano le 6 ore obbligatorie, e quanto chiede la scuola per la sua auto all’esame di guida? Probabilmente ti serviranno più delle 6 ore, quindi il prezzo di una guida conta.</li>' +
