@@ -6218,6 +6218,12 @@ to areas open to the public, and the two Reference rows whose only source was
   *dal Ministero* where the doctor is first introduced.
   `docs/howto-prose-it.txt` is the Italian plain text, like the English
   one.
+  **"You do not need to be enrolled at a driving school to get it" is
+  gone (20261102k, maintainer's question).** It was his own instruction
+  of 20261101m, written when the step sat inside each route after
+  Enroll; as a shared step before the routes its position says it. A
+  sentence that was right in one place is not carried along when the
+  passage moves.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
