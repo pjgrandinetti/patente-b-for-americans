@@ -6259,6 +6259,24 @@ to areas open to the public, and the two Reference rows whose only source was
   the 3-month age of the certificato medico at filing. The sentence
   "This doctor issues the medical certificate that goes into your
   application" went too, since the step's last sentence says it.
+  **The English face was then run through Grammarly by the maintainer
+  (20261102p)**, who edited `docs/howto-prose-en.txt` and asked for a
+  check that no meaning had changed. The edits were merged back into
+  index.html by a tag-preserving character diff (the scratchpad's
+  `merge_prose.py`: the block split at the same tags the dump splits
+  at, each segment's text diffed against its edited line, tags kept in
+  place), which reproduced his file to the letter. Five things were put
+  back, in his file and in the HTML: "go through a driving school" for
+  "attend" (the route is paperwork, and the theory course is not
+  required); "need a driving school" for "need to attend"; "the
+  mandatory driving lessons" for "behind-the-wheel instruction" (the
+  term the panel uses throughout, at his own word); "asks about" for
+  "asks for"; "one of several towns in the province" for "which is one
+  of several in the province", where the relative clause had attached
+  itself to the theory exam; and "from 1 month after" for "1 month
+  after". The bold label "Avoid a yes if you can." was restored, since
+  the plain-text file does not show that it is a label. The Italian
+  face needed nothing: the edits were English polish.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
