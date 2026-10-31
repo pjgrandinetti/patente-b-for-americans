@@ -20,6 +20,7 @@ setTimeout(()=>{
   ok(tabs()[0].textContent===(IT?'Con un’autoscuola':'Through a driving school') && tabs()[1].textContent===(IT?'Da privatista':'As a private candidate'),'tab names: '+tabs().map(t=>t.textContent).join(' | '));
   ok(shown().join()==='school' && tabs()[0].classList.contains('is-on'),'the school route shows by default');
   ok(panes().every(p=>p.querySelectorAll('ol > li').length===8 && p.querySelectorAll('li.step-theory').length===1),'each route has eight steps and one theory-exam step');
+  ok(box.querySelectorAll('.rules-body > ol.howto-shared > li').length===2 && panes().every(p=>p.querySelector(':scope > ol').getAttribute('start')==='3'),'two shared steps before the routes, and each route numbers from 3 (20261031z)');
   ok(panes().every(p=>/(Cost|Costi)\./.test(p.querySelector(':scope > p')?.textContent||'')),'each route has its own Cost paragraph');
   ok(!/bollettini|postal payment slips/.test(box.innerHTML),'no postal payment slips left');
   ok(/N067/.test(panes()[1].textContent) && /pagoPA/.test(panes()[1].textContent),'the private route names the pagoPA fee');

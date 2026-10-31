@@ -31,7 +31,8 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   w.localStorage.setItem('patente_dev', '1');
   w.applyI18n();
   const steps = [...box.querySelectorAll('.route-pane > ol > li')];
-  ck(steps.length === 18 && steps.every(li => li.querySelector(':scope > .entry-flag')), 'every step of both routes carries a ⚑');
+  ck(steps.length === 16 && steps.every(li => li.querySelector(':scope > .entry-flag')), 'every step of both routes carries a ⚑ (eight each since 20261031x)');
+  ck([...box.querySelectorAll(':scope > ol.howto-shared > li')].length === 2 && [...box.querySelectorAll(':scope > ol.howto-shared > li')].every(li => li.querySelector(':scope > .entry-flag')), 'the two shared steps carry a ⚑ (20261031z)');
   ck([...box.querySelectorAll(':scope > p')].every(p => p.querySelector(':scope > .entry-flag')), 'every shared paragraph carries a ⚑');
   ck(box.querySelectorAll(':scope li li .entry-flag').length === 0, 'no ⚑ on a nested list item');
   w.applyRouteTab();
@@ -44,7 +45,7 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   ck([...form.querySelectorAll('option')].map(o => o.value).join() === 'text,translation,question,other', 'the passage categories are offered');
   form.querySelector('.dev-flag-note').value = 'out of date';
   form.querySelector('.dev-flag-save').click();
-  let f = w.eval('loadFlags()').find(x => /^howto: school step 4, /.test(x.number));
+  let f = w.eval('loadFlags()').find(x => /^howto: school step 6, /.test(x.number));
   const it = LANG.startsWith('it');
   ck(!!f && f.note === 'out of date' && /How-to/.test(f.topic) && (it ? f.italian : f.english).length > 40 && !/⚑/.test(it ? f.italian : f.english),
      'saving stores a flag named for the step, with its text in the language shown');

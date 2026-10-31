@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261031y';
+const APP_VERSION     = '20261031z';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -193,8 +193,9 @@ const STATIC_IT = {
   'next.body':
     '<p>Prendere la patente B in Italia richiede più passaggi, e questa app ti prepara a uno di essi, l’<strong>esame di teoria</strong>. Puoi passare per un’<strong>autoscuola</strong>, che presenta la pratica e prenota gli esami per te, oppure presentarti come <strong>privatista</strong> e fare tutto da solo. Frequentare il corso di teoria in aula non è obbligatorio, quindi la teoria puoi studiarla qui.</p>' +
     '<p>In entrambi i casi devi avere almeno 18 anni ed essere residente in Italia. Un cittadino extracomunitario deve anche mostrare un permesso di soggiorno valido.</p>' +
-    '<p><strong>Prima di tutto, studia la teoria.</strong> Passa tutte le domande ufficiali in questa app prima di ogni altra cosa. Di solito ci vuole più di 3 mesi, e i tempi dei passaggi successivi sono brevi: il certificato medico vale 3 mesi, e la domanda presentata ti dà 6 mesi per l’esame di teoria. Mentre fai progressi con il materiale, puoi iniziare a occuparti dei passaggi seguenti.</p>' +
-    '<p><strong>Autoscuola o privatista: come decidere.</strong> Le due strade costano in modo molto diverso (le cifre sono nel paragrafo Costi di ciascuna, qui sotto), ma in entrambi i casi ti serve un’autoscuola: anche da privatista, la strada meno cara, le guide obbligatorie vanno fatte presso un’autoscuola prima di poter sostenere l’esame di guida, e l’esame stesso si fa quasi sempre con la sua auto a doppi comandi. Quindi confronta le autoscuole prima di decidere. Sono autorizzate a livello locale e non esiste un elenco unico, quindi cerca nella tua zona, visitane due o tre e chiedi a ciascuna, qualunque strada tu scelga:</p>' +
+    '<ol class="howto-shared">' +
+    '<li><strong>Prima di tutto, studia la teoria.</strong> Passa tutte le domande ufficiali in questa app prima di ogni altra cosa. Di solito ci vuole più di 3 mesi, e i tempi dei passaggi successivi sono brevi: il certificato medico vale 3 mesi, e la domanda presentata ti dà 6 mesi per l’esame di teoria. Mentre fai progressi con il materiale, puoi iniziare a occuparti dei passaggi seguenti.</li>' +
+    '<li><strong>Decidi tra autoscuola e privatista.</strong> Le due strade costano in modo molto diverso (le cifre sono nel paragrafo Costi di ciascuna, qui sotto), ma in entrambi i casi ti serve un’autoscuola: anche da privatista, la strada meno cara, le guide obbligatorie vanno fatte presso un’autoscuola prima di poter sostenere l’esame di guida, e l’esame stesso si fa quasi sempre con la sua auto a doppi comandi. Quindi confronta le autoscuole prima di decidere. Sono autorizzate a livello locale e non esiste un elenco unico, quindi cerca nella tua zona, visitane due o tre e chiedi a ciascuna, qualunque strada tu scelga:' +
     '<ul>' +
     '<li>La scuola è autorizzata, e quanto chiede per le sole guide obbligatorie e per la sua auto all’esame di guida?</li>' +
     '<li>Quanto costa una guida in più, e quanto presto si possono fissare le guide una volta ottenuto il foglio rosa?</li>' +
@@ -205,10 +206,11 @@ const STATIC_IT = {
     '<ul>' +
     '<li>Cosa comprende l’iscrizione? Chiedi il prezzo voce per voce: pratica e diritti della Motorizzazione, visita medica, corso di teoria, app delle simulazioni, guide obbligatorie e auto per l’esame di guida.</li>' +
     '<li>Puoi studiare la teoria per conto tuo invece di seguire il corso, e quale punteggio nelle simulazioni della scuola vuole prima di prenotarti l’esame di teoria?</li>' +
-    '</ul>' +
+    '</ul></li>' +
+    '</ol>' +
     '<div class="route-tabs" role="tablist"><button type="button" class="route-tab is-on" data-route="school" role="tab" aria-selected="true">Con un’autoscuola</button><button type="button" class="route-tab" data-route="private" role="tab" aria-selected="false">Da privatista</button></div>' +
     '<div class="route-pane" data-route="school">' +
-    '<ol>' +
+    '<ol start="3">' +
     '' +
     '<li><strong>Iscriviti.</strong> Scegli un’autoscuola autorizzata e iscriviti. La scuola ti dice quali documenti e quali certificati medici portare, e di solito ti scatta la foto per la domanda. Sceglila con le domande qui sopra.</li>' +
     '<li><strong>Fatti fare il certificato anamnestico.</strong> Il tuo medico di base redige il certificato anamnestico in base ai dati clinici in suo possesso, di solito senza visitarti. Il medico lo fa pagare, perché il servizio sanitario nazionale non lo copre. Prevedi una spesa di circa 50 €. Leggi il certificato prima di consegnarlo. Fattelo fare solo quando sei pronto a presentare la domanda entro 3 mesi, perché il certificato medico che ne segue deve avere meno di 3 mesi al momento della domanda.<br><strong>Cosa chiede il certificato.</strong> Il certificato anamnestico ha una riga per ciascuna di queste condizioni, in quest’ordine, e il medico risponde sì o no su ognuna.<ul><li>Apparato cardio-circolatorio</li><li>Diabete mellito</li><li>Sistema endocrino</li><li>Apparato neurologico</li><li>Patologie psichiche</li><li>Epilessia</li><li>Condizioni di dipendenza da alcol/sostanze stupefacenti e psicotrope</li><li>Apparato urogenitale (insufficienza renale grave)</li><li>Sangue ed organi emopoietici (sindromi emofiliche, linfomi o leucemie in trattamento)</li><li>Apparato osteoarticolare (gravi alterazioni anatomiche o funzionali)</li><li>Organi di senso (gravi patologie visive evolutive)</li></ul>Un sì in una qualsiasi di queste categorie può ritardare la patente. Il medico autorizzato del passaggio successivo esamina ogni sì, può chiedere prima il certificato di uno specialista, e può inviarti alla Commissione Medica Locale, dove l’attesa per una visita può durare diversi mesi. Se una riga non corrisponde alla tua condizione, chiedine conto al tuo medico prima che il certificato venga usato.</li>' +
@@ -222,7 +224,7 @@ const STATIC_IT = {
     '<p><strong>Costi.</strong> Non c’è una tariffa unica. Il certificato anamnestico costa circa 50 €, e sul certificato medico va una marca da bollo da 16 € oltre al compenso del medico autorizzato. La pratica di iscrizione in autoscuola costa di solito <strong>150–300 €</strong>, di più nelle grandi città, e di norma comprende i versamenti al Ministero. Le guide si vendono di solito a unità di 30 minuti, a circa 30 € l’una e meno nei pacchetti, quindi le 6 ore obbligatorie costano circa 300–400 €. In totale, prendere la patente tramite autoscuola costa in genere <strong>800–1.500 €</strong>. Aspettati una piccola cauzione alla prenotazione degli esami, persa in caso di assenza ingiustificata, e una regola di disdetta delle guide con 24 ore di preavviso.</p>' +
     '</div>' +
     '<div class="route-pane hidden" data-route="private">' +
-    '<ol>' +
+    '<ol start="3">' +
     '' +
     '<li><strong>Fatti fare il certificato anamnestico.</strong> Il tuo medico di base redige il certificato anamnestico in base ai dati clinici in suo possesso, di solito senza visitarti. Il medico lo fa pagare, perché il servizio sanitario nazionale non lo copre. Prevedi una spesa di circa 50 €. Leggi il certificato prima di consegnarlo. Fattelo fare solo quando sei pronto a presentare la domanda entro 3 mesi, perché il certificato medico che ne segue deve avere meno di 3 mesi al momento della domanda.<br><strong>Cosa chiede il certificato.</strong> Il certificato anamnestico ha una riga per ciascuna di queste condizioni, in quest’ordine, e il medico risponde sì o no su ognuna.<ul><li>Apparato cardio-circolatorio</li><li>Diabete mellito</li><li>Sistema endocrino</li><li>Apparato neurologico</li><li>Patologie psichiche</li><li>Epilessia</li><li>Condizioni di dipendenza da alcol/sostanze stupefacenti e psicotrope</li><li>Apparato urogenitale (insufficienza renale grave)</li><li>Sangue ed organi emopoietici (sindromi emofiliche, linfomi o leucemie in trattamento)</li><li>Apparato osteoarticolare (gravi alterazioni anatomiche o funzionali)</li><li>Organi di senso (gravi patologie visive evolutive)</li></ul>Un sì in una qualsiasi di queste categorie può ritardare la patente. Il medico autorizzato del passaggio successivo esamina ogni sì, può chiedere prima il certificato di uno specialista, e può inviarti alla Commissione Medica Locale, dove l’attesa per una visita può durare diversi mesi. Se una riga non corrisponde alla tua condizione, chiedine conto al tuo medico prima che il certificato venga usato.</li>' +
     '<li><strong>Visita medica.</strong> Prenoti tu la visita da un <a href="https://www.ilportaledellautomobilista.it/web/portale-automobilista/servizi-online-ricerca-medici-certificatori" target="_blank" rel="noopener">medico autorizzato dal Ministero</a>. È l’ufficio medico-legale dell’ASL, prenotato tramite il CUP, oppure un medico autorizzato che visita presso un’autoscuola o un’agenzia di pratiche auto. Porta il certificato anamnestico, che da solo non vale come certificato medico. Questo medico, non il tuo, controlla la vista, esamina il certificato anamnestico e rilascia il certificato, che non deve avere più di 3 mesi quando presenti la domanda.<br><strong>Se il certificato anamnestico ha un sì.</strong> Questo medico decide se rilasciarti il certificato o inviarti alla Commissione Medica Locale. Un sì non esclude da solo la patente, ma i tempi si allungano. La Commissione valuta l’epilessia salvo che un neurologo ne certifichi la guarigione, una passata dipendenza dall’alcol, l’uso abituale di medicinali che influiscono sulla guida, le patologie psichiche e neurologiche gravi, l’insufficienza renale che richiede la dialisi o un trapianto, e le menomazioni fisiche. Una malattia cardiaca richiede il certificato di un cardiologo di una struttura pubblica, e il diabete quello di un diabetologo. Con quel certificato questo medico può rilasciarti il certificato, oppure inviarti alla Commissione. Anche qualsiasi altro dubbio di questo medico sulla tua idoneità alla guida porta alla Commissione. Per ogni condizione segnata nel certificato anamnestico, porta a questa visita un certificato recente del tuo specialista.</li>' +
@@ -11027,10 +11029,15 @@ function addHowtoFlags() {
     const topic = 'How-to: getting a license';
     box.querySelectorAll(':scope > p').forEach(p =>
       addProseFlag(p, 'howto: ' + proseFlagLabel(p), topic, lang, set));
+    // The two shared steps before the routes (20261031z).
+    box.querySelectorAll(':scope > ol.howto-shared > li').forEach((li, i) =>
+      addProseFlag(li, `howto: step ${i + 1}, ${proseFlagLabel(li)}`, topic, lang, set));
     box.querySelectorAll('.route-pane').forEach(pane => {
       const route = pane.dataset.route;
+      const ol = pane.querySelector(':scope > ol');
+      const base = +(ol && ol.getAttribute('start')) || 1;
       pane.querySelectorAll(':scope > ol > li').forEach((li, i) =>
-        addProseFlag(li, `howto: ${route} step ${i + 1}, ${proseFlagLabel(li)}`, topic, lang, set));
+        addProseFlag(li, `howto: ${route} step ${i + base}, ${proseFlagLabel(li)}`, topic, lang, set));
       pane.querySelectorAll(':scope > p').forEach(p =>
         addProseFlag(p, `howto: ${route}, ${proseFlagLabel(p)}`, topic, lang, set));
     });

@@ -5874,6 +5874,19 @@ to areas open to the public, and the two Reference rows whose only source was
   below." replaces the two sentences on booking the medical visits once
   every question is answered correctly and by the time the app suggests
   mock exams. The clocks sentence (3 months, 6 months) stays.
+  **The two shared steps are NUMBERED since 20261031z (maintainer: why
+  not?).** The opening's "Study the theory first" and "Decide between a
+  driving school and the private route" (with its two question lists
+  inside the item) are `<ol class="howto-shared">`, steps 1 and 2, and
+  each route's `<ol>` carries `start="3"`, so the school route runs 3
+  Enroll to 10 and the private route the same. `process_page` renders the
+  shared steps as h2 "Step 1:" and "Step 2:" and continues the routes'
+  h3 numbering from 3. Reviewer flags: a shared step is `howto: step N,
+  ...`, a route step takes its number from the list's `start`
+  (`howto: school step 6, Pass the theory exam`); `check_prose_flags.js`
+  picks step 6 now and counts sixteen route steps (it still said eighteen
+  after 20261031x and only failed here). The nth-child(4) fallback of the
+  projection's "ready" link is for a stale page only and is untouched.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the

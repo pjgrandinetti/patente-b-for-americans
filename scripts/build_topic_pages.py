@@ -460,14 +460,31 @@ def process_page(problems):
                         continue
             out.append(tag)
 
-    # The opening's other paragraphs, and since 20261031u a labelled one
-    # ("Choosing a driving school.") that becomes a section with its list.
+    # The opening's other paragraphs, then (20261031z) the shared steps,
+    # numbered from 1, each an h2 with its paragraphs and lists; the routes'
+    # steps continue the count.
+    shared = re.search(r'<ol class="howto-shared">(.*?)</ol>', intro_rest, re.S)
+    if shared:
+        section(intro_rest[:shared.start()], 2)
+        intro_rest = intro_rest[shared.end():]
+    step0 = 0
+    for n, li in enumerate(_top_items(shared.group(1)) if shared else [], 1):
+        lm = LABEL_RE.match(li)
+        if not lm:
+            problems.append(f"license process: shared step {n} opens with no bold label"); continue
+        out.append(_heading(lm.group(1), seen, heads, f"Step {n}: ", level=2))
+        for chunk in re.split(r"(<ul>.*?</ul>)", lm.group(2), flags=re.S):
+            chunk = chunk.strip()
+            if not chunk:
+                continue
+            out.append(chunk if chunk.startswith("<ul>") else f"<p>{chunk}</p>")
+        step0 = n
     section(intro_rest, 2)
     for route, pane in panes:
         name = re.sub(r"<[^>]+>", "", tabs.get(route, route)).strip()
         out.append(_heading(name, seen, heads))
         ol, rest = pane.split("</ol>", 1) if "</ol>" in pane else (pane, "")
-        for n, li in enumerate(_top_items(ol), 1):
+        for n, li in enumerate(_top_items(ol), step0 + 1):
             lm = LABEL_RE.match(li)
             if not lm:
                 problems.append(f"license process ({route}): step {n} opens with no bold label"); continue
