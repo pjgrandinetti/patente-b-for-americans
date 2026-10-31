@@ -6005,6 +6005,11 @@ to areas open to the public, and the two Reference rows whose only source was
   is the one place the 3 months and the 6 months are explained with their
   relation (the certificate under 3 months old at filing, then 6 months
   for the exam).
+  **The car at the test is its own question (20261101q, maintainer: two
+  ideas in one sentence, against the pedagogical rules).** The first item
+  is the driving lessons alone (price, length, the 6 hours, more will be
+  wanted); the second is the school's charge for its car at the driving
+  test. One idea per item in that list.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
