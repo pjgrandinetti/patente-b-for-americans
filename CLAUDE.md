@@ -6031,6 +6031,18 @@ to areas open to the public, and the two Reference rows whose only source was
   **The car question is the maintainer's wording since 20261101s**: "What
   does the school charge for using its car for the official driving
   test?"
+  **The either-route list follows the process since 20261101t**
+  (maintainer: the driving test was asked about before the theory):
+  the publisher and English textbook, the English-speaking instructor and
+  what a school cannot teach, the driving lesson's cost and length and the
+  6 hours, scheduling after the foglio rosa, an automatic, the car for the
+  driving test. The Italian list is the same minus the instructor item.
+  The list sits INSIDE step 2's `<li>`, so anchor on the step's text, not
+  on a `</p>`; a script that asserts before writing leaves `sw.js` bumped
+  alone when the `sed` runs after it, so run the validator before
+  committing, not only after.
+  The second list's lead-in is "If you are considering enrolling in the
+  school, then also ask:" (maintainer's wording, same release).
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the

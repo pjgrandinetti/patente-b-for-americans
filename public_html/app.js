@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261101s';
+const APP_VERSION     = '20261101t';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -197,13 +197,13 @@ const STATIC_IT = {
     '<li><strong>Prima di tutto, studia la teoria.</strong> Passa tutte le domande ufficiali in questa app prima di ogni altra cosa. Di solito ci vuole più di 3 mesi, e i passaggi successivi, una volta avviati, hanno tempi brevi (li spiega il passo 3), quindi la teoria viene prima. Mentre fai progressi con il materiale, puoi iniziare a occuparti dei passaggi seguenti.</li>' +
     '<li><strong>Decidi tra autoscuola e privatista.</strong> Le due strade costano in modo molto diverso; le cifre sono nel paragrafo Costi di ciascuna, qui sotto. In entrambi i casi ti serve un’autoscuola. Anche da privatista, la strada meno cara, le guide obbligatorie, le 6 ore al volante con un istruttore, vanno fatte presso un’autoscuola prima di poter sostenere l’esame di guida, e l’esame stesso si fa quasi sempre con l’auto a doppi comandi della scuola. Quindi confronta le autoscuole prima di decidere. Le autoscuole sono autorizzate a livello locale e non esiste un elenco unico. Cerca nella tua zona, visitane due o tre e chiedi a ciascuna, qualunque strada tu scelga:' +
     '<ul>' +
+    '<li>Quale editore usa per il manuale e il software delle simulazioni? Molte autoscuole lavorano con SIDA.</li>' +
     '<li>Quanto costa una guida, e quante ore dura? Quanto costano le 6 ore obbligatorie? Probabilmente ti serviranno più delle 6 ore, quindi il prezzo di una guida conta.</li>' +
-    '<li>Quanto chiede la scuola per l’uso della sua auto all’esame di guida ufficiale?</li>' +
     '<li>Quanto presto si possono fissare le guide una volta ottenuto il foglio rosa?</li>' +
     '<li>Guide ed esame si possono fare con il cambio automatico, se è quello che guidi? La patente porta allora il codice 78.</li>' +
-    '<li>Quale editore usa per il manuale e il software delle simulazioni? Molte autoscuole lavorano con SIDA.</li>' +
+    '<li>Quanto chiede la scuola per l’uso della sua auto all’esame di guida ufficiale?</li>' +
     '</ul>' +
-    '<p>Se ti iscrivi, chiedi anche:</p>' +
+    '<p>Se pensi di iscriverti alla scuola, chiedi anche:</p>' +
     '<ul>' +
     '<li>Cosa comprende l’iscrizione? Chiedi il prezzo voce per voce: pratica e diritti della Motorizzazione, visita medica, corso di teoria, app delle simulazioni, guide obbligatorie e auto per l’esame di guida.</li>' +
     '<li>Puoi studiare la teoria per conto tuo invece di seguire il corso? Di solito la scuola segue i tuoi progressi nella propria app e da quelli decide quando presentarti all’esame di teoria. Chiedi se accetta i risultati di questa app come prova che sei pronto; la pagina Statistiche mostra le simulazioni e la probabilità di bocciatura. Se no, chiedi quale punteggio vuole prima nelle proprie simulazioni.</li>' +
