@@ -6099,6 +6099,10 @@ to areas open to the public, and the two Reference rows whose only source was
   length of a lesson, the 6 hours, the experienced-driver note), scheduling
   after the foglio rosa, an automatic, and the car for the official test.
   The "deliberately in both lists" of 20261101u is withdrawn.
+  **Step 3 is titled "Get the certificato anamnestico (medical-history
+  note)" since 20261101y** (maintainer): the Italian name the learner will
+  use, with the English gloss in parentheses, as the How-to names the
+  other documents. The licensing page's id followed.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
