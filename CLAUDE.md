@@ -5951,6 +5951,12 @@ to areas open to the public, and the two Reference rows whose only source was
   it. "May ask for a specialist's report first" was the rule read as
   practice; his account is the practice, and this file's standing rule
   prefers his account of what the office does.
+  **Said with "likely", not as a certainty (20261101k, maintainer: there
+  is little consistency in this process, so leave some uncertainty)**:
+  "will likely refer you to the local medical commission if there is a
+  yes on the form"; the Annex III reports keep "do not count on it, since
+  practice varies from one doctor to the next". "Does not weigh a yes"
+  and "moves on" are gone.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
