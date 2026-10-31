@@ -5845,6 +5845,13 @@ to areas open to the public, and the two Reference rows whose only source was
   an h2 with its list (it used to take only `<p>` tags from the opening,
   so a list there would have been dropped in silence); the licensing page
   has the section "Choosing a driving school".
+  **Split in 20261031v (maintainer: some questions do not apply to a
+  private candidate)**: the first list is for either route (authorized and
+  the price of the lessons alone and of the car; an extra lesson and
+  scheduling; an automatic; where the test is held; English, English face
+  only), then "If you enroll, also ask:" with the two school-route
+  questions (enrollment itemized; studying on your own and the mock score
+  before booking).
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
