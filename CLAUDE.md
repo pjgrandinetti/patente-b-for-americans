@@ -2804,7 +2804,7 @@ behind what shipped:
   mocks shipped first and he called them clinical): "You've been preparing
   for this moment for about 2 months, and you've finally made it! You're
   not done yet, but this was a big accomplishment. Again, congratulations
-  on obtaining your foglio rosa." (20261030i, his wording) **Rewritten in 20261030z** (maintainer: it could be better written; "Again, congratulations" repeated the heading, and "you've finally made it" sat beside "you're not done yet"): "You prepared for about 2 months, and it paid off. Passing earns you the foglio rosa, and the driving test comes next." / "Hai studiato per circa 2 mesi, e ne è valsa la pena. Superare l'esame ti dà il foglio rosa, e ora tocca all'esame di guida." (*hai studiato*, not *ti sei preparato*, so the Italian assumes no gender).
+  on obtaining your foglio rosa." (20261030i, his wording) **Rewritten in 20261030z** (maintainer: it could be better written; "Again, congratulations" repeated the heading, and "you've finally made it" sat beside "you're not done yet"): "You prepared for about 2 months, and it paid off. Passing earns you the foglio rosa, and the driving test comes next." / "Hai studiato per circa 2 mesi, e ne è valsa la pena. Superare l'esame ti dà il foglio rosa, e ora tocca all'esame di guida." (*hai studiato*, not *ti sei preparato*, so the Italian assumes no gender). **The second sentence names the lessons since 20261031s** (maintainer: the lessons sit between the pass and the test): "Passing earns you the foglio rosa, and the mandatory driving lessons come next, before you can take the official driving test." / "... e ora tocca alle guide obbligatorie, prima di poter sostenere l'esame di guida ufficiale." `check_after_pass.js` asserts it.
   The span is `passJourney`'s, from the older of the earliest answer stamp
   `gAt` at any level and the earliest day in the daily log (kept 120 days)
   to the day of the pass, in words: days under 14, weeks under 46 days,
@@ -2874,6 +2874,17 @@ behind what shipped:
   `foglioRosa`, `foglioHtml`, synced as `foglioRosa` and stamped. The
   driving test date itself is the next step, asked only once the school
   books it. `scripts/check_foglio_rosa.js`, 12 checks in each face.
+  **The note under the checklist serves both routes since 20261031r**
+  (maintainer: "The school can book the driving test" assumed the school
+  route). It reads "The driving test can be booked once a driving school
+  has certified all 6 hours": a private candidate books at the
+  Motorizzazione himself, and only the hours are a school's to certify.
+  **The companion's age cap is the Code's (art. 122 c. 2, checked in
+  `sources/285_1992.pdf` on 2026-10-31)**: no older than 65, a license of
+  the same category held for at least 10 years, or one of a higher
+  category (that last case is not in the How-to's sentence). The maintainer
+  called the cap discriminatory; it is the law's, and the step states it
+  without comment.
   **Change my answer sits right under the congratulations since
   20261030w** (maintainer), above the foglio rosa, since it undoes the pass
   and not the dates.
@@ -5803,6 +5814,16 @@ to areas open to the public, and the two Reference rows whose only source was
   speakers, and the Italian Enroll step is unchanged from before: the
   teenagers sentence was dropped too (20261025n, maintainer: a native
   Italian already knows it).
+  **The private route's foglio rosa step says a school is needed NOW
+  (20261031t, maintainer, 2026-10-31: at that stage a private candidate
+  has no school).** It had said "even as a private candidate you must
+  complete 6 hours of certified lessons at an authorized driving school"
+  as though one were already chosen. Both faces now open on "This is
+  where a private candidate needs a driving school", say the test cannot
+  be booked until the school certifies the hours, and tell the reader to
+  choose a school now and ask what it charges for the lessons alone, since
+  the test is most likely taken in its car too (the next step already says
+  so). The licensing page was rebuilt with it.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
