@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261101c';
+const APP_VERSION     = '20261101d';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -205,7 +205,7 @@ const STATIC_IT = {
     '<p>Se ti iscrivi, chiedi anche:</p>' +
     '<ul>' +
     '<li>Cosa comprende l’iscrizione? Chiedi il prezzo voce per voce: pratica e diritti della Motorizzazione, visita medica, corso di teoria, app delle simulazioni, guide obbligatorie e auto per l’esame di guida.</li>' +
-    '<li>Puoi studiare la teoria per conto tuo invece di seguire il corso, e quale punteggio nelle simulazioni della scuola vuole prima di prenotarti l’esame di teoria?</li>' +
+    '<li>Puoi studiare la teoria per conto tuo invece di seguire il corso? Di solito la scuola segue i tuoi progressi nella propria app e da quelli decide quando presentarti all’esame di teoria, quindi chiedi se accetta i risultati di questa app (la pagina Statistiche mostra le simulazioni e la probabilità di bocciatura) come prova che sei pronto, o quale punteggio vuole prima nelle proprie simulazioni.</li>' +
     '</ul></li>' +
     '</ol>' +
     '<div class="route-tabs" role="tablist"><button type="button" class="route-tab is-on" data-route="school" role="tab" aria-selected="true">Con un’autoscuola</button><button type="button" class="route-tab" data-route="private" role="tab" aria-selected="false">Da privatista</button></div>' +

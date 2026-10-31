@@ -5902,6 +5902,11 @@ to areas open to the public, and the two Reference rows whose only source was
   not meant to help with Italian grammar and vocabulary and may be of
   little use to a learner whose difficulty is the Italian. English face
   only, at the end of the same question.
+  **The "study on your own" question asks whether this app counts as proof
+  of readiness (20261101d, maintainer)**: schools follow the learner's
+  progress in their own app and decide from it when to put them forward,
+  so ask whether the results here (the Statistics page) are accepted, or
+  what score on the school's mock exams is wanted first. Both faces.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
