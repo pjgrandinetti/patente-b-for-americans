@@ -5926,6 +5926,11 @@ to areas open to the public, and the two Reference rows whose only source was
   a line saying more than 6 hours will probably be wanted, so the price of
   one lesson matters ("one extra driving lesson" assumed the reader knew
   the six were a separate item). Scheduling is its own question.
+  **The teenagers sentence is gone from the English Enroll step too
+  (20261101h, maintainer)**: its one purpose, a reason to visit before
+  signing up, is now the whole of step 2. The step reads: choose an
+  authorized school and sign up, the school says which papers to bring and
+  usually takes the photo, choose it with the questions above.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
