@@ -6223,7 +6223,10 @@ to areas open to the public, and the two Reference rows whose only source was
   of 20261101m, written when the step sat inside each route after
   Enroll; as a shared step before the routes its position says it. A
   sentence that was right in one place is not carried along when the
-  passage moves.
+  passage moves. **"mastered the questions in English" (20261102l,
+  maintainer's wording)**, for "finished": finishing a pass is not the
+  bar, knowing the answers is. English face only; the Italian has no
+  English pass.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
