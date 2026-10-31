@@ -6151,7 +6151,15 @@ to areas open to the public, and the two Reference rows whose only source was
   3 ("This is when the clocks start"); they now read "the later steps
   have deadlines once they begin" and "Getting this note starts two
   deadlines." Italian *scadenze* for *tempi*. Say the thing: a deadline
-  is a deadline.
+  is a deadline. **Then said plainly (20261102f, maintainer's wording)**:
+  "This note is valid for 3 months, and it must still be valid when you
+  file your application for the theory exam. The application then gives
+  you 6 months to take the exam, with at most two attempts." The
+  certificato medico left the paragraph with it. The 3 months are
+  sourced for the certificato medico (art. 119, the filing); no source
+  states the note's own validity, and the maintainer's wording puts the
+  3 months on the note, which is what his school told him. If a source
+  ever gives the note a different validity, this sentence changes.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
