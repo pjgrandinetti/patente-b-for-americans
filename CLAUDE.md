@@ -6103,6 +6103,10 @@ to areas open to the public, and the two Reference rows whose only source was
   note)" since 20261101y** (maintainer): the Italian name the learner will
   use, with the English gloss in parentheses, as the How-to names the
   other documents. The licensing page's id followed.
+  **Every doctor in step 3 is named in full (20261101z, maintainer)**:
+  "your medico di base" or "the Ministry-authorized doctor", never "your
+  doctor" or "the authorized doctor" or "the second visit" alone, in both
+  faces. Two doctors in one step, so no pronoun or short form is safe.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
