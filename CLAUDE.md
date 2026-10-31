@@ -5961,6 +5961,26 @@ to areas open to the public, and the two Reference rows whose only source was
   own doctor", in that sentence of both routes: the Italian term is the
   one the learner will use at the school. The Italian face already said
   *medico di base*.
+  **"Get the medical-history note" is shared step 3 (20261101m,
+  maintainer, 2026-11-01: no school is needed to get it, and it is best
+  got right before enrolling and shown at enrollment).** It was identical
+  in both routes (so is "Receive your license", which stays in them, since
+  it closes both). Moved into `ol.howto-shared` after the deciding step, in
+  both faces; the routes' lists carry `start="4"` and have SEVEN steps
+  each (school: 4 Enroll, 5 medical, 6 the school files, 7 theory, 8
+  foglio rosa, 9 driving test, 10 license; private: 4 medical, 5 fees, 6
+  file, 7 to 10 the same). Its timing sentence now reads: you do not need
+  a school to get it; get it just before you enroll or file, since the
+  certificate it leads to must be under 3 months old when the application
+  is filed, and bring it when you enroll or go to the authorized doctor;
+  "the next step" became "the medical step". Enroll says to bring the
+  certificato anamnestico from step 3 and asks for the "other" documents.
+  `check_howto_tabs.js` counts three shared steps, start 4, seven per
+  route; `check_prose_flags.js` picks `school step 7` (the theory exam)
+  and fourteen route steps. Read "step 4" for the note and "eight steps"
+  above as superseded. A nested list inside a step defeats a non-greedy
+  `<li>.*?</li>` match; extract a step with depth counting, as
+  `_top_items` does.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
