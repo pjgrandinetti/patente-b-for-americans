@@ -6277,6 +6277,10 @@ to areas open to the public, and the two Reference rows whose only source was
   after". The bold label "Avoid a yes if you can." was restored, since
   the plain-text file does not show that it is a label. The Italian
   face needed nothing: the edits were English polish.
+  **The closing tip on an English-speaking school is gone (20261102q,
+  maintainer's question)**: step 2 asks about the instructor, and the
+  non-EU-license paragraph already ends on starting early in the first
+  year. English face only; the Italian never had it.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
