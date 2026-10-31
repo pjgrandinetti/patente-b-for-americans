@@ -5940,6 +5940,17 @@ to areas open to the public, and the two Reference rows whose only source was
   but far less than a referral to the commission. It replaces "if a line
   does not match your condition, ask your doctor about it", which was too
   mild for the cost of a yes.
+  **The authorized doctor does not weigh a yes (20261101j, maintainer,
+  2026-11-01: "they will just send you to the commission and move on to
+  the next student").** Both routes, both faces: the note step says the
+  authorized doctor sends a yes to the commission and moves on, and the
+  medical step's "If the note has a yes" says to expect the commission,
+  keeps Annex III's cardiologist and diabetologist reports as what the
+  rules ALLOW the doctor to certify on ("do not count on it"), and says to
+  bring the specialist's report anyway, since the commission will want
+  it. "May ask for a specialist's report first" was the rule read as
+  practice; his account is the practice, and this file's standing rule
+  prefers his account of what the office does.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
