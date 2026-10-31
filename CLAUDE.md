@@ -5920,6 +5920,12 @@ to areas open to the public, and the two Reference rows whose only source was
   candidates is known, so the answer is always yes and tells the learner
   nothing. The first question is now the prices alone; "authorized driving
   school" stays in the Enroll and foglio rosa steps.
+  **The price questions are one question, in the maintainer's order
+  (20261101g)**: the cost of a driving lesson and its length in hours, the
+  price of the 6 mandatory hours, the charge for the car at the test, and
+  a line saying more than 6 hours will probably be wanted, so the price of
+  one lesson matters ("one extra driving lesson" assumed the reader knew
+  the six were a separate item). Scheduling is its own question.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
