@@ -6309,6 +6309,17 @@ to areas open to the public, and the two Reference rows whose only source was
   maintainer's question)**: step 2 asks about the instructor, and the
   non-EU-license paragraph already ends on starting early in the first
   year. English face only; the Italian never had it.
+  **The enrollment question lists what a school's price sheet lists
+  (20261102r, maintainer: the list was not complete).** From note 7 of
+  `docs/license-process-draft.md`, the sheet seen in October 2026: it
+  now asks what is charged separately and for a written price list, and
+  names enrollment and the paperwork, the Motorizzazione fees, the
+  Ministry-authorized doctor's visit, the theory course, the textbook
+  and the mock exam app, presenting you at the theory exam and its
+  booking fee, the mandatory driving lessons, presenting you at the
+  driving test with the school's car, and a second attempt at either
+  exam. Both faces. The "add a paragraph on choosing a school as an
+  experienced driver" of that note is still open with the cost update.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
