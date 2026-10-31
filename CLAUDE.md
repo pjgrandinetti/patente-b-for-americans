@@ -5987,6 +5987,17 @@ to areas open to the public, and the two Reference rows whose only source was
   theory, close to answering the questions correctly in Italian. Step 1
   stays general about the medical visits (20261031y); the timing belongs
   to the step that starts the clocks.
+  **Corrected in 20261101o (maintainer's question: when, then, should the
+  application be filed?).** The 3 months only bind the three visits and
+  the filing to one stretch of weeks; the deadline that matters is the
+  theory exam, 6 months after filing with at most two attempts. So step 3
+  now says: get the note when you expect to pass the theory within about
+  6 months, when the English pass is behind you and you are working
+  through the Italian (the Italian face says "a buon punto con lo studio
+  delle domande", since an Italian browser has no English pass), and go on
+  to the authorized doctor and the filing in the weeks right after.
+  "Close to answering the questions correctly in Italian" would have had
+  people waiting too long.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
