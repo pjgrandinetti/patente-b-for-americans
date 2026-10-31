@@ -5859,6 +5859,15 @@ to areas open to the public, and the two Reference rows whose only source was
   are taken at one and the test is almost always in its car, so compare
   schools before deciding. Italian: "Autoscuola o privatista: come
   decidere."
+  **"Study the theory" moved out of the routes into the opening
+  (20261031x, maintainer, 2026-10-31: identical in both routes, and it
+  starts months before any later step).** It is now the paragraph
+  "Study the theory first." / "Prima di tutto, studia la teoria." right
+  after the eligibility sentence and before the deciding paragraph, in
+  both faces; each route has EIGHT steps again, `check_howto_tabs.js`
+  counts eight, and the licensing page carries it as its first section.
+  Read every "nine steps" and "step 1 of both routes" above (20261025h)
+  as superseded.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
