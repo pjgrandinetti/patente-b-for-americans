@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261031q';
+const APP_VERSION     = '20261031r';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -421,7 +421,7 @@ const T = {
   'fr.expired':  { en: '{0} (expired)', it: '{0} (scaduto)' },
   'fr.now':      { en: '{0} (now)', it: '{0} (adesso)' },
   'fr.hoursOf':  { en: '{0} of 6 hours', it: '{0} ore su 6' },
-  'fr.lessonsNote': { en: 'The school can book the driving test once all 6 hours are certified, and you have up to 3 attempts before the foglio rosa expires. Tick each lesson block as you complete it.', it: 'La scuola può prenotare l\u2019esame di guida quando tutte le 6 ore sono certificate, e hai al massimo 3 tentativi prima che il foglio rosa scada. Spunta ogni blocco di guide quando lo completi.' },
+  'fr.lessonsNote': { en: 'The driving test can be booked once a driving school has certified all 6 hours, and you have up to 3 attempts before the foglio rosa expires. Tick each lesson block as you complete it.', it: 'L\u2019esame di guida si può prenotare quando un\u2019autoscuola ha certificato tutte le 6 ore, e hai al massimo 3 tentativi prima che il foglio rosa scada. Spunta ogni blocco di guide quando lo completi.' },
   'fr.les0':     { en: '2 hours on the autostrada or a main extra-urban road', it: '2 ore in autostrada o su strada extraurbana principale' },
   'fr.les1':     { en: '2 hours on a secondary extra-urban road or an urban arterial road', it: '2 ore su strada extraurbana secondaria o urbana di scorrimento' },
   'fr.les2':     { en: '2 hours at night', it: '2 ore di notte' },
