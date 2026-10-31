@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261102s';
+const APP_VERSION     = '20261102t';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -5108,10 +5108,17 @@ function paintDriveTestBox() {
     box.id = 'dash-drivetest-box';
     box.className = 'rules-note dash-topics-box';
     box.appendChild(document.createElement('summary'));
-    const grid = document.createElement('div');
-    grid.className = 'topic-grid';
-    box.appendChild(grid);
+    const body = document.createElement('div');
+    body.className = 'rules-body review-body drive-body';
+    box.appendChild(body);
     box.addEventListener('toggle', () => { _driveOpen = box.open; });
+    // The page's own controls, as the overlay binds them on #review-body.
+    body.addEventListener('click', e => {
+      const sp = e.target.closest('.dt-speak');
+      if (sp) { speakItalian(sp.dataset.speak); return; }
+      const btn = e.target.closest('.rb-it');
+      if (btn) { e.preventDefault(); toggleItBlock(btn); }
+    });
   }
   box.classList.remove('hidden');
   // The order after a pass (20261030t, maintainer): the pass box, then the
@@ -5135,26 +5142,29 @@ function paintDriveTestBox() {
   } else if (box.nextElementSibling !== ref) ref.parentNode.insertBefore(box, ref);
   box.querySelector('summary').textContent = t('drivetest.title');
   box.open = _driveOpen;
-  const heads = md => [...md.matchAll(/^## (.*)$/gm)].map(m => m[1].trim());
-  const en = heads(DRIVING_TEST_MD.en), it = heads(DRIVING_TEST_MD.it);
-  const ui = browserPrefersItalian() ? it : en;
-  const grid = box.querySelector('.topic-grid');
-  grid.innerHTML = '';
-  ui.forEach((label, i) => {
-    const b = document.createElement('button');
-    b.type = 'button';
-    b.className = 'topic-card topic-card-done topic-card-concepts';
-    b.style.setProperty('--topic-tint', `hsl(${Math.round((i * 137.5 + 200) % 360)} 38% 52%)`);
-    const name = document.createElement('span');
-    name.className = 'topic-title-it';
-    name.textContent = label;
-    b.appendChild(name);
-    b.addEventListener('click', () => {
-      drivingTestEntry();
-      openReview(DRIVING_TEST, { scrollToHeading: { en: en[i] || label, it: it[i] || label } });
-    });
-    grid.appendChild(b);
-  });
+  // The page itself, inline, as the How-to and "How to use this app" are
+  // (20261102t, maintainer: the other dashboard boxes show their text, and
+  // this one opened an overlay). English with IT pills for a non-Italian
+  // browser, Italian with no pills for an Italian one, the 🔊 on the
+  // examiner's directions and the reviewer flags as in the overlay. Rendered
+  // once per language and reviewer state, since the dashboard repaints often.
+  const lang = browserPrefersItalian() ? 'it' : 'en';
+  const key = lang + (entryFlagSet() ? ':rev' : '');
+  const body = box.querySelector('.drive-body');
+  if (body && body.dataset.rendered !== key) {
+    drivingTestEntry();
+    const md = reviewFor(DRIVING_TEST, lang);
+    let pairs = null, twins = null, caps = null;
+    if (lang === 'en') {
+      pairs = drivingTestEntry().pairs;
+      twins = reviewItBlocks(DRIVING_TEST);
+      caps = reviewCaptionTwins(reviewFor(DRIVING_TEST, 'it'));
+    }
+    body.innerHTML = renderMarkdownSubset(md, pairs, twins, 'it', caps);
+    addDriveTestSpeak(body);
+    addDriveTestFlags(body, lang);
+    body.dataset.rendered = key;
+  }
 }
 
 // Every active statement cleared at Italiano: the bank is finished at the
@@ -11060,7 +11070,7 @@ function addDriveTestSpeak(body) {
     });
   }
 }
-function addDriveTestFlags(body) {
+function addDriveTestFlags(body, lang = reviewLang) {
   const set = entryFlagSet();
   if (!set) return;
   let section = '';
@@ -11068,7 +11078,7 @@ function addDriveTestFlags(body) {
     if (el.tagName === 'H3' || el.tagName === 'H4') { section = el.textContent.trim(); return; }
     if (el.closest('li') !== el && el.closest('li')) return;   // a paragraph inside a bullet
     addProseFlag(el, `drive: ${section ? section + ': ' : ''}${proseFlagLabel(el)}`,
-      'Driving test page', reviewLang, set);
+      'Driving test page', lang, set);
   });
   bindEntryFlags(body);
 }

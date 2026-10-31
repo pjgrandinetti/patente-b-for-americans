@@ -25,13 +25,12 @@ setTimeout(()=>{
   w.italianoComplete=()=>true; w.renderDashboard();
   $('exam-date-box').querySelector('[data-ed=pass]').click();
   const dbox=$('dash-drivetest-box'), tbox=$('dash-topics-box');
-  const tiles=dbox?[...dbox.querySelectorAll('.topic-card')]:[];
   ok(dbox && !dbox.open && dbox.querySelector('summary').textContent===(IT?'L’esame di guida':'The driving test') && dbox.nextElementSibling===w.document.querySelector('[data-i18n="next.summary"]').closest('details') && dbox.nextElementSibling.nextElementSibling===tbox,'a closed "driving test" box, then the process, then the theory box (20261030s, t)');
-  ok(tiles.length===(IT?7:9) && tiles[2].textContent===(IT?'Seconda fase: le manovre':'Part 2: the maneuvers'),'one tile per section, in the reader\'s language: '+tiles.map(b=>b.textContent).join(' | '));
+  ok(!dbox.querySelector('.topic-card') && !!dbox.querySelector('.drive-body'),'the page is inline in the box, not tiles opening an overlay (20261102t)');
   ok(!$('exam-date-box').querySelector('[data-ed=drivetest]'),'the pass box no longer carries a link of its own');
-  tiles[0].click();
-  const body=$('review-body'), title=$('review-title').textContent, txt=body.textContent;
-  ok(title===(IT?'L’esame di guida':'The driving test'),'the overlay carries the page title: '+title);
+  dbox.open=true; dbox.dispatchEvent(new w.Event('toggle'));
+  const body=dbox.querySelector('.drive-body'), txt=body.textContent;
+  ok(!$('review-overlay') || $('review-overlay').classList.contains('hidden'),'no overlay opens');
   const heads=[...body.querySelectorAll('h3')].map(h=>h.textContent);
   ok(heads.length===(IT?7:9),'six parts and the summary (20261031b), and the habits in English only: '+heads.join(' | '));
   ok(IT ? /circolare 28819/.test(txt) && /frenata di precisione/.test(txt) : /circular 28819/.test(txt) && /several moves/.test(txt),'the opening names the circular, and the maneuvers are there');

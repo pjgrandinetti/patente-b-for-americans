@@ -2939,6 +2939,23 @@ behind what shipped:
   dashboard box for a non-Italian browser and absent for an Italian one.
   `DRIVE_DIRECTIONS_HEAD` must match the heading. This supersedes "the
   examiner's directions are NOT on the page" above.
+  **The page is INLINE in its dashboard box since 20261102t (maintainer:
+  the other disclosures show their text, and this one opened an
+  overlay).** `paintDriveTestBox` renders `DRIVING_TEST_MD` into a
+  `div.rules-body.review-body.drive-body` inside the `<details>`, through
+  `renderMarkdownSubset` with the page's own pairs, so the English face
+  carries its IT pills and the Italian face none, then `addDriveTestSpeak`
+  and `addDriveTestFlags` (which now takes the language as an argument,
+  since `reviewLang` is the overlay's). The box binds the pill and 🔊
+  clicks itself, as the overlay binds them on `#review-body`. Rendered
+  once per language and reviewer state (`data-rendered`), since the
+  dashboard repaints often. The section tiles and `scrollToHeading` are
+  gone; `openDrivingTest` and the overlay path stay for any future link.
+  `.review-body` on the div gives the headings the overlay's styles.
+  `check_driving_test.js` reads the page from the box and asserts no
+  overlay opens; the 87 pills, the 24 speakers and the flags are checked
+  there as before. "It is a tile in the dashboard box" above now means a
+  section of the inline page.
   **The test car (20261031f, maintainer).** "How the test works" says, in
   both halves, what circular 28819 para. 7.1 and Code art. 121 c. 9 say:
   dual controls at least for clutch and brake, at least 100 km/h, a
