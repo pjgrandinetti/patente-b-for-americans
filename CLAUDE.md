@@ -6082,6 +6082,14 @@ to areas open to the public, and the two Reference rows whose only source was
   wording: "the Statistics page of this app shows your mock exams and
   your chance of failing". Both route steps open with a link right after
   "You book", so a replacement must stop at "<a".
+  **The English face no longer says an American will want more than the
+  6 hours (20261101w, maintainer: an American has usually driven for
+  years).** It says the 6 may be all you need, and that a driver of
+  automatics only who wants a license without code 78 should plan on
+  more. The Italian face keeps "probabilmente ti serviranno più delle 6
+  ore", since its readers are mostly new drivers. The two faces are
+  written for two audiences and may say different things; check which
+  audience a sentence is for before mirroring it.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
