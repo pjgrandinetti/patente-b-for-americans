@@ -6175,7 +6175,13 @@ to areas open to the public, and the two Reference rows whose only source was
   labels, the first being the step's own. Plain sentences, no metaphor,
   every doctor and document named. Both faces. When a passage keeps
   needing one-sentence patches, stop patching and rebuild it from the
-  reader's order.
+  reader's order. **And it is "the certificato anamnestico" in every
+  sentence, never "the note" (20261102h, maintainer: "didn't we discuss
+  this already?").** The rewrite had slipped back to "the note"
+  seventeen times; the English gloss appears once, in the step's title,
+  and the Italian name is the one the learner will use. A rule settled
+  earlier in the day (20261102a) was undone by the rewrite; a rewrite
+  must be read against every rule the passage already carries.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
