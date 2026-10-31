@@ -6146,6 +6146,12 @@ to areas open to the public, and the two Reference rows whose only source was
   Both faces. **And "the first of two medical steps" went too (20261102d,
   maintainer's question)**: it was the last trace of the second visit in
   the first paragraph, and it told the reader nothing about the note.
+  **No "clocks" (20261102e, maintainer: "which clock, the clock on the
+  wall?").** The metaphor was in step 1 ("run on short clocks") and step
+  3 ("This is when the clocks start"); they now read "the later steps
+  have deadlines once they begin" and "Getting this note starts two
+  deadlines." Italian *scadenze* for *tempi*. Say the thing: a deadline
+  is a deadline.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
