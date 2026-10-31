@@ -5907,6 +5907,12 @@ to areas open to the public, and the two Reference rows whose only source was
   progress in their own app and decide from it when to put them forward,
   so ask whether the results here (the Statistics page) are accepted, or
   what score on the school's mock exams is wanted first. Both faces.
+  **"Driving lessons", never bare "lessons", in the English of that section
+  (20261101e, maintainer: the reader must not take them for theory
+  lessons).** Six places; the deciding paragraph now says "the mandatory
+  driving lessons, the 6 hours behind the wheel with an instructor", and
+  the language question says "its theory course". The Italian face was
+  already unambiguous (*guide* against *corso di teoria*).
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
