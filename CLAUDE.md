@@ -6066,6 +6066,22 @@ to areas open to the public, and the two Reference rows whose only source was
   (20261031v to 20261101t) are superseded. `process_page` now keeps a
   `<p>` inside a shared step as it is instead of wrapping it in another
   `<p>`.
+  **The two medical visits are named as first and second (20261101v,
+  maintainer: the learner must know which visit a sentence means).**
+  Step 3 opens by saying there are two visits to two different doctors
+  and this is the first (the medico di base, the certificato anamnestico,
+  the medical-history note), and that the second, in the routes, is to the
+  Ministry-authorized doctor who reads the note and issues the medical
+  certificate (certificato medico) for the application. The route step
+  "Pass the medical" is now "Visit the Ministry-authorized doctor" /
+  *Visita dal medico autorizzato*, opening "This is the second medical
+  visit, the one that produces the medical certificate." The enroll
+  list's "the medical visit" is "the visit to the Ministry-authorized
+  doctor"; step 3's references read "the second visit". The licensing
+  page's step ids followed the new heading. Same release, maintainer's
+  wording: "the Statistics page of this app shows your mock exams and
+  your chance of failing". Both route steps open with a link right after
+  "You book", so a replacement must stop at "<a".
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
