@@ -6236,6 +6236,16 @@ to areas open to the public, and the two Reference rows whose only source was
   in; go back to your medico di base with a recent specialist's report
   that says so and ask for the line to be corrected. Both faces. A
   closing sentence in a warning tells the reader what to DO.
+  **The whole warning is the maintainer's own paragraph since 20261102n**,
+  adopted as written: read the answer for every condition before leaving
+  the medico di base's office; a yes could delay the license by months
+  if the Ministry-authorized doctor, when you apply for the theory exam,
+  decides the case must go to the local medical commission, where
+  appointments are often months out; a cured, controlled or mild
+  condition may not need a yes; if you disagree with your medico di
+  base, see a specialist, and if the specialist agrees bring their note
+  back and ask for an updated certificato anamnestico; that takes time,
+  but far less than the commission. The Italian mirrors it.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
