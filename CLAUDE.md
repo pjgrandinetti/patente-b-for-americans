@@ -5868,6 +5868,12 @@ to areas open to the public, and the two Reference rows whose only source was
   counts eight, and the licensing page carries it as its first section.
   Read every "nine steps" and "step 1 of both routes" above (20261025h)
   as superseded.
+  **Its close is general since 20261031y** (maintainer: do not be
+  specific about the medical visits): "While you are making progress on
+  the material in English and Italian, you can start working on the steps
+  below." replaces the two sentences on booking the medical visits once
+  every question is answered correctly and by the time the app suggests
+  mock exams. The clocks sentence (3 months, 6 months) stays.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
