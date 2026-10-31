@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261031z';
+const APP_VERSION     = '20261101a';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -200,7 +200,6 @@ const STATIC_IT = {
     '<li>La scuola è autorizzata, e quanto chiede per le sole guide obbligatorie e per la sua auto all’esame di guida?</li>' +
     '<li>Quanto costa una guida in più, e quanto presto si possono fissare le guide una volta ottenuto il foglio rosa?</li>' +
     '<li>Guide ed esame si possono fare con il cambio automatico, se è quello che guidi? La patente porta allora il codice 78.</li>' +
-    '<li>Dove si svolge l’esame di guida? Può essere in un comune diverso da quello dell’esame di teoria.</li>' +
     '</ul>' +
     '<p>Se ti iscrivi, chiedi anche:</p>' +
     '<ul>' +

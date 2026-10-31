@@ -5887,6 +5887,10 @@ to areas open to the public, and the two Reference rows whose only source was
   picks step 6 now and counts sixteen route steps (it still said eighteen
   after 20261031x and only failed here). The nth-child(4) fallback of the
   projection's "ready" link is for a stale page only and is untouched.
+  **The "where is the driving test held" question was removed (20261101a,
+  maintainer, 2026-11-01)**: every school in an area deals with the same
+  offices, so it does not tell schools apart; the driving test step of
+  both routes still says the town may differ.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
