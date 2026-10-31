@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261102r';
+const APP_VERSION     = '20261102s';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -199,7 +199,7 @@ const STATIC_IT = {
     '<p>Se pensi di iscriverti a un’autoscuola, chiedi:</p>' +
     '<ul>' +
     '<li>Cosa comprende l’iscrizione, e cosa si paga a parte? Chiedi un listino scritto, voce per voce. Le voci sono l’iscrizione e la pratica, i diritti della Motorizzazione, la visita dal medico autorizzato, il corso di teoria, il manuale e l’app delle simulazioni, la presentazione all’esame di teoria e la sua prenotazione, le guide obbligatorie, la presentazione all’esame di guida con l’auto della scuola, e un secondo tentativo a uno dei due esami.</li>' +
-    '<li>Puoi studiare la teoria per conto tuo invece di seguire il corso? Di solito la scuola segue i tuoi progressi nella propria app e da quelli decide quando presentarti all’esame di teoria. Chiedi se accetta i risultati di questa app come prova che sei pronto. La pagina Statistiche di questa app mostra le simulazioni e la probabilità di bocciatura. Se no, chiedi quale punteggio vuole prima nelle proprie simulazioni.</li>' +
+    '<li>Puoi studiare la teoria per conto tuo invece di seguire il corso? Di solito la scuola registra le presenze e segue i tuoi progressi nella propria app e da quelli decide quando presentarti all’esame di teoria. Chiedi se accetta i risultati di questa app come prova che sei pronto. La pagina Statistiche di questa app mostra le simulazioni e la probabilità di bocciatura. Se no, chiedi quale punteggio vuole prima nelle proprie simulazioni.</li>' +
     '<li>Quale editore usa per il manuale e il software delle simulazioni? Molte autoscuole lavorano con SIDA.</li>' +
     '</ul>' +
     '<p>Se pensi alla strada da privatista, una volta ottenuto il foglio rosa ti servirà comunque un’autoscuola. Le guide obbligatorie, 6 ore al volante con un istruttore, vanno fatte presso una scuola. L’esame di guida ufficiale si fa quasi sempre con l’auto a doppi comandi di una scuola. Chiedi:</p>' +

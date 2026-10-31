@@ -6320,6 +6320,10 @@ to areas open to the public, and the two Reference rows whose only source was
   driving test with the school's car, and a second attempt at either
   exam. Both faces. The "add a paragraph on choosing a school as an
   experienced driver" of that note is still open with the cost update.
+  **"track attendance and your progress" (20261102s, maintainer's
+  wording)**: the school's app records attendance at the theory course
+  too, which is part of what the school reads before booking the exam.
+  Both faces.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
