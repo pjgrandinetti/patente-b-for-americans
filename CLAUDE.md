@@ -5957,6 +5957,10 @@ to areas open to the public, and the two Reference rows whose only source was
   yes on the form"; the Annex III reports keep "do not count on it, since
   practice varies from one doctor to the next". "Does not weigh a yes"
   and "moves on" are gone.
+  **"Work with your medico di base" (20261101l, maintainer)**, not "your
+  own doctor", in that sentence of both routes: the Italian term is the
+  one the learner will use at the school. The Italian face already said
+  *medico di base*.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
