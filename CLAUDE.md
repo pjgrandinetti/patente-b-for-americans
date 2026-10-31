@@ -6227,6 +6227,15 @@ to areas open to the public, and the two Reference rows whose only source was
   maintainer's wording)**, for "finished": finishing a pass is not the
   bar, knowing the answers is. English face only; the Italian has no
   English pass.
+  **The warning ends with instructions (20261102m, maintainer: the
+  paragraph's objective is that the learner makes every attempt to keep
+  a wrong yes off the certificato anamnestico, and "go back to your
+  medico di base about any yes you did not expect" gave none).** Now:
+  read every line when you receive it; if a line says yes and you
+  believe the condition is cured, under control or mild, do not hand it
+  in; go back to your medico di base with a recent specialist's report
+  that says so and ask for the line to be corrected. Both faces. A
+  closing sentence in a warning tells the reader what to DO.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
