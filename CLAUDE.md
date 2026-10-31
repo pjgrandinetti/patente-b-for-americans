@@ -6010,6 +6010,24 @@ to areas open to the public, and the two Reference rows whose only source was
   is the driving lessons alone (price, length, the 6 hours, more will be
   wanted); the second is the school's charge for its car at the driving
   test. One idea per item in that list.
+  **The whole How-to was then read for the rule (20261101r, maintainer:
+  "did you review the full How-to?"; it had not been).** Split, in both
+  faces: step 2's opening (cost difference, the school on either route,
+  the 6 hours, the test car were one sentence), the language question
+  (publisher and English textbook in one item, the English-speaking
+  instructor and what a school cannot teach in another), the
+  study-on-your-own question, step 3's timing sentence, the school Cost
+  paragraph's deposit-and-cancellation sentence, and the "how long"
+  paragraph. "Driving lessons" replaced bare "lessons" in both foglio
+  rosa steps (headings included), both Cost paragraphs and the US-license
+  paragraph; "practical exam" became "driving test"; the contractions
+  (It's, There's, you're) and the tildes went; the ranges read "€150 to
+  €300", "3 to 6 months"; "the questions above" became "the questions in
+  step 2" in Enroll and the private foglio rosa step. Read the panel as
+  plain text (strip the tags of `next.body`) before calling a change to
+  it finished, and take replacement strings from the stored markup, not
+  from the plain-text dump: the US-license paragraph carries inline
+  `<strong>` and a link, and the dump hid them.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
