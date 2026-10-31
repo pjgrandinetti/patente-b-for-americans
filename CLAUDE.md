@@ -5824,6 +5824,27 @@ to areas open to the public, and the two Reference rows whose only source was
   choose a school now and ask what it charges for the lessons alone, since
   the test is most likely taken in its car too (the next step already says
   so). The licensing page was rebuilt with it.
+  **Choosing a driving school is in the SHARED opening since 20261031u
+  (maintainer, 2026-10-31: on either route the learner has to compare
+  schools for their services and costs).** After the residency sentence
+  and before the route tabs: a labelled paragraph "Choosing a driving
+  school." (on either route you deal with one: the paperwork on the school
+  route, the lessons and almost always the test car on both; licensed
+  locally, no directory, visit two or three) and a `<ul>` of questions to
+  ask each: authorized and what enrollment includes, itemized; the price
+  of the lessons alone and of the car for a private candidate; the cost of
+  an extra lesson and how soon lessons can be scheduled; an automatic
+  (code 78); studying the theory on your own and the mock score the school
+  wants before booking; where the driving test is held; and, ENGLISH FACE
+  ONLY, the textbook in English and an English-speaking instructor. That
+  last question and the "no single directory" sentence moved here from the
+  school route's Enroll step, which now says "Choose it with the questions
+  above" and keeps the teenagers sentence; the private route's foglio rosa
+  step points at the questions too. `process_page` in
+  `build_topic_pages.py` now renders the opening's labelled paragraph as
+  an h2 with its list (it used to take only `<p>` tags from the opening,
+  so a list there would have been dropped in silence); the licensing page
+  has the section "Choosing a driving school".
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
