@@ -5897,6 +5897,11 @@ to areas open to the public, and the two Reference rows whose only source was
   manual has an English edition. The Italian face gained the publisher
   question alone (no English). The maintainer's own school uses SIDA; the
   English edition is his report, not checked against a catalogue.
+  **And says what a school cannot do (20261101c, maintainer)**: a driving
+  school teaches the rules, not the language, so its theory lessons are
+  not meant to help with Italian grammar and vocabulary and may be of
+  little use to a learner whose difficulty is the Italian. English face
+  only, at the end of the same question.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
