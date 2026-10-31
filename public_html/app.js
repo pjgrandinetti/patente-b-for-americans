@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261101t';
+const APP_VERSION     = '20261101u';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -195,18 +195,22 @@ const STATIC_IT = {
     '<p>In entrambi i casi devi avere almeno 18 anni ed essere residente in Italia. Un cittadino extracomunitario deve anche mostrare un permesso di soggiorno valido.</p>' +
     '<ol class="howto-shared">' +
     '<li><strong>Prima di tutto, studia la teoria.</strong> Passa tutte le domande ufficiali in questa app prima di ogni altra cosa. Di solito ci vuole più di 3 mesi, e i passaggi successivi, una volta avviati, hanno tempi brevi (li spiega il passo 3), quindi la teoria viene prima. Mentre fai progressi con il materiale, puoi iniziare a occuparti dei passaggi seguenti.</li>' +
-    '<li><strong>Decidi tra autoscuola e privatista.</strong> Le due strade costano in modo molto diverso; le cifre sono nel paragrafo Costi di ciascuna, qui sotto. In entrambi i casi ti serve un’autoscuola. Anche da privatista, la strada meno cara, le guide obbligatorie, le 6 ore al volante con un istruttore, vanno fatte presso un’autoscuola prima di poter sostenere l’esame di guida, e l’esame stesso si fa quasi sempre con l’auto a doppi comandi della scuola. Quindi confronta le autoscuole prima di decidere. Le autoscuole sono autorizzate a livello locale e non esiste un elenco unico. Cerca nella tua zona, visitane due o tre e chiedi a ciascuna, qualunque strada tu scelga:' +
+    '<li><strong>Decidi tra autoscuola e privatista.</strong> Le due strade costano in modo molto diverso; le cifre sono nel paragrafo Costi di ciascuna, qui sotto. Prima di decidere, visita due o tre autoscuole. Sono autorizzate a livello locale e non esiste un elenco unico, quindi cerca nella tua zona.' +
+    '<p>Se pensi di iscriverti alla scuola, chiedi:</p>' +
     '<ul>' +
+    '<li>Cosa comprende l’iscrizione? Chiedi il prezzo voce per voce: pratica e diritti della Motorizzazione, visita medica, corso di teoria, app delle simulazioni, guide obbligatorie e auto per l’esame di guida.</li>' +
+    '<li>Puoi studiare la teoria per conto tuo invece di seguire il corso? Di solito la scuola segue i tuoi progressi nella propria app e da quelli decide quando presentarti all’esame di teoria. Chiedi se accetta i risultati di questa app come prova che sei pronto; la pagina Statistiche mostra le simulazioni e la probabilità di bocciatura. Se no, chiedi quale punteggio vuole prima nelle proprie simulazioni.</li>' +
     '<li>Quale editore usa per il manuale e il software delle simulazioni? Molte autoscuole lavorano con SIDA.</li>' +
     '<li>Quanto costa una guida, e quante ore dura? Quanto costano le 6 ore obbligatorie? Probabilmente ti serviranno più delle 6 ore, quindi il prezzo di una guida conta.</li>' +
     '<li>Quanto presto si possono fissare le guide una volta ottenuto il foglio rosa?</li>' +
     '<li>Guide ed esame si possono fare con il cambio automatico, se è quello che guidi? La patente porta allora il codice 78.</li>' +
-    '<li>Quanto chiede la scuola per l’uso della sua auto all’esame di guida ufficiale?</li>' +
     '</ul>' +
-    '<p>Se pensi di iscriverti alla scuola, chiedi anche:</p>' +
+    '<p>Se pensi alla strada da privatista, una volta ottenuto il foglio rosa ti servirà comunque un’autoscuola: le guide obbligatorie, le 6 ore al volante con un istruttore, vanno fatte presso una scuola, e l’esame di guida ufficiale si fa quasi sempre con l’auto a doppi comandi di una scuola. Chiedi:</p>' +
     '<ul>' +
-    '<li>Cosa comprende l’iscrizione? Chiedi il prezzo voce per voce: pratica e diritti della Motorizzazione, visita medica, corso di teoria, app delle simulazioni, guide obbligatorie e auto per l’esame di guida.</li>' +
-    '<li>Puoi studiare la teoria per conto tuo invece di seguire il corso? Di solito la scuola segue i tuoi progressi nella propria app e da quelli decide quando presentarti all’esame di teoria. Chiedi se accetta i risultati di questa app come prova che sei pronto; la pagina Statistiche mostra le simulazioni e la probabilità di bocciatura. Se no, chiedi quale punteggio vuole prima nelle proprie simulazioni.</li>' +
+    '<li>La scuola fa le guide obbligatorie a un privatista, e quanto chiede per le sole 6 ore? Quanto costa una guida in più?</li>' +
+    '<li>Quanto presto si possono fissare le guide una volta ottenuto il foglio rosa?</li>' +
+    '<li>La scuola mette a disposizione la sua auto per l’esame di guida ufficiale di un privatista, e quanto chiede per l’uso?</li>' +
+    '<li>Guide ed esame si possono fare con il cambio automatico, se è quello che guidi? La patente porta allora il codice 78.</li>' +
     '</ul></li>' +
     '<li><strong>Fatti fare il certificato anamnestico.</strong> Il tuo medico di base redige il certificato anamnestico in base ai dati clinici in suo possesso, di solito senza visitarti. Il medico lo fa pagare, perché il servizio sanitario nazionale non lo copre. Prevedi una spesa di circa 50 €. Leggi il certificato prima di consegnarlo. Non serve essere iscritti a un’autoscuola per averlo. Da qui partono i tempi: il certificato medico che ne segue deve avere meno di 3 mesi al momento della domanda, e la domanda ti dà poi 6 mesi per l’esame di teoria, con al massimo due tentativi. Quindi fattelo fare quando prevedi di superare la teoria entro circa 6 mesi. Per la maggior parte dei candidati è quando si è a buon punto con lo studio delle domande. Poi passa al medico autorizzato e alla domanda nelle settimane subito dopo. Portalo con te quando ti iscrivi o vai dal medico autorizzato.<br><strong>Cosa chiede il certificato.</strong> Il certificato anamnestico ha una riga per ciascuna di queste condizioni, in quest’ordine, e il medico risponde sì o no su ognuna.<ul><li>Apparato cardio-circolatorio</li><li>Diabete mellito</li><li>Sistema endocrino</li><li>Apparato neurologico</li><li>Patologie psichiche</li><li>Epilessia</li><li>Condizioni di dipendenza da alcol/sostanze stupefacenti e psicotrope</li><li>Apparato urogenitale (insufficienza renale grave)</li><li>Sangue ed organi emopoietici (sindromi emofiliche, linfomi o leucemie in trattamento)</li><li>Apparato osteoarticolare (gravi alterazioni anatomiche o funzionali)</li><li>Organi di senso (gravi patologie visive evolutive)</li></ul>Un sì in una qualsiasi di queste categorie può ritardare la patente. Con un sì sul modulo, il medico autorizzato della visita medica probabilmente ti invierà alla Commissione Medica Locale, dove l’attesa per una visita può durare diversi mesi. Quindi, se puoi evitarlo, non presentarti dal medico autorizzato con un sì sul certificato. Lavora con il tuo medico di base, e se serve con uno specialista, per accertarti che un sì sia davvero necessario prima che il certificato venga scritto: una condizione guarita, sotto controllo o lieve può non richiederlo. Ci vuole tempo, ma molto meno di un rinvio alla Commissione.</li>' +
     '</ol>' +

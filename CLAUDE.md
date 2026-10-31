@@ -6043,6 +6043,29 @@ to areas open to the public, and the two Reference rows whose only source was
   committing, not only after.
   The second list's lead-in is "If you are considering enrolling in the
   school, then also ask:" (maintainer's wording, same release).
+  **Step 2 is two reader-specific lists since 20261101u (maintainer: the
+  section was still confusing; ask first what someone considering
+  enrolling would ask, then what a private candidate would ask about
+  using the school after the foglio rosa).** The step opens on the cost
+  difference and "before you decide, visit two or three driving schools"
+  (licensed locally, no directory). Then "If you are considering enrolling
+  in the school, ask:" with seven questions in the order of the process:
+  enrollment itemized, studying on your own and this app as proof, the
+  publisher and English textbook, the English-speaking instructor and
+  what a school cannot teach (English face only), the driving lesson's
+  cost and length and the 6 hours, scheduling after the foglio rosa, an
+  automatic. Then "If you are considering the private route, you will
+  still need a driving school once you have the foglio rosa" (the 6 hours
+  behind the wheel at a school, the official test almost always in a
+  school's dual-control car) and four questions: does it give the lessons
+  to a private candidate and at what price for the 6 hours alone and per
+  extra lesson, scheduling, its car for a private candidate's official
+  test and the charge, an automatic. The scheduling and automatic
+  questions are deliberately in both lists, since each list is read by a
+  different person. The either-route list and its "then also ask" lead-in
+  (20261031v to 20261101t) are superseded. `process_page` now keeps a
+  `<p>` inside a shared step as it is instead of wrapping it in another
+  `<p>`.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the

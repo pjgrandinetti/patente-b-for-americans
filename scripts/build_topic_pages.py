@@ -473,11 +473,11 @@ def process_page(problems):
         if not lm:
             problems.append(f"license process: shared step {n} opens with no bold label"); continue
         out.append(_heading(lm.group(1), seen, heads, f"Step {n}: ", level=2))
-        for chunk in re.split(r"(<ul>.*?</ul>)", lm.group(2), flags=re.S):
+        for chunk in re.split(r"(<ul>.*?</ul>|<p>.*?</p>)", lm.group(2), flags=re.S):
             chunk = chunk.strip()
             if not chunk:
                 continue
-            out.append(chunk if chunk.startswith("<ul>") else f"<p>{chunk}</p>")
+            out.append(chunk if chunk.startswith(("<ul>", "<p>")) else f"<p>{chunk}</p>")
         step0 = n
     section(intro_rest, 2)
     for route, pane in panes:
