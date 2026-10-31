@@ -5891,6 +5891,12 @@ to areas open to the public, and the two Reference rows whose only source was
   maintainer, 2026-11-01)**: every school in an area deals with the same
   offices, so it does not tell schools apart; the driving test step of
   both routes still says the town may differ.
+  **The language question names the publisher (20261101b, maintainer):**
+  ask which publisher's textbook and software the school uses and whether
+  it can get the textbook in English; many schools work with SIDA, whose
+  manual has an English edition. The Italian face gained the publisher
+  question alone (no English). The maintainer's own school uses SIDA; the
+  English edition is his report, not checked against a catalogue.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
