@@ -5852,6 +5852,13 @@ to areas open to the public, and the two Reference rows whose only source was
   only), then "If you enroll, also ask:" with the two school-route
   questions (enrollment itemized; studying on your own and the mock score
   before booking).
+  **Titled "Deciding between a driving school and the private route" since
+  20261031w** (maintainer): the paragraph opens on the cost difference
+  (pointing at each route's Cost paragraph), then says that either way a
+  school is needed, since even on the cheaper private route the lessons
+  are taken at one and the test is almost always in its car, so compare
+  schools before deciding. Italian: "Autoscuola o privatista: come
+  decidere."
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
