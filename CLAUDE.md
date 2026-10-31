@@ -6182,6 +6182,25 @@ to areas open to the public, and the two Reference rows whose only source was
   and the Italian name is the one the learner will use. A rule settled
   earlier in the day (20261102a) was undone by the rewrite; a rewrite
   must be read against every rule the passage already carries.
+  **The rest of the How-to was then read the same way (20261102i,
+  maintainer: "now review the rest of the How-to").** Every passage in
+  both faces, with the rules of step 3: one idea per sentence (every
+  semicolon and mid-sentence colon split, the compound sentences on the
+  6 hours, the companion, the attempts and the deposit broken up); every
+  doctor and document named ("the Ministry-authorized doctor", never
+  "the authorized doctor" or "this doctor"; "the driving test", never
+  "it"); no metaphor or jargon ("running their sheets", "exam dates are
+  running", "legal windows", "12-month window" are gone); nothing the
+  reader does not need ("This is the second medical visit" opens neither
+  route's medical step, which now opens on what that doctor issues);
+  "here" is "this app"; step 1 no longer says "before anything else" and
+  then "you can start on the steps below". The medical step's yes
+  paragraph now says the commission "can still approve you, but it adds
+  months". The companion sentence names the higher-category case of
+  art. 122 c. 2. The school's theory step points at the step 2 question
+  on this app as proof of readiness. The Italian face carries the same
+  changes; it has no non-EU-license or English-school paragraph, by
+  design. `docs/howto-prose-en.txt` refreshed.
   **Flags of 2026-10-25, evening (20261025u).** 18427: a bicycle may ride
   through a pedestrian area (art. 3 n. 2 names velocipedi) but not along a
   pedestrian path, the blue round sign, where it is pushed; said in the
