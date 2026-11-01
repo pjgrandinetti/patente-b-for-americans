@@ -5079,6 +5079,28 @@ behind what shipped:
 - **`/BingSiteAuth.xml` 404s**, so bingbot came looking for a verification that
   does not exist. Bing Webmaster Tools imports from Google Search Console and
   feeds Copilot. Not set up.
+- **The host's bot-check splash is never served as the app or cached as it
+  (20261102u, maintainer's screenshot, 2026-11-01).** GreenGeeks runs
+  Imunify360 in front of the site, and it sometimes answers a request with
+  its splash, "Please wait while your request is being verified", as 200 OK
+  text/html in place of the file asked for. Two things made that worse than
+  a few seconds' wait. The splash's own inline script and stylesheet are
+  blocked by our Content-Security-Policy, which the host applies to its
+  page too, so it stood unstyled in giant type and never redirected. And
+  the worker's network-first branch cached any 200 HTML answer to a
+  navigation as the shell, and any 200 answer to app.js as app.js, so the
+  splash came back from the cache after the host had cleared the device.
+  `impostor(pathname, resp)` in sw.js now says no to a .js, .css or .json
+  answered as text/html, and to a shell (/ or /index.html) whose body lacks
+  `name="apple-mobile-web-app-title"`, the one meta tag no other page on
+  the host carries; the install step and the fetch handler then keep the
+  last good copy and cache nothing. With nothing cached the splash is still
+  handed to the page, since the host's check is the only way past it. The
+  CSP was NOT loosened for the splash. The host-side fix, asking GreenGeeks
+  to exempt the domain from the challenge or whitelist the maintainer's IP,
+  is his; the app likely trips it on its own (a standalone PWA with no
+  referrer, sync.php every five minutes, the image precache in one burst).
+  `scripts/check_sw_splash.js`, 12 checks; the previous build fails 6.
 - **The host rate-limits Facebook's scraper**: 129 requests from
   `facebookexternalhit` and four **429**s. That can make a link preview fail to
   render, which matters while Facebook is the only channel sending anyone.

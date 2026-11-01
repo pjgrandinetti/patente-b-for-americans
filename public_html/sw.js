@@ -15,7 +15,7 @@
  *     not just for images already viewed.
  */
 
-const CACHE_VERSION = 'patente-netfirst-20261102t';
+const CACHE_VERSION = 'patente-netfirst-20261102u';
 const BASE          = '';
 
 // Small app shell — versioned cache, network-first so code/UI updates apply at once.
@@ -73,6 +73,28 @@ async function isWholeJson(resp) {
 }
 const DATA_FILES = /\/(questions|vocabulary|topic_reviews)\.json$/;
 
+// A response that is NOT the file asked for. The host's security layer
+// (Imunify360 at GreenGeeks) sometimes answers a request with its bot-check
+// splash, "Please wait while your request is being verified", as 200 OK
+// text/html, in place of whatever was asked for (reported 2026-11-01 from an
+// installed app). Under the old handlers that page was served to the app AND
+// written into the cache as the shell, or as app.js, so it came back on the
+// next launch after the host had long since cleared the device. Two tests,
+// both cheap: a .js, .css or .json answered as text/html is not ours; and the
+// shell (/ or /index.html) must carry the home-screen title meta tag, which
+// no other page on this host has. A bad answer is never cached, and the
+// fetch handler serves the last good copy instead.
+const SHELL_MARK = 'name="apple-mobile-web-app-title"';
+const isShellPath = pathname => pathname === BASE + '/' || pathname === '/' || pathname === BASE + '/index.html';
+async function impostor(pathname, resp) {
+  const ct = (resp.headers.get('content-type') || '').toLowerCase();
+  if (/\.(?:js|css|json)$/.test(pathname)) return ct.includes('text/html');
+  if (isShellPath(pathname)) {
+    try { return !(await resp.clone().text()).includes(SHELL_MARK); } catch { return true; }
+  }
+  return false;
+}
+
 // Sign images — separate, version-independent cache, fully precached on install.
 const IMG_CACHE = 'patente-img-v1';
 // Images whose CONTENT changed under an existing file name. The image cache is
@@ -109,7 +131,7 @@ self.addEventListener('install', event => {
       try {
         const r = await fetch(new Request(u, { cache: 'no-cache' }));
         const len = r && r.headers.get('content-length');
-        if (r && r.ok && !(len !== null && Number(len) === 0)) await shell.put(u, r);
+        if (r && r.ok && !(len !== null && Number(len) === 0) && !(await impostor(new URL(u, self.location.origin).pathname, r))) await shell.put(u, r);
       } catch { /* offline or missing → handled at runtime */ }
     }));
 
@@ -293,7 +315,8 @@ self.addEventListener('fetch', event => {
           // shell/page response as a failure too.
           const len = resp && resp.headers.get('content-length');
           const empty = len !== null && len !== undefined && Number(len) === 0;
-          if (!resp || !resp.ok || empty) {
+          const bad = !resp || !resp.ok || empty || await impostor(url.pathname, resp);
+          if (bad) {
             const cached = await caches.match(req) || await caches.match(BASE + '/');
             if (cached) return cached;
             return resp;                      // nothing cached: show the real error
