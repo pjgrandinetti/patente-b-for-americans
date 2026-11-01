@@ -6647,6 +6647,17 @@ to areas open to the public, and the two Reference rows whose only source was
    private route's unsourced figures. Add, in the same release, the paragraph on
    choosing a school as an experienced driver (note 7 there).
 
+5. **Ask GreenGeeks about Imunify360** (maintainer, 2026-11-01). The
+   bot-check splash "Please wait while your request is being verified" is
+   shown to visitors in place of the app, and our CSP stops it completing
+   (see 20261102u). The ticket to send: exempt patente.physyapps.com from
+   the Imunify360 anti-bot challenge, or name the cPanel setting that
+   controls it; failing that, whitelist the maintainer's IP; and, in the
+   same ticket, allow OAI-SearchBot through (403 since 1 September, nothing
+   in .htaccess or robots.txt refuses it). The draft is in the session of
+   2026-11-01; the facts it rests on are in "Who actually reaches the app"
+   and the 20261102u bullet.
+
 ## Open item: look-alike sign traps in the explanations (maintainer, 2026-09-30)
 
 Review every explanation in the sign topics (01 to 08) for statements that
