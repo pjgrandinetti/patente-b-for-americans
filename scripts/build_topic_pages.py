@@ -382,16 +382,40 @@ def slug_of(fname):
 PROCESS_SLUG  = "license-process"
 # Written for the reader most likely to search for it: an American living in
 # Italy, whose US license stops counting after a year and cannot be converted.
-# The <title> is kept to 42 characters so that with the 23-character suffix it
-# fits a search result; the h1 has room for the fuller wording.
-# The index and the licensing page aim at DIFFERENT searches on purpose
-# (2026-09-24): with the same words in both titles they would compete and
-# Google would usually show only one. The index is the hub, so it takes the
-# expat search; the licensing page takes "how to get".
-PROCESS_TITLE = "How to Get an Italian Driver's License, Step by Step"
-PROCESS_H1    = "How Americans Get an Italian Driver's License"
-PROCESS_DESC  = ("Your US license stops counting after a year in Italy and cannot be "
-                 "converted. Every step to an Italian license, with the cost and the timing.")
+# Since 20261102v the page is aimed at the query "Italian driving test for
+# Americans" (maintainer, 2026-11-01): the <title> IS that phrase, 38
+# characters, so with the 23-character suffix it fits a search result; the
+# h1 has room for the fuller wording. "Driving test" here means the whole
+# process, the way the pages that rank for the query use it, not the road
+# test alone. The index and the licensing page aim at DIFFERENT searches on
+# purpose (2026-09-24): with the same words in both titles they would compete
+# and Google would usually show only one. The index is the hub and takes the
+# expat-license search; this page takes the driving-test one.
+PROCESS_TITLE = "The Italian Driving Test for Americans"
+PROCESS_H1    = "The Italian Driving Test for Americans: Every Step to Your License"
+PROCESS_DESC  = ("No US license exchange, a theory exam in Italian only, and "
+                 "new-driver limits for three years. Every step to an Italian license, "
+                 "with the cost and the timing.")
+# The four facts every page that ranks for the query leads with, answered
+# before the steps begin, on this page only (the app's How-to panel is
+# unchanged). Each is stated in the How-to below or in the app's notes;
+# change them together.
+PROCESS_FIRST = [
+    ("No exchange.", "The United States and Italy have no license exchange agreement. "
+     "A US license lets you drive for your first 12 months of residency, and after "
+     "that it cannot be converted. You take the full theory exam and driving test "
+     "like any new driver, whatever your experience."),
+    ("The theory exam is in Italian.", "Thirty true-or-false statements in 20 "
+     "minutes, with at most 3 errors allowed. Since 2011 it is given in Italian "
+     "only (German and French in Alto Adige and the Aosta Valley), and no "
+     "interpreter or dictionary is allowed in the room. That is what this app "
+     "prepares you for, in English first and then in Italian."),
+    ("A new driver for three years.", "Once licensed you are a <em>neopatentato</em> "
+     "for three years. The limits are 100 km/h on the autostrada instead of 130 and "
+     "90 km/h on a main extra-urban road instead of 110, and every point lost counts double."),
+    ("Cost and time.", "Through a driving school the whole process typically costs "
+     "€800 to €1,500 and takes 3 to 6 months. The details are in the steps below."),
+]
 INDEX_HTML = ROOT / "public_html" / "index.html"
 LABEL_RE = re.compile(r"^\s*<strong>(.*?)</strong>\s*(.*)$", re.S)
 
@@ -744,7 +768,8 @@ def build():
     if proc:
         pbody = (f'<div class="col">\n<h1>{html.escape(PROCESS_H1)}</h1>\n'
                  f'<p class="lede">{html.escape(PROCESS_DESC)}</p>\n'
-                 f'<p>{proc["lede"]}</p>\n{toc_html(pheads)}'
+                 + "".join(f"<p><strong>{html.escape(a)}</strong> {b}</p>\n" for a, b in PROCESS_FIRST)
+                 + f'<p>{proc["lede"]}</p>\n{toc_html(pheads)}'
                  f'<article>\n{proc["body"]}\n</article>\n{CTA}\n</div>')
         files[PROCESS_SLUG + ".html"] = page(
             title=PROCESS_TITLE,

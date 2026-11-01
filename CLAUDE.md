@@ -4914,7 +4914,16 @@ behind what shipped:
 - **`about/license-process.html` is the How-to panel as its own page**
   (added 2026-09-24 at the maintainer's request), titled "How to Get an
   Italian Driver's License, Step by Step" with the h1 "How Americans Get an
-  Italian Driver's License". **The index and this page target DIFFERENT
+  Italian Driver's License" until 20261102v. **Since 20261102v it is aimed
+  at the query "Italian driving test for Americans"** (maintainer,
+  2026-11-01): the title IS that phrase, the h1 "The Italian Driving Test
+  for Americans: Every Step to Your License", and under the h1 four
+  labelled paragraphs (`PROCESS_FIRST` in `build_topic_pages.py`) answer
+  what every page ranking for the query leads with: no US exchange, the
+  exam in Italian only, three years as a neopatentato, cost and time. They
+  are on the page only; the app's How-to panel is unchanged. A change to
+  those facts in the How-to or the notes is a change there too. The
+  index keeps its expat-license title so the two pages do not compete. **The index and this page target DIFFERENT
   searches on purpose**: the index is the hub and carries the expat search
   ("Italian Driver's License for American Expats — Patente B Guide", h1 "The
   Italian Driver's License: A Guide for American Expats"), this page carries
