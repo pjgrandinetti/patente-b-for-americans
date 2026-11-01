@@ -381,10 +381,10 @@ body {
 .exam-date-box .btn-secondary { padding: .3rem .8rem; border-radius: 8px; font: inherit; cursor: pointer; }
 .exam-date-box .exam-date-text strong { display: block; }
 .exam-date-box .exam-date-advice { margin: .3rem 0 .45rem; }
-.exam-date-box .exam-date-today { display: grid; grid-template-columns: max-content max-content; column-gap: 1.25rem; row-gap: .15rem; margin: 0 0 .2rem; }
+.exam-date-box .exam-date-today { display: grid; grid-template-columns: minmax(0, auto) minmax(0, 1fr); column-gap: 1.25rem; row-gap: .15rem; margin: 0 0 .2rem; }
 .exam-date-box .exam-date-today .exam-date-row { display: contents; }
 .exam-date-box .exam-date-today dt { color: var(--muted); }
-.exam-date-box .exam-date-today dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+.exam-date-box .exam-date-today dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
 /* The foglio rosa inside the pass box (20261030v): the two dates as a small
    form, then the rows and the three lesson blocks as a checklist. */
 .exam-date-box .foglio, .exam-date-box .foglio-form { margin-top: .9rem; padding-top: .8rem; border-top: 1px solid var(--border); }
