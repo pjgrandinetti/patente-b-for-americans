@@ -384,7 +384,13 @@ body {
 .exam-date-box .exam-date-today { display: grid; grid-template-columns: minmax(0, auto) minmax(0, 1fr); column-gap: 1.25rem; row-gap: .15rem; margin: 0 0 .2rem; }
 .exam-date-box .exam-date-today .exam-date-row { display: contents; }
 .exam-date-box .exam-date-today dt { color: var(--muted); }
-.exam-date-box .exam-date-today dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.exam-date-box .exam-date-today dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+/* The foglio rosa rows (20261102x) carry a full date and a day count, which no
+   phone can fit beside "Driving test possible from": each row is the label on
+   one line and the value on the next, as a phone's settings list does. */
+.exam-date-box .foglio .exam-date-today { display: block; }
+.exam-date-box .foglio .exam-date-today .exam-date-row { display: block; margin: .35rem 0; }
+.exam-date-box .foglio .exam-date-today dd { text-align: left; font-weight: 500; }
 /* The foglio rosa inside the pass box (20261030v): the two dates as a small
    form, then the rows and the three lesson blocks as a checklist. */
 .exam-date-box .foglio, .exam-date-box .foglio-form { margin-top: .9rem; padding-top: .8rem; border-top: 1px solid var(--border); }
