@@ -5088,6 +5088,24 @@ behind what shipped:
 - **`/BingSiteAuth.xml` 404s**, so bingbot came looking for a verification that
   does not exist. Bing Webmaster Tools imports from Google Search Console and
   feeds Copilot. Not set up.
+- **GreenGeeks disabled the Imunify360 bot protection for
+  patente.physyapps.com on 2026-11-03** (ticket DAO-625-30379, at the
+  maintainer's request, after the splash was shown in place of the app).
+  The same ticket whitelisted two ModSecurity rules believed to have caused
+  the GPTBot and OAI-SearchBot 403s (confirm in the next access log). The
+  host says no rule targets facebookexternalhit, keeps no access logs from
+  September, and may still tighten rules host-wide during an attack, which
+  is a property of shared hosting. If the splash comes back, cite the
+  ticket.
+- **Search Console, 2026-11-03: the home page, /about/ and the licensing
+  page are "Crawled - currently not indexed"** (crawled 1 November, fetch
+  successful, indexing allowed, canonical accepted). Nothing technical
+  blocks them. italiano.physyapps.com is indexed, with physyapps.com and
+  physyapps.com/math-functions/ as its referring pages; the patente pages
+  list none, although physyapps.com links to the app in its menu and on an
+  app card (unquoted `href=`, so a grep for `href="` misses them).
+  Indexing was requested for the licensing page; request it for
+  physyapps.com/ so Google reads the link, and earn links from elsewhere.
 - **The host's bot-check splash is never served as the app or cached as it
   (20261102u, maintainer's screenshot, 2026-11-01).** GreenGeeks runs
   Imunify360 in front of the site, and it sometimes answers a request with
@@ -6655,19 +6673,6 @@ to areas open to the public, and the two Reference rows whose only source was
    paragraphs of both routes once the final total is known, and fill the
    private route's unsourced figures. Add, in the same release, the paragraph on
    choosing a school as an experienced driver (note 7 there).
-
-5. **GreenGeeks ticket DAO-625-30379 on Imunify360** (maintainer,
-   2026-11-01). The bot-check splash "Please wait while your request is
-   being verified" was shown to visitors in place of the app, and our CSP
-   stops it completing (see 20261102u). Level 2 found no extra measures on
-   the domain, whitelisted two ModSecurity rules for the OpenAI bots' 403s
-   (check the next access log), and offered to disable the bot protection
-   for patente.physyapps.com. The maintainer CONFIRMED the disable on
-   2026-11-03 and asked whether Googlebot had been served the challenge
-   (the site was absent from a site: search that day, while
-   italiano.physyapps.com is indexed) and whether facebookexternalhit is
-   rate-limited. Record their answer in "Who actually reaches the app",
-   then run Search Console's URL Inspection on the home page and /about/.
 
 ## Open item: look-alike sign traps in the explanations (maintainer, 2026-09-30)
 
