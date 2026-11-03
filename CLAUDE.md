@@ -6656,16 +6656,18 @@ to areas open to the public, and the two Reference rows whose only source was
    private route's unsourced figures. Add, in the same release, the paragraph on
    choosing a school as an experienced driver (note 7 there).
 
-5. **Ask GreenGeeks about Imunify360** (maintainer, 2026-11-01). The
-   bot-check splash "Please wait while your request is being verified" is
-   shown to visitors in place of the app, and our CSP stops it completing
-   (see 20261102u). The ticket to send: exempt patente.physyapps.com from
-   the Imunify360 anti-bot challenge, or name the cPanel setting that
-   controls it; failing that, whitelist the maintainer's IP; and, in the
-   same ticket, allow OAI-SearchBot through (403 since 1 September, nothing
-   in .htaccess or robots.txt refuses it). The draft is in the session of
-   2026-11-01; the facts it rests on are in "Who actually reaches the app"
-   and the 20261102u bullet.
+5. **GreenGeeks ticket DAO-625-30379 on Imunify360** (maintainer,
+   2026-11-01). The bot-check splash "Please wait while your request is
+   being verified" was shown to visitors in place of the app, and our CSP
+   stops it completing (see 20261102u). Level 2 found no extra measures on
+   the domain, whitelisted two ModSecurity rules for the OpenAI bots' 403s
+   (check the next access log), and offered to disable the bot protection
+   for patente.physyapps.com. The maintainer CONFIRMED the disable on
+   2026-11-03 and asked whether Googlebot had been served the challenge
+   (the site was absent from a site: search that day, while
+   italiano.physyapps.com is indexed) and whether facebookexternalhit is
+   rate-limited. Record their answer in "Who actually reaches the app",
+   then run Search Console's URL Inspection on the home page and /about/.
 
 ## Open item: look-alike sign traps in the explanations (maintainer, 2026-09-30)
 
