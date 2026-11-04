@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261102y';
+const APP_VERSION     = '20261102z';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1899,6 +1899,7 @@ These points are not in the circular. They are what an American driver is most
 likely to miss.
 
 - If you have driven only automatics, you have two choices. You can take the lessons and the test in an automatic, if the school has one, and accept a license with code 78, which does not let you drive a manual. Or you can learn the manual gearbox, and then plan on more lessons and more time before the test than the 6 hours required.
+- Newer manual cars may behave differently on a hill from the ones you learned on. Many hold the brakes for about 2 seconds after you lift your foot from the brake pedal, so the car does not roll back while you move your foot. Some also move off as you slowly lift the clutch, with little or no gas. Ask your instructor how the school's car behaves, and start lifting the clutch promptly, since the hold ends after those seconds. The words to know are *frizione* (clutch), *acceleratore* (gas pedal), *freno* (brake), *freno a mano* (parking brake) and *prima marcia* (first gear).
 - In the US you usually take the road test in your own car. Here you take it in the school's car, which you may first drive at your lessons. Ask to take your last lessons in the car you will be tested in, so that its clutch, brakes and size are familiar.
 - The examiner gives directions in Italian. Learn the usual directions before the test, so that a word you miss does not become a wrong turn.
 

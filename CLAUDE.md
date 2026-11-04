@@ -2973,6 +2973,17 @@ behind what shipped:
   own car (state DMVs, e.g. Connecticut and Vermont), here in the school's,
   so ask to take the last lessons in the car you will be tested in (advice,
   not a rule).
+  **Hill starts in a newer manual car (20261102z, maintainer's first
+  lesson, in a Fiat Panda, 2026-11-03).** He drove manuals before about
+  2015 and could not follow the instructor's Italian on this, so the
+  American section gained a bullet, after the automatic-only point: many
+  newer manuals hold the brakes for about 2 seconds (Kia's and Fiat's
+  manuals; the Panda's Hill Holder is part of its ESC, on some versions),
+  some move off on the clutch with little or no gas (no carmaker's
+  document found, hence "some"), ask how the school's car behaves, and the
+  five pedal words, all from the bank or circular 28819. Not in the bullet:
+  "Hill Holder", which is Fiat's name, and *partenza in salita*, in neither
+  source. The circular has no rule on hill starts.
   **The autostrada is on the route (20261031g, maintainer's question:
   what if a learner fears the autostrada?).** Part 3 said the drive "may
   include" its list; circular 28819 says the candidate MUST perform the
