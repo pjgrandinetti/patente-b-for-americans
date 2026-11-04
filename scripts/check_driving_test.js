@@ -53,7 +53,7 @@ setTimeout(()=>{
     if(pp) pp.click();
     ok(!!pp && /permesso di\s+soggiorno in corso di validità/.test(pp.nextElementSibling.textContent) && /41095/.test(permit.innerHTML),'the residence permit paragraph (20261031a) cites 41095 and its pill opens its own Italian twin');
     const habits=heads.indexOf('For American drivers');
-    ok(habits===7 && (body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'),body.innerHTML.indexOf('Directions the examiner gives')).match(/<li/g)||[]).length===3 && !/STOP sign/.test(txt) && !/parallel parking[\s\S]*rb-it/.test(body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'))),'the American section closes the page with its three points (20261031f) and no pill');
+    ok(habits===7 && (body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'),body.innerHTML.indexOf('Directions the examiner gives')).match(/<li/g)||[]).length===4 && !/STOP sign/.test(txt) && !/parallel parking[\s\S]*rb-it/.test(body.innerHTML.slice(body.innerHTML.indexOf('For American drivers'))),'the American section closes the page with its four points (20261102z) and no pill');
     { const dh=heads.indexOf('Directions the examiner gives');
       const sp=[...body.querySelectorAll('.dt-speak')], said=[];
       w.speakItalian=t=>said.push(t);
