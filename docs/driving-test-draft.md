@@ -108,13 +108,13 @@ candidates most often go wrong.
 
 - A roundabout is a junction, and each exit is a turn.
 - Approach slowly and be ready to yield. Nearly every roundabout has a yield sign at its entrances, which gives priority to the cars already inside. Where there is no sign, the car entering has priority, by the rule of yielding to the right.
-- Never signal left as you enter a single-lane roundabout.
+- On a single-lane roundabout, you do not need to signal left as you enter.
 - To leave by the first exit, signal right as you approach. For a later exit, signal right just after you pass the exit before yours.
 - On a roundabout with two or more lanes, the lane you use depends on your exit:
   - to exit right, approach near the right edge and keep to the right lane;
   - to go straight in light traffic, keep to the right lane and signal right just before your exit;
   - to go straight in heavy traffic, enter in a free lane and keep it, then move to the right lane with a signal before your exit;
-  - to exit left, approach in the left lane as for a left turn, signal left as you enter, and keep to the left lane. Before your exit, signal right and move to the right lane without cutting anyone off. If heavy traffic keeps you out of the left lane, stay in the right lane all the way round.
+  - to exit left, approach in the left lane as for a left turn, signal left as you enter, keep the signal on, and stay in the left lane. Before your exit, signal right and move to the right lane without cutting anyone off. If heavy traffic keeps you out of the left lane, stay in the right lane all the way round.
 
 ## What the examiner judges
 
@@ -283,13 +283,13 @@ che i candidati sbagliano più spesso.
 
 - Una rotatoria è un'intersezione, e ogni uscita è una svolta.
 - Avvicinati lentamente e preparati a dare la precedenza. Quasi tutte le rotatorie hanno il segnale di dare precedenza agli ingressi, che dà la precedenza a chi è già dentro. Dove il segnale manca, ha la precedenza chi entra, per la regola della precedenza a destra.
-- Non segnalare mai a sinistra entrando in una rotatoria a una corsia.
+- In una rotatoria a una corsia non è necessario segnalare a sinistra entrando.
 - Per uscire alla prima uscita, segnala a destra mentre ti avvicini. Per un'uscita successiva, segnala a destra subito dopo aver superato l'uscita che precede la tua.
 - In una rotatoria con due o più corsie, la corsia dipende dalla tua uscita:
   - per uscire a destra, avvicinati vicino al margine destro e resta nella corsia di destra;
   - per proseguire dritto con poco traffico, resta nella corsia di destra e segnala a destra subito prima della tua uscita;
   - per proseguire dritto con traffico intenso, entra in una corsia libera e mantienila, poi spostati nella corsia di destra segnalando prima della tua uscita;
-  - per uscire a sinistra, avvicinati nella corsia di sinistra come per una svolta a sinistra, segnala a sinistra entrando e resta nella corsia di sinistra. Prima della tua uscita, segnala a destra e spostati nella corsia di destra senza tagliare la strada a nessuno. Se il traffico intenso ti impedisce di prendere la corsia di sinistra, resta nella corsia di destra per tutto il giro.
+  - per uscire a sinistra, avvicinati nella corsia di sinistra come per una svolta a sinistra, segnala a sinistra entrando, tieni la freccia inserita e resta nella corsia di sinistra. Prima della tua uscita, segnala a destra e spostati nella corsia di destra senza tagliare la strada a nessuno. Se il traffico intenso ti impedisce di prendere la corsia di sinistra, resta nella corsia di destra per tutto il giro.
 
 ## Che cosa valuta l'esaminatore
 

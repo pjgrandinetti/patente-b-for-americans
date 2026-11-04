@@ -2956,6 +2956,14 @@ behind what shipped:
   overlay opens; the 87 pills, the 24 speakers and the flags are checked
   there as before. "It is a tile in the dashboard box" above now means a
   section of the inline page.
+  **The left signal on a single-lane roundabout (20261102y, maintainer's
+  first lesson, 2026-11-03).** His instructor taught signalling left before
+  entering for a left exit, and the page said "never". Circular 28819
+  para. d.1 says only that the left signal is *non necessario*, so the page
+  and its Summary now say it is not needed, in both halves. For a left exit
+  on two or more lanes, para. d.4 keeps the signal on around the ring, which
+  the page now says too. Going straight there is no signal at entry. Read
+  the circular itself (the PDF on mit.gov.it) before tightening a rule here.
   **The test car (20261031f, maintainer).** "How the test works" says, in
   both halves, what circular 28819 para. 7.1 and Code art. 121 c. 9 say:
   dual controls at least for clutch and brake, at least 100 km/h, a
