@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261103a';
+const APP_VERSION     = '20261103b';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1802,6 +1802,7 @@ reverse, on level ground or on a slope. Then
 you pull out again.
 
 - Before you start, check behind and to both sides.
+- The rules set no method for parking. Your instructor will probably teach reference points for the school's car, such as where to line up your mirror and how far to turn the wheel. Use them as a starting point, and check your angle as you reverse, since the car beside you may be longer or shorter than the one you practiced with.
 - The exact distance from the curb does not matter. What matters is that you hit no other vehicle, put nobody at risk, block no traffic, and finish parallel to the curb and inside the bay.
 - To pull out, signal, check every mirror and both blind spots, then move off promptly and join the right lane.
 
@@ -2025,6 +2026,7 @@ a spina di pesce, in avanti o in retromarcia, in piano o in pendenza. Poi esci
 di nuovo dal posto.
 
 - Prima di iniziare, controlla dietro e su entrambi i lati.
+- Le regole non stabiliscono un metodo per parcheggiare. L'istruttore ti insegnerà probabilmente dei punti di riferimento per l'auto della scuola, per esempio dove allineare lo specchietto e quanto girare il volante. Usali come punto di partenza e controlla l'angolo mentre fai retromarcia, perché l'auto accanto può essere più lunga o più corta di quella con cui hai fatto pratica.
 - La distanza esatta dal marciapiede non conta. Conta che tu non urti altri veicoli, non metta in pericolo nessuno, non intralci il traffico e finisca parallelo al marciapiede e dentro lo stallo.
 - Per uscire, segnala, controlla tutti gli specchi ed entrambi gli angoli ciechi, poi parti senza esitare e immettiti nella corsia di destra.
 

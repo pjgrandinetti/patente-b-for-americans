@@ -2992,6 +2992,14 @@ behind what shipped:
   before stopping; the right signal and reverse; the reversing posture and
   the glances; steer left before the end; look both ways, yield, and go.
   The page now carries 92 pills.
+  **Parking: no method is prescribed (20261103b, maintainer's first
+  lesson).** Circular 28819 para. c judges the result, so the section
+  gained one bullet in both halves: the rules set no method, an instructor
+  teaches reference points for the school's car, and the car beside you may
+  differ in length. His instructor's steps (mirror aligned with the car
+  ahead, one rotation right, two left at its back corner) are NOT on the
+  page: they are one routine for one car. The length point is our own
+  reasoning, unsourced. The page carries 93 pills.
   **The autostrada is on the route (20261031g, maintainer's question:
   what if a learner fears the autostrada?).** Part 3 said the drive "may
   include" its list; circular 28819 says the candidate MUST perform the

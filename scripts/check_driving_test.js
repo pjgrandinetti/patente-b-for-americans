@@ -38,7 +38,7 @@ setTimeout(()=>{
   if(!IT){
     const lis=[...body.querySelectorAll('[data-rb]')];
     const withPill=lis.filter(e=>e.querySelector(':scope > .rb-it')).length;
-    ok(withPill===92,'every block with an Italian twin carries an IT pill: '+withPill+' of '+lis.length);
+    ok(withPill===93,'every block with an Italian twin carries an IT pill: '+withPill+' of '+lis.length);
     { const fear=lis.find(e=>/^Many learners dread driving on the autostrada/.test(e.textContent)), fp=fear&&fear.querySelector(':scope > .rb-it');
       if(fp) fp.click();
       const host=fear&&fear.closest('li');
