@@ -2984,6 +2984,14 @@ behind what shipped:
   five pedal words, all from the bank or circular 28819. Not in the bullet:
   "Hill Holder", which is Fiat's name, and *partenza in salita*, in neither
   source. The circular has no rule on hill starts.
+  **Turning around follows the circular step by step (20261103a,
+  maintainer's first lesson).** The section's six steps became eleven in
+  both halves, from para. b of circular 28819: look, then signal, then the
+  left mirror again; walking pace; stop before the left edge, about a meter
+  from a wall or parked cars where there is no sidewalk; steer right just
+  before stopping; the right signal and reverse; the reversing posture and
+  the glances; steer left before the end; look both ways, yield, and go.
+  The page now carries 92 pills.
   **The autostrada is on the route (20261031g, maintainer's question:
   what if a learner fears the autostrada?).** Part 3 said the drive "may
   include" its list; circular 28819 says the candidate MUST perform the

@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261102z';
+const APP_VERSION     = '20261103a';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1783,11 +1783,16 @@ must do it in several moves, even if the road is wide enough to turn in one.
 The examiner tells you this before you start.
 
 - Start at the right edge of the road, in first gear.
-- Look ahead, behind and to both sides.
-- Switch on the left turn signal, then move forward slowly while turning the wheel.
-- Stop close to the left edge without the front of the car going over the curb.
-- Turn the wheel the other way, switch on the right turn signal, and reverse.
-- Select first gear, switch on the left turn signal, check the traffic, and pull out into the right lane.
+- Look ahead, behind and to both sides. Use the inside and left mirrors, and turn your head to the left to check the blind spot.
+- When nothing is coming, switch on the left turn signal and check the left mirror again.
+- Move forward at walking pace, steering quickly to the left.
+- Stop before the left edge. The front of the car must not go over the sidewalk. If there is no sidewalk, stop about a meter (1.1 yd) from the wall or the parked cars.
+- Just before you reach that point, steer quickly to the right.
+- Switch on the right turn signal and select reverse.
+- Keep your left hand on top of the wheel and, if possible, your right arm on the back of the passenger seat. Look back through the rear window, then glance quickly ahead, to your right and to your left.
+- Reverse at moderate speed, far enough to leave room for the last move. Steer quickly to the left before the end.
+- Select first gear and switch on the left turn signal.
+- Look right and left, yield to any vehicle that is coming, and move promptly into the right lane.
 
 ### Parking (*parcheggio*)
 
@@ -2002,11 +2007,16 @@ farlo in più manovre, anche se la strada è abbastanza larga per girare in una
 sola. L'esaminatore te lo dice prima di iniziare.
 
 - Parti dal margine destro della strada, in prima.
-- Guarda avanti, dietro e su entrambi i lati.
-- Accendi l'indicatore sinistro, poi avanza lentamente sterzando.
-- Fermati vicino al margine sinistro senza che la parte anteriore dell'auto salga sul marciapiede.
-- Sterza dalla parte opposta, accendi l'indicatore destro e fai retromarcia.
-- Inserisci la prima, accendi l'indicatore sinistro, controlla il traffico e immettiti nella corsia di destra.
+- Guarda avanti, dietro e su entrambi i lati. Usa lo specchietto interno e quello sinistro, e gira la testa a sinistra per controllare l'angolo morto.
+- Quando non arriva nessuno, accendi l'indicatore sinistro e controlla di nuovo lo specchietto sinistro.
+- Avanza a passo d'uomo, sterzando rapidamente a sinistra.
+- Fermati prima del margine sinistro. La parte anteriore dell'auto non deve salire sul marciapiede. Se il marciapiede manca, fermati a circa un metro dal muro o dalle auto parcheggiate.
+- Poco prima di quel punto, sterza rapidamente a destra.
+- Accendi l'indicatore destro e inserisci la retromarcia.
+- Tieni la mano sinistra sulla parte alta del volante e, se possibile, il braccio destro sullo schienale del sedile del passeggero. Guarda indietro attraverso il lunotto, poi dai uno sguardo rapido avanti, a destra e a sinistra.
+- Fai retromarcia a velocità moderata, per un tratto sufficiente all'ultima manovra. Prima della fine sterza rapidamente a sinistra.
+- Inserisci la prima e accendi l'indicatore sinistro.
+- Guarda a destra e a sinistra, dai la precedenza a chi arriva e immettiti rapidamente nella corsia di destra.
 
 ### Il parcheggio
 
