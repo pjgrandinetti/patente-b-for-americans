@@ -524,6 +524,12 @@ body {
 .dash-topics-box > .topic-grid { padding: 1.1rem 1.35rem 1.35rem; margin-bottom: 0; }
 .dash-topics-box > .drive-body { padding: 0 1.35rem 1.35rem; }
 .dash-topics-box > .drive-body h3:first-child { margin-top: .4rem; }
+/* Each maneuver folds on its own (20261103c). */
+.drive-body .dt-fold { border: 1px solid var(--border); border-radius: 8px; margin: .6rem 0; }
+.drive-body .dt-fold > summary { cursor: pointer; padding: .6rem .8rem; list-style-position: inside; }
+.drive-body .dt-fold > summary h4 { display: inline; margin: 0; }
+.drive-body .dt-fold[open] > summary { border-bottom: 1px solid var(--border); }
+.drive-body .dt-fold > :not(summary) { margin-left: .8rem; margin-right: .8rem; }
 @media (max-width: 440px) { .dash-topics-box > .drive-body { padding: 0 .9rem 1rem; } }
 @media (max-width: 440px) { .dash-topics-box > .topic-grid { padding: .9rem .9rem 1rem; } }
 .topic-card {

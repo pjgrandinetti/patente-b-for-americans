@@ -32,6 +32,8 @@ setTimeout(()=>{
   const body=dbox.querySelector('.drive-body'), txt=body.textContent;
   ok(!$('review-overlay') || $('review-overlay').classList.contains('hidden'),'no overlay opens');
   const heads=[...body.querySelectorAll('h3')].map(h=>h.textContent);
+  const folds=[...body.querySelectorAll('details.dt-fold')];
+  ok(folds.length===5 && folds.every(d=>!d.open && d.querySelector(':scope > summary h4') && d.children.length>1),'the five maneuvers fold, closed, each with its text inside (20261103c): '+folds.map(d=>d.querySelector('h4')?.textContent).join(' | '));
   ok(heads.length===(IT?7:9),'six parts and the summary (20261031b), and the habits in English only: '+heads.join(' | '));
   ok(IT ? /circolare 28819/.test(txt) && /frenata di precisione/.test(txt) : /circular 28819/.test(txt) && /several moves/.test(txt),'the opening names the circular, and the maneuvers are there');
   ok(IT ? !/[a-z] the [a-z]/.test(txt) && !body.querySelector('.rb-it') : true,'an Italian browser sees no English and no pills');

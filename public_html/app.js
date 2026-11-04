@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261103b';
+const APP_VERSION     = '20261103c';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -5176,6 +5176,7 @@ function paintDriveTestBox() {
     body.innerHTML = renderMarkdownSubset(md, pairs, twins, 'it', caps);
     addDriveTestSpeak(body);
     addDriveTestFlags(body, lang);
+    foldDriveManeuvers(body);
     body.dataset.rendered = key;
   }
 }
@@ -11083,6 +11084,28 @@ function addDriveTestSpeak(body) {
     });
   }
 }
+// Each maneuver of the driving test page folds into its own closed disclosure
+// (20261103c, maintainer). The headings of parts 2 and 3 are the circular's
+// own list of maneuvers, roundabouts included, so the fold is by position: the
+// ### headings under the third and fourth ## headings, in either language.
+// Run last, since the flags and the speakers walk the page as rendered.
+function foldDriveManeuvers(body) {
+  let part = 0;
+  [...body.children].forEach(el => {
+    if (el.tagName === 'H3') { part++; return; }
+    if (el.tagName !== 'H4' || (part !== 3 && part !== 4)) return;
+    const box = document.createElement('details');
+    box.className = 'dt-fold';
+    const sum = document.createElement('summary');
+    el.parentNode.insertBefore(box, el);
+    sum.appendChild(el);
+    box.appendChild(sum);
+    while (box.nextElementSibling && !/^H[34]$/.test(box.nextElementSibling.tagName)) {
+      box.appendChild(box.nextElementSibling);
+    }
+  });
+}
+
 function addDriveTestFlags(body, lang = reviewLang) {
   const set = entryFlagSet();
   if (!set) return;

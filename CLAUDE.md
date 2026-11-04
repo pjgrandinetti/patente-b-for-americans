@@ -3000,6 +3000,13 @@ behind what shipped:
   ahead, one rotation right, two left at its back corner) are NOT on the
   page: they are one routine for one car. The length point is our own
   reasoning, unsourced. The page carries 93 pills.
+  **Each maneuver is a closed disclosure (20261103c, maintainer).**
+  `foldDriveManeuvers`, run last in `paintDriveTestBox`, wraps every ###
+  heading of parts 2 and 3 in `details.dt-fold`: reversing, turning around,
+  parking, stopping at a given point, and roundabouts, which the circular
+  lists among the maneuvers. By position, the third and fourth ## headings,
+  so both languages fold alike; a new ## before them moves the fold. The
+  overlay path (`openDrivingTest`) does not fold.
   **The autostrada is on the route (20261031g, maintainer's question:
   what if a learner fears the autostrada?).** Part 3 said the drive "may
   include" its list; circular 28819 says the candidate MUST perform the
