@@ -5148,6 +5148,20 @@ behind what shipped:
   app card (unquoted `href=`, so a grep for `href="` misses them).
   Indexing was requested for the licensing page; request it for
   physyapps.com/ so Google reads the link, and earn links from elsewhere.
+- **Each sitemap page carries its OWN lastmod since 20261103d** (maintainer,
+  2026-11-09: patente's SEO is the priority). All thirty used to carry the
+  day the sitemap was last rebuilt, and a search engine ignores dates that
+  never differ. `page_lastmod` in `build_topic_pages.py` dates a page today
+  when the build rewrites it or it differs from HEAD, and otherwise by the
+  last commit touching its file; "/" is dated by `public_html/index.html`.
+  `--check` still masks the dates, so a date alone is never staleness, but a
+  build writes a sitemap whose dates moved. The same day's audit found the
+  rest sound: every sitemap page answers 200 with its own canonical, title,
+  description, one h1 and JSON-LD, the topic pages link previous and next,
+  and the app links `/about/`. The italiano site's home page declared a
+  relative canonical (`carte/`) and `/carte/` none, which Search Console
+  reported as a duplicate; both now name `https://italiano.physyapps.com/carte/`
+  (in that repo, uncommitted, for the maintainer to commit).
 - **The host's bot-check splash is never served as the app or cached as it
   (20261102u, maintainer's screenshot, 2026-11-01).** GreenGeeks runs
   Imunify360 in front of the site, and it sometimes answers a request with
