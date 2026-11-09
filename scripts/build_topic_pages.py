@@ -557,6 +557,9 @@ ABOUT_MD = ROOT / "pages" / "about.md"
 # guide page link to from their footers.
 CREDITS_MD   = ROOT / "IMAGE-CREDITS.md"
 CREDITS_TITLE = "Image Credits"
+# The search title (20261103g): "Image Credits" was 13 characters, and Bing
+# asks for 50 to 60. The heading on the page and the links keep the short name.
+CREDITS_SEO_TITLE = "Road Sign Image Credits and Licenses — Patente B in English"
 CREDITS_DESC  = "Sources, authors and licences of the road-sign figures used in the Patente B Study App for Americans and on these pages."
 
 def credits_page():
@@ -799,7 +802,7 @@ def build():
     # the credits page
     ccanon = BASE + CREDITS_SLUG + ".html"
     files[CREDITS_SLUG + ".html"] = page(
-        title=CREDITS_TITLE, desc=CREDITS_DESC, canonical=ccanon, body=credits_page(), footer=footer,
+        title=CREDITS_SEO_TITLE, desc=CREDITS_DESC, canonical=ccanon, body=credits_page(), footer=footer,
         crumb='<a href="index.html">Home</a> &rsaquo; Image credits',
         jsonld={
             "@context": "https://schema.org", "@type": "WebPage",
