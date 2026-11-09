@@ -5133,6 +5133,10 @@ behind what shipped:
   in index.html's head, which must stay there or the site unverifies. Bing's
   own name for the alternative, `/BingSiteAuth.xml`, is still absent, which
   is why bingbot's request for it 404s.
+  Verified on 2026-11-09 after the upload; the sitemap was submitted the
+  same day and all 30 sitemap addresses through URL Submission (quota 100 a
+  day). Bing's own recommendations then listed IndexNow, thin pages and
+  short titles; none was acted on.
 - **GreenGeeks disabled the Imunify360 bot protection for
   patente.physyapps.com on 2026-11-03** (ticket DAO-625-30379, at the
   maintainer's request, after the splash was shown in place of the app).
