@@ -1,5 +1,5 @@
 title: Italian Driver's License for American Expats — About Patente B in English
-description: An American professor in Italy built a free study app for the Italian driver's license test, with every official question translated and explained.
+description: Unlike apps for Italian learners, this app helps American drivers prepare for the Italian Patente B written test, teaching road rules and exam vocabulary and grammar in English and Italian. Free, open source, no ads, no account.
 ---
 
 # A free Patente B study app for Americans
