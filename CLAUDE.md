@@ -5136,7 +5136,15 @@ behind what shipped:
   Verified on 2026-11-09 after the upload; the sitemap was submitted the
   same day and all 30 sitemap addresses through URL Submission (quota 100 a
   day). Bing's own recommendations then listed IndexNow, thin pages and
-  short titles; none was acted on.
+  short titles.
+- **IndexNow (20261103f, maintainer, 2026-11-09).** The key file
+  `public_html/7f998e14198e70f01ce729f5e8272ca0.txt` holds the key and must
+  stay at the site root; the key is public by design. After a release is
+  uploaded, run `python3 scripts/indexnow.py`, which submits the sitemap
+  pages dated today (`--all` for every page, or name addresses). It reaches
+  Bing, Yandex, Seznam, Naver and the other IndexNow engines; Google does
+  not take part, so Search Console still covers Google. HTTP 200 or 202 is
+  success, 403 means the key file is not on the server.
 - **GreenGeeks disabled the Imunify360 bot protection for
   patente.physyapps.com on 2026-11-03** (ticket DAO-625-30379, at the
   maintainer's request, after the splash was shown in place of the app).
