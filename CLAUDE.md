@@ -5127,9 +5127,12 @@ behind what shipped:
   GPTBot is the TRAINING crawler and blocking it costs no discovery, while
   OAI-SearchBot feeds ChatGPT's live citations and blocking it removes the app
   from them. **Unresolved**: the maintainer has to find the setting.
-- **`/BingSiteAuth.xml` 404s**, so bingbot came looking for a verification that
-  does not exist. Bing Webmaster Tools imports from Google Search Console and
-  feeds Copilot. Not set up.
+- **Bing Webmaster Tools (20261103e, maintainer, 2026-11-09).** The
+  maintainer's account already held www.physyapps.com and an unverified
+  patente.physyapps.com. Patente is verified by the `msvalidate.01` meta tag
+  in index.html's head, which must stay there or the site unverifies. Bing's
+  own name for the alternative, `/BingSiteAuth.xml`, is still absent, which
+  is why bingbot's request for it 404s.
 - **GreenGeeks disabled the Imunify360 bot protection for
   patente.physyapps.com on 2026-11-03** (ticket DAO-625-30379, at the
   maintainer's request, after the splash was shown in place of the app).
