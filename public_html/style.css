@@ -30,7 +30,8 @@
   --card-bg:  #ffffff;
   --inset:    #f7f3ea; /* soft warm sand */
   --text:     #3c3640; /* warm charcoal */
-  --muted:    #8c8492; /* warm gray */
+  --muted:    #716a77; /* warm gray; was #8c8492, 3.5:1 on --bg, under the 4.5:1 minimum (20261103i) */
+  --muted-text: var(--muted);
   --border:   #ece5da; /* warm border */
   --radius:   12px;
   --shadow:   rgba(85, 70, 214, 0.10);
@@ -72,6 +73,7 @@
   --inset:    #272230;
   --text:     #ece7f1;
   --muted:    #a59caf;
+  --muted-text: var(--muted); /* 7.0:1 on --bg */
   --border:   #342e3e;
   --shadow:   rgba(0, 0, 0, 0.45);
 
@@ -879,7 +881,7 @@ body {
   text-align: center;
 }
 .app-footer p {
-  color: var(--muted);
+  color: var(--muted-text);
   font-size: .85rem;
   margin-bottom: .85rem;
 }
@@ -935,47 +937,43 @@ body {
   cursor: pointer;
   text-align: center;
   font-size: .72rem;
-  color: var(--muted);
-  opacity: .75;
+  color: var(--muted-text);
   padding: 4px 0;
   user-select: none;
 }
 .app-disclosures > summary::-webkit-details-marker { display: none; }
 .app-disclosures > summary::before { content: "▸ "; font-size: .7em; }
 .app-disclosures[open] > summary::before { content: "▾ "; }
-.app-disclosures > summary:hover { opacity: 1; }
+.app-disclosures > summary:hover { color: var(--text); }
 .app-disclaimer {
   max-width: 52ch;
   margin: .9rem auto 0;
   font-size: .72rem;
   line-height: 1.5;
-  color: var(--muted);
-  opacity: .85;
+  color: var(--muted-text);
 }
 .app-about {
   margin: 1rem auto 0;
   font-size: .8rem;
 }
-.app-about a { color: var(--muted); }
+.app-about a { color: var(--muted-text); }
 .app-about a:hover { color: var(--text); }
 .app-copyright {
   margin: 1rem auto 0;
   font-size: .68rem;
-  color: var(--muted);
-  opacity: .7;
+  color: var(--muted-text);
 }
 .app-version {
   margin: .35rem auto 0;
   font-size: .62rem;
-  color: var(--muted);
-  opacity: .5;
+  color: var(--muted-text);
   letter-spacing: .03em;
 }
 .kofi-btn {
   display: inline-flex;
   align-items: center;
   gap: .5rem;
-  background: #72a4f2;
+  background: #3a6fc4; /* was Ko-fi's #72a4f2, 2.5:1 with white text; this is 4.9:1 (20261103i) */
   color: #ffffff;
   font-size: .95rem;
   font-weight: 600;

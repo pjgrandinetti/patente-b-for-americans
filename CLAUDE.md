@@ -5193,6 +5193,20 @@ behind what shipped:
   by the CSP, which named only the theme script's hash: fixed in 20261103h,
   and `validate_data.py` now fails on any inline script whose hash is not in
   `.htaccess`.
+- **Accessibility 100 in both themes since 20261103i** (maintainer,
+  2026-11-09, after Lighthouse flagged contrast and spoken names). The light
+  theme's `--muted` went from #8c8492 (3.5:1 on --bg, under the 4.5:1
+  minimum) to #716a77 (5.0:1), which darkens every muted gray in light mode;
+  dark mode's #a59caf already passed at 7.0:1. The footer's fades (opacity .5
+  to .85 on the summary, disclaimer, copyright and version) are gone, since
+  they took even the dark gray under 4.5:1; `--muted-text` names the color
+  they use. The Ko-fi button's light blue went from Ko-fi's #72a4f2 (2.5:1
+  with white text) to #3a6fc4 (4.9:1). `applyTooltips` no longer copies a
+  tooltip into the spoken name of a control that shows a word, so
+  "Reference" and "Check for updates" are spoken as they read (WCAG 2.5.3); a
+  glyph-only control still gets the tooltip as its name. Measured with
+  Lighthouse on a local compressed server with `--blink-settings=
+  preferredColorScheme=0` and `=1`. PageSpeed Insights tests the light theme.
 - **The host's bot-check splash is never served as the app or cached as it
   (20261102u, maintainer's screenshot, 2026-11-01).** GreenGeeks runs
   Imunify360 in front of the site, and it sometimes answers a request with

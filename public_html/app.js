@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261103h';
+const APP_VERSION     = '20261103i';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1176,7 +1176,12 @@ function applyTooltips() {
     document.querySelectorAll(sel).forEach(el => {
       const txt = it ? itText : en;
       el.title = txt;
-      if (!el.getAttribute('aria-label')) el.setAttribute('aria-label', txt);
+      // The tooltip becomes the spoken name only for a control with no visible
+      // word (a glyph such as ↺ or ✕). A button that shows a word keeps it as
+      // its name, so a voice-control user can say what they see (WCAG 2.5.3;
+      // Lighthouse flagged Reference and Check for updates, 20261103i). The
+      // tooltip still reaches screen readers as the description.
+      if (!el.getAttribute('aria-label') && !/\p{L}{2,}/u.test(el.textContent || '')) el.setAttribute('aria-label', txt);
     });
   }
 }
