@@ -73,7 +73,7 @@
   # below; if you edit that inline script, recompute the hash (the page still
   # works, but the theme may flash for one frame). 'unsafe-inline' is permitted
   # for STYLES only, for the inline style="width:..%" progress bars.
-  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'sha256-ha43Xp+zvCrPyD3GYG4IZGjEsqmebz1zTic9Yp5vmoI='; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'sha256-ha43Xp+zvCrPyD3GYG4IZGjEsqmebz1zTic9Yp5vmoI=' 'sha256-L+yb1S0xfDyIllLA9770AnsDqg9CJh6lqDVYVEMK8hU='; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
 </IfModule>
 
 # The guide pages moved from /guide/ to /about/ on 2026-09-24. Googlebot had

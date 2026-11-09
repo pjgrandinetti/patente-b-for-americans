@@ -5177,6 +5177,22 @@ behind what shipped:
   relative canonical (`carte/`) and `/carte/` none, which Search Console
   reported as a duplicate; both now name `https://italiano.physyapps.com/carte/`
   (in that repo, uncommitted, for the maintainer to commit).
+- **Lighthouse, 2026-11-09 (live site, 12.6.1).** The guide pages score 100
+  in performance, accessibility, best practices and SEO. The app's home page
+  scored 55 mobile and 64 desktop, SEO 100: a layout shift of 0.72 (the
+  footer, painted early under the loading overlay, drops when the dashboard
+  fills in) and a total blocking time of 500 ms from app.js's boot. The shift
+  appears only when the data arrives slowly; on a local compressed server the
+  same page shows none. Hiding the screens while the overlay is up
+  (`visibility: hidden` keyed to `#app-loading:not(.hidden)`) took the shift
+  to 0 and the main-content time from 3 to 4 s to 13 s, so it was REVERTED;
+  hiding the footer alone only moved the shift to the dashboard. Do not try
+  either again. With this little traffic Google has no field data for
+  patente, so these lab numbers do not affect its ranking. The same run found
+  the blank-screen watchdog (the second inline script in index.html) blocked
+  by the CSP, which named only the theme script's hash: fixed in 20261103h,
+  and `validate_data.py` now fails on any inline script whose hash is not in
+  `.htaccess`.
 - **The host's bot-check splash is never served as the app or cached as it
   (20261102u, maintainer's screenshot, 2026-11-01).** GreenGeeks runs
   Imunify360 in front of the site, and it sometimes answers a request with

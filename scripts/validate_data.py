@@ -1060,6 +1060,28 @@ if m_app and m_sw and m_app.group(1) != m_sw.group(1):
 elif m_app and m_sw:
     print(f"version: {m_app.group(1)} (app.js and sw.js in sync)")
 
+# ── every inline script in index.html is allowed by the CSP (20261103h) ──
+# The Content-Security-Policy in .htaccess names each inline script by the
+# sha256 of its text. An edit to a script without a new hash makes the browser
+# refuse to run it, with nothing on screen to say so: the blank-screen watchdog
+# was blocked that way on the live site until 20261103h. JSON-LD blocks are
+# data, not scripts, and need no hash.
+import hashlib as _hl, base64 as _b64
+_idx = (ROOT / "public_html" / "index.html").read_text(encoding="utf-8")
+_hta = (ROOT / "public_html" / ".htaccess").read_text(encoding="utf-8")
+_csp = re.search(r"script-src([^;\"]*)", _hta)
+_allowed = set(re.findall(r"'(sha256-[A-Za-z0-9+/=]+)'", _csp.group(1))) if _csp else set()
+_inline = 0
+for _m in re.finditer(r"<script(?![^>]*\bsrc=)([^>]*)>(.*?)</script>", _idx, re.S):
+    if "ld+json" in _m.group(1):
+        continue
+    _inline += 1
+    _h = "sha256-" + _b64.b64encode(_hl.sha256(_m.group(2).encode("utf-8")).digest()).decode()
+    if _h not in _allowed:
+        err(f"index.html inline script #{_inline} is not allowed by the CSP in .htaccess; add '{_h}'")
+if _inline and not errors:
+    print(f"CSP: all {_inline} inline scripts in index.html carry a hash in .htaccess")
+
 # ── result ───────────────────────────────────────────────────────────
 if errors:
     print(f"\n✗ {len(errors)} problem(s):", file=sys.stderr)
