@@ -1,10 +1,9 @@
 # Patente B Study App for Americans
 
-Free and open source. Unlike study apps made for Italians, this one is for
-Americans who already know how to drive and must pass the written test for the
-Italian Patente B. It teaches the road rules and the Italian vocabulary and
-grammar of the exam, in English and Italian. No ads, no subscriptions, no
-cookies, no account.
+Unlike apps for Italian learners, this app helps American drivers prepare for
+the Italian Patente B written test, teaching road rules and exam vocabulary and
+grammar in English and Italian. It's free, open source, ad-free,
+subscription-free, cookie-free, and requires no account.
 
 A static, offline-first **Progressive Web App** for the Italian **Category B**
 (*Patente B*) theory exam. It is **built for American English speakers**, whose
