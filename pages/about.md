@@ -4,7 +4,7 @@ description: Unlike apps for Italian learners, this app helps American drivers p
 
 # A free Patente B study app for Americans
 
-I built this app for Americans living in Italy who have to pass the written test for the Italian driver's license. It has every one of the Ministry's {LIVE} official questions in English and Italian, with the rule behind each answer, and it teaches the Italian vocabulary and grammar the questions use. It is free, open source, works offline, and needs no account. [Open the app →](app)
+Unlike apps for Italian learners, this app helps American drivers prepare for the Italian Patente B written test, teaching road rules and exam vocabulary and grammar in English and Italian. It's free, open source, ad-free, subscription-free, cookie-free, and requires no account. [Open the app →](app)
 
 **Who I am, and why I built it**
 
