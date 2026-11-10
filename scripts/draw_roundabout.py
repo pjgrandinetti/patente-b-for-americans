@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
-"""Draw the three roundabout figures of the driving test page (20261103s).
+"""Draw the four roundabout figures of the driving test page (20261103s).
 
 review_media/roundabout-first-{en,it}.svg, roundabout-straight-{en,it}.svg and
-roundabout-left-{en,it}.svg: a two-lane roundabout with four arms, seen from
+roundabout-left-{en,it}.svg and roundabout-uturn-{en,it}.svg: a two-lane roundabout with four arms, seen from
 above, traffic counterclockwise as in Italy, and ONE car entering from the
 bottom in each figure. First exit: right lane, right signal on the approach.
 Straight on: right lane, no signal on entering, right signal once past the
 first exit. Left exit: left lane, left signal on entering and kept on round
 the inner lane, then right signal and a move to the outer lane past the exit
-before yours. The car is drawn again at each point where its signal matters,
+before yours. Back the way you came (uturn, added 20261103t at the
+maintainer's word: it is a legal maneuver): as for the left exit, one exit
+further; the circular does not describe it, and it follows from d.4. The car is drawn again at each point where its signal matters,
 with the signal in amber on that side. The rule is circular 28819 para. d.
 
 One figure held all three cars until 20261103r. The maintainer found it too
@@ -44,6 +46,11 @@ L = {
              title="A two-lane roundabout seen from above, traffic counterclockwise. A car enters at the bottom in the left lane with its left signal on, goes round in the inner lane with the signal on, and once past the exit straight ahead signals right, moves to the outer lane and leaves by the left exit."),
   "it": dict(bl=["Corsia di sinistra.", "Freccia a sinistra entrando,", "e tienila inserita."], tl=["Superata l'uscita prima", "della tua, freccia a destra,", "spostati nella corsia di", "destra ed esci."],
              title="Una rotatoria a due corsie vista dall'alto, traffico in senso antiorario. Un'auto entra dal basso nella corsia di sinistra con la freccia a sinistra, percorre la corsia interna con la freccia inserita e, superata l'uscita di fronte, mette la freccia a destra, si sposta nella corsia esterna ed esce a sinistra.")},
+ "uturn": {
+  "en": dict(br=["Left lane.", "Signal left as you enter", "and keep it on."], bl=["Past the left exit,", "signal right, move to the", "right lane and exit."],
+             title="A two-lane roundabout seen from above, traffic counterclockwise. A car enters at the bottom in the left lane with its left signal on, goes round in the inner lane with the signal on past the first, second and left exits, then signals right, moves to the outer lane and leaves by the road it came from."),
+  "it": dict(br=["Corsia di sinistra.", "Freccia a sinistra entrando,", "e tienila inserita."], bl=["Superata l'uscita a sinistra,", "freccia a destra, spostati", "nella corsia di destra", "ed esci."],
+             title="Una rotatoria a due corsie vista dall'alto, traffico in senso antiorario. Un'auto entra dal basso nella corsia di sinistra con la freccia a sinistra, percorre la corsia interna con la freccia inserita oltre la prima uscita, quella di fronte e quella a sinistra, poi mette la freccia a destra, si sposta nella corsia esterna ed esce dalla strada da cui è arrivata.")},
 }
 FONT = "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
 W = H = 640
@@ -186,6 +193,19 @@ def svg(which, lang):
         Y, h, path = entry(VR); P1, P2 = ring(R_OUT, 52), ring(R_OUT, -34)
         path += f' {cubic(Y, h, P1, tan(52), 40)} {arc(R_OUT, -34)} {leave(ARMS[2], P2, tan(-34), 36)}'
         cars = [(loc(ARMS[0], 284, VR), 90, None), (ring(R_OUT, -12), heading(-12), "R"), (loc(ARMS[2], 252, -VR), 90, "R")]
+    elif which == "uturn":
+        # The left-exit maneuver carried one exit further. Circular 28819 does not
+        # describe this case; it follows from d.4.
+        Y, h, path = entry(VL)
+        N1, N2, N3 = ring(R_IN, 48), ring(R_IN, -170), ring(R_OUT, -214)
+        K = 34
+        c1 = (N2[0] + K * tan(-170)[0], N2[1] + K * tan(-170)[1]); c2 = (N3[0] - K * tan(-214)[0], N3[1] - K * tan(-214)[1])
+        path += (f' {cubic(Y, h, N1, tan(48), 40)} {arc(R_IN, -60)} {arc(R_IN, -170)} '
+                 f'C {f(c1)} {f(c2)} {f(N3)} {leave(ARMS[0], N3, tan(-214), 34)}')
+        mid = tuple((N2[i] + 3 * c1[i] + 3 * c2[i] + N3[i]) / 8 for i in (0, 1))
+        der = tuple((-N2[i] - c1[i] + c2[i] + N3[i]) for i in (0, 1))
+        cars = [(loc(ARMS[0], 284, VL), 90, "L"), (ring(R_IN, 0), heading(0), "L"), (ring(R_IN, -90), heading(-90), "L"),
+                (mid, math.degrees(math.atan2(-der[1], der[0])), "R"), (loc(ARMS[0], 252, -VR), 270, "R")]
     else:
         Y, h, path = entry(VL)
         N1, N2, N3 = ring(R_IN, 48), ring(R_IN, -80), ring(R_OUT, -124)
@@ -216,7 +236,7 @@ def svg(which, lang):
     return "\n".join(o) + "\n"
 
 if __name__ == "__main__":
-    for which in ("first", "straight", "left"):
+    for which in ("first", "straight", "left", "uturn"):
         for lang in ("en", "it"):
             out = OUT / f"roundabout-{which}-{lang}.svg"
             out.write_text(svg(which, lang)); print("wrote", out)

@@ -15,7 +15,7 @@
  *     not just for images already viewed.
  */
 
-const CACHE_VERSION = 'patente-netfirst-20261103s';
+const CACHE_VERSION = 'patente-netfirst-20261103t';
 const BASE          = '';
 
 // Small app shell — versioned cache, network-first so code/UI updates apply at once.
@@ -50,6 +50,8 @@ const SHELL_ASSETS  = [
   BASE + '/review_media/roundabout-straight-it.svg',
   BASE + '/review_media/roundabout-left-en.svg',
   BASE + '/review_media/roundabout-left-it.svg',
+  BASE + '/review_media/roundabout-uturn-en.svg',
+  BASE + '/review_media/roundabout-uturn-it.svg',
 ];
 
 // Large data files — kept in a SEPARATE cache, served cache-first, and asked

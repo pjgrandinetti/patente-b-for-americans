@@ -3065,7 +3065,16 @@ behind what shipped:
   point where its signal matters (entry, the ring, the exit), with one or
   two short labels. They sit one under another below the lane bullets in
   both halves, each with its own caption. `roundabout-lanes-*.svg` is
-  deleted. When a figure needs a legend to tell its parts apart, split it. "Always signal
+  deleted. When a figure needs a legend to tell its parts apart, split it.
+  **A fourth figure and bullet, going back the way you came (20261103t,
+  maintainer: "It is a legal maneuver. So, we should show it").**
+  `roundabout-uturn-{en,it}.svg`: the left-exit maneuver carried one exit
+  further, left signal on round the inner lane past the left exit, then
+  right signal, the outer lane, and out by the road of entry. Circular
+  28819 para. d (re-read from the Ministry's PDF on 2026-11-10) gives only
+  the right side, straight on and the left side, so the bullet says in both
+  halves that the circular does not describe this case and that it follows
+  from the rule for a left exit. Not confirmed by the instructor. "Always signal
   right to exit" is written on the central island, and each corner label
   ends on the exit signal. One car cannot stand for two cases whose signals
   differ.
