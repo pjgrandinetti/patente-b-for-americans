@@ -3054,7 +3054,18 @@ behind what shipped:
   color blindness, and the labels were tied to the paths by color alone.
   Each car, each way out and each corner label carries its letter (A first
   exit, B straight on, C left exit), and the captions name the letters. A
-  figure that distinguishes things by color gives them a second cue. "Always signal
+  figure that distinguishes things by color gives them a second cue.
+  **THREE FIGURES, one per exit, since 20261103s; everything above about
+  one figure with three cars, colors and letters is history.** The
+  maintainer, after four rounds of additions: "this is becoming too
+  complicated. Perhaps it would be better to have a figure for each
+  roundabout exit." `draw_roundabout.py` now writes
+  `roundabout-first-`, `roundabout-straight-` and `roundabout-left-`
+  `{en,it}.svg`: the same road, ONE car in one color, drawn again at each
+  point where its signal matters (entry, the ring, the exit), with one or
+  two short labels. They sit one under another below the lane bullets in
+  both halves, each with its own caption. `roundabout-lanes-*.svg` is
+  deleted. When a figure needs a legend to tell its parts apart, split it. "Always signal
   right to exit" is written on the central island, and each corner label
   ends on the exit signal. One car cannot stand for two cases whose signals
   differ.
