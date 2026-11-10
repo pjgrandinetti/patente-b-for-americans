@@ -3095,7 +3095,21 @@ behind what shipped:
   first move; back, with glances ahead, right and left, in reverse; right
   and left before the last), and the section's opening paragraph ends, in
   both halves, "Look in every direction before each move and while the car
-  is moving." "Always signal
+  is moving."
+  **Each figure sits beside the text it shows since 20261103w (maintainer:
+  "integrate the figures better with the text").** They had been stacked
+  after each section's whole list. Turning around: figure 1, steps 1 to 6,
+  figure 2, steps 7 to 9, figure 3, steps 10 and 11. Roundabouts: the five
+  lane cases were sub-bullets and are now bullets of their own, each
+  under its figure (the two straight-on cases share one), and the
+  lead bullet ends "Each case below has its own figure." The captions were
+  cut to a few words, since the steps above each figure now say the rest.
+  **The figure goes BEFORE its bullets, never after.** `renderMarkdownSubset`
+  wraps a figure and the list that FOLLOWS it in one `.review-figblock`
+  (the sign-beside-its-explanation rule of the topic notes), so a figure
+  placed after its steps is tied on screen to the NEXT group's steps. The
+  first attempt did exactly that and no check noticed; a walk of the
+  rendered tree in jsdom did. In both halves at the same position. "Always signal
   right to exit" is written on the central island, and each corner label
   ends on the exit signal. One car cannot stand for two cases whose signals
   differ.

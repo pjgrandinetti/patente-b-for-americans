@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261103v';
+const APP_VERSION     = '20261103w';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1788,23 +1788,25 @@ must do it in several moves, even if the road is wide enough to turn in one.
 The examiner tells you this before you start. Look in every direction before
 each move and while the car is moving.
 
+![!xl First move, forward to the left edge. The dashed outline shows where the car stops, and the amber marks show the turn signal](review_media/turnaround-1-en.svg)
+
 - Start at the right edge of the road, in first gear.
 - Look ahead, behind and to both sides. Use the inside and left mirrors, and turn your head to the left to check the blind spot.
 - When nothing is coming, switch on the left turn signal and check the left mirror again.
 - Move forward at walking pace, steering quickly to the left.
 - Stop before the left edge. The front of the car must not go over the sidewalk. If there is no sidewalk, stop about a meter (1.1 yd) from the wall or the parked cars.
 - Just before you reach that point, steer quickly to the right.
+
+![!xl Second move, in reverse](review_media/turnaround-2-en.svg)
+
 - Switch on the right turn signal and select reverse.
 - Keep your left hand on top of the wheel and, if possible, your right arm on the back of the passenger seat. Look back through the rear window, then glance quickly ahead, to your right and to your left.
 - Reverse at moderate speed, far enough to leave room for the last move. Steer quickly to the left before the end.
+
+![!xl Third move, forward into the right lane](review_media/turnaround-3-en.svg)
+
 - Select first gear and switch on the left turn signal.
 - Look right and left, yield to any vehicle that is coming, and move promptly into the right lane.
-
-![!xl First move. Look ahead, behind and to both sides. With the left signal on, go forward at walking pace, steering to the left, and stop before the left edge. The dashed outline shows where the car stops. The amber marks show the turn signal](review_media/turnaround-1-en.svg)
-
-![!xl Second move. With the right signal on, look back through the rear window, glance ahead, to your right and to your left, and reverse at moderate speed, far enough to leave room for the last move](review_media/turnaround-2-en.svg)
-
-![!xl Third move. With the left signal on, look both ways, yield to any vehicle that is coming, and move into the right lane](review_media/turnaround-3-en.svg)
 
 ### Parking (*parcheggio*)
 
@@ -1852,20 +1854,24 @@ candidates most often go wrong.
 - Approach slowly and be ready to yield. Nearly every roundabout has a yield sign at its entrances, which gives priority to the cars already inside. Where there is no sign, the car entering has priority, by the rule of yielding to the right.
 - On a single-lane roundabout, you do not need to signal left as you enter.
 - To leave by the first exit, signal right as you approach. For a later exit, signal right just after you pass the exit before yours.
-- On a roundabout with two or more lanes, the lane you use depends on your exit:
-  - to exit right, approach near the right edge and keep to the right lane;
-  - to go straight in light traffic, keep to the right lane and signal right just before your exit;
-  - to go straight in heavy traffic, enter in a free lane and keep it, then move to the right lane with a signal before your exit;
-  - to exit left, approach in the left lane as for a left turn, signal left as you enter, keep the signal on, and stay in the left lane. Before your exit, signal right and move to the right lane without cutting anyone off. If heavy traffic keeps you out of the left lane, stay in the right lane all the way round;
-  - to go back the way you came, do as for a left exit and stay in the left lane until you have passed the left exit. Then signal right, move to the right lane and leave by the road you came from. The circular does not describe this case, which follows from its rule for a left exit.
+- On a roundabout with two or more lanes, the lane you use depends on your exit. Each case below has its own figure.
 
-![!xl First exit. Approach in the right lane with your right signal on, and keep it on until you have left the roundabout. The amber marks show the turn signal](review_media/roundabout-first-en.svg)
+![!xl The first exit, from the right lane. The amber marks show the turn signal](review_media/roundabout-first-en.svg)
 
-![!xl Straight on. Enter in the right lane with no signal. Once past the first exit, signal right and leave from the right lane](review_media/roundabout-straight-en.svg)
+- To exit right, approach near the right edge and keep to the right lane.
 
-![!xl Left exit. Enter in the left lane with your left signal on, and keep it on as you go round in the inner lane. Once past the exit before yours, signal right, move to the right lane and leave](review_media/roundabout-left-en.svg)
+![!xl Straight on, from the right lane, with no signal on entering](review_media/roundabout-straight-en.svg)
 
-![!xl Back the way you came. Enter in the left lane with your left signal on, and keep it on as you go round in the inner lane. Once past the left exit, signal right, move to the right lane and leave by the road you came from](review_media/roundabout-uturn-en.svg)
+- To go straight in light traffic, keep to the right lane and signal right just before your exit.
+- To go straight in heavy traffic, enter in a free lane and keep it, then move to the right lane with a signal before your exit.
+
+![!xl The left exit, from the left lane](review_media/roundabout-left-en.svg)
+
+- To exit left, approach in the left lane as for a left turn, signal left as you enter, keep the signal on, and stay in the left lane. Before your exit, signal right and move to the right lane without cutting anyone off. If heavy traffic keeps you out of the left lane, stay in the right lane all the way round.
+
+![!xl Back the way you came, from the left lane](review_media/roundabout-uturn-en.svg)
+
+- To go back the way you came, do as for a left exit and stay in the left lane until you have passed the left exit. Then signal right, move to the right lane and leave by the road you came from. The circular does not describe this case, which follows from its rule for a left exit.
 
 ## What the examiner judges
 
@@ -2029,23 +2035,25 @@ farlo in più manovre, anche se la strada è abbastanza larga per girare in una
 sola. L'esaminatore te lo dice prima di iniziare. Guarda in tutte le direzioni
 prima di ogni manovra e mentre l'auto si muove.
 
+![!xl Prima manovra, in avanti fino al margine sinistro. Il contorno tratteggiato mostra dove l'auto si ferma, e i segni arancioni mostrano la freccia inserita](review_media/turnaround-1-it.svg)
+
 - Parti dal margine destro della strada, in prima.
 - Guarda avanti, dietro e su entrambi i lati. Usa lo specchietto interno e quello sinistro, e gira la testa a sinistra per controllare l'angolo morto.
 - Quando non arriva nessuno, accendi l'indicatore sinistro e controlla di nuovo lo specchietto sinistro.
 - Avanza a passo d'uomo, sterzando rapidamente a sinistra.
 - Fermati prima del margine sinistro. La parte anteriore dell'auto non deve salire sul marciapiede. Se il marciapiede manca, fermati a circa un metro dal muro o dalle auto parcheggiate.
 - Poco prima di quel punto, sterza rapidamente a destra.
+
+![!xl Seconda manovra, in retromarcia](review_media/turnaround-2-it.svg)
+
 - Accendi l'indicatore destro e inserisci la retromarcia.
 - Tieni la mano sinistra sulla parte alta del volante e, se possibile, il braccio destro sullo schienale del sedile del passeggero. Guarda indietro attraverso il lunotto, poi dai uno sguardo rapido avanti, a destra e a sinistra.
 - Fai retromarcia a velocità moderata, per un tratto sufficiente all'ultima manovra. Prima della fine sterza rapidamente a sinistra.
+
+![!xl Terza manovra, in avanti nella corsia di destra](review_media/turnaround-3-it.svg)
+
 - Inserisci la prima e accendi l'indicatore sinistro.
 - Guarda a destra e a sinistra, dai la precedenza a chi arriva e immettiti rapidamente nella corsia di destra.
-
-![!xl Prima manovra. Guarda avanti, dietro e su entrambi i lati. Con la freccia a sinistra, avanza a passo d'uomo sterzando a sinistra, e fermati prima del margine sinistro. Il contorno tratteggiato mostra dove l'auto si ferma. I segni arancioni mostrano la freccia inserita](review_media/turnaround-1-it.svg)
-
-![!xl Seconda manovra. Con la freccia a destra, guarda indietro attraverso il lunotto, dai uno sguardo avanti, a destra e a sinistra, e fai retromarcia a velocità moderata, per un tratto sufficiente all'ultima manovra](review_media/turnaround-2-it.svg)
-
-![!xl Terza manovra. Con la freccia a sinistra, guarda da entrambi i lati, dai la precedenza a chi arriva e immettiti nella corsia di destra](review_media/turnaround-3-it.svg)
 
 ### Il parcheggio
 
@@ -2091,20 +2099,24 @@ che i candidati sbagliano più spesso.
 - Avvicinati lentamente e preparati a dare la precedenza. Quasi tutte le rotatorie hanno il segnale di dare precedenza agli ingressi, che dà la precedenza a chi è già dentro. Dove il segnale manca, ha la precedenza chi entra, per la regola della precedenza a destra.
 - In una rotatoria a una corsia non è necessario segnalare a sinistra entrando.
 - Per uscire alla prima uscita, segnala a destra mentre ti avvicini. Per un'uscita successiva, segnala a destra subito dopo aver superato l'uscita che precede la tua.
-- In una rotatoria con due o più corsie, la corsia dipende dalla tua uscita:
-  - per uscire a destra, avvicinati vicino al margine destro e resta nella corsia di destra;
-  - per proseguire dritto con poco traffico, resta nella corsia di destra e segnala a destra subito prima della tua uscita;
-  - per proseguire dritto con traffico intenso, entra in una corsia libera e mantienila, poi spostati nella corsia di destra segnalando prima della tua uscita;
-  - per uscire a sinistra, avvicinati nella corsia di sinistra come per una svolta a sinistra, segnala a sinistra entrando, tieni la freccia inserita e resta nella corsia di sinistra. Prima della tua uscita, segnala a destra e spostati nella corsia di destra senza tagliare la strada a nessuno. Se il traffico intenso ti impedisce di prendere la corsia di sinistra, resta nella corsia di destra per tutto il giro;
-  - per tornare indietro, fai come per l'uscita a sinistra e resta nella corsia di sinistra finché non hai superato l'uscita a sinistra. Poi segnala a destra, spostati nella corsia di destra ed esci dalla strada da cui sei arrivato. La circolare non descrive questo caso, che segue dalla sua regola per l'uscita a sinistra.
+- In una rotatoria con due o più corsie, la corsia dipende dalla tua uscita. Ogni caso qui sotto ha la sua figura.
 
-![!xl Prima uscita. Avvicinati nella corsia di destra con la freccia a destra, e tienila inserita finché non sei uscito dalla rotatoria. I segni arancioni mostrano la freccia inserita](review_media/roundabout-first-it.svg)
+![!xl La prima uscita, dalla corsia di destra. I segni arancioni mostrano la freccia inserita](review_media/roundabout-first-it.svg)
 
-![!xl Dritto. Entra nella corsia di destra senza freccia. Superata la prima uscita, metti la freccia a destra ed esci dalla corsia di destra](review_media/roundabout-straight-it.svg)
+- Per uscire a destra, avvicinati vicino al margine destro e resta nella corsia di destra.
 
-![!xl Uscita a sinistra. Entra nella corsia di sinistra con la freccia a sinistra, e tienila inserita mentre percorri la corsia interna. Superata l'uscita prima della tua, metti la freccia a destra, spostati nella corsia di destra ed esci](review_media/roundabout-left-it.svg)
+![!xl Dritto, dalla corsia di destra, senza freccia entrando](review_media/roundabout-straight-it.svg)
 
-![!xl Tornare indietro. Entra nella corsia di sinistra con la freccia a sinistra, e tienila inserita mentre percorri la corsia interna. Superata l'uscita a sinistra, metti la freccia a destra, spostati nella corsia di destra ed esci dalla strada da cui sei arrivato](review_media/roundabout-uturn-it.svg)
+- Per proseguire dritto con poco traffico, resta nella corsia di destra e segnala a destra subito prima della tua uscita.
+- Per proseguire dritto con traffico intenso, entra in una corsia libera e mantienila, poi spostati nella corsia di destra segnalando prima della tua uscita.
+
+![!xl L'uscita a sinistra, dalla corsia di sinistra](review_media/roundabout-left-it.svg)
+
+- Per uscire a sinistra, avvicinati nella corsia di sinistra come per una svolta a sinistra, segnala a sinistra entrando, tieni la freccia inserita e resta nella corsia di sinistra. Prima della tua uscita, segnala a destra e spostati nella corsia di destra senza tagliare la strada a nessuno. Se il traffico intenso ti impedisce di prendere la corsia di sinistra, resta nella corsia di destra per tutto il giro.
+
+![!xl Tornare indietro, dalla corsia di sinistra](review_media/roundabout-uturn-it.svg)
+
+- Per tornare indietro, fai come per l'uscita a sinistra e resta nella corsia di sinistra finché non hai superato l'uscita a sinistra. Poi segnala a destra, spostati nella corsia di destra ed esci dalla strada da cui sei arrivato. La circolare non descrive questo caso, che segue dalla sua regola per l'uscita a sinistra.
 
 ## Che cosa valuta l'esaminatore
 
