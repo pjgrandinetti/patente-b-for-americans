@@ -3046,7 +3046,10 @@ behind what shipped:
   exit takes the right signal was not said).** Straight on is its own car,
   purple, behind the green one in the right lane, drawn with NO signal at
   the entry and with the right signal once past the first exit; the two
-  share the lane a few pixels apart so both lines show. "Always signal
+  are in line in the middle of the lane since 20261103q (side by side, a
+  few pixels apart, the purple car looked as if it were passing the green
+  one), and where they share the lane the green line is dashed over the
+  purple one. "Always signal
   right to exit" is written on the central island, and each corner label
   ends on the exit signal. One car cannot stand for two cases whose signals
   differ.

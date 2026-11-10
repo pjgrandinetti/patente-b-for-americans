@@ -167,11 +167,12 @@ def svg(lang):
         X, Xf, E = loc(d, 186, -(ISL + LANE * 1.5)), loc(d, U_FAR, -LANE * 1.5), loc(d, 300, -LANE * 1.5)
         h = unit(X, Xf)
         return f'{cubic(P, hP, X, h, k)} {cubic(X, h, Xf, d, 18)} L {f(E)}'
-    OFF = 5                                   # green keeps right in the lane, purple left, so both lines show
-    VG, VP, RP = LANE * 1.5 + OFF, LANE * 1.5 - OFF, R_OUT - 3
-    M1, P1, P2 = ring(R_OUT + 4, 50), ring(RP, 52), ring(RP, -34)
-    _, gY, gh, gpath = entry(VG, 268)
-    g1 = f'{gpath} {cubic(gY, gh, M1, tan(50), 40)} {leave(ARMS[1], M1, tan(50), 40)}'
+    # Green and purple are one behind the other in the middle of the right lane.
+    # Where they share the lane the green line is dashed over the purple one.
+    VG = VP = LANE * 1.5; RP = R_OUT
+    M1, P1, P2 = ring(R_OUT, 50), ring(RP, 52), ring(RP, -34)
+    _, gY, gh, gpath = entry(VG, 262)
+    g1 = f'M {f(gY)} {cubic(gY, gh, M1, tan(50), 40)} {leave(ARMS[1], M1, tan(50), 40)}'
     _, pY, ph, ppath = entry(VP, 306)
     g2 = f'{ppath} {cubic(pY, ph, P1, tan(52), 40)} A {RP} {RP} 0 0 0 {f(P2)} {leave(ARMS[2], P2, tan(-34), 36)}'
     _, bY, bh, bpath = entry(LANE * .5)
@@ -182,13 +183,14 @@ def svg(lang):
           f'C {f(c1)} {f(c2)} {f(N3)} {leave(ARMS[3], N3, tan(-124), 34)}')
     o.append('<g fill="none" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">')
     o.append(f'<path d="{g2}" stroke="{PURPLE}" marker-end="url(#ap)"/>')
+    o.append(f'<path d="{gpath}" stroke="{GREEN}" stroke-dasharray="9 9" stroke-linecap="butt"/>')
     o.append(f'<path d="{g1}" stroke="{GREEN}" marker-end="url(#ag)"/>')
     o.append(f'<path d="{b1}" stroke="{BLUE}" marker-end="url(#ab)"/>')
     o.append('</g>')
     # Turn signals (circular 28819 d). Entering: right for the first exit, none
     # for straight on, left for the left exit. Leaving: always right.
-    o.append(car(loc(ARMS[0], 252, VG), 90, GREEN, "R"))
-    o.append(car(loc(ARMS[0], 290, VP), 90, PURPLE))
+    o.append(car(loc(ARMS[0], 248, VG), 90, GREEN, "R"))
+    o.append(car(loc(ARMS[0], 292, VP), 90, PURPLE))
     o.append(car(loc(ARMS[0], 286, LANE * .5), 90, BLUE, "L"))
     sa = -12                                  # straight on: past the first exit, signal right
     o.append(car(ring(RP, sa), math.degrees(math.atan2(math.cos(math.radians(sa)), math.sin(math.radians(sa)))), PURPLE, "R"))
