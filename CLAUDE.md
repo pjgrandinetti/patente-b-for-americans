@@ -3041,6 +3041,15 @@ behind what shipped:
   going straight on. The corner labels state the same, and the caption says
   what the amber marks are. All from circular 28819 para. d, as the bullets
   above the figure state.
+  **Three cars since 20261103p (maintainer: the dotted straight-on line did
+  not show that there is no signal on entering, and the rule that every
+  exit takes the right signal was not said).** Straight on is its own car,
+  purple, behind the green one in the right lane, drawn with NO signal at
+  the entry and with the right signal once past the first exit; the two
+  share the lane a few pixels apart so both lines show. "Always signal
+  right to exit" is written on the central island, and each corner label
+  ends on the exit signal. One car cannot stand for two cases whose signals
+  differ.
   **The autostrada is on the route (20261031g, maintainer's question:
   what if a learner fears the autostrada?).** Part 3 said the drive "may
   include" its list; circular 28819 says the candidate MUST perform the
