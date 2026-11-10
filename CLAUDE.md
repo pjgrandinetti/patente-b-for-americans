@@ -3020,6 +3020,19 @@ behind what shipped:
   the lane change is made; the page says only "before your exit". Both
   files are in the worker's precache, and the caption pairs by `captionKey`
   like the speed grid's.
+  **Redrawn in 20261103n after the maintainer called the first version
+  not well done, its road markings technically wrong.** It had bare arms
+  meeting a circle, a dashed bar for the yield line at one entry, and no
+  edge lines. The figure now carries what an Italian roundabout carries: a
+  raised splitter island on every arm with a double continuous line before
+  it, solid edge lines round the kerbs and the island, the yield line as a
+  row of white triangles pointing at the arriving driver at EVERY entry, a
+  broken edge line across every exit, the broken line between the ring's
+  two lanes, entry lane lines that turn continuous on the approach, and the
+  yield sign at each entry. A drawing of a road is checked against the
+  markings rules before it ships, as an explanation is checked against the
+  Code. The figures live in the versioned precache, so a redraw needs the
+  version bump and no `IMG_REFRESH` entry.
   **The autostrada is on the route (20261031g, maintainer's question:
   what if a learner fears the autostrada?).** Part 3 said the drive "may
   include" its list; circular 28819 says the candidate MUST perform the
