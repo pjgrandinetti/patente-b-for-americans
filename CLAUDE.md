@@ -5154,6 +5154,17 @@ behind what shipped:
   given. No stats strip, no pricing language, no
   testimonials, no emoji icons. The question count is still read from
   `questions.json` as `LIVE`, never typed. **The app was not touched.**
+- **On the maintainer's Mac (sessions since November 2026) a figure is
+  rendered with the Playwright headless shell**, not the sandbox recipe
+  below:
+  `~/Library/Caches/ms-playwright/chromium_headless_shell-*/chrome-headless-shell-mac-arm64/chrome-headless-shell
+  --headless --window-size=800,800 --screenshot=out.png file:///...svg`.
+  Look at every drawing before committing it; the first roundabout render
+  had its arcs running clockwise. The jsdom checks default to
+  `/tmp/node_modules/jsdom`, which does not exist here: install jsdom in
+  the session's scratchpad and run them with BOTH `JSDOM=<path>/jsdom` and
+  `NODE_PATH=<path>`, since some checks read one and some the other
+  (`check_prose_flags.js` ignores `JSDOM`).
 - **Screenshots in the sandbox work** with the installed Playwright
   Chromium once `libXdamage.so.1` exists: apt is blocked, so compile a stub
   (six no-op functions, `gcc -shared -fPIC -Wl,-soname,libXdamage.so.1`) and
@@ -5248,6 +5259,61 @@ behind what shipped:
   relative canonical (`carte/`) and `/carte/` none, which Search Console
   reported as a duplicate; both now name `https://italiano.physyapps.com/carte/`
   (in that repo, uncommitted, for the maintainer to commit).
+- **Search Console read in full, 2026-11-09 (the maintainer asked why
+  italiano is on Google and patente is not).** The premise was wrong, and
+  two explanations given before the data were wrong with it. Patente HAS
+  about 13 pages in Google's index (topic pages 05, 06, 07, 08, 10, 15, 24,
+  the licensing page, and three old `/guide/` addresses), against 3 for
+  italiano. What is missing is the home page, `/about/`,
+  `/about/how-it-works.html` and topic 23 ("Crawled - currently not
+  indexed"), and about 15 topic pages never crawled ("Discovered"). The
+  host's splash was NOT the cause: crawl stats show 250 Google requests to
+  patente, 99% answered 200, and a live test of the home page that day
+  rendered the real dashboard. Google crawled patente from 21 to 28
+  September and almost stopped after about 6 October; why is not known
+  (the `/guide/` to `/about/` rename of 24 September is in that window,
+  unproven). Both sitemaps were submitted on 1 November, so patente had no
+  head start in Search Console. The Links report counts 158 external links,
+  154 of them to `www.physyapps.com/` (grandinetti.org 74, apple.com 45),
+  and NONE to patente or italiano. Google still holds
+  `https://www.physyapps.com/` as the canonical of the physyapps home page,
+  although www redirects to the apex. No manual action, no security issue.
+  Indexing was requested that day for patente's home page, `physyapps.com/`
+  and `physyapps.com/math-functions/`. A direct link to patente from
+  grandinetti.org is the one action the maintainer can take himself.
+  **Read the report before explaining it**: the property covers every
+  subdomain, so `site:`, the Pages report, URL Inspection and Crawl stats by
+  host answer in minutes what two rounds of reasoning got wrong.
+- **Where the app can be found, measured 2026-11-09.** DuckDuckGo, which
+  draws on Bing, returns the GitHub repository first for the app's exact
+  title, and `site:patente.physyapps.com` there lists six `/about/` pages
+  and not the home page. GitHub marks its links to the site `nofollow`, so
+  the repository sends visitors and passes no ranking credit. The search
+  an AI assistant runs (tested with the session's own web search) returns
+  NOTHING from patente.physyapps.com, even for the domain name. Its results
+  for "patente B app in English" are App Store pages, sites that republish
+  store listings, and one article, The Local's guide to learner resources.
+  An assistant cannot be made to find the app. What moves every index is a
+  link from a page it already holds, and a listing on a page that compares
+  apps for this exam. A store listing is the signal every app on those
+  lists has and a PWA lacks; wrapping the app for a store was named and NOT
+  recommended or decided.
+- **The repository and the landing page say "free and open source" first
+  (20261103j to l, maintainer's wording).** The GitHub About description,
+  which he sets by hand since `gh` is not signed in on this Mac, the
+  README's opening paragraph and the landing page's first paragraph and
+  `description` line all carry his text: "Unlike apps for Italian learners,
+  this app helps American drivers prepare for the Italian Patente B written
+  test, teaching road rules and exam vocabulary and grammar in English and
+  Italian. It's free, open source, ad-free, subscription-free, cookie-free,
+  and requires no account." The landing page's h1 is "A free Patente B
+  study app for Americans", and his story follows under "Who I am, and why
+  I built it"; it had opened on the author, so a searcher read a paragraph
+  before learning what the page offers. **Do not write "no tracking"**: he
+  proposed it, and it would contradict the privacy note, which dropped that
+  claim on 2026-09-27 because `sync.php` records upload dates. The
+  `description` runs to 228 characters, past the roughly 160 a result
+  shows, knowingly.
 - **Lighthouse, 2026-11-09 (live site, 12.6.1).** The guide pages score 100
   in performance, accessibility, best practices and SEO. The app's home page
   scored 55 mobile and 64 desktop, SEO 100: a layout shift of 0.72 (the
