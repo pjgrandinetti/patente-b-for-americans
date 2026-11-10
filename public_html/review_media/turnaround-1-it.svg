@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 500" role="img" aria-label="Inversione di marcia, prima manovra, vista dall'alto su una strada a doppio senso. L'auto parte dal margine destro con la freccia a sinistra, avanza sterzando a sinistra e si ferma di traverso con il muso poco prima del margine sinistro.">
+<title>Inversione di marcia, prima manovra, vista dall'alto su una strada a doppio senso. L'auto parte dal margine destro con la freccia a sinistra, avanza sterzando a sinistra e si ferma di traverso con il muso poco prima del margine sinistro.</title>
+<defs><clipPath id="card"><rect x="1" y="1" width="638" height="498" rx="12"/></clipPath><marker id="ab" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1D4ED8"/></marker></defs>
+<rect x="1" y="1" width="638" height="498" rx="12" fill="#f8fafc"/>
+<g clip-path="url(#card)">
+<rect x="140" y="0" width="360" height="500" fill="#E2E8F0"/>
+<rect x="170" y="0" width="300" height="500" fill="#B4BCC8"/>
+<line x1="170" y1="0" x2="170" y2="500" stroke="#7C8798" stroke-width="3"/>
+<line x1="470" y1="0" x2="470" y2="500" stroke="#7C8798" stroke-width="3"/>
+<line x1="140" y1="0" x2="140" y2="500" stroke="#cbd5e1" stroke-width="1.5"/>
+<line x1="500" y1="0" x2="500" y2="500" stroke="#cbd5e1" stroke-width="1.5"/>
+<line x1="320.0" y1="0" x2="320.0" y2="500" stroke="#ffffff" stroke-width="3.5" stroke-dasharray="26 20"/>
+<g transform="translate(418.6 300.0) rotate(-90.0)"><rect x="-85.7" y="-36.4" width="171.4" height="72.9" rx="16" fill="#1D4ED8" stroke="#ffffff" stroke-width="1.5"/><path d="M 27.7 -28.4 L 51.7 -25.4 L 51.7 25.4 L 27.7 28.4 Z" fill="#ffffff" opacity=".65"/><rect x="-67.7" y="-26.4" width="14" height="52.9" rx="4" fill="#ffffff" opacity=".45"/><circle cx="71.7" cy="-37.4" r="7" fill="#F59E0B" stroke="#7C2D12" stroke-width="1.2"/><path d="M 64.7 -48.4 L 60.7 -55.4 M 71.7 -49.9 L 71.7 -57.4 M 78.7 -48.4 L 82.7 -55.4" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" fill="none"/><circle cx="-71.7" cy="-37.4" r="7" fill="#F59E0B" stroke="#7C2D12" stroke-width="1.2"/><path d="M -78.7 -48.4 L -82.7 -55.4 M -71.7 -49.9 L -71.7 -57.4 M -64.7 -48.4 L -60.7 -55.4" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" fill="none"/></g>
+<g transform="translate(269.1 112.1) rotate(-167.0)"><rect x="-85.7" y="-36.4" width="171.4" height="72.9" rx="16" fill="none" stroke="#0f172a" stroke-width="5"/><path d="M 55.7 -26.4 L 55.7 26.4" fill="none" stroke="#0f172a" stroke-width="5"/><rect x="-85.7" y="-36.4" width="171.4" height="72.9" rx="16" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="9 7"/><path d="M 55.7 -26.4 L 55.7 26.4" fill="none" stroke="#ffffff" stroke-width="2.5"/></g>
+<path d="M 418.6 214.3 L 414.2 205.1 L 409.5 196.2 L 404.3 187.5 L 398.7 179.1 L 392.7 170.9 L 386.3 163.0 L 379.5 155.5 L 372.4 148.3 L 365.0 141.4 L 357.2 134.9 L 349.1 128.8 L 340.8 123.1 L 332.2 117.8 L 323.3 112.9 L 314.2 108.4 L 304.9 104.4 L 295.4 100.8 L 285.8 97.7 L 276.0 95.0 L 266.1 92.9 L 256.1 91.2 L 246.1 89.9 L 236.0 89.2 L 225.9 89.0 L 215.7 89.2 L 205.6 89.9 L 195.6 91.1 L 185.6 92.8" fill="none" stroke="#1D4ED8" stroke-width="5" stroke-linecap="round" marker-end="url(#ab)"/>
+</g>
+<rect x="1" y="1" width="638" height="498" rx="12" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+<circle cx="34" cy="36" r="19" fill="#1D4ED8"/><text x="34" y="43.5" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="700" fill="#ffffff">1</text>
+<g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#1e293b">
+<text x="14" y="86">Freccia a</text>
+<text x="14" y="105">sinistra.</text>
+<text x="14" y="124">Avanti a passo</text>
+<text x="14" y="143">d'uomo,</text>
+<text x="14" y="162">sterzando a</text>
+<text x="14" y="181">sinistra.</text>
+<text x="626" y="40" text-anchor="end">Fermati prima</text>
+<text x="626" y="59" text-anchor="end">del margine.</text>
+</g>
+</svg>

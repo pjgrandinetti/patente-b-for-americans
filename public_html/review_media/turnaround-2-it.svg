@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 500" role="img" aria-label="Inversione di marcia, seconda manovra, vista dall'alto. L'auto, di traverso con la freccia a destra, fa retromarcia verso il margine destro, per un tratto sufficiente all'ultima manovra.">
+<title>Inversione di marcia, seconda manovra, vista dall'alto. L'auto, di traverso con la freccia a destra, fa retromarcia verso il margine destro, per un tratto sufficiente all'ultima manovra.</title>
+<defs><clipPath id="card"><rect x="1" y="1" width="638" height="498" rx="12"/></clipPath><marker id="ab" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1D4ED8"/></marker></defs>
+<rect x="1" y="1" width="638" height="498" rx="12" fill="#f8fafc"/>
+<g clip-path="url(#card)">
+<rect x="140" y="0" width="360" height="500" fill="#E2E8F0"/>
+<rect x="170" y="0" width="300" height="500" fill="#B4BCC8"/>
+<line x1="170" y1="0" x2="170" y2="500" stroke="#7C8798" stroke-width="3"/>
+<line x1="470" y1="0" x2="470" y2="500" stroke="#7C8798" stroke-width="3"/>
+<line x1="140" y1="0" x2="140" y2="500" stroke="#cbd5e1" stroke-width="1.5"/>
+<line x1="500" y1="0" x2="500" y2="500" stroke="#cbd5e1" stroke-width="1.5"/>
+<line x1="320.0" y1="0" x2="320.0" y2="500" stroke="#ffffff" stroke-width="3.5" stroke-dasharray="26 20"/>
+<g transform="translate(269.1 112.1) rotate(-167.0)"><rect x="-85.7" y="-36.4" width="171.4" height="72.9" rx="16" fill="#1D4ED8" stroke="#ffffff" stroke-width="1.5"/><path d="M 27.7 -28.4 L 51.7 -25.4 L 51.7 25.4 L 27.7 28.4 Z" fill="#ffffff" opacity=".65"/><rect x="-67.7" y="-26.4" width="14" height="52.9" rx="4" fill="#ffffff" opacity=".45"/><circle cx="71.7" cy="37.4" r="7" fill="#F59E0B" stroke="#7C2D12" stroke-width="1.2"/><path d="M 64.7 48.4 L 60.7 55.4 M 71.7 49.9 L 71.7 57.4 M 78.7 48.4 L 82.7 55.4" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" fill="none"/><circle cx="-71.7" cy="37.4" r="7" fill="#F59E0B" stroke="#7C2D12" stroke-width="1.2"/><path d="M -78.7 48.4 L -82.7 55.4 M -71.7 49.9 L -71.7 57.4 M -64.7 48.4 L -60.7 55.4" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" fill="none"/></g>
+<g transform="translate(375.3 106.5) rotate(-199.0)"><rect x="-85.7" y="-36.4" width="171.4" height="72.9" rx="16" fill="none" stroke="#0f172a" stroke-width="5"/><path d="M 55.7 -26.4 L 55.7 26.4" fill="none" stroke="#0f172a" stroke-width="5"/><rect x="-85.7" y="-36.4" width="171.4" height="72.9" rx="16" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="9 7"/><path d="M 55.7 -26.4 L 55.7 26.4" fill="none" stroke="#ffffff" stroke-width="2.5"/></g>
+<path d="M 352.6 131.4 L 356.7 130.5 L 360.8 129.6 L 364.9 128.6 L 369.0 127.5 L 373.0 126.3 L 377.1 125.1 L 381.1 123.8 L 385.0 122.4 L 389.0 120.9 L 392.9 119.3 L 396.8 117.7 L 400.6 115.9 L 404.4 114.1 L 408.2 112.3 L 411.9 110.3 L 415.6 108.3 L 419.2 106.2 L 422.9 104.1 L 426.4 101.8 L 429.9 99.5 L 433.4 97.1 L 436.8 94.7 L 440.2 92.2 L 443.5 89.6 L 446.8 86.9 L 450.0 84.2 L 453.2 81.5 L 456.3 78.6" fill="none" stroke="#1D4ED8" stroke-width="5" stroke-linecap="round" marker-end="url(#ab)" stroke-dasharray="11 10"/>
+</g>
+<rect x="1" y="1" width="638" height="498" rx="12" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+<circle cx="34" cy="36" r="19" fill="#1D4ED8"/><text x="34" y="43.5" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="700" fill="#ffffff">2</text>
+<g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#1e293b">
+<text x="14" y="86">Lascia spazio</text>
+<text x="14" y="105">per l'ultima</text>
+<text x="14" y="124">manovra.</text>
+<text x="626" y="40" text-anchor="end">Freccia a destra.</text>
+<text x="626" y="59" text-anchor="end">Retromarcia,</text>
+<text x="626" y="78" text-anchor="end">guardando</text>
+<text x="626" y="97" text-anchor="end">indietro.</text>
+</g>
+</svg>

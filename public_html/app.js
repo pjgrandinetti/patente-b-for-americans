@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261103t';
+const APP_VERSION     = '20261103u';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1799,6 +1799,12 @@ The examiner tells you this before you start.
 - Select first gear and switch on the left turn signal.
 - Look right and left, yield to any vehicle that is coming, and move promptly into the right lane.
 
+![!xl First move. With the left signal on, go forward at walking pace, steering to the left, and stop before the left edge. The dashed outline shows where the car stops. The amber marks show the turn signal](review_media/turnaround-1-en.svg)
+
+![!xl Second move. With the right signal on, reverse at moderate speed, looking back, far enough to leave room for the last move](review_media/turnaround-2-en.svg)
+
+![!xl Third move. With the left signal on, look both ways, yield to any vehicle that is coming, and move into the right lane](review_media/turnaround-3-en.svg)
+
 ### Parking (*parcheggio*)
 
 You may be asked to park parallel to the curb (*in linea*), in a bay at a right
@@ -2032,6 +2038,12 @@ sola. L'esaminatore te lo dice prima di iniziare.
 - Fai retromarcia a velocità moderata, per un tratto sufficiente all'ultima manovra. Prima della fine sterza rapidamente a sinistra.
 - Inserisci la prima e accendi l'indicatore sinistro.
 - Guarda a destra e a sinistra, dai la precedenza a chi arriva e immettiti rapidamente nella corsia di destra.
+
+![!xl Prima manovra. Con la freccia a sinistra, avanza a passo d'uomo sterzando a sinistra, e fermati prima del margine sinistro. Il contorno tratteggiato mostra dove l'auto si ferma. I segni arancioni mostrano la freccia inserita](review_media/turnaround-1-it.svg)
+
+![!xl Seconda manovra. Con la freccia a destra, fai retromarcia a velocità moderata, guardando indietro, per un tratto sufficiente all'ultima manovra](review_media/turnaround-2-it.svg)
+
+![!xl Terza manovra. Con la freccia a sinistra, guarda da entrambi i lati, dai la precedenza a chi arriva e immettiti nella corsia di destra](review_media/turnaround-3-it.svg)
 
 ### Il parcheggio
 

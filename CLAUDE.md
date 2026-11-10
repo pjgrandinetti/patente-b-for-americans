@@ -3074,7 +3074,22 @@ behind what shipped:
   28819 para. d (re-read from the Ministry's PDF on 2026-11-10) gives only
   the right side, straight on and the left side, so the bullet says in both
   halves that the circular does not describe this case and that it follows
-  from the rule for a left exit. Not confirmed by the instructor. "Always signal
+  from the rule for a left exit. Not confirmed by the instructor.
+  **Turning around has three figures, one per move (20261103u,
+  maintainer: "I think we need a figure for inversione di marcia").**
+  `scripts/draw_turnaround.py` writes `turnaround-{1,2,3}-{en,it}.svg`,
+  placed under the eleven steps in both halves: forward from the right edge
+  to a stop before the left one (left signal), reverse (right signal),
+  forward into the right lane (left signal), all from circular 28819
+  para. b as the steps state. Each shows the car where the move starts,
+  solid with its signal, the path of its LEADING end (the center's path
+  hides under the car on the short reverse), and a dashed outline where the
+  move ends, drawn over the starting car. One figure per move because the
+  car is longer than half the road is wide, so the four positions overlap
+  in one drawing. The car (4.0 by 1.7 m), the street (7 m) and the turning
+  radius (4.5 m) are to one scale, and the script computes the moves from
+  them (77 degrees forward, 32 in reverse, 71 forward); change a dimension
+  there and the positions follow. "Always signal
   right to exit" is written on the central island, and each corner label
   ends on the exit signal. One car cannot stand for two cases whose signals
   differ.
