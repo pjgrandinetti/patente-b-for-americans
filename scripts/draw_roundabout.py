@@ -23,18 +23,18 @@ from pathlib import Path
 OUT = Path(__file__).resolve().parents[1] / "public_html" / "review_media"
 
 L = {
- "en": dict(bl=["Left exit: left lane.", "Signal left as you enter", "and keep it on."],
-            tl=["Past the exit before yours,", "signal right, move to the", "right lane and exit."],
-            br=["First exit: right lane.", "Signal right on the approach", "and keep it on to exit."],
-            tr=["Straight on: right lane.", "No signal as you enter.", "Past the first exit,", "signal right to exit."],
+ "en": dict(bl=["C. Left exit: left lane.", "Signal left as you enter", "and keep it on."],
+            tl=["C. Past the exit before yours,", "signal right, move to the", "right lane and exit."],
+            br=["A. First exit: right lane.", "Signal right on the approach", "and keep it on to exit."],
+            tr=["B. Straight on: right lane.", "No signal as you enter.", "Past the first exit,", "signal right to exit."],
             mid=["Always signal", "right to exit"],
-            title="A roundabout with two lanes, seen from above, traffic going counterclockwise, with three cars entering at the bottom. The green car, in the right lane, signals right on the approach and takes the first exit. The purple car, in the right lane, gives no signal on entering, goes straight on, and signals right once past the first exit. The blue car, in the left lane, signals left on entering, goes round in the inner lane, then signals right and moves to the right lane for the left exit. Every car signals right to exit. Each entry has a yield line of white triangles."),
- "it": dict(bl=["Uscita a sinistra: corsia di", "sinistra. Freccia a sinistra", "entrando, e tienila inserita."],
-            tl=["Superata l'uscita precedente,", "freccia a destra, spostati nella", "corsia di destra ed esci."],
-            br=["Prima uscita: corsia di destra.", "Freccia a destra avvicinandoti,", "e tienila fino all'uscita."],
-            tr=["Dritto: corsia di destra.", "Nessuna freccia entrando.", "Superata la prima uscita,", "freccia a destra per uscire."],
+            title="A roundabout with two lanes, seen from above, traffic going counterclockwise, with three cars entering at the bottom. The green car (A), in the right lane, signals right on the approach and takes the first exit. The purple car (B), in the right lane, gives no signal on entering, goes straight on, and signals right once past the first exit. The blue car (C), in the left lane, signals left on entering, goes round in the inner lane, then signals right and moves to the right lane for the left exit. Every car signals right to exit. Each entry has a yield line of white triangles."),
+ "it": dict(bl=["C. Uscita a sinistra: corsia", "di sinistra. Freccia a sinistra", "entrando, e tienila inserita."],
+            tl=["C. Superata l'uscita prima", "della tua, freccia a destra,", "spostati nella corsia di", "destra ed esci."],
+            br=["A. Prima uscita: corsia di", "destra. Freccia a destra", "avvicinandoti, e tienila", "fino all'uscita."],
+            tr=["B. Dritto: corsia di destra.", "Nessuna freccia entrando.", "Superata la prima uscita,", "freccia a destra per uscire."],
             mid=["Per uscire,", "sempre freccia", "a destra"],
-            title="Una rotatoria a due corsie vista dall'alto, con il traffico in senso antiorario e tre auto che entrano dal basso. L'auto verde, nella corsia di destra, mette la freccia a destra avvicinandosi e prende la prima uscita. L'auto viola, nella corsia di destra, entra senza freccia, prosegue dritto e mette la freccia a destra superata la prima uscita. L'auto blu, nella corsia di sinistra, mette la freccia a sinistra entrando, percorre la corsia interna, poi mette la freccia a destra e si sposta nella corsia di destra per l'uscita a sinistra. Ogni auto esce con la freccia a destra. Ogni ingresso ha la linea di dare precedenza a triangoli bianchi."),
+            title="Una rotatoria a due corsie vista dall'alto, con il traffico in senso antiorario e tre auto che entrano dal basso. L'auto verde (A), nella corsia di destra, mette la freccia a destra avvicinandosi e prende la prima uscita. L'auto viola (B), nella corsia di destra, entra senza freccia, prosegue dritto e mette la freccia a destra superata la prima uscita. L'auto blu (C), nella corsia di sinistra, mette la freccia a sinistra entrando, percorre la corsia interna, poi mette la freccia a destra e si sposta nella corsia di destra per l'uscita a sinistra. Ogni auto esce con la freccia a destra. Ogni ingresso ha la linea di dare precedenza a triangoli bianchi."),
 }
 FONT = "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
 W = H = 640
@@ -198,6 +198,18 @@ def svg(lang):
     mid = tuple((N2[i] + 3 * c1[i] + 3 * c2[i] + N3[i]) / 8 for i in (0, 1))
     der = tuple((-N2[i] - c1[i] + c2[i] + N3[i]) for i in (0, 1))
     o.append(car(mid, math.degrees(math.atan2(-der[1], der[0])), BLUE, "R"))
+    # Each car and each way out carries its letter, so the three are told apart
+    # without color (blue and purple are a weak pair for red-green color blindness).
+    def badge(pt, ch, color):
+        o.append(f'<circle cx="{pt[0]:.1f}" cy="{pt[1]:.1f}" r="9.5" fill="#ffffff" stroke="{color}" stroke-width="2.5"/>'
+                 f'<text x="{pt[0]:.1f}" y="{pt[1]+4.6:.1f}" text-anchor="middle" font-family="{FONT}" font-size="13" font-weight="700" fill="#0f172a">{ch}</text>')
+    ga, pa, ba = loc(ARMS[0], 248, VG), loc(ARMS[0], 292, VP), loc(ARMS[0], 286, LANE * .5)
+    badge((ga[0] + 31, ga[1]), "A", GREEN); badge((pa[0] + 25, pa[1]), "B", PURPLE); badge((ba[0] - 31, ba[1]), "C", BLUE)
+    badge(loc(ARMS[1], 276, -LANE * 1.5 + 21), "A", GREEN)
+    badge(loc(ARMS[2], 276, -LANE * 1.5 + 21), "B", PURPLE)
+    badge(loc(ARMS[3], 276, -LANE * 1.5 + 21), "C", BLUE)
+    badge(ring(RP - 25, sa), "B", PURPLE)
+    badge((mid[0] + 4, mid[1] + 23), "C", BLUE)
     o.append('</g>')
     o.append(f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="12" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>')
     # ---- labels, one block in each free corner

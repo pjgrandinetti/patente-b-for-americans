@@ -3049,7 +3049,12 @@ behind what shipped:
   are in line in the middle of the lane since 20261103q (side by side, a
   few pixels apart, the purple car looked as if it were passing the green
   one), and where they share the lane the green line is dashed over the
-  purple one. "Always signal
+  purple one. **Lettered A, B, C since 20261103r (maintainer: what if
+  users are color blind?).** Blue and purple are a weak pair for red-green
+  color blindness, and the labels were tied to the paths by color alone.
+  Each car, each way out and each corner label carries its letter (A first
+  exit, B straight on, C left exit), and the captions name the letters. A
+  figure that distinguishes things by color gives them a second cue. "Always signal
   right to exit" is written on the central island, and each corner label
   ends on the exit signal. One car cannot stand for two cases whose signals
   differ.
