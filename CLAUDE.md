@@ -3109,7 +3109,25 @@ behind what shipped:
   (the sign-beside-its-explanation rule of the topic notes), so a figure
   placed after its steps is tied on screen to the NEXT group's steps. The
   first attempt did exactly that and no check noticed; a walk of the
-  rendered tree in jsdom did. In both halves at the same position. "Always signal
+  rendered tree in jsdom did. In both halves at the same position.
+  **Signals and hands audited across the maneuvers (20261103x, maintainer's
+  question).** Read against circular 28819 and Code art. 154. Added in both
+  halves: a paragraph opening Part 2 (every maneuver begins with a signal,
+  kept on throughout and switched off after, art. 154 c. 1 and 2; both
+  hands on the wheel, one hand allowed only while reversing in a straight
+  line and turning to look back); a reversing bullet on that one-hand hold
+  (circular para. a: the hand on top of the wheel, the right arm behind the
+  passenger seat, allowed because the speed is very low); a parking bullet
+  on signaling toward the space before slowing (art. 154; the circular
+  names the signal only for pulling OUT); the signal written into every
+  roundabout lane case (the exit-right and heavy-traffic bullets had left
+  it to an earlier bullet); and "Left hand on top of the wheel" on the
+  reverse figure. The page carries 97 pills. **The circular names NO hand
+  positions on the wheel** (no 9-and-3 or 10-and-2 anywhere in its 26
+  pages), so the page names none; that grip is the instructor's to teach.
+  Stopping at a given point was left alone: art. 154 c. 2 asks that the
+  intention to slow and stop be signaled, and how that applies to the
+  frenata di precisione is not something either source settles. "Always signal
   right to exit" is written on the central island, and each corner label
   ends on the exit signal. One car cannot stand for two cases whose signals
   differ.

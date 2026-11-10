@@ -20,9 +20,11 @@
 <text x="14" y="86">Leave room for</text>
 <text x="14" y="105">the last move.</text>
 <text x="626" y="40" text-anchor="end">Right signal on.</text>
-<text x="626" y="59" text-anchor="end">Look back, and</text>
-<text x="626" y="78" text-anchor="end">glance ahead,</text>
-<text x="626" y="97" text-anchor="end">right and left.</text>
-<text x="626" y="116" text-anchor="end">Reverse.</text>
+<text x="626" y="59" text-anchor="end">Left hand on top</text>
+<text x="626" y="78" text-anchor="end">of the wheel.</text>
+<text x="626" y="97" text-anchor="end">Look back, and</text>
+<text x="626" y="116" text-anchor="end">glance ahead,</text>
+<text x="626" y="135" text-anchor="end">right and left.</text>
+<text x="626" y="154" text-anchor="end">Reverse.</text>
 </g>
 </svg>

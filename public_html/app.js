@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261103w';
+const APP_VERSION     = '20261103x';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1771,6 +1771,8 @@ the Italian name is given beside each one. If you make a mistake in a
 maneuver, the examiner may let you repeat it. A second mistake in the same
 maneuver ends the test.
 
+Every maneuver begins with a turn signal. The Code (art. 154) requires you to signal in good time before you reverse, turn around, change lanes, pull out or pull over, to keep the signal on for the whole maneuver, and to switch it off when you have finished. Keep both hands on the wheel. The circular allows one hand only while you reverse in a straight line and turn to look back.
+
 ### Reversing (*retromarcia*)
 
 You may be asked to reverse in a straight line or around a corner.
@@ -1778,6 +1780,7 @@ You may be asked to reverse in a straight line or around a corner.
 - Look in the interior mirror and the right mirror.
 - Switch on the right turn signal.
 - Turn your head and upper body to check the blind spot on the right directly. The examiner must see you do it.
+- In a straight line, keep one hand on top of the wheel and, if you can, put your right arm behind the passenger seat, so that you can turn far enough to look back. One hand is allowed here because you are moving very slowly.
 - Reverse slowly, parallel to the curb, with small corrections of the wheel. Short glances at the mirrors are allowed.
 - Around a corner, keep both hands on the wheel and rely more on the mirrors.
 
@@ -1816,6 +1819,7 @@ reverse, on level ground or on a slope. Then
 you pull out again.
 
 - Before you start, check behind and to both sides.
+- Signal toward the side of the space before you slow down, and keep the signal on until you are parked.
 - The rules set no method for parking. Your instructor will probably teach reference points for the school's car, such as where to line up your mirror and how far to turn the wheel. Use them as a starting point, and check your angle as you reverse, since the car beside you may be longer or shorter than the one you practiced with.
 - The exact distance from the curb does not matter. What matters is that you hit no other vehicle, put nobody at risk, block no traffic, and finish parallel to the curb and inside the bay.
 - To pull out, signal, check every mirror and both blind spots, then move off promptly and join the right lane.
@@ -1858,12 +1862,12 @@ candidates most often go wrong.
 
 ![!xl The first exit, from the right lane. The amber marks show the turn signal](review_media/roundabout-first-en.svg)
 
-- To exit right, approach near the right edge and keep to the right lane.
+- To exit right, approach near the right edge and keep to the right lane. For the first exit, signal right as you approach and keep the signal on until you have left. For a later exit on the right, signal right just after you pass the exit before yours.
 
 ![!xl Straight on, from the right lane, with no signal on entering](review_media/roundabout-straight-en.svg)
 
-- To go straight in light traffic, keep to the right lane and signal right just before your exit.
-- To go straight in heavy traffic, enter in a free lane and keep it, then move to the right lane with a signal before your exit.
+- To go straight in light traffic, keep to the right lane. Give no signal as you enter, and signal right just after you pass the exit before yours.
+- To go straight in heavy traffic, enter in a free lane and keep it, then signal right and move to the right lane before your exit.
 
 ![!xl The left exit, from the left lane](review_media/roundabout-left-en.svg)
 
@@ -2018,6 +2022,8 @@ retromarcia. L'esaminatore dice quali e come. Se sbagli una manovra,
 l'esaminatore può farti ripetere. Un secondo errore nella stessa manovra
 conclude l'esame.
 
+Ogni manovra comincia con una freccia. Il Codice (art. 154) impone di segnalare con sufficiente anticipo prima di fare retromarcia, invertire la marcia, cambiare corsia, immetterti nella circolazione o accostare, di tenere la freccia inserita per tutta la manovra e di spegnerla quando hai finito. Tieni entrambe le mani sul volante. La circolare ammette una sola mano soltanto mentre fai retromarcia in linea retta e ti giri per guardare indietro.
+
 ### La retromarcia
 
 Può esserti chiesta in linea retta o con una svolta.
@@ -2025,6 +2031,7 @@ Può esserti chiesta in linea retta o con una svolta.
 - Guarda nello specchio interno e nello specchio destro.
 - Accendi l'indicatore di direzione destro.
 - Gira la testa e il busto per controllare direttamente l'angolo cieco a destra. L'esaminatore deve vederti farlo.
+- In linea retta, tieni una mano sulla parte alta del volante e, se puoi, metti il braccio destro dietro il sedile del passeggero, così da girarti abbastanza per guardare indietro. Qui una sola mano è ammessa perché procedi a velocità bassissima.
 - Procedi lentamente, parallelo al margine, con piccole correzioni dello sterzo. Sono ammesse brevi occhiate agli specchi.
 - In curva, tieni entrambe le mani sul volante e affidati di più agli specchi.
 
@@ -2062,6 +2069,7 @@ a spina di pesce, in avanti o in retromarcia, in piano o in pendenza. Poi esci
 di nuovo dal posto.
 
 - Prima di iniziare, controlla dietro e su entrambi i lati.
+- Metti la freccia verso il lato del posto prima di rallentare, e tienila inserita finché non hai parcheggiato.
 - Le regole non stabiliscono un metodo per parcheggiare. L'istruttore ti insegnerà probabilmente dei punti di riferimento per l'auto della scuola, per esempio dove allineare lo specchietto e quanto girare il volante. Usali come punto di partenza e controlla l'angolo mentre fai retromarcia, perché l'auto accanto può essere più lunga o più corta di quella con cui hai fatto pratica.
 - La distanza esatta dal marciapiede non conta. Conta che tu non urti altri veicoli, non metta in pericolo nessuno, non intralci il traffico e finisca parallelo al marciapiede e dentro lo stallo.
 - Per uscire, segnala, controlla tutti gli specchi ed entrambi gli angoli ciechi, poi parti senza esitare e immettiti nella corsia di destra.
@@ -2103,12 +2111,12 @@ che i candidati sbagliano più spesso.
 
 ![!xl La prima uscita, dalla corsia di destra. I segni arancioni mostrano la freccia inserita](review_media/roundabout-first-it.svg)
 
-- Per uscire a destra, avvicinati vicino al margine destro e resta nella corsia di destra.
+- Per uscire a destra, avvicinati vicino al margine destro e resta nella corsia di destra. Per la prima uscita, segnala a destra mentre ti avvicini e tieni la freccia inserita finché non sei uscito. Per un'uscita successiva sulla destra, segnala a destra subito dopo aver superato l'uscita che precede la tua.
 
 ![!xl Dritto, dalla corsia di destra, senza freccia entrando](review_media/roundabout-straight-it.svg)
 
-- Per proseguire dritto con poco traffico, resta nella corsia di destra e segnala a destra subito prima della tua uscita.
-- Per proseguire dritto con traffico intenso, entra in una corsia libera e mantienila, poi spostati nella corsia di destra segnalando prima della tua uscita.
+- Per proseguire dritto con poco traffico, resta nella corsia di destra. Entra senza freccia, e segnala a destra subito dopo aver superato l'uscita che precede la tua.
+- Per proseguire dritto con traffico intenso, entra in una corsia libera e mantienila, poi segnala a destra e spostati nella corsia di destra prima della tua uscita.
 
 ![!xl L'uscita a sinistra, dalla corsia di sinistra](review_media/roundabout-left-it.svg)
 
