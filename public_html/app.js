@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261103l';
+const APP_VERSION     = '20261103m';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1851,6 +1851,8 @@ candidates most often go wrong.
   - to go straight in heavy traffic, enter in a free lane and keep it, then move to the right lane with a signal before your exit;
   - to exit left, approach in the left lane as for a left turn, signal left as you enter, keep the signal on, and stay in the left lane. Before your exit, signal right and move to the right lane without cutting anyone off. If heavy traffic keeps you out of the left lane, stay in the right lane all the way round.
 
+![!xl The green car entered in the right lane and takes the first exit, or goes straight on; the blue car entered in the left lane for the left exit, keeps its left signal on round the ring, and moves to the right lane with a right signal before leaving](review_media/roundabout-lanes-en.svg)
+
 ## What the examiner judges
 
 The examiner judges partly by whether you obey the signs and the rules, and
@@ -2073,6 +2075,8 @@ che i candidati sbagliano più spesso.
   - per proseguire dritto con poco traffico, resta nella corsia di destra e segnala a destra subito prima della tua uscita;
   - per proseguire dritto con traffico intenso, entra in una corsia libera e mantienila, poi spostati nella corsia di destra segnalando prima della tua uscita;
   - per uscire a sinistra, avvicinati nella corsia di sinistra come per una svolta a sinistra, segnala a sinistra entrando, tieni la freccia inserita e resta nella corsia di sinistra. Prima della tua uscita, segnala a destra e spostati nella corsia di destra senza tagliare la strada a nessuno. Se il traffico intenso ti impedisce di prendere la corsia di sinistra, resta nella corsia di destra per tutto il giro.
+
+![!xl L'auto verde è entrata nella corsia di destra e prende la prima uscita, o prosegue dritto; l'auto blu è entrata nella corsia di sinistra per l'uscita a sinistra, tiene la freccia a sinistra durante il giro e si sposta nella corsia di destra con la freccia a destra prima di uscire](review_media/roundabout-lanes-it.svg)
 
 ## Che cosa valuta l'esaminatore
 

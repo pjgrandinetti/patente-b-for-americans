@@ -3007,6 +3007,19 @@ behind what shipped:
   lists among the maneuvers. By position, the third and fourth ## headings,
   so both languages fold alike; a new ## before them moves the fold. The
   overlay path (`openDrivingTest`) does not fold.
+  **The two-lane roundabout has a figure (20261103m, maintainer's second
+  lesson, 2026-11-10: his instructor drew the lanes by exit).**
+  `review_media/roundabout-lanes-en.svg` and `-it.svg`, drawn by
+  `scripts/draw_roundabout.py` from one drawing (edit the labels there and
+  rerun), under the lane bullets of Roundabouts in both halves: the green
+  car from the right lane takes the first exit or goes straight on, the
+  blue car from the left lane goes round the inner lane with its left
+  signal on and moves to the outer lane before the left exit. It draws the
+  circular's para. d.4, which the bullets already state; the sketch is one
+  instructor's and is not copied. The instructor said nothing about where
+  the lane change is made; the page says only "before your exit". Both
+  files are in the worker's precache, and the caption pairs by `captionKey`
+  like the speed grid's.
   **The autostrada is on the route (20261031g, maintainer's question:
   what if a learner fears the autostrada?).** Part 3 said the drive "may
   include" its list; circular 28819 says the candidate MUST perform the

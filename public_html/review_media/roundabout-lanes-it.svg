@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" role="img" aria-label="Una rotatoria a due corsie vista dall'alto, con il traffico in senso antiorario. Dall'ingresso in basso l'auto nella corsia di destra prende la prima uscita o prosegue dritto; l'auto nella corsia di sinistra percorre la corsia interna per l'uscita a sinistra e si sposta nella corsia di destra, con la freccia a destra, prima di uscire. Ogni uscita si prende dalla corsia esterna.">
+<title>Una rotatoria a due corsie vista dall'alto, con il traffico in senso antiorario. Dall'ingresso in basso l'auto nella corsia di destra prende la prima uscita o prosegue dritto; l'auto nella corsia di sinistra percorre la corsia interna per l'uscita a sinistra e si sposta nella corsia di destra, con la freccia a destra, prima di uscire. Ogni uscita si prende dalla corsia esterna.</title>
+<defs><marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0F6E56"/></marker><marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1D4ED8"/></marker></defs>
+<rect x="1" y="1" width="558" height="558" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+<g fill="#E2E8F0">
+<rect x="208" y="0" width="144" height="268"/>
+<rect x="208" y="268" width="144" height="292"/>
+<rect x="0" y="196" width="280" height="144"/>
+<rect x="280" y="196" width="280" height="144"/>
+<circle cx="280" cy="268" r="154"/>
+</g>
+<circle cx="280" cy="268" r="62" fill="#CBD5E1"/>
+<circle cx="280" cy="268" r="66" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+<g stroke="#ffffff" stroke-width="2.5" fill="none">
+<circle cx="280" cy="268" r="108" stroke-dasharray="10 9"/>
+<line x1="280" y1="0" x2="280" y2="114" stroke-width="3"/>
+<line x1="280" y1="422" x2="280" y2="560" stroke-width="3"/>
+<line x1="0" y1="268" x2="126" y2="268" stroke-width="3"/>
+<line x1="434" y1="268" x2="560" y2="268" stroke-width="3"/>
+<line x1="244.0" y1="0" x2="244.0" y2="114" stroke-dasharray="10 9"/>
+<line x1="244.0" y1="422" x2="244.0" y2="560" stroke-dasharray="10 9"/>
+<line x1="0" y1="232.0" x2="126" y2="232.0" stroke-dasharray="10 9"/>
+<line x1="434" y1="232.0" x2="560" y2="232.0" stroke-dasharray="10 9"/>
+<line x1="316.0" y1="0" x2="316.0" y2="114" stroke-dasharray="10 9"/>
+<line x1="316.0" y1="422" x2="316.0" y2="560" stroke-dasharray="10 9"/>
+<line x1="0" y1="304.0" x2="126" y2="304.0" stroke-dasharray="10 9"/>
+<line x1="434" y1="304.0" x2="560" y2="304.0" stroke-dasharray="10 9"/>
+</g>
+<line x1="282" y1="424" x2="350" y2="424" stroke="#ffffff" stroke-width="4" stroke-dasharray="6 5"/>
+<polygon points="362,444 386,444 374,465" fill="#ffffff" stroke="#DC2626" stroke-width="4" stroke-linejoin="round"/>
+<g fill="none" stroke-width="5" stroke-linecap="round">
+<path d="M 395.7,329.5 A 131.0 131.0 0 0 0 329.1 146.5 Q 330.0,120.0 334.0,84.0 L 334.0,30.0" stroke="#0F6E56" stroke-dasharray="2 11" marker-end="url(#ag)"/>
+<path d="M 334.0,532.0 L 334.0,452.0 Q 334.0,402.0 345.5,381.4 A 131.0 131.0 0 0 0 395.7 329.5 Q 422.0,322.0 464.0,322.0 L 530.0,322.0" stroke="#0F6E56" marker-end="url(#ag)"/>
+<path d="M 298.0,532.0 L 298.0,452.0 Q 298.0,392.0 310.4,351.6 A 89.0 89.0 0 0 0 264.5 180.4 Q 227.5,184.0 182.6,180.3 A 131.0 131.0 0 0 0 166.6 202.5 C 155.0,222.5 100.0,216.0 72.0,214.0 L 30.0,214.0" stroke="#1D4ED8" marker-end="url(#ab)"/>
+</g>
+<g transform="translate(334.0 508.0) rotate(-90)"><rect x="-11" y="-6.5" width="22" height="13" rx="3.5" fill="#0F6E56"/><rect x="-2" y="-5" width="8" height="10" rx="2" fill="#ffffff" opacity=".55"/></g>
+<g transform="translate(298.0 508.0) rotate(-90)"><rect x="-11" y="-6.5" width="22" height="13" rx="3.5" fill="#1D4ED8"/><rect x="-2" y="-5" width="8" height="10" rx="2" fill="#ffffff" opacity=".55"/></g>
+<g transform="translate(208.0 182.2) rotate(-232)"><rect x="-11" y="-6.5" width="22" height="13" rx="3.5" fill="#1D4ED8"/><rect x="-2" y="-5" width="8" height="10" rx="2" fill="#ffffff" opacity=".55"/></g>
+<g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">
+<text x="544" y="504" text-anchor="end" fill="#ffffff" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">Corsia di destra: prima uscita, o dritto</text>
+<text x="544" y="504" text-anchor="end" fill="#0F6E56">Corsia di destra: prima uscita, o dritto</text>
+<text x="544" y="524" text-anchor="end" fill="#ffffff" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">Dai la precedenza entrando</text>
+<text x="544" y="524" text-anchor="end" fill="#DC2626">Dai la precedenza entrando</text>
+<text x="16" y="504" text-anchor="start" fill="#ffffff" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">Corsia di sinistra: uscita a sinistra</text>
+<text x="16" y="504" text-anchor="start" fill="#1D4ED8">Corsia di sinistra: uscita a sinistra</text>
+<text x="16" y="524" text-anchor="start" fill="#ffffff" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">Freccia a sinistra durante il giro</text>
+<text x="16" y="524" text-anchor="start" fill="#1D4ED8">Freccia a sinistra durante il giro</text>
+<text x="16" y="156" text-anchor="start" fill="#ffffff" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">Spostati nella corsia di destra prima dell'uscita</text>
+<text x="16" y="156" text-anchor="start" fill="#1D4ED8">Spostati nella corsia di destra prima dell'uscita</text>
+</g>
+</svg>
