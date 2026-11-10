@@ -3033,6 +3033,14 @@ behind what shipped:
   markings rules before it ships, as an explanation is checked against the
   Code. The figures live in the versioned precache, so a redraw needs the
   version bump and no `IMG_REFRESH` entry.
+  **The cars show their turn signals since 20261103o (maintainer).** Amber
+  marks on the signalling side (`car(..., sig)`): the green car signals
+  right on the approach for the first exit, the blue car left on entering
+  for the left exit, the blue car right at its lane change, and a second
+  green car on the dotted path signals right once past the first exit, for
+  going straight on. The corner labels state the same, and the caption says
+  what the amber marks are. All from circular 28819 para. d, as the bullets
+  above the figure state.
   **The autostrada is on the route (20261031g, maintainer's question:
   what if a learner fears the autostrada?).** Part 3 said the drive "may
   include" its list; circular 28819 says the candidate MUST perform the

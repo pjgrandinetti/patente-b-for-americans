@@ -23,12 +23,12 @@ from pathlib import Path
 OUT = Path(__file__).resolve().parents[1] / "public_html" / "review_media"
 
 L = {
- "en": dict(bl=["Left lane: the left exit.", "Keep the left signal on", "as you go round."],
-            br=["Right lane: the first exit,", "or straight on."],
+ "en": dict(bl=["Left lane: the left exit.", "Signal left as you enter", "and keep it on."],
+            br=["Right lane, first exit:", "signal right on the approach.", "Straight on: signal right", "after the first exit."],
             tl=["Before your exit, signal", "right and move to the", "right lane."],
             title="A roundabout with two lanes, seen from above, traffic going counterclockwise. From the entry at the bottom the car in the right lane takes the first exit or goes straight on; the car in the left lane goes round in the inner lane for the left exit and moves to the right lane, with a right signal, before leaving. Every exit is taken from the outer lane. Each entry has a yield line of white triangles."),
- "it": dict(bl=["Corsia di sinistra: uscita", "a sinistra. Freccia a", "sinistra durante il giro."],
-            br=["Corsia di destra: prima", "uscita, o dritto."],
+ "it": dict(bl=["Corsia di sinistra: uscita", "a sinistra. Freccia a sinistra", "entrando, e tienila inserita."],
+            br=["Corsia di destra.", "Prima uscita: freccia a destra", "avvicinandoti. Dritto: freccia", "a destra dopo la prima uscita."],
             tl=["Prima dell'uscita, freccia", "a destra e spostati nella", "corsia di destra."],
             title="Una rotatoria a due corsie vista dall'alto, con il traffico in senso antiorario. Dall'ingresso in basso l'auto nella corsia di destra prende la prima uscita o prosegue dritto; l'auto nella corsia di sinistra percorre la corsia interna per l'uscita a sinistra e si sposta nella corsia di destra, con la freccia a destra, prima di uscire. Ogni uscita si prende dalla corsia esterna. Ogni ingresso ha la linea di dare precedenza a triangoli bianchi."),
 }
@@ -39,7 +39,7 @@ RI, RD, RO = 66, 113, 160            # island kerb, lane divider, outer edge of 
 R_IN, R_OUT = (RI + RD) / 2, (RD + RO) / 2
 LANE, ISL, EDGE = 34, 14, 3          # lane width, splitter half-width at the ring, margin outside the edge line
 U_FAR, U_NEAR = 250, 178             # the arm widens between these distances from the centre
-GREEN, BLUE, RED = "#0F6E56", "#1D4ED8", "#DC2626"
+GREEN, BLUE, RED, AMBER = "#0F6E56", "#1D4ED8", "#DC2626", "#F59E0B"
 ROAD, GRASS, KERB, WHITE = "#B4BCC8", "#DCE8DA", "#7C8798", "#ffffff"
 ARMS = [(0, 1), (1, 0), (0, -1), (-1, 0)]   # outward directions: bottom, right, top, left
 
@@ -61,10 +61,18 @@ def cubic(A, a, B, b, k):
     return f"C {f((A[0]+k*a[0], A[1]+k*a[1]))} {f((B[0]-k*b[0], B[1]-k*b[1]))} {f(B)}"
 def arc(r, a1):                             # counterclockwise on the map is sweep 0 in SVG
     return f"A {r} {r} 0 0 0 {f(ring(r, a1))}"
-def car(p, deg, color):
-    return (f'<g transform="translate({p[0]:.1f} {p[1]:.1f}) rotate({-deg})">'
-            f'<rect x="-12" y="-7" width="24" height="14" rx="4" fill="{color}" stroke="#ffffff" stroke-width="1"/>'
-            f'<rect x="-1" y="-5" width="7" height="10" rx="2" fill="#ffffff" opacity=".6"/></g>')
+def car(p, deg, color, sig=None):
+    """A car seen from above, nose at `deg`. sig 'L' or 'R' lights that side's turn signals (amber)."""
+    out = (f'<g transform="translate({p[0]:.1f} {p[1]:.1f}) rotate({-deg})">'
+           f'<rect x="-12" y="-7" width="24" height="14" rx="4" fill="{color}" stroke="#ffffff" stroke-width="1"/>'
+           f'<rect x="-1" y="-5" width="7" height="10" rx="2" fill="#ffffff" opacity=".6"/>')
+    if sig:
+        y = 8 if sig == "R" else -8          # the car's right is +y once the nose points along +x
+        o = 1 if sig == "R" else -1
+        for x in (10, -10):
+            out += (f'<circle cx="{x}" cy="{y}" r="4.2" fill="{AMBER}" stroke="#7C2D12" stroke-width="1"/>'
+                    f'<path d="M {x-4} {y+o*7} L {x-6} {y+o*11} M {x} {y+o*8} L {x} {y+o*12.5} M {x+4} {y+o*7} L {x+6} {y+o*11}" stroke="{AMBER}" stroke-width="2" stroke-linecap="round" fill="none"/>')
+    return out + '</g>'
 
 def svg(lang):
     t = L[lang]; o = []
@@ -169,12 +177,16 @@ def svg(lang):
     o.append(f'<path d="{g1}" stroke="{GREEN}" marker-end="url(#ag)"/>')
     o.append(f'<path d="{b1}" stroke="{BLUE}" marker-end="url(#ab)"/>')
     o.append('</g>')
-    o.append(car(loc(ARMS[0], 286, LANE * 1.5), 90, GREEN))
-    o.append(car(loc(ARMS[0], 286, LANE * .5), 90, BLUE))
+    # Turn signals: right on the approach for the first exit, left on entering for
+    # the left exit, right before leaving for every later exit (circular 28819 d).
+    o.append(car(loc(ARMS[0], 286, LANE * 1.5), 90, GREEN, "R"))
+    o.append(car(loc(ARMS[0], 286, LANE * .5), 90, BLUE, "L"))
+    sa = -12                                  # straight on: past the first exit, signal right
+    o.append(car(ring(R_OUT, sa), math.degrees(math.atan2(math.cos(math.radians(sa)), math.sin(math.radians(sa)))), GREEN, "R"))
     # the blue car again, half-way through its lane change, pointing along the path
     mid = tuple((N2[i] + 3 * c1[i] + 3 * c2[i] + N3[i]) / 8 for i in (0, 1))
     der = tuple((-N2[i] - c1[i] + c2[i] + N3[i]) for i in (0, 1))
-    o.append(car(mid, math.degrees(math.atan2(-der[1], der[0])), BLUE))
+    o.append(car(mid, math.degrees(math.atan2(-der[1], der[0])), BLUE, "R"))
     o.append('</g>')
     o.append(f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="12" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>')
     # ---- labels, one block in each free corner
