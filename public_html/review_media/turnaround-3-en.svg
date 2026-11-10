@@ -18,8 +18,10 @@
 <circle cx="34" cy="36" r="19" fill="#1D4ED8"/><text x="34" y="43.5" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="700" fill="#ffffff">3</text>
 <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#1e293b">
 <text x="14" y="86">Left signal on.</text>
-<text x="14" y="105">Yield to anyone</text>
-<text x="14" y="124">coming.</text>
+<text x="14" y="105">Look right</text>
+<text x="14" y="124">and left.</text>
+<text x="14" y="143">Yield to anyone</text>
+<text x="14" y="162">coming.</text>
 <text x="626" y="40" text-anchor="end">Then move into</text>
 <text x="626" y="59" text-anchor="end">the right lane.</text>
 </g>

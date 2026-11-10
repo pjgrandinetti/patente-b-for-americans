@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261103u';
+const APP_VERSION     = '20261103v';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1785,7 +1785,8 @@ You may be asked to reverse in a straight line or around a corner.
 
 You turn the car to face the other way, using forward and reverse gears. You
 must do it in several moves, even if the road is wide enough to turn in one.
-The examiner tells you this before you start.
+The examiner tells you this before you start. Look in every direction before
+each move and while the car is moving.
 
 - Start at the right edge of the road, in first gear.
 - Look ahead, behind and to both sides. Use the inside and left mirrors, and turn your head to the left to check the blind spot.
@@ -1799,9 +1800,9 @@ The examiner tells you this before you start.
 - Select first gear and switch on the left turn signal.
 - Look right and left, yield to any vehicle that is coming, and move promptly into the right lane.
 
-![!xl First move. With the left signal on, go forward at walking pace, steering to the left, and stop before the left edge. The dashed outline shows where the car stops. The amber marks show the turn signal](review_media/turnaround-1-en.svg)
+![!xl First move. Look ahead, behind and to both sides. With the left signal on, go forward at walking pace, steering to the left, and stop before the left edge. The dashed outline shows where the car stops. The amber marks show the turn signal](review_media/turnaround-1-en.svg)
 
-![!xl Second move. With the right signal on, reverse at moderate speed, looking back, far enough to leave room for the last move](review_media/turnaround-2-en.svg)
+![!xl Second move. With the right signal on, look back through the rear window, glance ahead, to your right and to your left, and reverse at moderate speed, far enough to leave room for the last move](review_media/turnaround-2-en.svg)
 
 ![!xl Third move. With the left signal on, look both ways, yield to any vehicle that is coming, and move into the right lane](review_media/turnaround-3-en.svg)
 
@@ -2025,7 +2026,8 @@ Può esserti chiesta in linea retta o con una svolta.
 
 Giri l'auto nel senso opposto, usando la marcia avanti e la retromarcia. Devi
 farlo in più manovre, anche se la strada è abbastanza larga per girare in una
-sola. L'esaminatore te lo dice prima di iniziare.
+sola. L'esaminatore te lo dice prima di iniziare. Guarda in tutte le direzioni
+prima di ogni manovra e mentre l'auto si muove.
 
 - Parti dal margine destro della strada, in prima.
 - Guarda avanti, dietro e su entrambi i lati. Usa lo specchietto interno e quello sinistro, e gira la testa a sinistra per controllare l'angolo morto.
@@ -2039,9 +2041,9 @@ sola. L'esaminatore te lo dice prima di iniziare.
 - Inserisci la prima e accendi l'indicatore sinistro.
 - Guarda a destra e a sinistra, dai la precedenza a chi arriva e immettiti rapidamente nella corsia di destra.
 
-![!xl Prima manovra. Con la freccia a sinistra, avanza a passo d'uomo sterzando a sinistra, e fermati prima del margine sinistro. Il contorno tratteggiato mostra dove l'auto si ferma. I segni arancioni mostrano la freccia inserita](review_media/turnaround-1-it.svg)
+![!xl Prima manovra. Guarda avanti, dietro e su entrambi i lati. Con la freccia a sinistra, avanza a passo d'uomo sterzando a sinistra, e fermati prima del margine sinistro. Il contorno tratteggiato mostra dove l'auto si ferma. I segni arancioni mostrano la freccia inserita](review_media/turnaround-1-it.svg)
 
-![!xl Seconda manovra. Con la freccia a destra, fai retromarcia a velocità moderata, guardando indietro, per un tratto sufficiente all'ultima manovra](review_media/turnaround-2-it.svg)
+![!xl Seconda manovra. Con la freccia a destra, guarda indietro attraverso il lunotto, dai uno sguardo avanti, a destra e a sinistra, e fai retromarcia a velocità moderata, per un tratto sufficiente all'ultima manovra](review_media/turnaround-2-it.svg)
 
 ![!xl Terza manovra. Con la freccia a sinistra, guarda da entrambi i lati, dai la precedenza a chi arriva e immettiti nella corsia di destra](review_media/turnaround-3-it.svg)
 

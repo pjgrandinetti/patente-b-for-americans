@@ -17,12 +17,14 @@
 <rect x="1" y="1" width="638" height="498" rx="12" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
 <circle cx="34" cy="36" r="19" fill="#1D4ED8"/><text x="34" y="43.5" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="700" fill="#ffffff">1</text>
 <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#1e293b">
-<text x="14" y="86">Freccia a</text>
-<text x="14" y="105">sinistra.</text>
-<text x="14" y="124">Avanti a passo</text>
-<text x="14" y="143">d'uomo,</text>
-<text x="14" y="162">sterzando a</text>
-<text x="14" y="181">sinistra.</text>
+<text x="14" y="86">Guarda avanti,</text>
+<text x="14" y="105">dietro e ai lati.</text>
+<text x="14" y="124">Freccia a</text>
+<text x="14" y="143">sinistra.</text>
+<text x="14" y="162">Avanti a passo</text>
+<text x="14" y="181">d'uomo,</text>
+<text x="14" y="200">sterzando a</text>
+<text x="14" y="219">sinistra.</text>
 <text x="626" y="40" text-anchor="end">Fermati prima</text>
 <text x="626" y="59" text-anchor="end">del margine.</text>
 </g>

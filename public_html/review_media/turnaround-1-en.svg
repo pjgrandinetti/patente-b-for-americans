@@ -17,10 +17,13 @@
 <rect x="1" y="1" width="638" height="498" rx="12" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
 <circle cx="34" cy="36" r="19" fill="#1D4ED8"/><text x="34" y="43.5" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="700" fill="#ffffff">1</text>
 <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#1e293b">
-<text x="14" y="86">Left signal on.</text>
-<text x="14" y="105">Forward at</text>
-<text x="14" y="124">walking pace,</text>
-<text x="14" y="143">steering left.</text>
+<text x="14" y="86">Look ahead,</text>
+<text x="14" y="105">behind and to</text>
+<text x="14" y="124">both sides.</text>
+<text x="14" y="143">Left signal on.</text>
+<text x="14" y="162">Forward at</text>
+<text x="14" y="181">walking pace,</text>
+<text x="14" y="200">steering left.</text>
 <text x="626" y="40" text-anchor="end">Stop before</text>
 <text x="626" y="59" text-anchor="end">the edge.</text>
 </g>

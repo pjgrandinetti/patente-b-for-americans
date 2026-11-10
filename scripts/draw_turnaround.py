@@ -5,9 +5,12 @@ review_media/turnaround-{1,2,3}-{en,it}.svg: the inversione di marcia of
 circular 28819 para. b, one figure per move, seen from above on a two-way
 street 7 m wide with a sidewalk on each side and a broken center line.
   1. Forward from the right edge, steering left, to a stop before the left
-     edge. Left signal.
+     edge. Left signal. Look ahead, behind and to both sides first.
   2. Reverse, far enough to leave room for the last move. Right signal.
+     Look back, with glances ahead, right and left.
   3. Forward into the right lane of the opposite direction. Left signal.
+     Look right and left.
+Every label names where to look as well as the signal (maintainer, 20261103v).
 Each figure shows the car where the move starts (solid, with its signal in
 amber), the path of its leading end, the front going forward and the rear in reverse (dashed when reversing), and the car where
 the move ends (a dashed outline, drawn over the starting car, with a bar at its front). One figure per move, because the car is longer
@@ -22,17 +25,17 @@ from pathlib import Path
 OUT = Path(__file__).resolve().parents[1] / "public_html" / "review_media"
 
 L = {
- 1: {"en": dict(l=["Left signal on.", "Forward at", "walking pace,", "steering left."], r=["Stop before", "the edge."],
+ 1: {"en": dict(l=["Look ahead,", "behind and to", "both sides.", "Left signal on.", "Forward at", "walking pace,", "steering left."], r=["Stop before", "the edge."],
                 title="Turning around, first move, seen from above on a two-way street. The car starts at the right edge with its left signal on, goes forward steering left, and stops across the road with its front just short of the left edge."),
-     "it": dict(l=["Freccia a", "sinistra.", "Avanti a passo", "d'uomo,", "sterzando a", "sinistra."], r=["Fermati prima", "del margine."],
+     "it": dict(l=["Guarda avanti,", "dietro e ai lati.", "Freccia a", "sinistra.", "Avanti a passo", "d'uomo,", "sterzando a", "sinistra."], r=["Fermati prima", "del margine."],
                 title="Inversione di marcia, prima manovra, vista dall'alto su una strada a doppio senso. L'auto parte dal margine destro con la freccia a sinistra, avanza sterzando a sinistra e si ferma di traverso con il muso poco prima del margine sinistro.")},
- 2: {"en": dict(r=["Right signal on.", "Reverse, looking", "back."], l=["Leave room for", "the last move."],
+ 2: {"en": dict(r=["Right signal on.", "Look back, and", "glance ahead,", "right and left.", "Reverse."], l=["Leave room for", "the last move."],
                 title="Turning around, second move, seen from above. The car, across the road with its right signal on, reverses toward the right edge, far enough to leave room for the last move."),
-     "it": dict(r=["Freccia a destra.", "Retromarcia,", "guardando", "indietro."], l=["Lascia spazio", "per l'ultima", "manovra."],
+     "it": dict(r=["Freccia a destra.", "Guarda indietro,", "poi avanti, a", "destra e a", "sinistra.", "Retromarcia."], l=["Lascia spazio", "per l'ultima", "manovra."],
                 title="Inversione di marcia, seconda manovra, vista dall'alto. L'auto, di traverso con la freccia a destra, fa retromarcia verso il margine destro, per un tratto sufficiente all'ultima manovra.")},
- 3: {"en": dict(l=["Left signal on.", "Yield to anyone", "coming."], r=["Then move into", "the right lane."],
+ 3: {"en": dict(l=["Left signal on.", "Look right", "and left.", "Yield to anyone", "coming."], r=["Then move into", "the right lane."],
                 title="Turning around, third move, seen from above. The car, with its left signal on, goes forward steering left into the right lane of the opposite direction and drives away."),
-     "it": dict(l=["Freccia a", "sinistra.", "Dai la precedenza", "a chi arriva."], r=["Poi immettiti", "nella corsia", "di destra."],
+     "it": dict(l=["Freccia a", "sinistra.", "Guarda a destra", "e a sinistra.", "Dai la precedenza", "a chi arriva."], r=["Poi immettiti", "nella corsia", "di destra."],
                 title="Inversione di marcia, terza manovra, vista dall'alto. L'auto, con la freccia a sinistra, avanza sterzando a sinistra, entra nella corsia di destra del senso opposto e si allontana.")},
 }
 FONT = "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"

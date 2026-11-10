@@ -19,8 +19,10 @@
 <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#1e293b">
 <text x="14" y="86">Freccia a</text>
 <text x="14" y="105">sinistra.</text>
-<text x="14" y="124">Dai la precedenza</text>
-<text x="14" y="143">a chi arriva.</text>
+<text x="14" y="124">Guarda a destra</text>
+<text x="14" y="143">e a sinistra.</text>
+<text x="14" y="162">Dai la precedenza</text>
+<text x="14" y="181">a chi arriva.</text>
 <text x="626" y="40" text-anchor="end">Poi immettiti</text>
 <text x="626" y="59" text-anchor="end">nella corsia</text>
 <text x="626" y="78" text-anchor="end">di destra.</text>

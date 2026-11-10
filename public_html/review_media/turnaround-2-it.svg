@@ -21,8 +21,10 @@
 <text x="14" y="105">per l'ultima</text>
 <text x="14" y="124">manovra.</text>
 <text x="626" y="40" text-anchor="end">Freccia a destra.</text>
-<text x="626" y="59" text-anchor="end">Retromarcia,</text>
-<text x="626" y="78" text-anchor="end">guardando</text>
-<text x="626" y="97" text-anchor="end">indietro.</text>
+<text x="626" y="59" text-anchor="end">Guarda indietro,</text>
+<text x="626" y="78" text-anchor="end">poi avanti, a</text>
+<text x="626" y="97" text-anchor="end">destra e a</text>
+<text x="626" y="116" text-anchor="end">sinistra.</text>
+<text x="626" y="135" text-anchor="end">Retromarcia.</text>
 </g>
 </svg>

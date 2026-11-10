@@ -3089,7 +3089,13 @@ behind what shipped:
   in one drawing. The car (4.0 by 1.7 m), the street (7 m) and the turning
   radius (4.5 m) are to one scale, and the script computes the moves from
   them (77 degrees forward, 32 in reverse, 71 forward); change a dimension
-  there and the positions follow. "Always signal
+  there and the positions follow. **Every figure also says where to
+  LOOK (20261103v, maintainer).** The labels and captions name the visual
+  checks of the circular's steps (ahead, behind and both sides before the
+  first move; back, with glances ahead, right and left, in reverse; right
+  and left before the last), and the section's opening paragraph ends, in
+  both halves, "Look in every direction before each move and while the car
+  is moving." "Always signal
   right to exit" is written on the central island, and each corner label
   ends on the exit signal. One car cannot stand for two cases whose signals
   differ.
