@@ -6965,32 +6965,91 @@ to areas open to the public, and the two Reference rows whose only source was
    private route's unsourced figures. Add, in the same release, the paragraph on
    choosing a school as an experienced driver (note 7 there).
 
-## Watch: the draft new Code and roundabouts (maintainer's report, 2026-11-13)
+## Watch: pending law that would change what the app teaches (2026-11-13)
 
-A Geopop article of 12 November 2026 describes a draft legislative decree
-for a new Codice della Strada, still under examination and not in force
-before 1 January 2028. Only the article was read, not the draft. **Nothing
-changes until the decree is published AND the Ministry reissues the bank:
-the bank decides the answer, so teach the current rule until then.** What
-the article reports, and what each point would touch here:
-- **Art. 52 c. 11: vehicles in the ring have priority, unless signed
-  otherwise.** Today the Code has no roundabout rule, so the right-hand
-  rule applies without a yield sign. The answers of 22946 (VERO), 22945
-  (VERO) and 22952 (FALSO) would be wrong, 22886 needs rereading, 22953
-  stays FALSO on *sempre* with a new explanation, 22947 and 22948 stay
-  VERO. Topic 13's roundabout bullets and topic 02's "does not by itself
-  set priority" line would be rewritten.
-- **Art. 51 c. 8: the right lane serves only the first exit; every other
-  exit takes the lane nearest the island.** The driving test page's
-  two-lane section follows circular 28819 para. d.4, where straight on
-  uses the right lane, and its straight-on figure
-  (`roundabout-straight-*.svg`, `draw_roundabout.py`) would be wrong.
-- **Art. 52 c. 10: a driver changing lanes in the ring yields to vehicles
-  already in that lane.** The driving test page says only "before your
-  exit".
-When the decree is published, read its text and the reissued bank before
-changing anything, and check the other roundabout statements (26 live
-ones name a rotatoria) against both.
+Two pending acts. **Nothing changes until an act is published AND the
+Ministry reissues the bank: the bank decides the answer, so teach the
+current rule until then.** Only press coverage was read for this list
+(HDmotori and ANSA of 14 October 2026, Geopop of 12 November 2026), never
+the draft or the directive. Read the text itself before changing anything.
+**Next check: March 2027**, when the final decree is due.
+
+### 1. The draft new Codice della Strada
+
+A schema di decreto legislativo under art. 35 of L. 177/2024, approved in
+preliminary reading by the Council of Ministers on 13 October 2026. It
+would replace the whole 1992 Code. Final approval is due by 13 March 2027,
+and it would apply from 1 January 2028. What the coverage reports, and
+what each point would touch here (counts are live statements on the
+subject on 2026-11-13, by keyword):
+- **Roundabouts (maintainer's report, 2026-11-13).** Art. 52 c. 11:
+  vehicles in the ring have priority, unless signed otherwise. Today the
+  Code has no roundabout rule, so the right-hand rule applies without a
+  yield sign. The answers of 22946 (VERO), 22945 (VERO) and 22952 (FALSO)
+  would be wrong, 22886 needs rereading, 22953 stays FALSO on *sempre*
+  with a new explanation, 22947 and 22948 stay VERO; 26 live statements
+  name a rotatoria. Topic 13's roundabout bullets and topic 02's "does
+  not by itself set priority" line would be rewritten. Art. 51 c. 8: the
+  right lane serves only the first exit, and every other exit takes the
+  lane nearest the island; the driving test page's two-lane section
+  follows circular 28819 para. d.4, where straight on uses the right
+  lane, and its straight-on figure (`roundabout-straight-*.svg`,
+  `draw_roundabout.py`) would be wrong. Art. 52 c. 10: a driver changing
+  lanes in the ring yields to vehicles already in that lane; the page
+  says only "before your exit".
+- **Passing on the right.** On an autostrada or main extra-urban road
+  with three or more lanes each way, traffic in parallel lines without
+  congestion and passing slower vehicles on the right, and a 100 km/h
+  minimum in the far-left lane. Topics 10, 13 and 21 and the speed rows;
+  51 statements on passing on the right or parallel lines.
+- **Documents.** The license and the registration document no longer
+  carried, checked online. Topic 22, the "show the document later"
+  explanations (art. 180), the zero-point rows; 4 statements.
+- **Renewal and age limits.** The ten-year renewal extended to age 65
+  (today 50); the group 2 limit raised from 68 to 70. Topic 22; 17
+  statements on renewal ages.
+- **The emergency lane.** Motorcycles may use it in queues, and drivers
+  open a central corridor for rescue vehicles where there is none. Topic
+  21; 13 statements.
+- **Reversing on the autostrada** allowed at a broken toll barrier; 2
+  statements.
+- **Engine running for air conditioning while parked**: exceptions.
+  Topic 24; 9 statements on the subject.
+- **Winter tires only.** An ordinance may exclude chains. Topic 01's
+  chains paragraph; 31 statements on chains or winter tires.
+- **Seat belts and child restraints on heavy quadricycles (L7e).** Topic
+  19; no statement found.
+- **Perpendicular parking** for vehicles up to 2.70 m. Topic 12; not
+  counted.
+- **New article numbers.** The coverage names art. 51 and 52 for rules
+  that are art. 143 and 145 today, so every article cited in the
+  explanations, the Glossario's `src`, `reference.json` and the How-to
+  would be remapped.
+- **All fines.** Bands from 82 to 21, amounts rounded down, a speeding
+  fine that grows per km/h over the limit, the two-yearly ISTAT update
+  suspended. The 18 `fine` rows and the note on the January 2027
+  revision would change.
+- **Possibly a measure's name.** One source says the draft calls the
+  license suspension a *divieto di guida* (23 statements say *sospensione
+  della patente*). Unconfirmed; check the text.
+- Reported and of no effect on the bank's rules as far as the coverage
+  shows: B at 17 dropped from the draft, a phone ban for the instructor
+  or companion during practice, an open-ended driving ban for uninsured
+  vehicles, electric-propulsion bikes as a new class, automated driving.
+
+### 2. Directive (EU) 2025/2205 on driving licenses
+
+In force since 25 November 2025; Italy must transpose it, and no Italian
+decree was found. From search results only: a digital license, an EU-wide
+probationary period for new drivers, accompanied driving at 17, and
+changes to training and to the theory and driving tests. One source gives
+a two-year deadline, unverified; the text is on EUR-Lex
+(`data.europa.eu/eli/dir/2025/2205/oj`). It bears on the exam itself and
+on the new-driver rules of topics 11 and 22.
+
+D.M. 294 of 17 November 2025 (8 hours of lessons) is a third pending
+item, recorded under "The How-to says 6 hours"; its status was not
+rechecked on this date.
 
 ## Open item: look-alike sign traps in the explanations (maintainer, 2026-09-30)
 
