@@ -6965,6 +6965,33 @@ to areas open to the public, and the two Reference rows whose only source was
    private route's unsourced figures. Add, in the same release, the paragraph on
    choosing a school as an experienced driver (note 7 there).
 
+## Watch: the draft new Code and roundabouts (maintainer's report, 2026-11-13)
+
+A Geopop article of 12 November 2026 describes a draft legislative decree
+for a new Codice della Strada, still under examination and not in force
+before 1 January 2028. Only the article was read, not the draft. **Nothing
+changes until the decree is published AND the Ministry reissues the bank:
+the bank decides the answer, so teach the current rule until then.** What
+the article reports, and what each point would touch here:
+- **Art. 52 c. 11: vehicles in the ring have priority, unless signed
+  otherwise.** Today the Code has no roundabout rule, so the right-hand
+  rule applies without a yield sign. The answers of 22946 (VERO), 22945
+  (VERO) and 22952 (FALSO) would be wrong, 22886 needs rereading, 22953
+  stays FALSO on *sempre* with a new explanation, 22947 and 22948 stay
+  VERO. Topic 13's roundabout bullets and topic 02's "does not by itself
+  set priority" line would be rewritten.
+- **Art. 51 c. 8: the right lane serves only the first exit; every other
+  exit takes the lane nearest the island.** The driving test page's
+  two-lane section follows circular 28819 para. d.4, where straight on
+  uses the right lane, and its straight-on figure
+  (`roundabout-straight-*.svg`, `draw_roundabout.py`) would be wrong.
+- **Art. 52 c. 10: a driver changing lanes in the ring yields to vehicles
+  already in that lane.** The driving test page says only "before your
+  exit".
+When the decree is published, read its text and the reissued bank before
+changing anything, and check the other roundabout statements (26 live
+ones name a rotatoria) against both.
+
 ## Open item: look-alike sign traps in the explanations (maintainer, 2026-09-30)
 
 Review every explanation in the sign topics (01 to 08) for statements that
