@@ -5367,6 +5367,25 @@ behind what shipped:
   claim on 2026-09-27 because `sync.php` records upload dates. The
   `description` runs to 228 characters, past the roughly 160 a result
   shows, knowingly.
+- **Search Console's "Blocked due to access forbidden (403)" email of
+  2026-11-16 was about the italiano site, not patente.** The property is
+  the domain `physyapps.com`, so a notice from it may concern any
+  subdomain: open the report and read the address before touching this
+  repository. The page was `italiano.physyapps.com/pronomi/`, crawled
+  12 November. Nine italiano files answered 403 to everyone, and later the
+  three icons in `verbi/icons/`. Cause: files at mode 600 on the Mac,
+  uploaded by Transmit with "Default File" and "Default Folder" permissions
+  off, so they kept that mode on the server. Fixed by `chmod -R
+  u=rwX,go=rX .` in `italiano/public_html` and a full resync; the icons,
+  unchanged in content and so not re-sent, were set to 644 and 755 on the
+  server by hand. A Transmit Skip rule for `.mp3` had also held back the
+  audio (11,322 files went up once it was unchecked; a random 60 of the
+  27,351 local mp3 files then matched the server by size). All 30 patente
+  sitemap pages answered 200 throughout. A file that answers 403 to a
+  browser while its local copy exists is a permissions fault: check `find .
+  -type f ! -perm -004` before looking at the host. Seen the same day and
+  not investigated: indexed pages fell from 32 to 28 and "Crawled -
+  currently not indexed" rose from 7 to 17 between 9 and 13 November.
 - **Lighthouse, 2026-11-09 (live site, 12.6.1).** The guide pages score 100
   in performance, accessibility, best practices and SEO. The app's home page
   scored 55 mobile and 64 desktop, SEO 100: a layout shift of 0.72 (the
