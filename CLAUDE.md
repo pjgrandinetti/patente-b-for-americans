@@ -5403,6 +5403,13 @@ behind what shipped:
   Google's guidelines say it discounts (unproven; raised with the
   maintainer, whose wording it is). Recheck the seven pages about a week
   after 2026-11-16 before changing anything else.
+  **Reworded the same day at his word (20261103y).** The box in
+  `pages/about.md` is headed "The licensing steps and the study notes, as
+  web pages" and says what the pages are, with no mention of search
+  engines. This supersedes every earlier bullet saying the landing page
+  states that the topic pages are for search engines; do not put that
+  statement back. The page still makes no claim that they were written as
+  articles, and still says the app is the better way to use them.
 - **Lighthouse, 2026-11-09 (live site, 12.6.1).** The guide pages score 100
   in performance, accessibility, best practices and SEO. The app's home page
   scored 55 mobile and 64 desktop, SEO 100: a layout shift of 0.72 (the

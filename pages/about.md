@@ -20,6 +20,6 @@ In bocca al lupo!
 
 [Open the app →](app)
 
-## The pages below are for search engines
+## The licensing steps and the study notes, as web pages
 
-These pages are here so that search engines can find this site. The first describes the steps for getting a license, and each of the others is the study notes for one topic, taken from inside the app. You're welcome to read them, but the app is the better way to use them.
+The first page below describes the steps for getting a license. Each of the others is the study notes for one topic, taken from inside the app. You're welcome to read them here, but the app is the better way to use them.
