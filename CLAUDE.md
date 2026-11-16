@@ -5437,6 +5437,19 @@ behind what shipped:
   (grandinetti.org, pjgrandinetti.github.io, a link from italiano's
   footer), then a listing on a page about this exam. Requests for indexing
   do not substitute for that.
+- **A page about the app on physyapps.com (written 2026-11-16).**
+  grandinetti.org is the maintainer's professional site and is never to
+  link to the apps; only physyapps.com refers to his software. That site
+  already links to patente from the menu on every page, as it does to
+  italiano. Added in `~/Github/Web/PhySyApps` (a Hugo site, not a git
+  repository): `content/patente-b-study-app-for-americans.md`, a
+  `more:` link on the home card, `static/images/patente-dashboard.png`,
+  and a `description` meta tag in `layouts/_default/baseof.html` for any
+  page that sets one. Built with `hugo --gc --minify
+  --cleanDestinationDir`; the maintainer uploads `public_html/`. The page
+  states 7,106 statements and 25 topics, so a retirement or a bank
+  revision is an edit there too. After the upload, request indexing for
+  `https://physyapps.com/patente-b-study-app-for-americans/`.
 - **Lighthouse, 2026-11-09 (live site, 12.6.1).** The guide pages score 100
   in performance, accessibility, best practices and SEO. The app's home page
   scored 55 mobile and 64 desktop, SEO 100: a layout shift of 0.72 (the
