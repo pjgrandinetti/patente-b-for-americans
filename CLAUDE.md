@@ -5410,6 +5410,33 @@ behind what shipped:
   states that the topic pages are for search engines; do not put that
   statement back. The page still makes no claim that they were written as
   articles, and still says the app is the better way to use them.
+- **Why italiano is in Google's index and patente is not (read from
+  Search Console on 2026-11-16; this corrects "reason unknown" above).**
+  The two sites are at different stages of one sequence, not treated
+  differently. Patente WAS indexed and shown: from 22 September to
+  11 October its topic pages appeared in results at an average position of
+  7.7, 502 impressions and 2 clicks, most of them on the old `/guide/`
+  addresses. On about 11 October the impressions fell to zero on every
+  page at once. Googlebot made almost no request to the host from about
+  7 October to 8 November (262 requests in 90 days, 71% of them images,
+  about 34 for HTML; host status "no problems", 99% answered 200). The
+  index report caught up in November, when the seven pages were dropped.
+  Italiano's pages were first indexed in late October, so on 16 November
+  it stood where patente stood in early October, and it may be withdrawn
+  the same way. What the two share: no external link at all. The Links
+  report counts 157 external links, 153 of them to `www.physyapps.com/`,
+  75 from grandinetti.org, whose 225 pages each carry a menu link to
+  `http://www.physyapps.com` and none to patente or italiano. Google gives
+  a new site a trial showing and keeps it only on outside evidence; patente
+  had none when the trial ended. Also seen: four `/guide/` addresses are
+  still held as last crawled 22 September, before the 301s existed, so
+  Google has never seen the redirects; and the home page's only h1
+  elements are screen names ("Study by Topic", "Reference",
+  "Statistics"), with "Loading the question bank" as its first text. The
+  remedy is links from sites Google already trusts, first of all his own
+  (grandinetti.org, pjgrandinetti.github.io, a link from italiano's
+  footer), then a listing on a page about this exam. Requests for indexing
+  do not substitute for that.
 - **Lighthouse, 2026-11-09 (live site, 12.6.1).** The guide pages score 100
   in performance, accessibility, best practices and SEO. The app's home page
   scored 55 mobile and 64 desktop, SEO 100: a layout shift of 0.72 (the
