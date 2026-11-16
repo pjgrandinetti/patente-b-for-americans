@@ -5460,6 +5460,13 @@ behind what shipped:
   request shows "Indexing requested"; close that dialog with Escape and
   wait two seconds before typing the next address, and expect "Quota
   exceeded" after about eight requests in a day.
+  **A second attempt that evening was refused ("Quota exceeded")**: the
+  quota had not reset, so none of the six requests above is made yet.
+  Both sitemaps were resubmitted in the Sitemaps report instead, which
+  has no quota. Google read the physyapps.com one at once (13 discovered
+  pages, up from 12, so the new page is known to it); patente's still
+  shows 30. A resubmitted sitemap tells Google a page exists. It does not
+  make Google crawl it, so the six requests are still due.
 - **Lighthouse, 2026-11-09 (live site, 12.6.1).** The guide pages score 100
   in performance, accessibility, best practices and SEO. The app's home page
   scored 55 mobile and 64 desktop, SEO 100: a layout shift of 0.72 (the
