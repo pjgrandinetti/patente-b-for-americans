@@ -5448,8 +5448,18 @@ behind what shipped:
   page that sets one. Built with `hugo --gc --minify
   --cleanDestinationDir`; the maintainer uploads `public_html/`. The page
   states 7,106 statements and 25 topics, so a retirement or a bank
-  revision is an edit there too. After the upload, request indexing for
-  `https://physyapps.com/patente-b-study-app-for-americans/`.
+  revision is an edit there too. **Uploaded and checked live the same
+  day**: the page, its screenshot and stylesheet answer 200 to a browser
+  and to Googlebot's user agent, the home card links it and the sitemap
+  lists it. **Still to do, from 2026-11-17 when the daily quota resets:**
+  request indexing in Search Console for
+  `https://physyapps.com/patente-b-study-app-for-americans/`, then
+  patente's home page, `/about/`, and the four old `/guide/` addresses
+  (07, 06, 15, 12), so Google sees the 301s. Then recheck the seven topic
+  pages and italiano's indexed pages about 2026-11-23. In Search Console a
+  request shows "Indexing requested"; close that dialog with Escape and
+  wait two seconds before typing the next address, and expect "Quota
+  exceeded" after about eight requests in a day.
 - **Lighthouse, 2026-11-09 (live site, 12.6.1).** The guide pages score 100
   in performance, accessibility, best practices and SEO. The app's home page
   scored 55 mobile and 64 desktop, SEO 100: a layout shift of 0.72 (the
