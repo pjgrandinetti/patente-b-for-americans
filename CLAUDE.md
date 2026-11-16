@@ -5386,6 +5386,23 @@ behind what shipped:
   -type f ! -perm -004` before looking at the host. Seen the same day and
   not investigated: indexed pages fell from 32 to 28 and "Crawled -
   currently not indexed" rose from 7 to 17 between 9 and 13 November.
+- **Google dropped seven patente topic pages from its index between 9 and
+  13 November 2026 (read in Search Console on 2026-11-16).** Topics 05, 06,
+  07, 08, 10, 15 and 24 moved from indexed to "Crawled - currently not
+  indexed" WITHOUT a new crawl: each still showed a last crawl of 25 or
+  26 September, so Google judged the September copies. Two patente pages
+  remain indexed, topic 25 and the licensing page; the home page (crawled
+  9 November), `/about/` and how-it-works are still not indexed. Nothing
+  technical is wrong: every sitemap page answers 200 to Googlebot, with its
+  own canonical, no noindex, and nothing disallowed. Indexing was requested
+  that day for the seven pages, which used the daily quota; topic 10 was
+  recrawled within the hour. A request makes Google fetch the current page.
+  It does not make Google index it. The causes that remain are the absence
+  of any external link, and possibly the landing page's own statement that
+  the topic pages "are for search engines", which is the kind of page
+  Google's guidelines say it discounts (unproven; raised with the
+  maintainer, whose wording it is). Recheck the seven pages about a week
+  after 2026-11-16 before changing anything else.
 - **Lighthouse, 2026-11-09 (live site, 12.6.1).** The guide pages score 100
   in performance, accessibility, best practices and SEO. The app's home page
   scored 55 mobile and 64 desktop, SEO 100: a layout shift of 0.72 (the
