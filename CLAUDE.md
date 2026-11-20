@@ -7114,6 +7114,22 @@ to areas open to the public, and the two Reference rows whose only source was
   half-finished kind shows as not done. Read "three blocks of 2" in the
   older bullets as the three kinds.
 
+- **The foglio rosa box counts HOURS, not ticked blocks (20261104e,
+  maintainer, 2026-11-20).** His first 2 hours were maneuvers in town
+  (parking, turning around, roundabouts, a hill start), which his school
+  confirmed count toward the 6, and none of the three boxes fitted them.
+  The three checkboxes are gone. The box shows "N of 6 hours" and a
+  choice, "Hours the school has certified so far", from 0 to 6 in half
+  hours (`select[data-fr-hrs]`, `FOGLIO_HOURS`, stored as `hrs`; an old
+  record's ticks read as 2 hours each). Under it one line gives the
+  decree's three kinds and says a school may also count other lessons,
+  such as maneuvers in town, so ask the school how many hours count
+  (`fr.kinds`). Both routes' How-to step gained the same sentence, in
+  both faces. "May", since it is one school's practice; the decree's
+  text was not re-read on this point. `FOGLIO_LESSONS` and `fr.les0` to
+  `fr.les2` no longer exist. `check_foglio_rosa.js` is 14 checks in each
+  face. Screenshotted at 390 px.
+
 ## To do (the maintainer's list of larger work set aside)
 
 1. **The explanation pass is complete** (all 25 topics, 2026-10-17). What

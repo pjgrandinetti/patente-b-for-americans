@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261104d';
+const APP_VERSION     = '20261104e';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -219,7 +219,7 @@ const STATIC_IT = {
     '<li><strong>Visita dal medico autorizzato.</strong> La scuola prenota per te la visita da un <a href="https://www.ilportaledellautomobilista.it/web/portale-automobilista/servizi-online-ricerca-medici-certificatori" target="_blank" rel="noopener">medico autorizzato dal Ministero</a>, di solito nella sua sede. Porta il certificato anamnestico. Il medico controlla la vista, legge il certificato anamnestico e rilascia il certificato medico che va nella domanda. Con un sì sul certificato anamnestico, il medico probabilmente manderà il tuo caso alla Commissione Medica Locale, come spiega il passo 3. Se non sei riuscito a far togliere il sì, porta alla visita un certificato recente del tuo specialista. La Commissione lo vorrà, e le norme permettono al medico di certificare alcune condizioni con un certificato del genere, anche se la prassi cambia da un medico all’altro.</li>' +
     '<li><strong>La scuola presenta la domanda.</strong> La scuola presenta il <a href="https://www.ilportaledellautomobilista.it/documents/56611/128846273/TT2112.pdf/826c655d-eba2-465a-8ab8-c618bddf1d4e" target="_blank" rel="noopener">modello TT2112</a> all’Ufficio Provinciale della Motorizzazione con i tuoi documenti, il certificato medico e le ricevute dei versamenti. Il certificato medico non deve avere più di 3 mesi quando la domanda viene presentata. Dal giorno della presentazione hai 6 mesi e 2 tentativi per superare l’esame di teoria. Tra un tentativo fallito e il successivo deve passare almeno un mese.</li>' +
     '<li class="step-theory"><strong>Esame di teoria.</strong> Ha 30 domande vero/falso in 20 minuti, e puoi sbagliarne al massimo 3. È in italiano, con versioni in francese e tedesco, e mai in inglese. In aula non sono ammessi interpreti né dizionari. Si svolge in aule informatizzate presso la <a href="https://www.ilportaledellautomobilista.it/gms/?pp=servizi-online&amp;cp=gsm" target="_blank" rel="noopener">Motorizzazione</a>, non in autoscuola. <strong>È ciò a cui questa app ti prepara.</strong><br><strong>È l’autoscuola a decidere quando prenotarti l’esame di teoria.</strong> Quasi tutte aspettano che tu abbia una buona media nelle simulazioni della <strong>propria</strong> app, e il tuo lavoro in questa app loro non lo vedono. Metti quindi in conto di fare anche le simulazioni della scuola una volta finito lo studio, a meno che la scuola non accetti i tuoi risultati qui (la domanda del passo 2). È una condizione della scuola, non una regola del Ministero. Chiedi per tempo quale media vuole, su quante simulazioni, e con quanto anticipo si fissano le date d’esame.<br><strong>Se non lo superi.</strong> Puoi ripetere l’esame di teoria una seconda volta con la stessa domanda. Dal tentativo fallito deve passare almeno un mese. Anche il secondo tentativo deve cadere entro i 6 mesi dalla presentazione della domanda. Se non superi il secondo tentativo, o i 6 mesi finiscono prima, la domanda decade. Serve allora una nuova domanda, con i diritti della Motorizzazione pagati di nuovo e un certificato medico che non abbia più di 3 mesi alla nuova presentazione. Ricevi una copia della scheda d’esame, che tu sia promosso o no. Riporta le 30 domande, la tua risposta a ciascuna e la correzione. Cerca nella sezione Domande di questa app ogni domanda sbagliata e aggiungila ai punti deboli. Se non ti danno la scheda d’esame, chiedila alla scuola. Chiedi anche quanto costa farti presentare una seconda volta. Poi registra l’esito in questa app. L’app fissa il primo giorno in cui puoi ripetere l’esame e organizza il ripasso fino ad allora.</li>' +
-    '<li><strong>Foglio rosa e guide obbligatorie.</strong> Superata la teoria ottieni il foglio rosa, un’autorizzazione a esercitarti valida 12 mesi. Devi completare <strong>6 ore</strong> di guide certificate presso la scuola. Le 6 ore coprono tre tipi di guida, 2 ore ciascuno. Sono l’autostrada o una strada extraurbana principale, una strada extraurbana secondaria o urbana di scorrimento, e la guida di notte. La scuola può dividere le ore in guide più brevi, per esempio da 1 ora o da mezz’ora. Puoi fare al massimo 2 ore di guida al giorno. L’esame di guida si può prenotare solo quando tutte le 6 ore sono certificate. Un decreto del novembre 2025 porta le 6 ore a 8, in quattro moduli, per i fogli rosa rilasciati dopo la sua entrata in vigore, quindi chiedi alla scuola quale regola vale per te. Dopo che la scuola certifica le guide puoi esercitarti con un accompagnatore che siede al tuo fianco. L’accompagnatore non deve avere più di 65 anni e deve avere la patente B, o una di categoria superiore, da almeno 10 anni. Il veicolo deve esporre il contrassegno “P”.</li>' +
+    '<li><strong>Foglio rosa e guide obbligatorie.</strong> Superata la teoria ottieni il foglio rosa, un’autorizzazione a esercitarti valida 12 mesi. Devi completare <strong>6 ore</strong> di guide certificate presso la scuola. Le 6 ore coprono tre tipi di guida, 2 ore ciascuno. Sono l’autostrada o una strada extraurbana principale, una strada extraurbana secondaria o urbana di scorrimento, e la guida di notte. La scuola può dividere le ore in guide più brevi, per esempio da 1 ora o da mezz’ora. Una scuola può contare anche altre guide, come le manovre in città. Puoi fare al massimo 2 ore di guida al giorno. L’esame di guida si può prenotare solo quando tutte le 6 ore sono certificate. Un decreto del novembre 2025 porta le 6 ore a 8, in quattro moduli, per i fogli rosa rilasciati dopo la sua entrata in vigore, quindi chiedi alla scuola quale regola vale per te. Dopo che la scuola certifica le guide puoi esercitarti con un accompagnatore che siede al tuo fianco. L’accompagnatore non deve avere più di 65 anni e deve avere la patente B, o una di categoria superiore, da almeno 10 anni. Il veicolo deve esporre il contrassegno “P”.</li>' +
     '<li><strong>Esame di guida.</strong> La scuola prenota l’esame di guida e fornisce l’auto, che deve avere i <strong>doppi comandi</strong>. Puoi sostenere l’esame da 1 mese dopo il rilascio del foglio rosa. Hai al massimo 3 tentativi entro i suoi 12 mesi, con almeno un mese tra un tentativo fallito e il successivo. Può svolgersi in un comune diverso da quello dell’esame di teoria, uno dei vari della provincia, quindi chiedi alla scuola dove si terrà il tuo. Un candidato non comunitario deve presentare all’esame un permesso di soggiorno valido, o la ricevuta della richiesta di rilascio o di rinnovo. Un esaminatore della Motorizzazione verifica che sai preparare il veicolo a una guida sicura, osserva due manovre, una delle quali in retromarcia, e guida con te per almeno 25 minuti nel traffico normale. Puoi fare l’esame con il cambio automatico, ma la patente porterà allora il codice 78 e varrà solo per veicoli automatici.</li>' +
     '<li><strong>Rilascio della patente.</strong> La patente B copre autovetture e furgoni fino a 3,5 t con al massimo 9 posti, un rimorchio leggero fino a 750 kg e, solo in Italia, motocicli fino a 125 cm³ e 11 kW. Vale 10 anni fino ai 50 anni di età, poi 5 anni fino ai 70, 3 fino agli 80 e 2 oltre. Da neopatentato hai limiti aggiuntivi nei primi tre anni, come un tetto alla potenza del veicolo e un limite di alcol più severo.</li>' +
     '</ol>' +
@@ -437,10 +437,9 @@ const T = {
   'fr.expired':  { en: '{0} (expired)', it: '{0} (scaduto)' },
   'fr.now':      { en: '{0} (now)', it: '{0} (adesso)' },
   'fr.hoursOf':  { en: '{0} of 6 hours', it: '{0} ore su 6' },
-  'fr.lessonsNote': { en: 'The driving test can be booked once a driving school has certified all 6 hours, and you have up to 3 attempts before the foglio rosa expires. Tick each kind of driving once you have completed its 2 hours.', it: 'L\u2019esame di guida si può prenotare quando un\u2019autoscuola ha certificato tutte le 6 ore, e hai al massimo 3 tentativi prima che il foglio rosa scada. Spunta ogni tipo di guida quando ne hai completato le 2 ore.' },
-  'fr.les0':     { en: '2 hours on the autostrada or a main extra-urban road', it: '2 ore in autostrada o su strada extraurbana principale' },
-  'fr.les1':     { en: '2 hours on a secondary extra-urban road or an urban arterial road', it: '2 ore su strada extraurbana secondaria o urbana di scorrimento' },
-  'fr.les2':     { en: '2 hours at night', it: '2 ore di notte' },
+  'fr.lessonsNote': { en: 'The driving test can be booked once a driving school has certified all 6 hours, and you have up to 3 attempts before the foglio rosa expires.', it: 'L\u2019esame di guida si può prenotare quando un\u2019autoscuola ha certificato tutte le 6 ore, e hai al massimo 3 tentativi prima che il foglio rosa scada.' },
+  'fr.hoursAsk': { en: 'Hours the school has certified so far', it: 'Ore certificate finora dalla scuola' },
+  'fr.kinds':    { en: 'The rules set 2 hours each for the autostrada or a main extra-urban road, a secondary extra-urban road or an urban arterial road, and driving at night. A school may also count other lessons, such as maneuvers in town, so ask the school how many of your hours count.', it: 'Le regole prevedono 2 ore ciascuno per l\u2019autostrada o una strada extraurbana principale, una strada extraurbana secondaria o urbana di scorrimento, e la guida di notte. Una scuola può contare anche altre guide, come le manovre in città, quindi chiedi alla scuola quante delle tue ore valgono.' },
   'examdate.passNext': { en: 'Your foglio rosa lets you practice driving for 12 months. You may take the driving test from one month after it was issued, with up to 3 attempts.', it: 'Il foglio rosa ti permette di esercitarti alla guida per 12 mesi. Puoi sostenere l\u2019esame di guida da un mese dopo il rilascio, con al massimo 3 tentativi.' },
   'examdate.failHead': { en: 'You can take the exam again from {0}.', it: 'Puoi ripetere l\u2019esame dal {0}.' },
   'examdate.failNext': { en: 'At least a month must pass after a failed attempt, and the second attempt must fall within 6 months of filing your application. You receive a copy of your exam sheet, which shows your answer to each question and the correction. Search for each one you missed in the Questions tab and add it to the weak spots. When you have the new date, enter it below.', it: 'Dopo un tentativo non superato deve passare almeno un mese, e il secondo tentativo deve cadere entro 6 mesi dalla presentazione della domanda. Ricevi una copia della scheda d\u2019esame, con la tua risposta a ogni domanda e la correzione. Cerca nella sezione Domande ciascuna che hai sbagliato e aggiungila ai punti deboli. Quando hai la nuova data, inseriscila qui sotto.' },
@@ -8625,18 +8624,21 @@ function saveExamAttempts(a) {
 function theoryPassed() { return examAttempts().some(x => x.r === 'pass'); }
 // The foglio rosa (20261030v, maintainer, 2026-10-30, on the day he
 // collected his): the two dates printed on it, issued (Emiss.) and expires
-// (Scade il), and the three 2-hour lesson blocks of D.M. 20 April 2012
-// ticked off by the learner. The expiry is ASKED, not computed: on his the
+// (Scade il), and the mandatory hours the school has certified so far, which
+// the learner enters in half-hour steps (20261104e; three ticked 2-hour
+// blocks until then, which fitted no real lesson). The expiry is ASKED, not computed: on his the
 // twelve months ran from the theory exam, a day before the issue date, and
 // no source states which day counts. Synced like the exam date.
 const FOGLIO_KEY = 'patente_foglio_rosa';
-const FOGLIO_LESSONS = 3;
+const FOGLIO_HOURS = 6;
 function foglioRosa() {
   try {
     const o = JSON.parse(localStorage.getItem(FOGLIO_KEY) || 'null');
     if (!o || !/^\d{4}-\d{2}-\d{2}$/.test(o.iss || '') || !/^\d{4}-\d{2}-\d{2}$/.test(o.exp || '')) return null;
-    const les = Array.from({ length: FOGLIO_LESSONS }, (_, i) => !!(o.les && o.les[i]));
-    return { iss: o.iss, exp: o.exp, les };
+    // A record written before 20261104e holds ticks, each worth 2 hours.
+    let hrs = typeof o.hrs === 'number' ? o.hrs : (Array.isArray(o.les) ? o.les.filter(Boolean).length * 2 : 0);
+    hrs = Math.max(0, Math.min(FOGLIO_HOURS, Math.round(hrs * 2) / 2));
+    return { iss: o.iss, exp: o.exp, hrs };
   } catch { return null; }
 }
 function saveFoglioRosa(o) {
@@ -8660,14 +8662,16 @@ function foglioHtml() {
   const row = (k, lab, val) => `<div class="exam-date-row" data-row="${k}"><dt>${escHtml(t(lab))}</dt><dd>${escHtml(val)}</dd></div>`;
   const left = examDaysLeft(fr.exp);
   const testKey = examRetakeKey(fr.iss);
-  const done = fr.les.filter(Boolean).length;
+  const hoursText = h => String(h).replace('.', uiLang() === 'it' ? ',' : '.');
+  const opts = Array.from({ length: FOGLIO_HOURS * 2 + 1 }, (_, i) => i / 2)
+    .map(h => `<option value="${h}"${h === fr.hrs ? ' selected' : ''}>${hoursText(h)}</option>`).join('');
   return `<div class="foglio"><strong>${escHtml(t('fr.head'))}</strong><dl class="exam-date-today">` +
     row('valid', 'fr.rowValid', t(left < 0 ? 'fr.expired' : 'fr.daysLeft', dayWordsYear(fr.exp), left)) +
     row('test', 'fr.rowTest', testKey <= dayKey() ? t('fr.now', dayWordsYear(testKey)) : dayWordsYear(testKey)) +
-    row('lessons', 'fr.rowLessons', t('fr.hoursOf', done * 2)) +
-    `</dl><ul class="foglio-lessons">` +
-    fr.les.map((on, i) => `<li><label><input type="checkbox" data-fr-les="${i}"${on ? ' checked' : ''}> ${escHtml(t('fr.les' + i))}</label></li>`).join('') +
-    `</ul><p class="exam-date-advice">${escHtml(t('fr.lessonsNote'))}</p>` +
+    row('lessons', 'fr.rowLessons', t('fr.hoursOf', hoursText(fr.hrs))) +
+    `</dl><p class="foglio-hours"><label>${escHtml(t('fr.hoursAsk'))} <select data-fr-hrs>${opts}</select></label></p>` +
+    `<p class="exam-date-advice">${escHtml(t('fr.lessonsNote'))}</p>` +
+    `<p class="exam-date-advice">${escHtml(t('fr.kinds'))}</p>` +
     `<p><button type="button" class="link-btn" data-ed="frchange">${escHtml(t('fr.change'))}</button></p></div>`;
 }
 // The stored date when it has passed and no outcome is recorded for it.
@@ -8833,10 +8837,10 @@ function renderExamDate(atBar) {
     box.id = 'exam-date-box';
     box.className = 'exam-date-box hidden';
     box.addEventListener('change', e => {
-      const c = e.target.closest('input[data-fr-les]');
+      const c = e.target.closest('select[data-fr-hrs]');
       const fr = c && foglioRosa();
       if (!fr) return;
-      fr.les[+c.dataset.frLes] = c.checked;
+      fr.hrs = parseFloat(c.value) || 0;
       saveFoglioRosa(fr);
       renderExamDate(box._atBar);
     });
@@ -8874,7 +8878,7 @@ function renderExamDate(atBar) {
         const iss = box.querySelector('input[data-fr="iss"]').value, exp = box.querySelector('input[data-fr="exp"]').value;
         if (!iss || !exp || exp <= iss) return;
         const old = foglioRosa();
-        saveFoglioRosa({ iss, exp, les: old ? old.les : [] });
+        saveFoglioRosa({ iss, exp, hrs: old ? old.hrs : 0 });
         _foglioEdit = false;
       }
       else if (act === 'frchange') _foglioEdit = true;
