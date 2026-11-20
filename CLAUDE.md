@@ -7101,6 +7101,19 @@ to areas open to the public, and the two Reference rows whose only source was
   different town from the theory exam stays, without "one of several towns
   in the province". The private route and the Italian face are unchanged.
 
+- **The 6 hours are three KINDS of driving, not three 2-hour lessons
+  (20261104d, maintainer, 2026-11-20: his lessons are an hour or half an
+  hour long).** D.M. 20 April 2012 sets 2 hours for each kind (autostrada
+  or main extra-urban road; secondary extra-urban or urban arterial road;
+  night) and at most 2 hours a day; it does not set the length of a
+  lesson. Both routes and both faces now say "three kinds of driving, 2
+  hours each" and that the school may split the hours into shorter
+  lessons, such as 1 hour or half an hour. The foglio rosa checklist's
+  note reads "Tick each kind of driving once you have completed its 2
+  hours"; it still counts in steps of 2 hours (`FOGLIO_LESSONS`), so a
+  half-finished kind shows as not done. Read "three blocks of 2" in the
+  older bullets as the three kinds.
+
 ## To do (the maintainer's list of larger work set aside)
 
 1. **The explanation pass is complete** (all 25 topics, 2026-10-17). What
