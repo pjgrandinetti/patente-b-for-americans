@@ -4968,8 +4968,7 @@ behind what shipped:
   head tag produces no error anywhere else: the page renders, the app works,
   and the only symptom is on the person's home screen where nobody can see it.
   **Read the 404s in a new log before assuming they are noise.**
-- **`<meta name="description">` is kept under 160 characters**, which is about
-  where Google truncates. The harness enforces the bound, and it bit twice
+- **`<meta name="description">` is kept under 160 characters**. The harness enforces the bound, and it bit twice
   while the line was being written.
 - **The Open Graph tags exist so a shared link is not a guess.** Facebook's
   scraper had been deriving the card from the title and whatever image it
@@ -4987,34 +4986,24 @@ behind what shipped:
   again and rebuild the one you need. Anything that must not be lost belongs
   in `scripts/`, not in `/tmp`.
 
-## The guide (`public_html/about/`, 25 generated pages for search)
+## The guide (`public_html/about/`, 25 generated pages)
 
 - **The folder was `guide/` until 2026-09-24 and is now `about/`**, at the
   maintainer's request. `.htaccess` sends every `/guide/...` URL on to
-  `/about/...` with a 301, because Googlebot had already crawled the old
-  addresses. Keep those two `RedirectMatch` lines.
+  `/about/...` with a 301, because the old addresses were already in use. Keep those two `RedirectMatch` lines.
 
 - **Why it exists.** The app is one page, and everything in it reaches the
-  reader as JSON fetched by JavaScript, so a crawler finds data rather than
-  prose and one page can rank for a handful of queries however good it is.
-  These 25 pages are real English articles on Italian road rules, which is
-  what somebody searching "italian warning signs meaning" is looking for.
-  65,800 words and 324 figures across 26 pages.
+  reader as JSON fetched by JavaScript. These 25 pages give the same notes as
+  plain English articles on Italian road rules, each with its own address and
+  readable without the app. 65,800 words and 324 figures across 26 pages.
 - **`robots.txt` DISALLOWS NOTHING, and that is deliberate as of 20260928g.**
-  The four data files were disallowed from the start, on the reasoning that a
-  crawler has no use for a 1 MB JSON. The cost was invisible and larger.
-  Googlebot RENDERS a page to see what a visitor sees, its rendering fetches
-  obey robots.txt, so its render of `/` could not load `questions.json`,
-  `loadDataFile` threw and `showLoadError()` ran: what Google saw may have
-  been "Couldn't load the questions" rather than the app. `index.html` does
-  carry 4,135 words of static text (the How-to panels) that Google may have
-  fallen back to, so this is a risk rather than a proven loss, but it was a
-  coin flip taken for nothing, since crawl budget is not a constraint on a
-  site of 27 URLs. Do not re-add those lines.
+  The four data files were disallowed at first. Anything that renders `/`
+  while obeying robots.txt then cannot load `questions.json`, `loadDataFile`
+  throws and `showLoadError()` runs, so it shows "Couldn't load the
+  questions" in place of the app. Do not re-add those lines.
 - **Every heading carries a slug `id`, and each page opens with a contents
   list** (`slugify`, `toc_html`, added 20260928g). A page of anonymous `<h2>`s
-  cannot be linked into, so a section cannot rank for its own query ("italian
-  double bend sign") and Google cannot offer a jump link inside a result. 298
+  cannot be linked into. 298
   ids and 221 contents links across the 25 pages. Three details that were
   decided rather than defaulted: the slug is built from the RAW markdown with
   emphasis, link and image syntax stripped and the result folded to ASCII,
@@ -5032,8 +5021,8 @@ behind what shipped:
   wrong section and nothing about the page looks wrong. Proved to bite twice:
   forcing `slugify` to return a constant, and prefixing every fragment.
 - **Per-QUESTION pages were considered and rejected.** Seven thousand
-  near-identical pages is thin content, the thing search engines penalise.
-  Per-TOPIC pages stand up as articles on their own.
+  near-identical pages would be thin content. Per-TOPIC pages stand up as
+  articles on their own.
 - **It does not touch the app, and that was the maintainer's condition**
   (2026-09-22: "I don't want to change the content or look and feel of the
   app"). The pages carry their own `guide.css` and reference nothing from
@@ -5046,13 +5035,12 @@ behind what shipped:
   It also regenerates `sitemap.xml`. Run it after any topic-review edit;
   `validate_data.py` now runs `--check` and FAILS if the pages are stale,
   because a review edited without rebuilding would otherwise go on describing
-  the old rule to every search visitor, silently.
+  the old rule to every reader of those pages, silently.
 - **The English titles are in `topic_reviews_md/_guide_titles.json`**, not
   derived. The Ministry's topic strings are bureaucratic Italian and make poor
   page titles; each needs a name phrased the way an American would say it. The
   generator refuses to build a topic with no entry, so none can ship untitled.
-  Keep `title` plus the 23-character suffix under 65 characters, which is
-  roughly what a search result shows; three were over on the first pass.
+  Keep `title` plus the 23-character suffix under 65 characters; three were over on the first pass.
 - **EMPHASIS NEEDS THREE PASSES, innermost last.** The reviews use
   `***bold italic***` for an Italian term inside a bold label, and nest a
   single `*italic*` inside `**bold**` constantly (`**Moped (*ciclomotore*).**`).
@@ -5078,27 +5066,17 @@ behind what shipped:
   the files rather than jsdom; the anchor half of it also lives inside
   `build_topic_pages.py`, where it cannot be lost to a sandbox restart.
 - **`about/license-process.html` is the How-to panel as its own page**
-  (added 2026-09-24 at the maintainer's request), titled "How to Get an
-  Italian Driver's License, Step by Step" with the h1 "How Americans Get an
-  Italian Driver's License" until 20261102v. **Since 20261102v it is aimed
-  at the query "Italian driving test for Americans"** (maintainer,
-  2026-11-01): the title IS that phrase, the h1 "The Italian Driving Test
-  for Americans: Every Step to Your License", and under the h1 four
-  labelled paragraphs (`PROCESS_FIRST` in `build_topic_pages.py`) answer
-  what every page ranking for the query leads with: no US exchange, the
-  exam in Italian only, three years as a neopatentato, cost and time. They
-  are on the page only; the app's How-to panel is unchanged. A change to
-  those facts in the How-to or the notes is a change there too. The
-  index keeps its expat-license title so the two pages do not compete. **The index and this page target DIFFERENT
-  searches on purpose**: the index is the hub and carries the expat search
-  ("Italian Driver's License for American Expats — Patente B Guide", h1 "The
-  Italian Driver's License: A Guide for American Expats"), this page carries
-  "how to get". Giving both titles the same words would make them compete, and
-  Google usually shows only one. Americans say "written test" and "driver's
-  license", never "theory exam", so neither title uses it. The licensing process is the
-  most-searched subject the site covers, and it had no URL: it sat collapsed
-  inside `/`, under a title about the theory app, with its seven steps as list
-  items. The page is GENERATED from the panel's English block in index.html
+  (added 2026-09-24 at the maintainer's request). Since 20261102v its title
+  is "The Italian Driving Test for Americans" and its h1 "The Italian
+  Driving Test for Americans: Every Step to Your License" (`PROCESS_TITLE`,
+  `PROCESS_H1`), and under the h1 four labelled paragraphs (`PROCESS_FIRST`
+  in `build_topic_pages.py`) state: no US exchange, the exam in Italian
+  only, three years as a neopatentato, cost and time. They are on the page
+  only; the app's How-to panel is unchanged. A change to those facts in the
+  How-to or the notes is a change there too. The landing page keeps its own,
+  different title on purpose; do not give the two pages the same title.
+  Americans say "written test" and "driver's license", never "theory exam",
+  so neither title uses it. The page is GENERATED from the panel's English block in index.html
   (`process_page` in `build_topic_pages.py`), each step an h2 "Step N:
   <label>" and each bold-labelled paragraph after the list ("Cost.", "How long
   does it take?") an h2 of its own, 11 sections in all. Editing the panel
@@ -5119,7 +5097,7 @@ behind what shipped:
   is outside `topic_reviews_md/` on purpose: `apply_mapping.py` globs every
   `.md` there. Edit it, run `build_topic_pages.py`, then `validate_data.py`.
 - **`about/how-it-works.html` describes the app feature by feature
-  (20261012c, maintainer, 2026-10-05: search engines should see the full
+  (20261012c, maintainer, 2026-10-05: a page that states the full
   capabilities, and that the app is written for Americans).** Its wording
   is `pages/how-it-works.md`, in about.md's format except that every `## `
   is a section (h2 with an id, in the contents list) and there is no box;
@@ -5132,8 +5110,8 @@ behind what shipped:
   Test in English | Patente B" (Americans say written test, not theory
   exam), the description and Open Graph tags followed, and the
   `WebApplication` data gained an audience, a subject and a feature list.
-  `applyI18n` used to overwrite the title at runtime, and Google renders
-  the page, so the English face now keeps index.html's own title.
+  `applyI18n` used to overwrite the title at runtime; the English face now
+  keeps index.html's own title.
   **The title is "Patente B Study App for Americans | Italian Driver's
   License" since 20261017f** (maintainer, 2026-10-17: the tab title
   should say, for a non-Italian browser, that this is a Patente B study
@@ -5152,20 +5130,17 @@ behind what shipped:
   study app written for Americans. Every official question in English and
   Italian, with the rule behind each answer, online or offline." The
   Italian tagline (`app.tagline` in STATIC_IT) is unchanged.
-- **The guide INDEX is a SHORT LANDING PAGE for people, and it says openly
-  that the topic pages are for search engines** (maintainer, 2026-09-24,
-  after three rounds: a landing-page look, then a long first-person guide,
-  both rejected). It holds only: who he is, why he built the app, the AI
-  disclosure, one prominent link to the app, a link to the licensing page,
-  and a CLOSED disclosure, "The other pages on this site (mainly for search
-  engines)", that says those pages are here mainly so search engines can find
-  the site (a closed `<details>` still carries its links in the HTML, and the
-  sitemap lists every page anyway), followed by the 25 topic
-  titles as plain links. The honesty is the point: do not grow it back into a
-  guide, do not add a quiz, stats or selling, and do not present the topic
-  pages as something written for readers. The sample-question quiz
-  (`guide/quiz.js`) and the extraction of the How-to panel's text into the
-  index were REMOVED the same day.
+- **The guide INDEX is a SHORT LANDING PAGE for people** (maintainer,
+  2026-09-24, after three rounds: a landing-page look, then a long
+  first-person guide, both rejected). It holds only: what the app is, who he
+  is and why he built it, the AI disclosure, a prominent link to the app, a
+  link to the licensing page, and a CLOSED disclosure, "The licensing steps
+  and the study notes, as web pages" (20261103y), which says what those
+  pages are and that the app is the better way to use them, followed by the
+  page titles as plain links. Do not grow it back into a guide, do not add a
+  quiz, stats or selling, and do not claim the topic pages were written as
+  articles. The sample-question quiz (`guide/quiz.js`) and the extraction of
+  the How-to panel's text into the index were REMOVED the same day.
 - **The guide LOOKS LIKE THE APP** (maintainer, 2026-09-24, replacing a
   serif personal-blog look he had asked for that morning). `guide.css` copies
   the app's color tokens from `style.css`, its system sans font, a white bar
@@ -5227,7 +5202,7 @@ behind what shipped:
 - **One quirk worth knowing.** The service worker's scope is `/`, so it
   controls `/about/*` too. `.html` matches `NETWORK_FIRST`, so a visitor gets
   the live page; offline, the navigation fallback serves the APP shell rather
-  than the guide page. Crawlers run no service worker, so search is unaffected.
+  than the guide page.
 - **A source typo the generator rendered correctly, fixed 2026-09-23**: topic
   16 had `**Work machine (*macchina operatrice*). ** ` and `**Autostrada. **`
   with a space before the closing marker, in both halves. Corrected in the
@@ -5241,116 +5216,33 @@ behind what shipped:
   is what iOS requests when adding to the home screen, and one of those ran the
   service worker's image precache to completion: 516 sign images, 6.5 MB. So
   the install path works end to end and somebody used it. **The whole channel
-  was Facebook**; nothing arrived from search, and nobody has visited `/about/`
-  except Googlebot and the maintainer.
+  was Facebook**.
 - **The two root-level `apple-touch-icon` 404s are permanent and harmless.**
   iOS asks for the declared icon AND probes the root for the plain and
   `-precomposed` names, in the same second. The declared one now answers 200.
   Do not chase those 404s again; they are not the bug that was fixed.
-- **Googlebot took the sitemap and started on the guide within hours.**
-  Googlebot fetched `/sitemap.xml` 200 on 22 Sep and then
-  fetched two guide pages, 07:24 and 07:28. Crawled is not indexed, but the
-  estimate given beforehand (about a week) was wrong in the slow direction.
-- **THE HOST BLOCKS THE AI SEARCH CRAWLERS, and it is not us.** On 1 Sep
-  `GPTBot/1.4` and `OAI-SearchBot/1.4` each tried twice and got **403**,
-  including on `/robots.txt` itself; by 22 Sep neither comes at all, which is
-  what a crawler does once refused. Nothing in `.htaccess` or `robots.txt`
-  mentions a user agent and robots.txt says `Allow: /`, so this is GreenGeeks
-  above the app. It matters because ranking in Google is gated on inbound
-  links this project does not have, while an answer engine weighs topical fit,
-  which it has in abundance. Worth separating the two if it is ever addressed:
-  GPTBot is the TRAINING crawler and blocking it costs no discovery, while
-  OAI-SearchBot feeds ChatGPT's live citations and blocking it removes the app
-  from them. **Unresolved**: the maintainer has to find the setting.
-- **Bing Webmaster Tools (20261103e, maintainer, 2026-11-09).** The
-  maintainer's account already held www.physyapps.com and an unverified
-  patente.physyapps.com. Patente is verified by the `msvalidate.01` meta tag
-  in index.html's head, which must stay there or the site unverifies. Bing's
-  own name for the alternative, `/BingSiteAuth.xml`, is still absent, which
-  is why bingbot's request for it 404s.
-  Verified on 2026-11-09 after the upload; the sitemap was submitted the
-  same day and all 30 sitemap addresses through URL Submission (quota 100 a
-  day). Bing's own recommendations then listed IndexNow, thin pages and
-  short titles.
-- **IndexNow (20261103f, maintainer, 2026-11-09).** The key file
-  `public_html/7f998e14198e70f01ce729f5e8272ca0.txt` holds the key and must
-  stay at the site root; the key is public by design. After a release is
-  uploaded, run `python3 scripts/indexnow.py`, which submits the sitemap
-  pages dated today (`--all` for every page, or name addresses). It reaches
-  Bing, Yandex, Seznam, Naver and the other IndexNow engines; Google does
-  not take part, so Search Console still covers Google. HTTP 200 or 202 is
-  success, 403 means the key file is not on the server.
+- **The `msvalidate.01` meta tag in index.html's head must stay
+  (20261103e).** It verifies the site's ownership for Bing Webmaster Tools,
+  and removing it unverifies the site. `/BingSiteAuth.xml` is absent on
+  purpose, so a request for it answers 404.
+- **`scripts/indexnow.py` (20261103f).** The key file
+  `public_html/7f998e14198e70f01ce729f5e8272ca0.txt` holds the IndexNow key
+  and must stay at the site root; the key is public by design. After a
+  release is uploaded, `python3 scripts/indexnow.py` submits the sitemap
+  pages dated today (`--all` for every page, or name addresses). HTTP 200 or
+  202 is success, 403 means the key file is not on the server.
 - **GreenGeeks disabled the Imunify360 bot protection for
   patente.physyapps.com on 2026-11-03** (ticket DAO-625-30379, at the
   maintainer's request, after the splash was shown in place of the app).
-  The same ticket whitelisted two ModSecurity rules believed to have caused
-  the GPTBot and OAI-SearchBot 403s (confirm in the next access log). The
-  host says no rule targets facebookexternalhit, keeps no access logs from
-  September, and may still tighten rules host-wide during an attack, which
-  is a property of shared hosting. If the splash comes back, cite the
-  ticket.
-- **Search Console, 2026-11-03: the home page, /about/ and the licensing
-  page are "Crawled - currently not indexed"** (crawled 1 November, fetch
-  successful, indexing allowed, canonical accepted). Nothing technical
-  blocks them. italiano.physyapps.com is indexed, with physyapps.com and
-  physyapps.com/math-functions/ as its referring pages; the patente pages
-  list none, although physyapps.com links to the app in its menu and on an
-  app card (unquoted `href=`, so a grep for `href="` misses them).
-  Indexing was requested for the licensing page; request it for
-  physyapps.com/ so Google reads the link, and earn links from elsewhere.
-- **Each sitemap page carries its OWN lastmod since 20261103d** (maintainer,
-  2026-11-09: patente's SEO is the priority). All thirty used to carry the
-  day the sitemap was last rebuilt, and a search engine ignores dates that
-  never differ. `page_lastmod` in `build_topic_pages.py` dates a page today
-  when the build rewrites it or it differs from HEAD, and otherwise by the
-  last commit touching its file; "/" is dated by `public_html/index.html`.
-  `--check` still masks the dates, so a date alone is never staleness, but a
-  build writes a sitemap whose dates moved. The same day's audit found the
-  rest sound: every sitemap page answers 200 with its own canonical, title,
-  description, one h1 and JSON-LD, the topic pages link previous and next,
-  and the app links `/about/`. The italiano site's home page declared a
-  relative canonical (`carte/`) and `/carte/` none, which Search Console
-  reported as a duplicate; both now name `https://italiano.physyapps.com/carte/`
-  (in that repo, uncommitted, for the maintainer to commit).
-- **Search Console read in full, 2026-11-09 (the maintainer asked why
-  italiano is on Google and patente is not).** The premise was wrong, and
-  two explanations given before the data were wrong with it. Patente HAS
-  about 13 pages in Google's index (topic pages 05, 06, 07, 08, 10, 15, 24,
-  the licensing page, and three old `/guide/` addresses), against 3 for
-  italiano. What is missing is the home page, `/about/`,
-  `/about/how-it-works.html` and topic 23 ("Crawled - currently not
-  indexed"), and about 15 topic pages never crawled ("Discovered"). The
-  host's splash was NOT the cause: crawl stats show 250 Google requests to
-  patente, 99% answered 200, and a live test of the home page that day
-  rendered the real dashboard. Google crawled patente from 21 to 28
-  September and almost stopped after about 6 October; why is not known
-  (the `/guide/` to `/about/` rename of 24 September is in that window,
-  unproven). Both sitemaps were submitted on 1 November, so patente had no
-  head start in Search Console. The Links report counts 158 external links,
-  154 of them to `www.physyapps.com/` (grandinetti.org 74, apple.com 45),
-  and NONE to patente or italiano. Google still holds
-  `https://www.physyapps.com/` as the canonical of the physyapps home page,
-  although www redirects to the apex. No manual action, no security issue.
-  Indexing was requested that day for patente's home page, `physyapps.com/`
-  and `physyapps.com/math-functions/`. A direct link to patente from
-  grandinetti.org is the one action the maintainer can take himself.
-  **Read the report before explaining it**: the property covers every
-  subdomain, so `site:`, the Pages report, URL Inspection and Crawl stats by
-  host answer in minutes what two rounds of reasoning got wrong.
-- **Where the app can be found, measured 2026-11-09.** DuckDuckGo, which
-  draws on Bing, returns the GitHub repository first for the app's exact
-  title, and `site:patente.physyapps.com` there lists six `/about/` pages
-  and not the home page. GitHub marks its links to the site `nofollow`, so
-  the repository sends visitors and passes no ranking credit. The search
-  an AI assistant runs (tested with the session's own web search) returns
-  NOTHING from patente.physyapps.com, even for the domain name. Its results
-  for "patente B app in English" are App Store pages, sites that republish
-  store listings, and one article, The Local's guide to learner resources.
-  An assistant cannot be made to find the app. What moves every index is a
-  link from a page it already holds, and a listing on a page that compares
-  apps for this exam. A store listing is the signal every app on those
-  lists has and a PWA lacks; wrapping the app for a store was named and NOT
-  recommended or decided.
+  The host may still tighten rules host-wide during an attack, which is a
+  property of shared hosting. If the splash comes back, cite the ticket.
+- **Each sitemap page carries its OWN lastmod since 20261103d.** All thirty
+  used to carry the day the sitemap was last rebuilt. `page_lastmod` in
+  `build_topic_pages.py` dates a page today when the build rewrites it or it
+  differs from HEAD, and otherwise by the last commit touching its file; "/"
+  is dated by `public_html/index.html`. `--check` still masks the dates, so
+  a date alone is never staleness, but a build writes a sitemap whose dates
+  moved.
 - **The repository and the landing page say "free and open source" first
   (20261103j to l, maintainer's wording).** The GitHub About description,
   which he sets by hand since `gh` is not signed in on this Mac, the
@@ -5361,126 +5253,13 @@ behind what shipped:
   Italian. It's free, open source, ad-free, subscription-free, cookie-free,
   and requires no account." The landing page's h1 is "A free Patente B
   study app for Americans", and his story follows under "Who I am, and why
-  I built it"; it had opened on the author, so a searcher read a paragraph
-  before learning what the page offers. **Do not write "no tracking"**: he
+  I built it"; it had opened on the author. **Do not write "no tracking"**: he
   proposed it, and it would contradict the privacy note, which dropped that
   claim on 2026-09-27 because `sync.php` records upload dates. The
-  `description` runs to 228 characters, past the roughly 160 a result
-  shows, knowingly.
-- **Search Console's "Blocked due to access forbidden (403)" email of
-  2026-11-16 was about the italiano site, not patente.** The property is
-  the domain `physyapps.com`, so a notice from it may concern any
-  subdomain: open the report and read the address before touching this
-  repository. The page was `italiano.physyapps.com/pronomi/`, crawled
-  12 November. Nine italiano files answered 403 to everyone, and later the
-  three icons in `verbi/icons/`. Cause: files at mode 600 on the Mac,
-  uploaded by Transmit with "Default File" and "Default Folder" permissions
-  off, so they kept that mode on the server. Fixed by `chmod -R
-  u=rwX,go=rX .` in `italiano/public_html` and a full resync; the icons,
-  unchanged in content and so not re-sent, were set to 644 and 755 on the
-  server by hand. A Transmit Skip rule for `.mp3` had also held back the
-  audio (11,322 files went up once it was unchecked; a random 60 of the
-  27,351 local mp3 files then matched the server by size). All 30 patente
-  sitemap pages answered 200 throughout. A file that answers 403 to a
-  browser while its local copy exists is a permissions fault: check `find .
-  -type f ! -perm -004` before looking at the host. Seen the same day and
-  not investigated: indexed pages fell from 32 to 28 and "Crawled -
-  currently not indexed" rose from 7 to 17 between 9 and 13 November.
-- **Google dropped seven patente topic pages from its index between 9 and
-  13 November 2026 (read in Search Console on 2026-11-16).** Topics 05, 06,
-  07, 08, 10, 15 and 24 moved from indexed to "Crawled - currently not
-  indexed" WITHOUT a new crawl: each still showed a last crawl of 25 or
-  26 September, so Google judged the September copies. Two patente pages
-  remain indexed, topic 25 and the licensing page; the home page (crawled
-  9 November), `/about/` and how-it-works are still not indexed. Nothing
-  technical is wrong: every sitemap page answers 200 to Googlebot, with its
-  own canonical, no noindex, and nothing disallowed. Indexing was requested
-  that day for the seven pages, which used the daily quota; topic 10 was
-  recrawled within the hour. A request makes Google fetch the current page.
-  It does not make Google index it. The causes that remain are the absence
-  of any external link, and possibly the landing page's own statement that
-  the topic pages "are for search engines", which is the kind of page
-  Google's guidelines say it discounts (unproven; raised with the
-  maintainer, whose wording it is). Recheck the seven pages about a week
-  after 2026-11-16 before changing anything else.
-  **Reworded the same day at his word (20261103y).** The box in
-  `pages/about.md` is headed "The licensing steps and the study notes, as
-  web pages" and says what the pages are, with no mention of search
-  engines. This supersedes every earlier bullet saying the landing page
-  states that the topic pages are for search engines; do not put that
-  statement back. The page still makes no claim that they were written as
-  articles, and still says the app is the better way to use them.
-- **Why italiano is in Google's index and patente is not (read from
-  Search Console on 2026-11-16; this corrects "reason unknown" above).**
-  The two sites are at different stages of one sequence, not treated
-  differently. Patente WAS indexed and shown: from 22 September to
-  11 October its topic pages appeared in results at an average position of
-  7.7, 502 impressions and 2 clicks, most of them on the old `/guide/`
-  addresses. On about 11 October the impressions fell to zero on every
-  page at once. Googlebot made almost no request to the host from about
-  7 October to 8 November (262 requests in 90 days, 71% of them images,
-  about 34 for HTML; host status "no problems", 99% answered 200). The
-  index report caught up in November, when the seven pages were dropped.
-  Italiano's pages were first indexed in late October, so on 16 November
-  it stood where patente stood in early October, and it may be withdrawn
-  the same way. What the two share: no external link at all. The Links
-  report counts 157 external links, 153 of them to `www.physyapps.com/`,
-  75 from grandinetti.org, whose 225 pages each carry a menu link to
-  `http://www.physyapps.com` and none to patente or italiano. Google gives
-  a new site a trial showing and keeps it only on outside evidence; patente
-  had none when the trial ended. Also seen: four `/guide/` addresses are
-  still held as last crawled 22 September, before the 301s existed, so
-  Google has never seen the redirects; and the home page's only h1
-  elements are screen names ("Study by Topic", "Reference",
-  "Statistics"), with "Loading the question bank" as its first text. The
-  remedy is links from sites Google already trusts, first of all his own
-  (grandinetti.org, pjgrandinetti.github.io, a link from italiano's
-  footer), then a listing on a page about this exam. Requests for indexing
-  do not substitute for that.
-- **A page about the app on physyapps.com (written 2026-11-16).**
-  grandinetti.org is the maintainer's professional site and is never to
-  link to the apps; only physyapps.com refers to his software. That site
-  already links to patente from the menu on every page, as it does to
-  italiano. Added in `~/Github/Web/PhySyApps` (a Hugo site, not a git
-  repository): `content/patente-b-study-app-for-americans.md`, a
-  `more:` link on the home card, `static/images/patente-dashboard.png`,
-  and a `description` meta tag in `layouts/_default/baseof.html` for any
-  page that sets one. Built with `hugo --gc --minify
-  --cleanDestinationDir`; the maintainer uploads `public_html/`. The page
-  states 7,106 statements and 25 topics, so a retirement or a bank
-  revision is an edit there too. **Uploaded and checked live the same
-  day**: the page, its screenshot and stylesheet answer 200 to a browser
-  and to Googlebot's user agent, the home card links it and the sitemap
-  lists it. **Still to do, from 2026-11-17 when the daily quota resets:**
-  request indexing in Search Console for
-  `https://physyapps.com/patente-b-study-app-for-americans/`, then
-  patente's home page, `/about/`, and the four old `/guide/` addresses
-  (07, 06, 15, 12), so Google sees the 301s. Then recheck the seven topic
-  pages and italiano's indexed pages about 2026-11-23. In Search Console a
-  request shows "Indexing requested"; close that dialog with Escape and
-  wait two seconds before typing the next address, and expect "Quota
-  exceeded" after about eight requests in a day.
-  **A second attempt that evening was refused ("Quota exceeded")**: the
-  quota had not reset, so none of the six requests above is made yet.
-  Both sitemaps were resubmitted in the Sitemaps report instead, which
-  has no quota. Google read the physyapps.com one at once (13 discovered
-  pages, up from 12, so the new page is known to it); patente's still
-  shows 30. A resubmitted sitemap tells Google a page exists. It does not
-  make Google crawl it, so the six requests are still due.
-  **Read again on 2026-11-20.** The physyapps.com page IS indexed ("URL is
-  on Google") and drew its first impression and click, at position 4. That
-  page is how the app is found on Google today. Patente's own pages are
-  NOT back: the home page is still "Crawled - currently not indexed" (last
-  crawl 9 November), and topic 10, recrawled on 16 November after the
-  request, is still not indexed, so a fresh crawl of the current page did
-  not change Google's decision. The index report still counted 28 pages.
-  Requested that day, all accepted: patente's home page, `/about/`, and the
-  four old `/guide/` addresses (15, 07, 06, 12). Over 28 days the patente
-  pages had 32 impressions at position 5.7. Do not report the subdomain as
-  recovered until URL Inspection says "URL is on Google" for its home page.
+  `description` runs to 228 characters, knowingly.
 - **Lighthouse, 2026-11-09 (live site, 12.6.1).** The guide pages score 100
-  in performance, accessibility, best practices and SEO. The app's home page
-  scored 55 mobile and 64 desktop, SEO 100: a layout shift of 0.72 (the
+  in performance, accessibility and best practices. The app's home page
+  scored 55 mobile and 64 desktop: a layout shift of 0.72 (the
   footer, painted early under the loading overlay, drops when the dashboard
   fills in) and a total blocking time of 500 ms from app.js's boot. The shift
   appears only when the data arrives slowly; on a local compressed server the
@@ -5488,8 +5267,7 @@ behind what shipped:
   (`visibility: hidden` keyed to `#app-loading:not(.hidden)`) took the shift
   to 0 and the main-content time from 3 to 4 s to 13 s, so it was REVERTED;
   hiding the footer alone only moved the shift to the dashboard. Do not try
-  either again. With this little traffic Google has no field data for
-  patente, so these lab numbers do not affect its ranking. The same run found
+  either again. The same run found
   the blank-screen watchdog (the second inline script in index.html) blocked
   by the CSP, which named only the theme script's hash: fixed in 20261103h,
   and `validate_data.py` now fails on any inline script whose hash is not in
