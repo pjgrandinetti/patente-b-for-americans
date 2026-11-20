@@ -5467,6 +5467,17 @@ behind what shipped:
   pages, up from 12, so the new page is known to it); patente's still
   shows 30. A resubmitted sitemap tells Google a page exists. It does not
   make Google crawl it, so the six requests are still due.
+  **Read again on 2026-11-20.** The physyapps.com page IS indexed ("URL is
+  on Google") and drew its first impression and click, at position 4. That
+  page is how the app is found on Google today. Patente's own pages are
+  NOT back: the home page is still "Crawled - currently not indexed" (last
+  crawl 9 November), and topic 10, recrawled on 16 November after the
+  request, is still not indexed, so a fresh crawl of the current page did
+  not change Google's decision. The index report still counted 28 pages.
+  Requested that day, all accepted: patente's home page, `/about/`, and the
+  four old `/guide/` addresses (15, 07, 06, 12). Over 28 days the patente
+  pages had 32 impressions at position 5.7. Do not report the subdomain as
+  recovered until URL Inspection says "URL is on Google" for its home page.
 - **Lighthouse, 2026-11-09 (live site, 12.6.1).** The guide pages score 100
   in performance, accessibility, best practices and SEO. The app's home page
   scored 55 mobile and 64 desktop, SEO 100: a layout shift of 0.72 (the
