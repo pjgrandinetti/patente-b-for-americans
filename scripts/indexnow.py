@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Tell the IndexNow search engines (Bing, Yandex, Seznam, Naver and others)
-which pages of patente.physyapps.com changed, so they recrawl them soon.
+which pages of patente.physyapps.com changed.
 
 Run AFTER the upload, since the engines fetch the pages and the key file:
 
@@ -11,7 +11,6 @@ Run AFTER the upload, since the engines fetch the pages and the key file:
 The key is public by design: it is served at the site root as KEY.txt, which
 is how the engines confirm the submission comes from the site's owner. A
 change to the key is a new file at the root and a change to KEY below.
-Google does not take part in IndexNow; Search Console covers Google.
 """
 import datetime, json, pathlib, re, sys, urllib.request, urllib.error
 

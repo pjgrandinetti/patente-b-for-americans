@@ -6,22 +6,18 @@
   <meta name="theme-color" content="#5546d6">
   <!-- The home-screen label on iOS, which otherwise falls back to <title> and
        shows the whole 40-character string truncated. Pinning it here is what
-       frees the title to be written for search without changing anything a
-       learner sees. Android and Chrome use manifest.json's short_name, which
+       lets the title be longer without changing the label a learner
+       sees. Android and Chrome use manifest.json's short_name, which
        is the same word. The manifest's full name is what install prompts
        show; applyI18n points an Italian browser at manifest-it.json. -->
   <meta name="apple-mobile-web-app-title" content="Patente B">
-  <!-- Written for search, not for the app: it appears in the browser tab and
-       in a result page, and nowhere else once the app is installed. "in
-       English" is the word every query we can realistically win contains, and
-       "written test" is what Americans call it (20261012c); "theory exam" is
-       not a phrase they search for. Since 20261017f the title leads with
-       what the app IS, a Patente B study app written for Americans
-       (maintainer, 2026-10-17), and keeps "Italian Driver's License" for
-       the search; the written-test phrase stays in alternateName and the
-       description. 60 characters, inside what a result shows. -->
+  <!-- The browser tab's title. "Written test" is what Americans call the
+       exam (20261012c), not "theory exam". Since 20261017f the title leads
+       with what the app IS, a Patente B study app written for Americans
+       (maintainer, 2026-10-17); the written-test phrase stays in
+       alternateName and the description. 60 characters. -->
   <title>Patente B Study App for Americans | Italian Driver's License</title>
-  <!-- Kept under 160 characters, which is roughly where Google truncates. -->
+  <!-- Kept under 160 characters. -->
   <meta name="description" content="Study for the Italian driver's license written test in English and learn the Italian it is written in. Every official question translated and explained. Free.">
   <!-- Bing Webmaster Tools ownership (20261103e). Keep it: removing it unverifies the site. -->
   <meta name="msvalidate.01" content="61AB8F85EBED0A34A647C899BD80D6FB">
@@ -33,13 +29,6 @@
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <link rel="icon" href="icons/favicon-32.png" sizes="32x32">
   <link rel="canonical" href="https://patente.physyapps.com/">
-  <!-- Google Search Console verification. The token is issued when the property
-       is added at https://search.google.com/search-console, so it cannot be
-       written here in advance: paste the line Google gives you, which looks
-       like the one below, and bump the version.
-       <meta name="google-site-verification" content="PASTE_TOKEN_HERE">
-       Verifying the DOMAIN by DNS TXT instead covers every subdomain at once
-       and needs no change to this file, which is the tidier route. -->
   <!-- What a shared link looks like before anyone has opened the app. Without
        these the scraper guesses; the guess was tolerable but it was a guess. -->
   <meta property="og:type" content="website">
@@ -50,8 +39,8 @@
   <meta property="og:image" content="https://patente.physyapps.com/icons/icon-512.png">
   <meta property="og:image:alt" content="A steering wheel over the Italian flag.">
   <meta name="twitter:card" content="summary">
-  <!-- Structured data: what the page IS, for a search engine rather than a
-       reader. Nothing here renders. `isAccessibleForFree` and a zero-price
+  <!-- Structured data: what the page IS, as machine-readable data.
+       Nothing here renders. `isAccessibleForFree` and a zero-price
        offer are the parts worth stating, since "free" is the claim a learner
        is checking before they tap. -->
   <script type="application/ld+json">

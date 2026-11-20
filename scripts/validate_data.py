@@ -974,7 +974,7 @@ else:
 # ── public_html/about/ in step with topic_reviews_md/ ────────────────
 # The 25 guide pages are generated from the same Markdown the app reads, so a
 # review edited without re-running the generator leaves them describing the
-# old rule to every search visitor, silently and for as long as nobody looks.
+# old rule to every reader of those pages, silently and for as long as nobody looks.
 # Same shape as the check above: the script rebuilds in memory and compares.
 r = subprocess.run([sys.executable, str(ROOT / "scripts" / "build_topic_pages.py"), "--check"],
                    capture_output=True, text=True)

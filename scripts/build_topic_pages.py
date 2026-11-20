@@ -5,15 +5,13 @@ Generate the public GUIDE: one static HTML page per topic review, plus an index.
 WHY THIS EXISTS
     The app is a single page, and its whole substance — 7,106 explained
     questions and 25 topic reviews — reaches the reader as JSON fetched by
-    JavaScript. A crawler that reads those files finds data, not prose, and one
-    page can rank for a handful of queries however good it is. These 25 pages
-    are real English articles about Italian road rules, which is what somebody
-    searching "italian warning signs meaning" is looking for.
-    (Until 20260928g `robots.txt` also disallowed the four data files, which
-    made this worse and cost more than it saved. See that file.)
+    JavaScript. These 25 pages give the notes as plain English articles about
+    Italian road rules, each with its own address and readable without the app.
+    (Until 20260928g `robots.txt` disallowed the four data files. See that
+    file.)
 
     Per-QUESTION pages were considered and rejected: 7,106 near-identical pages
-    is thin content, which is the thing search engines penalise. Per-TOPIC pages
+    would be thin content. Per-TOPIC pages
     are substantial on their own terms.
 
 WHAT IT DOES NOT DO
@@ -110,10 +108,8 @@ def inline(s):
     return s
 
 # ── heading ids ──────────────────────────────────────────────────────────
-# Every heading gets a stable slug so a section can be linked to directly.
-# That is what lets a single section rank for its own query ("italian double
-# bend sign") and what lets Google offer a jump link inside a result, neither
-# of which a page of anonymous <h2>s can do.
+# Every heading gets a stable slug so a section can be linked to directly,
+# which a page of anonymous <h2>s cannot offer.
 #
 # The slug is built from the RAW markdown of the heading, with the emphasis
 # markers and any link or image syntax removed first, then folded to ASCII:
@@ -380,17 +376,12 @@ def slug_of(fname):
 # with a bold label ("Cost.", "How long does it take?") becomes an h2 of its
 # own; a paragraph with no label joins the section above it.
 PROCESS_SLUG  = "license-process"
-# Written for the reader most likely to search for it: an American living in
-# Italy, whose US license stops counting after a year and cannot be converted.
-# Since 20261102v the page is aimed at the query "Italian driving test for
-# Americans" (maintainer, 2026-11-01): the <title> IS that phrase, 38
-# characters, so with the 23-character suffix it fits a search result; the
-# h1 has room for the fuller wording. "Driving test" here means the whole
-# process, the way the pages that rank for the query use it, not the road
-# test alone. The index and the licensing page aim at DIFFERENT searches on
-# purpose (2026-09-24): with the same words in both titles they would compete
-# and Google would usually show only one. The index is the hub and takes the
-# expat-license search; this page takes the driving-test one.
+# Written for an American living in Italy, whose US license stops counting
+# after a year and cannot be converted. Since 20261102v the <title> is the
+# phrase below (maintainer, 2026-11-01), 38 characters, and the h1 has room
+# for the fuller wording. "Driving test" here means the whole process, not
+# the road test alone. The index and the licensing page carry DIFFERENT
+# titles on purpose (2026-09-24).
 PROCESS_TITLE = "The Italian Driving Test for Americans"
 PROCESS_H1    = "The Italian Driving Test for Americans: Every Step to Your License"
 PROCESS_DESC  = ("No US license exchange, a theory exam in Italian only, and "
@@ -453,8 +444,8 @@ def process_page(problems):
     block = m.group(1).strip()
     # Since 20261007c the panel holds the two routes in tabs: an opening, a
     # row of tab buttons, one pane per route (its numbered steps and its own
-    # Cost paragraph), then the shared paragraphs. A search engine runs no
-    # script, so the page shows both routes one after the other, each under
+    # Cost paragraph), then the shared paragraphs. This page runs no
+    # script, so it shows both routes one after the other, each under
     # an h2 named by its tab, with its steps as h3.
     seen, heads, out = set(), [], []
     tabs = dict(re.findall(r'<button[^>]*data-route="(\w+)"[^>]*>(.*?)</button>', block, re.S))
@@ -557,9 +548,9 @@ ABOUT_MD = ROOT / "pages" / "about.md"
 # guide page link to from their footers.
 CREDITS_MD   = ROOT / "IMAGE-CREDITS.md"
 CREDITS_TITLE = "Image Credits"
-# The search title (20261103g): "Image Credits" was 13 characters, and Bing
-# asks for 50 to 60. The heading on the page and the links keep the short name.
-CREDITS_SEO_TITLE = "Road Sign Image Credits and Licenses — Patente B in English"
+# The page <title> (20261103g): "Image Credits" alone was 13 characters. The
+# heading on the page and the links keep the short name.
+CREDITS_PAGE_TITLE = "Road Sign Image Credits and Licenses — Patente B in English"
 CREDITS_DESC  = "Sources, authors and licences of the road-sign figures used in the Patente B Study App for Americans and on these pages."
 
 def credits_page():
@@ -599,8 +590,7 @@ def credits_page():
 
 # ── the features page (pages/how-it-works.md, 20261012c) ─────────────────
 # What the app does, feature by feature, in the order a learner meets them,
-# written so a search engine can see more than the question bank (maintainer,
-# 2026-10-05). Same small format as about.md, except that every "## " starts
+# written to state the app's full capabilities (maintainer, 2026-10-05). Same small format as about.md, except that every "## " starts
 # a section (an h2 with an id, listed in the contents) and there is no box.
 # [text](about) links the landing page, [text](features) this page.
 FEATURES_MD   = ROOT / "pages" / "how-it-works.md"
@@ -802,7 +792,7 @@ def build():
     # the credits page
     ccanon = BASE + CREDITS_SLUG + ".html"
     files[CREDITS_SLUG + ".html"] = page(
-        title=CREDITS_SEO_TITLE, desc=CREDITS_DESC, canonical=ccanon, body=credits_page(), footer=footer,
+        title=CREDITS_PAGE_TITLE, desc=CREDITS_DESC, canonical=ccanon, body=credits_page(), footer=footer,
         crumb='<a href="index.html">Home</a> &rsaquo; Image credits',
         jsonld={
             "@context": "https://schema.org", "@type": "WebPage",
@@ -869,10 +859,10 @@ def build():
 
 # Each page's <lastmod> is the day ITS content last changed (20261103d).
 # Every page used to carry the day the sitemap was rebuilt, all thirty alike,
-# and a search engine learns to ignore dates that never differ. A page this
+# which says nothing about any one page. A page this
 # build rewrites, or one changed since the last commit, is dated today;
 # otherwise the date is that of the last commit touching its file. The app
-# itself ("/") is dated by public_html/index.html, its crawlable text.
+# itself ("/") is dated by public_html/index.html, its static text.
 def page_lastmod(url, files):
     import subprocess
     today = datetime.date.today().isoformat()

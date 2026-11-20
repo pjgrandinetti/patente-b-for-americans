@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261104f';
+const APP_VERSION     = '20261104g';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -1052,9 +1052,8 @@ function tl(lang, key, ...args) {
 function applyI18n() {
   const it = uiLang() === 'it';
   document.documentElement.lang = it ? 'it' : 'en';
-  // The English title is index.html's own, which is written for search
-  // (20261012c): Google renders the page, so a title set here is the one it
-  // reads. Only the Italian face replaces it.
+  // The English title is index.html's own (20261012c). Only the Italian
+  // face replaces it.
   if (applyI18n._title === undefined) applyI18n._title = document.title;
   document.title = it ? 'Patente B — Studio per la patente' : applyI18n._title;
   // The manifest names the app in install prompts and the app switcher. The
