@@ -7082,6 +7082,16 @@ to areas open to the public, and the two Reference rows whose only source was
   your school gives you" hedge the same way. His copy is in `private/`,
   gitignored; record nothing from it but its layout.
 
+- **The "P" is a sticker on the back, not a plate (20261104b, maintainer,
+  2026-11-20).** Both routes' foglio rosa step said the car "must display
+  a "P" plate"; the English now says "a "P" sticker (for principiante,
+  beginner) on the back". The Italian keeps *contrassegno “P”*, the Code's
+  own word (art. 122 c. 4, which gives a school's car the words "scuola
+  guida" instead). OPEN: a search summary of regulation art. 334 says the
+  marker goes on the front AND the back; the text itself was not read
+  (the site refused the fetch), so the front is not on the page. Read
+  D.P.R. 495/1992 art. 334 before adding it.
+
 ## To do (the maintainer's list of larger work set aside)
 
 1. **The explanation pass is complete** (all 25 topics, 2026-10-17). What
