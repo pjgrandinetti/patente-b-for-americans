@@ -7063,14 +7063,24 @@ to areas open to the public, and the two Reference rows whose only source was
   more than two attempts (art. 122 c. 1, both read in
   `sources/285_1992.pdf` that day); after a second fail or the 6 months
   the application expires, and a new one needs the fees again and a
-  medical certificate no more than 3 months old at the new filing; ask
-  the school (the Motorizzazione office on the private route) for the
-  exam sheet, hedged with "may"; the school route also asks what a second
+  medical certificate no more than 3 months old at the new filing; the
+  exam sheet (see below); the school route also asks what a second
   presentation costs; then record the result in the app, which sets the
   provisional date. NOT stated, for lack of a source: whether the
   Motorizzazione charges for the second attempt (web guides disagree),
   whether a certificate still under 3 months old may be reused, and any
   limit on new applications.
+  **The exam sheet is stated as received, pass or fail (20261104a,
+  maintainer, 2026-11-20: he was given a copy of his own).** The *scheda
+  esame candidato* is a Ministry printout listing the 30 questions, the
+  candidate's answer to each and the correction, with the counts and the
+  result. The paragraph says you receive a copy whether you pass or fail,
+  what it lists, to find each missed question in the Questions tab and
+  add it to the weak spots, and to ask the school (the Motorizzazione
+  office on the private route) if it is not given. The app's three fail
+  messages (`examdate.failNext`, `failProv`, `failTwice`) lost their "If
+  your school gives you" hedge the same way. His copy is in `private/`,
+  gitignored; record nothing from it but its layout.
 
 ## To do (the maintainer's list of larger work set aside)
 
