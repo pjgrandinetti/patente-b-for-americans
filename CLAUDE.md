@@ -7054,6 +7054,24 @@ to areas open to the public, and the two Reference rows whose only source was
   in other topics were NOT read; most are *arresto* in the sense of
   stopping.
 
+- **Failing the theory exam is in the How-to (20261103z, maintainer,
+  2026-11-20: "we don't really explain what happens if the learner
+  fails").** Both routes' theory step ends with "If you do not pass." /
+  "Se non lo superi.", in both faces, after "On the day." in English: a
+  second attempt under the same application, at least a month after the
+  failed one (art. 121 c. 10), inside the 6 months from filing, with no
+  more than two attempts (art. 122 c. 1, both read in
+  `sources/285_1992.pdf` that day); after a second fail or the 6 months
+  the application expires, and a new one needs the fees again and a
+  medical certificate no more than 3 months old at the new filing; ask
+  the school (the Motorizzazione office on the private route) for the
+  exam sheet, hedged with "may"; the school route also asks what a second
+  presentation costs; then record the result in the app, which sets the
+  provisional date. NOT stated, for lack of a source: whether the
+  Motorizzazione charges for the second attempt (web guides disagree),
+  whether a certificate still under 3 months old may be reused, and any
+  limit on new applications.
+
 ## To do (the maintainer's list of larger work set aside)
 
 1. **The explanation pass is complete** (all 25 topics, 2026-10-17). What
