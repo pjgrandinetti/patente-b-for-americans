@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261104e';
+const APP_VERSION     = '20261104f';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -436,9 +436,7 @@ const T = {
   'fr.daysLeft': { en: '{0} ({1} days left)', it: '{0} (mancano {1} giorni)' },
   'fr.expired':  { en: '{0} (expired)', it: '{0} (scaduto)' },
   'fr.now':      { en: '{0} (now)', it: '{0} (adesso)' },
-  'fr.hoursOf':  { en: '{0} of 6 hours', it: '{0} ore su 6' },
   'fr.lessonsNote': { en: 'The driving test can be booked once a driving school has certified all 6 hours, and you have up to 3 attempts before the foglio rosa expires.', it: 'L\u2019esame di guida si può prenotare quando un\u2019autoscuola ha certificato tutte le 6 ore, e hai al massimo 3 tentativi prima che il foglio rosa scada.' },
-  'fr.hoursAsk': { en: 'Hours the school has certified so far', it: 'Ore certificate finora dalla scuola' },
   'fr.kinds':    { en: 'The rules set 2 hours each for the autostrada or a main extra-urban road, a secondary extra-urban road or an urban arterial road, and driving at night. A school may also count other lessons, such as maneuvers in town, so ask the school how many of your hours count.', it: 'Le regole prevedono 2 ore ciascuno per l\u2019autostrada o una strada extraurbana principale, una strada extraurbana secondaria o urbana di scorrimento, e la guida di notte. Una scuola può contare anche altre guide, come le manovre in città, quindi chiedi alla scuola quante delle tue ore valgono.' },
   'examdate.passNext': { en: 'Your foglio rosa lets you practice driving for 12 months. You may take the driving test from one month after it was issued, with up to 3 attempts.', it: 'Il foglio rosa ti permette di esercitarti alla guida per 12 mesi. Puoi sostenere l\u2019esame di guida da un mese dopo il rilascio, con al massimo 3 tentativi.' },
   'examdate.failHead': { en: 'You can take the exam again from {0}.', it: 'Puoi ripetere l\u2019esame dal {0}.' },
@@ -8624,21 +8622,17 @@ function saveExamAttempts(a) {
 function theoryPassed() { return examAttempts().some(x => x.r === 'pass'); }
 // The foglio rosa (20261030v, maintainer, 2026-10-30, on the day he
 // collected his): the two dates printed on it, issued (Emiss.) and expires
-// (Scade il), and the mandatory hours the school has certified so far, which
-// the learner enters in half-hour steps (20261104e; three ticked 2-hour
-// blocks until then, which fitted no real lesson). The expiry is ASKED, not computed: on his the
+// (Scade il). The mandatory lessons are described, not tracked (20261104f):
+// three ticked 2-hour blocks fitted no real lesson, and a count of certified
+// hours told the learner nothing the school's record does not. The expiry is ASKED, not computed: on his the
 // twelve months ran from the theory exam, a day before the issue date, and
 // no source states which day counts. Synced like the exam date.
 const FOGLIO_KEY = 'patente_foglio_rosa';
-const FOGLIO_HOURS = 6;
 function foglioRosa() {
   try {
     const o = JSON.parse(localStorage.getItem(FOGLIO_KEY) || 'null');
     if (!o || !/^\d{4}-\d{2}-\d{2}$/.test(o.iss || '') || !/^\d{4}-\d{2}-\d{2}$/.test(o.exp || '')) return null;
-    // A record written before 20261104e holds ticks, each worth 2 hours.
-    let hrs = typeof o.hrs === 'number' ? o.hrs : (Array.isArray(o.les) ? o.les.filter(Boolean).length * 2 : 0);
-    hrs = Math.max(0, Math.min(FOGLIO_HOURS, Math.round(hrs * 2) / 2));
-    return { iss: o.iss, exp: o.exp, hrs };
+    return { iss: o.iss, exp: o.exp };
   } catch { return null; }
 }
 function saveFoglioRosa(o) {
@@ -8662,15 +8656,10 @@ function foglioHtml() {
   const row = (k, lab, val) => `<div class="exam-date-row" data-row="${k}"><dt>${escHtml(t(lab))}</dt><dd>${escHtml(val)}</dd></div>`;
   const left = examDaysLeft(fr.exp);
   const testKey = examRetakeKey(fr.iss);
-  const hoursText = h => String(h).replace('.', uiLang() === 'it' ? ',' : '.');
-  const opts = Array.from({ length: FOGLIO_HOURS * 2 + 1 }, (_, i) => i / 2)
-    .map(h => `<option value="${h}"${h === fr.hrs ? ' selected' : ''}>${hoursText(h)}</option>`).join('');
   return `<div class="foglio"><strong>${escHtml(t('fr.head'))}</strong><dl class="exam-date-today">` +
     row('valid', 'fr.rowValid', t(left < 0 ? 'fr.expired' : 'fr.daysLeft', dayWordsYear(fr.exp), left)) +
     row('test', 'fr.rowTest', testKey <= dayKey() ? t('fr.now', dayWordsYear(testKey)) : dayWordsYear(testKey)) +
-    row('lessons', 'fr.rowLessons', t('fr.hoursOf', hoursText(fr.hrs))) +
-    `</dl><p class="foglio-hours"><label>${escHtml(t('fr.hoursAsk'))} <select data-fr-hrs>${opts}</select></label></p>` +
-    `<p class="exam-date-advice">${escHtml(t('fr.lessonsNote'))}</p>` +
+    `</dl><p class="exam-date-advice"><strong>${escHtml(t('fr.rowLessons'))}.</strong> ${escHtml(t('fr.lessonsNote'))}</p>` +
     `<p class="exam-date-advice">${escHtml(t('fr.kinds'))}</p>` +
     `<p><button type="button" class="link-btn" data-ed="frchange">${escHtml(t('fr.change'))}</button></p></div>`;
 }
@@ -8836,14 +8825,6 @@ function renderExamDate(atBar) {
     box = document.createElement('div');
     box.id = 'exam-date-box';
     box.className = 'exam-date-box hidden';
-    box.addEventListener('change', e => {
-      const c = e.target.closest('select[data-fr-hrs]');
-      const fr = c && foglioRosa();
-      if (!fr) return;
-      fr.hrs = parseFloat(c.value) || 0;
-      saveFoglioRosa(fr);
-      renderExamDate(box._atBar);
-    });
     box.addEventListener('click', e => {
       const b = e.target.closest('button[data-ed]');
       if (!b) return;
@@ -8877,8 +8858,7 @@ function renderExamDate(atBar) {
       else if (act === 'frsave') {
         const iss = box.querySelector('input[data-fr="iss"]').value, exp = box.querySelector('input[data-fr="exp"]').value;
         if (!iss || !exp || exp <= iss) return;
-        const old = foglioRosa();
-        saveFoglioRosa({ iss, exp, hrs: old ? old.hrs : 0 });
+        saveFoglioRosa({ iss, exp });
         _foglioEdit = false;
       }
       else if (act === 'frchange') _foglioEdit = true;

@@ -1,5 +1,5 @@
 // The foglio rosa in the pass box (20261030v, maintainer, 2026-10-30): the two dates printed on it, the
-// driving test possible from a month after the issue, the days left, and the certified hours in half-hour steps.
+// driving test possible from a month after the issue, the days left, and the mandatory lessons described.
 // Run: node scripts/check_foglio_rosa.js (UILANG=it-IT; SRC= another public_html).
 const {JSDOM}=require(process.env.JSDOM||'/tmp/node_modules/jsdom'); const fs=require('fs');
 const root=process.env.SRC||require('path').resolve(__dirname,'../public_html');
@@ -35,18 +35,12 @@ setTimeout(()=>{
   ok(/(Your foglio rosa|Il tuo foglio rosa)/.test(box.textContent) && !box.querySelector('input[data-fr]'),'the box shows the foglio rosa, not the form');
   ok(/(363 days left|mancano 363 giorni)/.test(box.querySelector('[data-row=valid] dd').textContent),'valid until, with the days left: '+box.querySelector('[data-row=valid] dd').textContent);
   ok(!/(now|adesso)/.test(box.querySelector('[data-row=test] dd').textContent) && /\d/.test(box.querySelector('[data-row=test] dd').textContent),'the driving test is a month after the issue: '+box.querySelector('[data-row=test] dd').textContent);
-  ok(/^(0 of 6 hours|0 ore su 6)$/.test(box.querySelector('[data-row=lessons] dd').textContent) && box.querySelectorAll('select[data-fr-hrs] option').length===13 && !box.querySelector('input[type=checkbox]'),'the hours are a choice from 0 to 6 in half hours, with no checkboxes');
-  const sel=box.querySelector('select[data-fr-hrs]'); sel.value='2.5'; sel.dispatchEvent(new w.Event('change',{bubbles:true}));
-  box=$('exam-date-box');
-  ok(/^(2\.5 of 6 hours|2,5 ore su 6)$/.test(box.querySelector('[data-row=lessons] dd').textContent) && box.querySelector('select[data-fr-hrs]').value==='2.5','two and a half hours shows: '+box.querySelector('[data-row=lessons] dd').textContent);
-  ok(JSON.parse(w.localStorage.getItem('patente_foglio_rosa')).hrs===2.5,'the hours are stored');
-  ok(/(maneuvers in town|manovre in citt)/.test(box.textContent),'the three kinds and the school\'s counting are said');
-  { const o=JSON.parse(w.localStorage.getItem('patente_foglio_rosa')); const keep=JSON.stringify(o); w.localStorage.setItem('patente_foglio_rosa',JSON.stringify({iss:o.iss,exp:o.exp,les:[true,false,true]}));
-    ok(w.foglioRosa().hrs===4,'an old record of two ticks reads as 4 hours'); w.localStorage.setItem('patente_foglio_rosa',keep); }
+  ok(!box.querySelector('select[data-fr-hrs]') && !box.querySelector('input[type=checkbox]') && !box.querySelector('[data-row=lessons]'),'the lessons are described, with nothing to tick or choose');
+  ok(/(certified all 6 hours|certificato tutte le 6 ore)/.test(box.textContent) && /(maneuvers in town|manovre in citt)/.test(box.textContent),'the 6 hours, the three kinds and the school\'s counting are said');
   const b=w.buildProgressBundle(); ok(b.settings && typeof b.settings.foglioRosa==='string','the foglio rosa travels with sync');
   box.querySelector('[data-ed=frchange]').click(); box=$('exam-date-box');
   ok(box.querySelector('input[data-fr=iss]').value===key(0),'Change the dates reopens the form with the stored dates');
   box.querySelector('input[data-fr=iss]').value=key(-40); box.querySelector('[data-ed=frsave]').click(); box=$('exam-date-box');
-  ok(/(now|adesso)/.test(box.querySelector('[data-row=test] dd').textContent) && JSON.parse(w.localStorage.getItem('patente_foglio_rosa')).hrs===2.5,'issued over a month ago: the test is possible now, and the hours survive the change');
+  ok(/(now|adesso)/.test(box.querySelector('[data-row=test] dd').textContent),'issued over a month ago: the test is possible now');
   console.log(fails?fails+' FAILED':'all passed'); process.exit(fails?1:0);
 },1500);

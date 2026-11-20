@@ -7130,6 +7130,17 @@ to areas open to the public, and the two Reference rows whose only source was
   `fr.les2` no longer exist. `check_foglio_rosa.js` is 14 checks in each
   face. Screenshotted at 390 px.
 
+- **The foglio rosa box does not track the lessons at all (20261104f,
+  maintainer, 2026-11-20: "I don't see the point of the popup menu with
+  certified hours").** The hours choice of 20261104e lasted one release.
+  The box shows the two dates' rows, then "Mandatory lessons." as a bold
+  label on the sentence about booking the test once all 6 hours are
+  certified, then the line on the three kinds and the school's counting.
+  No count, no checkbox, no menu; `hrs`, `FOGLIO_HOURS`, `fr.hoursOf` and
+  `fr.hoursAsk` are gone, and a stored `hrs` or `les` is ignored and
+  dropped at the next save. The school's record is where the hours are
+  counted. Do not bring a lessons tracker back unasked.
+
 ## To do (the maintainer's list of larger work set aside)
 
 1. **The explanation pass is complete** (all 25 topics, 2026-10-17). What

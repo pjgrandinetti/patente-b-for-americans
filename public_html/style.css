@@ -397,9 +397,6 @@ body {
    form, then the rows and the three lesson blocks as a checklist. */
 .exam-date-box .foglio, .exam-date-box .foglio-form { margin-top: .9rem; padding-top: .8rem; border-top: 1px solid var(--border); }
 .exam-date-box .foglio-form label { display: inline-flex; flex-direction: column; gap: .2rem; margin: 0 .75rem .5rem 0; font-size: .9rem; color: var(--muted); }
-.exam-date-box .foglio-hours { margin: .5rem 0; }
-.exam-date-box .foglio-hours label { display: inline-flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
-.exam-date-box .foglio-hours select { font: inherit; padding: .25rem .4rem; }
 .review-ctx { display: block; font-size: .8rem; color: var(--accent); margin-bottom: .1rem; }
 /* The consistently-missed chip: one short line per figure (20261026c). */
 .review-row.is-short { padding: .45rem .8rem; }
