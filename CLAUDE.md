@@ -7092,6 +7092,15 @@ to areas open to the public, and the two Reference rows whose only source was
   (the site refused the fetch), so the front is not on the page. Read
   D.P.R. 495/1992 art. 334 before adding it.
 
+- **The school route's driving test step contrasts it with the US
+  (20261104c, maintainer's wording, 2026-11-20).** English face only: in
+  the US you go to a DMV or BMV office and take the road test in your own
+  car; in Italy, with a driving school, you will likely take the test in
+  the car used for the mandatory 6 hours, on the roads where you trained.
+  "Likely", since it is his experience of one school. The sentence on a
+  different town from the theory exam stays, without "one of several towns
+  in the province". The private route and the Italian face are unchanged.
+
 ## To do (the maintainer's list of larger work set aside)
 
 1. **The explanation pass is complete** (all 25 topics, 2026-10-17). What
