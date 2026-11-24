@@ -6919,8 +6919,11 @@ to areas open to the public, and the two Reference rows whose only source was
   foglio rosa's expiry; the form states the two dates. With a date the box
   counts the days and links to the driving test page on the dashboard
   (`openDriveTestBox`). It gives NO practice pace. The day before: read the
-  page's Summary once, the sourced sleep sentence, ask the school what to
-  bring, the residence permit of circular 41095, and *In bocca al lupo!*
+  page's Summary once, the sourced sleep sentence, bring the foglio rosa and
+  an identity document and ask the school whether it wants anything else
+  (20261104i; the foglio rosa follows from art. 122, the identity document
+  is common practice with no text read), the residence permit of circular
+  41095, and *In bocca al lupo!*
   The day itself adds I passed and I did not pass; the day after asks how
   it went, with It was postponed. A pass shows the congratulation and the
   new-driver limits as the How-to states them, hides the foglio rosa rows,

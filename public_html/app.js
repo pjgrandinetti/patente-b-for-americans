@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261104h';
+const APP_VERSION     = '20261104i';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -446,7 +446,7 @@ const T = {
   'dt.today':    { en: 'Your driving test is today.', it: 'Il tuo esame di guida \u00e8 oggi.' },
   'dt.advice':   { en: 'The driving test page below describes the three parts of the test, each maneuver, and what ends the test at once.', it: 'La pagina sull\u2019esame di guida qui sotto descrive le tre parti dell\u2019esame, ogni manovra e che cosa lo fa terminare subito.' },
   'dt.adviceLast': { en: 'Read the Summary of the driving test page once today. Sleep a full night: no caffeine after mid-afternoon, no alcohol, screens away before bed, and bed at your usual time.', it: 'Oggi rileggi una volta il Riepilogo della pagina sull\u2019esame di guida. Dormi una notte piena: niente caffeina dal pomeriggio, niente alcol, schermi spenti prima di dormire, e a letto alla solita ora.' },
-  'dt.bring':    { en: 'Ask your school what to bring. A candidate from outside the EU must show a valid residence permit (permesso di soggiorno), or the receipt for its application or renewal.', it: 'Chiedi alla scuola che cosa portare. Un candidato non comunitario deve mostrare un permesso di soggiorno valido, o la ricevuta della richiesta o del rinnovo.' },
+  'dt.bring':    { en: 'Bring your foglio rosa and an identity document, and ask your school whether it wants anything else. A candidate from outside the EU must also show a valid residence permit (permesso di soggiorno), or the receipt for its application or renewal.', it: 'Porta il foglio rosa e un documento di identit\u00e0, e chiedi alla scuola se vuole altro. Un candidato non comunitario deve mostrare anche un permesso di soggiorno valido, o la ricevuta della richiesta o del rinnovo.' },
   'dt.page':     { en: 'Open the driving test page', it: 'Apri la pagina sull\u2019esame di guida' },
   'dt.taken':    { en: 'Already taken it? Tell the app how it went.', it: 'L\u2019hai gi\u00e0 fatto? Di\u2019 all\u2019app com\u2019\u00e8 andato.' },
   'dt.howWent':  { en: 'How did your driving test on {0} go?', it: 'Com\u2019\u00e8 andato l\u2019esame di guida di {0}?' },

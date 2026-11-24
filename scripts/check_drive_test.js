@@ -38,7 +38,7 @@ setTimeout(()=>{
   ok($('dash-drivetest-box') && $('dash-drivetest-box').open,'the link opens the driving test page on the dashboard');
   ok(typeof w.buildProgressBundle().settings.driveTest==='string','the driving test travels with sync');
   put({d:key(1),a:[]});
-  ok(/(tomorrow|domani)/.test(D().textContent) && !!D().querySelector('.exam-date-wish') && /(Sleep a full night|Dormi una notte piena)/.test(D().textContent) && /permesso di soggiorno/.test(D().textContent),'the day before: sleep, the residence permit and the wish');
+  ok(/(tomorrow|domani)/.test(D().textContent) && !!D().querySelector('.exam-date-wish') && /(Sleep a full night|Dormi una notte piena)/.test(D().textContent) && /permesso di soggiorno/.test(D().textContent) && /(Bring your foglio rosa and an identity document|Porta il foglio rosa e un documento)/.test(D().textContent),'the day before: sleep, what to bring, the residence permit and the wish');
   put({d:key(0),a:[]});
   ok(/(is today|oggi)/.test(D().querySelector('strong').textContent) && !!D().querySelector('[data-ed=dtpass]') && !!D().querySelector('[data-ed=dtfail]'),'the day itself offers the outcome');
   put({d:key(-1),a:[]});
