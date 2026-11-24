@@ -72,6 +72,7 @@ rather than re-deriving when a feature applies.
 | 5. Mock exams | everyone | mocks until the chance of failing is 5% or less over 15 or more | Italiano cleared, or earlier by the Settings option | `mockEarlyOn()`, `examReady()` |
 | 6. Review | everyone | one mock and the day's review each day until the exam | an exam date entered, offered once stage 5 is met | `inReviewPhase()`, `examDate()` |
 | 7. After the theory exam | everyone | a pass: the foglio rosa and the driving test; a fail: the wait, the second attempt, a new date | the exam date has passed and the learner answers how it went | `examAfterState()`, `theoryPassed()`, `examAttempts()` |
+| 8. After the driving test | everyone | a pass: the new-driver limits; a fail: the wait, the next attempt, up to three | the driving test date has passed, or it is the day itself, and the learner answers how it went | `driveTest()`, `drivePassed()`, `driveHtml()` |
 
 - **Stages 1 to 3 are LEVELS**: each is a full pass over the bank under a
   language setting, with its own progress map (`patente_progress_L1` to
@@ -6907,6 +6908,31 @@ to areas open to the public, and the two Reference rows whose only source was
   text was not re-read on this point. `FOGLIO_LESSONS` and `fr.les0` to
   `fr.les2` no longer exist. `check_foglio_rosa.js` is 14 checks in each
   face. Screenshotted at 390 px.
+
+- **The driving test date (20261104h, maintainer, 2026-11-24, the day his
+  school booked his test).** Below the foglio rosa rows the pass box asks
+  for the driving test date (`driveHtml`, `.drive-test`), only once the
+  foglio rosa dates are saved. One record, `DRIVE_TEST_KEY`, `{d, a}`: the
+  date and the outcome of each attempt, synced as `driveTest` and stamped.
+  A date is accepted only inside `driveWindow()`: from a month after the
+  issue, or after the last failed attempt, never before today, to the
+  foglio rosa's expiry; the form states the two dates. With a date the box
+  counts the days and links to the driving test page on the dashboard
+  (`openDriveTestBox`). It gives NO practice pace. The day before: read the
+  page's Summary once, the sourced sleep sentence, ask the school what to
+  bring, the residence permit of circular 41095, and *In bocca al lupo!*
+  The day itself adds I passed and I did not pass; the day after asks how
+  it went, with It was postponed. A pass shows the congratulation and the
+  new-driver limits as the How-to states them, hides the foglio rosa rows,
+  and runs the confetti once (`DRIVE_CELEBRATED_KEY`; `celebratePass` takes
+  a key and a record now). A fail gives the next possible day, the attempt
+  out of 3 and the foglio rosa's expiry, with the date field; after three
+  fails, or when the next possible day is past the expiry, it says no
+  further attempt is possible with this foglio rosa and to ask the school.
+  What follows a third fail is stated by no source read, so the app does
+  not say. Change my answer undoes the last outcome. Nothing else on the
+  dashboard changes after the driving test is passed.
+  `scripts/check_drive_test.js`, 23 checks in each face.
 
 - **The foglio rosa box does not track the lessons at all (20261104f,
   maintainer, 2026-11-20: "I don't see the point of the popup menu with

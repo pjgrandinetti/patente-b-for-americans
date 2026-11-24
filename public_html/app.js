@@ -12,7 +12,7 @@
 // ── Constants ────────────────────────────────────────────────────────
 // Build tag — keep in step with sw.js CACHE_VERSION so the visible footer
 // label tells you exactly which build is actually running.
-const APP_VERSION     = '20261104g';
+const APP_VERSION     = '20261104h';
 
 // Card figures whose drawing is busy enough that the default size leaves them
 // unreadable: a board of place names, a panel of opening hours, a three-light
@@ -438,6 +438,22 @@ const T = {
   'fr.now':      { en: '{0} (now)', it: '{0} (adesso)' },
   'fr.lessonsNote': { en: 'The driving test can be booked once a driving school has certified all 6 hours, and you have up to 3 attempts before the foglio rosa expires.', it: 'L\u2019esame di guida si può prenotare quando un\u2019autoscuola ha certificato tutte le 6 ore, e hai al massimo 3 tentativi prima che il foglio rosa scada.' },
   'fr.kinds':    { en: 'The rules set 2 hours each for the autostrada or a main extra-urban road, a secondary extra-urban road or an urban arterial road, and driving at night. A school may also count other lessons, such as maneuvers in town, so ask the school how many of your hours count.', it: 'Le regole prevedono 2 ore ciascuno per l\u2019autostrada o una strada extraurbana principale, una strada extraurbana secondaria o urbana di scorrimento, e la guida di notte. Una scuola può contare anche altre guide, come le manovre in città, quindi chiedi alla scuola quante delle tue ore valgono.' },
+  'dt.ask':      { en: 'Has your driving test been booked? Enter its date.', it: 'Hai la data dell\u2019esame di guida? Inseriscila qui.' },
+  'dt.label':    { en: 'Driving test date', it: 'Data dell\u2019esame di guida' },
+  'dt.range':    { en: 'The date must fall between {0} and {1}, the dates your foglio rosa allows.', it: 'La data deve cadere tra il {0} e il {1}, le date consentite dal tuo foglio rosa.' },
+  'dt.inN':      { en: 'Your driving test is in {0} days, on {1}.', it: 'Il tuo esame di guida \u00e8 tra {0} giorni, {1}.' },
+  'dt.tomorrow': { en: 'Your driving test is tomorrow, {0}.', it: 'Il tuo esame di guida \u00e8 domani, {0}.' },
+  'dt.today':    { en: 'Your driving test is today.', it: 'Il tuo esame di guida \u00e8 oggi.' },
+  'dt.advice':   { en: 'The driving test page below describes the three parts of the test, each maneuver, and what ends the test at once.', it: 'La pagina sull\u2019esame di guida qui sotto descrive le tre parti dell\u2019esame, ogni manovra e che cosa lo fa terminare subito.' },
+  'dt.adviceLast': { en: 'Read the Summary of the driving test page once today. Sleep a full night: no caffeine after mid-afternoon, no alcohol, screens away before bed, and bed at your usual time.', it: 'Oggi rileggi una volta il Riepilogo della pagina sull\u2019esame di guida. Dormi una notte piena: niente caffeina dal pomeriggio, niente alcol, schermi spenti prima di dormire, e a letto alla solita ora.' },
+  'dt.bring':    { en: 'Ask your school what to bring. A candidate from outside the EU must show a valid residence permit (permesso di soggiorno), or the receipt for its application or renewal.', it: 'Chiedi alla scuola che cosa portare. Un candidato non comunitario deve mostrare un permesso di soggiorno valido, o la ricevuta della richiesta o del rinnovo.' },
+  'dt.page':     { en: 'Open the driving test page', it: 'Apri la pagina sull\u2019esame di guida' },
+  'dt.taken':    { en: 'Already taken it? Tell the app how it went.', it: 'L\u2019hai gi\u00e0 fatto? Di\u2019 all\u2019app com\u2019\u00e8 andato.' },
+  'dt.howWent':  { en: 'How did your driving test on {0} go?', it: 'Com\u2019\u00e8 andato l\u2019esame di guida di {0}?' },
+  'dt.passHead': { en: '\ud83c\udf89 Congratulations, you passed the driving test!', it: '\ud83c\udf89 Complimenti, hai superato l\u2019esame di guida!' },
+  'dt.passNext': { en: 'You are now a new driver (neopatentato). For the first three years you have additional restrictions, such as a cap on vehicle power, a stricter alcohol limit, and lower speed limits on the autostrada and on main extra-urban roads.', it: 'Ora sei un neopatentato. Per i primi tre anni hai limiti aggiuntivi, come un tetto alla potenza del veicolo, un limite di alcol pi\u00f9 severo e limiti di velocit\u00e0 pi\u00f9 bassi in autostrada e sulle strade extraurbane principali.' },
+  'dt.failNext': { en: 'You did not pass the driving test on {0}. You may take it again from {1}. That was attempt {2} of 3, and your foglio rosa is valid until {3}.', it: 'Non hai superato l\u2019esame di guida del {0}. Puoi ripeterlo dal {1}. Era il tentativo {2} di 3, e il tuo foglio rosa \u00e8 valido fino al {3}.' },
+  'dt.failOut':  { en: 'You did not pass the driving test on {0}. No further attempt is possible with this foglio rosa. Ask your school what comes next.', it: 'Non hai superato l\u2019esame di guida del {0}. Con questo foglio rosa non \u00e8 possibile un altro tentativo. Chiedi alla scuola come procedere.' },
   'examdate.passNext': { en: 'Your foglio rosa lets you practice driving for 12 months. You may take the driving test from one month after it was issued, with up to 3 attempts.', it: 'Il foglio rosa ti permette di esercitarti alla guida per 12 mesi. Puoi sostenere l\u2019esame di guida da un mese dopo il rilascio, con al massimo 3 tentativi.' },
   'examdate.failHead': { en: 'You can take the exam again from {0}.', it: 'Puoi ripetere l\u2019esame dal {0}.' },
   'examdate.failNext': { en: 'At least a month must pass after a failed attempt, and the second attempt must fall within 6 months of filing your application. You receive a copy of your exam sheet, which shows your answer to each question and the correction. Search for each one you missed in the Questions tab and add it to the weak spots. When you have the new date, enter it below.', it: 'Dopo un tentativo non superato deve passare almeno un mese, e il secondo tentativo deve cadere entro 6 mesi dalla presentazione della domanda. Ricevi una copia della scheda d\u2019esame, con la tua risposta a ogni domanda e la correzione. Cerca nella sezione Domande ciascuna che hai sbagliato e aggiungila ai punti deboli. Quando hai la nuova data, inseriscila qui sotto.' },
@@ -8639,6 +8655,82 @@ function saveFoglioRosa(o) {
   stampSettings();
 }
 let _foglioEdit = false;
+// The driving test (20261104h, maintainer, 2026-11-24, the day his school
+// booked his): its date, asked once the foglio rosa dates are in, and the
+// outcome of each attempt, {d, r}. One record, synced like the foglio rosa.
+// No study pace is given: the box counts the days, points at the driving
+// test page, and afterwards asks how it went.
+const DRIVE_TEST_KEY = 'patente_drive_test';
+const DRIVE_CELEBRATED_KEY = 'patente_drive_celebrated';
+const DRIVE_ATTEMPTS = 3;
+function driveTest() {
+  let o = null;
+  try { o = JSON.parse(localStorage.getItem(DRIVE_TEST_KEY) || 'null'); } catch { }
+  const ok = v => /^\d{4}-\d{2}-\d{2}$/.test(v || '');
+  const a = o && Array.isArray(o.a) ? o.a.filter(x => x && ok(x.d) && (x.r === 'pass' || x.r === 'fail')) : [];
+  return { d: o && ok(o.d) ? o.d : null, a };
+}
+function saveDriveTest(o) {
+  try { if (o && (o.d || o.a.length)) localStorage.setItem(DRIVE_TEST_KEY, JSON.stringify(o)); else localStorage.removeItem(DRIVE_TEST_KEY); } catch { }
+  stampSettings();
+}
+function drivePassed() { return driveTest().a.some(x => x.r === 'pass'); }
+let _driveEdit = false;
+// The earliest and latest day a driving test may be entered: a month after
+// the foglio rosa's issue, or after the last failed attempt, and never
+// before today or after the foglio rosa expires.
+function driveWindow() {
+  const fr = foglioRosa(); if (!fr) return null;
+  const dt = driveTest(), fails = dt.a.filter(x => x.r === 'fail');
+  let min = examRetakeKey(fr.iss);
+  if (fails.length) { const r = examRetakeKey(fails[fails.length - 1].d); if (r > min) min = r; }
+  if (dayKey() > min) min = dayKey();
+  return { min, max: fr.exp, open: fails.length < DRIVE_ATTEMPTS && min <= fr.exp };
+}
+function driveHtml() {
+  const fr = foglioRosa(); if (!fr) return '';
+  const dt = driveTest(), win = driveWindow();
+  const btn = (act, key, cls) => `<button type="button" class="${cls}" data-ed="${act}">${escHtml(t(key))}</button>`;
+  const adv = key => `<p class="exam-date-advice">${escHtml(t(key))}</p>`;
+  const pageLink = `<p>${btn('dtpage', 'dt.page', 'link-btn')}</p>`;
+  const wrap = h => `<div class="foglio drive-test">${h}</div>`;
+  const last = dt.a[dt.a.length - 1];
+  if (last && last.r === 'pass') {
+    return wrap(`<strong>${escHtml(t('dt.passHead'))}</strong>` + adv('dt.passNext') +
+      `<p class="exam-date-undo">${btn('dtundo', 'examdate.undo', 'link-btn')}</p>`);
+  }
+  // A date that has passed with no outcome asks how it went.
+  if (dt.d && dt.d < dayKey() && !_driveEdit) {
+    return wrap(`<strong>${escHtml(t('dt.howWent', examDayWords(dt.d)))}</strong>` +
+      `<div class="exam-date-taken">${btn('dtpass', 'examdate.passed', 'btn-primary')}${btn('dtfail', 'examdate.failed', 'btn-secondary')}${btn('dtpost', 'examdate.postponed', 'link-btn')}</div>`);
+  }
+  let fail = '';
+  if (last && last.r === 'fail' && !dt.d) {
+    const n = dt.a.filter(x => x.r === 'fail').length;
+    fail = `<p class="exam-date-advice">${escHtml(win.open ? t('dt.failNext', examDayWords(last.d), dayWordsYear(win.min), n, dayWordsYear(fr.exp)) : t('dt.failOut', examDayWords(last.d)))}</p>` +
+      `<p class="exam-date-undo">${btn('dtundo', 'examdate.undo', 'link-btn')}</p>`;
+    if (!win.open) return wrap(fail);
+  }
+  if (!dt.d || _driveEdit) {
+    return wrap(fail + `<div class="foglio-form"><p>${escHtml(t('dt.ask'))}</p>` +
+      `<label>${escHtml(t('dt.label'))} <input type="date" data-dt="d" min="${win.min}" max="${win.max}" value="${dt.d || ''}"></label>` +
+      btn('dtset', 'fr.save', 'btn-secondary') + (dt.d ? btn('dtremove', 'examdate.remove', 'link-btn') : '') +
+      `<p class="exam-date-advice drive-range">${escHtml(t('dt.range', dayWordsYear(win.min), dayWordsYear(win.max)))}</p></div>`);
+  }
+  const n = examDaysLeft(dt.d), when = examDayWords(dt.d);
+  return wrap(`<strong>${escHtml(n === 0 ? t('dt.today') : n === 1 ? t('dt.tomorrow', when) : t('dt.inN', n, when))}</strong>` +
+    adv(n === 1 ? 'dt.adviceLast' : 'dt.advice') + (n <= 1 ? adv('dt.bring') : '') +
+    (n <= 1 ? `<p class="exam-date-wish" lang="it">${escHtml(t('examdate.wish'))}</p>` : '') +
+    pageLink +
+    (n === 0 ? `<div class="exam-date-taken"><span>${escHtml(t('dt.taken'))}</span>${btn('dtpass', 'examdate.passed', 'btn-secondary')}${btn('dtfail', 'examdate.failed', 'btn-secondary')}</div>` : '') +
+    `<p>${btn('dtchange', 'examdate.change', 'link-btn')}</p>`);
+}
+function openDriveTestBox() {
+  const d = document.getElementById('dash-drivetest-box');
+  if (!d) return;
+  d.open = true;
+  requestAnimationFrame(() => { try { d.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch { } });
+}
 function dayWordsYear(v) {
   const [y, m, d] = v.split('-').map(Number);
   return new Intl.DateTimeFormat(uiLang() === 'it' ? 'it-IT' : 'en-US', { month: 'long', day: 'numeric', year: 'numeric' }).format(new Date(y, m - 1, d));
@@ -8712,10 +8804,9 @@ function passJourney() {
 // A short burst of confetti the first time the pass is shown on a device
 // (20261030g), never with reduced motion asked for. Purely decorative.
 const PASS_CELEBRATED_KEY = 'patente_pass_celebrated';
-function celebratePass() {
-  const pass = examAttempts().find(x => x.r === 'pass');
+function celebratePass(key = PASS_CELEBRATED_KEY, pass = examAttempts().find(x => x.r === 'pass')) {
   if (!pass) return;
-  try { if (localStorage.getItem(PASS_CELEBRATED_KEY) === pass.d) return; localStorage.setItem(PASS_CELEBRATED_KEY, pass.d); } catch { return; }
+  try { if (localStorage.getItem(key) === pass.d) return; localStorage.setItem(key, pass.d); } catch { return; }
   try { if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return; } catch { }
   const layer = document.createElement('div');
   layer.className = 'confetti-layer';
@@ -8861,6 +8952,23 @@ function renderExamDate(atBar) {
         _foglioEdit = false;
       }
       else if (act === 'frchange') _foglioEdit = true;
+      else if (act === 'dtpage') { openDriveTestBox(); return; }
+      else if (act === 'dtset') {
+        const v = box.querySelector('input[data-dt="d"]').value, win = driveWindow();
+        if (!v || !win || v < win.min || v > win.max) return;
+        const dt = driveTest(); dt.d = v; saveDriveTest(dt); _driveEdit = false;
+      }
+      else if (act === 'dtchange') _driveEdit = true;
+      else if (act === 'dtremove' || act === 'dtpost') { const dt = driveTest(); dt.d = null; saveDriveTest(dt); _driveEdit = false; }
+      else if (act === 'dtpass' || act === 'dtfail') {
+        const dt = driveTest();
+        if (dt.d && dt.d <= dayKey()) { dt.a.push({ d: dt.d, r: act === 'dtpass' ? 'pass' : 'fail' }); dt.d = null; saveDriveTest(dt); }
+        _driveEdit = false;
+      }
+      else if (act === 'dtundo') {
+        const dt = driveTest(), last = dt.a.pop();
+        if (last) { dt.d = last.d; saveDriveTest(dt); }
+      }
       else if (act === 'undo') {
         const a = examAttempts(); const last = a.pop();
         if (last) { saveExamAttempts(a); setExamDate(last.d); }
@@ -8899,7 +9007,11 @@ function renderExamDate(atBar) {
       // foglio rosa since 20261030w, maintainer).
       `<p class="exam-date-undo"><button type="button" class="link-btn" data-ed="undo">${escHtml(t('examdate.undo'))}</button></p>` +
       (foglioRosa() && !_foglioEdit ? '' : `<p class="exam-date-advice">${escHtml(t('examdate.passNext'))}</p>`) +
-      foglioHtml() + `</div>`;
+      // Once the driving test is passed the foglio rosa has done its work,
+      // so only the result is shown; before that, the driving test date
+      // follows the foglio rosa's own dates.
+      (drivePassed() && !_foglioEdit ? '' : foglioHtml()) + (_foglioEdit ? '' : driveHtml()) + `</div>`;
+    if (drivePassed()) celebratePass(DRIVE_CELEBRATED_KEY, driveTest().a.find(x => x.r === 'pass'));
     return;
   }
   let failHtml = '';
@@ -9766,6 +9878,7 @@ function buildProgressBundle() {
       examDateProv: localStorage.getItem(EXAM_DATE_PROV_KEY),
       examOutcome:  localStorage.getItem(EXAM_OUTCOME_KEY),
       foglioRosa:   localStorage.getItem(FOGLIO_KEY),
+      driveTest:    localStorage.getItem(DRIVE_TEST_KEY),
       missMin:      localStorage.getItem(MISS_MIN_KEY),
       missFilter:   localStorage.getItem(MISS_FILTER_KEY),
       missRun:      localStorage.getItem(MISS_RUN_KEY),
@@ -11379,6 +11492,7 @@ function mergeSyncSettings(s) {
   if (s.examDateProv !== undefined) set(EXAM_DATE_PROV_KEY, s.examDateProv);
   if (s.examOutcome !== undefined) set(EXAM_OUTCOME_KEY, s.examOutcome);
   if (s.foglioRosa !== undefined) set(FOGLIO_KEY, s.foglioRosa);
+  if (s.driveTest !== undefined) set(DRIVE_TEST_KEY, s.driveTest);
   if (s.missMin    !== undefined) set(MISS_MIN_KEY, s.missMin);
   if (s.missFilter !== undefined) set(MISS_FILTER_KEY, s.missFilter);
   if (s.missRun    !== undefined) set(MISS_RUN_KEY, s.missRun);
